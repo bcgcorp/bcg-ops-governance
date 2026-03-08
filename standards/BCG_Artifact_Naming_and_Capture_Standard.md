@@ -1,0 +1,175 @@
+# BCG Artifact Naming and Capture Standard
+**Version:** 1.0
+**Effective:** 2026-03-07
+**Owner:** Gregory Bernardo (author) / Jennifer Brezniak (ongoing maintenance)
+**Location:** OneDrive Corp/AI/Standards/ → migrating to GitHub bcg-governance (Phase 2)
+**Status:** APPROVED
+
+---
+
+## PURPOSE
+
+This document defines how all Claude-generated artifacts are named and where
+they are stored. Consistent naming makes artifacts sortable, searchable,
+attributable, and auditable across all 17 BCG projects and all producers.
+
+---
+
+## SECTION 1 — DOCUMENT OUTPUT NAMING CONVENTION
+
+Applies to: .docx, .md, .pdf, and all other document-type outputs.
+
+### Format
+
+```
+[STATUS]_[PROJECT]_[Topic]_[YYYY-MM-DD].[ext]
+```
+
+### Status Values
+
+| Value | Meaning |
+|---|---|
+| `DRAFT` | Claude-generated, not yet reviewed |
+| `APPROVED` | Gregory has approved — authoritative version |
+| `SUPERSEDED` | Replaced by a newer approved version — retain for record |
+| `ARCHIVE` | Retired — historical reference only |
+
+### Project Codes
+
+| Code | Project |
+|---|---|
+| P0 | Master Strategic Plan |
+| P1 | Financial Modeling |
+| P2 | SOP & Workflow Library |
+| P3 | Competitive Intel |
+| P4 | AI Infrastructure |
+| P4-001 | MCP Evaluation & Selection |
+| P4-002 | Revit & BIM Automation |
+| P5 | IT Security / QOS |
+| P5-001 | Network Infrastructure Assessment |
+| P6 | HR, People & Legal |
+| P7 | Odoo Platform & ERP |
+| P7-001 | Dev Environment & AI Tooling |
+| P7-002 | Platform Audit & Uplift |
+| P7-003 | Odoo 19 Feature Mining |
+| P7-004 | Notification Center & Invoice Req |
+| P8 | Proposals & RFP |
+| P9 | Business Continuity |
+
+### Examples
+
+```
+DRAFT_P2_SOP-W14-Sales-Order-Entry_2026-03-07.docx
+APPROVED_P3_Competitor-Segment-Map_2026-03-10.pdf
+APPROVED_P0_Ecosystem-Transformation-ExecSummary_2026-03-07.docx
+SUPERSEDED_P1_Revenue-Model-v1_2026-02-15.xlsx
+```
+
+### Topic Formatting Rules
+
+- Use hyphens, not spaces or underscores, within the topic segment
+- Keep topic segment under 40 characters
+- Be specific enough to distinguish from other documents in the same project folder
+
+### Storage Location
+
+All document outputs → `Corp/AI/Outputs/[Project-Folder]/`
+
+---
+
+## SECTION 2 — UI ARTIFACT NAMING CONVENTION
+
+Applies to: JSX/HTML interactive artifacts exported from Claude.ai for
+async team distribution.
+
+### Format
+
+```
+BCG-UI-[PROJECT]-[TYPE]-v[#]
+```
+
+### Type Values
+
+| Value | Meaning |
+|---|---|
+| `TRIAGE` | Triage card / review queue artifact |
+| `DASHBOARD` | Status dashboard or pipeline view |
+| `MATRIX` | Comparison matrix |
+| `DECISION` | Guided decision tree |
+| `STATUS` | Status update panel |
+
+### Examples
+
+```
+BCG-UI-P0-TRIAGE-v1.html
+BCG-UI-P2-TRIAGE-v2.html
+BCG-UI-P8-DASHBOARD-v1.html
+```
+
+### Version Increment Rules
+
+- Increment v# for any content change to an existing artifact
+- Do not overwrite prior versions — retain all versions in UI-Library/
+- Append `-DRAFT` before the extension for unreviewed versions:
+  `BCG-UI-P0-TRIAGE-v1-DRAFT.html`
+
+### Storage Location
+
+Exported UI artifacts → `Corp/AI/Tools/UI-Library/`
+
+### SECURITY CONSTRAINT — MANDATORY
+
+Artifacts containing Tier 1 or Tier 2 data stay in Claude.ai ONLY.
+**Never export to HTML** any artifact containing:
+- Client project codes (PHX065, STL100, ATL114, IAD534-537, PDX070, YUL, CMH, etc.)
+- Client names
+- Fee or billing data
+- Personnel compensation data
+- Any data classified Tier 1 (Confidential) or Tier 2 (Restricted)
+
+When in doubt, keep it in Claude.ai. Do not export.
+
+---
+
+## SECTION 3 — CAPTURE WORKFLOW (Option A — Current)
+
+Option A is the active workflow until Option B (automated Claude → OneDrive push)
+is available via M365 connector write permissions (pending P5 assessment).
+
+### Steps for Every Producer
+
+1. Claude generates the artifact in the session
+2. Download the file from Claude (or copy text to a new file)
+3. Rename the file to match the naming convention above
+4. Upload to the correct `Corp/AI/Outputs/[Project]/` folder in OneDrive
+5. If superseding a prior version, rename the old file with `SUPERSEDED_` prefix
+
+### Who Does This
+
+Every producer is responsible for their own captures:
+- Gregory — P0, P1, P3, P8, P9 outputs
+- Bob — P5, P5-001, P7-001 outputs
+- Jason — P4, P4-001, P4-002 outputs (post-onboarding)
+- Jennifer — P2, P6 outputs
+- Victor — P7, P7-004 outputs
+
+---
+
+## SECTION 4 — OPTION B (FUTURE — PENDING)
+
+Claude pushes files directly to OneDrive at session end via M365 connector
+write permissions. Eliminates the manual download-rename-upload step.
+
+**Status:** Pending Bob's M365 connector write permission assessment (P5)
+**Dependency:** Odoo MCP stable first; M365 write permission cleared in P5
+**Owner when ready:** Victor Carrillo / Bob Brezniak (P7 backlog initiative)
+
+---
+
+## MAINTENANCE
+
+- This document is owned by Jennifer Brezniak for ongoing updates
+- Changes require Gregory's approval before taking effect
+- Version history maintained in GitHub bcg-governance (Phase 2 onwards)
+- Any new project codes added to the ecosystem must be added to Section 1
+  project codes table within one week of project registration
