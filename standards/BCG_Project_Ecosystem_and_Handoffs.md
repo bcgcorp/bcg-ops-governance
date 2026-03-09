@@ -1,8 +1,8 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.2
+**Version:** 1.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-01
+**Last Updated:** 2026-03-09
 **Scope:** All Claude Projects (P0–P8) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -219,6 +219,7 @@ When one project's work depends on another project's output, flag the dependency
 | P8 | W-17 RFP Intake SOP | P2 | Q2 '26 | W-17 not yet drafted |
 | P1 | Actual bid pricing and win/loss analysis | P8 | Ongoing | P8 feeds calibration data to P1 models |
 | P3 | Competitor sightings from RFP processes | P8 | Ongoing | P8 feeds intel to P3 database |
+| P5 | VPN architecture documentation (WireGuard + Tailscale) | P4 (architecture decision) | Q2 '26 | Handoff drafted 2026-03-09 |
 
 *Add rows as cross-project dependencies are identified. Remove rows when resolved.*
 
@@ -243,7 +244,7 @@ Running log of all approved handoffs. Newest first.
 | 1.0 | 2026-03-01 | Initial version. Extracted from BCG_Style_and_Formatting_Standards.md Section 10, expanded with handoff content requirements, routing redirects, cross-project dependencies, and handoff log. |
 | 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
 | 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
-
+| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
 ---
 
 *This document is maintained in OneDrive at Corp/AI/Standards/ and fetched by all Claude Projects at runtime. Update this file when projects are created, closed, or restructured. Do not maintain separate copies in individual project knowledge bases.*
