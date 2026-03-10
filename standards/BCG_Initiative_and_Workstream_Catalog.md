@@ -1,12 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 1.3
+**Version:** 1.4
 **Effective:** March 2026
-**Last Updated:** 2026-03-05
+**Last Updated:** 2026-03-10
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**What Changed (v1.3):** I-01 owner corrected from Bernard Lewis to Greg Bernardo. Added I-40 (Benefits Package Restructuring, P6/Jennifer). Added I-41 (Enterprise Business Continuity Planning, P9/Gregory). Updated subproject registry from 2 to 7 subprojects (P4-001, P4-002, P5-001, P7-001, P7-002, P7-003, P7-004). Updated scope line from P0–P7 to P0–P9. Total: 39 active initiatives, 11 workstreams, 7 subprojects.
+**What Changed (v1.4):** Added I-42 (JSX Artifact Workflow Standard / P0 / Greg), I-43 (Outlook Forward Guard / P4 / Greg), I-44 (FOV Camera Tool Suite / P4-002 / Greg), I-45 (Site Grid & Sheet Builder / P4-002 / Greg), I-46 (Bulk Title Block Parameter Editor / P4-002 / Greg), I-47 (AI Context Store / P4 / Jason), I-48 (API-Driven Hub Script / P4 / Jason). Updated P4-002 subproject registry to include I-44, I-45, I-46. Confirmed B-24 (Site Grid & Sheet Builder) and B-25 (Per-Sheet Key Plan Inset) — backlog now 25 buttons. Updated Section 4 cross-reference counts. Total: 46 active initiatives, 11 workstreams, 7 subprojects.
 
 ---
 
@@ -20,7 +20,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 2. Initiative Registry
 
-39 active initiatives (I-01 through I-41, minus I-20 removed, minus I-32 rejected).
+46 active initiatives (I-01 through I-48, minus I-20 removed, minus I-32 rejected).
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -65,6 +65,13 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-39 | Promise Tracking & Proposal Forensics | Greg | Planned | P8 | Q2 '26 | Build promise tracking register for active projects. Populate with historical proposal-vs-contract data. Requires rate card + 3-5 historical proposals uploaded to P8 KB. |
 | I-40 | Benefits Package Restructuring | Jennifer | Active | P6 | Q2 '26 | Competitive benefits analysis — Tier 1 health insurance gap identified as BIM Lead hiring blocker. Feeds I-38 (BIM Lead recruitment on hold pending this). |
 | I-41 | Enterprise Business Continuity Planning | Greg | Active | P9 | Q3 '26 | Three phases: Risk Register (Wks 1–3), Continuity Playbook (Wks 4–8), Tabletop Exercises + W-18 SOP (Wks 9–12). Bob and Jason provide infrastructure inputs for Phase 1. |
+| I-42 | JSX Artifact Workflow Standard | Greg | Planned | P0 | Q2 '26 | Pattern library entry for JSX artifact creation and delivery workflow. |
+| I-43 | Outlook Forward Guard Add-in | Greg | Planned | P4 | Q2 '26 | Office Web Add-in (ItemSend event). Warns on forwarding to recipients already on To/CC. Warn mode default; Block mode deferred. Bob Brezniak: Defender/ASR review. Full spec delivered 2026-03-09. |
+| I-44 | FOV Camera Tool Suite | Greg | Planned | P4-002 | Q2 '26 | Four pyRevit buttons (FOV ZERO, FOV RESTORE, HIDE FOV, SHOW FOV). Manages camera depth and visibility on Security Device elements. Dual storage: ES (GUID b7c4a1d2-38e5-4f90-a6bc-de2345678901) + JSON backup. Windsurf prompt delivered 2026-03-09. Live Revit test pending. |
+| I-45 | Site Grid & Sheet Builder | Greg | Active | P4-002 | Q2 '26 | PyRevit button suite: back-calculates sector size from print scale + title block geometry, creates cropped floor plan views/sheets across sector grid, copies sheet properties from template, generates key plan index. Companion button adds per-sheet key plan insets. B-24 (Site Grid & Sheet Builder), B-25 (Per-Sheet Key Plan Inset) confirmed 2026-03-10. Two Windsurf prompts delivered 2026-03-09. |
+| I-46 | Bulk Title Block Parameter Editor | Greg | Active | P4-002 | Q2 '26 | PyRevit button with WPF dialog. Bulk-edits Keyplan Legend-SP, Show Key Plan, Show North Arrow across selected sheets. Targets AWSi-TB-Titleblock-AMER family. Script delivered 2026-03-09. Live Revit test pending. |
+| I-47 | AI Context Store (pgvector/PostgreSQL) | Jason | Planned | P4 | Q3 '26 | Self-hosted on DGX Spark. SOPs, strategy docs, initiative states, design standards. AI-optimized, MCP-queryable. 12-month target: Graphiti temporal knowledge graph. Gates on Jason engagement confirmation. Approved via BCG Ecosystem Architecture Report 2026-03-09. |
+| I-48 | API-Driven Hub Script (Alternative E) | Jason | Active | P4 | Q2 '26 | Automated P0 sync via Claude API. Machine-parseable .md sync packet format. 30-day prototype / 45-day production target. Gates on Jason engagement confirmation. Approved via BCG Ecosystem Architecture Report 2026-03-09. |
 
 ### Initiative Status Definitions
 
@@ -93,7 +100,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | WS-07 | Capture Strategy | Greg | Active | P0/P3/P8 | — | Tactics to lock in DD/CA. P8 provides bid/no-bid analysis and win/loss data. Competitor intel (17 firms, 3 segments) available. |
 | WS-08 | Direct MSA Evaluation | Greg | Active | P0/P3 | — | Feasibility, risks with primes, benefits of direct hyperscaler contract. |
 | WS-09 | New Teaming & Diversification | Greg | Active | P0/P3 | I-37 | Different primes, different hyperscalers. Oracle opportunity tracked here (I-32 rejected as initiative). CA Takeover playbook (I-37) approved. |
-| WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-25, I-26, I-27, I-28, I-31 | 16-week AI roadmap, DGX Spark x2, RTX 5090 x2, Odoo AI modules, production force multipliers. |
+| WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-25, I-26, I-27, I-28, I-31, I-43, I-44, I-45, I-46, I-47, I-48 | 16-week AI roadmap, DGX Spark x2, RTX 5090 x2, Odoo AI modules, production force multipliers, Revit automation suite (P4-002), Outlook Forward Guard, AI Context Store, API-Driven Hub. |
 | WS-11 | Resource Planning | Greg/Jennifer | Active | P0/P6 | I-03, I-35, I-36, I-40 | 9 current FTE, active hiring pipelines (SSD II, BIM Mgr, PM Admin). BIM Lead on hold pending I-40 benefits analysis. Scale to 12+. |
 
 ---
@@ -102,11 +109,11 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Project | Initiative Count | IDs |
 |---------|-----------------|-----|
-| P0 | 1 | I-14 (shared with P2) |
+| P0 | 2 | I-14 (shared with P2), I-42 |
 | P1 | 0 | Consumes WS-02, WS-03, WS-06 outputs; no owned initiatives |
 | P2 | 7 | I-01, I-02, I-10, I-11, I-12, I-13, I-28 (shared P4) |
 | P3 | 8 | I-04, I-16 (shared P6), I-17, I-18, I-19, I-22 (shared P4), I-33, I-34, I-37 |
-| P4 | 5 | I-09, I-25, I-26, I-27, I-31 (shared P7) |
+| P4 | 8 | I-09, I-25, I-26, I-27, I-31 (shared P7), I-43, I-47, I-48 |
 | P5 | 3 | I-08, I-15, I-38 (via P5-001) |
 | P6 | 8 | I-03, I-21, I-24, I-35, I-36, I-40 |
 | P7 | 6 | I-05, I-06, I-07, I-23, I-29, I-30 (shared P0) |
@@ -114,6 +121,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P9 | 1 | I-41 |
 
 **Note:** Some initiatives span multiple projects. Counted under primary. I-24 (Licensing Audit) assigned to P6 but gates P3 initiatives.
+**Note:** 46 active initiatives (I-01 through I-48, minus I-20 removed, minus I-32 rejected).
 
 ---
 
@@ -122,7 +130,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | ID | Parent | Name | Initiative | Status | What It Produces |
 |----|--------|------|-----------|--------|-----------------|
 | P4-001 | P4 | MCP Evaluation & Selection | — | Active | MCP server evaluations, capability matrices, deployment recommendations |
-| P4-002 | P4 | Revit & BIM Automation | I-09, I-28 | Active | PyRevit buttons, Dynamo scripts, AutoCAD automation. 23-button backlog. |
+| P4-002 | P4 | Revit & BIM Automation | I-09, I-28, I-44, I-45, I-46 | Active | PyRevit buttons, Dynamo scripts, AutoCAD automation. 25-button backlog (B-01–B-25). B-24 (Site Grid & Sheet Builder) and B-25 (Per-Sheet Key Plan Inset) confirmed 2026-03-10. |
 | P5-001 | P5 | Network Infrastructure Assessment | I-38 | Planned | Firewall/switch config assessment, gap analysis, remediation plan |
 | P7-001 | P7 | Dev Environment & AI Tooling | — | Active | Git repo, Windsurf config, Victor quickstart, CI/CD pipeline |
 | P7-002 | P7 | Platform Audit & Uplift | I-07 | Planned | Automated test framework (Phase A), codebase forensics (Phase B), remediation (Phase C) |
@@ -137,7 +145,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 - **Workstreams:** WS-01 through WS-## (sequential)
 - **Subprojects:** P{#}-{###} (parent project dash three-digit sequence)
 - **Removed items:** Keep the row with strikethrough and "Removed" status. Do not renumber.
-- **New additions:** Append to the end of the sequence (next initiative after I-41 is I-42).
+- **New additions:** Append to the end of the sequence (next initiative after I-48 is I-49).
 
 ---
 
@@ -149,7 +157,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | 1.1 | 2026-03-01 | Populated I-01–I-27 and WS-01–WS-11. Confirmed I-28–I-31. Decided candidates: I-32 rejected, I-33–I-37 approved. Added I-38. Registered P4-001, P5-001. Total: 36 active, 2 removed, 11 workstreams, 2 subprojects. |
 | 1.2 | 2026-03-01 | Added I-39 (Promise Tracking & Proposal Forensics / P8). Updated WS-06 and WS-07 to include P8. Added W-16 and W-17 note pending P2 registration. Total: 37 active, 2 removed, 11 workstreams, 2 subprojects. |
 | 1.3 | 2026-03-05 | I-01 owner corrected from Bernard Lewis to Greg Bernardo. Added I-40 (Benefits Package Restructuring / P6 / Jennifer) — BIM Lead hiring blocker. Added I-41 (Enterprise Business Continuity Planning / P9 / Gregory). Updated subproject registry from 2 to 7 (added P4-002, P7-001, P7-002, P7-003, P7-004). Updated scope from P0–P7 to P0–P9. Updated WS-11 to include I-40. Updated next-initiative pointer to I-42. Total: 39 active, 2 removed, 11 workstreams, 7 subprojects. |
-
+| 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives: JSX Artifact Workflow Standard, Outlook Forward Guard, FOV Camera Tool Suite, Site Grid & Sheet Builder, Bulk Title Block Parameter Editor, AI Context Store, API-Driven Hub Script). Updated P4-002 subproject registry with I-44/I-45/I-46. Confirmed B-24 (Site Grid & Sheet Builder) and B-25 (Per-Sheet Key Plan Inset) — backlog now 25 buttons. Updated cross-reference counts for P0 (+1) and P4 (+3). Updated next-initiative pointer to I-49. Total: 46 active, 2 removed, 11 workstreams, 7 subprojects. |
 ---
 
 *This document is maintained in OneDrive at Corp/AI/Standards/ and fetched by all Claude Projects at runtime. Do not maintain separate copies in individual project knowledge bases.*
