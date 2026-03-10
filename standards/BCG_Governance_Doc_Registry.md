@@ -1,8 +1,8 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.1
+**Version:** 1.2
 **Effective:** March 2026
-**Last Updated:** 2026-03-07
+**Last Updated:** 2026-03-05
 **Scope:** All Claude Projects (P0–P8) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -110,6 +110,16 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Any Odoo module development, audit, or deployment work; P7 subproject setup |
 | **Governs** | All BCG custom Odoo 18 modules — status, version, repo location, dependencies, open items |
 
+### 3.8 SOP Governance & Intake Protocol
+
+| Field | Value |
+|-------|-------|
+| **File** | `[REF] BCG_SOP_Governance_and_Intake_Protocol.txt` |
+| **Location** | OneDrive `Corp/AI/Standards/` |
+| **Current Version** | 1.0 (pending approval) |
+| **Fetch before** | Any SOP intake classification, W-series ID assignment, or P0→P2 handoff creation |
+| **Governs** | How new workflow ideas are surfaced, classified, tiered, and handed off for SOP drafting; W-series ID registry rules; standard handoff prompt format; distinction between W-series SOPs and governance documents |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -149,10 +159,10 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 
 | Category | Count | Documents |
 |----------|-------|-----------|
-| Runtime-fetched | 7 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry |
+| Runtime-fetched | 8 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, SOP Governance & Intake Protocol |
 | Embedded | 1 | EAB |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total in Standards folder** | **9** | — |
+| **Total in Standards folder** | **10** | — |
 
 ---
 
@@ -170,6 +180,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.2 | 2026-03-05 | Added Section 3.8 — SOP Governance & Intake Protocol. Updated Section 5.2 totals (runtime-fetched 7→8, total 9→10). |
 | 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. Updated Section 5.2 totals (runtime-fetched 6→7, total 8→9). |
 | 1.0 | 2026-03-01 | Initial version. Externalized from the ~40-line GLOBAL GOVERNANCE DOCUMENTS boilerplate previously embedded in all project instructions. |
 
