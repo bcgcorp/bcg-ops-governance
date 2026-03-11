@@ -1,8 +1,8 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
-**Last Updated:** 2026-03-10
+**Last Updated:** 2026-03-11
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -158,6 +158,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | 1.2 | 2026-03-01 | Added I-39 (Promise Tracking & Proposal Forensics / P8). Updated WS-06 and WS-07 to include P8. Added W-16 and W-17 note pending P2 registration. Total: 37 active, 2 removed, 11 workstreams, 2 subprojects. |
 | 1.3 | 2026-03-05 | I-01 owner corrected from Bernard Lewis to Greg Bernardo. Added I-40 (Benefits Package Restructuring / P6 / Jennifer) — BIM Lead hiring blocker. Added I-41 (Enterprise Business Continuity Planning / P9 / Gregory). Updated subproject registry from 2 to 7 (added P4-002, P7-001, P7-002, P7-003, P7-004). Updated scope from P0–P7 to P0–P9. Updated WS-11 to include I-40. Updated next-initiative pointer to I-42. Total: 39 active, 2 removed, 11 workstreams, 7 subprojects. |
 | 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives: JSX Artifact Workflow Standard, Outlook Forward Guard, FOV Camera Tool Suite, Site Grid & Sheet Builder, Bulk Title Block Parameter Editor, AI Context Store, API-Driven Hub Script). Updated P4-002 subproject registry with I-44/I-45/I-46. Confirmed B-24 (Site Grid & Sheet Builder) and B-25 (Per-Sheet Key Plan Inset) — backlog now 25 buttons. Updated cross-reference counts for P0 (+1) and P4 (+3). Updated next-initiative pointer to I-49. Total: 46 active, 2 removed, 11 workstreams, 7 subprojects. |
+| 1.5 | 2026-03-11 | Corrected footer: OneDrive → GitHub as source of truth. No initiative data changed. |
 ---
 
 *This document is maintained in GitHub at bcgcorp/bcg-ops-governance/standards/ and fetched by all Claude Projects at runtime. Do not maintain separate copies in individual project knowledge bases.*
