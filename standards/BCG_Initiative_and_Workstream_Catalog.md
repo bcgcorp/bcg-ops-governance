@@ -160,4 +160,4 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives: JSX Artifact Workflow Standard, Outlook Forward Guard, FOV Camera Tool Suite, Site Grid & Sheet Builder, Bulk Title Block Parameter Editor, AI Context Store, API-Driven Hub Script). Updated P4-002 subproject registry with I-44/I-45/I-46. Confirmed B-24 (Site Grid & Sheet Builder) and B-25 (Per-Sheet Key Plan Inset) — backlog now 25 buttons. Updated cross-reference counts for P0 (+1) and P4 (+3). Updated next-initiative pointer to I-49. Total: 46 active, 2 removed, 11 workstreams, 7 subprojects. |
 ---
 
-*This document is maintained in OneDrive at Corp/AI/Standards/ and fetched by all Claude Projects at runtime. Do not maintain separate copies in individual project knowledge bases.*
+*This document is maintained in GitHub at bcgcorp/bcg-ops-governance/standards/ and fetched by all Claude Projects at runtime. Do not maintain separate copies in individual project knowledge bases.*
