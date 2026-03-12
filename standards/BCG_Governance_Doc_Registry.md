@@ -1,6 +1,6 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
 **Last Updated:** 2026-03-11
 **Scope:** All Claude Projects (P0–P9) and subprojects
@@ -141,6 +141,26 @@ the raw GitHub URLs listed below.
 | **Fetch before** | Any SOP intake classification, W-series ID assignment, or P0→P2 handoff creation |
 | **Governs** | How new workflow ideas are surfaced, classified, tiered, and handed off for SOP drafting; W-series ID registry rules; standard handoff prompt format; distinction between W-series SOPs and governance documents |
 
+### 3.9 Ecosystem Performance Assessment Prompt
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Ecosystem_Performance_Assessment_Prompt.md` |
+| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Performance_Assessment_Prompt.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any ecosystem-wide performance audit or tool utilization review |
+| **Governs** | Diagnostic prompt for structured performance assessment of BCG's full operational stack (Claude projects, Odoo, AI infrastructure, design tools, M365, integration layer); scoring framework; deliverable format |
+
+### 3.10 P9 Risk & Resilience Assessment Prompt
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_P9_Risk_Resilience_Prompt.md` |
+| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_P9_Risk_Resilience_Prompt.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Opening P9 Phase 1 (Dependency Risk Register); any business continuity planning session |
+| **Governs** | Phase 1 diagnostic prompt for BCG Dependency Risk Register v1.0; six dependency categories; risk rating framework; deliverable format for BCG Business Continuity Playbook |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -174,7 +194,7 @@ Embedding ensures zero-dependency availability.
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
 | **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.3 |
+| **Current Version** | 1.5 |
 | **Deployment method** | Fetched at runtime via the stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -182,11 +202,11 @@ Embedding ensures zero-dependency availability.
 
 | Category | Count | Documents |
 |----------|-------|-----------|
-| Runtime-fetched (GitHub) | 7 | Style Guide, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, SOP Governance & Intake Protocol |
+| Runtime-fetched (GitHub) | 9 | Style Guide, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, SOP Governance & Intake Protocol, Ecosystem Performance Assessment Prompt, P9 Risk & Resilience Prompt |
 | Runtime-fetched (OneDrive) | 1 | Our Guiding Principles (.docx) |
 | Embedded | 1 | EAB |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total** | **10** | — |
+| **Total** | **12** | — |
 
 ---
 
@@ -215,6 +235,7 @@ Embedding ensures zero-dependency availability.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.5 | 2026-03-11 | Added Section 3.9 — Ecosystem Performance Assessment Prompt. Added Section 3.10 — P9 Risk & Resilience Prompt. Updated Section 5.2 totals (9 GitHub runtime-fetched, 12 total). Reflects GOV-001: GitHub as single source of truth. |
 | 1.4 | 2026-03-11 | Added raw GitHub URL to Section 3.1 (Style Guide). Removed OneDrive location reference — Style Guide now on GitHub. |
 | 1.3 | 2026-03-10 | Corrected architecture: GitHub is single source of truth for all governance docs. Removed OneDrive as governance doc destination. Updated all doc entries to include raw GitHub URLs. Updated stub in Section 2 to GitHub-only fetch pattern. Updated scope to P0–P9. Added SOP Governance & Intake Protocol (Section 3.8). Updated Section 5.2 totals. |
 | 1.2 | 2026-03-10 | Added Section 3.8 — SOP Governance & Intake Protocol. (Superseded same day by v1.3 architecture correction.) |
