@@ -1,6 +1,6 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
 **Last Updated:** 2026-03-11
 **Scope:** All Claude Projects (P0–P9) and subprojects
@@ -49,6 +49,7 @@ Subprojects are specialized workstreams within a satellite project that need the
 |----|--------|----------------|-----------------|--------|
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations | Active |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, monitoring specs | Planned |
+| P8-### | P8 | RFP Pursuit Subproject | Pursuit-specific proposal packages, bid/no-bid documentation, fee estimates; one subproject per active pursuit | Active (created per W-16 trigger; naming: P8-001, P8-002, etc.) |
 
 *Add rows as subprojects are created. See Section 5 for conventions.*
 
@@ -223,6 +224,7 @@ When one project's work depends on another project's output, flag the dependency
 | P1 | Actual bid pricing and win/loss analysis | P8 | Ongoing | P8 feeds calibration data to P1 models |
 | P3 | Competitor sightings from RFP processes | P8 | Ongoing | P8 feeds intel to P3 database |
 | P5 | VPN architecture documentation (WireGuard + Tailscale) | P4 (architecture decision) | Q2 '26 | Handoff drafted 2026-03-09 |
+| P8 | W-16 RFP Review SOP (governs P8-### subproject creation trigger) | P2 | Q2 '26 | Draft complete; two items pending Gregory decision (min fee threshold, backup authority) before approval |
 
 *Add rows as cross-project dependencies are identified. Remove rows when resolved.*
 
@@ -249,6 +251,7 @@ Running log of all approved handoffs. Newest first.
 | 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
 | 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
 | 1.4 | 2026-03-11 | Added P9 (Business Continuity & Resilience) to project registry (Section 2.2), routing rules (Section 3.4), and redirects (Section 4). Corrected all OneDrive references to GitHub. Updated EAB master file location. Updated scope to P0–P9. |
+| 1.5 | 2026-03-11 | Fixed malformed P8-### subproject registry row. Added W-16 cross-project dependency (P8 ← P2). |
 ---
 
 *This document is maintained in GitHub at bcgcorp/bcg-ops-governance/standards/ and fetched by all Claude Projects at runtime. Update this file when projects are created, closed, or restructured. Do not maintain separate copies in individual project knowledge bases.*
