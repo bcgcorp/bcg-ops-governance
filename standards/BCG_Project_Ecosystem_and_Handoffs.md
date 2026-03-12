@@ -1,16 +1,16 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.3
+**Version:** 1.4
 **Effective:** March 2026
-**Last Updated:** 2026-03-09
-**Scope:** All Claude Projects (P0–P8) and subprojects
+**Last Updated:** 2026-03-11
+**Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
 
 ## 1. Purpose
 
-This document is the single source of truth for BCG's Claude Project structure: which projects exist, what they produce, how outputs flow between them, and the conventions for creating subprojects and routing work. Every Claude Project should reference this document (via OneDrive) rather than maintaining its own copy of the project registry.
+This document is the single source of truth for BCG's Claude Project structure: which projects exist, what they produce, how outputs flow between them, and the conventions for creating subprojects and routing work. Every Claude Project should reference this document (via GitHub) rather than maintaining its own copy of the project registry.
 
 ---
 
@@ -39,6 +39,7 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | P6 | HR, People & Legal Ops | Greg | Headcount planning, org chart, compensation analysis, legal documents, employment templates | P0, P1 (financial impacts) |
 | P7 | Odoo Platform & ERP | Greg | Module status, ERP readiness assessments, accounting configuration, custom module specs | P0, P2 (SOP-to-Odoo mapping), P4 (MCP integration) |
 | P8 | Proposals & RFP Operations | Greg | Bid/no-bid recommendations, proposal packages, promise tracking registers, pipeline analytics, pricing forensics | P0 (pipeline stats, capacity trends), P1 (actual pricing data, win/loss analysis), P2 (W-17 refinements), P3 (competitor sightings during pursuits), P7 (Odoo CRM pipeline requirements) |
+| P9 | Business Continuity & Resilience | Greg | Dependency risk register, continuity protocols, tabletop exercise results, W-18 BCP Review SOP | P0 (Section 4 Risk Matrix, Addendum E), P2 (W-18 SOP registration) |
 
 ### 2.3 Subproject Registry
 
@@ -108,6 +109,7 @@ Every handoff must include:
 | Proposal pricing data available | Flag for P1 | P8 fee estimates → P1 for revenue model calibration |
 | Competitor spotted in RFP process | Flag for P3 | P8 competitor sighting → P3 for database update |
 | Proposal creates Odoo CRM requirement | Flag for P7 | P8 pipeline tracking need → P7 for module spec |
+| BCP risk or continuity gap identified | Flag for P9 | Any project identifies system with no fallback → P9 risk register |
 
 **Core rule:** Subprojects report to their parent satellite — never directly to P0. The parent satellite consolidates and routes to P0 as part of its own handoff cycle.
 
@@ -140,6 +142,7 @@ I can help you frame the request for that project if you'd like.
 | Proposal pricing or fee estimate | P1, P3 | P8 — Proposals & RFP Operations |
 | Promise tracking or scope creep analysis | Any | P8 — Proposals & RFP Operations |
 | Win/loss analysis or pipeline stats | P1, P3 | P8 — Proposals & RFP Operations |
+| Business continuity or disaster recovery | Any | P9 — Business Continuity & Resilience |
 
 ---
 
@@ -184,7 +187,7 @@ Every satellite project's custom instructions must include the Ecosystem Awarene
 
 | Attribute | Value |
 |-----------|-------|
-| **Master file** | OneDrive: `Corp/AI/Standards/[REF] BCG_Ecosystem_Awareness_Block.txt` |
+| **Master file** | GitHub: `bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md` |
 | **Deployment** | Copy-paste into custom instructions (embedded, not runtime-fetched) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
 | **Update cycle** | Re-propagate to all satellites whenever the block changes |
@@ -245,6 +248,7 @@ Running log of all approved handoffs. Newest first.
 | 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
 | 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
 | 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
+| 1.4 | 2026-03-11 | Added P9 (Business Continuity & Resilience) to project registry (Section 2.2), routing rules (Section 3.4), and redirects (Section 4). Corrected all OneDrive references to GitHub. Updated EAB master file location. Updated scope to P0–P9. |
 ---
 
-*This document is maintained in OneDrive at Corp/AI/Standards/ and fetched by all Claude Projects at runtime. Update this file when projects are created, closed, or restructured. Do not maintain separate copies in individual project knowledge bases.*
+*This document is maintained in GitHub at bcgcorp/bcg-ops-governance/standards/ and fetched by all Claude Projects at runtime. Update this file when projects are created, closed, or restructured. Do not maintain separate copies in individual project knowledge bases.*

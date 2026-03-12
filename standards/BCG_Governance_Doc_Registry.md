@@ -1,8 +1,8 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.3
+**Version:** 1.4
 **Effective:** March 2026
-**Last Updated:** 2026-03-10
+**Last Updated:** 2026-03-11
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -215,6 +215,7 @@ Embedding ensures zero-dependency availability.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.4 | 2026-03-11 | Added raw GitHub URL to Section 3.1 (Style Guide). Removed OneDrive location reference — Style Guide now on GitHub. |
 | 1.3 | 2026-03-10 | Corrected architecture: GitHub is single source of truth for all governance docs. Removed OneDrive as governance doc destination. Updated all doc entries to include raw GitHub URLs. Updated stub in Section 2 to GitHub-only fetch pattern. Updated scope to P0–P9. Added SOP Governance & Intake Protocol (Section 3.8). Updated Section 5.2 totals. |
 | 1.2 | 2026-03-10 | Added Section 3.8 — SOP Governance & Intake Protocol. (Superseded same day by v1.3 architecture correction.) |
 | 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. |

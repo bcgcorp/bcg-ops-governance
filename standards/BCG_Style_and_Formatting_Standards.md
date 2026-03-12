@@ -1,10 +1,12 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.2  
-**Effective:** February 2026  
-**Last Updated:** 2026-03-01  
-**Scope:** All Claude Projects (P0–P7) and downstream deliverables  
+**Version:** 1.3  
+**Effective:** March 2026  
+**Last Updated:** 2026-03-11  
+**Scope:** All Claude Projects (P0–P9) and downstream deliverables
 **Owner:** Gregory Bernardo, President
+
+**v1.3 Changes:** Updated scope from P0–P7 to P0–P9. Added P8 and P9 to Section 10.2 project registry. Updated Section 10.3 subproject registry from 1 to 7 subprojects. Updated Section 10.4 routing rule to P1–P9. Updated Section 13 initiative count from 26 to 46 active (I-01–I-48 minus I-20 and I-32).
 
 **v1.2 Changes:** Added Section 15 (Evaluation & Analytical Report Conventions) covering change tracking, executive summary with delta, competitive feature analysis, and use case action context. Added phased rollout terminology standard ("Sprints" not "Waves") to Section 2.
 
@@ -12,7 +14,7 @@
 
 ## 1. Purpose
 
-This document defines the universal formatting, tone, document creation, and security standards for all BCG Corp Claude Projects. Every satellite project (P1–P7) and the master strategic plan (P0) must follow these rules to ensure consistency, professionalism, and confidentiality across all outputs.
+This document defines the universal formatting, tone, document creation, and security standards for all BCG Corp Claude Projects. Every satellite project (P1–P9) and the master strategic plan (P0) must follow these rules to ensure consistency, professionalism, and confidentiality across all outputs.
 
 Add this file to every Claude Project's knowledge base.
 
@@ -324,6 +326,8 @@ Subproject handoffs include the subproject ID:
 | P5 | IT Security / QOS | Compliance artifacts, QOS alignment |
 | P6 | HR, People & Legal Ops | Headcount, org chart, compensation, legal |
 | P7 | Odoo Platform & ERP | Module status, ERP readiness, accounting |
+| P8 | Proposals & RFP Operations | Bid/no-bid recommendations, proposal packages, promise tracking, pipeline analytics, pricing forensics |
+| P9 | Business Continuity & Resilience | Dependency risk register, continuity protocols, tabletop exercise results, W-18 BCP Review SOP |
 
 ### 10.3 Subproject Registry
 
@@ -332,10 +336,16 @@ Satellite projects may contain numbered subprojects for specialized workstreams 
 | ID | Parent | Subproject | What It Produces |
 |----|--------|------------|-----------------|
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 25-button backlog (B-01–B-25). |
+| P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, remediation plan |
+| P7-001 | P7 | Dev Environment & AI Tooling | Git repo, Windsurf config, Victor quickstart, CI/CD pipeline |
+| P7-002 | P7 | Platform Audit & Uplift | Automated test framework, codebase forensics, remediation |
+| P7-003 | P7 | Odoo 19 Feature Mining | Odoo 19 AI assessment, backport candidate list |
+| P7-004 | P7 | Notification Center & Invoice Request | bcg_notification_center module |
 
 ### 10.4 Routing Rule
 
-If a request would be better served in a satellite project (P1–P7) or an existing subproject, say so and explain which project and why. P0 synthesizes; satellites produce. Subprojects report to their parent satellite — not directly to P0.
+If a request would be better served in a satellite project (P1–P9) or an existing subproject, say so and explain which project and why. P0 synthesizes; satellites produce. Subprojects report to their parent satellite — not directly to P0.
 
 ### 10.5 Subproject Conventions
 
@@ -390,7 +400,7 @@ Reference these facts consistently across all projects:
 - **AI infrastructure:** 2x NVIDIA DGX Spark, 2x RTX 5090 workstations
 - **Design principles:** (1) Build to Sell, (2) Redundancy at Every Level, (3) Employee Ownership & Profit Sharing, (4) Process Before People
 - **Guiding principles:** Three core principles documented in `Our_Guiding_Principles.docx`
-- **Initiative catalog:** 26 active (I-01 through I-27, minus I-20 which was removed)
+- **Initiative catalog:** 46 active (I-01 through I-48, minus I-20 removed and I-32 rejected)
 - **Workstreams:** 11 active (WS-01 through WS-11)
 
 ---
