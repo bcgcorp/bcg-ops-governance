@@ -231,26 +231,26 @@ Check off each project after pasting the updated EAB block.
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P1 — Financial Modeling & Pricing | — | — | — | Awaiting v1.3 deployment |
-| P2 — SOP & Workflow Library | — | — | — | Awaiting v1.3 deployment |
-| P3 — Competitive Intel & BD | — | — | — | Awaiting v1.3 deployment |
-| P4 — AI Infrastructure & Deployment | — | — | — | Awaiting v1.3 deployment |
-| P5 — IT Security / QOS | — | — | — | Awaiting v1.3 deployment |
-| P6 — HR, People & Legal Ops | — | — | — | Awaiting v1.3 deployment |
-| P7 — Odoo Platform & ERP | — | — | — | Awaiting v1.3 deployment |
-| P8 — Proposals & RFP Operations | — | — | — | Awaiting v1.3 deployment |
-| P9 — Business Continuity & Resilience | v1.1 | 2026-03-05 | Greg | Needs v1.3 update |
+| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg |   |
+| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg |   |
+| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg |   |
+| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg |   |
+| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg |   |
+| P6 — HR, People & Legal Ops | v1.3 | 2026-03-12 | Greg |   |
+| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg |   |
+| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg |   |
+| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg |   |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P0-001 — Ecosystem Triage & Routing Protocol | — | — | — | New — awaiting v1.3 deployment |
-| P4-001 — MCP Evaluation & Selection | — | — | — | Awaiting v1.3 deployment |
-| P4-002 — Revit & BIM Automation | — | — | — | Awaiting v1.3 deployment |
-| P5-001 — Network Infrastructure Assessment | — | — | — | Awaiting v1.3 deployment |
-| P5-002 — Monitoring & Observability Infrastructure | — | — | — | New — awaiting v1.3 deployment |
-| P8-001 — Document Intake & Routing | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
+| P0-001 — Ecosystem Triage & Routing Protocol | v1.3 | 2026-03-12 | Greg | Deployed at project creation  |
+| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg |   |
+| P4-002 — Revit & BIM Automation  | v1.3 | 2026-03-12 | Greg |   |
+| P5-001 — Network Infrastructure Assessment  | v1.3 | 2026-03-12 | Greg |   |
+| P5-002 — Monitoring & Observability Infrastructure  | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
+| P8-001 — Document Intake & Routing  | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
 
 ### Retired (do not propagate)
 
