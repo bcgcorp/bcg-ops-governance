@@ -1,8 +1,8 @@
 # BCG Corp — SOP Governance & Intake Protocol
 
-**Version:** 1.0
+**Version:** 1.1
 **Effective:** March 2026
-**Last Updated:** 2026-03-10
+**Last Updated:** 2026-03-12
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 **Maintenance:** Jennifer Brezniak (post-approval)
@@ -113,7 +113,7 @@ Assign the next available W-series ID from the workflow registry. The
 registry is maintained in P2 and reflected in the BCG Initiative and
 Workstream Catalog.
 
-**Current highest assigned ID:** W-17 (as of 2026-03-05). Next available: W-18.
+**Current highest assigned ID:** W-20 (as of 2026-03-12). Next available: W-21.
 
 **ID rules:**
 - IDs are sequential and permanent. Once assigned, an ID is not reused
@@ -281,6 +281,7 @@ for first-pass drafting before Jennifer takes ownership.
 
 | Version | Date       | Author           | What Changed                                      |
 |---------|------------|------------------|---------------------------------------------------|
+| 1.1     | 2026-03-12 | Gregory Bernardo | Updated highest W-ID from W-17 to W-20 (W-18 Artifact Capture, W-19 Chat Quality Eval, W-20 Ecosystem Triage assigned). |
 | 1.0     | 2026-03-05 | Gregory Bernardo | Initial draft                                     |
 
 ---
