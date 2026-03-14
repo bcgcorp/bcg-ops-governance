@@ -250,7 +250,7 @@ Check off each project after pasting the updated EAB block.
 | P4-002 — Revit & BIM Automation | — | — | — | Awaiting v1.3 deployment |
 | P5-001 — Network Infrastructure Assessment | — | — | — | Awaiting v1.3 deployment |
 | P5-002 — Monitoring & Observability Infrastructure | — | — | — | New — awaiting v1.3 deployment |
-| P8-001 — Document Intake & Routing | — | — | — | New — awaiting v1.3 deployment |
+| P8-001 — Document Intake & Routing | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
 
 ### Retired (do not propagate)
 
