@@ -1,8 +1,8 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.6
+**Version:** 1.7
 **Effective:** March 2026
-**Last Updated:** 2026-03-12
+**Last Updated:** 2026-03-14
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -186,6 +186,16 @@ the raw GitHub URLs listed below.
 | **Fetch before** | Any PyRevit button development, BCG Tab panel modifications, P4-002 work |
 | **Governs** | BCG Tab 7-panel architecture (PIDS → Site Plans → Model → Data → QC → Print & Output → BCG), panel naming conventions, button placement rules. BCG Tab architecture is P0-locked — panel name/order changes require P0 approval before P4-001 can implement. |
 
+### 3.13 Ecosystem Triage & Governance Audit SOP (W-20)
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_W20_Ecosystem_Triage_SOP.md` |
+| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_W20_Ecosystem_Triage_SOP.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any ecosystem sync cycle, governance audit, ecosystem assessment trigger, or P0-001 triage work |
+| **Governs** | Intake-process-route cycle for ecosystem updates, three trigger types, four processing checklists, four-tier governance audit framework, ecosystem health metrics, standard update template |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -274,6 +284,7 @@ Documents removed from `standards/` and no longer fetched or maintained.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.7 | 2026-03-12 | Added Section 3.13 (W-20 Ecosystem Triage & Governance Audit SOP). Updated totals: 12 GitHub runtime-fetched, 15 total active. |
 | 1.6 | 2026-03-12 | Added Section 3.11 (Artifact Naming & Capture Standard) and Section 3.12 (pyRevit Tab Style Guide) — previously unregistered. Retired BCG_CONTEXT_CURRENT.md (Section 5). Added staleness notes to 3.3, 3.7, 3.8, 3.9, 3.10. Updated EAB to v1.3 (15/15 deployed). Updated totals: 11 GitHub runtime-fetched, 14 total active, 1 retired. Added Rule 7 (governance file audit). |
 | 1.5 | 2026-03-11 | Added Section 3.9 — Ecosystem Performance Assessment Prompt. Added Section 3.10 — P9 Risk & Resilience Prompt. Updated Section 5.2 totals. Reflects GOV-001. |
 | 1.4 | 2026-03-11 | Added raw GitHub URL to Section 3.1 (Style Guide). Removed OneDrive location reference. |
