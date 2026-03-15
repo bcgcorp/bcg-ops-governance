@@ -1,8 +1,8 @@
 # BCG Artifact Naming and Capture Standard
-**Version:** 1.0
-**Effective:** 2026-03-07
+**Version:** 1.1
+**Effective:** 2026-03-14
 **Owner:** Gregory Bernardo (author) / Jennifer Brezniak (ongoing maintenance)
-**Location:** OneDrive Corp/AI/Standards/ → migrating to GitHub bcg-governance (Phase 2)
+**Location:** GitHub bcgcorp/bcg-ops-governance/standards/
 **Status:** APPROVED
 
 ---
@@ -11,7 +11,7 @@
 
 This document defines how all Claude-generated artifacts are named and where
 they are stored. Consistent naming makes artifacts sortable, searchable,
-attributable, and auditable across all 17 BCG projects and all producers.
+attributable, and auditable across all 16 BCG projects and all producers.
 
 ---
 
@@ -39,6 +39,7 @@ Applies to: .docx, .md, .pdf, and all other document-type outputs.
 | Code | Project |
 |---|---|
 | P0 | Master Strategic Plan |
+| P0-001 | Ecosystem Triage & Routing Protocol |
 | P1 | Financial Modeling |
 | P2 | SOP & Workflow Library |
 | P3 | Competitive Intel |
@@ -47,13 +48,11 @@ Applies to: .docx, .md, .pdf, and all other document-type outputs.
 | P4-002 | Revit & BIM Automation |
 | P5 | IT Security / QOS |
 | P5-001 | Network Infrastructure Assessment |
+| P5-002 | Monitoring & Observability Infrastructure |
 | P6 | HR, People & Legal |
 | P7 | Odoo Platform & ERP |
-| P7-001 | Dev Environment & AI Tooling |
-| P7-002 | Platform Audit & Uplift |
-| P7-003 | Odoo 19 Feature Mining |
-| P7-004 | Notification Center & Invoice Req |
 | P8 | Proposals & RFP |
+| P8-001 | Document Intake & Routing |
 | P9 | Business Continuity |
 
 ### Examples
@@ -147,11 +146,12 @@ is available via M365 connector write permissions (pending P5 assessment).
 ### Who Does This
 
 Every producer is responsible for their own captures:
-- Gregory — P0, P1, P3, P8, P9 outputs
-- Bob — P5, P5-001, P7-001 outputs
-- Jason — P4, P4-001, P4-002 outputs (post-onboarding)
+- Gregory — P0, P0-001, P1, P3, P8, P9 outputs
+- Bob — P5, P5-001, P5-002 outputs
+- Jason — P4, P4-001, P4-002 outputs (post-onboarding April 1)
 - Jennifer — P2, P6 outputs
-- Victor — P7, P7-004 outputs
+- Victor — P7 outputs
+- Rachel — P8-001 outputs
 
 ---
 
@@ -170,6 +170,15 @@ write permissions. Eliminates the manual download-rename-upload step.
 
 - This document is owned by Jennifer Brezniak for ongoing updates
 - Changes require Gregory's approval before taking effect
-- Version history maintained in GitHub bcg-governance (Phase 2 onwards)
+- Maintained in GitHub at bcgcorp/bcg-ops-governance/standards/
 - Any new project codes added to the ecosystem must be added to Section 1
   project codes table within one week of project registration
+
+---
+
+## CHANGE LOG
+
+| Version | Date | What Changed |
+|---------|------|--------------|
+| 1.1 | 2026-03-14 | Updated project codes table: removed retired P7-001, P7-002, P7-003, P7-004; added P0-001, P4-002, P5-001, P5-002, P8-001. Fixed project count 17→16. Updated Section 3 producer list (added Rachel for P8-001; split Bob from P5-001/P5-002). Updated file location from OneDrive to GitHub. |
+| 1.0 | 2026-03-07 | Initial version. |

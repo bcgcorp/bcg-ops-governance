@@ -1,5 +1,5 @@
 # BCG Ecosystem Vocabulary
-**Version:** 1.0
+**Version:** 1.1
 **Last Updated:** 2026-03-14
 **Owner:** Gregory Bernardo
 **GitHub:** bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Vocabulary.md
@@ -60,7 +60,7 @@
 | Governance Doc Registry | Master index of all BCG governance documents. Single source of truth for what documents exist, where they live, and when to fetch them. GitHub: bcg-ops-governance/standards/. |
 | P0 | The master strategic plan hub. Consumes approved outputs from satellites (P1–P9). Does not produce; it synthesizes. |
 | Satellite project | Any of P1–P9 (and their subprojects). Production work happens here. Outputs flow one-directionally to P0. |
-| Initiative Catalog | The authoritative list of all 59 active initiatives (I-01–I-62, minus I-20 and I-32). GitHub: bcg-ops-governance/standards/. |
+| Initiative Catalog | The authoritative list of all 60 active initiatives (I-01–I-62, minus I-20 and I-32). GitHub: bcg-ops-governance/standards/. |
 
 ---
 
@@ -81,7 +81,8 @@
 ## 5. Change Log
 
 | Version | Date | What Changed |
-|---------|------|-------------|
+|---------|------|--------------|
+| 1.1 | 2026-03-14 | Fixed initiative count: "59 active" → "60 active" in Section 3 (Initiative Catalog definition). Updated pyRevit button backlog to B-01–B-27 (27 buttons) in Section 2. |
 | 1.0 | 2026-03-14 | Initial version. Registered as I-62 deliverable (W-22, BCG Ecosystem Vocabulary governance artifact). Extracted from scattered copies in agenda templates, JSX artifacts, and P0 instructions. |
 
 ---

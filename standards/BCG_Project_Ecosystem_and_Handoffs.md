@@ -1,8 +1,8 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.5
+**Version:** 1.6
 **Effective:** March 2026
-**Last Updated:** 2026-03-11
+**Last Updated:** 2026-03-14
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -27,12 +27,12 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | **Key Inputs** | Approved handoffs from P1–P8 and subprojects (via parent satellite) |
 | **Key Outputs** | Strategic synthesis, cross-project alignment, consolidated planning |
 
-### 2.2 Satellite Projects (P1–P7)
+### 2.2 Satellite Projects (P1–P9)
 
 | ID | Project | Owner | What It Produces | Key Consumers |
 |----|---------|-------|-----------------|---------------|
 | P1 | Financial Modeling & Pricing | Greg | Revenue models, pricing analysis, break-even, compensation modeling, budget impacts | P0, P6 (comp implications) |
-| P2 | SOP & Workflow Library | Greg | Approved SOPs (W-01 through W-17+), PROD-series, process documentation, Odoo task templates | P0, P7 (Odoo mapping), all projects (process reference) |
+| P2 | SOP & Workflow Library | Greg | Approved SOPs (W-01 through W-22+), PROD-series, process documentation, Odoo task templates | P0, P7 (Odoo mapping), all projects (process reference) |
 | P3 | Competitive Intel & BD | Greg | Competitor updates, teaming evaluations, decision-maker playbook, market positioning | P0 |
 | P4 | AI Infrastructure & Deployment | Greg | AI configs, deployment runbooks, MCP integrations, guardrails, monitoring architecture | P0, P5 (security review), P7 (Odoo MCP) |
 | P5 | IT Security / QOS | Greg + Bob | Compliance artifacts, NIST CSF 2.0 alignment, CIS Controls implementation, Defender policies | P0, P4 (security requirements) |
@@ -47,9 +47,14 @@ Subprojects are specialized workstreams within a satellite project that need the
 
 | ID | Parent | Subproject Name | What It Produces | Status |
 |----|--------|----------------|-----------------|--------|
+| P0-001 | P0 | Ecosystem Triage & Routing Protocol | W-20 SOP, update classification matrix, standard update template, processing checklists, routing rules | Active |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations | Active |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 27-button backlog (B-01–B-27). | Active |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, monitoring specs | Planned |
-| P8-### | P8 | RFP Pursuit Subproject | Pursuit-specific proposal packages, bid/no-bid documentation, fee estimates; one subproject per active pursuit | Active (created per W-16 trigger; naming: P8-001, P8-002, etc.) |
+| P5-002 | P5 | Monitoring & Observability Infrastructure | Grafana/Prometheus/Loki stack. Phase 1 complete. Phase 2 gated on Jason (April 1). | Phase 1 Complete |
+| P8-001 | P8 | Document Intake & Routing | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. | Active |
+
+**Retired subprojects (2026-03-12):** P7-001, P7-002, P7-003, P7-004 — all knowledge consolidated into P7 parent (Odoo Automation & Configuration Library).
 
 *Add rows as subprojects are created. See Section 5 for conventions.*
 
@@ -84,7 +89,7 @@ A handoff occurs when:
 - A deliverable is approved (`[APPROVED — v{date}]`) and has value for another project
 - A subproject completes an evaluation, analysis, or recommendation that the parent needs to act on
 - A project discovers work that belongs in a different project's scope (routing redirect)
-- Cross-project dependencies are identified (e.g., P4 MCP deployment requires P5 security review)
+- Cross-project dependencies are identified
 
 ### 3.3 Handoff Content Requirements
 
@@ -99,7 +104,7 @@ Every handoff must include:
 ### 3.4 Handoff Routing Rules
 
 | Scenario | Route | Example |
-|----------|-------|---------|
+|----------|-------|----------|
 | Satellite produces a strategic insight | Satellite → P0 | P3 competitive analysis → P0 strategic plan |
 | Subproject completes an evaluation | Subproject → Parent satellite | P4-001 MCP selection → P4 for deployment |
 | Work belongs in a different satellite | Redirect with explanation | P4 identifies SOP need → redirect to P2 |
@@ -122,8 +127,8 @@ When a request arrives in the wrong project, Claude should redirect rather than 
 
 **Template:**
 ```
-This request is better served in P{#} — {project name} because {reason}. 
-That project handles {scope description}. 
+This request is better served in P{#} — {project name} because {reason}.
+That project handles {scope description}.
 I can help you frame the request for that project if you'd like.
 ```
 
@@ -165,11 +170,11 @@ Do NOT create a subproject for:
 ### 5.2 Subproject Structure
 
 | Element | Convention |
-|---------|-----------|
+|---------|------------|
 | **Numbering** | Three-digit sequential within parent: P4-001, P4-002, P4-003 |
 | **Naming** | Descriptive name after the ID (e.g., "MCP Evaluation & Selection") |
 | **Claude Project** | Each subproject gets its own Claude Project with custom instructions |
-| **Knowledge base** | Scoped to that workstream. Shared governance docs fetched from OneDrive. |
+| **Knowledge base** | Scoped to that workstream. Shared governance docs fetched from GitHub. |
 | **Inheritance** | Subprojects inherit all security boundaries and formatting standards from the master style guide and their parent project |
 | **Precedence** | Parent project-specific instructions take precedence over subproject instructions in case of conflict |
 
@@ -179,8 +184,8 @@ Do NOT create a subproject for:
 |-------|--------|
 | **Creation** | Parent project owner (usually Greg) decides a workstream needs isolation. Assigns ID, creates Claude Project, writes custom instructions. |
 | **Active** | Subproject produces deliverables, manages its own knowledge base, hands off approved outputs to parent. |
-| **Dormant** | Workstream complete but may reactivate (e.g., quarterly evaluation cycles). Project remains, no active work. |
-| **Closed** | Workstream permanently complete. Final handoff to parent. Knowledge base archived. Claude Project can be deleted. |
+| **Dormant** | Workstream complete but may reactivate. Project remains, no active work. |
+| **Retired** | Workstream permanently complete. Final handoff to parent. Knowledge base archived. Claude Project can be deleted. |
 
 ### 5.4 Ecosystem Awareness Block (EAB)
 
@@ -189,6 +194,7 @@ Every satellite project's custom instructions must include the Ecosystem Awarene
 | Attribute | Value |
 |-----------|-------|
 | **Master file** | GitHub: `bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Awareness_Block.md` |
 | **Deployment** | Copy-paste into custom instructions (embedded, not runtime-fetched) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
 | **Update cycle** | Re-propagate to all satellites whenever the block changes |
@@ -211,7 +217,7 @@ When one project's work depends on another project's output, flag the dependency
 [DEPENDENCY: P{#} needs {what} from P{#} by {when}]
 ```
 
-**Active Dependencies (as of March 2026):**
+**Active Dependencies (as of 2026-03-14):**
 
 | Dependent Project | Needs | From Project | By When | Status |
 |-------------------|-------|-------------|---------|--------|
@@ -224,7 +230,7 @@ When one project's work depends on another project's output, flag the dependency
 | P1 | Actual bid pricing and win/loss analysis | P8 | Ongoing | P8 feeds calibration data to P1 models |
 | P3 | Competitor sightings from RFP processes | P8 | Ongoing | P8 feeds intel to P3 database |
 | P5 | VPN architecture documentation (WireGuard + Tailscale) | P4 (architecture decision) | Q2 '26 | Handoff drafted 2026-03-09 |
-| P8 | W-16 RFP Review SOP (governs P8-### subproject creation trigger) | P2 | Q2 '26 | Draft complete; two items pending Gregory decision (min fee threshold, backup authority) before approval |
+| P8 | W-16 RFP Review SOP | P2 | Q2 '26 | ✅ Resolved 2026-03-12 — W-16 6a ($15K auto no-bid) and 6b (Stephanie backup authority) closed. |
 
 *Add rows as cross-project dependencies are identified. Remove rows when resolved.*
 
@@ -245,13 +251,15 @@ Running log of all approved handoffs. Newest first.
 ## 8. Change Log
 
 | Version | Date | What Changed |
-|---------|------|-------------|
-| 1.0 | 2026-03-01 | Initial version. Extracted from BCG_Style_and_Formatting_Standards.md Section 10, expanded with handoff content requirements, routing redirects, cross-project dependencies, and handoff log. |
-| 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
-| 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
-| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
-| 1.4 | 2026-03-11 | Added P9 (Business Continuity & Resilience) to project registry (Section 2.2), routing rules (Section 3.4), and redirects (Section 4). Corrected all OneDrive references to GitHub. Updated EAB master file location. Updated scope to P0–P9. |
+|---------|------|--------------|
+| 1.6 | 2026-03-14 | Updated Section 2.3 subproject registry: added P0-001 (Ecosystem Triage), P4-002 (Revit & BIM Automation), P5-002 (Monitoring & Observability); noted P7-001–P7-004 retirement (2026-03-12). Updated Section 5.2 knowledge base location from OneDrive to GitHub. Resolved W-16 dependency row in Section 6 (both decisions closed 2026-03-12). |
 | 1.5 | 2026-03-11 | Fixed malformed P8-### subproject registry row. Added W-16 cross-project dependency (P8 ← P2). |
+| 1.4 | 2026-03-11 | Added P9 (Business Continuity & Resilience) to project registry (Section 2.2), routing rules (Section 3.4), and redirects (Section 4). Corrected all OneDrive references to GitHub. Updated EAB master file location. Updated scope to P0–P9. |
+| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
+| 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
+| 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
+| 1.0 | 2026-03-01 | Initial version. Extracted from BCG_Style_and_Formatting_Standards.md Section 10, expanded with handoff content requirements, routing redirects, cross-project dependencies, and handoff log. |
+
 ---
 
 *This document is maintained in GitHub at bcgcorp/bcg-ops-governance/standards/ and fetched by all Claude Projects at runtime. Update this file when projects are created, closed, or restructured. Do not maintain separate copies in individual project knowledge bases.*

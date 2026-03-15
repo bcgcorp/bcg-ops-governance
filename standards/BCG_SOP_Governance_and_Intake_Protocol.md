@@ -1,8 +1,8 @@
 # BCG Corp — SOP Governance & Intake Protocol
 
-**Version:** 1.1
+**Version:** 1.2
 **Effective:** March 2026
-**Last Updated:** 2026-03-12
+**Last Updated:** 2026-03-14
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 **Maintenance:** Jennifer Brezniak (post-approval)
@@ -113,7 +113,7 @@ Assign the next available W-series ID from the workflow registry. The
 registry is maintained in P2 and reflected in the BCG Initiative and
 Workstream Catalog.
 
-**Current highest assigned ID:** W-20 (as of 2026-03-12). Next available: W-21.
+**Current highest assigned ID:** W-22 (as of 2026-03-14). Next available: **W-23**.
 
 **ID rules:**
 - IDs are sequential and permanent. Once assigned, an ID is not reused
@@ -281,6 +281,7 @@ for first-pass drafting before Jennifer takes ownership.
 
 | Version | Date       | Author           | What Changed                                      |
 |---------|------------|------------------|---------------------------------------------------|
+| 1.2     | 2026-03-14 | Gregory Bernardo | Updated highest assigned W-ID from W-20 to W-22 (W-21 Document Storage SOP candidate, W-22 Weekly Sync Agenda Process assigned 2026-03-14). Updated next available slot to W-23. Updated file location to GitHub per GOV-001. |
 | 1.1     | 2026-03-12 | Gregory Bernardo | Updated highest W-ID from W-17 to W-20 (W-18 Artifact Capture, W-19 Chat Quality Eval, W-20 Ecosystem Triage assigned). |
 | 1.0     | 2026-03-05 | Gregory Bernardo | Initial draft                                     |
 
@@ -289,15 +290,3 @@ for first-pass drafting before Jennifer takes ownership.
 *This document is indexed in the BCG Governance Doc Registry at
 `bcgcorp/bcg-ops-governance/standards/BCG_Governance_Doc_Registry.md`
 and fetched at runtime by Claude projects via web_fetch.*
-```
-
----
-
-**Commit message:**
-```
-Add BCG_SOP_Governance_and_Intake_Protocol.md (v1.0)
-
-New governance document defining SOP intake, classification, W-series
-ID assignment, and P0→P2 handoff protocol. Converted from OneDrive
-.txt to GitHub .md per architecture decision (GitHub = single source
-of truth for governance docs).

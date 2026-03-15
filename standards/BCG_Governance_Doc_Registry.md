@@ -1,6 +1,6 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.7
+**Version:** 1.2
 **Effective:** March 2026
 **Last Updated:** 2026-03-14
 **Scope:** All Claude Projects (P0–P9) and subprojects
@@ -10,64 +10,53 @@
 
 ## 1. Purpose
 
-This file is the single index of all BCG governance documents maintained
-in GitHub at `bcgcorp/bcg-ops-governance/standards/` as the single source
-of truth. Every Claude Project's instructions contain a short stub pointing
-to this registry rather than embedding the full document list. When the
-governance doc collection changes (new docs added, files renamed, fetch
-triggers updated), only this file is edited — not 15+ project instructions.
+This file is the single index of all BCG governance documents maintained in GitHub at `bcgcorp/bcg-ops-governance/standards/`. Every Claude Project's instructions contain a governance stub pointing to this registry. When the governance doc collection changes (new docs added, files renamed, fetch triggers updated), only this file is edited — not 16+ project instructions.
 
-**Update this file when:** a governance document is added, renamed, retired,
-or its fetch triggers change.
+**Source of truth:** GitHub (`bcg-ops-governance/standards/`). Per GOV-001 (approved 2026-03-11), GitHub is the authoritative fetch source. OneDrive is archive/backup only.
 
-**Architecture:**
-- Governance documents (.md) → GitHub `bcgcorp/bcg-ops-governance/standards/`
-  fetched via `web_fetch` raw URLs
-- Shareable/distributable files (.docx, .pdf) → OneDrive `Corp/` folders
-  fetched via MS365 connector
-- The two layers do not overlap. OneDrive is not a source of truth for
-  governance content.
+**Update this file when:** a governance document is added, renamed, retired, or its fetch triggers change.
+
+**Base path:** `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/`
 
 ---
 
 ## 2. How Projects Use This Registry
 
-Each Claude Project's custom instructions contain a stub like this:
+Each Claude Project's custom instructions contain a governance stub:
+
 ```
 GLOBAL GOVERNANCE DOCUMENTS
 
-BCG maintains governance documents in GitHub as the single source of truth.
-Before producing work, fetch the Governance Doc Registry:
-- URL: https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md
-- Action: Fetch this URL first. It lists all governance docs, their raw
-  GitHub URLs, fetch triggers, and rules. Then fetch only the docs
-  relevant to the current task — not all of them every time.
+BCG maintains governance documents in GitHub as the single source of
+truth (GOV-001, approved 2026-03-11). All standards files live at:
 
-If GitHub registry fetch fails, flag:
-[GOVERNANCE WARNING: GitHub registry fetch failed. Proceed with best
-available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED]
+BASE PATH: https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/
+
+STEP 1 — Fetch the Registry first:
+https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md
+
+STEP 2 — Fetch only the docs relevant to the current task using the
+direct URLs listed in the Registry. Do not fetch all docs every time.
+
+If GitHub fetch fails on any file, flag:
+[GOVERNANCE WARNING: GitHub fetch failed for [filename]. Proceed with
+best available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED]
 until Gregory confirms whether to continue or reschedule.]
 ```
-
-The stub is identical across all projects. It never needs editing unless
-the registry URL itself changes.
 
 ---
 
 ## 3. Runtime-Fetched Governance Documents
 
-These documents are fetched by Claude during conversations when the task
-matches the fetch trigger. Fetch only the ones relevant to the current
-task — not all every time. All documents are fetched via `web_fetch` using
-the raw GitHub URLs listed below.
+Fetch only the ones relevant to the current task — not all every time. Use the fetch triggers below to decide.
 
 ### 3.1 BCG Style and Formatting Standards
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Style_and_Formatting_Standards.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Style_and_Formatting_Standards.md` |
-| **Current Version** | See file header |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Style_and_Formatting_Standards.md` |
+| **Current Version** | 1.4 |
 | **Fetch before** | Any document creation, formatting decision, evaluation report, or when uncertain about BCG conventions |
 | **Governs** | Typography, colors, tables, timeline tags, security boundaries, evaluation conventions, EAB specification, project/subproject registries, SOP format, contribution workflow, pressure-test framework |
 
@@ -76,225 +65,199 @@ the raw GitHub URLs listed below.
 | Field | Value |
 |-------|-------|
 | **File** | `[TEAM] Our Guiding Principles.docx` |
-| **Location** | OneDrive `Corp/AI/Standards/` — fetch via MS365 connector |
+| **Location** | OneDrive `Corp/AI/Standards/` (not raw-fetchable — .docx format) |
 | **Fetch before** | Strategic, culture, or principles-related outputs |
 | **Governs** | BCG Corp's three core principles |
-| **Note** | This is the only governance document that remains on OneDrive. It is a .docx intended for distribution; it is not a machine-readable governance file. |
 
 ### 3.3 Project Ecosystem & Handoffs
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Project_Ecosystem_and_Handoffs.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Project_Ecosystem_and_Handoffs.md` |
-| **Current Version** | See file header |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Project_Ecosystem_and_Handoffs.md` |
+| **Current Version** | 1.6 |
 | **Fetch before** | Cross-project routing decisions, handoff creation, subproject setup, dependency tracking |
 | **Governs** | Project registry (P0–P9), subproject registry, routing rules, handoff label format, dependency tracking, EAB deployment specification |
-| **Staleness note** | v1.3 (2026-03-09) — needs update to v1.4: add P9, P0-001, P4-002, P5-002, P8-001; retire P7-001 through P7-004; update owners |
 
 ### 3.4 Team Directory & Roles
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Team_Directory.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Team_Directory.md` |
-| **Current Version** | See file header |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Team_Directory.md` |
+| **Current Version** | 2.0 |
 | **Fetch before** | Assigning owners/reviewers, referencing team members, onboarding tasks, headcount questions |
-| **Governs** | Roster, titles, emails, project assignments, availability, current headcount, restricted assignments |
+| **Governs** | Roster, titles, emails, project assignments, availability, current headcount |
 
 ### 3.5 Infrastructure Inventory
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Infrastructure_Inventory.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Infrastructure_Inventory.md` |
-| **Current Version** | See file header |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Infrastructure_Inventory.md` |
+| **Current Version** | 1.1 |
 | **Fetch before** | Deployment plans, security assessments, technology evaluations, infrastructure references, data classification questions |
-| **Governs** | Compute (VM hosts, AI hardware), servers, endpoints, network (pfSense, WireGuard, Tailscale), ERP (Odoo 18), cloud platforms, AI tools, security controls, data classification tiers, monitoring status (P5-002), MCP deployment tracker, GitHub repos, planned infrastructure changes |
+| **Governs** | Compute (VM hosts, AI hardware), servers, endpoints, network, ERP (Odoo 18), cloud platforms, AI tools, security controls, data classification tiers, monitoring status, MCP deployment tracker, planned infrastructure changes |
 
 ### 3.6 Initiative & Workstream Catalog
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | See file header |
-| **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | Active initiatives (59 as of v1.6), workstreams (WS-01–WS-11), initiative ownership, target timelines, dependencies, subproject registry |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Initiative_and_Workstream_Catalog.md` |
+| **Current Version** | 1.7 |
+| **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment (always fetch before assigning a new I-number to confirm next available slot) |
+| **Governs** | Active initiatives (I-01–I-62, minus I-20 removed and I-32 rejected; 60 active total), workstreams (WS-01–WS-11), subproject registry, initiative ownership, target timelines, dependencies. Next available slot: I-63. |
 
 ### 3.7 Custom Module Registry
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Custom_Module_Registry.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Custom_Module_Registry.md` |
-| **Current Version** | See file header |
-| **Fetch before** | Any Odoo module development, audit, or deployment work |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Custom_Module_Registry.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any Odoo module development, audit, or deployment work; P7 subproject setup |
 | **Governs** | All BCG custom Odoo 18 modules — status, version, repo location, dependencies, open items |
-| **Staleness note** | v1.0 (2026-03-07) — only 7 of 17 modules documented. Victor audit needed to populate remaining 10. |
 
-### 3.8 SOP Governance & Intake Protocol
-
-| Field | Value |
-|-------|-------|
-| **File** | `BCG_SOP_Governance_and_Intake_Protocol.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_SOP_Governance_and_Intake_Protocol.md` |
-| **Current Version** | 1.0 |
-| **Fetch before** | Any SOP intake classification, W-series ID assignment, or P0→P2 handoff creation |
-| **Governs** | How new workflow ideas are surfaced, classified, tiered, and handed off for SOP drafting; W-series ID registry rules; standard handoff prompt format |
-| **Staleness note** | Says "highest assigned: W-17" — should be W-20 (W-18 Artifact Capture, W-19 Chat Quality Eval, W-20 Ecosystem Triage) |
-
-### 3.9 Ecosystem Performance Assessment Prompt
-
-| Field | Value |
-|-------|-------|
-| **File** | `BCG_Ecosystem_Performance_Assessment_Prompt.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Performance_Assessment_Prompt.md` |
-| **Current Version** | 1.0 |
-| **Fetch before** | Any ecosystem-wide performance audit or tool utilization review |
-| **Governs** | Diagnostic prompt for structured performance assessment of BCG's full operational stack |
-| **Staleness note** | v1.0 (2026-03-11) — references 11 projects (should be 16), 25 PyRevit buttons (should be 27), missing team members. Update needed. |
-
-### 3.10 P9 Risk & Resilience Assessment Prompt
-
-| Field | Value |
-|-------|-------|
-| **File** | `BCG_P9_Risk_Resilience_Prompt.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_P9_Risk_Resilience_Prompt.md` |
-| **Current Version** | 1.0 |
-| **Fetch before** | Opening P9 Phase 1 (Dependency Risk Register); any business continuity planning session |
-| **Governs** | Phase 1 diagnostic prompt for BCG Dependency Risk Register v1.0 |
-| **Staleness note** | v1.0 (2026-03-11) — same project count and people gaps as 3.9. Lower priority since it's a diagnostic prompt. |
-
-### 3.11 Artifact Naming & Capture Standard
-
-| Field | Value |
-|-------|-------|
-| **File** | `BCG_Artifact_Naming_and_Capture_Standard.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Artifact_Naming_and_Capture_Standard.md` |
-| **Current Version** | See file header |
-| **Fetch before** | Any JSX/HTML artifact creation, UI artifact export, artifact naming decision |
-| **Governs** | Artifact naming convention (BCG-UI-[PROJECT]-[TYPE]-v[#]), export rules, storage path (Corp/AI/Tools/UI-Library/), security constraints for Tier 1/2 data in artifacts |
-
-### 3.12 pyRevit Tab Style Guide
+### 3.8 BCG pyRevit Tab Style Guide
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_pyRevit_Tab_Style_Guide.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_pyRevit_Tab_Style_Guide.md` |
-| **Current Version** | See file header |
-| **Fetch before** | Any PyRevit button development, BCG Tab panel modifications, P4-002 work |
-| **Governs** | BCG Tab 7-panel architecture (PIDS → Site Plans → Model → Data → QC → Print & Output → BCG), panel naming conventions, button placement rules. BCG Tab architecture is P0-locked — panel name/order changes require P0 approval before P4-001 can implement. |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_pyRevit_Tab_Style_Guide.md` |
+| **Document ID** | P4-001-STY-001 |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any pyRevit button development, BCG tab panel changes, icon creation, WPF dialog theming, tooltip authoring, error UX design, or button backlog work (B-01–B-27) in any project or subproject |
+| **Governs** | Tab panel architecture (7 panels, fixed order, P0 approval gate), UI control selection, naming conventions, tooltip 3-line structure, icon specifications (32×32 + 16×16, 7-color palette), error handling UX, success feedback, Help & Support panel, version control scheme, deployment checklist |
+| **P0 approval gate** | Panel name changes, panel order changes, and naming convention changes require P0 approval before P4-001 implements. Tooltip/icon/error UX changes → P4-001 implements and informs P0 after. |
+| **Note** | Icon palette Navy `#1B3A5C` is intentionally different from document brand Navy `#1B365D` — optimized for 32×32 px on Revit ribbon background. Do NOT correct `#1B3A5C` to `#1B365D` in icon contexts. Ruling confirmed 2026-03-14. |
 
-### 3.13 Ecosystem Triage & Governance Audit SOP (W-20)
+### 3.9 Ecosystem Vocabulary
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Ecosystem_Vocabulary.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Vocabulary.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Weekly sync agenda generation (Page 3 vocabulary section), BCG-Wizard guide updates, any output requiring ecosystem term definitions, onboarding materials |
+| **Governs** | Single source of truth for all BCG ecosystem terminology: command terms, numbering patterns (I-/W-/D-/B-/WS-), document & process terms, status terms. All surfaces reference this file — never duplicate definitions. |
+
+### 3.10 SOP Governance & Intake Protocol
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_SOP_Governance_and_Intake_Protocol.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_SOP_Governance_and_Intake_Protocol.md` |
+| **Current Version** | 1.2 |
+| **Fetch before** | Creating a new SOP, assigning a W-series ID, routing a SOP idea from any satellite to P2, or generating a P0→P2 handoff prompt for a new workflow |
+| **Governs** | SOP intake classification, tier assignment (Tier 1/2/3), W-series ID assignment, standard P0→P2 handoff prompt format, approval loop, registry update checklist. Current highest assigned W-ID: W-22. Next available: W-23. |
+
+### 3.11 W-20 Ecosystem Triage SOP
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_W20_Ecosystem_Triage_SOP.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_W20_Ecosystem_Triage_SOP.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_W20_Ecosystem_Triage_SOP.md` |
 | **Current Version** | 1.0 |
-| **Fetch before** | Any ecosystem sync cycle, governance audit, ecosystem assessment trigger, or P0-001 triage work |
-| **Governs** | Intake-process-route cycle for ecosystem updates, three trigger types, four processing checklists, four-tier governance audit framework, ecosystem health metrics, standard update template |
+| **Fetch before** | Running ecosystem triage (biweekly sync), processing structural changes (new I-numbers, subprojects), conducting governance audits, ecosystem health assessment |
+| **Governs** | Intake-process-route cycle for P0; three trigger types (scheduled, event-driven, structural); four processing checklists (4A–4C); four-tier governance audit framework (Tier 1 every sync through Tier 4 annual); ecosystem health metrics; standard update template for satellite → P0 updates |
+
+### 3.12 Artifact Naming & Capture Standard
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Artifact_Naming_and_Capture_Standard.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Artifact_Naming_and_Capture_Standard.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Naming or storing any Claude-generated document or UI artifact, setting up output folder structure, onboarding a new producer |
+| **Governs** | Document naming convention (`[STATUS]_[PROJECT]_[Topic]_[YYYY-MM-DD].[ext]`), UI artifact naming (`BCG-UI-[PROJECT]-[TYPE]-v[#]`), capture workflow (Option A manual, Option B future automated), security constraints on artifact export |
+
+### 3.13 Ecosystem Performance Assessment Prompt
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Ecosystem_Performance_Assessment_Prompt.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Performance_Assessment_Prompt.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Running a performance audit of BCG's operational stack (Claude ecosystem, Odoo, AI infrastructure, design tools, M365, overall integration). Quarterly or on-demand. |
+| **Governs** | Diagnostic prompt and assessment framework for ecosystem performance evaluation. Covers 6 categories. Produces executive summary, category scorecards, cross-cutting findings, priority action list. |
+
+### 3.14 P9 Risk & Resilience Assessment Prompt
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_P9_Risk_Resilience_Prompt.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_P9_Risk_Resilience_Prompt.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Beginning P9 Phase 1 (Dependency Risk Register), conducting business continuity assessment, identifying single points of failure |
+| **Governs** | Diagnostic prompt for P9 Phase 1 risk assessment. Covers 6 dependency categories. Produces BCG Dependency Risk Register v1.0, top failure scenarios, critical gaps summary, continuity protocol recommendations. |
 
 ---
 
 ## 4. Embedded Governance Documents
 
-These documents are NOT fetched at runtime. They are pasted directly into
-project instructions during setup or propagation.
+These documents are NOT fetched at runtime. They are pasted directly into project instructions during setup or propagation.
 
 ### 4.1 Ecosystem Awareness Block (EAB)
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Ecosystem_Awareness_Block.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Awareness_Block.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Awareness_Block.md` |
 | **Current Version** | 1.3 |
 | **Deployment method** | Copy-paste into custom instructions (not fetched at runtime) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
-| **Scope** | All satellite projects (P1–P9) and subprojects |
-| **Update trigger** | New project/subproject created, project renamed/closed, routing pattern added |
-| **Last propagated** | 2026-03-12 — 15/15 projects deployed |
+| **Scope** | All satellite projects (P1–P9) and subprojects (P0-001, P4-001, P4-002, P5-001, P5-002, P8-001) |
+| **Update trigger** | New project/subproject created or retired, project renamed/closed, routing pattern added |
 
-**Why embedded, not fetched:** The EAB provides cross-project routing and
-handoff capabilities. These must work even when GitHub is unavailable.
-Embedding ensures zero-dependency availability.
+**Why embedded, not fetched:** The EAB provides cross-project routing and handoff capabilities that must work even when GitHub is unavailable. Embedding ensures zero-dependency availability.
 
 ---
 
-## 5. Retired Documents
+## 5. This Registry
 
-Documents removed from `standards/` and no longer fetched or maintained.
-
-| File | Retired | Reason |
-|------|---------|--------|
-| `BCG_CONTEXT_CURRENT.md` | 2026-03-12 | Context fallback file superseded by Ecosystem Status file (v3.3). Ecosystem Status provides same context with more detail and is maintained on every sync cycle. |
-
----
-
-## 6. This Registry
-
-### 6.1 Self-Reference
+### 5.1 Self-Reference
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Raw URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.6 |
-| **Deployment method** | Fetched at runtime via the stub in each project's instructions |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
+| **Current Version** | 1.2 |
+| **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
-### 6.2 Total Document Count
+### 5.2 Total Document Count
 
 | Category | Count | Documents |
-|----------|-------|-----------|
-| Runtime-fetched (GitHub) | 11 | Style Guide, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, SOP Governance & Intake Protocol, Ecosystem Performance Assessment Prompt, P9 Risk & Resilience Prompt, Artifact Naming & Capture Standard, pyRevit Tab Style Guide |
-| Runtime-fetched (OneDrive) | 1 | Our Guiding Principles (.docx) |
-| Embedded | 1 | EAB |
+|----------|-------|----------|
+| Runtime-fetched (.md) | 13 | Style Guide, Project Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, pyRevit Tab Style Guide, Ecosystem Vocabulary, SOP Governance & Intake Protocol, W-20 Triage SOP, Artifact Naming Standard, Ecosystem Performance Assessment Prompt, P9 Risk & Resilience Prompt |
+| Runtime-fetched (.docx, non-raw) | 1 | Guiding Principles (OneDrive only) |
+| Embedded (EAB) | 1 | Ecosystem Awareness Block |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total active** | **14** | — |
-| Retired | 1 | BCG_CONTEXT_CURRENT.md |
+| **Total in Standards folder** | **16** | — |
 
 ---
 
-## 7. Rules
+## 6. Rules
 
-1. **GitHub is the single source of truth** for all governance documents.
-   Do not maintain duplicate copies in OneDrive for machine-readable
-   governance files.
-2. **OneDrive is for distributable files only** — .docx, .pdf, and files
-   intended for human sharing (e.g., Our Guiding Principles.docx,
-   Risk Register.docx). These are not fetched as governance inputs.
-3. **Fetch only relevant documents** per task — not all runtime docs every
-   time. Use the fetch triggers in Section 3 to decide which to pull.
-4. **If GitHub fetch fails,** proceed with best available knowledge and
-   flag: `[GOVERNANCE WARNING: GitHub registry fetch failed. Proceed with
-   best available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED]
-   until Gregory confirms whether to continue or reschedule.]`
-5. **When updating any governance document,** update this registry if the
-   version number, filename, or fetch triggers changed.
-6. **EAB updates require propagation** to all satellite projects and
-   subprojects. See EAB file for propagation tracker.
-7. **Governance file audit** is mandatory at every ecosystem sync cycle.
-   See W-20 (Ecosystem Triage SOP) for the reconciliation checklist.
+1. **GitHub is the single source of truth** per GOV-001 (approved 2026-03-11). OneDrive is archive/backup only.
+2. **Fetch only relevant documents** per task — not all runtime docs every time. Use the fetch triggers in Section 3 to decide which to pull.
+3. **If a GitHub fetch fails,** flag: `[GOVERNANCE WARNING: GitHub fetch failed for [filename]. Proceed with best available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED] until Gregory confirms whether to continue or reschedule.]`
+4. **When updating any governance document,** update this registry if the version number, filename, or fetch triggers changed.
+5. **EAB updates require propagation** to all satellite and subproject instructions. See BCG_Ecosystem_Awareness_Block.md for the propagation protocol.
+6. **Before assigning any new I-number,** fetch the Initiative Catalog from GitHub and confirm the next available slot. Never assign from memory.
+7. **The Guiding Principles .docx** is not raw-fetchable from GitHub. Access via OneDrive at `Corp/AI/Standards/[TEAM] Our Guiding Principles.docx`.
 
 ---
 
-## 8. Change Log
+## 7. Change Log
 
 | Version | Date | What Changed |
 |---------|------|--------------|
-| 1.7 | 2026-03-12 | Added Section 3.13 (W-20 Ecosystem Triage & Governance Audit SOP). Updated totals: 12 GitHub runtime-fetched, 15 total active. |
-| 1.6 | 2026-03-12 | Added Section 3.11 (Artifact Naming & Capture Standard) and Section 3.12 (pyRevit Tab Style Guide) — previously unregistered. Retired BCG_CONTEXT_CURRENT.md (Section 5). Added staleness notes to 3.3, 3.7, 3.8, 3.9, 3.10. Updated EAB to v1.3 (15/15 deployed). Updated totals: 11 GitHub runtime-fetched, 14 total active, 1 retired. Added Rule 7 (governance file audit). |
-| 1.5 | 2026-03-11 | Added Section 3.9 — Ecosystem Performance Assessment Prompt. Added Section 3.10 — P9 Risk & Resilience Prompt. Updated Section 5.2 totals. Reflects GOV-001. |
-| 1.4 | 2026-03-11 | Added raw GitHub URL to Section 3.1 (Style Guide). Removed OneDrive location reference. |
-| 1.3 | 2026-03-10 | Corrected architecture: GitHub is single source of truth. Removed OneDrive as governance doc destination. Updated all entries with raw GitHub URLs. Added SOP Governance & Intake Protocol (Section 3.8). |
-| 1.2 | 2026-03-10 | Added Section 3.8 — SOP Governance & Intake Protocol. (Superseded same day by v1.3.) |
-| 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. |
-| 1.0 | 2026-03-01 | Initial version. |
+| 1.2 | 2026-03-14 | Comprehensive rewrite per GOV-001 migration. Converted all file locations from OneDrive to GitHub. Updated all filenames from .txt to .md. Replaced OneDrive-based stub in Section 2 with GitHub raw URL fetch pattern. Added Sections 3.8–3.14 (7 new registered documents: pyRevit Tab Style Guide, Ecosystem Vocabulary, SOP Governance & Intake Protocol, W-20 Triage SOP, Artifact Naming Standard, Ecosystem Performance Assessment Prompt, P9 Risk & Resilience Prompt). Fixed Section 3.6 Initiative Catalog scope (I-01–I-39 → I-01–I-62, 60 active). Updated Section 3.1 Style Guide to v1.4, Section 3.3 Project Ecosystem to v1.6, Section 3.9 Vocabulary to v1.1, Section 3.10 SOP Governance to v1.2, Section 3.12 Artifact Naming to v1.1, Sections 3.13–3.14 prompts to v1.1. Added direct fetch URLs to all entries. Updated Section 4.1 EAB scope to include all 6 active subprojects. Updated Section 5.2 totals (runtime-fetched .md 7→13, total 9→16). Updated Section 6 Rules (GOV-001 rule, GitHub failure flag pattern, I-number pre-fetch rule, Guiding Principles .docx note). |
+| 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. Updated Section 5.2 totals (runtime-fetched 6→7, total 8→9). |
+| 1.0 | 2026-03-01 | Initial version. Externalized from the ~40-line GLOBAL GOVERNANCE DOCUMENTS boilerplate previously embedded in all project instructions. |
 
 ---
 
-*This file is the entry point for all BCG governance document fetching.
-Maintained in GitHub at bcg-ops-governance/standards/.
-When governance documents change, update this file — not 15 project instructions.*
+*This file is maintained in GitHub at bcgcorp/bcg-ops-governance/standards/ and fetched by all Claude Projects via the instruction stub. When governance documents change, update this file — not 16 project instructions.*
