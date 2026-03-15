@@ -1,6 +1,6 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.5
+**Version:** 1.6
 **Effective:** March 2026
 **Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P9) and subprojects
@@ -56,7 +56,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Style_and_Formatting_Standards.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Style_and_Formatting_Standards.md` |
-| **Current Version** | 1.4 |
+| **Current Version** | 1.5 |
 | **Fetch before** | Any document creation, formatting decision, evaluation report, or when uncertain about BCG conventions |
 | **Governs** | Typography, colors, tables, timeline tags, security boundaries, evaluation conventions, EAB specification, project/subproject registries, SOP format, contribution workflow, pressure-test framework |
 
@@ -222,7 +222,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.5 |
+| **Current Version** | 1.6 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -254,6 +254,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.6 | 2026-03-15 | 3.1 Style Guide: v1.4 → v1.5 (veteran recognition generalized — named individuals removed). |
 | 1.5 | 2026-03-15 | 3.6 Initiative Catalog: v1.8 → v1.9 (I-24 Active, 50-state research complete, P6 executing). 3.5 Infrastructure Inventory: v1.1 → v1.2 (PyRevit repo corrected to GitLab). 3.7 Custom Module Registry: v1.0 → v1.1 (P7-004 reference scrubbed, audit gap noted). |
 | 1.4 | 2026-03-14 | Updated version numbers to reflect batch follow-on commit (4950b0b). 3.1 Style Guide v1.3→v1.4. 3.3 Project Ecosystem v1.5→v1.6. 3.6 Catalog v1.7→v1.8 (B-number corrections, P4-002 subproject updated). 3.9 Vocabulary v1.0→v1.1. 3.10 SOP Governance v1.1→v1.2. 3.12 Artifact Naming v1.0→v1.1. 3.13 Performance Prompt v1.0→v1.1. 3.14 P9 Risk Prompt v1.0→v1.1. Registry self-reference bumped to v1.4. |
 | 1.3 | 2026-03-14 | Version number alignment pass — corrected registry entries to match actual file versions on disk at time of commit. B-range updated B-01–B-27→B-01–B-41. |
