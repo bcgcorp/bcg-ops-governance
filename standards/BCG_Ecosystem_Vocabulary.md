@@ -42,7 +42,7 @@
 | I-## (e.g., I-40) | Initiative number | A tracked workstream item with defined owner, status, and target. Look up in the Initiative Catalog on GitHub. |
 | W-## (e.g., W-14) | Workflow / SOP number | An operational procedure document. Owned by P2 (SOP & Workflow Library). |
 | D-## (e.g., D-04) | Decision number | A pending decision requiring Gregory's call. Numbered for tracking in the Pending Decisions queue. |
-| B-## (e.g., B-24) | PyRevit button backlog | A Revit automation tool in the development backlog. Tracked in P4-002. 27-button backlog: B-01–B-27. |
+| B-## (e.g., B-24) | PyRevit button backlog | A Revit automation tool in the development backlog. Tracked in P4-002. 41-button backlog: B-01–B-41. |
 | WS-## (e.g., WS-05) | Workstream | A thematic grouping of related initiatives. 11 active workstreams (WS-01–WS-11). |
 
 ---
@@ -81,8 +81,8 @@
 ## 5. Change Log
 
 | Version | Date | What Changed |
-|---------|------|--------------|
-| 1.1 | 2026-03-14 | Fixed initiative count: "59 active" → "60 active" in Section 3 (Initiative Catalog definition). Updated pyRevit button backlog to B-01–B-27 (27 buttons) in Section 2. |
+|---------|------|-------------|
+| 1.1 | 2026-03-14 | Initiative Catalog count corrected 59→60. B-series backlog updated B-01–B-27→B-01–B-41 (full inventory confirmed 2026-03-14: 41 buttons across 8 panels). |
 | 1.0 | 2026-03-14 | Initial version. Registered as I-62 deliverable (W-22, BCG Ecosystem Vocabulary governance artifact). Extracted from scattered copies in agenda templates, JSX artifacts, and P0 instructions. |
 
 ---

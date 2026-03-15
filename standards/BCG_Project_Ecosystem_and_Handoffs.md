@@ -49,12 +49,10 @@ Subprojects are specialized workstreams within a satellite project that need the
 |----|--------|----------------|-----------------|--------|
 | P0-001 | P0 | Ecosystem Triage & Routing Protocol | W-20 SOP, update classification matrix, standard update template, processing checklists, routing rules | Active |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations | Active |
-| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 27-button backlog (B-01–B-27). | Active |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 41-button backlog (B-01–B-41). | Active |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, monitoring specs | Planned |
-| P5-002 | P5 | Monitoring & Observability Infrastructure | Grafana/Prometheus/Loki stack. Phase 1 complete. Phase 2 gated on Jason (April 1). | Phase 1 Complete |
-| P8-001 | P8 | Document Intake & Routing | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. | Active |
-
-**Retired subprojects (2026-03-12):** P7-001, P7-002, P7-003, P7-004 — all knowledge consolidated into P7 parent (Odoo Automation & Configuration Library).
+| P5-002 | P5 | Monitoring & Observability Infrastructure | Grafana/Prometheus/Loki stack. Phase 1 complete on ClarkKent. Phase 2 gated on Jason (April 1). | Active |
+| P8-001 | P8 | Document Intake & Routing | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. Go-live 2026-03-12. | Active |
 
 *Add rows as subprojects are created. See Section 5 for conventions.*
 
@@ -89,7 +87,7 @@ A handoff occurs when:
 - A deliverable is approved (`[APPROVED — v{date}]`) and has value for another project
 - A subproject completes an evaluation, analysis, or recommendation that the parent needs to act on
 - A project discovers work that belongs in a different project's scope (routing redirect)
-- Cross-project dependencies are identified
+- Cross-project dependencies are identified (e.g., P4 MCP deployment requires P5 security review)
 
 ### 3.3 Handoff Content Requirements
 
@@ -127,8 +125,8 @@ When a request arrives in the wrong project, Claude should redirect rather than 
 
 **Template:**
 ```
-This request is better served in P{#} — {project name} because {reason}.
-That project handles {scope description}.
+This request is better served in P{#} — {project name} because {reason}. 
+That project handles {scope description}. 
 I can help you frame the request for that project if you'd like.
 ```
 
@@ -184,8 +182,8 @@ Do NOT create a subproject for:
 |-------|--------|
 | **Creation** | Parent project owner (usually Greg) decides a workstream needs isolation. Assigns ID, creates Claude Project, writes custom instructions. |
 | **Active** | Subproject produces deliverables, manages its own knowledge base, hands off approved outputs to parent. |
-| **Dormant** | Workstream complete but may reactivate. Project remains, no active work. |
-| **Retired** | Workstream permanently complete. Final handoff to parent. Knowledge base archived. Claude Project can be deleted. |
+| **Dormant** | Workstream complete but may reactivate (e.g., quarterly evaluation cycles). Project remains, no active work. |
+| **Closed** | Workstream permanently complete. Final handoff to parent. Knowledge base archived. Claude Project can be deleted. |
 
 ### 5.4 Ecosystem Awareness Block (EAB)
 
@@ -194,7 +192,6 @@ Every satellite project's custom instructions must include the Ecosystem Awarene
 | Attribute | Value |
 |-----------|-------|
 | **Master file** | GitHub: `bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md` |
-| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Awareness_Block.md` |
 | **Deployment** | Copy-paste into custom instructions (embedded, not runtime-fetched) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
 | **Update cycle** | Re-propagate to all satellites whenever the block changes |
@@ -217,7 +214,7 @@ When one project's work depends on another project's output, flag the dependency
 [DEPENDENCY: P{#} needs {what} from P{#} by {when}]
 ```
 
-**Active Dependencies (as of 2026-03-14):**
+**Active Dependencies (as of March 2026):**
 
 | Dependent Project | Needs | From Project | By When | Status |
 |-------------------|-------|-------------|---------|--------|
@@ -230,7 +227,7 @@ When one project's work depends on another project's output, flag the dependency
 | P1 | Actual bid pricing and win/loss analysis | P8 | Ongoing | P8 feeds calibration data to P1 models |
 | P3 | Competitor sightings from RFP processes | P8 | Ongoing | P8 feeds intel to P3 database |
 | P5 | VPN architecture documentation (WireGuard + Tailscale) | P4 (architecture decision) | Q2 '26 | Handoff drafted 2026-03-09 |
-| P8 | W-16 RFP Review SOP | P2 | Q2 '26 | ✅ Resolved 2026-03-12 — W-16 6a ($15K auto no-bid) and 6b (Stephanie backup authority) closed. |
+| P8 | W-16 RFP Review SOP | P2 | Q2 '26 | Closed 2026-03-12. Step 6a ($15K auto no-bid threshold) and Step 6b (Stephanie Bernardo backup authority) both confirmed. |
 
 *Add rows as cross-project dependencies are identified. Remove rows when resolved.*
 
@@ -251,8 +248,8 @@ Running log of all approved handoffs. Newest first.
 ## 8. Change Log
 
 | Version | Date | What Changed |
-|---------|------|--------------|
-| 1.6 | 2026-03-14 | Updated Section 2.3 subproject registry: added P0-001 (Ecosystem Triage), P4-002 (Revit & BIM Automation), P5-002 (Monitoring & Observability); noted P7-001–P7-004 retirement (2026-03-12). Updated Section 5.2 knowledge base location from OneDrive to GitHub. Resolved W-16 dependency row in Section 6 (both decisions closed 2026-03-12). |
+|---------|------|-------------|
+| 1.6 | 2026-03-14 | Section 2.3: Added P0-001, P4-002, P5-002; renamed P8-### to P8-001 with current status. Section 6: Closed W-16 dependency entry (both Step 6a and 6b confirmed 2026-03-12). |
 | 1.5 | 2026-03-11 | Fixed malformed P8-### subproject registry row. Added W-16 cross-project dependency (P8 ← P2). |
 | 1.4 | 2026-03-11 | Added P9 (Business Continuity & Resilience) to project registry (Section 2.2), routing rules (Section 3.4), and redirects (Section 4). Corrected all OneDrive references to GitHub. Updated EAB master file location. Updated scope to P0–P9. |
 | 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |

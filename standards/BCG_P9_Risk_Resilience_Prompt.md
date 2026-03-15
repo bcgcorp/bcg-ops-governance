@@ -42,8 +42,9 @@ documented register that informs executable continuity protocols.
 ### BCG OPERATIONAL STACK
 
 **External cloud (failure outside BCG's control):**
-- Claude / Anthropic — reasoning, synthesis, drafting across 16 projects.
-  Already experienced one unplanned outage with zero documented fallback.
+- Claude / Anthropic — reasoning, synthesis, drafting across 16 active
+  projects. Already experienced one unplanned outage with zero documented
+  fallback.
 - Microsoft 365 / OneDrive / SharePoint — governance docs, email, calendar
 - Autodesk BIM360 / ACC — project collaboration and file delivery
 - Cloudflare Tunnel — external MCP endpoint for Odoo integration
@@ -62,7 +63,8 @@ documented register that informs executable continuity protocols.
 
 **Design & production:**
 - Autodesk Revit / AutoCAD — primary design production
-- PyRevit — custom automation (27-button backlog, in development)
+- PyRevit — custom automation (41-button backlog: 25 Complete, 12 Beta,
+  4 In Development)
 - Bluebeam — PDF markup
 - Windsurf IDE — AI-assisted development
 - XMind — strategic architecture mapping
@@ -72,13 +74,12 @@ documented register that informs executable continuity protocols.
   BIM Lead role; primary bottleneck by design
 - Bob (IT Manager) — owns pfSense, Cloudflare Tunnel, Odoo infrastructure;
   overextended; likely the only person who can restore key systems
-- Jason Harris (VP AI & Emerging Technology) — starts April 1; owns DGX Spark
-  operations, P4, P5-002 Phase 2
+- Jason — P4 AI Infrastructure; DGX Spark operations (starts April 1, 2026)
 - Cory Bialke — Sr. PSE / Design Team Lead; primary design delivery
-- Jennifer — HR lead; P2 and P6 owner
-- Stephanie — Sr. Designer / Production Lead; BIM Lead backup; limited Revit depth
-- Victor — Odoo / P7 sole owner
-- Rachel — Administrative Manager; P8-001 owner
+- Jennifer — HR lead; P2 SOP owner
+- Stephanie — BIM Lead backup; limited Revit depth
+- Victor — Odoo / P7 contributor
+- Rachel — Administrative Manager; P8-001 Document Intake owner
 - BIM Lead — VACANT; Gregory absorbing this role
 
 ---
@@ -186,6 +187,6 @@ outputs are marked [DRAFT — PENDING REVIEW].
 ## Change Log
 
 | Version | Date | What Changed |
-|---------|------|--------------|
-| 1.1 | 2026-03-14 | Updated project count 11→16 (now includes all 6 subprojects). Updated PyRevit backlog 25→27 (B-01–B-27). Added Jason Harris (VP AI, April 1) and Rachel (P8-001) to key people. Updated Claude ecosystem continuity section: "11 projects" → "16 projects". |
+|---------|------|-------------|
+| 1.1 | 2026-03-14 | Updated project count 11→16. Updated PyRevit backlog 25→41 with status breakdown. Added Rachel to key people. Updated "Claude Ecosystem Continuity" section to reference 16 projects. |
 | 1.0 | 2026-03-11 | Initial version. |

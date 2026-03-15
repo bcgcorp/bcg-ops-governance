@@ -2,7 +2,7 @@
 **Version:** 1.1
 **Effective:** 2026-03-14
 **Owner:** Gregory Bernardo (author) / Jennifer Brezniak (ongoing maintenance)
-**Location:** GitHub bcgcorp/bcg-ops-governance/standards/
+**Location:** GitHub bcg-ops-governance/standards/
 **Status:** APPROVED
 
 ---
@@ -148,9 +148,9 @@ is available via M365 connector write permissions (pending P5 assessment).
 Every producer is responsible for their own captures:
 - Gregory — P0, P0-001, P1, P3, P8, P9 outputs
 - Bob — P5, P5-001, P5-002 outputs
-- Jason — P4, P4-001, P4-002 outputs (post-onboarding April 1)
+- Jason — P4, P4-001, P4-002 outputs (post-onboarding)
 - Jennifer — P2, P6 outputs
-- Victor — P7 outputs
+- Victor — P7, P8-001 outputs
 - Rachel — P8-001 outputs
 
 ---
@@ -170,7 +170,7 @@ write permissions. Eliminates the manual download-rename-upload step.
 
 - This document is owned by Jennifer Brezniak for ongoing updates
 - Changes require Gregory's approval before taking effect
-- Maintained in GitHub at bcgcorp/bcg-ops-governance/standards/
+- Maintained in GitHub bcg-ops-governance/standards/
 - Any new project codes added to the ecosystem must be added to Section 1
   project codes table within one week of project registration
 
@@ -179,6 +179,6 @@ write permissions. Eliminates the manual download-rename-upload step.
 ## CHANGE LOG
 
 | Version | Date | What Changed |
-|---------|------|--------------|
-| 1.1 | 2026-03-14 | Updated project codes table: removed retired P7-001, P7-002, P7-003, P7-004; added P0-001, P4-002, P5-001, P5-002, P8-001. Fixed project count 17→16. Updated Section 3 producer list (added Rachel for P8-001; split Bob from P5-001/P5-002). Updated file location from OneDrive to GitHub. |
+|---------|------|-------------|
+| 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated "17 BCG projects" → "16". Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
 | 1.0 | 2026-03-07 | Initial version. |

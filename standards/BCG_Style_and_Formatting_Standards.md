@@ -6,7 +6,7 @@
 **Scope:** All Claude Projects (P0–P9) and downstream deliverables
 **Owner:** Gregory Bernardo, President
 
-**v1.4 Changes:** Updated Section 10.3 subproject registry (retired P7-001 through P7-004; added P0-001, P4-002, P5-001, P5-002, P8-001 — now 6 active subprojects). Updated Section 13 initiative count 46→60 (I-01–I-62 minus I-20 and I-32) and pyRevit button backlog 25→27 (B-01–B-27).
+**v1.4 Changes:** Updated Section 10.3 subproject registry — retired P7-001 through P7-004; added P0-001, P5-002, P8-001; updated P4-002 button backlog 25→41. Updated Section 13 initiative count 46→60 (I-01–I-62 minus I-20 and I-32).
 
 **v1.3 Changes:** Updated scope from P0–P7 to P0–P9. Added P8 and P9 to Section 10.2 project registry. Updated Section 10.3 subproject registry from 1 to 7 subprojects. Updated Section 10.4 routing rule to P1–P9. Updated Section 13 initiative count from 26 to 46 active (I-01–I-48 minus I-20 and I-32).
 
@@ -255,7 +255,7 @@ Example:
 When reviewing or producing contract-related documents, use these marking conventions:
 
 | Convention | Meaning |
-|------------|---------|
+|------------|--------|
 | **Yellow Highlighting** | BCG additions and modifications to original text |
 | **Blue Italic Text** | Explanatory notes (internal BCG reference only, not for counterparty) |
 | **Strikethrough Text** | Original text proposed for deletion |
@@ -333,16 +333,16 @@ Subproject handoffs include the subproject ID:
 
 ### 10.3 Subproject Registry
 
-Satellite projects may contain numbered subprojects for specialized workstreams that need their own Claude Project, knowledge base, and instructions. Subproject IDs follow the format `P{#}-{###}` (parent project dash three-digit sequence).
+Satellite projects may contain numbered subprojects for specialized workstreams that need their own Claude Project, knowledge base, and instructions.
 
 | ID | Parent | Subproject | What It Produces |
 |----|--------|------------|------------------|
-| P0-001 | P0 | Ecosystem Triage & Routing Protocol | W-20 SOP, update classification matrix, routing rules, processing checklists |
+| P0-001 | P0 | Ecosystem Triage & Routing Protocol | W-20 SOP, update classification matrix, standard update template, processing checklists, routing rules |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations |
-| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 27-button backlog (B-01–B-27). |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 41-button backlog (B-01–B-41). |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, remediation plan |
 | P5-002 | P5 | Monitoring & Observability Infrastructure | Grafana/Prometheus/Loki stack. Phase 1 complete on ClarkKent. Phase 2 gated on Jason (April 1). |
-| P8-001 | P8 | Document Intake & Routing | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. Active go-live. |
+| P8-001 | P8 | Document Intake & Routing | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. Go-live 2026-03-12. |
 
 ### 10.4 Routing Rule
 
@@ -403,8 +403,6 @@ Reference these facts consistently across all projects:
 - **Guiding principles:** Three core principles documented in `Our_Guiding_Principles.docx`
 - **Initiative catalog:** 60 active (I-01 through I-62, minus I-20 removed and I-32 rejected)
 - **Workstreams:** 11 active (WS-01 through WS-11)
-- **PyRevit button backlog:** 27 buttons (B-01–B-27)
-- **Active Claude projects:** 16 (P0, P0-001, P1–P9, P4-001, P4-002, P5-001, P5-002, P8-001)
 
 ---
 
@@ -430,51 +428,70 @@ When a report is re-run or updated — whether on a scheduled cycle (quarterly s
 **Required elements:**
 
 - **Version identifier** in the document header: `v1`, `v2`, `v3` or date-based (`2026-02`, `2026-06`).
-- **"What Changed" section** immediately after the Executive Summary. This section must include:
+- **"What Changed" section** immediately after the Executive Summary (or after the title page if no Executive Summary exists). This section must include:
   - New items added to the evaluation pool (with count and names)
   - Items removed or deprecated since last version
   - Score changes for previously evaluated items (old score → new score, with reason)
-  - Status changes
+  - Status changes (e.g., moved from "Catalog" to "Deploy," or from "Active" to "Deprecated")
   - Whether any change affects the primary recommendation
-- **First edition baseline:** When a report is produced for the first time, include the "What Changed" section with the note: *"This is the baseline evaluation (v1). No prior version exists for comparison. Future re-runs will include a delta summary here."*
+- **First edition baseline:** When a report is produced for the first time, include the "What Changed" section with the note: *"This is the baseline evaluation (v1). No prior version exists for comparison. Future re-runs will include a delta summary here."* This establishes the convention from day one.
+- **Inline change markers** (optional, for major revisions): When a section has been substantially rewritten, a brief note at the top of that section — e.g., `[Updated in v2: Added 3 new servers to landscape, revised scoring for Server #4]` — helps readers who are already familiar with the prior version scan efficiently.
+
+**Why this matters:** BCG's evaluation reports are living documents. Greg and the team shouldn't have to diff two Word files to figure out what's new. The change tracking convention makes every version self-documenting.
 
 ### 15.2 Executive Summary with Delta
 
-Every evaluation or analytical report must open with an Executive Summary that a busy reader can consume in under 60 seconds.
+Every evaluation or analytical report must open with an Executive Summary that a busy reader can consume in under 60 seconds and know: what was evaluated, what was selected, and whether anything changed.
 
 **Structure:**
 
 1. **Scope statement** (1 sentence): What was evaluated and how many candidates.
 2. **Primary selection** (1–2 sentences): What was chosen and why, with the score.
-3. **Supplementary selections** (1 sentence each, if any).
-4. **Custom build / special actions** (if any).
-5. **Competitive feature notes** (1–2 sentences).
-6. **Delta summary** (for v2+ only).
+3. **Supplementary selections** (1 sentence each, if any): Supporting picks and their unique value.
+4. **Custom build / special actions** (if any): Items that don't fit the standard evaluate → select → deploy path.
+5. **Competitive feature notes** (1–2 sentences): Whether any runner-up has features the primary selection lacks. Reference the Competitive Feature Analysis section for details.
+6. **Delta summary** (for v2+ only): What changed since last version and whether it affects the recommendation. For v1 reports, include the baseline placeholder per Section 15.1.
+
+**What this replaces:** The Executive Summary replaces the pattern of burying the recommendation in Section 8. The detailed analysis still lives in the body — the Executive Summary gives the answer upfront, consistent with BCG's "state the recommendation first, then reasoning" style (Section 2).
 
 ### 15.3 Competitive Feature Analysis
 
-When an evaluation produces a clear winner, the report must explicitly assess whether any runner-up has features the primary selection lacks.
+When an evaluation produces a clear winner — one candidate that scores highest across most or all criteria — the report must explicitly assess whether any runner-up has features, capabilities, or design approaches that the primary selection lacks.
+
+**Why this exists:** A 5/5 candidate that checks every box can create blind spots. The team might miss a useful capability from a 3/5 server that could be adopted, forked, requested upstream, or used as a reference implementation. Since many evaluated tools are open source, features are not locked to the product they ship in.
 
 **Required table format:**
 
 | Server | Unique Feature | In Primary Selection? | BCG Value | Action |
 |--------|---------------|----------------------|-----------|--------|
+| Runner-up A | Feature description | Yes/No/Partial + explanation | High/Medium/Low + why | Track / Monitor / Fork / Contribute upstream / Catalog / No action |
 
 **Rules:**
-- Assess every server that passed the Hard Requirements Gate.
-- "Unique Feature" means a capability the primary selection does not have.
-- "BCG Value" must reference BCG's actual use cases.
-- "Action" must be concrete.
+
+- Assess every server that passed the Hard Requirements Gate, not just the top 2–3.
+- "Unique Feature" means a capability the primary selection does not have — not a feature it implements differently.
+- "BCG Value" must reference BCG's actual use cases, not theoretical value.
+- "Action" must be concrete. "Interesting" is not an action. "Track — re-evaluate if mcp-grafana adds target health tool" is.
+- Include a **bottom line** paragraph after the table summarizing whether any runner-up feature changes the deployment recommendation or justifies maintaining a supplementary tool.
 
 ### 15.4 Use Case Action Context
 
-When a report identifies use cases for a tool, each use case must indicate output type:
+When a report identifies use cases for a tool, platform, or integration, each use case must indicate whether the result is:
 
 | Output Type | Symbol | Meaning | Color |
 |-------------|--------|---------|-------|
-| **Visual** | 📊 | Dashboard, chart, query result, data display. Read-only. | Blue (#D6EAF8) |
-| **Automation** | ⚡ | Creates/modifies alert rules, triggers notifications, executes workflows. Write operation. | Green (#D5F5E3) |
-| **Visual → Automation** | 📊→⚡ | Starts visual-only; gains automation capability in later phase. | Yellow (#FCF3CF) |
+| **Visual** | 📊 | Dashboard, chart, query result, data display. Read-only. No system state change. | Blue (#D6EAF8) |
+| **Automation** | ⚡ | Creates/modifies alert rules, triggers notifications, opens incidents, executes workflows. Write operation. | Green (#D5F5E3) |
+| **Visual → Automation** | 📊→⚡ | Starts as visual-only in early deployment phases; gains automation capability in a later phase. | Yellow (#FCF3CF) |
+
+**Why this matters:** "Monitor GPU temperature" could mean "show a dashboard" or "alert the team when it exceeds threshold and create an incident ticket." The distinction drives deployment phasing (read-only first, writes later), security scoping (Viewer vs. Editor permissions), and Bob's infrastructure requirements (notification channels, webhook endpoints). Making the output type explicit prevents ambiguity.
+
+**Implementation rules:**
+
+- Every use case table must include an "Output Type" column using the categories above.
+- Use the color coding in document tables where format supports it (Word, HTML). In markdown or plain text, use the symbols.
+- If a use case spans multiple output types across phases, use "Visual → Automation" and note which phase enables the automation capability.
+- A legend explaining the three output types should appear below the table on first use in any document.
 
 ---
 

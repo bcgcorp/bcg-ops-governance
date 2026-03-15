@@ -2,7 +2,7 @@
 
 **Version:** 1.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-12
+**Last Updated:** 2026-03-14
 **Scope:** All Claude Projects (P1–P9, all subprojects)
 **Owner:** Gregory Bernardo, President
 
@@ -97,7 +97,7 @@ proper routing.
 
 PROJECT REGISTRY
 | ID | Project | Scope Summary |
-|----|---------|--------------|
+|----|---------|---------------|
 | P0 | Master Strategic Plan | Synthesis hub. Consumes approved outputs from all satellites. Does not produce deliverables. |
 | P1 | Financial Modeling & Pricing | Revenue models, pricing analysis, break-even, cash flow, compensation modeling. |
 | P2 | SOP & Workflow Library | SOPs (W-01–W-19+), PROD-series, process documentation, Odoo task templates. |
@@ -216,9 +216,9 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.3 | 2026-03-12 | Retired P7-001 through P7-004 (knowledge consolidated into P7 parent). Added P0-001 (Ecosystem Triage & Routing), P5-002 (Monitoring & Observability), P8-001 (Document Intake & Routing). Updated project count 17→16. Updated subproject table (removed 4, added 3). Added P8-001 routing redirect for inbound business documents. Updated P2 scope (W-19+), P7 scope (Odoo Automation & Configuration Library). Removed P7 subprojects from Section 4 routing assignments. Updated propagation tracker. | Pending |
-| 1.2 | 2026-03-11 | Corrected GOVERNANCE DOCUMENTS section in satellite block: OneDrive → GitHub as source of truth. Updated Registry URL to raw GitHub fetch pattern. Removed .txt file references. Updated file header and footer to reference GitHub. Bumped EAB block version marker to v1.2. | Pending |
-| 1.1 | 2026-03-05 | Added P9 (Business Continuity). Added P4-002 (Revit & BIM Automation). Added P7-001 through P7-004. Corrected project count to 17. Added governance doc fetch fallback instruction. Added P9 routing redirect. | Pending |
+| 1.3 | 2026-03-12 | Retired P7-001 through P7-004 (knowledge consolidated into P7 parent). Added P0-001 (Ecosystem Triage & Routing), P5-002 (Monitoring & Observability), P8-001 (Document Intake & Routing). Updated project count 17→16. Updated subproject table (removed 4, added 3). Added P8-001 routing redirect for inbound business documents. Updated P2 scope (W-19+), P7 scope (Odoo Automation & Configuration Library). Removed P7 subprojects from Section 4 routing assignments. Updated propagation tracker. | Yes — 2026-03-12 |
+| 1.2 | 2026-03-11 | Corrected GOVERNANCE DOCUMENTS section in satellite block: OneDrive → GitHub as source of truth. Updated Registry URL to raw GitHub fetch pattern. Removed .txt file references. Updated file header and footer to reference GitHub. Bumped EAB block version marker to v1.2. | Yes — 2026-03-12 |
+| 1.1 | 2026-03-05 | Added P9 (Business Continuity). Added P4-002 (Revit & BIM Automation). Added P7-001 through P7-004. Corrected project count to 17. Added governance doc fetch fallback instruction. Added P9 routing redirect. | Yes — 2026-03-12 |
 | 1.0 | 2026-03-01 | Initial version. 9 projects (P0–P8), 2 subprojects (P4-001, P5-001). Never deployed. | No |
 
 ---
@@ -231,26 +231,26 @@ Check off each project after pasting the updated EAB block.
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg |   |
-| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg |   |
-| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg |   |
-| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg |   |
-| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg |   |
-| P6 — HR, People & Legal Ops | v1.3 | 2026-03-12 | Greg |   |
-| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg |   |
-| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg |   |
-| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg |   |
+| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg | |
+| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg | |
+| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg | |
+| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg | |
+| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg | |
+| P6 — HR, People & Legal Ops | v1.3 | 2026-03-12 | Greg | |
+| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg | |
+| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg | |
+| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg | |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P0-001 — Ecosystem Triage & Routing Protocol | v1.3 | 2026-03-12 | Greg | Deployed at project creation  |
-| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg |   |
-| P4-002 — Revit & BIM Automation  | v1.3 | 2026-03-12 | Greg |   |
-| P5-001 — Network Infrastructure Assessment  | v1.3 | 2026-03-12 | Greg |   |
-| P5-002 — Monitoring & Observability Infrastructure  | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
-| P8-001 — Document Intake & Routing  | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
+| P0-001 — Ecosystem Triage & Routing Protocol | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
+| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg | |
+| P4-002 — Revit & BIM Automation | v1.3 | 2026-03-12 | Greg | |
+| P5-001 — Network Infrastructure Assessment | v1.3 | 2026-03-12 | Greg | |
+| P5-002 — Monitoring & Observability Infrastructure | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
+| P8-001 — Document Intake & Routing | v1.3 | 2026-03-12 | Greg | Deployed at project creation |
 
 ### Retired (do not propagate)
 
