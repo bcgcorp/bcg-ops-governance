@@ -1,8 +1,8 @@
 # BCG Corp — Infrastructure Inventory
 
-**Version:** 1.1
+**Version:** 1.2
 **Effective:** March 2026
-**Last Updated:** 2026-03-12
+**Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -168,7 +168,7 @@ BCG's self-hosted ERP platform. Managed under P7. Victor Carrillo is sole P7 own
 |----------|---------|---------------------|-------|
 | **Microsoft 365** | Email, calendar, Teams, SharePoint, OneDrive | Tier 3 (internal comms/docs) | Azure Entra ID for identity. No client design data in M365 by policy. M365 security lockdown completed 2026-03-12: each user sees only their own data through Claude connector. |
 | **Claude.ai** | Non-client AI reasoning, project management, analysis | Tier 3 | Anthropic Team plan. MS365 connector active. 16 active projects. |
-| **GitHub** | Governance docs, project instructions, code repos | Tier 3 | Single source of truth for governance (GOV-001). 5 repos: bcg-ops-governance, bcg-ops-claude-projects, bcg-ops-revit-tools, bcg-odoo-dev, bcg-ai-infrastructure. |
+| **GitHub** | Governance docs, project instructions, code repos | Tier 3 | Single source of truth for governance (GOV-001). 5 repos: bcg-ops-governance (public), bcg-ops-claude-projects, bcg-ai-infrastructure (private). PyRevit source code hosted on self-hosted GitLab — see Section 9. |
 
 ---
 
@@ -274,15 +274,15 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 
 ---
 
-## 13. GitHub Repositories
+## 13. GitHub & GitLab Repositories
 
-| Repo | Visibility | Contents | Status |
-|------|------------|----------|--------|
-| bcg-ops-governance | **PUBLIC** | Governance docs, Style Guide, Initiative Catalog, EAB, naming standards | Live — Single source of truth (GOV-001). PUBLIC repo — Bob: periodic review to confirm no sensitive data committed. |
-| bcg-ops-claude-projects | Private | 16 project instruction files, _template folder | Live |
-| bcg-ops-revit-tools | Private | PyRevit B-01–B-27 backlog, shared libraries | Live |
-| bcg-odoo-dev | Private | Custom modules, MCP configs, runbooks | Live |
-| bcg-ai-infrastructure | Private | DGX Spark runbooks, Open WebUI config, network architecture | Live |
+| Repo | Platform | Visibility | Contents | Status |
+|------|----------|------------|----------|--------|
+| bcg-ops-governance | **GitHub** | **PUBLIC** | Governance docs, Style Guide, Initiative Catalog, EAB, naming standards | Live — Single source of truth (GOV-001). PUBLIC repo — Bob: periodic review to confirm no sensitive data committed. |
+| bcg-ops-claude-projects | GitHub | Private | 16 project instruction files, _template folder | Live |
+| bcg-odoo-dev | GitHub | Private | Custom modules, MCP configs, runbooks | Live |
+| bcg-ai-infrastructure | GitHub | Private | DGX Spark runbooks, Open WebUI config, network architecture | Live |
+| bcg-ops-revit-tools | **GitLab (self-hosted)** | Private | PyRevit B-01–B-41 backlog, shared libraries | Live — hosted at `alexandria.bcg-corp.com`. SSH remote: `git@alexandria.bcg-corp.com:revit/bcg-ops-revit-tools.git`. Runtime deploy target: `Q:\Pearl_Prod\z_pyRevit`. Deploy is manual via deploy.ps1. **GitHub bcgcorp/bcg-ops-revit-tools has been DELETED.** |
 
 **CI/CD:** Claude Code GitHub Actions approved for both Odoo and PyRevit repos (I-52). Read-only review for 30 days. $100/mo API cap. Self-hosted Linux runner for Odoo CI; future Windows runner on RevitPrint Minion for Revit CI.
 
@@ -313,6 +313,7 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.2 | 2026-03-15 | Section 8 (Cloud Platforms): Removed `bcg-ops-revit-tools` from GitHub repos table; noted PyRevit source is now on self-hosted GitLab. Section 13 (Repos): Corrected `bcg-ops-revit-tools` entry — platform changed GitHub→GitLab self-hosted, added GitLab hostname (alexandria.bcg-corp.com), SSH remote, deploy target path, and deletion notice for GitHub repo. Removed stale GitHub-only scope note. |
 | 1.1 | 2026-03-12 | Major update. Added ClarkKent (observability host), RevitPrint Minion (CI/CD runner). Detailed pfSense HA pair (Anakin/Vader Netgate 6100). Added Harris Lab network (OuterRim Netgate 4100). Added WireGuard site-to-site VPN detail (Phase 1 complete). Added subnet map. Updated Odoo section with full on-prem detail (coding standards, gotchas, LDAP, paths). Added odoo.sh decommission notice. Added Claude Code GitHub Actions to AI Tools. Added File Server MCP (planned). Updated P5-002 monitoring from "greenfield" to Phase 1 complete. Added GitHub repos section. Updated M365 security lockdown. Updated scope P0–P7 → P0–P9. Updated source of truth to GitHub (GOV-001). Added Wolverine/Punisher detail (DL380 Gen10). |
 | 1.0 | 2026-03-01 | Initial version. |
 
