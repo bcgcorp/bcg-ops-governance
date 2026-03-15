@@ -1,14 +1,16 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.1
+**Version:** 2.2
 **Effective:** March 2026
 **Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
 
+**What Changed (v2.2):** I-24-gated service line targets aligned. I-18 (Q4→Q3), I-19 (Q4→Q3), I-21 (Q2→Q3), I-37 (Q2→Q3). I-16 and I-17 already at Q3 — unchanged. All six I-24-gated initiatives now target Q3 '26.
+
 **What Changed (v2.1):** P10 (Legal, Compliance & Risk) registered 2026-03-15. I-24 re-homed P6→P10; owner updated to Gregory (Track A — Licensing) + Rachel McGee (Track B — Insurance); notes updated with VA DCJS hold, nexus exposure flag, and full gating list (now includes I-37). W-23 (Hiring Nexus & Compliance Review SOP) added to workstream registry — P10 policy home, Jennifer operational, gated on I-24 Track A Q4/Q5. Section 4: I-24 removed from P6 (count 7→6); P10 row added. P6 scope note updated (HR & People only). Next W-slot updated W-23→W-24. D-02 closed.
 
-**What Changed (v2.0):** Added I-63 (Candidate Data Management & ADP Recruiting Transition / P6 primary / Greg sponsor + Jennifer primary). Updated active count 60→61. Updated next slot I-63→I-64. Updated Section 4: P6 count 6→7, added I-63. Updated WS-11 to include I-63. Added I-63 cross-reference note in Section 4. Note: P6 originally submitted this as I-62 — corrected to I-63 (I-62 already registered as Weekly Sync Agenda System).
+**What Changed (v2.0):** Added I-63 (Candidate Data Management & ADP Recruiting Transition / P6 primary / Greg sponsor + Jennifer primary). Updated active count 60→61. Updated next slot I-63→I-64. Updated Section 4: P6 count 6→7, added I-63. Updated WS-11 to include I-63.
 
 ---
 
@@ -45,10 +47,10 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | I-15 | Data Classification Policy (4-Tier) | Bob/Greg | Planned | P5 | Q2 '26 | |
 | I-16 | Expert Witness Practice | Greg | Planned | P3/P6 | Q3 '26 | Depends on I-21, I-24 |
 | I-17 | Telecom/ICT Feasibility (Pearl-ICT) | Greg | Planned | P3 | Q3 '26 | Depends on I-24 |
-| I-18 | Security System Commissioning | Greg | Planned | P3 | Q4 '26 | Depends on I-24 |
-| I-19 | Peer Review & Advisory Service | Greg | Planned | P3 | Q4 '26 | Depends on I-24 |
+| I-18 | Security System Commissioning | Greg | Planned | P3 | Q3 '26 | Depends on I-24 |
+| I-19 | Peer Review & Advisory Service | Greg | Planned | P3 | Q3 '26 | Depends on I-24 |
 | ~~I-20~~ | ~~Federal/DoD Market Entry~~ | — | Removed | — | — | Removed from catalog. Retained for numbering continuity. |
-| I-21 | Expert Witness Entity Structure | Greg | Planned | P6 | Q2 '26 | Depends on I-24 |
+| I-21 | Expert Witness Entity Structure | Greg | Planned | P6 | Q3 '26 | Depends on I-24 |
 | I-22 | AI-Assisted Proposal & BD | Greg/Jason | Planned | P3/P4 | Q3 '26 | |
 | I-23 | Odoo Accounting / Financial Baseline | Bob/Victor | On Hold | P7 | Q1 '26 | Blocked — D-01: Greg financial data source not identified |
 | I-24 | Licensing & Insurance Audit | Gregory Bernardo (Track A — Licensing) / Rachel McGee (Track B — Insurance, reports to Gregory) | Active | P10 | Q2 '26 | GATING — gates I-16, I-17, I-18, I-19, I-21, I-37. Legal opinion required before next CA site visit or new VA project intake. HOLD: Do not apply for VA DCJS license pending counsel opinion. Distributed workforce nexus (WA/OH/NY/FL) is predicate question for counsel — may carry back-period exposure. 50-state licensing research complete 2026-03-15. VA (DCJS Electronic Security) and QC/Canada (BSP Agency) confirmed as license-required jurisdictions for design-only consulting. Migrated P6→P10 2026-03-15. |
@@ -64,7 +66,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | I-34 | Competitor Tracking Dashboard / BI Tool | Greg | Planned | P3 | Q2 '26 | Deferred from original proposal. Requires P3 knowledge base population first. |
 | I-35 | Employee Handbook | Jennifer | Planned | P6 | Q3 '26 | Build-to-Sell requirement. Compliance risk reducer at 10+ FTE. |
 | I-36 | Performance Management Framework | Jennifer | Planned | P6 | Q2 '26 | Needed at 12+ FTE scale. Ties to design principle #3 (ownership/profit sharing). |
-| I-37 | CA Takeover Service Playbook | Greg | Planned | P3 | Q2 '26 | Playbook + pricing model + staffing template. Depends on I-24 licensing. |
+| I-37 | CA Takeover Service Playbook | Greg | Planned | P3 | Q3 '26 | Playbook + pricing model + staffing template. Depends on I-24 licensing. |
 | I-38 | Network Infrastructure Configuration Assessment | Bob/Greg | Planned | P5 (P5-001) / P4 | Q2 '26 | AI-assisted firewall/switch config extraction + assessment. 3 phases, 6 weeks. P4 builds tooling, P5-001 owns assessment. |
 | I-39 | Promise Tracking & Proposal Forensics | Greg | Planned | P8 | Q2 '26 | Build promise tracking register for active projects. Populate with historical proposal-vs-contract data. Requires rate card + 3-5 historical proposals uploaded to P8 KB. |
 | I-40 | Benefits Package Restructuring | Jennifer | Active | P6 | Q2 '26 | Competitive benefits analysis — Tier 1 health insurance gap identified as BIM Lead hiring blocker. |
@@ -146,6 +148,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 - Some initiatives span multiple projects. Counted under primary owner project.
 - I-24 (Licensing & Insurance Audit) migrated to P10 2026-03-15. P6 is now HR & People only.
 - I-24 gates P3 initiatives (I-16/17/18/19/37) and P6 initiative (I-21). Those gate relationships remain unchanged.
+- All six I-24-gated initiatives target Q3 '26 (updated 2026-03-15).
 - I-50 spans P2 (Phase 1) and P4 (Phase 2) — counted under both.
 - I-62 spans P0 (generation logic) and P2 (W-22 SOP, deferred).
 - I-63 spans P6 (primary), P7 (Odoo Recruitment module), P4-001 (MCP validation).
@@ -191,18 +194,19 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.2 | 2026-03-15 | I-24-gated service line targets aligned to Q3 '26: I-18 (Q4→Q3), I-19 (Q4→Q3), I-21 (Q2→Q3), I-37 (Q2→Q3). I-16 and I-17 already at Q3 — unchanged. All six I-24-gated initiatives now uniformly target Q3 '26. Added note to Section 4. |
 | 2.1 | 2026-03-15 | P10 (Legal, Compliance & Risk) registered. I-24 re-homed P6→P10; project updated, owner updated to Gregory (Track A) + Rachel McGee (Track B), notes updated with VA DCJS hold, nexus flag, I-37 added to gates. W-23 (Hiring Nexus & Compliance Review SOP) added to Section 3 workstream registry — P10 policy home, Jennifer operational execution, gated on I-24 Track A Q4/Q5. Section 4: I-24 removed from P6 row (count 7→6), P10 row added (1 initiative). P6 scope note updated to HR & People only. Next W-slot updated W-23→W-24. D-02 closed. |
-| 2.0 | 2026-03-15 | Added I-63 (Candidate Data Management & ADP Recruiting Transition / P6 primary / Greg sponsor + Jennifer primary). Updated active count 60→61. Updated next slot I-63→I-64. Updated Section 4: P6 count 6→7, added I-63. Updated WS-11 to include I-63. Added I-63 cross-reference note in Section 4. Note: P6 originally submitted this as I-62 — corrected to I-63 (I-62 already registered as Weekly Sync Agenda System). |
-| 1.9 | 2026-03-15 | I-24 status: Planned → Active. Notes updated: 50-state licensing research complete 2026-03-15. Virginia (DCJS Electronic Security) and Quebec/Canada (BSP Agency) confirmed as license-required jurisdictions for design-only physical security consulting. P6 executing audit document. P0 handoff delivered 2026-03-15. |
-| 1.8 | 2026-03-14 | Section 5 (Subproject Registry): Updated P4-002 entry — corrected button backlog 27→41, added status breakdown (25 Complete, 12 Beta, 4 In Development). Updated WS-10 button backlog reference. Updated I-44/I-45/I-46/I-49 notes with correct B-numbers per full inventory confirmed 2026-03-14. |
-| 1.7 | 2026-03-14 | Added I-62 (Weekly Sync Agenda System, Active, P0/P2, High priority). Updated active initiative count 59→60. Updated next available slot I-62→I-63. Updated cross-reference: P0 count 2→3. Updated WS-10 to include I-62. |
-| 1.6 | 2026-03-12 | Added I-50 through I-61 (12 new initiatives). Added P0-001, P5-002, P8-001 to subproject registry. Retired P7-001 through P7-004. Closed decisions: D-02, D-04, D-GH-01/02/03, W-16 6a/6b. Total: 59 active, 2 removed, 11 workstreams, 6 active subprojects + 4 retired. |
-| 1.5 | 2026-03-11 | Added I-49 (Linked CAD Layer Manager / P4-002 / Active). Corrected footer: OneDrive → GitHub as source of truth. Total: 47 active, 2 removed. |
-| 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives). Updated P4-002 subproject registry. Total: 46 active, 2 removed, 11 workstreams, 7 subprojects. |
-| 1.3 | 2026-03-05 | I-01 owner corrected. Added I-40, I-41. Updated subproject registry from 2 to 7. Total: 39 active, 2 removed, 11 workstreams, 7 subprojects. |
-| 1.2 | 2026-03-01 | Added I-39. Updated WS-06 and WS-07. Total: 37 active, 2 removed. |
-| 1.1 | 2026-03-01 | Populated I-01–I-27 and WS-01–WS-11. Total: 36 active, 2 removed, 11 workstreams, 2 subprojects. |
-| 1.0 | 2026-03-01 | Initial version. Structure and numbering scheme established. |
+| 2.0 | 2026-03-15 | Added I-63 (Candidate Data Management & ADP Recruiting Transition / P6 primary / Greg sponsor + Jennifer primary). Updated active count 60→61. Updated next slot I-63→I-64. Updated Section 4: P6 count 6→7, added I-63. Updated WS-11 to include I-63. |
+| 1.9 | 2026-03-15 | I-24 status: Planned → Active. Notes updated: 50-state licensing research complete 2026-03-15. Virginia (DCJS Electronic Security) and Quebec/Canada (BSP Agency) confirmed as license-required jurisdictions for design-only physical security consulting. |
+| 1.8 | 2026-03-14 | Section 5 (Subproject Registry): Updated P4-002 entry — corrected button backlog 27→41. Updated I-44/I-45/I-46/I-49 notes with correct B-numbers. |
+| 1.7 | 2026-03-14 | Added I-62 (Weekly Sync Agenda System). Updated active initiative count 59→60. |
+| 1.6 | 2026-03-12 | Added I-50 through I-61 (12 new initiatives). Added P0-001, P5-002, P8-001 to subproject registry. Retired P7-001 through P7-004. Total: 59 active, 2 removed, 11 workstreams, 6 active subprojects + 4 retired. |
+| 1.5 | 2026-03-11 | Added I-49 (Linked CAD Layer Manager / P4-002 / Active). |
+| 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives). Updated P4-002 subproject registry. Total: 46 active. |
+| 1.3 | 2026-03-05 | I-01 owner corrected. Added I-40, I-41. Total: 39 active. |
+| 1.2 | 2026-03-01 | Added I-39. Total: 37 active. |
+| 1.1 | 2026-03-01 | Populated I-01–I-27 and WS-01–WS-11. Total: 36 active. |
+| 1.0 | 2026-03-01 | Initial version. |
 
 ---
 
