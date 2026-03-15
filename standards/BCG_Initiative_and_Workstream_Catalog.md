@@ -1,8 +1,8 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 1.8
+**Version:** 1.9
 **Effective:** March 2026
-**Last Updated:** 2026-03-14
+**Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -47,7 +47,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | I-21 | Expert Witness Entity Structure | Greg | Planned | P6 | Q2 '26 | Depends on I-24 |
 | I-22 | AI-Assisted Proposal & BD | Greg/Jason | Planned | P3/P4 | Q3 '26 | |
 | I-23 | Odoo Accounting / Financial Baseline | Bob/Victor | On Hold | P7 | Q1 '26 | Blocked — D-01: Greg financial data source not identified |
-| I-24 | Licensing & Insurance Audit | Greg | Planned | P6 | Q2 '26 | GATING — gates I-16, I-17, I-18, I-19, I-21. D-02 closed 2026-03-12: Gregory owns. |
+| I-24 | Licensing & Insurance Audit | Greg | Active | P6 | Q2 '26 | GATING — gates I-16, I-17, I-18, I-19, I-21. D-02 closed 2026-03-12: Gregory owns. 50-state licensing research complete 2026-03-15. VA (DCJS Electronic Security) and QC/Canada (BSP Agency) confirmed as license-required jurisdictions for design-only consulting. P6 executing audit document; P0 handoff delivered 2026-03-15. |
 | I-25 | AI Standards & Guardrails Framework | Greg/Jason | Planned | P4 | Q2 '26 | |
 | I-26 | Claude Cowork Enablement | Greg | Active | P4 | Q1 '26 | Sprint 1: Greg, Rachel, Jen; Sprint 2: Cory, Joshua, Stephanie |
 | I-27 | Windsurf IDE Enablement | Greg/Bob | Planned | P4 | Q2 '26 | Depends on I-26 |
@@ -182,6 +182,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.9 | 2026-03-15 | I-24 status: Planned → Active. Notes updated: 50-state licensing research complete 2026-03-15. Virginia (DCJS Electronic Security) and Quebec/Canada (BSP Agency) confirmed as license-required jurisdictions for design-only physical security consulting. P6 executing audit document. P0 handoff delivered 2026-03-15. |
 | 1.8 | 2026-03-14 | Section 5 (Subproject Registry): Updated P4-002 entry — corrected button backlog 27→41, added status breakdown (25 Complete, 12 Beta, 4 In Development), corrected B-24=Capture Shared Parameter, B-25=Export Family Registry, documented B-34–B-38 as Site Grid suite. Updated WS-10 button backlog reference 27→41. Updated I-44/I-45/I-46/I-49 notes with correct B-numbers per full inventory confirmed 2026-03-14. |
 | 1.7 | 2026-03-14 | Added I-62 (Weekly Sync Agenda System, Active, P0/P2, High priority). Updated active initiative count 59→60. Updated next available slot I-62→I-63. Updated cross-reference: P0 count 2→3, added I-62. Updated WS-10 to include I-62. Updated Section 6 numbering conventions next slot. |
 | 1.6 | 2026-03-12 | Added I-50 through I-61 (12 new initiatives). Added P0-001, P5-002, P8-001 to subproject registry. Retired P7-001 through P7-004 (knowledge consolidated into P7 parent). Closed decisions: D-02 (I-24 owner = Gregory), D-04 (Jason starts April 1), D-GH-01/02/03, W-16 6a ($15K threshold), W-16 6b (Stephanie backup), I-50 Ph1 (Jennifer owns). Updated workstream initiative mappings. Total: 59 active, 2 removed, 11 workstreams, 6 active subprojects + 4 retired. |
