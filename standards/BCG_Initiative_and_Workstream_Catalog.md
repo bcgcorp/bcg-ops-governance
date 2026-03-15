@@ -1,6 +1,6 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 1.9
+**Version:** 2.0
 **Effective:** March 2026
 **Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P9) and subprojects
@@ -20,7 +20,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 ## 2. Initiative Registry
 
-60 active initiatives (I-01 through I-62, minus I-20 and I-32). Next available slot: **I-63**.
+61 active initiatives (I-01 through I-63, minus I-20 and I-32). Next available slot: **I-64**.
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -85,7 +85,8 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | I-59 | Odoo NL Command Interface (bcg_nl_intake) | Victor Carrillo | Planned | P7 | Q2 '26 | OWL widget + Python controller + Anthropic API. Phase 1: 5 doc types from P8-001. Confirm-before-create. |
 | I-60 | BCG Cowork Plugin Development | Gregory → Jason | Planned — 4 phases | P4 | Q2–Q3 '26 | Phase 0 (I-61) hard gate. Phase 1: skills (Gregory/Jennifer). Phase 2-3: commands + connectors (Jason, gated D-04). |
 | I-61 | Cowork Security & Audit Assessment | Bob Brezniak | Planned — hard gate | P5 | Q2 '26 | Evaluate Cowork local storage vs. NIST CSF 2.0 + BCG data classification. Must clear before any Cowork deployment. |
-| I-62 | Weekly Sync Agenda System | Gregory Bernardo | Active | P0 / P2 (W-22) | Q2 '26 | Structured weekly 1:1 sync system. Produces 3-page branded .docx (carry-forward tracker, decisions/handoffs/FYI agenda, quick reference card) + optional JSX live companion artifact. Ph1: .docx template ✅ Active. Ph2: JSX companion ✅ Active. Ph3: Odoo MCP auto-ingest ⏳ Pending I-31/Jason. W-22 SOP deferred to Meeting #004 (~4 weeks). Backup: Stephanie Bernardo. HIGH priority. |
+| I-62 | Weekly Sync Agenda System | Gregory Bernardo | Active | P0 / P2 (W-22) | Q2 '26 | Structured weekly 1:1 sync system. Produces 3-page branded .docx (carry-forward tracker, decisions/handoffs/FYI agenda, quick reference card) + optional JSX live companion artifact. Ph1: .docx template ✅ Active. Ph2: JSX companion ✅ Active. Ph3: Odoo MCP auto-ingest ⏳ Pending I-31/Jason. W-22 SOP deferred to Meeting #004 (~4 weeks). HIGH priority. |
+| I-63 | Candidate Data Management & ADP Recruiting Transition | Greg (sponsor) / Jennifer Brezniak (primary) | Planned | P6 (primary), P7, P4-001 | Ph1: Q1 '26 / Ph2: Q2 '26 / Ph3: Q3 '26 (contingent) | Three phases: (1) Local folder structure + Claude in Chrome extraction + comparison spreadsheet templates — no blockers, ready to execute. (2) Odoo 18 Recruitment module as system of record via MCP server — gates on Odoo MCP server (P4-001) by Q2. (3) Retire ADP recruiting add-on in favor of Indeed + LinkedIn Recruiter Lite — gates on ADP invoice cost analysis (Greg). Phase 3 contingent: executes only if ADP recruiting cost exceeds ~$100/month. Registered 2026-03-15; corrected from P6 submission (submitted as I-62 — slot already taken). |
 
 ### Initiative Status Definitions
 
@@ -113,9 +114,9 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | WS-06 | Standardized Pricing Response | Greg | Active | P0/P1/P3/P8 | I-39, I-58 | B&F pricing strategy. P8 provides proposal pricing data and historical calibration. Blocked on P1 financial models and P8 KB population. |
 | WS-07 | Capture Strategy | Greg | Active | P0/P3/P8 | — | Tactics to lock in DD/CA. P8 provides bid/no-bid analysis and win/loss data. Competitor intel (17 firms, 3 segments) available. |
 | WS-08 | Direct MSA Evaluation | Greg | Active | P0/P3 | — | Feasibility, risks with primes, benefits of direct hyperscaler contract. |
-| WS-09 | New Teaming & Diversification | Greg | Active | P0/P3 | I-37, I-56, I-59 | Different primes, different hyperscalers. Oracle opportunity tracked here (I-32 rejected as initiative). CA Takeover playbook (I-37) approved. Odoo calendar display (I-56) and NL interface (I-59) mapped here. |
+| WS-09 | New Teaming & Diversification | Greg | Active | P0/P3 | I-37, I-56, I-59 | Different primes, different hyperscalers. Oracle opportunity tracked here (I-32 rejected as initiative). CA Takeover playbook (I-37) approved. |
 | WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-25, I-26, I-27, I-28, I-31, I-43, I-44, I-45, I-46, I-47, I-48, I-49, I-50, I-51, I-52, I-53, I-60, I-62 | 16-week AI roadmap, DGX Spark x2, RTX 5090 x2, Odoo AI modules, production force multipliers, Revit automation suite (P4-002, 41-button backlog B-01–B-41), Outlook Forward Guard, AI Context Store, API-Driven Hub, Claude Code CI/CD, Cowork Plugin, folder standard + AI agents, Weekly Sync Agenda System. |
-| WS-11 | Resource Planning | Greg/Jennifer | Active | P0/P6 | I-03, I-35, I-36, I-40 | 9 current FTE, active hiring pipelines (SSD II, BIM Mgr, PM Admin). BIM Lead on hold pending I-40 benefits analysis. Scale to 12+. |
+| WS-11 | Resource Planning | Greg/Jennifer | Active | P0/P6 | I-03, I-35, I-36, I-40, I-63 | 9 current FTE, active hiring pipelines (SSD II, BIM Mgr, PM Admin). BIM Lead on hold pending I-40 benefits analysis. Scale to 12+. I-63 adds recruiting workflow standardization. |
 
 ---
 
@@ -130,7 +131,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | P4 | 11 | I-09, I-25, I-26, I-27, I-31 (shared P7), I-43, I-47, I-48, I-50 (Ph2), I-51, I-60 |
 | P4-002 | 5 | I-44, I-45, I-46, I-49, I-28 (shared) |
 | P5 | 5 | I-08, I-15, I-38 (via P5-001), I-61 |
-| P6 | 6 | I-03, I-21, I-24, I-35, I-36, I-40 |
+| P6 | 7 | I-03, I-21, I-24, I-35, I-36, I-40, I-63 |
 | P7 | 12 | I-05, I-06, I-07, I-23, I-29, I-30 (shared P0), I-52, I-53, I-54, I-55, I-56, I-59 |
 | P8 | 2 | I-39, I-58. Also serves WS-06 (pricing), WS-07 (capture). |
 | P9 | 1 | I-41 |
@@ -140,7 +141,8 @@ This document is the single source of truth for BCG Corp's active initiatives an
 - I-24 (Licensing Audit) assigned to P6 but gates P3 initiatives (I-16/17/18/19).
 - I-50 spans P2 (Phase 1) and P4 (Phase 2) — counted under both.
 - I-62 spans P0 (generation logic) and P2 (W-22 SOP, deferred).
-- 60 active initiatives (I-01 through I-62, minus I-20 removed, minus I-32 rejected).
+- I-63 spans P6 (primary), P7 (Odoo Recruitment module), P4-001 (MCP validation).
+- 61 active initiatives (I-01 through I-63, minus I-20 removed, minus I-32 rejected).
 
 ---
 
@@ -152,7 +154,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 |----|--------|------|-----------|--------|------------------|
 | P0-001 | P0 | Ecosystem Triage & Routing Protocol | — | Active | W-20 SOP, update classification matrix, standard update template, processing checklists, routing rules |
 | P4-001 | P4 | MCP Evaluation & Selection | — | Active | MCP server evaluations, capability matrices, deployment recommendations |
-| P4-002 | P4 | Revit & BIM Automation | I-09, I-28, I-44, I-45, I-46, I-49 | Active | PyRevit buttons, Dynamo scripts, AutoCAD automation. 41-button backlog (B-01–B-41): 25 Complete, 12 Beta, 4 In Development. B-24=Capture Shared Parameter, B-25=Export Family Registry. B-34–B-38=Site Grid suite (in development). |
+| P4-002 | P4 | Revit & BIM Automation | I-09, I-28, I-44, I-45, I-46, I-49 | Active | PyRevit buttons, Dynamo scripts, AutoCAD automation. 41-button backlog (B-01–B-41): 25 Complete, 12 Beta, 4 In Development. |
 | P5-001 | P5 | Network Infrastructure Assessment | I-38 | Planned | Firewall/switch config assessment, gap analysis, remediation plan |
 | P5-002 | P5 | Monitoring & Observability Infrastructure | — | Phase 1 Complete | Grafana/Prometheus/Loki stack, pfSense telemetry, Harris Lab expansion. Phase 2 gated on D-04 (April 1). |
 | P8-001 | P8 | Document Intake & Routing | I-58 | Active | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. Go-live 2026-03-12. |
@@ -170,8 +172,8 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 ## 6. Numbering Conventions
 
-- **Initiatives:** I-01 through I-## (sequential, never reuse removed numbers). Next available: **I-63**.
-- **Workstreams:** WS-01 through WS-## (sequential)
+- **Initiatives:** I-01 through I-## (sequential, never reuse removed numbers). Next available: **I-64**.
+- **Workstreams:** WS-01 through WS-## (sequential). Next available: **W-23**.
 - **Subprojects:** P{#}-{###} (parent project dash three-digit sequence)
 - **Removed items:** Keep the row with strikethrough and "Removed" status. Do not renumber.
 - **Before assigning any new I-number:** Fetch current catalog from GitHub and confirm next available slot.
@@ -182,15 +184,16 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.0 | 2026-03-15 | Added I-63 (Candidate Data Management & ADP Recruiting Transition / P6 primary / Greg sponsor + Jennifer primary). Updated active count 60→61. Updated next slot I-63→I-64. Updated Section 4: P6 count 6→7, added I-63. Updated WS-11 to include I-63. Added I-63 cross-reference note in Section 4. Note: P6 originally submitted this as I-62 — corrected to I-63 (I-62 already registered as Weekly Sync Agenda System). |
 | 1.9 | 2026-03-15 | I-24 status: Planned → Active. Notes updated: 50-state licensing research complete 2026-03-15. Virginia (DCJS Electronic Security) and Quebec/Canada (BSP Agency) confirmed as license-required jurisdictions for design-only physical security consulting. P6 executing audit document. P0 handoff delivered 2026-03-15. |
-| 1.8 | 2026-03-14 | Section 5 (Subproject Registry): Updated P4-002 entry — corrected button backlog 27→41, added status breakdown (25 Complete, 12 Beta, 4 In Development), corrected B-24=Capture Shared Parameter, B-25=Export Family Registry, documented B-34–B-38 as Site Grid suite. Updated WS-10 button backlog reference 27→41. Updated I-44/I-45/I-46/I-49 notes with correct B-numbers per full inventory confirmed 2026-03-14. |
-| 1.7 | 2026-03-14 | Added I-62 (Weekly Sync Agenda System, Active, P0/P2, High priority). Updated active initiative count 59→60. Updated next available slot I-62→I-63. Updated cross-reference: P0 count 2→3, added I-62. Updated WS-10 to include I-62. Updated Section 6 numbering conventions next slot. |
-| 1.6 | 2026-03-12 | Added I-50 through I-61 (12 new initiatives). Added P0-001, P5-002, P8-001 to subproject registry. Retired P7-001 through P7-004 (knowledge consolidated into P7 parent). Closed decisions: D-02 (I-24 owner = Gregory), D-04 (Jason starts April 1), D-GH-01/02/03, W-16 6a ($15K threshold), W-16 6b (Stephanie backup), I-50 Ph1 (Jennifer owns). Updated workstream initiative mappings. Total: 59 active, 2 removed, 11 workstreams, 6 active subprojects + 4 retired. |
-| 1.5 | 2026-03-11 | Added I-49 (Linked CAD Layer Manager / P4-002 / Active). Corrected footer: OneDrive → GitHub as source of truth. Confirmed B-26/B-27 — backlog now 27 buttons. P4-002 initiative list: I-09, I-28, I-44, I-45, I-46, I-49. Total: 47 active, 2 removed. |
-| 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives). Updated P4-002 subproject registry with I-44/I-45/I-46. Confirmed B-24/B-25 — backlog now 25 buttons. Total: 46 active, 2 removed, 11 workstreams, 7 subprojects. |
-| 1.3 | 2026-03-05 | I-01 owner corrected from Bernard Lewis to Greg Bernardo. Added I-40, I-41. Updated subproject registry from 2 to 7 (added P4-002, P7-001, P7-002, P7-003, P7-004). Updated scope from P0–P7 to P0–P9. Total: 39 active, 2 removed, 11 workstreams, 7 subprojects. |
-| 1.2 | 2026-03-01 | Added I-39 (Promise Tracking & Proposal Forensics / P8). Updated WS-06 and WS-07 to include P8. Total: 37 active, 2 removed, 11 workstreams, 2 subprojects. |
-| 1.1 | 2026-03-01 | Populated I-01–I-27 and WS-01–WS-11. Confirmed I-28–I-31. Decided candidates: I-32 rejected, I-33–I-37 approved. Added I-38. Registered P4-001, P5-001. Total: 36 active, 2 removed, 11 workstreams, 2 subprojects. |
+| 1.8 | 2026-03-14 | Section 5 (Subproject Registry): Updated P4-002 entry — corrected button backlog 27→41, added status breakdown (25 Complete, 12 Beta, 4 In Development). Updated WS-10 button backlog reference. Updated I-44/I-45/I-46/I-49 notes with correct B-numbers per full inventory confirmed 2026-03-14. |
+| 1.7 | 2026-03-14 | Added I-62 (Weekly Sync Agenda System, Active, P0/P2, High priority). Updated active initiative count 59→60. Updated next available slot I-62→I-63. Updated cross-reference: P0 count 2→3. Updated WS-10 to include I-62. |
+| 1.6 | 2026-03-12 | Added I-50 through I-61 (12 new initiatives). Added P0-001, P5-002, P8-001 to subproject registry. Retired P7-001 through P7-004. Closed decisions: D-02, D-04, D-GH-01/02/03, W-16 6a/6b. Total: 59 active, 2 removed, 11 workstreams, 6 active subprojects + 4 retired. |
+| 1.5 | 2026-03-11 | Added I-49 (Linked CAD Layer Manager / P4-002 / Active). Corrected footer: OneDrive → GitHub as source of truth. Total: 47 active, 2 removed. |
+| 1.4 | 2026-03-10 | Added I-42 through I-48 (7 new initiatives). Updated P4-002 subproject registry. Total: 46 active, 2 removed, 11 workstreams, 7 subprojects. |
+| 1.3 | 2026-03-05 | I-01 owner corrected. Added I-40, I-41. Updated subproject registry from 2 to 7. Total: 39 active, 2 removed, 11 workstreams, 7 subprojects. |
+| 1.2 | 2026-03-01 | Added I-39. Updated WS-06 and WS-07. Total: 37 active, 2 removed. |
+| 1.1 | 2026-03-01 | Populated I-01–I-27 and WS-01–WS-11. Total: 36 active, 2 removed, 11 workstreams, 2 subprojects. |
 | 1.0 | 2026-03-01 | Initial version. Structure and numbering scheme established. |
 
 ---
