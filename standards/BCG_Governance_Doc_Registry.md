@@ -1,8 +1,8 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
-**Last Updated:** 2026-03-14
+**Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -95,7 +95,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Infrastructure_Inventory.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Infrastructure_Inventory.md` |
-| **Current Version** | 1.1 |
+| **Current Version** | 1.2 |
 | **Fetch before** | Deployment plans, security assessments, technology evaluations, infrastructure references, data classification questions |
 | **Governs** | Compute (VM hosts, AI hardware), servers, endpoints, network, ERP (Odoo 18), cloud platforms, AI tools, security controls, data classification tiers, monitoring status, MCP deployment tracker, planned infrastructure changes |
 
@@ -105,7 +105,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 1.8 |
+| **Current Version** | 1.9 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment (always fetch before assigning a new I-number to confirm next available slot) |
 | **Governs** | Active initiatives (I-01–I-62, minus I-20 removed and I-32 rejected; 60 active total), workstreams (WS-01–WS-11), subproject registry, initiative ownership, target timelines, dependencies. Next available slot: I-63. |
 
@@ -115,9 +115,9 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Custom_Module_Registry.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Custom_Module_Registry.md` |
-| **Current Version** | 1.0 |
+| **Current Version** | 1.1 |
 | **Fetch before** | Any Odoo module development, audit, or deployment work; P7 subproject setup |
-| **Governs** | All BCG custom Odoo 18 modules — status, version, repo location, dependencies, open items |
+| **Governs** | All BCG custom Odoo 18 modules — status, version, repo location, dependencies, open items. NOTE: Track 2 repo audit pending (Victor) — registry currently shows 7 of 17 installed modules. |
 
 ### 3.8 BCG pyRevit Tab Style Guide
 
@@ -222,7 +222,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.4 |
+| **Current Version** | 1.5 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -254,6 +254,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.5 | 2026-03-15 | 3.6 Initiative Catalog: v1.8 → v1.9 (I-24 Active, 50-state research complete, P6 executing). 3.5 Infrastructure Inventory: v1.1 → v1.2 (PyRevit repo corrected to GitLab). 3.7 Custom Module Registry: v1.0 → v1.1 (P7-004 reference scrubbed, audit gap noted). |
 | 1.4 | 2026-03-14 | Updated version numbers to reflect batch follow-on commit (4950b0b). 3.1 Style Guide v1.3→v1.4. 3.3 Project Ecosystem v1.5→v1.6. 3.6 Catalog v1.7→v1.8 (B-number corrections, P4-002 subproject updated). 3.9 Vocabulary v1.0→v1.1. 3.10 SOP Governance v1.1→v1.2. 3.12 Artifact Naming v1.0→v1.1. 3.13 Performance Prompt v1.0→v1.1. 3.14 P9 Risk Prompt v1.0→v1.1. Registry self-reference bumped to v1.4. |
 | 1.3 | 2026-03-14 | Version number alignment pass — corrected registry entries to match actual file versions on disk at time of commit. B-range updated B-01–B-27→B-01–B-41. |
 | 1.2 | 2026-03-14 | Comprehensive rewrite per GOV-001 migration. Converted all file locations from OneDrive to GitHub. Updated all filenames from .txt to .md. Added Sections 3.8–3.14. Fixed Section 3.6 scope. Updated totals and rules. |
