@@ -1,6 +1,6 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.3
+**Version:** 1.4
 **Effective:** March 2026
 **Last Updated:** 2026-03-14
 **Scope:** All Claude Projects (P0–P9) and subprojects
@@ -56,7 +56,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Style_and_Formatting_Standards.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Style_and_Formatting_Standards.md` |
-| **Current Version** | 1.3 |
+| **Current Version** | 1.4 |
 | **Fetch before** | Any document creation, formatting decision, evaluation report, or when uncertain about BCG conventions |
 | **Governs** | Typography, colors, tables, timeline tags, security boundaries, evaluation conventions, EAB specification, project/subproject registries, SOP format, contribution workflow, pressure-test framework |
 
@@ -75,7 +75,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Project_Ecosystem_and_Handoffs.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Project_Ecosystem_and_Handoffs.md` |
-| **Current Version** | 1.5 |
+| **Current Version** | 1.6 |
 | **Fetch before** | Cross-project routing decisions, handoff creation, subproject setup, dependency tracking |
 | **Governs** | Project registry (P0–P9), subproject registry, routing rules, handoff label format, dependency tracking, EAB deployment specification |
 
@@ -105,7 +105,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 1.7 |
+| **Current Version** | 1.8 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment (always fetch before assigning a new I-number to confirm next available slot) |
 | **Governs** | Active initiatives (I-01–I-62, minus I-20 removed and I-32 rejected; 60 active total), workstreams (WS-01–WS-11), subproject registry, initiative ownership, target timelines, dependencies. Next available slot: I-63. |
 
@@ -138,7 +138,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Ecosystem_Vocabulary.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Vocabulary.md` |
-| **Current Version** | 1.0 |
+| **Current Version** | 1.1 |
 | **Fetch before** | Weekly sync agenda generation (Page 3 vocabulary section), BCG-Wizard guide updates, any output requiring ecosystem term definitions, onboarding materials |
 | **Governs** | Single source of truth for all BCG ecosystem terminology: command terms, numbering patterns (I-/W-/D-/B-/WS-), document & process terms, status terms. All surfaces reference this file — never duplicate definitions. |
 
@@ -148,7 +148,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_SOP_Governance_and_Intake_Protocol.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_SOP_Governance_and_Intake_Protocol.md` |
-| **Current Version** | 1.1 |
+| **Current Version** | 1.2 |
 | **Fetch before** | Creating a new SOP, assigning a W-series ID, routing a SOP idea from any satellite to P2, or generating a P0→P2 handoff prompt for a new workflow |
 | **Governs** | SOP intake classification, tier assignment (Tier 1/2/3), W-series ID assignment, standard P0→P2 handoff prompt format, approval loop, registry update checklist. Current highest assigned W-ID: W-22. Next available: W-23. |
 
@@ -168,7 +168,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Artifact_Naming_and_Capture_Standard.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Artifact_Naming_and_Capture_Standard.md` |
-| **Current Version** | 1.0 |
+| **Current Version** | 1.1 |
 | **Fetch before** | Naming or storing any Claude-generated document or UI artifact, setting up output folder structure, onboarding a new producer |
 | **Governs** | Document naming convention (`[STATUS]_[PROJECT]_[Topic]_[YYYY-MM-DD].[ext]`), UI artifact naming (`BCG-UI-[PROJECT]-[TYPE]-v[#]`), capture workflow (Option A manual, Option B future automated), security constraints on artifact export |
 
@@ -178,7 +178,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_Ecosystem_Performance_Assessment_Prompt.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Performance_Assessment_Prompt.md` |
-| **Current Version** | 1.0 |
+| **Current Version** | 1.1 |
 | **Fetch before** | Running a performance audit of BCG's operational stack (Claude ecosystem, Odoo, AI infrastructure, design tools, M365, overall integration). Quarterly or on-demand. |
 | **Governs** | Diagnostic prompt and assessment framework for ecosystem performance evaluation. Covers 6 categories. Produces executive summary, category scorecards, cross-cutting findings, priority action list. |
 
@@ -188,7 +188,7 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 |-------|-------|
 | **File** | `BCG_P9_Risk_Resilience_Prompt.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_P9_Risk_Resilience_Prompt.md` |
-| **Current Version** | 1.0 |
+| **Current Version** | 1.1 |
 | **Fetch before** | Beginning P9 Phase 1 (Dependency Risk Register), conducting business continuity assessment, identifying single points of failure |
 | **Governs** | Diagnostic prompt for P9 Phase 1 risk assessment. Covers 6 dependency categories. Produces BCG Dependency Risk Register v1.0, top failure scenarios, critical gaps summary, continuity protocol recommendations. |
 
@@ -222,7 +222,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.3 |
+| **Current Version** | 1.4 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -254,8 +254,9 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
-| 1.3 | 2026-03-14 | Version number alignment pass — corrected registry entries to match actual file versions on disk. 3.1 Style Guide v1.4→v1.3. 3.3 Project Ecosystem v1.6→v1.5. 3.8 pyRevit Style Guide button range B-01–B-27→B-01–B-41 (full inventory confirmed 2026-03-14: 41 buttons across 8 panels). 3.9 Ecosystem Vocabulary v1.1→v1.0. 3.10 SOP Governance v1.2→v1.1. 3.12 Artifact Naming v1.1→v1.0. 3.13 Performance Assessment v1.1→v1.0. 3.14 P9 Risk & Resilience v1.1→v1.0. Follow-on commits will bump these files and registry will be updated accordingly. |
-| 1.2 | 2026-03-14 | Comprehensive rewrite per GOV-001 migration. Converted all file locations from OneDrive to GitHub. Updated all filenames from .txt to .md. Replaced OneDrive-based stub in Section 2 with GitHub raw URL fetch pattern. Added Sections 3.8–3.14 (7 new registered documents). Fixed Section 3.6 Initiative Catalog scope (I-01–I-39→I-01–I-62, 60 active). Updated Section 4.1 EAB scope to include all 6 active subprojects. Updated Section 5.2 totals. Updated Section 6 Rules. |
+| 1.4 | 2026-03-14 | Updated version numbers to reflect batch follow-on commit (4950b0b). 3.1 Style Guide v1.3→v1.4. 3.3 Project Ecosystem v1.5→v1.6. 3.6 Catalog v1.7→v1.8 (B-number corrections, P4-002 subproject updated). 3.9 Vocabulary v1.0→v1.1. 3.10 SOP Governance v1.1→v1.2. 3.12 Artifact Naming v1.0→v1.1. 3.13 Performance Prompt v1.0→v1.1. 3.14 P9 Risk Prompt v1.0→v1.1. Registry self-reference bumped to v1.4. |
+| 1.3 | 2026-03-14 | Version number alignment pass — corrected registry entries to match actual file versions on disk at time of commit. B-range updated B-01–B-27→B-01–B-41. |
+| 1.2 | 2026-03-14 | Comprehensive rewrite per GOV-001 migration. Converted all file locations from OneDrive to GitHub. Updated all filenames from .txt to .md. Added Sections 3.8–3.14. Fixed Section 3.6 scope. Updated totals and rules. |
 | 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. Updated Section 5.2 totals (runtime-fetched 6→7, total 8→9). |
 | 1.0 | 2026-03-01 | Initial version. Externalized from the ~40-line GLOBAL GOVERNANCE DOCUMENTS boilerplate previously embedded in all project instructions. |
 
