@@ -221,7 +221,7 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.4 | 2026-03-15 | Added P10 (Legal, Compliance & Risk, Gregory-only) to PROJECT REGISTRY table in satellite block. Updated opening sentence: 16-project → 17-project, P1–P9 → P1–P10. Updated P6 scope to "HR & People only — no legal/compliance items." Added P10 routing redirect. Added FLAG FOR P10 example. Updated EAB block version marker v1.3 → v1.4. Updated Section 1 project count (15→16 non-P0 projects). Updated Section 2 placement guide: added P10 row, satellites (9) → (10). Updated Section 6 propagation tracker: added P10 row. | Pending |
+| 1.4 | 2026-03-15 | Added P10 (Legal, Compliance & Risk, Gregory-only) to PROJECT REGISTRY table in satellite block. Updated opening sentence: 16-project → 17-project, P1–P9 → P1–P10. Updated P6 scope to "HR & People only — no legal/compliance items." Added P10 routing redirect. Added FLAG FOR P10 example. Updated EAB block version marker v1.3 → v1.4. Updated Section 1 project count (15→16 non-P0 projects). Updated Section 2 placement guide: added P10 row, satellites (9) → (10). Updated Section 6 propagation tracker: added P10 row. | Partial — P10 (at creation), P0-001, P6, P8-001 done 2026-03-15. P1–P5, P7–P9, P4-001, P4-002, P5-001, P5-002 pending. |
 | 1.3 | 2026-03-12 | Retired P7-001 through P7-004 (knowledge consolidated into P7 parent). Added P0-001 (Ecosystem Triage & Routing), P5-002 (Monitoring & Observability), P8-001 (Document Intake & Routing). Updated project count 17→16. Updated subproject table (removed 4, added 3). Added P8-001 routing redirect for inbound business documents. Updated P2 scope (W-19+), P7 scope (Odoo Automation & Configuration Library). Removed P7 subprojects from Section 4 routing assignments. Updated propagation tracker. | Yes — 2026-03-12 |
 | 1.2 | 2026-03-11 | Corrected GOVERNANCE DOCUMENTS section in satellite block: OneDrive → GitHub as source of truth. Updated Registry URL to raw GitHub fetch pattern. Removed .txt file references. Updated file header and footer to reference GitHub. Bumped EAB block version marker to v1.2. | Yes — 2026-03-12 |
 | 1.1 | 2026-03-05 | Added P9 (Business Continuity). Added P4-002 (Revit & BIM Automation). Added P7-001 through P7-004. Corrected project count to 17. Added governance doc fetch fallback instruction. Added P9 routing redirect. | Yes — 2026-03-12 |
@@ -237,27 +237,27 @@ Check off each project after pasting the updated EAB block.
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P6 — HR & People | v1.3 | 2026-03-12 | Greg | Needs v1.4 update — PRIORITY (scope changed) |
-| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P10 — Legal, Compliance & Risk | v1.4 | 2026-03-15 | Greg | Deployed at project creation — already current |
+| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P6 — HR & People | v1.4 | 2026-03-15 | Greg | ✅ Done — scope updated to HR & People only |
+| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P10 — Legal, Compliance & Risk | v1.4 | 2026-03-15 | Greg | ✅ Done — deployed at project creation |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P0-001 — Ecosystem Triage & Routing Protocol | v1.3 | 2026-03-12 | Greg | Needs v1.4 update — PRIORITY (routing project) |
-| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P4-002 — Revit & BIM Automation | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P5-001 — Network Infrastructure Assessment | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P5-002 — Monitoring & Observability Infrastructure | v1.3 | 2026-03-12 | Greg | Needs v1.4 update |
-| P8-001 — Document Intake & Routing | v1.3 | 2026-03-12 | Greg | Needs v1.4 update — PRIORITY (active intake) |
+| P0-001 — Ecosystem Triage & Routing Protocol | v1.4 | 2026-03-15 | Greg | ✅ Done — routing project, priority complete |
+| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P4-002 — Revit & BIM Automation | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P5-001 — Network Infrastructure Assessment | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P5-002 — Monitoring & Observability Infrastructure | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
+| P8-001 — Document Intake & Routing | v1.4 | 2026-03-15 | Greg | ✅ Done — active intake project, priority complete |
 
 ### Retired (do not propagate)
 
