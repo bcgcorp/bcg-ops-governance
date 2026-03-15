@@ -1,10 +1,12 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
-**Last Updated:** 2026-03-14
+**Last Updated:** 2026-03-15
 **Scope:** All Claude Projects (P0–P9) and downstream deliverables
 **Owner:** Gregory Bernardo, President
+
+**v1.5 Changes:** Section 12 — generalized veteran recognition language to "employees with military service" (removed named individuals).
 
 **v1.4 Changes:** Updated Section 10.3 subproject registry — retired P7-001 through P7-004; added P0-001, P5-002, P8-001; updated P4-002 button backlog 25→41. Updated Section 13 initiative count 46→60 (I-01–I-62 minus I-20 and I-32).
 
@@ -383,7 +385,7 @@ When a new initiative or decision is presented in any project, evaluate against 
 | **Document font** | Arial |
 | **Logo** | Current logo; additional options available |
 | **Photography** | Coordinated headshots preferred; professional quality minimum |
-| **Veteran recognition** | Maintain military service badges for Joshua Davis, Victor Carrillo, and Myra Masisak |
+| **Veteran recognition** | Maintain military service badges for employees with military service |
 
 ---
 
