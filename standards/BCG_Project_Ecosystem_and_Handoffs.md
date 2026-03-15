@@ -1,9 +1,9 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.6
+**Version:** 1.7
 **Effective:** March 2026
-**Last Updated:** 2026-03-14
-**Scope:** All Claude Projects (P0–P9) and subprojects
+**Last Updated:** 2026-03-15
+**Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
@@ -24,22 +24,23 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | **Name** | Master Strategic Plan |
 | **Role** | Synthesis hub — consumes approved outputs from all satellites, does not produce deliverables itself |
 | **Owner** | Greg |
-| **Key Inputs** | Approved handoffs from P1–P8 and subprojects (via parent satellite) |
+| **Key Inputs** | Approved handoffs from P1–P10 and subprojects (via parent satellite) |
 | **Key Outputs** | Strategic synthesis, cross-project alignment, consolidated planning |
 
-### 2.2 Satellite Projects (P1–P9)
+### 2.2 Satellite Projects (P1–P10)
 
 | ID | Project | Owner | What It Produces | Key Consumers |
 |----|---------|-------|-----------------|---------------|
 | P1 | Financial Modeling & Pricing | Greg | Revenue models, pricing analysis, break-even, compensation modeling, budget impacts | P0, P6 (comp implications) |
-| P2 | SOP & Workflow Library | Greg | Approved SOPs (W-01 through W-22+), PROD-series, process documentation, Odoo task templates | P0, P7 (Odoo mapping), all projects (process reference) |
+| P2 | SOP & Workflow Library | Greg | Approved SOPs (W-01 through W-23+), PROD-series, process documentation, Odoo task templates | P0, P7 (Odoo mapping), all projects (process reference) |
 | P3 | Competitive Intel & BD | Greg | Competitor updates, teaming evaluations, decision-maker playbook, market positioning | P0 |
 | P4 | AI Infrastructure & Deployment | Greg | AI configs, deployment runbooks, MCP integrations, guardrails, monitoring architecture | P0, P5 (security review), P7 (Odoo MCP) |
 | P5 | IT Security / QOS | Greg + Bob | Compliance artifacts, NIST CSF 2.0 alignment, CIS Controls implementation, Defender policies | P0, P4 (security requirements) |
-| P6 | HR, People & Legal Ops | Greg | Headcount planning, org chart, compensation analysis, legal documents, employment templates | P0, P1 (financial impacts) |
+| P6 | HR & People | Greg | Headcount planning, org chart, compensation analysis, employment templates, hiring pipelines. HR & People only — legal/compliance items migrated to P10 2026-03-15. | P0, P1 (financial impacts) |
 | P7 | Odoo Platform & ERP | Greg | Module status, ERP readiness assessments, accounting configuration, custom module specs | P0, P2 (SOP-to-Odoo mapping), P4 (MCP integration) |
 | P8 | Proposals & RFP Operations | Greg | Bid/no-bid recommendations, proposal packages, promise tracking registers, pipeline analytics, pricing forensics | P0 (pipeline stats, capacity trends), P1 (actual pricing data, win/loss analysis), P2 (W-17 refinements), P3 (competitor sightings during pursuits), P7 (Odoo CRM pipeline requirements) |
 | P9 | Business Continuity & Resilience | Greg | Dependency risk register, continuity protocols, tabletop exercise results, W-18 BCP Review SOP | P0 (Section 4 Risk Matrix, Addendum E), P2 (W-18 SOP registration) |
+| P10 | Legal, Compliance & Risk | Greg (only) | Legal artifacts, compliance docs, licensing status, insurance governance, contract review, service line launch clearances → Sections 1.2, 3.3, Addendum C. Gregory-only project — no other team members. | P0 |
 
 ### 2.3 Subproject Registry
 
@@ -79,6 +80,7 @@ All approved outputs flowing between projects use standardized labels.
 [FROM: P4 — AI Infrastructure & Deployment] [DATE: 2026-03-01] [TOPIC: Observability MCP server selections approved]
 [FROM: P4-001 — MCP Evaluation & Selection] [DATE: 2026-03-01] [TOPIC: MCP server selection for Observability & Monitoring]
 [FROM: P1 — Financial Modeling & Pricing] [DATE: 2026-02-15] [TOPIC: Updated revenue model with Q1 actuals]
+[FROM: P10 — Legal, Compliance & Risk] [DATE: 2026-03-15] [TOPIC: I-24 Track A counsel opinion received — gates cleared]
 ```
 
 ### 3.2 What Triggers a Handoff
@@ -114,8 +116,12 @@ Every handoff must include:
 | Competitor spotted in RFP process | Flag for P3 | P8 competitor sighting → P3 for database update |
 | Proposal creates Odoo CRM requirement | Flag for P7 | P8 pipeline tracking need → P7 for module spec |
 | BCP risk or continuity gap identified | Flag for P9 | Any project identifies system with no fallback → P9 risk register |
+| Legal, compliance, or licensing question | Flag for P10 | New jurisdiction exposure → P10 for counsel routing |
+| I-24 gate cleared (downstream service lines) | P10 → P0 → affected projects | I-24 Track A closes → P10 notifies P0 → P0 unblocks I-16/17/18/19/21/37 |
 
 **Core rule:** Subprojects report to their parent satellite — never directly to P0. The parent satellite consolidates and routes to P0 as part of its own handoff cycle.
+
+**P10 rule:** P10 routes directly to P0 only. P10 does not route to other satellites. Other satellites route legal/compliance questions TO P10 via P0 (Gregory's coordination).
 
 ---
 
@@ -140,13 +146,14 @@ I can help you frame the request for that project if you'd like.
 | MCP server evaluation | P4 | P4-001 — MCP Evaluation & Selection |
 | Custom MCP server development | P4-001 | P4 — AI Infrastructure & Deployment |
 | Defender or compliance policy | P4 | P5 — IT Security / QOS |
-| Hiring, compensation, org chart | Any | P6 — HR, People & Legal Ops |
+| Hiring, compensation, org chart | Any | P6 — HR & People |
 | Odoo module or ERP config | P2, P4 | P7 — Odoo Platform & ERP |
 | RFP analysis or bid decision | Any | P8 — Proposals & RFP Operations |
 | Proposal pricing or fee estimate | P1, P3 | P8 — Proposals & RFP Operations |
 | Promise tracking or scope creep analysis | Any | P8 — Proposals & RFP Operations |
 | Win/loss analysis or pipeline stats | P1, P3 | P8 — Proposals & RFP Operations |
 | Business continuity or disaster recovery | Any | P9 — Business Continuity & Resilience |
+| Legal analysis, licensing questions, contract review, insurance governance | Any | P10 — Legal, Compliance & Risk (Gregory-only; non-Gregory users should route requests to Gregory directly) |
 
 ---
 
@@ -195,6 +202,7 @@ Every satellite project's custom instructions must include the Ecosystem Awarene
 | **Deployment** | Copy-paste into custom instructions (embedded, not runtime-fetched) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
 | **Update cycle** | Re-propagate to all satellites whenever the block changes |
+| **Scope** | All satellite projects P1–P10 and all subprojects |
 
 When a new satellite project or subproject is created:
 1. Add it to the EAB master file's project registry and subproject tables
@@ -228,6 +236,8 @@ When one project's work depends on another project's output, flag the dependency
 | P3 | Competitor sightings from RFP processes | P8 | Ongoing | P8 feeds intel to P3 database |
 | P5 | VPN architecture documentation (WireGuard + Tailscale) | P4 (architecture decision) | Q2 '26 | Handoff drafted 2026-03-09 |
 | P8 | W-16 RFP Review SOP | P2 | Q2 '26 | Closed 2026-03-12. Step 6a ($15K auto no-bid threshold) and Step 6b (Stephanie Bernardo backup authority) both confirmed. |
+| P3, P6 (I-16/17/18/19/21/37) | I-24 Track A counsel opinion — licensing clearance | P10 | Q2 '26 | Active — I-24 in progress. VA DCJS hold in effect. |
+| P6 (W-23) | I-24 Track A counsel opinion — Q4 & Q5 (nexus/multi-state employer) | P10 | Q2 '26 | Active — W-23 SOP gated until counsel opinion received. |
 
 *Add rows as cross-project dependencies are identified. Remove rows when resolved.*
 
@@ -239,6 +249,7 @@ Running log of all approved handoffs. Newest first.
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
+| 2026-03-15 | P0 | P10 | P10 project activation — I-24, W-23, CAP-01, Bernard Lewis matter formally assigned | Greg |
 | 2026-03-01 | P4-001 | P4 | MCP server selection for Observability & Monitoring | Greg |
 
 *Formal handoff tracking began March 2026. Prior cross-project work was not tracked under this convention. Add rows as handoffs are approved.*
@@ -249,6 +260,7 @@ Running log of all approved handoffs. Newest first.
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.7 | 2026-03-15 | Added P10 (Legal, Compliance & Risk / Gregory-only) to Section 2.2 project registry. Updated P0 key inputs (P1–P8 → P1–P10). Updated P6 scope description (HR & People only, legal/compliance migrated to P10). Updated Section 2.2 header (P1–P9 → P1–P10). Added P10 handoff example in Section 3.1. Added P10 routing rules in Section 3.4. Added P10 redirect in Section 4. Added P10 EAB scope note in Section 5.4. Added P10 cross-project dependencies in Section 6. Added P10 handoff log entry in Section 7. Scope updated P0–P9 → P0–P10. |
 | 1.6 | 2026-03-14 | Section 2.3: Added P0-001, P4-002, P5-002; renamed P8-### to P8-001 with current status. Section 6: Closed W-16 dependency entry (both Step 6a and 6b confirmed 2026-03-12). |
 | 1.5 | 2026-03-11 | Fixed malformed P8-### subproject registry row. Added W-16 cross-project dependency (P8 ← P2). |
 | 1.4 | 2026-03-11 | Added P9 (Business Continuity & Resilience) to project registry (Section 2.2), routing rules (Section 3.4), and redirects (Section 4). Corrected all OneDrive references to GitHub. Updated EAB master file location. Updated scope to P0–P9. |
