@@ -62,12 +62,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.0",
-      "status": "in-review",
+      "version": "v1.1",
+      "status": "approved",
       "githubPath": "standards/BCG_Document_Registry.json",
       "onedrivePath": null,
       "lastUpdated": "2026-03-15",
-      "notes": "Governance + SOP document registry. Pending Gregory approval."
+      "notes": "Governance + SOP document registry. Approved 2026-03-15."
     },
     {
       "id": "GOV-006",
