@@ -1,16 +1,16 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.8
+**Version:** 1.9
 **Effective:** March 2026
 **Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P0–P10) and subprojects
+**Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
 
 ## 1. Purpose
 
-This file is the single index of all BCG governance documents maintained in GitHub at `bcg-ops-governance/standards/` as the single source of truth (GOV-001, approved 2026-03-11). Every Claude Project's instructions contain a governance stub pointing to this registry rather than embedding the full document list. When the governance doc collection changes (new docs added, files renamed, fetch triggers updated), only this file is edited — not 17 project instructions.
+This file is the single index of all BCG governance documents maintained in GitHub at `bcg-ops-governance/standards/` as the single source of truth (GOV-001, approved 2026-03-11). Every Claude Project's instructions contain a governance stub pointing to this registry rather than embedding the full document list. When the governance doc collection changes (new docs added, files renamed, fetch triggers updated), only this file is edited — not 18 project instructions.
 
 **Update this file when:** a governance document is added, renamed, retired, or its fetch triggers change.
 
@@ -56,9 +56,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Project_Ecosystem_and_Handoffs.md` |
-| **Current Version** | 1.4 |
+| **Current Version** | 1.5 |
 | **Fetch before** | Cross-project routing decisions, handoff creation, subproject setup, dependency tracking |
-| **Governs** | Project registry (P0–P10), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4) |
+| **Governs** | Project registry (P0–P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4) |
 
 ### 3.4 Team Directory & Roles (GOV-016)
 
@@ -83,9 +83,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.0 |
+| **Current Version** | 2.1 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 61 active initiatives (I-01–I-63, minus I-20 and I-32), 11 workstreams (WS-01–WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-64. |
+| **Governs** | 62 active initiatives (I-01–I-64, minus I-20 and I-32), 11 workstreams (WS-01–WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-65. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -103,7 +103,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `BCG_Artifact_Naming_and_Capture_Standard.md` |
 | **Current Version** | 1.2 |
 | **Fetch before** | Naming any Claude-generated artifact, filing outputs to OneDrive, exporting UI artifacts |
-| **Governs** | Document output naming convention, UI artifact naming, capture workflow, security constraints for artifact export. 17 project codes registered. |
+| **Governs** | Document output naming convention, UI artifact naming, capture workflow, security constraints for artifact export. 18 project codes registered. |
 
 ### 3.9 Ecosystem Vocabulary (GOV-012)
 
@@ -179,10 +179,10 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Ecosystem_Awareness_Block.md` |
-| **Current Version** | 1.4 |
+| **Current Version** | 1.5 |
 | **Deployment method** | Copy-paste into custom instructions (not fetched at runtime) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
-| **Scope** | All satellite projects (P1–P10) and subprojects |
+| **Scope** | All satellite projects (P1–P11) and subprojects |
 | **Update trigger** | New project/subproject created, project renamed/closed, routing pattern added |
 | **See also** | Style Guide Section 16 for full EAB specification |
 
@@ -210,7 +210,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.8 |
+| **Current Version** | 1.9 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -241,10 +241,11 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.9 | 2026-03-17 | Updated scope P0–P10 to P0–P11 (P11 registered). Bumped tracked versions: Handoffs 1.4→1.5, Catalog 2.0→2.1, EAB 1.4→1.5. Updated EAB scope P1–P10 to P1–P11. Updated Catalog description: 62 active initiatives, next slot I-65. Updated Artifact Naming project count 17→18. Updated instruction count 17→18 in Section 1. |
 | 1.8 | 2026-03-17 | Complete rewrite. Migrated source of truth from OneDrive to GitHub per GOV-001. Updated from 9 to 18 tracked files. Added Sections 3.8-3.15. Added Section 4.1 EAB. Added Section 5.1 JSON registry. Updated all version numbers to current. Updated Rules section for GitHub-first governance. |
 | 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. Updated totals. |
 | 1.0 | 2026-03-01 | Initial version. |
 
 ---
 
-*This file is maintained in GitHub at bcg-ops-governance/standards/ and fetched by all Claude Projects via the instruction stub. When governance documents change, update this file — not 17 project instructions.*
+*This file is maintained in GitHub at bcg-ops-governance/standards/ and fetched by all Claude Projects via the instruction stub. When governance documents change, update this file — not 18 project instructions.*
