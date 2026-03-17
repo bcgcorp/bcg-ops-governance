@@ -1,10 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.2
+**Version:** 2.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-15
+**Last Updated:** 2026-03-16
 **Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
+
+**What Changed (v2.3):** Added I-64 (Long-Term File Storage Architecture — WORM + WIP / P5 implementation + P10 requirements / Gregory + Bob). Added WS-12 (Data Governance & Records Management / P10+P5 / Gregory+Bob) covering I-15 and I-64. Updated cross-reference counts: P5 (5→6, added I-64), P10 (1→2, added I-64). Updated active initiative count 61→62. Updated next-slot pointer I-64→I-65.
 
 **What Changed (v2.2):** I-24-gated service line targets aligned. I-18 (Q4→Q3), I-19 (Q4→Q3), I-21 (Q2→Q3), I-37 (Q2→Q3). I-16 and I-17 already at Q3 — unchanged. All six I-24-gated initiatives now target Q3 '26.
 
@@ -26,7 +28,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 ## 2. Initiative Registry
 
-61 active initiatives (I-01 through I-63, minus I-20 and I-32). Next available slot: **I-64**.
+62 active initiatives (I-01 through I-64, minus I-20 and I-32). Next available slot: **I-65**.
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -93,6 +95,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | I-61 | Cowork Security & Audit Assessment | Bob Brezniak | Planned — hard gate | P5 | Q2 '26 | Evaluate Cowork local storage vs. NIST CSF 2.0 + BCG data classification. Must clear before any Cowork deployment. |
 | I-62 | Weekly Sync Agenda System | Gregory Bernardo | Active | P0 / P2 (W-22) | Q2 '26 | Structured weekly 1:1 sync system. Produces 3-page branded .docx (carry-forward tracker, decisions/handoffs/FYI agenda, quick reference card) + optional JSX live companion artifact. Ph1: .docx template ✅ Active. Ph2: JSX companion ✅ Active. Ph3: Odoo MCP auto-ingest ⏳ Pending I-31/Jason. W-22 SOP deferred to Meeting #004 (~4 weeks). HIGH priority. |
 | I-63 | Candidate Data Management & ADP Recruiting Transition | Greg (sponsor) / Jennifer Brezniak (primary) | Planned | P6 (primary), P7, P4-001 | Ph1: Q1 '26 / Ph2: Q2 '26 / Ph3: Q3 '26 (contingent) | Three phases: (1) Local folder structure + Claude in Chrome extraction + comparison spreadsheet templates — no blockers, ready to execute. (2) Odoo 18 Recruitment module as system of record via MCP server — gates on Odoo MCP server (P4-001) by Q2. (3) Retire ADP recruiting add-on in favor of Indeed + LinkedIn Recruiter Lite — gates on ADP invoice cost analysis (Greg). Phase 3 contingent: executes only if ADP recruiting cost exceeds ~$100/month. Registered 2026-03-15; corrected from P6 submission (submitted as I-62 — slot already taken). |
+| I-64 | Long-Term File Storage Architecture (WORM + WIP) | Gregory / Bob Brezniak | Planned | P10 (requirements) / P5 (implementation) | Q3 '26 | Define evidentiary WORM storage (legal hold, immutable copies, retention schedule) and efficient WIP storage model. Two tracks: (A) WORM/evidentiary layer — compliance, legal hold, retention; (B) WIP layer — active project files, versioning, fast access. Dependency: I-15 (Data Classification Policy) must include storage-tier mapping before WORM transition rules can be designed. Coordination: P7 (Odoo document management as candidate WIP layer). Feeds P9 DR architecture and gates expert witness capability (I-16, I-19). |
 
 ### Initiative Status Definitions
 
@@ -108,7 +111,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 ## 3. Workstream Registry
 
-11 active strategic workstreams (WS-01 through WS-11) + 1 registered SOP workstream (W-23).
+12 active strategic workstreams (WS-01 through WS-12) + 1 registered SOP workstream (W-23).
 
 | ID | Workstream Name | Owner | Status | Project | Initiatives Covered | Notes |
 |----|----------------|-------|--------|---------|-------------------|-------|
@@ -124,6 +127,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-25, I-26, I-27, I-28, I-31, I-43, I-44, I-45, I-46, I-47, I-48, I-49, I-50, I-51, I-52, I-53, I-60, I-62 | 16-week AI roadmap, DGX Spark x2, RTX 5090 x2, Odoo AI modules, production force multipliers, Revit automation suite (P4-002, 41-button backlog B-01–B-41), Outlook Forward Guard, AI Context Store, API-Driven Hub, Claude Code CI/CD, Cowork Plugin, folder standard + AI agents, Weekly Sync Agenda System. |
 | WS-11 | Resource Planning | Greg/Jennifer | Active | P0/P6 | I-03, I-35, I-36, I-40, I-63 | 9 current FTE, active hiring pipelines (SSD II, BIM Mgr, PM Admin). BIM Lead on hold pending I-40 benefits analysis. Scale to 12+. I-63 adds recruiting workflow standardization. |
 | W-23 | Hiring Nexus & Compliance Review SOP | Jennifer Brezniak (operational execution) | Registered | P10 (policy home) / P6 (operational execution) | I-63 | SOP not yet drafted. Gate: I-24 Track A counsel opinion (Q4 & Q5 — multi-state employer obligations and nexus analysis). Integration target: I-63 ADP recruiting workflow — required gate between "Offer Approved by Gregory" and "Offer Letter Generated." Registered 2026-03-15. |
+| WS-12 | Data Governance & Records Management | Gregory / Bob Brezniak | Planned | P10 / P5 | I-15, I-64 | Evidentiary records policy, WORM architecture, data classification enforcement, retention schedules. I-15 defines classification tiers and must include storage-tier mapping as an explicit deliverable. I-64 implements the storage architecture. Both must advance in parallel. |
 
 ---
 
@@ -137,12 +141,12 @@ This document is the single source of truth for BCG Corp's active initiatives an
 | P3 | 8 | I-04, I-16 (shared P6), I-17, I-18, I-19, I-22 (shared P4), I-33, I-34, I-37 |
 | P4 | 11 | I-09, I-25, I-26, I-27, I-31 (shared P7), I-43, I-47, I-48, I-50 (Ph2), I-51, I-60 |
 | P4-002 | 5 | I-44, I-45, I-46, I-49, I-28 (shared) |
-| P5 | 5 | I-08, I-15, I-38 (via P5-001), I-61 |
+| P5 | 6 | I-08, I-15, I-38 (via P5-001), I-61, I-64 (implementation track) |
 | P6 | 6 | I-03, I-21, I-35, I-36, I-40, I-63 (HR & People only after P10 split 2026-03-15) |
 | P7 | 12 | I-05, I-06, I-07, I-23, I-29, I-30 (shared P0), I-52, I-53, I-54, I-55, I-56, I-59 |
 | P8 | 2 | I-39, I-58. Also serves WS-06 (pricing), WS-07 (capture). |
 | P9 | 1 | I-41 |
-| P10 | 1 | I-24 (migrated from P6 2026-03-15, Gregory-only) |
+| P10 | 2 | I-24 (migrated from P6 2026-03-15, Gregory-only), I-64 (requirements track) |
 
 **Notes:**
 - Some initiatives span multiple projects. Counted under primary owner project.
@@ -152,7 +156,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 - I-50 spans P2 (Phase 1) and P4 (Phase 2) — counted under both.
 - I-62 spans P0 (generation logic) and P2 (W-22 SOP, deferred).
 - I-63 spans P6 (primary), P7 (Odoo Recruitment module), P4-001 (MCP validation).
-- 61 active initiatives (I-01 through I-63, minus I-20 removed, minus I-32 rejected).
+- 62 active initiatives (I-01 through I-64, minus I-20 removed, minus I-32 rejected).
 
 ---
 
@@ -182,7 +186,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 ## 6. Numbering Conventions
 
-- **Initiatives:** I-01 through I-## (sequential, never reuse removed numbers). Next available: **I-64**.
+- **Initiatives:** I-01 through I-## (sequential, never reuse removed numbers). Next available: **I-65**.
 - **Workstreams:** W-01 through W-## (sequential). Next available: **W-24**.
 - **Subprojects:** P{#}-{###} (parent project dash three-digit sequence)
 - **Removed items:** Keep the row with strikethrough and "Removed" status. Do not renumber.
@@ -194,6 +198,7 @@ This document is the single source of truth for BCG Corp's active initiatives an
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.3 | 2026-03-16 | Added I-64 (Long-Term File Storage Architecture — WORM + WIP / P10 requirements + P5 implementation / Gregory + Bob Brezniak). Added WS-12 (Data Governance & Records Management / P10+P5) covering I-15 and I-64. Updated cross-reference counts: P5 (5→6, added I-64), P10 (1→2, added I-64). Active count 61→62. Next-slot pointer I-64→I-65. |
 | 2.2 | 2026-03-15 | I-24-gated service line targets aligned to Q3 '26: I-18 (Q4→Q3), I-19 (Q4→Q3), I-21 (Q2→Q3), I-37 (Q2→Q3). I-16 and I-17 already at Q3 — unchanged. All six I-24-gated initiatives now uniformly target Q3 '26. Added note to Section 4. |
 | 2.1 | 2026-03-15 | P10 (Legal, Compliance & Risk) registered. I-24 re-homed P6→P10; project updated, owner updated to Gregory (Track A) + Rachel McGee (Track B), notes updated with VA DCJS hold, nexus flag, I-37 added to gates. W-23 (Hiring Nexus & Compliance Review SOP) added to Section 3 workstream registry — P10 policy home, Jennifer operational execution, gated on I-24 Track A Q4/Q5. Section 4: I-24 removed from P6 row (count 7→6), P10 row added (1 initiative). P6 scope note updated to HR & People only. Next W-slot updated W-23→W-24. D-02 closed. |
 | 2.0 | 2026-03-15 | Added I-63 (Candidate Data Management & ADP Recruiting Transition / P6 primary / Greg sponsor + Jennifer primary). Updated active count 60→61. Updated next slot I-63→I-64. Updated Section 4: P6 count 6→7, added I-63. Updated WS-11 to include I-63. |
