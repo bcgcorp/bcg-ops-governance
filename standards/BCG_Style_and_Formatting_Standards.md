@@ -1,16 +1,14 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.5
-**Effective:** March 2026
-**Last Updated:** 2026-03-15
-**Scope:** All Claude Projects (P0–P9) and downstream deliverables
+**Version:** 1.4  
+**Effective:** March 2026  
+**Last Updated:** 2026-03-16  
+**Scope:** All Claude Projects (P0–P10) and downstream deliverables  
 **Owner:** Gregory Bernardo, President
 
-**v1.5 Changes:** Section 12 — generalized veteran recognition language to "employees with military service" (removed named individuals).
+**v1.4 Changes:** Updated Section 10.2 Project Registry to 17 projects (P0–P10). Updated Section 10.3 Subproject Registry to 6 subprojects (P0-001, P4-001, P4-002, P5-001, P5-002, P8-001). Updated Section 13 organizational context (61 active initiatives, 23+ workstreams). Added Section 16 (Source of Truth & Governance References) establishing GOV-001, GitHub fetch patterns, and vocabulary authority. Updated scope from P0–P7 to P0–P10 throughout. Corrected EAB references to GitHub per GOV-001.
 
-**v1.4 Changes:** Updated Section 10.3 subproject registry — retired P7-001 through P7-004; added P0-001, P5-002, P8-001; updated P4-002 button backlog 25→41. Updated Section 13 initiative count 46→60 (I-01–I-62 minus I-20 and I-32).
-
-**v1.3 Changes:** Updated scope from P0–P7 to P0–P9. Added P8 and P9 to Section 10.2 project registry. Updated Section 10.3 subproject registry from 1 to 7 subprojects. Updated Section 10.4 routing rule to P1–P9. Updated Section 13 initiative count from 26 to 46 active (I-01–I-48 minus I-20 and I-32).
+**v1.3 Changes:** Version parity bump — propagated across ecosystem 2026-03-12. No content changes from v1.2.
 
 **v1.2 Changes:** Added Section 15 (Evaluation & Analytical Report Conventions) covering change tracking, executive summary with delta, competitive feature analysis, and use case action context. Added phased rollout terminology standard ("Sprints" not "Waves") to Section 2.
 
@@ -18,7 +16,7 @@
 
 ## 1. Purpose
 
-This document defines the universal formatting, tone, document creation, and security standards for all BCG Corp Claude Projects. Every satellite project (P1–P9) and the master strategic plan (P0) must follow these rules to ensure consistency, professionalism, and confidentiality across all outputs.
+This document defines the universal formatting, tone, document creation, and security standards for all BCG Corp Claude Projects. Every satellite project (P1–P10) and the master strategic plan (P0) must follow these rules to ensure consistency, professionalism, and confidentiality across all outputs.
 
 Add this file to every Claude Project's knowledge base.
 
@@ -228,7 +226,7 @@ function tagCell(quarter, width) {
 ### 6.3 Date Shorthand
 
 | Code | Meaning |
-|------|----------|
+|------|---------|
 | EOM | End of Month (e.g., EOM 2026-03) |
 | EOQ | End of Quarter (e.g., EOQ 2026-Q1) |
 | EOW | End of Week (e.g., EOW 2026-02-28) |
@@ -257,7 +255,7 @@ Example:
 When reviewing or producing contract-related documents, use these marking conventions:
 
 | Convention | Meaning |
-|------------|--------|
+|------------|---------|
 | **Yellow Highlighting** | BCG additions and modifications to original text |
 | **Blue Italic Text** | Explanatory notes (internal BCG reference only, not for counterparty) |
 | **Strikethrough Text** | Original text proposed for deletion |
@@ -320,35 +318,40 @@ Subproject handoffs include the subproject ID:
 
 ### 10.2 Project Registry
 
-| ID | Project | What It Produces |
-|----|---------|------------------|
-| P0 | Master Strategic Plan | Synthesis hub — consumes, doesn't produce |
-| P1 | Financial Modeling & Pricing | Revenue models, pricing analysis, break-even |
-| P2 | SOP & Workflow Library | Approved SOPs (W-01–W-22+), PROD-series |
-| P3 | Competitive Intel & BD | Competitor updates, teaming evals, DM playbook |
-| P4 | AI Infrastructure & Deployment | AI configs, runbooks, guardrails |
-| P5 | IT Security / QOS | Compliance artifacts, QOS alignment |
-| P6 | HR, People & Legal Ops | Headcount, org chart, compensation, legal |
-| P7 | Odoo Platform & ERP | Module status, ERP readiness, accounting |
-| P8 | Proposals & RFP Operations | Bid/no-bid recommendations, proposal packages, promise tracking, pipeline analytics, pricing forensics |
-| P9 | Business Continuity & Resilience | Dependency risk register, continuity protocols, tabletop exercise results, W-18 BCP Review SOP |
+| ID | Project | Owner | What It Produces |
+|----|---------|-------|-----------------|
+| P0 | Master Strategic Plan | Gregory Bernardo | Synthesis hub — consumes, doesn't produce |
+| P0-001 | Ecosystem Triage & Routing | Gregory Bernardo | Classified updates, handoff prompts, I-number registrations |
+| P1 | Financial Modeling & Pricing | Gregory Bernardo | Revenue models, pricing analysis, break-even |
+| P2 | SOP & Workflow Library | Jennifer Brezniak | Approved SOPs (W-01–W-23+), PROD-series |
+| P3 | Competitive Intel & BD | Gregory Bernardo | Competitor updates, teaming evals, DM playbook |
+| P4 | AI Infrastructure & Deployment | Jason Harris | AI configs, runbooks, guardrails |
+| P4-001 | BCG Tab / pyRevit Tools | Jason Harris | pyRevit button panels, Revit automation tools |
+| P4-002 | Revit Design Tools | Gregory / Stephanie | Design-layer tooling (I-09, I-28, I-44–I-46, I-49) |
+| P5 | IT Security / QOS | Bob Brezniak | Compliance artifacts, QOS alignment |
+| P5-001 | Network Infrastructure | Bob Brezniak | Security monitoring runbooks |
+| P5-002 | Monitoring & Observability | Bob Brezniak | Ph2 monitoring stack |
+| P6 | HR & People | Jennifer Brezniak | Headcount, org chart, compensation |
+| P7 | Odoo Platform & ERP | Victor Carrillo | Module status, ERP readiness, accounting |
+| P8 | Proposals & RFP Ops | Gregory Bernardo | Bid/no-bid analysis, pipeline stats, pricing data |
+| P8-001 | Document Intake & Routing | Rachel McGee | RFP/CO/PO intake processing |
+| P9 | Business Continuity & Resilience | Gregory Bernardo | BC/DR plans, resilience protocols (Gregory only) |
+| P10 | Legal, Compliance & Risk | Gregory Bernardo | Legal matters, insurance, compliance (Gregory only) |
 
 ### 10.3 Subproject Registry
 
-Satellite projects may contain numbered subprojects for specialized workstreams that need their own Claude Project, knowledge base, and instructions.
-
-| ID | Parent | Subproject | What It Produces |
-|----|--------|------------|------------------|
-| P0-001 | P0 | Ecosystem Triage & Routing Protocol | W-20 SOP, update classification matrix, standard update template, processing checklists, routing rules |
-| P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations |
-| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons, Dynamo scripts, AutoCAD automation. 41-button backlog (B-01–B-41). |
-| P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, remediation plan |
-| P5-002 | P5 | Monitoring & Observability Infrastructure | Grafana/Prometheus/Loki stack. Phase 1 complete on ClarkKent. Phase 2 gated on Jason (April 1). |
-| P8-001 | P8 | Document Intake & Routing | Automated intake for RFPs, Contracts, POs, WOs, COs. Rachel McGee owns. Go-live 2026-03-12. |
+| ID | Parent | Subproject Name | What It Produces | Status |
+|----|--------|----------------|-----------------|--------|
+| P0-001 | P0 | Ecosystem Triage & Routing | Classified updates, I-number registrations, handoff prompts | Active |
+| P4-001 | P4 | BCG Tab / pyRevit Tools | pyRevit button panels, Revit automation tools | Active |
+| P4-002 | P4 | Revit Design Tools | Design-layer Revit tooling | Active |
+| P5-001 | P5 | Network Infrastructure | Firewall/switch assessment, monitoring specs | Active (Ph1 complete) |
+| P5-002 | P5 | Monitoring & Observability | Ph2 monitoring stack | Active (gated Apr 1) |
+| P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, pipeline feed | Active (go-live pending) |
 
 ### 10.4 Routing Rule
 
-If a request would be better served in a satellite project (P1–P9) or an existing subproject, say so and explain which project and why. P0 synthesizes; satellites produce. Subprojects report to their parent satellite — not directly to P0.
+If a request would be better served in a satellite project (P1–P10) or an existing subproject, say so and explain which project and why. P0 synthesizes; satellites produce. Subprojects report to their parent satellite — not directly to P0.
 
 ### 10.5 Subproject Conventions
 
@@ -385,7 +388,7 @@ When a new initiative or decision is presented in any project, evaluate against 
 | **Document font** | Arial |
 | **Logo** | Current logo; additional options available |
 | **Photography** | Coordinated headshots preferred; professional quality minimum |
-| **Veteran recognition** | Maintain military service badges for employees with military service |
+| **Veteran recognition** | Maintain military service badges for Joshua Davis, Victor Carrillo, and Myra Masisak |
 
 ---
 
@@ -403,8 +406,9 @@ Reference these facts consistently across all projects:
 - **AI infrastructure:** 2x NVIDIA DGX Spark, 2x RTX 5090 workstations
 - **Design principles:** (1) Build to Sell, (2) Redundancy at Every Level, (3) Employee Ownership & Profit Sharing, (4) Process Before People
 - **Guiding principles:** Three core principles documented in `Our_Guiding_Principles.docx`
-- **Initiative catalog:** 60 active (I-01 through I-62, minus I-20 removed and I-32 rejected)
-- **Workstreams:** 11 active (WS-01 through WS-11)
+- **Active projects:** 17 (P0, P0-001, P1–P9, P4-001, P4-002, P5-001, P5-002, P8-001, P10)
+- **Initiative catalog:** 61 active (I-01 through I-63, minus I-20 and I-32). Next available slot: I-64
+- **Workstreams:** W-01 through W-23+. 11 active workstream categories (WS-01 through WS-11)
 
 ---
 
@@ -439,8 +443,6 @@ When a report is re-run or updated — whether on a scheduled cycle (quarterly s
 - **First edition baseline:** When a report is produced for the first time, include the "What Changed" section with the note: *"This is the baseline evaluation (v1). No prior version exists for comparison. Future re-runs will include a delta summary here."* This establishes the convention from day one.
 - **Inline change markers** (optional, for major revisions): When a section has been substantially rewritten, a brief note at the top of that section — e.g., `[Updated in v2: Added 3 new servers to landscape, revised scoring for Server #4]` — helps readers who are already familiar with the prior version scan efficiently.
 
-**Why this matters:** BCG's evaluation reports are living documents. Greg and the team shouldn't have to diff two Word files to figure out what's new. The change tracking convention makes every version self-documenting.
-
 ### 15.2 Executive Summary with Delta
 
 Every evaluation or analytical report must open with an Executive Summary that a busy reader can consume in under 60 seconds and know: what was evaluated, what was selected, and whether anything changed.
@@ -454,13 +456,9 @@ Every evaluation or analytical report must open with an Executive Summary that a
 5. **Competitive feature notes** (1–2 sentences): Whether any runner-up has features the primary selection lacks. Reference the Competitive Feature Analysis section for details.
 6. **Delta summary** (for v2+ only): What changed since last version and whether it affects the recommendation. For v1 reports, include the baseline placeholder per Section 15.1.
 
-**What this replaces:** The Executive Summary replaces the pattern of burying the recommendation in Section 8. The detailed analysis still lives in the body — the Executive Summary gives the answer upfront, consistent with BCG's "state the recommendation first, then reasoning" style (Section 2).
-
 ### 15.3 Competitive Feature Analysis
 
 When an evaluation produces a clear winner — one candidate that scores highest across most or all criteria — the report must explicitly assess whether any runner-up has features, capabilities, or design approaches that the primary selection lacks.
-
-**Why this exists:** A 5/5 candidate that checks every box can create blind spots. The team might miss a useful capability from a 3/5 server that could be adopted, forked, requested upstream, or used as a reference implementation. Since many evaluated tools are open source, features are not locked to the product they ship in.
 
 **Required table format:**
 
@@ -486,14 +484,37 @@ When a report identifies use cases for a tool, platform, or integration, each us
 | **Automation** | ⚡ | Creates/modifies alert rules, triggers notifications, opens incidents, executes workflows. Write operation. | Green (#D5F5E3) |
 | **Visual → Automation** | 📊→⚡ | Starts as visual-only in early deployment phases; gains automation capability in a later phase. | Yellow (#FCF3CF) |
 
-**Why this matters:** "Monitor GPU temperature" could mean "show a dashboard" or "alert the team when it exceeds threshold and create an incident ticket." The distinction drives deployment phasing (read-only first, writes later), security scoping (Viewer vs. Editor permissions), and Bob's infrastructure requirements (notification channels, webhook endpoints). Making the output type explicit prevents ambiguity.
-
 **Implementation rules:**
 
 - Every use case table must include an "Output Type" column using the categories above.
 - Use the color coding in document tables where format supports it (Word, HTML). In markdown or plain text, use the symbols.
 - If a use case spans multiple output types across phases, use "Visual → Automation" and note which phase enables the automation capability.
 - A legend explaining the three output types should appear below the table on first use in any document.
+
+---
+
+## 16. Source of Truth & Governance References
+
+### 16.1 GitHub as Single Source of Truth (GOV-001)
+
+Per governance decision GOV-001 (approved 2026-03-11), GitHub is the single source of truth for all Claude-fetchable operational documents. OneDrive serves as archive/backup only.
+
+**GitHub base path for governance files:**
+```
+https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/
+```
+
+### 16.2 One Document Owns One Definition
+
+No cross-document duplication of terms, definitions, or governance rules. Each concept has exactly one authoritative source. All other surfaces reference that source, never duplicate it.
+
+### 16.3 Ecosystem Vocabulary
+
+`BCG_Ecosystem_Vocabulary.md` (in `bcg-ops-governance/standards/`) is the single source of truth for all ecosystem terminology. When a term needs definition, reference the vocabulary file — do not define it inline or in project-specific instructions.
+
+### 16.4 Ecosystem Awareness Block (EAB)
+
+Every satellite project's custom instructions must include the EAB (currently v1.3). The master file lives on GitHub at `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Propagation follows the same GOV-001 GitHub-first rule.
 
 ---
 
