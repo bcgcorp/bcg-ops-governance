@@ -1,10 +1,12 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.4  
+**Version:** 1.5  
 **Effective:** March 2026  
 **Last Updated:** 2026-03-16  
 **Scope:** All Claude Projects (P0–P10) and subprojects  
 **Owner:** Gregory Bernardo, President
+
+**v1.5 Changes:** Updated Section 5.4 EAB version reference from v1.3 to v1.4 (matching actual EAB on GitHub).
 
 **v1.4 Changes:** Updated scope from P0–P8 to P0–P10. Added P9 (Business Continuity), P10 (Legal, Compliance & Risk) to satellite registry. Added P0-001, P4-002, P5-002, P8-001 to subproject registry; updated P4-001 and P5-001 entries. Updated routing redirects for P9/P10. Updated cross-project dependencies to current state. Changed source-of-truth reference from OneDrive to GitHub per GOV-001. Updated EAB section to reference GitHub.
 
@@ -202,7 +204,7 @@ Every satellite project's custom instructions must include the Ecosystem Awarene
 | Attribute | Value |
 |-----------|-------|
 | **Master file** | GitHub: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md` |
-| **Current version** | v1.3 |
+| **Current version** | v1.4 |
 | **Deployment** | Copy-paste into custom instructions (embedded, not runtime-fetched) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
 | **Update cycle** | Re-propagate to all satellites whenever the block changes |
@@ -262,11 +264,12 @@ Running log of all approved handoffs. Newest first.
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 1.0 | 2026-03-01 | Initial version. Extracted from BCG_Style_and_Formatting_Standards.md Section 10, expanded with handoff content requirements, routing redirects, cross-project dependencies, and handoff log. |
-| 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
-| 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
-| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
+| 1.5 | 2026-03-16 | Updated Section 5.4 EAB version reference from v1.3 to v1.4. |
 | 1.4 | 2026-03-16 | Full ecosystem update: scope P0–P10. Added P9, P10 to satellites. Added P0-001, P4-002, P5-002, P8-001 to subprojects. Updated P4-001 and P5-001 entries. Added P9/P10 routing redirects. Replaced dependency table with current state. Added handoff log entries. Changed source-of-truth from OneDrive to GitHub per GOV-001. Updated EAB section to reference GitHub. |
+| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
+| 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
+| 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
+| 1.0 | 2026-03-01 | Initial version. Extracted from BCG_Style_and_Formatting_Standards.md Section 10, expanded with handoff content requirements, routing redirects, cross-project dependencies, and handoff log. |
 
 ---
 

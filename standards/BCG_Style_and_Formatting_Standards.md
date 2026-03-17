@@ -1,10 +1,12 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.4  
+**Version:** 1.5  
 **Effective:** March 2026  
 **Last Updated:** 2026-03-16  
 **Scope:** All Claude Projects (P0–P10) and downstream deliverables  
 **Owner:** Gregory Bernardo, President
+
+**v1.5 Changes:** Updated Section 16.4 EAB version reference from v1.3 to v1.4 (matching actual EAB on GitHub).
 
 **v1.4 Changes:** Updated Section 10.2 Project Registry to 17 projects (P0–P10). Updated Section 10.3 Subproject Registry to 6 subprojects (P0-001, P4-001, P4-002, P5-001, P5-002, P8-001). Updated Section 13 organizational context (61 active initiatives, 23+ workstreams). Added Section 16 (Source of Truth & Governance References) establishing GOV-001, GitHub fetch patterns, and vocabulary authority. Updated scope from P0–P7 to P0–P10 throughout. Corrected EAB references to GitHub per GOV-001.
 
@@ -153,7 +155,7 @@ BCG uses a consistent, cool-toned color system for quarterly target tracking acr
 ### 5.1 Tag Color Definitions
 
 | Tag | Hex Fill | Text Color | Meaning |
-|-----|----------|------------|---------|
+|-----|----------|------------|----------|
 | `[Q1 '26]` | #0E7C7B (Teal) | White | Immediate |
 | `[Q2 '26]` | #2B5797 (Blue) | White | Near-term |
 | `[Q3 '26]` | #6A5ACD (Slate/Purple) | White | Mid-year |
@@ -226,7 +228,7 @@ function tagCell(quarter, width) {
 ### 6.3 Date Shorthand
 
 | Code | Meaning |
-|------|---------|
+|------|----------|
 | EOM | End of Month (e.g., EOM 2026-03) |
 | EOQ | End of Quarter (e.g., EOQ 2026-Q1) |
 | EOW | End of Week (e.g., EOW 2026-02-28) |
@@ -255,7 +257,7 @@ Example:
 When reviewing or producing contract-related documents, use these marking conventions:
 
 | Convention | Meaning |
-|------------|---------|
+|------------|----------|
 | **Yellow Highlighting** | BCG additions and modifications to original text |
 | **Blue Italic Text** | Explanatory notes (internal BCG reference only, not for counterparty) |
 | **Strikethrough Text** | Original text proposed for deletion |
@@ -319,7 +321,7 @@ Subproject handoffs include the subproject ID:
 ### 10.2 Project Registry
 
 | ID | Project | Owner | What It Produces |
-|----|---------|-------|-----------------|
+|----|---------|-------|------------------|
 | P0 | Master Strategic Plan | Gregory Bernardo | Synthesis hub — consumes, doesn't produce |
 | P0-001 | Ecosystem Triage & Routing | Gregory Bernardo | Classified updates, handoff prompts, I-number registrations |
 | P1 | Financial Modeling & Pricing | Gregory Bernardo | Revenue models, pricing analysis, break-even |
@@ -514,7 +516,7 @@ No cross-document duplication of terms, definitions, or governance rules. Each c
 
 ### 16.4 Ecosystem Awareness Block (EAB)
 
-Every satellite project's custom instructions must include the EAB (currently v1.3). The master file lives on GitHub at `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Propagation follows the same GOV-001 GitHub-first rule.
+Every satellite project's custom instructions must include the EAB (currently v1.4). The master file lives on GitHub at `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Propagation follows the same GOV-001 GitHub-first rule.
 
 ---
 
