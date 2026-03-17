@@ -1,9 +1,9 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
 **Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P0–P10) and subprojects
+**Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
@@ -27,7 +27,7 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | **Role** | Synthesis hub — consumes approved outputs from all satellites, does not produce deliverables |
 | **Owner** | Gregory |
 
-### 2.2 Satellite Projects (P1–P10)
+### 2.2 Satellite Projects (P1–P11)
 
 | ID | Project | Owner | What It Produces | Key Consumers |
 |----|---------|-------|-----------------|---------------|
@@ -41,8 +41,10 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | P8 | Proposals & RFP Operations | Gregory | Bid/no-bid recommendations, proposals, promise tracking, pipeline analytics | P0, P1, P2, P3, P7 |
 | P9 | Business Continuity & Resilience | Gregory | Enterprise BCP, dependency risk register, continuity protocols | P0 |
 | P10 | Legal, Compliance & Risk | Gregory (only) | Legal clearances, compliance status, insurance governance, contract review | P0 |
+| P11 | Candidate OSINT & Pre-Hire Intelligence | Gregory (only) | Candidate Intelligence Reports (CIRs) — pre-hire public record and digital footprint review. RESTRICTED. | P10 (CIR custody), P6 (go/no-go decision) |
 
 **Note:** P6 is HR & People ONLY. Legal, compliance, licensing, and insurance governance migrated to P10 as of 2026-03-15.
+**Note:** P11 is Gregory-only, RESTRICTED. CIRs are triggered pre-offer and filed to P10 for custody. Go/no-go hiring decisions route to P6.
 
 ### 2.3 Subproject Registry
 
@@ -87,9 +89,11 @@ Every handoff must include: standardized label, approval status, summary of what
 | Odoo configuration needed | Flag for P7 |
 | Legal/compliance implication | Flag for P10 (Gregory only) |
 | Business continuity gap | Flag for P9 |
+| Pre-hire candidate investigation | Flag for P11 (Gregory only) |
 
 **Core rule:** Subprojects report to their parent satellite — never directly to P0.
 **P10 rule:** P10 outputs route directly to P0. P10 does NOT route to other satellites.
+**P11 rule:** P11 outputs route to P10 (CIR custody) and P6 (go/no-go). P11 does NOT route to P0 directly. Gregory-only.
 
 ---
 
@@ -112,6 +116,7 @@ Every handoff must include: standardized label, approval status, summary of what
 | Inbound business document intake | P8-001 |
 | Business continuity planning | P9 |
 | Licensing, insurance, contract review, legal | P10 (Gregory only) |
+| Pre-hire candidate background investigation | P11 (Gregory only) |
 
 ---
 
@@ -131,7 +136,7 @@ Creation (owner assigns ID, creates project) → Active (produces deliverables, 
 
 ### 5.4 Ecosystem Awareness Block (EAB)
 
-Every satellite's custom instructions must include the EAB. Master file: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Current version: **v1.4**. Deployed by copy-paste (embedded, not runtime-fetched). Placement: after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS.
+Every satellite's custom instructions must include the EAB. Master file: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Current version: **v1.5**. Deployed by copy-paste (embedded, not runtime-fetched). Placement: after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS.
 
 ---
 
@@ -151,6 +156,8 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 | P6 | I-24 Track A counsel opinion (Q4-Q5) | P10 | TBD | Gates W-23 |
 | P3 | I-24 Track A counsel opinion (Q1-Q3) | P10 | TBD | Gates I-16, I-17, I-18, I-19, I-37 |
 | P7 | Accounting data source decision | D-01 | TBD | Blocks I-23 |
+| P6 | CIR go/no-go for finalist candidates | P11 | Ongoing | New — triggered pre-offer |
+| P10 | CIR custody filing | P11 | Ongoing | New — P11 outputs to P10 |
 
 ---
 
@@ -158,6 +165,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
+| 2026-03-17 | P0 | P11 | P11 activation — I-64, Candidate OSINT & Pre-Hire Intelligence | Gregory |
 | 2026-03-15 | P0 | P10 | P10 activation — I-24, W-23, CAP-01, contract review | Gregory |
 | 2026-03-12 | P5-002 | P5 | Phase 1 complete — ClarkKent, Telegraf, WireGuard | Gregory |
 | 2026-03-09 | P4 | P5 | VPN architecture — WireGuard site-to-site Phase 1 | Gregory |
@@ -169,6 +177,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to satellite registry. Added P11 routing rules and redirect. Added P6/P10 dependencies from P11. Updated scope P0–P11. Updated EAB reference to v1.5. |
 | 1.4 | 2026-03-17 | Added P9, P10 to project registry. Added P0-001, P4-002, P5-002, P8-001 to subproject registry. Added retired subproject table. Updated P6 name. Added P10 routing rules. Updated dependencies. Updated scope P0-P10. |
 | 1.3 | 2026-03-09 | Added P5 VPN dependency. |
 | 1.2 | 2026-03-01 | Added P5-001 to subprojects. Added Section 5.4 EAB. |
