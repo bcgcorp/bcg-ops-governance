@@ -1,8 +1,8 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "lastUpdated": "2026-03-16",
   "updatedBy": "Gregory Bernardo",
-  "note": "Scope: governance standards and SOPs only. Client deliverables tracked separately.",
+  "note": "Scope: governance standards and SOPs only. Client deliverables tracked separately. v1.1: Corrected GOV-002 (v1.8→v2.0, 60→61), GOV-006 (v1.3→v1.4, stale→published), GOV-007 (v1.3→v1.4, stale→published), GOV-008 (v1.1→v1.4, 16→17). Added P10 scope where missing.",
   "documents": [
     {
       "id": "GOV-001",
@@ -10,12 +10,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.7",
+      "version": "v1.8",
       "status": "published",
       "githubPath": "standards/BCG_Governance_Doc_Registry.md",
       "onedrivePath": null,
       "lastUpdated": "2026-03-16",
-      "notes": "Master index of all governance documents."
+      "notes": "Master index. 18 files tracked."
     },
     {
       "id": "GOV-002",
@@ -23,12 +23,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.8",
+      "version": "v2.0",
       "status": "published",
       "githubPath": "standards/BCG_Initiative_and_Workstream_Catalog.md",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-14",
-      "notes": "60 active initiatives, 11 workstreams. Next slot: I-63."
+      "lastUpdated": "2026-03-15",
+      "notes": "61 active initiatives, 11 workstreams. Next slot: I-64."
     },
     {
       "id": "GOV-003",
@@ -41,7 +41,7 @@
       "githubPath": "standards/BCG_Ecosystem_Health_Config.json",
       "onedrivePath": null,
       "lastUpdated": "2026-03-14",
-      "notes": "Health score weights and velocity tier config."
+      "notes": "Health score weights and velocity tier config. File exists in dashboard DATA block only — not yet on GitHub."
     },
     {
       "id": "GOV-004",
@@ -54,7 +54,7 @@
       "githubPath": "standards/BCG_Dashboard_Settings.json",
       "onedrivePath": null,
       "lastUpdated": "2026-03-15",
-      "notes": "User registry, project scope, tab visibility. Write scope pending."
+      "notes": "Planned — write scope pending. Not yet on GitHub."
     },
     {
       "id": "GOV-005",
@@ -63,11 +63,11 @@
       "project": "P0",
       "owner": "Gregory Bernardo",
       "version": "v1.1",
-      "status": "approved",
+      "status": "published",
       "githubPath": "standards/BCG_Document_Registry.json",
       "onedrivePath": null,
       "lastUpdated": "2026-03-16",
-      "notes": "Governance + SOP document registry. Approved 2026-03-15. GOV-013 added 2026-03-16."
+      "notes": "This file. Machine-readable document status tracking."
     },
     {
       "id": "GOV-006",
@@ -75,12 +75,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.3",
-      "status": "stale",
+      "version": "v1.4",
+      "status": "published",
       "githubPath": "standards/BCG_Style_and_Formatting_Standards.md",
       "onedrivePath": "Corp/AI/Standards/BCG_Style_and_Formatting_Standards.md",
-      "lastUpdated": "2026-03-07",
-      "notes": "v1.4 pending — Style Guide update carry-forward."
+      "lastUpdated": "2026-03-16",
+      "notes": "17-project ecosystem, Section 16 added. Note: Section 16.4 EAB ref needs v1.3→v1.4 fix."
     },
     {
       "id": "GOV-007",
@@ -88,12 +88,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.3",
-      "status": "stale",
+      "version": "v1.4",
+      "status": "published",
       "githubPath": "standards/BCG_Project_Ecosystem_and_Handoffs.md",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-07",
-      "notes": "v1.4 pending — needs 16-project update."
+      "lastUpdated": "2026-03-16",
+      "notes": "P0–P10, 6 subprojects, GOV-001 references. Note: Section 5.4 EAB ref needs v1.3→v1.4 fix."
     },
     {
       "id": "GOV-008",
@@ -101,12 +101,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.1",
+      "version": "v1.4",
       "status": "published",
       "githubPath": "standards/BCG_Ecosystem_Awareness_Block.md",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-08",
-      "notes": "EAB embedded in all 16 satellite projects."
+      "lastUpdated": "2026-03-16",
+      "notes": "EAB v1.4 committed. 17 projects, P1–P10. Propagation to satellites pending."
     },
     {
       "id": "GOV-009",
@@ -115,11 +115,11 @@
       "project": "P5",
       "owner": "Bob Brezniak",
       "version": "v1.2",
-      "status": "draft",
+      "status": "published",
       "githubPath": "standards/BCG_Infrastructure_Inventory.md",
       "onedrivePath": null,
-      "lastUpdated": null,
-      "notes": "v1.2 pending — needs Highland Village branch and NUC9 cluster additions."
+      "lastUpdated": "2026-03-15",
+      "notes": "Note: scope header needs P0-P9→P0-P10 fix. Highland Village + NUC9 additions pending for v1.3."
     },
     {
       "id": "GOV-010",
@@ -129,10 +129,10 @@
       "owner": "Gregory Bernardo",
       "version": "v1.0",
       "status": "draft",
-      "githubPath": "standards/BCG_OneDrive_File_Manifest.md",
+      "githubPath": null,
       "onedrivePath": null,
       "lastUpdated": "2026-03-14",
-      "notes": "Scaffolded. Pending Gregory approval before publishing."
+      "notes": "Scaffolded. Not on GitHub. Pending Gregory approval."
     },
     {
       "id": "GOV-011",
@@ -153,12 +153,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.0",
+      "version": "v1.2",
       "status": "published",
       "githubPath": "standards/BCG_Ecosystem_Vocabulary.md",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-08",
-      "notes": "Single source of truth for all ecosystem terminology."
+      "lastUpdated": "2026-03-16",
+      "notes": "P0–P10 scope, 61 initiatives, EAB v1.4."
     },
     {
       "id": "GOV-013",
@@ -171,7 +171,59 @@
       "githubPath": "standards/BCG_Tools_Inventory.md",
       "onedrivePath": null,
       "lastUpdated": "2026-03-16",
-      "notes": "BCGTools pyRevit extension. 42 buttons across 9 panels. Companion to GOV-011 (pyRevit Tab Style Guide)."
+      "notes": "BCGTools pyRevit extension. 42 buttons across 9 panels."
+    },
+    {
+      "id": "GOV-014",
+      "title": "Artifact Naming & Capture Standard",
+      "type": "governance",
+      "project": "P0",
+      "owner": "Gregory Bernardo / Jennifer Brezniak",
+      "version": "v1.2",
+      "status": "published",
+      "githubPath": "standards/BCG_Artifact_Naming_and_Capture_Standard.md",
+      "onedrivePath": null,
+      "lastUpdated": "2026-03-16",
+      "notes": "17 projects including P10."
+    },
+    {
+      "id": "GOV-015",
+      "title": "Custom Module Registry",
+      "type": "governance",
+      "project": "P7",
+      "owner": "Victor Carrillo",
+      "version": "v1.1",
+      "status": "published",
+      "githubPath": "standards/BCG_Custom_Module_Registry.md",
+      "onedrivePath": null,
+      "lastUpdated": "2026-03-15",
+      "notes": "7 of 17 modules catalogued. Track 2 audit pending."
+    },
+    {
+      "id": "GOV-016",
+      "title": "Team Directory",
+      "type": "governance",
+      "project": "P0",
+      "owner": "Gregory Bernardo",
+      "version": "v2.0",
+      "status": "published",
+      "githubPath": "standards/BCG_Team_Directory.md",
+      "onedrivePath": null,
+      "lastUpdated": "2026-03-12",
+      "notes": "Note: scope header needs P0-P9→P0-P10 fix. Gregory assignments need P10 addition."
+    },
+    {
+      "id": "SOP-GOV-001",
+      "title": "SOP Governance & Intake Protocol",
+      "type": "governance",
+      "project": "P2",
+      "owner": "Jennifer Brezniak",
+      "version": "v1.3",
+      "status": "published",
+      "githubPath": "standards/BCG_SOP_Governance_and_Intake_Protocol.md",
+      "onedrivePath": null,
+      "lastUpdated": "2026-03-16",
+      "notes": "Scope P0–P10. W-23 current, W-24 next."
     },
     {
       "id": "W-01",
@@ -184,7 +236,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/SOPs/",
       "lastUpdated": null,
-      "notes": "WS-01. Owned by Cory. Pending first draft."
+      "notes": "WS-01. Pending first draft."
     },
     {
       "id": "W-02",
@@ -197,7 +249,7 @@
       "githubPath": null,
       "onedrivePath": null,
       "lastUpdated": null,
-      "notes": "Blocked on D-01 accounting data source decision."
+      "notes": "Blocked on D-01."
     },
     {
       "id": "W-04",
@@ -223,7 +275,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/SOPs/W-16_Bid_NoBid_SOP.docx",
       "lastUpdated": "2026-03-12",
-      "notes": "W-16 closed. $15K threshold, Stephanie Bernardo backup authority."
+      "notes": "W-16 closed. $15K threshold, Stephanie backup."
     },
     {
       "id": "W-08",
@@ -236,7 +288,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/SOPs/",
       "lastUpdated": null,
-      "notes": "W-08. Rachel lead."
+      "notes": "Rachel lead."
     },
     {
       "id": "W-10",
@@ -249,7 +301,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/SOPs/",
       "lastUpdated": null,
-      "notes": "WS-10. Stephanie lead. PROD-series."
+      "notes": "WS-10. PROD-series."
     },
     {
       "id": "W-14",
@@ -262,7 +314,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/SOPs/",
       "lastUpdated": null,
-      "notes": "W-14. Rachel lead. P8-001 go-live prerequisite."
+      "notes": "P8-001 go-live prerequisite."
     },
     {
       "id": "W-19",
@@ -275,7 +327,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/SOPs/",
       "lastUpdated": null,
-      "notes": "I-57. Jennifer lead. Wave 1 SOP Lookup Pilot gate."
+      "notes": "I-57. Wave 1 SOP Lookup Pilot gate."
     },
     {
       "id": "W-20",
@@ -287,8 +339,8 @@
       "status": "published",
       "githubPath": "standards/BCG_W20_Ecosystem_Triage_SOP.md",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-08",
-      "notes": "Runtime-fetched. Governs P0-001 triage protocol."
+      "lastUpdated": "2026-03-12",
+      "notes": "Governs P0-001 triage protocol."
     },
     {
       "id": "W-21",
@@ -301,7 +353,7 @@
       "githubPath": null,
       "onedrivePath": null,
       "lastUpdated": null,
-      "notes": "Blocked on 3 Gregory policy decisions (Odoo vs B: drive storage)."
+      "notes": "Blocked on 3 Gregory policy decisions."
     },
     {
       "id": "W-22",
@@ -327,20 +379,7 @@
       "githubPath": null,
       "onedrivePath": "Corp/AI/Standards/BCG_AI_Guide_WizardSection_v1.0_DRAFT.docx",
       "lastUpdated": "2026-03-11",
-      "notes": "Produced 2026-03-11. Jennifer to integrate into How to Use AI guide. Pending Section X placeholder fix and Style Guide application. Requires Gregory approval."
-    },
-    {
-      "id": "SOP-GOV-001",
-      "title": "SOP Governance & Intake Protocol",
-      "type": "governance",
-      "project": "P2",
-      "owner": "Jennifer Brezniak",
-      "version": "v1.0",
-      "status": "published",
-      "githubPath": "standards/BCG_SOP_Governance_and_Intake_Protocol.md",
-      "onedrivePath": null,
-      "lastUpdated": "2026-03-08",
-      "notes": "Runtime-fetched. Governs SOP creation and approval workflow."
+      "notes": "Pending Section X placeholder fix and Style Guide application. Requires Gregory approval."
     }
   ]
 }
