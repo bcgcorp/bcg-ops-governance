@@ -1,9 +1,9 @@
 # BCG Corp — Team Directory & Roles
 
-**Version:** 2.0
+**Version:** 2.1
 **Effective:** March 2026
-**Last Updated:** 2026-03-12
-**Scope:** All Claude Projects (P0–P9) and subprojects
+**Last Updated:** 2026-03-16
+**Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
@@ -26,7 +26,7 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Email:** gb@bcg-corp.com
 - **Role:** Founder, final approver on all deliverables, primary strategic decision-maker. Currently absorbing BIM Lead responsibilities (temporary — pending I-40 benefits resolution and re-recruitment).
 - **Tools:** Windsurf IDE, Claude Code, Claude.ai, Odoo (admin), Open WebUI, Xmind
-- **Project Assignments:** P0 (owner), P0-001 (owner), P1 (owner), P3 (owner), P8 (owner), P9 (owner)
+- **Project Assignments:** P0 (owner), P0-001 (owner), P1 (owner), P3 (owner), P8 (owner), P9 (owner), P10 (owner)
 - **Active Initiatives:** I-24 (Licensing & Insurance Audit — self-execute), I-54 (Production Rework Module — architecture)
 - **Open Decisions:** D-01 (accounting data source)
 - **Notes:** All outputs require Gregory's approval before flowing between projects. Backup bid/no-bid authority delegated to Stephanie Bernardo (triggers after 48hr non-response). April 12 calendar hold: CI/CD write mode upgrade review.
@@ -102,7 +102,7 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Role:** Office administration, operations management, document intake processing, billing support.
 - **Tools:** Claude.ai, Odoo, Open WebUI
 - **Project Assignments:** P8-001 (owner)
-- **Active Initiatives:** I-58 (P8-001 Document Intake & Routing — go-live), W-08 (AIA Billing/Invoicing), W-14 (Sales Order Entry)
+- **Active Initiatives:** I-58 (P8-001 Document Intake & Routing — go-live), W-08 (AIA Billing/Invoicing), W-14 (Sales Order Entry), I-24 (Insurance — co-owner with Gregory)
 - **Other:** I-50 Ph1 primary input contributor (admin/billing/proposals file structure).
 
 ### Joshua Davis
@@ -145,7 +145,7 @@ Quick reference for primary project assignments. Dash (—) means no current ass
 
 | Name | Primary Projects | Role |
 |------|-----------------|------|
-| Gregory | P0, P0-001, P1, P3, P8, P9 | Owner |
+| Gregory | P0, P0-001, P1, P3, P8, P9, P10 | Owner |
 | Jennifer | P2, P6 | Owner |
 | Bob | P5, P5-001, P5-002, P9 | Lead / Owner |
 | Victor | P7 | Owner (sole) |
@@ -159,14 +159,14 @@ Quick reference for primary project assignments. Dash (—) means no current ass
 
 **Capacity types:** Owner (approver + contributor), Lead (day-to-day execution authority), Contributor (produces work), Reviewer (reviews before deployment)
 
-**Sync Liaisons:** Gregory (primary) / Bob (backup) for all 16 projects.
+**Sync Liaisons:** Gregory (primary) / Bob (backup) for all 17 projects.
 
 ---
 
 ## 4. Status Definitions
 
 | Status | Meaning |
-|--------|---------|
+|--------|--------|
 | **Active — Full-time** | W-2 employee, continuous availability during business hours |
 | **Active — Fractional** | W-2 with reduced/defined hours, specific engagement scope |
 | **Pre-employment** | Engagement confirmed, start date set, not yet active |
@@ -189,7 +189,8 @@ The following individual must NOT be assigned to any initiative, role, or projec
 ## 6. Change Log
 
 | Version | Date | What Changed |
-|---------|------|-------------|
+|---------|------|--------------|
+| 2.1 | 2026-03-16 | Scope P0–P9 → P0–P10. Added P10 to Gregory's project assignments. Updated Role-to-Project Matrix (Gregory row includes P10). Sync Liaisons 16→17 projects. Added I-24 co-owner to Rachel McGee entry. |
 | 2.0 | 2026-03-12 | Complete rewrite. Updated all titles, roles, and project assignments to reflect current ecosystem (16 projects). Added Jason start date (April 1). Added Stephanie as backup bid/no-bid authority. Updated Victor to P7 sole owner (P7 subprojects retired). Added Rachel as P8-001 owner. Added BIM Lead vacancy. Added Bernard Lewis restriction. Added active initiatives per person. Updated source of truth to GitHub (GOV-001). Simplified Role-to-Project Matrix. Removed stale "P0–P7" scope. |
 | 1.0 | 2026-03-01 | Initial version. 11 team members (10 full-time, 1 fractional). Core project assignments defined. |
 

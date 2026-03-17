@@ -1,9 +1,9 @@
 # BCG Corp — Infrastructure Inventory
 
-**Version:** 1.2
+**Version:** 1.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-15
-**Scope:** All Claude Projects (P0–P9) and subprojects
+**Last Updated:** 2026-03-16
+**Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
@@ -45,6 +45,7 @@ Dedicated hardware for on-premises AI model serving and development.
 |-------|------|----------|------|-------|
 | NVIDIA DGX Spark | AI compute appliance | 2 | On-prem model inference and training | Key metrics: GPU utilization, memory, temperature, power draw, PCIe throughput. Monitor via DCGM + dcgm-exporter → Prometheus (planned). |
 | RTX 5090 Workstation | GPU workstation | 2 | AI development, model fine-tuning | Same GPU monitoring path as DGX Spark. |
+| NUC9 Cluster | Intel NUC9 | TBD | TBD — allocation pending | 1 unit designated for Bob (Seattle). Remaining units allocation TBD. [GREGORY: confirm total count and assignment plan] |
 
 ---
 
@@ -105,7 +106,17 @@ Dedicated hardware for on-premises AI model serving and development.
 |----------|-------|------|--------|--------|-------|
 | OuterRim | Netgate 4100 (pfSense) | Harris Lab firewall | 47.187.157.191 (dynamic) | 192.168.100.0/24 (Office_Work) | WireGuard endpoint (WG_BCG_SITE/opt6, port 51821, tunnel IP 10.10.10.2/24). Initiates connection (dynamic endpoint). |
 
-### 6.5 Subnet Map
+### 6.5 Highland Village Branch
+
+| Field | Value |
+|-------|-------|
+| **Location** | Highland Village, TX |
+| **Status** | Online — partial connectivity |
+| **Firewall** | Netgate 4200 (pfSense) |
+| **WireGuard** | Partial — configuration in progress |
+| **Notes** | [BOB CONFIRM: WAN IP, subnet, WireGuard tunnel details, connectivity status] |
+
+### 6.6 Subnet Map
 
 | Site | Subnet | Description |
 |------|--------|-------------|
@@ -113,6 +124,7 @@ Dedicated hardware for on-premises AI model serving and development.
 | Denton | 192.168.40.0/24 | Servers |
 | Harris Lab | 192.168.100.0/24 | Office_Work |
 | WG Transit | 10.10.10.0/24 | WireGuard tunnel (isolated) |
+| Highland Village | TBD | [BOB CONFIRM: subnet assignment] |
 
 ---
 
@@ -167,8 +179,10 @@ BCG's self-hosted ERP platform. Managed under P7. Victor Carrillo is sole P7 own
 | Platform | Purpose | Data Classification | Notes |
 |----------|---------|---------------------|-------|
 | **Microsoft 365** | Email, calendar, Teams, SharePoint, OneDrive | Tier 3 (internal comms/docs) | Azure Entra ID for identity. No client design data in M365 by policy. M365 security lockdown completed 2026-03-12: each user sees only their own data through Claude connector. |
-| **Claude.ai** | Non-client AI reasoning, project management, analysis | Tier 3 | Anthropic Team plan. MS365 connector active. 16 active projects. |
+| **Claude.ai** | Non-client AI reasoning, project management, analysis | Tier 3 | Anthropic Team plan. MS365 connector active. 17 active projects. |
 | **GitHub** | Governance docs, project instructions, code repos | Tier 3 | Single source of truth for governance (GOV-001). 5 repos: bcg-ops-governance (public), bcg-ops-claude-projects, bcg-ai-infrastructure (private). PyRevit source code hosted on self-hosted GitLab — see Section 9. |
+| **Autodesk BIM 360** | Legacy BIM collaboration | Tier 1 (client design data) | Still in use for some active projects. Being evaluated for sunset. |
+| **Autodesk Construction Cloud (ACC)** | BIM collaboration (current) | Tier 1 (client design data) | Active platform for current project collaboration. Successor to BIM 360. |
 
 ---
 
@@ -179,7 +193,7 @@ BCG's self-hosted ERP platform. Managed under P7. Victor Carrillo is sole P7 own
 | **Open WebUI** | On-prem AI chat interface | HTTP | Active | Connects to local models on DGX Spark. |
 | **Windsurf IDE** | AI-assisted development | stdio | Active | Used by Gregory and Victor. Odoo MCP proven. |
 | **Claude Code** | CLI agentic coding tool | stdio | Active | Used by Gregory. |
-| **Claude.ai** | Cloud AI interface | N/A | Active | Anthropic MS365 connector live. 16 projects. |
+| **Claude.ai** | Cloud AI interface | N/A | Active | Anthropic MS365 connector live. 17 projects. |
 | **Claude Code GitHub Actions** | CI/CD automation | Cloud + self-hosted runners | Selected — I-52 | Phase 1: Odoo + PyRevit repos. Read-only 30 days, $100/mo cap. Victor owns CLAUDE.md. |
 
 ---
@@ -264,7 +278,7 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 ### Status Definitions
 
 | Status | Meaning |
-|--------|---------|
+|--------|--------|
 | **Active** | Deployed and in use |
 | **Selected** | Evaluation complete, approved for deployment, not yet live |
 | **Planned** | Identified as needed, not yet evaluated |
@@ -279,7 +293,7 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 | Repo | Platform | Visibility | Contents | Status |
 |------|----------|------------|----------|--------|
 | bcg-ops-governance | **GitHub** | **PUBLIC** | Governance docs, Style Guide, Initiative Catalog, EAB, naming standards | Live — Single source of truth (GOV-001). PUBLIC repo — Bob: periodic review to confirm no sensitive data committed. |
-| bcg-ops-claude-projects | GitHub | Private | 16 project instruction files, _template folder | Live |
+| bcg-ops-claude-projects | GitHub | Private | 17 project instruction files, _template folder | Live |
 | bcg-odoo-dev | GitHub | Private | Custom modules, MCP configs, runbooks | Live |
 | bcg-ai-infrastructure | GitHub | Private | DGX Spark runbooks, Open WebUI config, network architecture | Live |
 | bcg-ops-revit-tools | **GitLab (self-hosted)** | Private | PyRevit B-01–B-41 backlog, shared libraries | Live — hosted at `alexandria.bcg-corp.com`. SSH remote: `git@alexandria.bcg-corp.com:revit/bcg-ops-revit-tools.git`. Runtime deploy target: `Q:\Pearl_Prod\z_pyRevit`. Deploy is manual via deploy.ps1. **GitHub bcgcorp/bcg-ops-revit-tools has been DELETED.** |
@@ -293,7 +307,7 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 ## 14. Planned Infrastructure Changes
 
 | Change | Owner | Target | Depends On | Status | Affects |
-|--------|-------|--------|------------|--------|---------|
+|--------|-------|--------|------------|--------|--------|
 | Docker Compose stack (Prometheus + Grafana) | Jason | Q2 '26 | April 1 start | Phase 1 infra complete | P5-002 Phase 2 |
 | Odoo MCP Phase 1 (read-only, Windsurf) | Greg/Victor | Q2 '26 | Cloudflare Tunnel | Proven in testing | P4, P7 |
 | Odoo MCP Phase 2 (Docker, Open WebUI) | Bob + Greg | Q2 '26 | Phase 1 validated | — | P4 |
@@ -312,7 +326,8 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 ## 15. Change Log
 
 | Version | Date | What Changed |
-|---------|------|-------------|
+|---------|------|--------------|
+| 1.3 | 2026-03-16 | Scope P0–P9 → P0–P10. Added NUC9 cluster to Section 3 (Compute — AI Infrastructure). Added Highland Village branch to Section 6.5 (Network). Added BIM 360 and ACC to Section 8 (Cloud Platforms). Updated Claude.ai project count 16→17. Updated bcg-ops-claude-projects file count to 17. |
 | 1.2 | 2026-03-15 | Section 8 (Cloud Platforms): Removed `bcg-ops-revit-tools` from GitHub repos table; noted PyRevit source is now on self-hosted GitLab. Section 13 (Repos): Corrected `bcg-ops-revit-tools` entry — platform changed GitHub→GitLab self-hosted, added GitLab hostname (alexandria.bcg-corp.com), SSH remote, deploy target path, and deletion notice for GitHub repo. Removed stale GitHub-only scope note. |
 | 1.1 | 2026-03-12 | Major update. Added ClarkKent (observability host), RevitPrint Minion (CI/CD runner). Detailed pfSense HA pair (Anakin/Vader Netgate 6100). Added Harris Lab network (OuterRim Netgate 4100). Added WireGuard site-to-site VPN detail (Phase 1 complete). Added subnet map. Updated Odoo section with full on-prem detail (coding standards, gotchas, LDAP, paths). Added odoo.sh decommission notice. Added Claude Code GitHub Actions to AI Tools. Added File Server MCP (planned). Updated P5-002 monitoring from "greenfield" to Phase 1 complete. Added GitHub repos section. Updated M365 security lockdown. Updated scope P0–P7 → P0–P9. Updated source of truth to GitHub (GOV-001). Added Wolverine/Punisher detail (DL380 Gen10). |
 | 1.0 | 2026-03-01 | Initial version. |
