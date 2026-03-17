@@ -1,12 +1,12 @@
 # BCG Corp — Ecosystem Awareness Block (EAB)
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
 **Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P1–P10, all subprojects)
+**Scope:** All Claude Projects (P1–P11, all subprojects)
 **Owner:** Gregory Bernardo, President
 
-**What This Is:** The Ecosystem Awareness Block is a standardized text block copy-pasted into every satellite and subproject's custom instructions. It gives each project awareness of the full 17-project ecosystem so that routing, handoffs, and dependency flagging work correctly. This GitHub file is the single source of truth — copy from here, paste into projects.
+**What This Is:** The Ecosystem Awareness Block is a standardized text block copy-pasted into every satellite and subproject's custom instructions. It gives each project awareness of the full 18-project ecosystem so that routing, handoffs, and dependency flagging work correctly. This GitHub file is the single source of truth — copy from here, paste into projects.
 
 **What This Is NOT:** This is not a runtime-fetched document. Projects do not fetch this file during conversations. The EAB text is embedded directly in each project's custom instructions. This file exists so there is one canonical version to copy from when propagating or updating.
 
@@ -19,7 +19,7 @@
 2. Open each project's Custom Instructions in Claude
 3. Paste after the SECURITY BOUNDARIES section, before COMMANDS & SHORTCUTS (or end)
 4. For subprojects: use Section 4 variant instead of Section 3
-5. Save. Repeat for all 16 non-P0 projects.
+5. Save. Repeat for all 17 non-P0 projects.
 
 ### When to Update
 Update the EAB and re-propagate when:
@@ -30,20 +30,20 @@ Update the EAB and re-propagate when:
 
 ### Update Process
 1. Edit the relevant section of this file in GitHub
-2. Increment the version in the block header (v1.4 to v1.5, etc.)
+2. Increment the version in the block header (v1.5 to v1.6, etc.)
 3. Update Section 5 (change log)
 4. Re-paste the updated block into all affected projects listed in Section 6
 5. Check off each project in the propagation tracker
 
 ### Estimated Time
-- Full re-deployment (all 16 projects): ~40 minutes
-- Partial update (satellites only or subprojects only): ~20 minutes
+- Full re-deployment (all 17 projects): ~45 minutes
+- Partial update (satellites only or subprojects only): ~25 minutes
 
 ---
 
 ## 2. Placement Guide
 
-### Satellites (P1–P10)
+### Satellites (P1–P11)
 Paste after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS or end of instructions.
 
 | Project | Insert After | Insert Before |
@@ -58,6 +58,7 @@ Paste after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS or end of instructi
 | P8 — Proposals & RFP Operations | SECURITY BOUNDARIES | end |
 | P9 — Business Continuity & Resilience | GOVERNANCE RULES | INITIATIVE REGISTRATION |
 | P10 — Legal, Compliance & Risk | SECURITY BOUNDARIES | end |
+| P11 — Candidate OSINT & Pre-Hire Intelligence | SECURITY BOUNDARIES | end |
 
 ### Subprojects (P0-001, P4-001, P4-002, P5-001, P5-002, P8-001)
 Use the subproject variant from Section 4. Paste after SECURITY BOUNDARIES.
@@ -66,13 +67,13 @@ Use the subproject variant from Section 4. Paste after SECURITY BOUNDARIES.
 
 ---
 
-## 3. Satellite EAB Block — COPY THIS FOR P1–P10
+## 3. Satellite EAB Block — COPY THIS FOR P1–P11
 
-EAB: v1.4 | 2026-03-17
+EAB: v1.5 | 2026-03-17
 
-CROSS-PROJECT ECOSYSTEM (EAB v1.4 — March 2026)
+CROSS-PROJECT ECOSYSTEM (EAB v1.5 — March 2026)
 
-This project is one satellite in BCG's 17-project Claude ecosystem. P0 is the strategic synthesis hub; P1–P10 are production satellites; P0-001, P4-001, P4-002, P5-001, P5-002, and P8-001 are active subprojects. Understanding the ecosystem prevents scope drift and enables proper routing.
+This project is one satellite in BCG's 18-project Claude ecosystem. P0 is the strategic synthesis hub; P1–P11 are production satellites; P0-001, P4-001, P4-002, P5-001, P5-002, and P8-001 are active subprojects. Understanding the ecosystem prevents scope drift and enables proper routing.
 
 PROJECT REGISTRY
 | ID | Project | Scope Summary |
@@ -88,6 +89,7 @@ PROJECT REGISTRY
 | P8 | Proposals & RFP Operations | RFP intake, bid/no-bid decisions, proposal development, promise tracking, pipeline stats. |
 | P9 | Business Continuity & Resilience | Enterprise BCP, dependency risk register, continuity protocols, tabletop exercises. |
 | P10 | Legal, Compliance & Risk | Licensing, insurance governance, contract review, legal posture, compliance analysis. Gregory-only. |
+| P11 | Candidate OSINT & Pre-Hire Intelligence | Pre-hire public record and digital footprint review. Gregory-only. Triggered pre-offer. RESTRICTED. |
 
 SUBPROJECTS
 | ID | Parent | Name |
@@ -115,6 +117,7 @@ Common redirects:
 - Strategic synthesis/cross-project coordination → P0
 - Business continuity planning → P9
 - Legal/compliance/licensing/contract review/insurance → P10 (Gregory-only; route to Gregory directly)
+- Pre-hire candidate background investigation → P11 (Gregory-only; RESTRICTED)
 - Inbound business documents (RFPs, Contracts, POs, WOs, COs) → P8-001
 
 HANDOFF FORMAT
@@ -135,6 +138,7 @@ Examples:
   [FLAG FOR P7: This workflow needs an Odoo automation — route for module spec]
   [FLAG FOR P9: This system has no documented fallback — route for BCP risk register]
   [FLAG FOR P10: This contract clause needs legal review — route to Gregory for P10 analysis]
+  [FLAG FOR P11: New hire candidate at conditional offer stage — trigger pre-offer OSINT investigation]
 
 GOVERNANCE DOCUMENTS
 BCG maintains governance documents in GitHub as the single source of truth (GOV-001, approved 2026-03-11). The Governance Doc Registry is the entry point:
@@ -173,6 +177,7 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
+| 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Pending — P11 embedded at creation; 16 existing projects need v1.5 |
 | 1.4 | 2026-03-17 | Added P10 to project registry. Updated project count 16 to 17. Updated P6 scope: HR & People (removed Legal Ops). Added P10 routing redirect. Added P10 flagging example. | Yes — 16/16 projects at v1.4 (2026-03-17) |
 | 1.3 | 2026-03-12 | Retired P7-001 through P7-004. Added P0-001, P5-002, P8-001. Updated project count 17 to 16. | Superseded by v1.4 |
 | 1.2 | 2026-03-11 | OneDrive to GitHub source of truth. | Yes — 2026-03-12 |
@@ -183,31 +188,32 @@ Subproject routing parent assignments:
 
 ## 6. Propagation Tracker
 
-### Satellites (10)
+### Satellites (11)
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P1 | v1.4 | 2026-03-17 | Current |
-| P2 | v1.4 | 2026-03-17 | Current |
-| P3 | v1.4 | 2026-03-17 | Current |
-| P4 | v1.4 | 2026-03-17 | Current |
-| P5 | v1.4 | 2026-03-17 | Current |
-| P6 | v1.4 | 2026-03-15 | Current |
-| P7 | v1.4 | 2026-03-17 | Current |
-| P8 | v1.4 | 2026-03-17 | Current |
-| P9 | v1.4 | 2026-03-17 | Current |
-| P10 | v1.4 | 2026-03-15 | Current |
+| P1 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P2 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P3 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P4 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P5 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P6 | v1.4 | 2026-03-15 | Needs v1.5 |
+| P7 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P8 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P9 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P10 | v1.4 | 2026-03-15 | Needs v1.5 |
+| P11 | v1.5 | 2026-03-17 | Embedded at creation |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P0-001 | v1.4 | 2026-03-14 | Current |
-| P4-001 | v1.4 | 2026-03-17 | Current |
-| P4-002 | v1.4 | 2026-03-17 | Current |
-| P5-001 | v1.4 | 2026-03-17 | Current |
-| P5-002 | v1.4 | 2026-03-17 | Current |
-| P8-001 | v1.4 | 2026-03-15 | Current |
+| P0-001 | v1.4 | 2026-03-14 | Needs v1.5 |
+| P4-001 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P4-002 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P5-001 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P5-002 | v1.4 | 2026-03-17 | Needs v1.5 |
+| P8-001 | v1.4 | 2026-03-15 | Needs v1.5 |
 
 ### Retired (do not propagate)
 
