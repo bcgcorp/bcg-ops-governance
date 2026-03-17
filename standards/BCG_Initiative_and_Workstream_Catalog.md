@@ -1,12 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.0
+**Version:** 2.1
 **Effective:** March 2026
 **Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P0–P10) and subprojects
+**Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**What Changed (v2.0):** Added I-49 through I-63 (15 new initiatives). Retired P7-001–P7-004 from subproject registry. Updated cross-reference counts. Updated next-initiative pointer to I-64. Total: 61 active initiatives, 11 workstreams, 6 active subprojects.
+**What Changed (v2.1):** Added I-64 (Candidate Pre-Hire OSINT Program / P11 / Greg). Added P11 to cross-reference table. Updated scope P0–P11. Total: 62 active initiatives, 11 workstreams, 6 active subprojects.
 
 ---
 
@@ -24,7 +24,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 2. Initiative Registry
 
-61 active initiatives (I-01 through I-63, minus I-20 removed, minus I-32 rejected). Next available slot: **I-64**.
+62 active initiatives (I-01 through I-64, minus I-20 removed, minus I-32 rejected). Next available slot: **I-65**.
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -91,11 +91,12 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-61 | Cowork Security/Audit Assessment | Bob | Planned | P5 | Q2 '26 | Security review of Cowork deployment. |
 | I-62 | BCG Ecosystem Vocabulary | Greg | Complete | P0 | Q1 '26 | Deliverable: BCG_Ecosystem_Vocabulary.md (W-22 artifact). Published to GitHub 2026-03-14. |
 | I-63 | Candidate Data Management & ADP Recruiting Transition | Jennifer | Active | P6 | Q2 '26 | Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
+| I-64 | Candidate Pre-Hire OSINT Program | Greg | Active | P11 | Ongoing | Gregory-only. RESTRICTED. Pre-hire public record and digital footprint investigation for every finalist candidate at conditional offer stage. Feeds P10 (CIR custody) and P6 (go/no-go). |
 
 ### Initiative Status Definitions
 
 | Status | Meaning |
-|--------|---------|
+|--------|--------|
 | **Active** | In progress, resources assigned |
 | **Planned** | Approved, not yet started |
 | **On Hold** | Paused pending dependency or decision |
@@ -140,6 +141,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P8 | 2 | I-39, I-58 |
 | P9 | 1 | I-41 |
 | P10 | 1 | I-24 |
+| P11 | 1 | I-64 |
 
 ---
 
@@ -160,7 +162,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 6. Numbering Conventions
 
-- **Initiatives:** I-01 through I-## (sequential, never reuse). Next: **I-64**.
+- **Initiatives:** I-01 through I-## (sequential, never reuse). Next: **I-65**.
 - **Workstreams:** WS-01 through WS-## (sequential).
 - **Subprojects:** P{#}-{###} (parent dash three-digit sequence).
 - **Removed items:** Keep row with strikethrough. Do not renumber.
@@ -171,6 +173,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.1 | 2026-03-17 | Added I-64 (Candidate Pre-Hire OSINT Program / P11 / Greg). Added P11 to cross-reference table. Updated scope P0–P11. Total: 62 active, 2 removed, 11 workstreams, 6 subprojects. Next slot I-65. |
 | 2.0 | 2026-03-17 | Added I-49–I-63. Retired P7 subprojects. Added P0-001, P5-002, P8-001 to subprojects. Updated scope P0–P10. Next slot I-64. Total: 61 active, 2 removed, 11 workstreams, 6 subprojects. |
 | 1.4 | 2026-03-10 | Added I-42–I-48. Total: 46 active. |
 | 1.3 | 2026-03-05 | Added I-40, I-41. Total: 39 active. |
