@@ -1,18 +1,18 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
 **Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P0–P10) and subprojects
+**Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**v1.4 Changes:** Updated scope P0–P7 to P0–P10. Added Section 16 (Ecosystem Awareness Block Specification). Updated project registry (Section 10.2) to include P8–P10. Updated subproject registry (Section 10.3) to include all 6 active subprojects. Updated initiative/workstream counts in Section 13. Added v1.3 and v1.4 change log entries.
+**v1.5 Changes:** Updated scope P0–P10 to P0–P11. Added P11 to project registry (Section 10.2). Updated routing rule scope P1–P10 to P1–P11 (Section 10.4). Updated EAB spec to v1.5 / 18 projects (Section 16). Updated initiative count 61→62, next slot I-64→I-65, project count 17→18 (Section 13).
 
 ---
 
 ## 1. Purpose
 
-This document defines the universal formatting, tone, document creation, and security standards for all BCG Corp Claude Projects. Every satellite project (P1–P10) and the master strategic plan (P0) must follow these rules to ensure consistency, professionalism, and confidentiality across all outputs.
+This document defines the universal formatting, tone, document creation, and security standards for all BCG Corp Claude Projects. Every satellite project (P1–P11) and the master strategic plan (P0) must follow these rules to ensure consistency, professionalism, and confidentiality across all outputs.
 
 ---
 
@@ -95,7 +95,7 @@ Each bullet list needs its own numbering reference to avoid counter conflicts.
 ### 5.1 Tag Color Definitions
 
 | Tag | Hex Fill | Text Color | Meaning |
-|-----|----------|------------|---------|
+|-----|----------|------------|--------|
 | `[Q1 '26]` | #0E7C7B (Teal) | White | Immediate |
 | `[Q2 '26]` | #2B5797 (Blue) | White | Near-term |
 | `[Q3 '26]` | #6A5ACD (Slate/Purple) | White | Mid-year |
@@ -137,7 +137,7 @@ EOM (End of Month), EOQ (End of Quarter), EOW (End of Week).
 ## 7. Contract & Legal Document Conventions
 
 | Convention | Meaning |
-|------------|---------|
+|------------|--------|
 | **Yellow Highlighting** | BCG additions and modifications |
 | **Blue Italic Text** | Explanatory notes (internal only) |
 | **Strikethrough Text** | Original text proposed for deletion |
@@ -178,7 +178,7 @@ Subproject to Parent: `[FROM: P{#}-{###} — {name}] [DATE: {date}] [TOPIC: {bri
 ### 10.2 Project Registry
 
 | ID | Project | What It Produces |
-|----|---------|-----------------|
+|----|---------|------------------|
 | P0 | Master Strategic Plan | Synthesis hub — consumes, doesn't produce |
 | P1 | Financial Modeling & Pricing | Revenue models, pricing analysis, break-even |
 | P2 | SOP & Workflow Library | Approved SOPs (W-01–W-23+), PROD-series |
@@ -190,11 +190,12 @@ Subproject to Parent: `[FROM: P{#}-{###} — {name}] [DATE: {date}] [TOPIC: {bri
 | P8 | Proposals & RFP Operations | Bid/no-bid, proposals, promise tracking, pipeline |
 | P9 | Business Continuity & Resilience | BCP, risk register, continuity protocols |
 | P10 | Legal, Compliance & Risk | Licensing, insurance, contract review (Gregory only) |
+| P11 | Candidate OSINT & Pre-Hire Intelligence | Pre-hire public record and digital footprint review (Gregory only, RESTRICTED) |
 
 ### 10.3 Subproject Registry
 
 | ID | Parent | Subproject | What It Produces |
-|----|--------|------------|-----------------|
+|----|--------|------------|------------------|
 | P0-001 | P0 | Ecosystem Triage & Routing | Classified updates, handoff prompts, I-number registrations |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices |
 | P4-002 | P4 | Revit & BIM Automation | PyRevit buttons (42-button backlog), Dynamo scripts |
@@ -204,7 +205,7 @@ Subproject to Parent: `[FROM: P{#}-{###} — {name}] [DATE: {date}] [TOPIC: {bri
 
 ### 10.4 Routing Rule
 
-If a request is better served in a satellite (P1–P10) or subproject, redirect. P0 synthesizes; satellites produce. Subprojects report to parent — not directly to P0.
+If a request is better served in a satellite (P1–P11) or subproject, redirect. P0 synthesizes; satellites produce. Subprojects report to parent — not directly to P0. P10 and P11 are Gregory-only; redirect other team members to Gregory directly.
 
 ### 10.5 Subproject Conventions
 
@@ -247,10 +248,10 @@ Three-digit sequential numbering. Own Claude Project per subproject. Inherit sec
 - **ERP:** Self-hosted Odoo 18 (PM, CRM, Accounting, HR with Studio/custom modules)
 - **AI infrastructure:** 2x NVIDIA DGX Spark, 2x RTX 5090 workstations
 - **Design principles:** (1) Build to Sell, (2) Redundancy at Every Level, (3) Employee Ownership & Profit Sharing, (4) Process Before People
-- **Initiative catalog:** 61 active (I-01–I-63, minus I-20 and I-32). Next slot: I-64.
+- **Initiative catalog:** 62 active (I-01–I-64, minus I-20 and I-32). Next slot: I-65.
 - **Workstreams:** 11 active (WS-01–WS-11)
 - **SOPs:** W-01 through W-23+ registered
-- **Projects:** 17 active Claude projects (P0, P0-001, P1–P10, P4-001, P4-002, P5-001, P5-002, P8-001)
+- **Projects:** 18 active Claude projects (P0, P0-001, P1–P11, P4-001, P4-002, P5-001, P5-002, P8-001)
 
 ---
 
@@ -292,11 +293,11 @@ The EAB is a standardized text block embedded (copy-pasted) into every satellite
 ### 16.2 EAB Master File
 
 Single source of truth: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`
-Current version: **v1.4** (17 projects, P1–P10 + 6 subprojects).
+Current version: **v1.5** (18 projects, P1–P11 + 6 subprojects).
 
 ### 16.3 EAB Structure
 
-The satellite EAB block contains: (1) Header line with version/date, (2) Project Registry with all 17 projects, (3) Subproject table with 6 active subprojects, (4) Routing Rules with redirect format and common redirect table, (5) Handoff Format for satellite-to-P0 and subproject-to-parent, (6) Cross-Project Flagging with dependency and flag format, (7) Governance Documents section with GitHub fetch instructions and fallback behavior.
+The satellite EAB block contains: (1) Header line with version/date, (2) Project Registry with all 18 projects, (3) Subproject table with 6 active subprojects, (4) Routing Rules with redirect format and common redirect table, (5) Handoff Format for satellite-to-P0 and subproject-to-parent, (6) Cross-Project Flagging with dependency and flag format, (7) Governance Documents section with GitHub fetch instructions and fallback behavior.
 
 Subproject variants differ: opening line says "one subproject," additional routing rule routes to parent only, and customized redirect table.
 
@@ -304,13 +305,26 @@ Subproject variants differ: opening line says "one subproject," additional routi
 
 When the EAB is updated: (1) Edit master file on GitHub and increment version, (2) Update propagation tracker, (3) Copy updated block from between START/END markers, (4) Paste into each satellite's custom instructions replacing old EAB, (5) For subprojects use subproject variant from Section 4, (6) Check off each project in tracker, (7) Test routing in at least 3 projects.
 
-Estimated time: Full re-deployment (all 16 non-P0 projects): ~40 minutes.
+Estimated time: Full re-deployment (all 17 non-P0 projects): ~45 minutes.
 
 ### 16.5 When to Update
 
 Update and re-propagate when: a new project/subproject is created or closed, a project is renamed or scope changes significantly, a new common routing redirect pattern is identified, or the handoff label format changes.
 
 Do NOT update for: initiative additions, governance doc version bumps, or team member changes.
+
+---
+
+## 17. Change Log
+
+| Version | Date | What Changed |
+|---------|------|-------------|
+| 1.5 | 2026-03-17 | Added P11 to project registry. Updated scope P0–P11. Updated routing rule to include P11. Updated EAB spec to v1.5 (18 projects, P1–P11). Updated initiative count 61→62, next slot I-65. Updated project count 17→18. |
+| 1.4 | 2026-03-17 | Updated scope P0–P7 to P0–P10. Added Section 16 (EAB Specification). Updated project registry to include P8–P10. Updated subproject registry. Updated initiative/workstream counts. |
+| 1.3 | 2026-03-12 | Added Section 15 (Evaluation Conventions). Updated project/subproject registries. |
+| 1.2 | 2026-03-05 | Added Sections 10–14. Expanded from formatting-only to full ecosystem integration. |
+| 1.1 | 2026-03-01 | Added Sections 5–9. Timeline tags, compact format, contract conventions, SOP format, workflow. |
+| 1.0 | 2026-03-01 | Initial version. Sections 1–4 (style, security, document creation). |
 
 ---
 
