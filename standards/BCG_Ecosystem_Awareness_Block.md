@@ -2,7 +2,7 @@
 
 **Version:** 1.4
 **Effective:** March 2026
-**Last Updated:** 2026-03-15
+**Last Updated:** 2026-03-16
 **Scope:** All Claude Projects (P1–P10, all subprojects)
 **Owner:** Gregory Bernardo, President
 
@@ -46,8 +46,8 @@ Update the EAB and re-propagate when:
 5. Check off each project in the propagation tracker
 
 ### Estimated Time
-- Full re-deployment (all 16 projects): ~45 minutes
-- Partial update (satellites only or subprojects only): ~25 minutes
+- Full re-deployment (all 16 projects): ~40 minutes
+- Partial update (satellites only or subprojects only): ~20 minutes
 
 ---
 
@@ -68,7 +68,7 @@ of instructions.
 | P7 — Odoo Platform & ERP | SECURITY BOUNDARIES | HOW TO RESPOND |
 | P8 — Proposals & RFP Operations | SECURITY BOUNDARIES | end |
 | P9 — Business Continuity & Resilience | GOVERNANCE RULES | INITIATIVE REGISTRATION |
-| P10 — Legal, Compliance & Risk | SECURITY BOUNDARIES | COMMANDS & SHORTCUTS |
+| P10 — Legal, Compliance & Risk | SECURITY BOUNDARIES | end |
 
 ### Subprojects (P0-001, P4-001, P4-002, P5-001, P5-002, P8-001)
 Use the subproject variant from Section 4. Paste after SECURITY
@@ -86,7 +86,7 @@ section per subproject. Do not mix them.
 <!-- COPY FROM HERE (SATELLITES)                     -->
 <!-- ═══════════════════════════════════════════════ -->
 
-EAB: v1.4 | 2026-03-15
+EAB: v1.4 | 2026-03-16
 
 CROSS-PROJECT ECOSYSTEM (EAB v1.4 — March 2026)
 
@@ -105,11 +105,11 @@ PROJECT REGISTRY
 | P3 | Competitive Intel & BD | Competitor database (17 firms), teaming evaluations, DM playbook, market positioning. |
 | P4 | AI Infrastructure & Deployment | AI configs, deployment runbooks, MCP integrations, guardrails, DGX Spark, Open WebUI. |
 | P5 | IT Security / QOS | NIST CSF 2.0 compliance, CIS Controls, Defender policies, security posture. |
-| P6 | HR & People | Headcount, org chart, compensation, employment templates, hiring pipelines. HR & People only — no legal/compliance items. |
+| P6 | HR & People | Headcount, org chart, compensation, employment templates, hiring pipelines. |
 | P7 | Odoo Platform & ERP | Module status, ERP readiness, accounting config, custom module specs, Odoo Automation & Configuration Library. |
 | P8 | Proposals & RFP Operations | RFP intake, bid/no-bid decisions, proposal development, promise tracking, pipeline stats. |
 | P9 | Business Continuity & Resilience | Enterprise BCP, dependency risk register, continuity protocols, tabletop exercises. |
-| P10 | Legal, Compliance & Risk | Licensing, insurance governance, contract review, legal posture, compliance analysis. Gregory-only. |
+| P10 | Legal, Compliance & Risk | Licensing audit, insurance governance, compliance tracking, contract review. Gregory only. |
 
 SUBPROJECTS
 | ID | Parent | Name |
@@ -134,12 +134,12 @@ Common redirects:
 - Competitor analysis → P3
 - AI/MCP deployment → P4
 - Security/compliance policy → P5
-- Hiring/compensation/HR matters → P6
+- Hiring/compensation/org chart → P6
 - Odoo module/ERP config → P7
 - RFP analysis/proposal pricing/promise tracking → P8
 - Strategic synthesis/cross-project coordination → P0
 - Business continuity planning → P9
-- Legal/compliance/licensing/contract review/insurance → P10 (Gregory-only; non-Gregory users route to Gregory directly)
+- Legal matters, licensing, insurance, compliance → P10
 - Inbound business documents (RFPs, Contracts, POs, WOs, COs) → P8-001
 
 HANDOFF FORMAT
@@ -166,7 +166,7 @@ Examples:
   module spec]
   [FLAG FOR P9: This system has no documented fallback — route for
   BCP risk register]
-  [FLAG FOR P10: This project activity creates jurisdiction exposure —
+  [FLAG FOR P10: This contract clause has liability implications —
   route for legal review]
 
 GOVERNANCE DOCUMENTS
@@ -221,11 +221,11 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.4 | 2026-03-15 | Added P10 (Legal, Compliance & Risk, Gregory-only) to PROJECT REGISTRY table in satellite block. Updated opening sentence: 16-project → 17-project, P1–P9 → P1–P10. Updated P6 scope to "HR & People only — no legal/compliance items." Added P10 routing redirect. Added FLAG FOR P10 example. Updated EAB block version marker v1.3 → v1.4. Updated Section 1 project count (15→16 non-P0 projects). Updated Section 2 placement guide: added P10 row, satellites (9) → (10). Updated Section 6 propagation tracker: added P10 row. | Partial — P10 (at creation), P0-001, P6, P8-001 done 2026-03-15. P1–P5, P7–P9, P4-001, P4-002, P5-001, P5-002 pending. |
-| 1.3 | 2026-03-12 | Retired P7-001 through P7-004 (knowledge consolidated into P7 parent). Added P0-001 (Ecosystem Triage & Routing), P5-002 (Monitoring & Observability), P8-001 (Document Intake & Routing). Updated project count 17→16. Updated subproject table (removed 4, added 3). Added P8-001 routing redirect for inbound business documents. Updated P2 scope (W-19+), P7 scope (Odoo Automation & Configuration Library). Removed P7 subprojects from Section 4 routing assignments. Updated propagation tracker. | Yes — 2026-03-12 |
-| 1.2 | 2026-03-11 | Corrected GOVERNANCE DOCUMENTS section in satellite block: OneDrive → GitHub as source of truth. Updated Registry URL to raw GitHub fetch pattern. Removed .txt file references. Updated file header and footer to reference GitHub. Bumped EAB block version marker to v1.2. | Yes — 2026-03-12 |
-| 1.1 | 2026-03-05 | Added P9 (Business Continuity). Added P4-002 (Revit & BIM Automation). Added P7-001 through P7-004. Corrected project count to 17. Added governance doc fetch fallback instruction. Added P9 routing redirect. | Yes — 2026-03-12 |
-| 1.0 | 2026-03-01 | Initial version. 9 projects (P0–P8), 2 subprojects (P4-001, P5-001). Never deployed. | No |
+| 1.4 | 2026-03-16 | Added P10 (Legal, Compliance & Risk) to project registry, routing redirects, and flagging examples. Updated project count 16→17, satellite count 9→10. Added P10 to placement guide and propagation tracker. | Pending |
+| 1.3 | 2026-03-12 | Retired P7-001 through P7-004. Added P0-001, P5-002, P8-001. Updated project count 17→16. Added P8-001 routing redirect. | Yes — 2026-03-12 |
+| 1.2 | 2026-03-11 | OneDrive → GitHub as source of truth. Updated Registry URL. | Yes — 2026-03-12 |
+| 1.1 | 2026-03-05 | Added P9, P4-002, P7-001–P7-004. Project count to 17. | Yes — 2026-03-12 |
+| 1.0 | 2026-03-01 | Initial version. 9 projects, 2 subprojects. Never deployed. | No |
 
 ---
 
@@ -237,27 +237,27 @@ Check off each project after pasting the updated EAB block.
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P6 — HR & People | v1.4 | 2026-03-15 | Greg | ✅ Done — scope updated to HR & People only |
-| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P10 — Legal, Compliance & Risk | v1.4 | 2026-03-15 | Greg | ✅ Done — deployed at project creation |
+| P1 — Financial Modeling & Pricing | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P2 — SOP & Workflow Library | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P3 — Competitive Intel & BD | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P4 — AI Infrastructure & Deployment | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P5 — IT Security / QOS | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P6 — HR & People | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P7 — Odoo Platform & ERP | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P8 — Proposals & RFP Operations | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P9 — Business Continuity & Resilience | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P10 — Legal, Compliance & Risk | — | — | — | New — needs v1.4 deployment |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Pasted By | Notes |
 |---------|-------------|-------------|-----------|-------|
-| P0-001 — Ecosystem Triage & Routing Protocol | v1.4 | 2026-03-15 | Greg | ✅ Done — routing project, priority complete |
-| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P4-002 — Revit & BIM Automation | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P5-001 — Network Infrastructure Assessment | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P5-002 — Monitoring & Observability Infrastructure | v1.3 | 2026-03-12 | Greg | ⬜ Needs v1.4 — batch pending |
-| P8-001 — Document Intake & Routing | v1.4 | 2026-03-15 | Greg | ✅ Done — active intake project, priority complete |
+| P0-001 — Ecosystem Triage & Routing Protocol | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P4-001 — MCP Evaluation & Selection | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P4-002 — Revit & BIM Automation | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P5-001 — Network Infrastructure Assessment | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P5-002 — Monitoring & Observability Infrastructure | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
+| P8-001 — Document Intake & Routing | v1.3 | 2026-03-12 | Greg | Needs v1.4 |
 
 ### Retired (do not propagate)
 
@@ -308,8 +308,9 @@ Expected: Redirects to P9.
 Expected: Redirects to P8-001.
 
 **Test 8 — Run in P6:**
-> What licenses do we need for the new Virginia project?
-Expected: Redirects to P10 (with note that non-Gregory users route to Gregory directly).
+> We need to check if BCG needs a Virginia contractor license for the
+> IAD projects.
+Expected: Redirects to P10.
 
 ---
 
