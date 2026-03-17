@@ -1,6 +1,6 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.9
+**Version:** 2.0
 **Effective:** March 2026
 **Last Updated:** 2026-03-17
 **Scope:** All Claude Projects (P0–P11) and subprojects
@@ -38,7 +38,7 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Style_and_Formatting_Standards.md` |
-| **Current Version** | 1.4 |
+| **Current Version** | 1.5 |
 | **Fetch before** | Any document creation, formatting decision, evaluation report, or when uncertain about BCG conventions |
 | **Governs** | Typography, colors, tables, timeline tags, security boundaries, evaluation conventions (Section 15), EAB specification (Section 16), project/subproject registries (Section 10), SOP format (Section 8), contribution workflow (Section 9), pressure-test framework (Section 11) |
 
@@ -210,7 +210,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.9 |
+| **Current Version** | 2.0 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -241,6 +241,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.0 | 2026-03-17 | Bumped Style Guide tracked version 1.4→1.5 (§3.1). Self-reference bumped 1.9→2.0. All tracked versions now current post-P11 registration sweep. |
 | 1.9 | 2026-03-17 | Updated scope P0–P10 to P0–P11 (P11 registered). Bumped tracked versions: Handoffs 1.4→1.5, Catalog 2.0→2.1, EAB 1.4→1.5. Updated EAB scope P1–P10 to P1–P11. Updated Catalog description: 62 active initiatives, next slot I-65. Updated Artifact Naming project count 17→18. Updated instruction count 17→18 in Section 1. |
 | 1.8 | 2026-03-17 | Complete rewrite. Migrated source of truth from OneDrive to GitHub per GOV-001. Updated from 9 to 18 tracked files. Added Sections 3.8-3.15. Added Section 4.1 EAB. Added Section 5.1 JSON registry. Updated all version numbers to current. Updated Rules section for GitHub-first governance. |
 | 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. Updated totals. |
