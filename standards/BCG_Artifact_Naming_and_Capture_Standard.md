@@ -1,6 +1,6 @@
 # BCG Artifact Naming and Capture Standard
-**Version:** 1.1
-**Effective:** 2026-03-14
+**Version:** 1.2
+**Effective:** 2026-03-16
 **Owner:** Gregory Bernardo (author) / Jennifer Brezniak (ongoing maintenance)
 **Location:** GitHub bcg-ops-governance/standards/
 **Status:** APPROVED
@@ -11,7 +11,7 @@
 
 This document defines how all Claude-generated artifacts are named and where
 they are stored. Consistent naming makes artifacts sortable, searchable,
-attributable, and auditable across all 16 BCG projects and all producers.
+attributable, and auditable across all 17 BCG projects and all producers.
 
 ---
 
@@ -49,11 +49,12 @@ Applies to: .docx, .md, .pdf, and all other document-type outputs.
 | P5 | IT Security / QOS |
 | P5-001 | Network Infrastructure Assessment |
 | P5-002 | Monitoring & Observability Infrastructure |
-| P6 | HR, People & Legal |
+| P6 | HR & People |
 | P7 | Odoo Platform & ERP |
 | P8 | Proposals & RFP |
 | P8-001 | Document Intake & Routing |
 | P9 | Business Continuity |
+| P10 | Legal, Compliance & Risk |
 
 ### Examples
 
@@ -146,11 +147,11 @@ is available via M365 connector write permissions (pending P5 assessment).
 ### Who Does This
 
 Every producer is responsible for their own captures:
-- Gregory — P0, P0-001, P1, P3, P8, P9 outputs
+- Gregory — P0, P0-001, P1, P3, P8, P9, P10 outputs
 - Bob — P5, P5-001, P5-002 outputs
 - Jason — P4, P4-001, P4-002 outputs (post-onboarding)
 - Jennifer — P2, P6 outputs
-- Victor — P7, P8-001 outputs
+- Victor — P7 outputs
 - Rachel — P8-001 outputs
 
 ---
@@ -180,5 +181,6 @@ write permissions. Eliminates the manual download-rename-upload step.
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated "17 BCG projects" → "16". Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
+| 1.2 | 2026-03-16 | Added P10 (Legal, Compliance & Risk) to project codes table. Updated project count 16→17. Added Gregory as P10 capture owner. |
+| 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated “17 BCG projects” → “16”. Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
 | 1.0 | 2026-03-07 | Initial version. |
