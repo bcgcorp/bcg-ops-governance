@@ -1,22 +1,18 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.5  
-**Effective:** March 2026  
-**Last Updated:** 2026-03-16  
-**Scope:** All Claude Projects (P0–P10) and subprojects  
+**Version:** 1.4
+**Effective:** March 2026
+**Last Updated:** 2026-03-16
+**Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
-
-**v1.5 Changes:** Updated Section 5.4 EAB version reference from v1.3 to v1.4 (matching actual EAB on GitHub).
-
-**v1.4 Changes:** Updated scope from P0–P8 to P0–P10. Added P9 (Business Continuity), P10 (Legal, Compliance & Risk) to satellite registry. Added P0-001, P4-002, P5-002, P8-001 to subproject registry; updated P4-001 and P5-001 entries. Updated routing redirects for P9/P10. Updated cross-project dependencies to current state. Changed source-of-truth reference from OneDrive to GitHub per GOV-001. Updated EAB section to reference GitHub.
 
 ---
 
 ## 1. Purpose
 
-This document is the single source of truth for BCG's Claude Project structure: which projects exist, what they produce, how outputs flow between them, and the conventions for creating subprojects and routing work. Every Claude Project should reference this document (fetched from GitHub per GOV-001) rather than maintaining its own copy of the project registry.
+This document is the single source of truth for BCG's Claude Project structure: which projects exist, what they produce, how outputs flow between them, and the conventions for creating subprojects and routing work. Every Claude Project should reference this document (via GitHub) rather than maintaining its own copy of the project registry.
 
-**GitHub location:** `bcg-ops-governance/standards/BCG_Project_Ecosystem_and_Handoffs.md`
+**Source of truth:** GitHub (`bcg-ops-governance/standards/`). Per GOV-001, GitHub is the authoritative fetch source.
 
 ---
 
@@ -29,7 +25,7 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | **ID** | P0 |
 | **Name** | Master Strategic Plan |
 | **Role** | Synthesis hub — consumes approved outputs from all satellites, does not produce deliverables itself |
-| **Owner** | Gregory Bernardo |
+| **Owner** | Greg |
 | **Key Inputs** | Approved handoffs from P1–P10 and subprojects (via parent satellite) |
 | **Key Outputs** | Strategic synthesis, cross-project alignment, consolidated planning |
 
@@ -37,18 +33,16 @@ This document is the single source of truth for BCG's Claude Project structure: 
 
 | ID | Project | Owner | What It Produces | Key Consumers |
 |----|---------|-------|-----------------|---------------|
-| P1 | Financial Modeling & Pricing | Gregory Bernardo | Revenue models, pricing analysis, break-even, compensation modeling, budget impacts | P0, P6 (comp implications) |
-| P2 | SOP & Workflow Library | Jennifer Brezniak | Approved SOPs (W-01 through W-23+), PROD-series, process documentation, Odoo task templates | P0, P7 (Odoo mapping), all projects (process reference) |
-| P3 | Competitive Intel & BD | Gregory Bernardo | Competitor updates, teaming evaluations, decision-maker playbook, market positioning | P0 |
-| P4 | AI Infrastructure & Deployment | Jason Harris | AI configs, deployment runbooks, MCP integrations, guardrails, monitoring architecture | P0, P5 (security review), P7 (Odoo MCP) |
-| P5 | IT Security / QOS | Bob Brezniak | Compliance artifacts, NIST CSF 2.0 alignment, CIS Controls implementation, Defender policies | P0, P4 (security requirements) |
-| P6 | HR & People | Jennifer Brezniak | Headcount planning, org chart, compensation analysis, employment templates | P0, P1 (financial impacts) |
-| P7 | Odoo Platform & ERP | Victor Carrillo | Module status, ERP readiness assessments, accounting configuration, custom module specs | P0, P2 (SOP-to-Odoo mapping), P4 (MCP integration) |
-| P8 | Proposals & RFP Ops | Gregory Bernardo | Bid/no-bid recommendations, proposal packages, promise tracking registers, pipeline analytics, pricing forensics | P0, P1, P2, P3, P7 |
-| P9 | Business Continuity & Resilience | Gregory Bernardo | BC/DR plans, resilience protocols, risk assessments (Gregory only) | P0 |
-| P10 | Legal, Compliance & Risk | Gregory Bernardo | Legal matters, insurance governance, compliance tracking, contract review (Gregory only) | P0 |
-
-**Access restrictions:** P9 and P10 are Gregory-only projects due to sensitive legal and continuity content. No team member access.
+| P1 | Financial Modeling & Pricing | Greg | Revenue models, pricing analysis, break-even, compensation modeling, budget impacts | P0, P6 (comp implications) |
+| P2 | SOP & Workflow Library | Greg | Approved SOPs (W-01 through W-23+), PROD-series, process documentation, Odoo task templates | P0, P7 (Odoo mapping), all projects (process reference) |
+| P3 | Competitive Intel & BD | Greg | Competitor updates, teaming evaluations, decision-maker playbook, market positioning | P0 |
+| P4 | AI Infrastructure & Deployment | Greg → Jason (April 1) | AI configs, deployment runbooks, MCP integrations, guardrails, monitoring architecture | P0, P5 (security review), P7 (Odoo MCP) |
+| P5 | IT Security / QOS | Greg + Bob | Compliance artifacts, NIST CSF 2.0 alignment, CIS Controls implementation, Defender policies | P0, P4 (security requirements) |
+| P6 | HR & People | Greg + Jennifer | Headcount planning, org chart, compensation analysis, employment templates, hiring pipelines | P0, P1 (financial impacts) |
+| P7 | Odoo Platform & ERP | Victor | Module status, ERP readiness assessments, accounting configuration, custom module specs | P0, P2 (SOP-to-Odoo mapping), P4 (MCP integration) |
+| P8 | Proposals & RFP Operations | Greg | Bid/no-bid recommendations, proposal packages, promise tracking registers, pipeline analytics, pricing forensics | P0, P1, P2, P3, P7 |
+| P9 | Business Continuity & Resilience | Greg + Bob | Enterprise BCP, dependency risk register, continuity protocols, tabletop exercises | P0 |
+| P10 | Legal, Compliance & Risk | Greg (sole) | Licensing audit, insurance governance, compliance tracking, contract review, legal matters | P0 (Gregory only — restricted access) |
 
 ### 2.3 Subproject Registry
 
@@ -56,12 +50,12 @@ Subprojects are specialized workstreams within a satellite project that need the
 
 | ID | Parent | Subproject Name | What It Produces | Status |
 |----|--------|----------------|-----------------|--------|
-| P0-001 | P0 | Ecosystem Triage & Routing | Classified updates, I-number registrations, handoff prompts, Initiative Catalog maintenance | Active |
-| P4-001 | P4 | BCG Tab / pyRevit Tools | pyRevit button panels, Revit automation tools, tab architecture | Active |
-| P4-002 | P4 | Revit Design Tools | Design-layer Revit tooling (I-09, I-28, I-44–I-46, I-49) | Active |
-| P5-001 | P5 | Network Infrastructure | Firewall/switch assessment, monitoring specs, security monitoring runbooks | Active (Ph1 complete) |
-| P5-002 | P5 | Monitoring & Observability | Ph2 monitoring stack (unblocked April 1 with Jason) | Active (gated) |
-| P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, pipeline feed | Active (go-live pending) |
+| P0-001 | P0 | Ecosystem Triage & Routing Protocol | Classified updates, handoff prompts, I-number registrations | Active |
+| P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations | Active |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit button panels, Revit design tools (42 buttons, 9 panels) | Active |
+| P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis, monitoring specs | Active |
+| P5-002 | P5 | Monitoring & Observability Infrastructure | Monitoring stack deployment (Prometheus, Grafana, Loki decision) | Active |
+| P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, pipeline feed | Active |
 
 *Add rows as subprojects are created. See Section 5 for conventions.*
 
@@ -86,8 +80,8 @@ All approved outputs flowing between projects use standardized labels.
 **Examples:**
 ```
 [FROM: P4 — AI Infrastructure & Deployment] [DATE: 2026-03-01] [TOPIC: Observability MCP server selections approved]
-[FROM: P4-001 — BCG Tab / pyRevit Tools] [DATE: 2026-03-08] [TOPIC: Tab Style Guide v1.0 locked]
-[FROM: P10 — Legal, Compliance & Risk] [DATE: 2026-03-15] [TOPIC: I-24 licensing audit scope defined]
+[FROM: P4-001 — MCP Evaluation & Selection] [DATE: 2026-03-01] [TOPIC: MCP server selection for Observability & Monitoring]
+[FROM: P10 — Legal, Compliance & Risk] [DATE: 2026-03-15] [TOPIC: 50-state licensing research complete]
 ```
 
 ### 3.2 What Triggers a Handoff
@@ -111,7 +105,7 @@ Every handoff must include:
 ### 3.4 Handoff Routing Rules
 
 | Scenario | Route | Example |
-|----------|-------|---------|
+|----------|-------|----------|
 | Satellite produces a strategic insight | Satellite → P0 | P3 competitive analysis → P0 strategic plan |
 | Subproject completes an evaluation | Subproject → Parent satellite | P4-001 MCP selection → P4 for deployment |
 | Work belongs in a different satellite | Redirect with explanation | P4 identifies SOP need → redirect to P2 |
@@ -122,9 +116,8 @@ Every handoff must include:
 | Proposal pricing data available | Flag for P1 | P8 fee estimates → P1 for revenue model calibration |
 | Competitor spotted in RFP process | Flag for P3 | P8 competitor sighting → P3 for database update |
 | Proposal creates Odoo CRM requirement | Flag for P7 | P8 pipeline tracking need → P7 for module spec |
-| BC/DR concern identified | Flag for P9 | P5 identifies single point of failure → P9 for resilience plan |
-| Legal/compliance concern identified | Flag for P10 | P6 discovers licensing gap → P10 for compliance tracking |
-| Insurance or contract question | Flag for P10 | P8 encounters liability clause → P10 for review |
+| Legal/compliance/licensing issue | Flag for P10 | P6 discovers state nexus question → P10 for research |
+| Insurance/liability question | Flag for P10 | P8 contract review finds coverage gap → P10 |
 
 **Core rule:** Subprojects report to their parent satellite — never directly to P0. The parent satellite consolidates and routes to P0 as part of its own handoff cycle.
 
@@ -148,17 +141,17 @@ I can help you frame the request for that project if you'd like.
 | Revenue model or pricing | P4, P5, P7 | P1 — Financial Modeling & Pricing |
 | SOP development | P4, P5 | P2 — SOP & Workflow Library |
 | Competitor analysis | P1, P4 | P3 — Competitive Intel & BD |
-| MCP server evaluation | P4 | P4-001 — BCG Tab / pyRevit Tools |
+| MCP server evaluation | P4 | P4-001 — MCP Evaluation & Selection |
 | Custom MCP server development | P4-001 | P4 — AI Infrastructure & Deployment |
-| Revit design tooling | P4 | P4-002 — Revit Design Tools |
+| Revit/BIM tool development | P4 | P4-002 — Revit & BIM Automation |
 | Defender or compliance policy | P4 | P5 — IT Security / QOS |
+| Monitoring stack deployment | P5 | P5-002 — Monitoring & Observability |
 | Hiring, compensation, org chart | Any | P6 — HR & People |
 | Odoo module or ERP config | P2, P4 | P7 — Odoo Platform & ERP |
-| RFP analysis or bid decision | Any | P8 — Proposals & RFP Ops |
-| Document intake processing | P8 | P8-001 — Document Intake & Routing |
-| BC/DR planning, resilience | Any | P9 — Business Continuity & Resilience |
-| Legal matters, licensing, insurance | Any | P10 — Legal, Compliance & Risk |
-| Contract review, compliance tracking | P6, P8 | P10 — Legal, Compliance & Risk |
+| RFP analysis or bid decision | Any | P8 — Proposals & RFP Operations |
+| Inbound business documents | Any | P8-001 — Document Intake & Routing |
+| Business continuity/DR planning | Any | P9 — Business Continuity & Resilience |
+| Licensing, insurance, legal matters | Any | P10 — Legal, Compliance & Risk |
 
 ---
 
@@ -182,9 +175,9 @@ Do NOT create a subproject for:
 | Element | Convention |
 |---------|------------|
 | **Numbering** | Three-digit sequential within parent: P4-001, P4-002, P4-003 |
-| **Naming** | Descriptive name after the ID (e.g., "BCG Tab / pyRevit Tools") |
+| **Naming** | Descriptive name after the ID (e.g., "MCP Evaluation & Selection") |
 | **Claude Project** | Each subproject gets its own Claude Project with custom instructions |
-| **Knowledge base** | Scoped to that workstream. Shared governance docs fetched from GitHub per GOV-001. |
+| **Knowledge base** | Scoped to that workstream. Shared governance docs fetched from GitHub. |
 | **Inheritance** | Subprojects inherit all security boundaries and formatting standards from the master style guide and their parent project |
 | **Precedence** | Parent project-specific instructions take precedence over subproject instructions in case of conflict |
 
@@ -192,7 +185,7 @@ Do NOT create a subproject for:
 
 | Stage | Action |
 |-------|--------|
-| **Creation** | Parent project owner decides a workstream needs isolation. Assigns ID, creates Claude Project, writes custom instructions. |
+| **Creation** | Parent project owner (usually Greg) decides a workstream needs isolation. Assigns ID, creates Claude Project, writes custom instructions. |
 | **Active** | Subproject produces deliverables, manages its own knowledge base, hands off approved outputs to parent. |
 | **Dormant** | Workstream complete but may reactivate (e.g., quarterly evaluation cycles). Project remains, no active work. |
 | **Closed** | Workstream permanently complete. Final handoff to parent. Knowledge base archived. Claude Project can be deleted. |
@@ -227,19 +220,22 @@ When one project's work depends on another project's output, flag the dependency
 [DEPENDENCY: P{#} needs {what} from P{#} by {when}]
 ```
 
-**Active Dependencies (as of March 16, 2026):**
+**Active Dependencies (as of March 2026):**
 
 | Dependent Project | Needs | From Project | By When | Status |
 |-------------------|-------|-------------|---------|--------|
-| P4 | Jason Harris start (Phase 4 AI build) | D-04 milestone | Apr 1, 2026 | Confirmed — 16 days |
-| P4 | Defender ASR whitelisting for MCP servers | P5 | Q2 '26 | Pending — Bob to review |
-| P5-002 | Jason Harris start (Ph2 monitoring) | D-04 milestone | Apr 1, 2026 | Gated |
-| P1 | Accounting data source decision | D-01 (Gregory) | Q2 '26 | Blocked — open decision |
-| P7 (I-23) | Accounting data source decision | D-01 (Gregory) | Q2 '26 | Blocked — open decision |
-| P8-001 | Go-live test scheduling | Gregory + Rachel | Q2 '26 | Ready — 30-min test needed |
-| P4-002 | BIM Lead hire | P6 (I-40 benefits review) | Q2 '26 | Blocked on I-40 |
-| P2 (W-21) | Document storage policy decisions | Gregory | Q2 '26 | Blocked — 3 decisions needed |
-| I-60 (Cowork) | Security assessment completion | P5 (I-61) | Q2 '26 | Gated on I-61 |
+| P4 | Observability MCP deployment (infra + AI tools) | P4-001 (evaluation complete) | Q2 '26 | Handoff approved 2026-03-01 |
+| P4 | Defender ASR whitelisting for MCP servers | P5 | Q2 '26 Sprint 1 | Pending — Bob to review |
+| P4 | Custom pfSense MCP server development | P4 (self, via I-25) | Q3 '26 | Pending — awaiting capacity |
+| P2 | Prometheus/Grafana SOPs | P4 (deployment knowledge) | Q2–Q3 '26 | Flagged in P4-001 handoff |
+| P8 | Rate card and historical pricing data | Greg (upload) | Q2 '26 Sprint 1 | Not started — P8 KB empty |
+| P8 | W-17 RFP Intake SOP | P2 | Q2 '26 | W-17 not yet drafted |
+| P1 | Actual bid pricing and win/loss analysis | P8 | Ongoing | P8 feeds calibration data to P1 models |
+| P3 | Competitor sightings from RFP processes | P8 | Ongoing | P8 feeds intel to P3 database |
+| P5 | VPN architecture documentation (WireGuard + Tailscale) | P4 (architecture decision) | Q2 '26 | Handoff drafted 2026-03-09 |
+| P10 | Benefits competitive data for licensing audit | P6 (I-40 output) | Q2 '26 | I-40 in progress |
+| P6 | State nexus licensing research | P10 (I-24 output) | Q2 '26 | I-24 50-state research complete |
+| I-60 | Cowork security assessment gate | P5 (I-61) | Q2 '26 | I-61 hard gate for I-60 |
 
 *Add rows as cross-project dependencies are identified. Remove rows when resolved.*
 
@@ -251,26 +247,23 @@ Running log of all approved handoffs. Newest first.
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
-| 2026-03-15 | P0 | P10 | P10 Legal project activated, I-24 owner assigned | Gregory |
-| 2026-03-14 | P5 | P0 | M365 security lockdown confirmed complete | Bob / Gregory |
-| 2026-03-12 | P8 | P0 | W-16 Bid/No-Bid SOP closed — $15K threshold, Stephanie backup | Gregory |
-| 2026-03-01 | P4-001 | P4 | MCP server selection for Observability & Monitoring | Gregory |
+| 2026-03-15 | P10 | P0 | 50-state licensing research complete (I-24) | Greg |
+| 2026-03-01 | P4-001 | P4 | MCP server selection for Observability & Monitoring | Greg |
 
-*Add rows as handoffs are approved.*
+*Formal handoff tracking began March 2026. Add rows as handoffs are approved.*
 
 ---
 
 ## 8. Change Log
 
 | Version | Date | What Changed |
-|---------|------|-------------|
-| 1.5 | 2026-03-16 | Updated Section 5.4 EAB version reference from v1.3 to v1.4. |
-| 1.4 | 2026-03-16 | Full ecosystem update: scope P0–P10. Added P9, P10 to satellites. Added P0-001, P4-002, P5-002, P8-001 to subprojects. Updated P4-001 and P5-001 entries. Added P9/P10 routing redirects. Replaced dependency table with current state. Added handoff log entries. Changed source-of-truth from OneDrive to GitHub per GOV-001. Updated EAB section to reference GitHub. |
-| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency (P4 → P5) to Section 6 cross-project dependency table. |
-| 1.2 | 2026-03-01 | Added P5-001 (Network Infrastructure Assessment) to subproject registry. Added Section 5.4 Ecosystem Awareness Block (EAB) with master file location, deployment method, and new-project checklist. |
-| 1.1 | 2026-03-01 | Added P8 (Proposals & RFP Operations) to project registry. Updated P0 inputs scope to P1–P8. Added P8 routing redirects (4 entries). Added P8 cross-project dependencies (4 entries). Added P8 handoff routing rules (3 entries). Updated document scope from P0–P7 to P0–P8. |
-| 1.0 | 2026-03-01 | Initial version. Extracted from BCG_Style_and_Formatting_Standards.md Section 10, expanded with handoff content requirements, routing redirects, cross-project dependencies, and handoff log. |
+|---------|------|--------------|
+| 1.4 | 2026-03-16 | Scope P0–P8 → P0–P10. Added P9, P10 to satellite registry (Section 2.2). Added P4-002, P5-002, P8-001 to subproject registry (Section 2.3). Added P10 routing redirects and handoff rules. Added P5-002 and P4-002 routing redirects. Updated cross-project dependencies (added P10↔P6, I-60↔I-61). Updated EAB reference to v1.4. Updated handoff log. |
+| 1.3 | 2026-03-09 | Added P5 VPN architecture documentation dependency. |
+| 1.2 | 2026-03-01 | Added P5-001 to subproject registry. Added Section 5.4 EAB. |
+| 1.1 | 2026-03-01 | Added P8 to project registry. Updated scope P0–P7 to P0–P8. |
+| 1.0 | 2026-03-01 | Initial version. |
 
 ---
 
-*This document is maintained on GitHub at `bcg-ops-governance/standards/` and is the authoritative source per GOV-001. OneDrive copies are archive/backup only. Update this file when projects are created, closed, or restructured.*
+*This document is maintained in GitHub at bcg-ops-governance/standards/ and fetched by all Claude Projects at runtime. Update this file when projects are created, closed, or restructured. Do not maintain separate copies in individual project knowledge bases.*

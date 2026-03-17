@@ -1,18 +1,12 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.5  
+**Version:** 1.3  
 **Effective:** March 2026  
 **Last Updated:** 2026-03-16  
 **Scope:** All Claude Projects (P0–P10) and downstream deliverables  
 **Owner:** Gregory Bernardo, President
 
-**v1.5 Changes:** Updated Section 16.4 EAB version reference from v1.3 to v1.4 (matching actual EAB on GitHub).
-
-**v1.4 Changes:** Updated Section 10.2 Project Registry to 17 projects (P0–P10). Updated Section 10.3 Subproject Registry to 6 subprojects (P0-001, P4-001, P4-002, P5-001, P5-002, P8-001). Updated Section 13 organizational context (61 active initiatives, 23+ workstreams). Added Section 16 (Source of Truth & Governance References) establishing GOV-001, GitHub fetch patterns, and vocabulary authority. Updated scope from P0–P7 to P0–P10 throughout. Corrected EAB references to GitHub per GOV-001.
-
-**v1.3 Changes:** Version parity bump — propagated across ecosystem 2026-03-12. No content changes from v1.2.
-
-**v1.2 Changes:** Added Section 15 (Evaluation & Analytical Report Conventions) covering change tracking, executive summary with delta, competitive feature analysis, and use case action context. Added phased rollout terminology standard ("Sprints" not "Waves") to Section 2.
+**v1.3 Changes:** Updated scope P0–P7 → P0–P10. Updated Section 10 project registry to include P8 (Proposals & RFP Operations), P9 (Business Continuity & Resilience), P10 (Legal, Compliance & Risk). Updated Section 10.3 subproject registry to include P4-002, P5-002, P8-001. Updated Section 13 initiative count (26 → 61, with I-20 and I-32 removed). Added Section 16 (EAB specification reference). Corrected P6 name to "HR & People" (legal moved to P10).
 
 ---
 
@@ -320,36 +314,32 @@ Subproject handoffs include the subproject ID:
 
 ### 10.2 Project Registry
 
-| ID | Project | Owner | What It Produces |
-|----|---------|-------|------------------|
-| P0 | Master Strategic Plan | Gregory Bernardo | Synthesis hub — consumes, doesn't produce |
-| P0-001 | Ecosystem Triage & Routing | Gregory Bernardo | Classified updates, handoff prompts, I-number registrations |
-| P1 | Financial Modeling & Pricing | Gregory Bernardo | Revenue models, pricing analysis, break-even |
-| P2 | SOP & Workflow Library | Jennifer Brezniak | Approved SOPs (W-01–W-23+), PROD-series |
-| P3 | Competitive Intel & BD | Gregory Bernardo | Competitor updates, teaming evals, DM playbook |
-| P4 | AI Infrastructure & Deployment | Jason Harris | AI configs, runbooks, guardrails |
-| P4-001 | BCG Tab / pyRevit Tools | Jason Harris | pyRevit button panels, Revit automation tools |
-| P4-002 | Revit Design Tools | Gregory / Stephanie | Design-layer tooling (I-09, I-28, I-44–I-46, I-49) |
-| P5 | IT Security / QOS | Bob Brezniak | Compliance artifacts, QOS alignment |
-| P5-001 | Network Infrastructure | Bob Brezniak | Security monitoring runbooks |
-| P5-002 | Monitoring & Observability | Bob Brezniak | Ph2 monitoring stack |
-| P6 | HR & People | Jennifer Brezniak | Headcount, org chart, compensation |
-| P7 | Odoo Platform & ERP | Victor Carrillo | Module status, ERP readiness, accounting |
-| P8 | Proposals & RFP Ops | Gregory Bernardo | Bid/no-bid analysis, pipeline stats, pricing data |
-| P8-001 | Document Intake & Routing | Rachel McGee | RFP/CO/PO intake processing |
-| P9 | Business Continuity & Resilience | Gregory Bernardo | BC/DR plans, resilience protocols (Gregory only) |
-| P10 | Legal, Compliance & Risk | Gregory Bernardo | Legal matters, insurance, compliance (Gregory only) |
+| ID | Project | What It Produces |
+|----|---------|------------------|
+| P0 | Master Strategic Plan | Synthesis hub — consumes, doesn't produce |
+| P1 | Financial Modeling & Pricing | Revenue models, pricing analysis, break-even |
+| P2 | SOP & Workflow Library | Approved SOPs (W-01–W-23+), PROD-series |
+| P3 | Competitive Intel & BD | Competitor updates, teaming evals, DM playbook |
+| P4 | AI Infrastructure & Deployment | AI configs, runbooks, guardrails |
+| P5 | IT Security / QOS | Compliance artifacts, QOS alignment |
+| P6 | HR & People | Headcount, org chart, compensation, hiring pipelines |
+| P7 | Odoo Platform & ERP | Module status, ERP readiness, accounting |
+| P8 | Proposals & RFP Operations | Bid/no-bid analysis, pipeline stats, pricing data |
+| P9 | Business Continuity & Resilience | BC/DR plans, resilience protocols, risk register |
+| P10 | Legal, Compliance & Risk | Licensing, insurance, compliance, contract review (Gregory only) |
 
 ### 10.3 Subproject Registry
 
-| ID | Parent | Subproject Name | What It Produces | Status |
-|----|--------|----------------|-----------------|--------|
-| P0-001 | P0 | Ecosystem Triage & Routing | Classified updates, I-number registrations, handoff prompts | Active |
-| P4-001 | P4 | BCG Tab / pyRevit Tools | pyRevit button panels, Revit automation tools | Active |
-| P4-002 | P4 | Revit Design Tools | Design-layer Revit tooling | Active |
-| P5-001 | P5 | Network Infrastructure | Firewall/switch assessment, monitoring specs | Active (Ph1 complete) |
-| P5-002 | P5 | Monitoring & Observability | Ph2 monitoring stack | Active (gated Apr 1) |
-| P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, pipeline feed | Active (go-live pending) |
+Satellite projects may contain numbered subprojects for specialized workstreams that need their own Claude Project, knowledge base, and instructions. Subproject IDs follow the format `P{#}-{###}` (parent project dash three-digit sequence).
+
+| ID | Parent | Subproject | What It Produces |
+|----|--------|------------|------------------|
+| P0-001 | P0 | Ecosystem Triage & Routing Protocol | Classified updates, handoff prompts, I-number registrations |
+| P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices, deployment recommendations |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit button panels, Revit design tools (42 buttons, 9 panels) |
+| P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis |
+| P5-002 | P5 | Monitoring & Observability Infrastructure | Monitoring stack deployment (Prometheus, Grafana, Loki) |
+| P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, pipeline feed |
 
 ### 10.4 Routing Rule
 
@@ -390,7 +380,7 @@ When a new initiative or decision is presented in any project, evaluate against 
 | **Document font** | Arial |
 | **Logo** | Current logo; additional options available |
 | **Photography** | Coordinated headshots preferred; professional quality minimum |
-| **Veteran recognition** | Maintain military service badges for Joshua Davis, Victor Carrillo, and Myra Masisak |
+| **Veteran recognition** | Maintain military service badges for Joshua Davis and Victor Carrillo |
 
 ---
 
@@ -399,7 +389,7 @@ When a new initiative or decision is presented in any project, evaluate against 
 Reference these facts consistently across all projects:
 
 - **Company:** BCG Corp (Bernardo Consulting Group LLC), Denton, TX
-- **Scale:** 9 FTE, founder-led
+- **Scale:** 9 FTE + 1 fractional (Jason Harris, April 1), founder-led
 - **President:** Gregory Bernardo
 - **Service:** Independent physical security consulting — data centers and critical infrastructure
 - **Prime relationships:** Arcadis (strong), HKS (good), Gensler (burgeoning), S+R (active)
@@ -407,10 +397,10 @@ Reference these facts consistently across all projects:
 - **ERP:** Self-hosted Odoo 18 (PM, CRM, Accounting, HR with Studio/custom modules)
 - **AI infrastructure:** 2x NVIDIA DGX Spark, 2x RTX 5090 workstations
 - **Design principles:** (1) Build to Sell, (2) Redundancy at Every Level, (3) Employee Ownership & Profit Sharing, (4) Process Before People
-- **Guiding principles:** Three core principles documented in `Our_Guiding_Principles.docx`
-- **Active projects:** 17 (P0, P0-001, P1–P9, P4-001, P4-002, P5-001, P5-002, P8-001, P10)
-- **Initiative catalog:** 61 active (I-01 through I-63, minus I-20 and I-32). Next available slot: I-64
-- **Workstreams:** W-01 through W-23+. 11 active workstream categories (WS-01 through WS-11)
+- **Guiding principles:** Three core principles documented in `[TEAM] Our Guiding Principles.docx`
+- **Initiative catalog:** 61 active (I-01 through I-63, minus I-20 and I-32)
+- **Workstreams:** 11 active (WS-01 through WS-11)
+- **Claude ecosystem:** 17 active projects (P0, P0-001, P1–P10, P4-001, P4-002, P5-001, P5-002, P8-001)
 
 ---
 
@@ -495,28 +485,20 @@ When a report identifies use cases for a tool, platform, or integration, each us
 
 ---
 
-## 16. Source of Truth & Governance References
+## 16. Ecosystem Awareness Block (EAB) Specification
 
-### 16.1 GitHub as Single Source of Truth (GOV-001)
+The EAB is a standardized text block embedded in every satellite and subproject's custom instructions. It provides cross-project routing, handoff labeling, and dependency flagging.
 
-Per governance decision GOV-001 (approved 2026-03-11), GitHub is the single source of truth for all Claude-fetchable operational documents. OneDrive serves as archive/backup only.
+| Attribute | Value |
+|-----------|-------|
+| **Master file** | GitHub: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md` |
+| **Current version** | v1.4 |
+| **Deployment** | Copy-paste into custom instructions (embedded, not runtime-fetched) |
+| **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
+| **Scope** | All satellite projects (P1–P10) and subprojects |
+| **Update cycle** | Re-propagate to all satellites whenever the block changes |
 
-**GitHub base path for governance files:**
-```
-https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/
-```
-
-### 16.2 One Document Owns One Definition
-
-No cross-document duplication of terms, definitions, or governance rules. Each concept has exactly one authoritative source. All other surfaces reference that source, never duplicate it.
-
-### 16.3 Ecosystem Vocabulary
-
-`BCG_Ecosystem_Vocabulary.md` (in `bcg-ops-governance/standards/`) is the single source of truth for all ecosystem terminology. When a term needs definition, reference the vocabulary file — do not define it inline or in project-specific instructions.
-
-### 16.4 Ecosystem Awareness Block (EAB)
-
-Every satellite project's custom instructions must include the EAB (currently v1.4). The master file lives on GitHub at `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Propagation follows the same GOV-001 GitHub-first rule.
+See `BCG_Ecosystem_Awareness_Block.md` for the full block text, placement guide, propagation tracker, and validation tests.
 
 ---
 
