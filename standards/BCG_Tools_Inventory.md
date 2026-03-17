@@ -1,3 +1,15 @@
+# BCG Corp — Tools Inventory
+
+**Document ID:** GOV-013
+**Version:** 1.0
+**Effective:** March 2026
+**Last Updated:** 2026-03-16
+**Project:** P4-001
+**Owner:** Gregory Bernardo, President
+**GitHub Path:** `standards/BCG_Tools_Inventory.md`
+
+---
+
 # BCGTools pyRevit Extension Inventory
 
 **Total: 42 buttons** across **9 panels**
