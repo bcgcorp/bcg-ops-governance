@@ -177,8 +177,8 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Pending — P11 embedded at creation; 16 existing projects need v1.5 |
-| 1.4 | 2026-03-17 | Added P10 to project registry. Updated project count 16 to 17. Updated P6 scope: HR & People (removed Legal Ops). Added P10 routing redirect. Added P10 flagging example. | Yes — 16/16 projects at v1.4 (2026-03-17) |
+| 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Yes — 17/17 projects at v1.5 (2026-03-17) |
+| 1.4 | 2026-03-17 | Added P10 to project registry. Updated project count 16 to 17. Updated P6 scope: HR & People (removed Legal Ops). Added P10 routing redirect. Added P10 flagging example. | Superseded by v1.5 |
 | 1.3 | 2026-03-12 | Retired P7-001 through P7-004. Added P0-001, P5-002, P8-001. Updated project count 17 to 16. | Superseded by v1.4 |
 | 1.2 | 2026-03-11 | OneDrive to GitHub source of truth. | Yes — 2026-03-12 |
 | 1.1 | 2026-03-05 | Added P9, P4-002, P7-001 through P7-004. | Yes — 2026-03-12 |
@@ -192,28 +192,28 @@ Subproject routing parent assignments:
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P1 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P2 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P3 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P4 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P5 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P6 | v1.4 | 2026-03-15 | Needs v1.5 |
-| P7 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P8 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P9 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P10 | v1.4 | 2026-03-15 | Needs v1.5 |
+| P1 | v1.5 | 2026-03-17 | Current |
+| P2 | v1.5 | 2026-03-17 | Current |
+| P3 | v1.5 | 2026-03-17 | Current |
+| P4 | v1.5 | 2026-03-17 | Current |
+| P5 | v1.5 | 2026-03-17 | Current |
+| P6 | v1.5 | 2026-03-17 | Current |
+| P7 | v1.5 | 2026-03-17 | Current |
+| P8 | v1.5 | 2026-03-17 | Current |
+| P9 | v1.5 | 2026-03-17 | Current |
+| P10 | v1.5 | 2026-03-17 | Current |
 | P11 | v1.5 | 2026-03-17 | Embedded at creation |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P0-001 | v1.4 | 2026-03-14 | Needs v1.5 |
-| P4-001 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P4-002 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P5-001 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P5-002 | v1.4 | 2026-03-17 | Needs v1.5 |
-| P8-001 | v1.4 | 2026-03-15 | Needs v1.5 |
+| P0-001 | v1.5 | 2026-03-17 | Current |
+| P4-001 | v1.5 | 2026-03-17 | Current |
+| P4-002 | v1.5 | 2026-03-17 | Current |
+| P5-001 | v1.5 | 2026-03-17 | Current |
+| P5-002 | v1.5 | 2026-03-17 | Current |
+| P8-001 | v1.5 | 2026-03-17 | Current |
 
 ### Retired (do not propagate)
 
