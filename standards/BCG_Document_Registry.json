@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-03-15",
+  "lastUpdated": "2026-03-16",
   "updatedBy": "Gregory Bernardo",
   "note": "Scope: governance standards and SOPs only. Client deliverables tracked separately.",
   "documents": [
@@ -10,11 +10,11 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.1",
+      "version": "v1.7",
       "status": "published",
       "githubPath": "standards/BCG_Governance_Doc_Registry.md",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-07",
+      "lastUpdated": "2026-03-16",
       "notes": "Master index of all governance documents."
     },
     {
@@ -66,8 +66,8 @@
       "status": "approved",
       "githubPath": "standards/BCG_Document_Registry.json",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-15",
-      "notes": "Governance + SOP document registry. Approved 2026-03-15."
+      "lastUpdated": "2026-03-16",
+      "notes": "Governance + SOP document registry. Approved 2026-03-15. GOV-013 added 2026-03-16."
     },
     {
       "id": "GOV-006",
@@ -159,6 +159,19 @@
       "onedrivePath": null,
       "lastUpdated": "2026-03-08",
       "notes": "Single source of truth for all ecosystem terminology."
+    },
+    {
+      "id": "GOV-013",
+      "title": "Tools Inventory",
+      "type": "governance",
+      "project": "P4-001",
+      "owner": "Gregory Bernardo",
+      "version": "v1.0",
+      "status": "published",
+      "githubPath": "standards/BCG_Tools_Inventory.md",
+      "onedrivePath": null,
+      "lastUpdated": "2026-03-16",
+      "notes": "BCGTools pyRevit extension. 42 buttons across 9 panels. Companion to GOV-011 (pyRevit Tab Style Guide)."
     },
     {
       "id": "W-01",

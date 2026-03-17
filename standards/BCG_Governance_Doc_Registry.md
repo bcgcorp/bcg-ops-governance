@@ -1,8 +1,8 @@
 # BCG Corp — Governance Document Registry
 
-**Version:** 1.6
+**Version:** 1.7
 **Effective:** March 2026
-**Last Updated:** 2026-03-15
+**Last Updated:** 2026-03-16
 **Scope:** All Claude Projects (P0–P9) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -192,6 +192,17 @@ Fetch only the ones relevant to the current task — not all every time. Use the
 | **Fetch before** | Beginning P9 Phase 1 (Dependency Risk Register), conducting business continuity assessment, identifying single points of failure |
 | **Governs** | Diagnostic prompt for P9 Phase 1 risk assessment. Covers 6 dependency categories. Produces BCG Dependency Risk Register v1.0, top failure scenarios, critical gaps summary, continuity protocol recommendations. |
 
+### 3.15 BCG Tools Inventory
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Tools_Inventory.md` |
+| **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Tools_Inventory.md` |
+| **Document ID** | GOV-013 |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any pyRevit button development or audit, scoping new B-number backlog items, onboarding new P4 contributors, reviewing BCGTools extension scope, resolving button naming or panel assignment questions |
+| **Governs** | Complete inventory of all 42 buttons across 9 panels in the BCGTools pyRevit extension: FOV (4), IronRacks (2), Linked CAD (3), LinkedModel (4), PIDS (12), Parameters (2), RenumberElements (6), Sheets (7), Temp (3). Each button includes description and workflow step where applicable. Companion reference to BCG_pyRevit_Tab_Style_Guide.md (GOV-011 / P4-001-STY-001). |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -222,19 +233,19 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
 | **Fetch URL** | `https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 1.6 |
+| **Current Version** | 1.7 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
 ### 5.2 Total Document Count
 
 | Category | Count | Documents |
-|----------|-------|----------|
-| Runtime-fetched (.md) | 13 | Style Guide, Project Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, pyRevit Tab Style Guide, Ecosystem Vocabulary, SOP Governance & Intake Protocol, W-20 Triage SOP, Artifact Naming Standard, Ecosystem Performance Assessment Prompt, P9 Risk & Resilience Prompt |
+|----------|-------|-----------|
+| Runtime-fetched (.md) | 14 | Style Guide, Project Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, pyRevit Tab Style Guide, Ecosystem Vocabulary, SOP Governance & Intake Protocol, W-20 Triage SOP, Artifact Naming Standard, Ecosystem Performance Assessment Prompt, P9 Risk & Resilience Prompt, Tools Inventory |
 | Runtime-fetched (.docx, non-raw) | 1 | Guiding Principles (OneDrive only) |
 | Embedded (EAB) | 1 | Ecosystem Awareness Block |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total in Standards folder** | **16** | — |
+| **Total in Standards folder** | **17** | — |
 
 ---
 
@@ -254,6 +265,7 @@ These documents are NOT fetched at runtime. They are pasted directly into projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.7 | 2026-03-16 | Added Section 3.15 — BCG Tools Inventory (GOV-013, `BCG_Tools_Inventory.md`, P4-001). Updated Section 5.2: runtime-fetched 13→14, total 16→17. |
 | 1.6 | 2026-03-15 | 3.1 Style Guide: v1.4 → v1.5 (veteran recognition generalized — named individuals removed). |
 | 1.5 | 2026-03-15 | 3.6 Initiative Catalog: v1.8 → v1.9 (I-24 Active, 50-state research complete, P6 executing). 3.5 Infrastructure Inventory: v1.1 → v1.2 (PyRevit repo corrected to GitLab). 3.7 Custom Module Registry: v1.0 → v1.1 (P7-004 reference scrubbed, audit gap noted). |
 | 1.4 | 2026-03-14 | Updated version numbers to reflect batch follow-on commit (4950b0b). 3.1 Style Guide v1.3→v1.4. 3.3 Project Ecosystem v1.5→v1.6. 3.6 Catalog v1.7→v1.8 (B-number corrections, P4-002 subproject updated). 3.9 Vocabulary v1.0→v1.1. 3.10 SOP Governance v1.1→v1.2. 3.12 Artifact Naming v1.0→v1.1. 3.13 Performance Prompt v1.0→v1.1. 3.14 P9 Risk Prompt v1.0→v1.1. Registry self-reference bumped to v1.4. |
