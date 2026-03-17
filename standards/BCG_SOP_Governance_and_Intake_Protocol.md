@@ -1,9 +1,9 @@
 # BCG Corp — SOP Governance & Intake Protocol
 
-**Version:** 1.2
+**Version:** 1.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-14
-**Scope:** All Claude Projects (P0–P9) and subprojects
+**Last Updated:** 2026-03-16
+**Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
 **Maintenance:** Jennifer Brezniak (post-approval)
 
@@ -55,7 +55,7 @@ on submission — the classification step filters what proceeds.
 - A workflow exists in someone's head or email but not in writing
 - A process breaks or produces inconsistent results due to lack of
   documented steps
-- A satellite project (P1–P9) identifies a process gap while executing
+- A satellite project (P1–P10) identifies a process gap while executing
   its own work
 - Gregory identifies a new capability or service delivery pattern that
   needs standardization
@@ -113,7 +113,7 @@ Assign the next available W-series ID from the workflow registry. The
 registry is maintained in P2 and reflected in the BCG Initiative and
 Workstream Catalog.
 
-**Current highest assigned ID:** W-22 (as of 2026-03-14). Next available: W-23.
+**Current highest assigned ID:** W-23 (as of 2026-03-16). Next available: W-24.
 
 **ID rules:**
 - IDs are sequential and permanent. Once assigned, an ID is not reused
@@ -281,6 +281,7 @@ for first-pass drafting before Jennifer takes ownership.
 
 | Version | Date       | Author           | What Changed                                      |
 |---------|------------|------------------|---------------------------------------------------|
+| 1.3     | 2026-03-16 | Gregory Bernardo | Scope updated P0–P9→P0–P10. Section 3 trigger reference updated P1–P9→P1–P10. W-ID updated W-22→W-23, next slot W-24. |
 | 1.2     | 2026-03-14 | Gregory Bernardo | Updated highest W-ID from W-20 to W-22 (W-21 Document Storage SOP and W-22 Weekly Sync Agenda System assigned). Updated next available slot W-21→W-23. |
 | 1.1     | 2026-03-12 | Gregory Bernardo | Updated highest W-ID from W-17 to W-20 (W-18 Artifact Capture, W-19 Chat Quality Eval, W-20 Ecosystem Triage assigned). |
 | 1.0     | 2026-03-05 | Gregory Bernardo | Initial draft                                     |
