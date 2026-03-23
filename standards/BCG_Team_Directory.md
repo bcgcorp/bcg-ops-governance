@@ -1,9 +1,9 @@
 # BCG Corp — Team Directory & Roles
 
-**Version:** 2.1
+**Version:** 2.2
 **Effective:** March 2026
-**Last Updated:** 2026-03-16
-**Scope:** All Claude Projects (P0–P10) and subprojects
+**Last Updated:** 2026-03-22
+**Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
@@ -26,9 +26,9 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Email:** gb@bcg-corp.com
 - **Role:** Founder, final approver on all deliverables, primary strategic decision-maker. Currently absorbing BIM Lead responsibilities (temporary — pending I-40 benefits resolution and re-recruitment).
 - **Tools:** Windsurf IDE, Claude Code, Claude.ai, Odoo (admin), Open WebUI, Xmind
-- **Project Assignments:** P0 (owner), P0-001 (owner), P1 (owner), P3 (owner), P8 (owner), P9 (owner), P10 (owner)
-- **Active Initiatives:** I-24 (Licensing & Insurance Audit — self-execute), I-54 (Production Rework Module — architecture)
-- **Open Decisions:** D-01 (accounting data source)
+- **Project Assignments:** P0 (owner), P0-001 (owner), P1 (owner), P3 (owner), P8 (owner), P9 (owner), P10 (owner), P11 (owner — sole, restricted)
+- **Active Initiatives:** I-24 (Licensing & Insurance Audit — self-execute), I-54 (Production Rework Module — architecture), I-64 (Candidate Pre-Hire OSINT — sole operator)
+- **Open Decisions:** D-01 (accounting data source), D-05 (bcg-ops-knowledge repo — Bob), D-06 (@cap chatbot — Jason)
 - **Notes:** All outputs require Gregory's approval before flowing between projects. Backup bid/no-bid authority delegated to Stephanie Bernardo (triggers after 48hr non-response). April 12 calendar hold: CI/CD write mode upgrade review.
 
 ### Jennifer Brezniak
@@ -48,9 +48,9 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Role:** Infrastructure, network security, Defender for Endpoint, Azure Entra ID, firewall management, server administration, pfSense, GitHub org administration. Reviews all infrastructure changes before deployment.
 - **Tools:** Windsurf IDE, Claude Code, Claude.ai, Odoo (admin), Open WebUI
 - **Project Assignments:** P5 (lead), P5-001 (owner), P5-002 (owner), P9 (lead)
-- **Active Initiatives:** I-43 (Outlook Forward Guard — Defender/ASR review), I-52 (CI/CD — API key + runner provisioning), I-53 (Odoo Automated Testing Framework — execution lead), I-61 (Cowork Security/Audit Assessment)
-- **Immediate Actions:** Odoo.sh decommission (ASAP), CI/CD API key provisioning (after M365), RevitPrint Minion credential check (this week), firewall ANY-to-ANY cleanup (needs target date)
-- **Notes:** P5-002 Phase 1 complete (ClarkKent, WireGuard, Telegraf). Phase 2 gated on D-04 (April 1). GitLab mirror in progress (P9). Does not initiate AI tool evaluations but must approve anything touching BCG infrastructure. COO flag: cumulative load is high — prioritize at next sync.
+- **Active Initiatives:** I-43 (Outlook Forward Guard — Defender/ASR review), I-52 (CI/CD — API key + runner provisioning), I-53 (Odoo Automated Testing Framework — execution lead), I-61 (Cowork Security/Audit Assessment), I-68 (WireGuard VPN Phase 2), I-66 (IT Equipment Inventory — Phase 1)
+- **Open Actions:** D-05 (create bcg-ops-knowledge private repo — est. 10 min), I-69 AD group (add Jennifer/Rachel/Cory/Stephanie to Cloudflare_Dashboard_Users), Bob MCP config replication on workstation (~10 min), firewall ANY-to-ANY cleanup (needs target date)
+- **Notes:** P5-002 Phase 1 complete (ClarkKent, WireGuard, Telegraf). Phase 2 gated on Jason (April 1). GitLab mirror in progress (P9). Does not initiate AI tool evaluations but must approve anything touching BCG infrastructure. COO flag: cumulative load is high — prioritize at next sync.
 
 ### Victor Carrillo
 - **Title:** Operations Assistant
@@ -59,9 +59,9 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Role:** Odoo 18 custom module development, platform configuration, P7 sole owner. Works from P7 directly — one chat per initiative with I-number in title.
 - **Tools:** Windsurf IDE, Claude Code, Claude.ai, Odoo (admin), Open WebUI
 - **Project Assignments:** P7 (owner — sole)
-- **Active Initiatives:** I-52 (CI/CD CLAUDE.md — UNBLOCKED, due within 5 days), I-55 (Appointment Coverage — recommended first build), I-59 (NL Command Interface — gated on P8-001)
+- **Active Initiatives:** I-52 (CI/CD CLAUDE.md — UNBLOCKED, due within 5 days), I-55 (Appointment Coverage — recommended first build), I-56 (Notification Center Phase A remediation), I-66 (IT Equipment Inventory — Odoo import build)
 - **Military Service:** Veteran
-- **Notes:** P7-001 through P7-004 retired 2026-03-12 — all Odoo work consolidated in P7 parent. Odoo MCP proven with Windsurf. Coordinate with Gregory on API key access and Cloudflare Tunnel.
+- **Notes:** BCG is exclusively on-premises Odoo 18 — odoo.sh fully decommissioned. Odoo MCP proven with Windsurf. Coordinate with Gregory on API key access and Cloudflare Tunnel. D-06 @cap Odoo receiver to scope with Jason on April 1.
 
 ### Jason Harris
 - **Title:** VP, AI & Emerging Technology (Fractional W-2)
@@ -70,8 +70,8 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Role:** AI tool installation and configuration (MCP servers, monitoring stack, model infrastructure, CI/CD Phase 2). Follows Bob's IT security requirements for all deployments. Unblocks all Phase 4 AI build work.
 - **Tools:** Windsurf IDE, Claude Code, Claude.ai, Odoo (admin), Open WebUI
 - **Project Assignments:** P4 (owner), P4-001 (owner), P4-002 (contributor)
-- **Gated Work:** I-50 Phase 2 (B: Drive Cleanup Agent), I-51 (Email Attachment Ingestion Agent), I-52 Phase 2 (Revit CI/CD), I-60 Phases 2-3 (Cowork Plugin commands + connectors), P5-002 Phase 2 (Monitoring architecture)
-- **Notes:** Pre-employment milestone period ends March 31. Employment begins April 1, 2026. D-04 resolved 2026-03-12.
+- **Gated Work:** I-50 Phase 2 (B: Drive Cleanup Agent), I-51 (Email Attachment Ingestion Agent), I-52 Phase 2 (Revit CI/CD), I-60 Phases 2-3 (Cowork Plugin commands + connectors), P5-002 Phase 2 (Monitoring architecture), I-65 (On-Prem AI Production Intelligence Suite — owner), D-06 (@cap chatbot — scoped with Victor)
+- **Notes:** Pre-employment milestone period ends March 31. Employment begins April 1, 2026. D-04 resolved 2026-03-12. Revised Employment Agreement not yet filed in OneDrive (only old versions in Teams Chat Files).
 
 ### Cory Bialke
 - **Title:** Senior Physical Security Engineer / Design Team Lead
@@ -102,7 +102,7 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Role:** Office administration, operations management, document intake processing, billing support.
 - **Tools:** Claude.ai, Odoo, Open WebUI
 - **Project Assignments:** P8-001 (owner)
-- **Active Initiatives:** I-58 (P8-001 Document Intake & Routing — go-live), W-08 (AIA Billing/Invoicing), W-14 (Sales Order Entry), I-24 (Insurance — co-owner with Gregory)
+- **Active Initiatives:** I-58 (P8-001 Document Intake & Routing — go-live), W-08 (AIA Billing/Invoicing), W-14 (Sales Order Entry), I-24 (Insurance — co-owner with Gregory), I-66 (IT Equipment Inventory — Accounting Asset review approver)
 - **Other:** I-50 Ph1 primary input contributor (admin/billing/proposals file structure).
 
 ### Joshua Davis
@@ -145,7 +145,7 @@ Quick reference for primary project assignments. Dash (—) means no current ass
 
 | Name | Primary Projects | Role |
 |------|-----------------|------|
-| Gregory | P0, P0-001, P1, P3, P8, P9, P10 | Owner |
+| Gregory | P0, P0-001, P1, P3, P8, P9, P10, P11 | Owner |
 | Jennifer | P2, P6 | Owner |
 | Bob | P5, P5-001, P5-002, P9 | Lead / Owner |
 | Victor | P7 | Owner (sole) |
@@ -159,7 +159,7 @@ Quick reference for primary project assignments. Dash (—) means no current ass
 
 **Capacity types:** Owner (approver + contributor), Lead (day-to-day execution authority), Contributor (produces work), Reviewer (reviews before deployment)
 
-**Sync Liaisons:** Gregory (primary) / Bob (backup) for all 17 projects.
+**Sync Liaisons:** Gregory (primary) / Bob (backup) for all 18 projects.
 
 ---
 
@@ -190,6 +190,7 @@ The following individual must NOT be assigned to any initiative, role, or projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 2.2 | 2026-03-22 | Scope P0–P10 → P0–P11. Added P11 to Gregory's project assignments and active initiatives (I-64). Updated Role-to-Project Matrix Gregory row to include P11. Sync Liaisons 17 → 18. Removed stale odoo.sh decommission note from Bob (complete). Updated Bob open actions to current (D-05, I-69 AD group, MCP replication). Added Jason D-06 and EA filing note. Updated Victor active initiatives (I-56, I-66). Added Rachel I-66 approver role. |
 | 2.1 | 2026-03-16 | Scope P0–P9 → P0–P10. Added P10 to Gregory's project assignments. Updated Role-to-Project Matrix (Gregory row includes P10). Sync Liaisons 16→17 projects. Added I-24 co-owner to Rachel McGee entry. |
 | 2.0 | 2026-03-12 | Complete rewrite. Updated all titles, roles, and project assignments to reflect current ecosystem (16 projects). Added Jason start date (April 1). Added Stephanie as backup bid/no-bid authority. Updated Victor to P7 sole owner (P7 subprojects retired). Added Rachel as P8-001 owner. Added BIM Lead vacancy. Added Bernard Lewis restriction. Added active initiatives per person. Updated source of truth to GitHub (GOV-001). Simplified Role-to-Project Matrix. Removed stale "P0–P7" scope. |
 | 1.0 | 2026-03-01 | Initial version. 11 team members (10 full-time, 1 fractional). Core project assignments defined. |
