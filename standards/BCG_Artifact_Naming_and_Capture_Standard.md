@@ -64,7 +64,6 @@ DRAFT_P2_SOP-W14-Sales-Order-Entry_2026-03-07.docx
 APPROVED_P3_Competitor-Segment-Map_2026-03-10.pdf
 APPROVED_P0_Ecosystem-Transformation-ExecSummary_2026-03-07.docx
 SUPERSEDED_P1_Revenue-Model-v1_2026-02-15.xlsx
-DRAFT_P11_CIR-2026-001_[REDACTED]_2026-03-22.docx
 ```
 
 ### Topic Formatting Rules
@@ -129,8 +128,6 @@ Artifacts containing Tier 1 or Tier 2 data stay in Claude.ai ONLY.
 - Personnel compensation data
 - Any data classified Tier 1 (Confidential) or Tier 2 (Restricted)
 
-P11 outputs (CIRs) are RESTRICTED — never export, never share outside P10/P11 custody chain.
-
 When in doubt, keep it in Claude.ai. Do not export.
 
 ---
@@ -185,7 +182,7 @@ write permissions. Eliminates the manual download-rename-upload step.
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 1.3 | 2026-03-22 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project codes table. Updated project count 17→18 in PURPOSE. Added Gregory as P11 capture owner. Added P11 security note to Section 2. |
+| 1.3 | 2026-03-22 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project codes table. Updated project count 17→18 in PURPOSE section. Added Gregory as P11 capture owner in Section 3. |
 | 1.2 | 2026-03-16 | Added P10 (Legal, Compliance & Risk) to project codes table. Updated project count 16→17. Added Gregory as P10 capture owner. |
 | 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated "17 BCG projects" → "16". Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
 | 1.0 | 2026-03-07 | Initial version. |
