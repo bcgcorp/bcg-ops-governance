@@ -1,6 +1,6 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 2.2
+**Version:** 2.3
 **Effective:** March 2026
 **Last Updated:** 2026-03-22
 **Scope:** All Claude Projects (P0-P11) and subprojects
@@ -128,9 +128,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Tools_Inventory.md` |
-| **Current Version** | 1.1 |
-| **Fetch before** | PyRevit button development, backlog review, panel inventory check, status confirmation |
-| **Governs** | BCGTools pyRevit extension inventory. 42 buttons across 9 panels. Complete button descriptions, panel assignments, and deployment status (Complete/Beta/In Development). |
+| **Current Version** | 1.2 |
+| **Fetch before** | PyRevit button development, backlog review, panel inventory check, status confirmation, print button references |
+| **Governs** | BCGTools pyRevit extension inventory. 46 buttons across 10 panels. Complete button descriptions, panel assignments, deployment status (Complete/Beta/In Development), and gate conditions for print buttons (B-43--B-46). |
 
 ### 3.12 SOP Governance & Intake Protocol (SOP-GOV-001)
 
@@ -173,7 +173,7 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_P4002_Technical_Architecture.md` |
-| **Current Version** | 1.0 |
+| **Current Version** | 1.1 |
 | **Fetch before** | Any pyRevit code review, CLAUDE.md authoring, PR triage for bcg-ops-revit-tools, or when an architectural decision is in question |
 | **Governs** | IronPython ASCII constraint, AppSettings_01 opaque schema rules (including violation patterns), three-transaction sheet architecture, Revit API constraints, Windsurf/windsurfrules coding environment, CI/CD pipeline phase status, pending P4-002 deliverables. |
 
@@ -219,7 +219,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.2 |
+| **Current Version** | 2.3 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -250,6 +250,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.3 | 2026-03-22 | Bumped GOV-013 tracked version 1.1 to 1.2 (Section 3.11, 46 buttons / 10 panels). Bumped GOV-017 tracked version 1.0 to 1.1 (Section 3.16). Updated GOV-013 governs description. |
 | 2.2 | 2026-03-22 | Added GOV-017 (P4-002 Technical Architecture Standards, Section 3.16). Bumped GOV-013 tracked version 1.0 to 1.1 (Section 3.11). Updated total doc count 18 to 19. |
 | 2.1 | 2026-03-17 | Corrected tracked versions: Performance Assessment Prompt 1.0 to 1.1, P9 Risk Prompt 1.0 to 1.1 (Sections 3.14, 3.15). Integrity audit finding. |
 | 2.0 | 2026-03-17 | Bumped Style Guide tracked version 1.4 to 1.5 (Section 3.1). Self-reference bumped 1.9 to 2.0. All tracked versions now current post-P11 registration sweep. |
