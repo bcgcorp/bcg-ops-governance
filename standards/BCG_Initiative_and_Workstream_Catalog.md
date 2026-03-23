@@ -1,12 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.3
+**Version:** 2.4
 **Effective:** March 2026
 **Last Updated:** 2026-03-22
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**What Changed (v2.3):** Added I-67 (Project Info Writer / P4-002 / Greg / Planned / Q2 2026). B-47 assigned to I-67. Corrects P4-002 packet numbering error that had assigned B-47 to I-43 — I-43 remains Outlook Forward Guard Add-in (unchanged). Updated P4-002 subproject registry (+I-67, backlog updated to 47 buttons B-01–B-47). Updated cross-reference P4-002 (4 → 5). Updated WS-10 (+I-67). Total: 65 active initiatives, 3 removed, 11 workstreams, 6 active subprojects. Next slot: **I-68**.
+**What Changed (v2.4):** Added I-68 (WireGuard Site-to-Site VPN — Denton ↔ Harris Lab / P5 / Bob / Active / Phase 1 complete 2026-03-09 / Phase 2 pending). Added I-69 (BCG Master Strategic Plan Dashboard — Cloudflare Pages / P5+P0 / Bob+Greg / Complete / 2026-03-17). Updated P5 cross-reference (4 → 6). Total: 67 active initiatives, 3 removed, 11 workstreams, 6 active subprojects. Next slot: **I-70**.
 
 ---
 
@@ -24,7 +24,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 2. Initiative Registry
 
-65 active initiatives (I-01 through I-67, minus I-20 removed, minus I-30 removed, minus I-32 rejected). Next available slot: **I-68**.
+67 active initiatives (I-01 through I-69, minus I-20 removed, minus I-30 removed, minus I-32 rejected). Next available slot: **I-70**.
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -77,7 +77,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-47 | AI Context Store (pgvector/PostgreSQL) | Jason | Planned | P4 | Q3 '26 | Self-hosted on DGX Spark. Gates on Jason engagement. 12-month target: Graphiti temporal knowledge graph. |
 | I-48 | API-Driven Hub Script (Alternative E) | Jason | Active | P4 | Q2 '26 | Automated P0 sync via Claude API. Gates on Jason engagement. |
 | I-49 | Linked CAD Layer Manager | Greg | Active | P4-002 | Q2 '26 | Three pyRevit buttons: CAD Layers Export, CAD Layers Apply, Update Defaults. B-17/B-18/B-19. Complete. IAH100 live test pending — confirm Civil DWG link current before scheduling. |
-| I-50 | Standard Folder & File Structure | Jennifer | Active | P6 | Q2 '26 | Three phases: Ph1 (collect input — Jennifer), Ph2 (B: Drive Cleanup Agent — Jason, gated April 1), Ph3 (ongoing). |
+| I-50 | Standard Folder & File Structure | Jennifer | Active | P6 | Q2 '26 | Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
 | I-51 | Email Attachment Ingestion Agent | Jason | Planned | P4 | Q3 '26 | Gated on Jason (April 1). Automated email attachment extraction and filing. |
 | I-52 | CI/CD Pipeline (Claude Code GitHub Actions) | Bob/Victor | Active | P4 | Q2 '26 | Phase 1: Odoo + PyRevit repos, read-only 30 days, $100/mo cap. Victor owns CLAUDE.md. Phase 2: RevitPrint Minion runner (gated Jason). |
 | I-53 | Odoo Automated Testing Framework | Bob | Active | P7 | Q2 '26 | Bob execution lead. BB-8 staging target. Shared scope with I-07. |
@@ -95,6 +95,8 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-65 | On-Prem AI Production Intelligence Suite | Jason | Active | P4 | Q3 '26 | Owner: Jason Harris (VP AI). 12-item capability suite for on-premise DGX Spark deployment. Phase 1: RAG archive over completed project docs + meeting transcription/action item extraction (self-contained, no Tier 1 dependency). Phase 2: RFI/submittal triage, drawing delta analysis. Phase 3: constructability/code compliance check (gated on mature RAG corpus). Gated on Jason onboarding (April 1, 2026). Three open decisions: (1) completed project archive file server path, (2) manufacturer data sourcing (license vs. internal), (3) Jason onboarding packet inclusion confirmed. |
 | I-66 | IT Equipment Inventory & Asset Register | Bob Brezniak / Victor Carrillo | Active | P7/P5 | Q2 '26 | Three-phase initiative. Ph1: Bob runs Claude Vision bulk image analysis → structured CSV → Victor imports into Odoo Maintenance with merge logic (serial # as primary key; blank serial = Manual Review flag). computer_component=FALSE → auto-draft Accounting Asset to Rachel McGee Pending Review queue (Activity notification, +3 days). computer_component=TRUE → Maintenance Equipment only, linked to parent PC via x_parent_equipment_id, no Accounting Asset under any condition. Component-level granularity for IT support. Ph2 (Q3 2026): Victor builds bcg_equipment_intake Odoo module — native upload UI calling Claude API, preview screen, auto-save with routing. Android app camera attachment to be confirmed. Ph3 (Q4 2026 / Jason Harris): cross-reference serial/model/firmware against CVE databases, manufacturer recalls, firmware advisories. Odoo pre-build config: 5 Equipment Categories, 3 Asset Models (Rachel confirms depreciation), 4 Studio custom fields (x_computer_component, x_parent_equipment_id, x_firmware_version, x_asset_status), 3 automation rules, 2 queue views. |
 | I-67 | Project Info Writer | Greg | Planned | P4-002 | Q2 '26 | PyRevit button (B-47). Writes project information to title block shared parameters. Spec complete, blocked — title block shared parameter list needed. Unblock path: extract from title block .rfa family file or IAH100 model (does not require Stephanie). On hold per Gregory. |
+| I-68 | WireGuard Site-to-Site VPN — Denton ↔ Harris Lab | Bob Brezniak | Active | P5 | Q2 '26 | Phase 1 complete 2026-03-09. Encrypted tunnel between Anakin/pfSense 6100 (Denton) and OuterRim/pfSense 4100 (Harris Lab), replacing Tailscale subnet routing for fixed infrastructure. Phase 2 pending: DNS integration (OFFICE_WORK only), PSK post-quantum hardening, Vader CARP failover WireGuard config, tighten WG_BCG_SITE firewall rules. Standalone initiative. Registered 2026-03-22. |
+| I-69 | BCG Master Strategic Plan Dashboard — Cloudflare Pages | Bob Brezniak (deployment) / Gregory Bernardo (access governance) | Complete | P5 / P0 | 2026-03-17 | dashboard.bcg-corp.com. Azure AD SSO, App-Cloudflare_Dashboard_Users AD group. Auto-deploys on push to main (bcgcorp/bcg-ops-claude-projects). Tier 3 data. Open action: Bob to add Jennifer/Rachel/Cory/Stephanie to AD group before URL distribution. Cloudflare account: Gb@bcg-corp.com (Greg-owned — access governance dependency). Dashboard content governed by P0; deployment infrastructure governed by P5. Registered 2026-03-22. |
 
 ### Initiative Status Definitions
 
@@ -138,7 +140,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P3 | 9 | I-04, I-16, I-17, I-18, I-19, I-22, I-33, I-34, I-37 |
 | P4 | 12 | I-09, I-25, I-26, I-27, I-31, I-43, I-47, I-48, I-51, I-52, I-60, I-65 |
 | P4-002 | 5 | I-44, I-45, I-46, I-49, I-67 |
-| P5 | 4 | I-08, I-15, I-38, I-61 |
+| P5 | 6 | I-08, I-15, I-38, I-61, I-68, I-69 |
 | P6 | 8 | I-03, I-21, I-24, I-35, I-36, I-40, I-50, I-63 |
 | P7 | 12 | I-05, I-06, I-07, I-23, I-29, I-53, I-54, I-55, I-56, I-59, I-66 (shared P5) |
 | P8 | 2 | I-39, I-58 |
@@ -146,7 +148,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P10 | 1 | I-24 (shared P6) |
 | P11 | 1 | I-64 |
 
-**Note:** Some initiatives span multiple projects; counted under primary. I-24 assigned to P10 (post-split) but gates P3/P6 initiatives. I-66 spans P7 (build) and P5 (operational ownership).
+**Note:** Some initiatives span multiple projects; counted under primary. I-24 assigned to P10 (post-split) but gates P3/P6 initiatives. I-66 spans P7 (build) and P5 (operational ownership). I-69 spans P5 (deployment infrastructure) and P0 (dashboard content).
 
 ---
 
@@ -167,7 +169,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 6. Numbering Conventions
 
-- **Initiatives:** I-01 through I-## (sequential, never reuse). Next: **I-68**.
+- **Initiatives:** I-01 through I-## (sequential, never reuse). Next: **I-70**.
 - **Workstreams:** WS-01 through WS-## (sequential).
 - **Subprojects:** P{#}-{###} (parent dash three-digit sequence).
 - **Removed items:** Keep row with strikethrough. Do not renumber.
@@ -178,7 +180,8 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 2.3 | 2026-03-22 | Added I-67 (Project Info Writer / P4-002 / Greg / Planned / Q2 2026). B-47 assigned to I-67. Corrects P4-002 packet numbering error (B-47 was incorrectly attributed to I-43; I-43 remains Outlook Forward Guard Add-in, unchanged). Updated I-44 notes (B-numbers, code complete status). Updated I-49 notes (IAH100 test dependency). Updated P4-002 subproject registry (+I-67, backlog 47 buttons B-01–B-47, next B-48). Updated cross-reference P4-002 (4 → 5). Updated WS-10 (+I-67). Total: 65 active, 3 removed, 11 workstreams, 6 subprojects. Next slot: I-68. |
+| 2.4 | 2026-03-22 | Added I-68 (WireGuard Site-to-Site VPN — Denton ↔ Harris Lab / P5 / Bob / Active / Q2 2026 / Phase 1 complete 2026-03-09). Added I-69 (BCG Master Strategic Plan Dashboard — Cloudflare Pages / P5+P0 / Bob+Greg / Complete / 2026-03-17). Updated P5 cross-reference (4 → 6). Updated numbering conventions (next slot I-68 → I-70). Total: 67 active, 3 removed, 11 workstreams, 6 subprojects. Next slot: I-70. |
+| 2.3 | 2026-03-22 | Added I-67 (Project Info Writer / P4-002 / Greg / Planned / Q2 2026). B-47 assigned to I-67. Corrects P4-002 packet numbering error that had assigned B-47 to I-43 — I-43 remains Outlook Forward Guard Add-in (unchanged). Updated P4-002 subproject registry (+I-67, backlog updated to 47 buttons B-01–B-47). Updated cross-reference P4-002 (4 → 5). Updated WS-10 (+I-67). Total: 65 active initiatives, 3 removed, 11 workstreams, 6 active subprojects. Next slot: I-68. |
 | 2.2 | 2026-03-22 | Added I-65 (On-Prem AI Production Intelligence Suite / P4 / Jason Harris / Active / Q3 2026). Added I-66 (IT Equipment Inventory & Asset Register / P7+P5 / Bob Brezniak + Victor Carrillo / Active / Q2 2026). Retired I-30 (Cross-Project Sync Pipeline Phase 1 — email cancelled; BCG pursuing I-31 direct Odoo-MCP only). Updated WS-10 to include I-65. Updated cross-reference P4 (+1 to 12), P7 (+1 to 12). Total: 64 active, 3 removed, 11 workstreams, 6 subprojects. Next slot: I-67. |
 | 2.1 | 2026-03-17 | Added I-64 (Candidate Pre-Hire OSINT Program / P11 / Greg). Added P11 to cross-reference table. Updated scope P0–P11. Total: 62 active, 2 removed, 11 workstreams, 6 subprojects. Next slot I-65. |
 | 2.0 | 2026-03-17 | Added I-49–I-63. Retired P7 subprojects. Added P0-001, P5-002, P8-001 to subprojects. Updated scope P0–P10. Next slot I-64. Total: 61 active, 2 removed, 11 workstreams, 6 subprojects. |
