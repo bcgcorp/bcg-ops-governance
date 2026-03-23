@@ -1,6 +1,6 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 2.3
+**Version:** 2.4
 **Effective:** March 2026
 **Last Updated:** 2026-03-22
 **Scope:** All Claude Projects (P0-P11) and subprojects
@@ -26,6 +26,8 @@ Each Claude Project's custom instructions contain a GLOBAL GOVERNANCE DOCUMENTS 
 ```
 https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/
 ```
+
+**CRITICAL FETCH RULE (confirmed 2026-03-22):** Never use web_fetch on raw.githubusercontent.com for GitHub files. Always use github-write:get_file_contents (R/W MCP, direct API, no cache). The raw CDN serves stale content -- proven failure 2026-03-22 (served v1.4 when v2.2 was committed). No exceptions. No fallback to web_fetch.
 
 ---
 
@@ -83,9 +85,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.1 |
+| **Current Version** | 2.4 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 62 active initiatives (I-01--I-64, minus I-20 and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-65. |
+| **Governs** | 67 active initiatives (I-01--I-69, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-70. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -194,6 +196,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | **Scope** | All satellite projects (P1-P11) and subprojects |
 | **Update trigger** | New project/subproject created, project renamed/closed, routing pattern added |
 | **See also** | Style Guide Section 16 for full EAB specification |
+| **Propagation status** | v1.5 embedded in P11 at creation. Propagation to 16 remaining instruction files pending. |
 
 **Why embedded, not fetched:** The EAB provides cross-project routing and handoff capabilities. These must work even when GitHub is unavailable. Embedding ensures zero-dependency availability.
 
@@ -219,7 +222,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.3 |
+| **Current Version** | 2.4 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -239,10 +242,11 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 1. **GitHub is the single source of truth** (GOV-001, approved 2026-03-11). All governance documents live in `bcg-ops-governance/standards/`. OneDrive at `Corp/AI/Standards/` is archive/backup only.
 2. **Fetch only relevant documents** per task -- not all runtime docs every time. Use the fetch triggers in Section 3 to decide which to pull.
-3. **If GitHub fetch fails,** flag: `[GOVERNANCE WARNING: GitHub fetch failed for [filename]. Proceed with best available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED] until Gregory confirms whether to continue or reschedule.]`
-4. **When updating any governance document,** update this registry if the version number, filename, or fetch triggers changed.
-5. **EAB updates require propagation** to all satellite projects. See Style Guide Section 16 for the propagation protocol.
-6. **Do NOT rely on previously uploaded copies** of governance documents in project knowledge bases. The GitHub versions are authoritative.
+3. **Never use web_fetch on raw.githubusercontent.com** -- always use github-write:get_file_contents (R/W MCP, direct API). The raw CDN serves stale content. Proven failure 2026-03-22.
+4. **If GitHub MCP is unavailable,** flag: `[GOVERNANCE WARNING: GitHub MCP unavailable. Proceed with best available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED] until Gregory confirms whether to continue or reschedule.]`
+5. **When updating any governance document,** update this registry if the version number, filename, or fetch triggers changed.
+6. **EAB updates require propagation** to all satellite projects. See Style Guide Section 16 for the propagation protocol.
+7. **Do NOT rely on previously uploaded copies** of governance documents in project knowledge bases. The GitHub versions are authoritative.
 
 ---
 
@@ -250,6 +254,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.4 | 2026-03-22 | Bumped Catalog tracked version 2.1 → 2.4 (Section 3.6). Updated Catalog governs description: 62 → 67 active initiatives, I-01--I-64 → I-01--I-69 (minus I-20, I-30, I-32), next I-65 → I-70. Added raw.githubusercontent.com hard fetch rule to Section 2 and Rule 3. Added EAB propagation status note (Section 4.1). |
 | 2.3 | 2026-03-22 | Bumped GOV-013 tracked version 1.1 to 1.2 (Section 3.11, 46 buttons / 10 panels). Bumped GOV-017 tracked version 1.0 to 1.1 (Section 3.16). Updated GOV-013 governs description. |
 | 2.2 | 2026-03-22 | Added GOV-017 (P4-002 Technical Architecture Standards, Section 3.16). Bumped GOV-013 tracked version 1.0 to 1.1 (Section 3.11). Updated total doc count 18 to 19. |
 | 2.1 | 2026-03-17 | Corrected tracked versions: Performance Assessment Prompt 1.0 to 1.1, P9 Risk Prompt 1.0 to 1.1 (Sections 3.14, 3.15). Integrity audit finding. |
