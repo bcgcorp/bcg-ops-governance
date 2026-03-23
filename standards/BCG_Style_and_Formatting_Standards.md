@@ -1,12 +1,12 @@
 # BCG Corp — Master Style & Formatting Standards
 
-**Version:** 1.5
+**Version:** 1.6
 **Effective:** March 2026
-**Last Updated:** 2026-03-17
+**Last Updated:** 2026-03-22
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**v1.5 Changes:** Updated scope P0–P10 to P0–P11. Added P11 to project registry (Section 10.2). Updated routing rule scope P1–P10 to P1–P11 (Section 10.4). Updated EAB spec to v1.5 / 18 projects (Section 16). Updated initiative count 61→62, next slot I-64→I-65, project count 17→18 (Section 13).
+**v1.6 Changes:** Updated P4-002 subproject button count 42→47 (Section 10.3). Updated initiative count 62→67, next slot I-65→I-70, I-20/I-32 exclusions now include I-30 (Section 13).
 
 ---
 
@@ -198,7 +198,7 @@ Subproject to Parent: `[FROM: P{#}-{###} — {name}] [DATE: {date}] [TOPIC: {bri
 |----|--------|------------|------------------|
 | P0-001 | P0 | Ecosystem Triage & Routing | Classified updates, handoff prompts, I-number registrations |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices |
-| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons (42-button backlog), Dynamo scripts |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons (47-button backlog), Dynamo scripts |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis |
 | P5-002 | P5 | Monitoring & Observability | Prometheus/Grafana/Loki stack, telemetry |
 | P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing |
@@ -248,7 +248,7 @@ Three-digit sequential numbering. Own Claude Project per subproject. Inherit sec
 - **ERP:** Self-hosted Odoo 18 (PM, CRM, Accounting, HR with Studio/custom modules)
 - **AI infrastructure:** 2x NVIDIA DGX Spark, 2x RTX 5090 workstations
 - **Design principles:** (1) Build to Sell, (2) Redundancy at Every Level, (3) Employee Ownership & Profit Sharing, (4) Process Before People
-- **Initiative catalog:** 62 active (I-01–I-64, minus I-20 and I-32). Next slot: I-65.
+- **Initiative catalog:** 67 active (I-01–I-69, minus I-20, I-30, and I-32). Next slot: I-70.
 - **Workstreams:** 11 active (WS-01–WS-11)
 - **SOPs:** W-01 through W-23+ registered
 - **Projects:** 18 active Claude projects (P0, P0-001, P1–P11, P4-001, P4-002, P5-001, P5-002, P8-001)
@@ -319,6 +319,7 @@ Do NOT update for: initiative additions, governance doc version bumps, or team m
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.6 | 2026-03-22 | Updated P4-002 subproject button count 42→47 (Section 10.3). Updated initiative count 62→67, next slot I-65→I-70, added I-30 to exclusion list (Section 13). |
 | 1.5 | 2026-03-17 | Added P11 to project registry. Updated scope P0–P11. Updated routing rule to include P11. Updated EAB spec to v1.5 (18 projects, P1–P11). Updated initiative count 61→62, next slot I-65. Updated project count 17→18. |
 | 1.4 | 2026-03-17 | Updated scope P0–P7 to P0–P10. Added Section 16 (EAB Specification). Updated project registry to include P8–P10. Updated subproject registry. Updated initiative/workstream counts. |
 | 1.3 | 2026-03-12 | Added Section 15 (Evaluation Conventions). Updated project/subproject registries. |
