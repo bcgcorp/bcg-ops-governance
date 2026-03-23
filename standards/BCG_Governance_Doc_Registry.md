@@ -1,16 +1,16 @@
-# BCG Corp — Governance Document Registry
+# BCG Corp -- Governance Document Registry
 
-**Version:** 2.1
+**Version:** 2.2
 **Effective:** March 2026
-**Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P0–P11) and subprojects
+**Last Updated:** 2026-03-22
+**Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
 ---
 
 ## 1. Purpose
 
-This file is the single index of all BCG governance documents maintained in GitHub at `bcg-ops-governance/standards/` as the single source of truth (GOV-001, approved 2026-03-11). Every Claude Project's instructions contain a governance stub pointing to this registry rather than embedding the full document list. When the governance doc collection changes (new docs added, files renamed, fetch triggers updated), only this file is edited — not 18 project instructions.
+This file is the single index of all BCG governance documents maintained in GitHub at `bcg-ops-governance/standards/` as the single source of truth (GOV-001, approved 2026-03-11). Every Claude Project's instructions contain a governance stub pointing to this registry rather than embedding the full document list. When the governance doc collection changes (new docs added, files renamed, fetch triggers updated), only this file is edited -- not 18 project instructions.
 
 **Update this file when:** a governance document is added, renamed, retired, or its fetch triggers change.
 
@@ -31,7 +31,7 @@ https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/sta
 
 ## 3. Runtime-Fetched Governance Documents
 
-These documents are fetched by Claude during conversations when the task matches the fetch trigger. Fetch only the ones relevant to the current task — not all every time.
+These documents are fetched by Claude during conversations when the task matches the fetch trigger. Fetch only the ones relevant to the current task -- not all every time.
 
 ### 3.1 BCG Style and Formatting Standards (GOV-006)
 
@@ -49,7 +49,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `[TEAM] Our Guiding Principles.docx` |
 | **Fetch before** | Strategic, culture, or principles-related outputs |
 | **Governs** | BCG Corp's three core principles |
-| **Note** | Binary .docx file in GitHub — not raw-fetchable via URL. Reference from knowledge base or OneDrive. |
+| **Note** | Binary .docx file in GitHub -- not raw-fetchable via URL. Reference from knowledge base or OneDrive. |
 
 ### 3.3 Project Ecosystem & Handoffs (GOV-007)
 
@@ -58,7 +58,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `BCG_Project_Ecosystem_and_Handoffs.md` |
 | **Current Version** | 1.5 |
 | **Fetch before** | Cross-project routing decisions, handoff creation, subproject setup, dependency tracking |
-| **Governs** | Project registry (P0–P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4) |
+| **Governs** | Project registry (P0-P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4) |
 
 ### 3.4 Team Directory & Roles (GOV-016)
 
@@ -85,7 +85,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
 | **Current Version** | 2.1 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 62 active initiatives (I-01–I-64, minus I-20 and I-32), 11 workstreams (WS-01–WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-65. |
+| **Governs** | 62 active initiatives (I-01--I-64, minus I-20 and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-65. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -94,7 +94,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `BCG_Custom_Module_Registry.md` |
 | **Current Version** | 1.1 |
 | **Fetch before** | Any Odoo module development, audit, or deployment work; P7 initiative scoping |
-| **Governs** | All BCG custom Odoo 18 modules — status, version, repo location, dependencies, open items. 7 of 17 modules catalogued; Track 2 repo audit pending. |
+| **Governs** | All BCG custom Odoo 18 modules -- status, version, repo location, dependencies, open items. 7 of 17 modules catalogued; Track 2 repo audit pending. |
 
 ### 3.8 Artifact Naming & Capture Standard (GOV-014)
 
@@ -112,7 +112,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `BCG_Ecosystem_Vocabulary.md` |
 | **Current Version** | 1.2 |
 | **Fetch before** | Generating weekly sync agendas, creating reference cards, when terminology questions arise |
-| **Governs** | Command terms, ecosystem numbering patterns (P#, I-##, W-##, D-##, B-##, WS-##), document and process terms, status terms. Single source of truth for all ecosystem terminology — never duplicate definitions elsewhere. |
+| **Governs** | Command terms, ecosystem numbering patterns (P#, I-##, W-##, D-##, B-##, WS-##), document and process terms, status terms. Single source of truth for all ecosystem terminology -- never duplicate definitions elsewhere. |
 
 ### 3.10 pyRevit Tab Style Guide (GOV-011)
 
@@ -128,9 +128,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Tools_Inventory.md` |
-| **Current Version** | 1.0 |
-| **Fetch before** | PyRevit button development, backlog review, panel inventory check |
-| **Governs** | BCGTools pyRevit extension inventory. 42 buttons across 9 panels. Complete button descriptions and panel assignments. |
+| **Current Version** | 1.1 |
+| **Fetch before** | PyRevit button development, backlog review, panel inventory check, status confirmation |
+| **Governs** | BCGTools pyRevit extension inventory. 42 buttons across 9 panels. Complete button descriptions, panel assignments, and deployment status (Complete/Beta/In Development). |
 
 ### 3.12 SOP Governance & Intake Protocol (SOP-GOV-001)
 
@@ -168,6 +168,15 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Starting P9 Phase 1 risk assessment |
 | **Governs** | Structured prompt for P9 diagnostic conversation producing the BCG Dependency Risk Register v1.0. Six dependency categories, five risk dimensions. |
 
+### 3.16 P4-002 Technical Architecture Standards (GOV-017)
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_P4002_Technical_Architecture.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any pyRevit code review, CLAUDE.md authoring, PR triage for bcg-ops-revit-tools, or when an architectural decision is in question |
+| **Governs** | IronPython ASCII constraint, AppSettings_01 opaque schema rules (including violation patterns), three-transaction sheet architecture, Revit API constraints, Windsurf/windsurfrules coding environment, CI/CD pipeline phase status, pending P4-002 deliverables. |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -182,7 +191,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | **Current Version** | 1.5 |
 | **Deployment method** | Copy-paste into custom instructions (not fetched at runtime) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
-| **Scope** | All satellite projects (P1–P11) and subprojects |
+| **Scope** | All satellite projects (P1-P11) and subprojects |
 | **Update trigger** | New project/subproject created, project renamed/closed, routing pattern added |
 | **See also** | Style Guide Section 16 for full EAB specification |
 
@@ -210,7 +219,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.1 |
+| **Current Version** | 2.2 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -218,18 +227,18 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Category | Count | Documents |
 |----------|-------|-----------|
-| Runtime-fetched | 15 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt |
+| Runtime-fetched | 16 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture |
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total in standards folder** | **18** | — |
+| **Total in standards folder** | **19** | -- |
 
 ---
 
 ## 7. Rules
 
 1. **GitHub is the single source of truth** (GOV-001, approved 2026-03-11). All governance documents live in `bcg-ops-governance/standards/`. OneDrive at `Corp/AI/Standards/` is archive/backup only.
-2. **Fetch only relevant documents** per task — not all runtime docs every time. Use the fetch triggers in Section 3 to decide which to pull.
+2. **Fetch only relevant documents** per task -- not all runtime docs every time. Use the fetch triggers in Section 3 to decide which to pull.
 3. **If GitHub fetch fails,** flag: `[GOVERNANCE WARNING: GitHub fetch failed for [filename]. Proceed with best available knowledge and flag all outputs as [GOVERNANCE UNVERIFIED] until Gregory confirms whether to continue or reschedule.]`
 4. **When updating any governance document,** update this registry if the version number, filename, or fetch triggers changed.
 5. **EAB updates require propagation** to all satellite projects. See Style Guide Section 16 for the propagation protocol.
@@ -241,13 +250,14 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 2.1 | 2026-03-17 | Corrected tracked versions: Performance Assessment Prompt 1.0→1.1, P9 Risk Prompt 1.0→1.1 (§3.14, §3.15). Integrity audit finding. |
-| 2.0 | 2026-03-17 | Bumped Style Guide tracked version 1.4→1.5 (§3.1). Self-reference bumped 1.9→2.0. All tracked versions now current post-P11 registration sweep. |
-| 1.9 | 2026-03-17 | Updated scope P0–P10 to P0–P11 (P11 registered). Bumped tracked versions: Handoffs 1.4→1.5, Catalog 2.0→2.1, EAB 1.4→1.5. Updated EAB scope P1–P10 to P1–P11. Updated Catalog description: 62 active initiatives, next slot I-65. Updated Artifact Naming project count 17→18. Updated instruction count 17→18 in Section 1. |
+| 2.2 | 2026-03-22 | Added GOV-017 (P4-002 Technical Architecture Standards, Section 3.16). Bumped GOV-013 tracked version 1.0 to 1.1 (Section 3.11). Updated total doc count 18 to 19. |
+| 2.1 | 2026-03-17 | Corrected tracked versions: Performance Assessment Prompt 1.0 to 1.1, P9 Risk Prompt 1.0 to 1.1 (Sections 3.14, 3.15). Integrity audit finding. |
+| 2.0 | 2026-03-17 | Bumped Style Guide tracked version 1.4 to 1.5 (Section 3.1). Self-reference bumped 1.9 to 2.0. All tracked versions now current post-P11 registration sweep. |
+| 1.9 | 2026-03-17 | Updated scope P0-P10 to P0-P11 (P11 registered). Bumped tracked versions: Handoffs 1.4 to 1.5, Catalog 2.0 to 2.1, EAB 1.4 to 1.5. Updated EAB scope P1-P10 to P1-P11. Updated Catalog description. Updated Artifact Naming project count 17 to 18. |
 | 1.8 | 2026-03-17 | Complete rewrite. Migrated source of truth from OneDrive to GitHub per GOV-001. Updated from 9 to 18 tracked files. Added Sections 3.8-3.15. Added Section 4.1 EAB. Added Section 5.1 JSON registry. Updated all version numbers to current. Updated Rules section for GitHub-first governance. |
-| 1.1 | 2026-03-07 | Added Section 3.7 — BCG Custom Module Registry. Updated totals. |
+| 1.1 | 2026-03-07 | Added Section 3.7 -- BCG Custom Module Registry. Updated totals. |
 | 1.0 | 2026-03-01 | Initial version. |
 
 ---
 
-*This file is maintained in GitHub at bcg-ops-governance/standards/ and fetched by all Claude Projects via the instruction stub. When governance documents change, update this file — not 18 project instructions.*
+*This file is maintained in GitHub at bcg-ops-governance/standards/ and fetched by all Claude Projects via the instruction stub. When governance documents change, update this file -- not 18 project instructions.*
