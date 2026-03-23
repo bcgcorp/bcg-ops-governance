@@ -1,7 +1,7 @@
 # BCG Corp -- Tools Inventory
 
 **Document ID:** GOV-013
-**Version:** 1.1
+**Version:** 1.2
 **Effective:** March 2026
 **Last Updated:** 2026-03-22
 **Project:** P4-001
@@ -12,12 +12,12 @@
 
 # BCGTools pyRevit Extension Inventory
 
-**Total: 42 buttons** across **9 panels**
+**Total: 46 buttons** across **10 panels**
 
 **Status key:** Complete | Beta | In Development | TBD
 
 > **NOTE (2026-03-22):** The IronRacks panel (2 buttons) is present in this inventory but does not
-> appear in the P4-002 EAB button table (B-01 through B-42). Panel-to-B-number mapping for
+> appear in the P4-002 EAB button table (B-01 through B-46). Panel-to-B-number mapping for
 > IronRacks requires Gregory confirmation before the gap can be closed.
 
 ---
@@ -67,7 +67,17 @@ Linked Revit model management and change tracking.
 
 ---
 
-## 5. PIDS Panel (12 buttons)
+## 5. Parameters Panel (2 buttons)
+Shared parameter and family registry tools.
+
+| Button | Status | Description |
+|--------|--------|-------------|
+| **Capture Shared Parameter** | Complete | Select a linked model, choose specific shared parameters, and add them to shared parameter file |
+| **Export Family Registry** | Complete | Export a CSV registry of all family types and line styles in the active project |
+
+---
+
+## 6. PIDS Panel (12 buttons)
 Perimeter Intrusion Detection System workflow automation.
 
 | Button | Step | Status | Description |
@@ -87,17 +97,28 @@ Perimeter Intrusion Detection System workflow automation.
 
 ---
 
-## 6. Parameters Panel (2 buttons)
-Shared parameter and family registry tools.
+## 7. Print Panel (4 buttons)
+PDF and print output automation.
 
-| Button | Status | Description |
-|--------|--------|-------------|
-| **Capture Shared Parameter** | Complete | Select a linked model, choose specific shared parameters, and add them to shared parameter file |
-| **Export Family Registry** | Complete | Export a CSV registry of all family types and line styles in the active project |
+| B# | Button | Status | Description |
+|----|--------|--------|-------------|
+| B-43 | **Print On-Demand** | In Development | On-demand PDF export using native Revit `Document.Export()` / `PDFExportOptions` API. Filters sheets by BCG shared parameter (e.g. Issued to Client). Naming driven by a named `ExportPDFSettings` element stored in the project template. No third-party dependency. |
+| B-44 | **Print Agent Overnight** | In Development | Unattended overnight batch print via CTC Plotter & Exporter on RevitPrint Minion. Proven workflow. Retained until RF Automator pilot is complete. |
+| B-45 | **Auto-Schedule Print from Odoo** | In Development | Odoo-triggered print via CTC WorkToDoFolder XML injection. Script writes a parameterized job XML to the watched folder; Revit/CTC executes on next startup. Gate: inspect CTC scheduler XML format on Minion VM before build. |
+| B-46 | **ACC Pre-Sync Print** | In Development | Recurring print/download from BIM 360/ACC using RF Automator. Gated on Rushforth Tools acquisition decision. Only tool with native ACC recurring download scheduling. |
+
+> **Gate note -- B-43:** Requires a named `ExportPDFSettings` element to be created and saved in
+> the BCG project template before B-43 build starts.
+>
+> **Gate note -- B-45:** Inspect the XML written by CTC's scheduler on RevitPrint Minion to
+> document the job file format before writing the injection script.
+>
+> **Gate note -- B-46:** Gated on Rushforth Tools acquisition decision (routes through P0/P1).
+> Do not build until acquisition decision is confirmed.
 
 ---
 
-## 7. RenumberElements Panel (6 buttons)
+## 8. RenumberElements Panel (6 buttons)
 Device and switch renumbering tools.
 
 | Button | Status | Description |
@@ -114,7 +135,7 @@ Device and switch renumbering tools.
 
 ---
 
-## 8. Sheets Panel (7 buttons)
+## 9. Sheets Panel (7 buttons)
 Sheet creation and sector grid workflow.
 
 | Button | Status | Description |
@@ -129,7 +150,7 @@ Sheet creation and sector grid workflow.
 
 ---
 
-## 9. Temp Panel (3 buttons)
+## 10. Temp Panel (3 buttons)
 Scope box utilities (experimental/temporary).
 
 | Button | Status | Description |
@@ -146,16 +167,17 @@ Scope box utilities (experimental/temporary).
 |--------|-------|
 | Complete | 26 |
 | Beta | 12 |
-| In Development | 4 |
-| **Total** | **42** |
+| In Development | 8 |
+| **Total** | **46** |
 
 ## Summary by Panel
 
 | Panel | Button Count | Purpose |
-|-------|--------------|---------|
+|-------|--------------|----------|
 | **PIDS** | 12 | Perimeter security workflow |
 | **Sheets** | 7 | Sheet/view automation |
 | **RenumberElements** | 6 | Device numbering |
+| **Print** | 4 | PDF and print output automation |
 | **FOV** | 4 | Camera FOV visualization |
 | **LinkedModel** | 4 | Linked model management |
 | **Linked CAD** | 3 | DWG layer management |
@@ -169,5 +191,6 @@ Scope box utilities (experimental/temporary).
 
 | Version | Date | Change |
 |---------|------|--------|
-| 1.1 | 2026-03-22 | Added Status column to all panels. Corrected Sheets panel button name: "Duplicate Sheet Set" to "Duplicate Sheet Set to New Level" (B-42, confirmed Complete 2026-03-17). Added IronRacks and RenumberElements panel gap notes for Gregory confirmation. Updated status summary. |
+| 1.2 | 2026-03-22 | Added Print panel (Section 7) with B-43 through B-46. Updated total 42 to 46 buttons, 9 to 10 panels. In Development count updated 4 to 8. Decisions: B-numbers append (not insert), dedicated Print panel (not Sheets or Temp). |
+| 1.1 | 2026-03-22 | Added Status column to all panels. Corrected Sheets panel button name: "Duplicate Sheet Set" to "Duplicate Sheet Set to New Level" (B-42, confirmed Complete 2026-03-17). Added IronRacks and RenumberElements panel gap notes for Gregory confirmation. |
 | 1.0 | 2026-03-16 | Initial version. |

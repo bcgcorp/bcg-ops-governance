@@ -1,7 +1,7 @@
 # BCG Corp -- P4-002 Technical Architecture Standards
 
 **Document ID:** GOV-017
-**Version:** 1.0
+**Version:** 1.1
 **Effective:** March 2026
 **Last Updated:** 2026-03-22
 **Project:** P4-002 (Revit & BIM Automation)
@@ -152,18 +152,18 @@ failure mode in Phase 2 setup.
 
 **CLAUDE.md for bcg-ops-revit-tools:**
 Required deliverable before Phase 2 YAML authoring begins. Gregory must approve before
-first commit. CLAUDE.md contents: 42-button architecture overview, AppSettings_01 schema
+first commit. CLAUDE.md contents: 46-button architecture overview, AppSettings_01 schema
 enforcement rules, PoleNumber-SP shared parameter conventions, priority backlog flags.
 
 ---
 
 ## 7. Pending Deliverables (P4-002 scope)
 
-| Item | Description | Gate |
-|------|-------------|------|
-| CLAUDE.md | `bcg-ops-revit-tools` repo -- see Section 6 | Gregory approval |
-| Print button slots | B-08a, B-08b, B-18, B-19 need B-number assignment. Options: append as B-43-B-46, insert, or new Print panel. Gregory decision required. | Gregory decision |
-| B-STY-001 | Style Guide Audit Tool. Scoped and queued. | B-02 Steps 1-3 live |
+| Item | Description | Gate | Status |
+|------|-------------|------|--------|
+| CLAUDE.md | `bcg-ops-revit-tools` repo -- see Section 6 | Gregory approval | Open |
+| Print button slots | B-43 through B-46 assigned to new Print panel. | -- | Resolved 2026-03-22 |
+| B-STY-001 | Style Guide Audit Tool. Scoped and queued. | B-02 Steps 1-3 live | Open |
 
 **Ecosystem registration (P0 action):**
 The following items are flagged for P0 resolution and are tracked here for reference only.
@@ -177,4 +177,5 @@ The following items are flagged for P0 resolution and are tracked here for refer
 
 | Version | Date | Change |
 |---------|------|--------|
+| 1.1 | 2026-03-22 | Print button slots resolved: B-43 through B-46 assigned to new dedicated Print panel. Updated CLAUDE.md button count reference 42 to 46. Marked print slots row as resolved in pending deliverables table. |
 | 1.0 | 2026-03-22 | Initial version. Extracted from P4-002 session analysis (gap audit 2026-03-22). Covers IronPython constraints, AppSettings architecture, three-transaction pattern, Revit API constraints, Windsurf environment, CI/CD phase status, and pending deliverables. |
