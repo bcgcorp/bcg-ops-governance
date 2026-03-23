@@ -52,7 +52,7 @@ This document is the single source of truth for BCG's Claude Project structure: 
 |----|--------|----------------|-----------------|--------|
 | P0-001 | P0 | Ecosystem Triage & Routing Protocol | Classified updates, handoff prompts, I-number registrations | Active |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices | Active |
-| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons (47-button backlog), Dynamo scripts | Active |
+| P4-002 | P4 | Revit & BIM Automation | PyRevit buttons (47-button backlog B-01–B-47 across 10 panels), Dynamo scripts | Active |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis | Planned |
 | P5-002 | P5 | Monitoring & Observability Infrastructure | Prometheus/Grafana/Loki stack, telemetry | Active (Ph1 complete) |
 | P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, file placement | Active |
@@ -156,10 +156,8 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 | P6 | I-24 Track A counsel opinion (Q4-Q5) | P10 | TBD | Gates W-23 |
 | P3 | I-24 Track A counsel opinion (Q1-Q3) | P10 | TBD | Gates I-16, I-17, I-18, I-19, I-37 |
 | P7 | Accounting data source decision | D-01 | TBD | Blocks I-23 |
-| P6 | CIR go/no-go for finalist candidates | P11 | Ongoing | Active |
-| P10 | CIR custody filing | P11 | Ongoing | Active |
-| P4 | bcg-ops-knowledge repo (D-05) | Bob | Before April 1 | Open |
-| P4/P7 | @cap chatbot Odoo receiver (D-06) | Jason + Victor | April 1+ | Gated D-05 |
+| P6 | CIR go/no-go for finalist candidates | P11 | Ongoing | Active — triggered pre-offer |
+| P10 | CIR custody filing | P11 | Ongoing | Active — P11 outputs to P10 |
 
 ---
 
@@ -167,7 +165,6 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
-| 2026-03-22 | P0 | P0 | Ecosystem sync — Catalog v2.4, Registry v2.4, Status 2026-03-22 | Gregory |
 | 2026-03-17 | P0 | P11 | P11 activation — I-64, Candidate OSINT & Pre-Hire Intelligence | Gregory |
 | 2026-03-15 | P0 | P10 | P10 activation — I-24, W-23, CAP-01, contract review | Gregory |
 | 2026-03-12 | P5-002 | P5 | Phase 1 complete — ClarkKent, Telegraf, WireGuard | Gregory |
@@ -180,7 +177,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 1.6 | 2026-03-22 | Updated P4-002 button count 42→47 in Section 2.3. Added D-05/D-06 to active dependencies (Section 6). Added 2026-03-22 ecosystem sync to handoff log (Section 7). |
+| 1.6 | 2026-03-22 | Section 2.3: Updated P4-002 button count 42 → 47 (B-01–B-47 across 10 panels, Print panel added). |
 | 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to satellite registry. Added P11 routing rules and redirect. Added P6/P10 dependencies from P11. Updated scope P0–P11. Updated EAB reference to v1.5. |
 | 1.4 | 2026-03-17 | Added P9, P10 to project registry. Added P0-001, P4-002, P5-002, P8-001 to subproject registry. Added retired subproject table. Updated P6 name. Added P10 routing rules. Updated dependencies. Updated scope P0-P10. |
 | 1.3 | 2026-03-09 | Added P5 VPN dependency. |

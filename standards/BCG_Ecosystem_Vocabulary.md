@@ -38,7 +38,7 @@
 
 | Pattern | System | Description |
 |---------|--------|-------------|
-| P# (e.g., P5) | Project code | A Claude project in the BCG ecosystem. P0 = master hub, P1-P11 = satellites. Subprojects use P#-### (e.g., P4-002). |
+| P# (e.g., P5) | Project code | A Claude project in the BCG ecosystem. P0 = master hub, P1–P11 = satellites. Subprojects use P#-### (e.g., P4-002). |
 | I-## (e.g., I-40) | Initiative number | A tracked workstream item with defined owner, status, and target. Look up in the Initiative Catalog on GitHub. |
 | W-## (e.g., W-14) | Workflow / SOP number | An operational procedure document. Owned by P2 (SOP & Workflow Library). |
 | D-## (e.g., D-04) | Decision number | A pending decision requiring Gregory's call. Numbered for tracking in the Pending Decisions queue. |
@@ -81,8 +81,8 @@
 ## 5. Change Log
 
 | Version | Date | What Changed |
-|---------|------|--------------|
-| 1.3 | 2026-03-22 | Updated satellite project definition P1–P10 → P1–P11. B-series backlog updated 42 buttons/9 panels → 47 buttons/10 panels (B-01–B-47). EAB current version updated v1.4 → v1.5. Initiative Catalog count updated 61 → 67. Next slot updated I-64 → I-70. I-20/I-30/I-32 listed as removed (I-30 retired 2026-03-17). P0 description updated P1-P10 → P1-P11. |
+|---------|------|-------------|
+| 1.3 | 2026-03-22 | B-series backlog updated B-01–B-42/9 panels → B-01–B-47/10 panels (Print panel added, I-67 B-47 registered). EAB current version updated v1.4 → v1.5. Initiative Catalog updated: 61→67 active, I-64→I-70 next slot, I-30 added to removed list. Satellite project definition updated P1–P10 → P1–P11. P0 definition updated. |
 | 1.2 | 2026-03-17 | Initiative Catalog count corrected 60 to 61. B-series backlog updated B-01-B-41 to B-01-B-42 (42 buttons across 9 panels per BCG_Tools_Inventory.md). EAB current version updated v1.3 to v1.4. Added P10 to satellite project definition. Initiative Catalog next slot I-64 added. |
 | 1.1 | 2026-03-14 | Initiative Catalog count corrected 59 to 60. B-series backlog updated to B-01-B-41. |
 | 1.0 | 2026-03-14 | Initial version. Registered as I-62 deliverable. |

@@ -182,7 +182,7 @@ write permissions. Eliminates the manual download-rename-upload step.
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 1.3 | 2026-03-22 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project codes table. Updated project count 17→18 in PURPOSE section. Added Gregory as P11 capture owner in Section 3. |
+| 1.3 | 2026-03-22 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project codes table. Updated project count 17→18 in Purpose section. Added Gregory as P11 capture owner in Section 3. |
 | 1.2 | 2026-03-16 | Added P10 (Legal, Compliance & Risk) to project codes table. Updated project count 16→17. Added Gregory as P10 capture owner. |
 | 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated "17 BCG projects" → "16". Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
 | 1.0 | 2026-03-07 | Initial version. |
