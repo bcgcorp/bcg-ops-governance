@@ -1,9 +1,9 @@
 # BCG Corp — SOP Governance & Intake Protocol
 
-**Version:** 1.3
+**Version:** 1.4
 **Effective:** March 2026
-**Last Updated:** 2026-03-17
-**Scope:** All Claude Projects (P0–P10) and subprojects
+**Last Updated:** 2026-03-22
+**Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 **Maintenance:** Jennifer Brezniak (post-approval)
 
@@ -27,7 +27,7 @@ This document governs how new workflow ideas are surfaced, evaluated, classified
 
 Any BCG team member can surface a new SOP idea. There is no gatekeeping on submission — the classification step filters what proceeds.
 
-**Common triggers:** A task relies on tribal knowledge, a new hire has to ask how something is done, a process breaks due to lack of documentation, a satellite project (P1–P10) identifies a process gap.
+**Common triggers:** A task relies on tribal knowledge, a new hire has to ask how something is done, a process breaks due to lack of documentation, a satellite project (P1–P11) identifies a process gap.
 
 **How to surface:** Verbally to Gregory or in a satellite project session, as a note to Jennifer Brezniak (P2 owner), or as a flagged item during a project review. All ideas are logged before evaluation begins.
 
@@ -163,6 +163,7 @@ When a new SOP enters the drafting queue, notify: process owner, process backup,
 
 | Version | Date | Author | What Changed |
 |---------|------|--------|-------------|
+| 1.4 | 2026-03-22 | Gregory Bernardo | Updated scope P0-P10 to P0-P11. Updated Section 3 satellite reference P1-P10 to P1-P11. Corrected footer fetch method reference. |
 | 1.3 | 2026-03-17 | Gregory Bernardo | Updated scope P0-P9 to P0-P10. W-ID pointer W-17 to W-23 (next: W-24). Added P10 flag to dependency mapping and handoff template. Added Victor and P10 to execution roles. |
 | 1.2 | 2026-03-15 | Gregory Bernardo | Updated W-ID pointer W-17 to W-22. |
 | 1.1 | 2026-03-10 | Gregory Bernardo | Updated scope P0-P7 to P0-P9. |
@@ -170,4 +171,4 @@ When a new SOP enters the drafting queue, notify: process owner, process backup,
 
 ---
 
-*This document is indexed in the BCG Governance Doc Registry and fetched at runtime by Claude projects via web_fetch.*
+*This document is indexed in the BCG Governance Doc Registry and fetched at runtime by Claude projects via GitHub MCP.*

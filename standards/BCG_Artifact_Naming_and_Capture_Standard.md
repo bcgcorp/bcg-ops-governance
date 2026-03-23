@@ -1,6 +1,6 @@
 # BCG Artifact Naming and Capture Standard
-**Version:** 1.2
-**Effective:** 2026-03-16
+**Version:** 1.3
+**Effective:** 2026-03-22
 **Owner:** Gregory Bernardo (author) / Jennifer Brezniak (ongoing maintenance)
 **Location:** GitHub bcg-ops-governance/standards/
 **Status:** APPROVED
@@ -11,7 +11,7 @@
 
 This document defines how all Claude-generated artifacts are named and where
 they are stored. Consistent naming makes artifacts sortable, searchable,
-attributable, and auditable across all 17 BCG projects and all producers.
+attributable, and auditable across all 18 BCG projects and all producers.
 
 ---
 
@@ -55,6 +55,7 @@ Applies to: .docx, .md, .pdf, and all other document-type outputs.
 | P8-001 | Document Intake & Routing |
 | P9 | Business Continuity |
 | P10 | Legal, Compliance & Risk |
+| P11 | Candidate OSINT & Pre-Hire Intelligence |
 
 ### Examples
 
@@ -63,6 +64,7 @@ DRAFT_P2_SOP-W14-Sales-Order-Entry_2026-03-07.docx
 APPROVED_P3_Competitor-Segment-Map_2026-03-10.pdf
 APPROVED_P0_Ecosystem-Transformation-ExecSummary_2026-03-07.docx
 SUPERSEDED_P1_Revenue-Model-v1_2026-02-15.xlsx
+DRAFT_P11_CIR-2026-001_[REDACTED]_2026-03-22.docx
 ```
 
 ### Topic Formatting Rules
@@ -127,6 +129,8 @@ Artifacts containing Tier 1 or Tier 2 data stay in Claude.ai ONLY.
 - Personnel compensation data
 - Any data classified Tier 1 (Confidential) or Tier 2 (Restricted)
 
+P11 outputs (CIRs) are RESTRICTED — never export, never share outside P10/P11 custody chain.
+
 When in doubt, keep it in Claude.ai. Do not export.
 
 ---
@@ -147,7 +151,7 @@ is available via M365 connector write permissions (pending P5 assessment).
 ### Who Does This
 
 Every producer is responsible for their own captures:
-- Gregory — P0, P0-001, P1, P3, P8, P9, P10 outputs
+- Gregory — P0, P0-001, P1, P3, P8, P9, P10, P11 outputs
 - Bob — P5, P5-001, P5-002 outputs
 - Jason — P4, P4-001, P4-002 outputs (post-onboarding)
 - Jennifer — P2, P6 outputs
@@ -181,6 +185,7 @@ write permissions. Eliminates the manual download-rename-upload step.
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.3 | 2026-03-22 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project codes table. Updated project count 17→18 in PURPOSE. Added Gregory as P11 capture owner. Added P11 security note to Section 2. |
 | 1.2 | 2026-03-16 | Added P10 (Legal, Compliance & Risk) to project codes table. Updated project count 16→17. Added Gregory as P10 capture owner. |
-| 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated “17 BCG projects” → “16”. Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
+| 1.1 | 2026-03-14 | Updated project codes table: retired P7-001–P7-004; added P0-001, P4-002, P5-002, P8-001. Updated "17 BCG projects" → "16". Updated capture owner list (Bob no longer owns P7-001; Rachel added for P8-001). |
 | 1.0 | 2026-03-07 | Initial version. |

@@ -1,6 +1,6 @@
 # BCG Ecosystem Vocabulary
-**Version:** 1.2
-**Last Updated:** 2026-03-17
+**Version:** 1.3
+**Last Updated:** 2026-03-22
 **Owner:** Gregory Bernardo
 **GitHub:** bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Vocabulary.md
 **Fetch URL:** https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Vocabulary.md
@@ -38,11 +38,11 @@
 
 | Pattern | System | Description |
 |---------|--------|-------------|
-| P# (e.g., P5) | Project code | A Claude project in the BCG ecosystem. P0 = master hub, P1-P10 = satellites. Subprojects use P#-### (e.g., P4-002). |
+| P# (e.g., P5) | Project code | A Claude project in the BCG ecosystem. P0 = master hub, P1-P11 = satellites. Subprojects use P#-### (e.g., P4-002). |
 | I-## (e.g., I-40) | Initiative number | A tracked workstream item with defined owner, status, and target. Look up in the Initiative Catalog on GitHub. |
 | W-## (e.g., W-14) | Workflow / SOP number | An operational procedure document. Owned by P2 (SOP & Workflow Library). |
 | D-## (e.g., D-04) | Decision number | A pending decision requiring Gregory's call. Numbered for tracking in the Pending Decisions queue. |
-| B-## (e.g., B-24) | PyRevit button backlog | A Revit automation tool in the development backlog. Tracked in P4-002. 42-button backlog: B-01-B-42 across 9 panels. |
+| B-## (e.g., B-24) | PyRevit button backlog | A Revit automation tool in the development backlog. Tracked in P4-002. 47-button backlog: B-01-B-47 across 10 panels. |
 | WS-## (e.g., WS-05) | Workstream | A thematic grouping of related initiatives. 11 active workstreams (WS-01-WS-11). |
 
 ---
@@ -54,13 +54,13 @@
 | Handoff prompt | Structured message that transfers context between projects. Uses label format: [FROM: P#] [DATE: date] [TOPIC: brief]. |
 | Carry-forward | An action item that persists from one weekly sync to the next until resolved. Tracked on Page 1 of the sync agenda. |
 | Ecosystem update | Structured output from a meeting or work session that routes decisions, status changes, and new items to the correct satellite projects. |
-| EAB | Ecosystem Awareness Block — a governance stub embedded in every project's instructions. Ensures all projects know the ecosystem structure and can route work correctly. Current version: v1.4. |
+| EAB | Ecosystem Awareness Block — a governance stub embedded in every project's instructions. Ensures all projects know the ecosystem structure and can route work correctly. Current version: v1.5. |
 | Sync packet | A structured data transfer from a satellite project to P0. Format: .md only. Uses the [FROM: P#] label format. |
 | Quick reference card | Page 3 of the weekly sync agenda — permanent reference showing projects, locations, and vocabulary. |
 | Governance Doc Registry | Master index of all BCG governance documents. Single source of truth for what documents exist, where they live, and when to fetch them. GitHub: bcg-ops-governance/standards/. |
-| P0 | The master strategic plan hub. Consumes approved outputs from satellites (P1-P10). Does not produce; it synthesizes. |
-| Satellite project | Any of P1-P10 (and their subprojects). Production work happens here. Outputs flow one-directionally to P0. |
-| Initiative Catalog | The authoritative list of all 61 active initiatives (I-01-I-63, minus I-20 and I-32). GitHub: bcg-ops-governance/standards/. Next available slot: I-64. |
+| P0 | The master strategic plan hub. Consumes approved outputs from satellites (P1-P11). Does not produce; it synthesizes. |
+| Satellite project | Any of P1-P11 (and their subprojects). Production work happens here. Outputs flow one-directionally to P0. |
+| Initiative Catalog | The authoritative list of all 67 active initiatives (I-01-I-69, minus I-20, I-30, and I-32). GitHub: bcg-ops-governance/standards/. Next available slot: I-70. |
 
 ---
 
@@ -82,6 +82,7 @@
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.3 | 2026-03-22 | Updated P# pattern: P1-P10 → P1-P11. Updated B-series: 42-button/9 panels → 47-button/10 panels (B-01-B-47). EAB current version v1.4 → v1.5. Initiative Catalog: 61 active/I-64 next → 67 active/I-70 next. Updated excluded IDs to include I-30 (retired). Updated Satellite project and P0 definitions to reflect P1-P11. |
 | 1.2 | 2026-03-17 | Initiative Catalog count corrected 60 to 61. B-series backlog updated B-01-B-41 to B-01-B-42 (42 buttons across 9 panels per BCG_Tools_Inventory.md). EAB current version updated v1.3 to v1.4. Added P10 to satellite project definition. Initiative Catalog next slot I-64 added. |
 | 1.1 | 2026-03-14 | Initiative Catalog count corrected 59 to 60. B-series backlog updated to B-01-B-41. |
 | 1.0 | 2026-03-14 | Initial version. Registered as I-62 deliverable. |
