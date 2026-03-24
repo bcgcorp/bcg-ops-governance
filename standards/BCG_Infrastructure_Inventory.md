@@ -1,8 +1,8 @@
 # BCG Corp — Infrastructure Inventory
 
-**Version:** 1.4 [DRAFT — PENDING BOB RECONCILIATION]
+**Version:** 1.5
 **Effective:** March 2026
-**Last Updated:** 2026-03-22
+**Last Updated:** 2026-03-24
 **Scope:** All Claude Projects (P0–P10) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -18,7 +18,7 @@ This document is the single source of truth for BCG Corp's technology infrastruc
 
 **Update this file when:** hardware is added or decommissioned, software versions change, new platforms are adopted, or monitoring/security tooling status changes.
 
-**v1.4 note:** This version merges email purchase records (Jul 2024–Mar 2026) with prior v1.3 content. Items marked **[BOB CONFIRM]** require physical reconciliation before this draft is approved. Items marked **[JASON CONFIRM]** require validation after Jason's April 1 start date.
+**v1.5 note:** This version updates the VLAN subnet map to include all six Denton Office VLANs (verified from pfSense 2026-03-24), confirms the ClarkKent Grafana/Prometheus deployment as operational, and corrects a VLAN 20/40 label swap discovered during P5-002 dashboard analysis. Items marked **[BOB CONFIRM]** still require physical reconciliation. Items marked **[JASON CONFIRM]** require validation after Jason's April 1 start date.
 
 ---
 
@@ -63,7 +63,7 @@ Dedicated hardware for on-premises AI model serving and development.
 | R2-D2 | Odoo 18 Production | Ubuntu 24.04 LTS (Hyper-V) | IP: 192.168.40.170. DB: odoo_production. Python 3.12. Custom addons: /opt/odoo/custom-addons/. Config: /etc/odoo.conf. Logs: /var/log/odoo/odoo.log. LDAP active against BCG-CORP AD. |
 | C-3PO | Odoo 18 Development | Ubuntu 24.04 LTS (Hyper-V) | IP: 192.168.40.172. DB: odoo_dev. Refresh script v3.1 from R2-D2. All testing happens here first. |
 | BB-8 | Odoo 18 Staging | Ubuntu 24.04 LTS (Hyper-V) | Target for I-53 Automated Testing Framework. [BOB CONFIRM: IP, current status] |
-| ClarkKent | Observability / Monitoring | Windows (WSL2 / Docker Desktop) | P5-002 Phase 1 host. D:\observability target path. Docker-users group configured. DNS records in place. Phase 2: Docker Compose stack (Jason, April 1+). |
+| ClarkKent | Observability / Monitoring | Windows (WSL2 / Docker Desktop) | IP: 192.168.40.185 (VLAN 40 / Servers). DNS: grafana.bcg-corp.com. Grafana + Prometheus deployed via Docker Compose at D:\observability. Dashboards file-provisioned (read-only in UI). Grafana OAuth via AzureAD (Entra ID) active. See Section 11 for full monitoring status. |
 | RevitPrint Minion | Revit CI/CD Runner | Windows | Always-on dedicated single-seat Autodesk Revit license. CI/CD Phase 2 target: GitHub Actions runner as Windows service. Overnight/weekend test runs (2-5 AM cron). Concurrency group prevents overlap with automated printing. [BOB CONFIRM: hardware specs, IP] |
 
 ---
@@ -129,10 +129,10 @@ Dedicated hardware for on-premises AI model serving and development.
 
 ### 6.1 Firewalls
 
-| Hostname | Model | Role | WAN IP | Subnet | Notes |
-|----------|-------|------|--------|--------|-------|
-| Anakin | Netgate 6100 (pfSense) | Primary firewall (CARP primary) | 47.190.52.143 (static) | 192.168.20.0/24 (workstations), 192.168.40.0/24 (servers) | WireGuard endpoint (WG_REMOTE/opt4, port 51820, tunnel IP 10.10.10.1/24). Telegraf agent operational. Prometheus scraping rules in place. |
-| Vader | Netgate 6100 (pfSense) | Secondary firewall (CARP secondary) | — | Same subnets as Anakin | WireGuard config pending — Phase 2 (HA failover). Telegraf agent operational. |
+| Hostname | Model | Role | WAN IP | VLANs | Notes |
+|----------|-------|------|--------|-------|-------|
+| Anakin | Netgate 6100 (pfSense) | Primary firewall (CARP primary) | 47.190.52.143 (static) | VLAN 10 (Management), VLAN 20 (Workstations), VLAN 30 (Remote), VLAN 40 (Servers), VLAN 50 (IOT_Devices), VLAN 60 (DMZ) | WireGuard endpoint (WG_REMOTE/opt4, port 51820, tunnel IP 10.10.10.1/24). Telegraf agent operational. Prometheus scraping rules in place. |
+| Vader | Netgate 6100 (pfSense) | Secondary firewall (CARP secondary) | — | Same VLANs as Anakin | WireGuard config pending — Phase 2 (HA failover). Telegraf agent operational. |
 
 **ISP Configuration:** Dual WAN. Primary: 2 Gbps fiber (static IP). Secondary: Starlink Roam (200/100 Mbps, 100 GB cap, failover only).
 
@@ -192,13 +192,20 @@ Dedicated hardware for on-premises AI model serving and development.
 
 ### 6.8 Subnet Map
 
-| Site | Subnet | Description |
-|------|--------|-------------|
-| Denton | 192.168.20.0/24 | Workstations |
-| Denton | 192.168.40.0/24 | Servers |
-| Harris Lab | 192.168.100.0/24 | Office_Work |
-| WG Transit | 10.10.10.0/24 | WireGuard tunnel (isolated) |
-| Highland Village | TBD | [BOB CONFIRM: subnet assignment] |
+| Site | VLAN | Subnet | Interface | Description | Verified |
+|------|------|--------|-----------|-------------|----------|
+| Denton | 10 | 192.168.10.0/24 | lagg0.10 | Management | 2026-03-24 |
+| Denton | 20 | 192.168.20.0/24 | lagg0.20 | Workstations | 2026-03-24 |
+| Denton | 30 | 192.168.30.0/24 | lagg0.30 | Remote | 2026-03-24 |
+| Denton | 40 | 192.168.40.0/24 | lagg0.40 | Servers | 2026-03-24 |
+| Denton | 50 | 192.168.50.0/24 | lagg0.50 | IOT_Devices | 2026-03-24 |
+| Denton | 60 | 192.168.60.0/24 | lagg0.60 | DMZ | 2026-03-24 |
+| Harris Lab | — | 192.168.100.0/24 | — | Office_Work | 2026-03-09 |
+| WG Transit | — | 10.10.10.0/24 | — | WireGuard tunnel (isolated) | 2026-03-09 |
+| HASYNC | — | 10.255.255.0/30 | — | CARP sync link (Anakin ↔ Vader) | 2026-03-24 |
+| Highland Village | — | TBD | — | [BOB CONFIRM: subnet assignment] | — |
+
+**Note (v1.5):** VLAN 20/40 labels were swapped in Jason Harris's Grafana dashboards (VLAN 20 was mislabeled "Workstations" where it should have been the subnet, and VLAN 40 was mislabeled "Workstations" when it is actually Servers). Corrected in P5-002 dashboard JSON files 2026-03-24. VLANs 30, 50, and 60 were undocumented prior to v1.5 — confirmed from pfSense Interfaces → Assignments on Vader.
 
 ---
 
@@ -298,43 +305,53 @@ BCG's self-hosted ERP platform. Managed under P7. Victor Carrillo is sole P7 own
 
 ## 11. Monitoring & Observability (P5-002)
 
-**Current state:** Phase 1 infrastructure COMPLETE on ClarkKent. Phase 2 (Docker Compose stack, Grafana, Loki decision) gated on Jason Harris (April 1).
+**Current state:** Grafana and Prometheus are deployed and operational on ClarkKent (192.168.40.185). Phase 2 expansion (dashboard work, alerting, Loki evaluation) gated on Jason Harris (April 1). See P5-002 Phase 2 Deployment Plan Rev 2 for full rollout sequencing.
 
-### Phase 1 Complete (Bob, 2026-03-12)
+### Deployment — Confirmed Operational (2026-03-24)
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| ClarkKent VM provisioned | ✅ Complete | WSL2 + Docker Desktop, D:\observability, docker-users group, DNS records |
+| ClarkKent VM provisioned | ✅ Complete | WSL2 + Docker Desktop, D:\observability, docker-users group |
+| Docker Compose stack (Prometheus + Grafana) | ✅ Complete | Deployed by Jason Harris. DNS: grafana.bcg-corp.com → 192.168.40.185. Dashboards file-provisioned (read-only in Grafana UI). |
+| Grafana OAuth (AzureAD / Entra ID) | ✅ Partially Complete | SSO login working. Org-level role assignments and folder permissions need configuration. |
 | Telegraf on Anakin | ✅ Complete | pfSense telemetry collection operational |
 | Telegraf on Vader | ✅ Complete | pfSense telemetry collection operational |
 | Firewall rules (Prometheus scraping) | ✅ Complete | — |
 | WireGuard tunnel to Harris Lab | ✅ Complete | Validated and operational. See Section 6.5. |
 
+### Dashboards — 6 Operational (141 panels total)
+
+| Dashboard | Panels | Refresh | Domain | Data Source |
+|-----------|--------|---------|--------|-------------|
+| BCG pfSense Monitor - Vader | 23 | 30s | System health, WAN, VLAN | Prometheus (Telegraf) |
+| BCG WAN Health & Failover - Vader | 19 | 1m | Gateways, latency, HA sync | Prometheus (Telegraf + pfSense) |
+| BCG pfSense Security - Vader | 23 | 1m | Blocks, SSH, PF anomalies | Prometheus (pfSense security) |
+| BCG pfBlockerNG & Threat Intel - Vader | 14 | 1m | Threat actors, targeted ports | Prometheus (pfBlockerNG) |
+| BCG VLAN Traffic Matrix - Vader | 20 | 30s | Per-VLAN throughput, errors | Prometheus (Telegraf net) |
+| BCG Remote Workstation Monitor - YOGA6 | 42 | 30s | Windows, Tailscale, disk/net | Prometheus (windows_exporter + Tailscale) |
+
+**Architecture notes:** All dashboards are Prometheus-only (no Loki). File-provisioned — dashboard edits require JSON file replacement in provisioning directory on ClarkKent + Grafana container restart. No alert rules configured (Phase 2 scope). VLAN labels corrected in P5-002 dashboard JSON files (2026-03-24): VLAN 20/40 swap fixed, VLANs 30/50/60 named.
+
 ### Phase 2 Pending (Jason, post-April 1)
 
-| Component | Product | Target | Notes |
-|-----------|---------|--------|-------|
-| Docker Compose stack | Prometheus + Grafana + Loki (TBD) | Q2 '26 | Deploy to D:\observability on ClarkKent. Jason owns architecture. |
-| Entra ID redirect URI | Grafana OAuth | Q2 '26 | Update needed for Grafana login. |
-| Loki enablement | Log aggregation | Q2 '26 | Jason decision: yes/no/defer. |
-| Syslog integration | pfSense → Loki | Q2 '26 | Depends on Loki decision. |
-
-### Future Scope
-
-| Item | Priority | Notes |
-|------|----------|-------|
-| TLS termination via internal CA | MEDIUM | — |
-| Vader WireGuard tunnel (HA failover) | MEDIUM | Phase 2 |
-| WireGuard PSK hardening | LOW | Post-quantum preparation |
-| Temp ANY-to-ANY rule removal | HIGH | Security hygiene — Bob needs target date |
-| Automated monitoring for WireGuard tunnel | LOW | Currently manual |
+| Component | Product | Priority | Notes |
+|-----------|---------|----------|-------|
+| Deploy corrected dashboard files | Grafana | P1 | Replace provisioned JSONs with VLAN-corrected versions |
+| Document ClarkKent stack layout | Documentation | P1 | Container names, volume paths, provisioning directory, restart procedure |
+| Anakin pfSense Monitor | Grafana | P2 | Clone Vader dashboard, update host label |
+| Tailscale Fleet Deep Dive | Grafana + tailscale-exporter | P2 | Fleet-level Tailscale monitoring |
+| Alert rule definition | Grafana + OnCall | P3–P4 | Thresholds for gateways, SSH, CPU, disk, Tailscale |
+| Capacity Planning + ISP caps | Grafana | P3 | Long-horizon trending with ISP bandwidth cap overlay |
+| Loki evaluation | Loki (TBD) | P5 | Jason decision: adopt, defer, or skip |
+| Syslog integration | pfSense → Loki | P5 | Depends on Loki decision |
+| Teams/Zoom call quality | Custom exporters | P5 | Requires Entra ID app + Zoom Marketplace app |
 
 ### MCP Servers (Observability)
 
 | MCP Server | BCG Fit | Status | Transport | Notes |
 |------------|---------|--------|-----------|-------|
-| grafana/mcp-grafana | 5/5 | Selected | stdio + HTTP:8000 | Primary observability MCP. Blocked by Grafana deployment. |
-| pab1it0/prometheus-mcp-server | 4/5 | Selected | stdio | Supplementary PromQL in IDE. Blocked by Prometheus deployment. |
+| grafana/mcp-grafana | 5/5 | Selected | stdio + HTTP:8000 | Primary observability MCP. Blocked pending OAuth role configuration (P1-3). |
+| pab1it0/prometheus-mcp-server | 4/5 | Selected | stdio | Supplementary PromQL in IDE. Unblocked — Prometheus is operational. |
 
 ---
 
@@ -347,8 +364,8 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 | **Anthropic MS365 Connector** | Microsoft 365 | 5/5 | Active | Built-in | Zero setup. Live in Claude.ai. Locked down 2026-03-12. |
 | **ivnvxd/mcp-server-odoo** v0.4.3 | Odoo 18 | 5/5 | Selected | stdio + HTTP:8000 | Proven with Windsurf. Phase 1 read-only Q2 '26. Cloudflare Tunnel dependency for remote access. |
 | **Softeria/ms-365-mcp-server** v0.36.0 | Microsoft 365 | 5/5 | Selected | stdio + HTTP:3000 | For Windsurf/Open WebUI M365 access. Phase 1 read-only Q2 '26. |
-| **grafana/mcp-grafana** | Observability | 5/5 | Selected | stdio + HTTP:8000 | Blocked by Prometheus/Grafana deployment on ClarkKent. |
-| **pab1it0/prometheus-mcp-server** | Observability | 4/5 | Selected | stdio | Blocked by Prometheus deployment. |
+| **grafana/mcp-grafana** | Observability | 5/5 | Selected | stdio + HTTP:8000 | Grafana operational on ClarkKent. Blocked pending OAuth role config. |
+| **pab1it0/prometheus-mcp-server** | Observability | 4/5 | Selected | stdio | Prometheus operational on ClarkKent. Ready for deployment. |
 | **File Server MCP** | On-prem file system | TBD | Planned | TBD | Dependency for I-50 Phase 2 (B: Drive Cleanup Agent). Bob to assess availability. |
 
 ### Status Definitions
@@ -384,14 +401,16 @@ Tracks all MCP servers that have been evaluated, selected, or deployed. Cross-re
 
 | Change | Owner | Target | Depends On | Status | Affects |
 |--------|-------|--------|------------|--------|---------|
-| Docker Compose stack (Prometheus + Grafana) | Jason | Q2 '26 | April 1 start | Phase 1 infra complete | P5-002 Phase 2 |
+| Docker Compose stack (Prometheus + Grafana) | Jason | Q2 '26 | April 1 start | ✅ Deployed on ClarkKent (confirmed 2026-03-24). Phase 2 dashboard expansion pending. | P5-002 |
+| Document ClarkKent stack layout | Bob/Jason | Q2 '26 | ClarkKent access | NEW — container inventory, volume paths, provisioning dir, restart procedure | P5-002 |
+| Deploy corrected dashboard JSONs | Bob | Q2 '26 | Stack layout documented | NEW — VLAN labels corrected, ready for deployment | P5-002 |
 | Odoo MCP Phase 1 (read-only, Windsurf) | Greg/Victor | Q2 '26 | Cloudflare Tunnel | Proven in testing | P4, P7 |
 | Odoo MCP Phase 2 (Docker, Open WebUI) | Bob + Greg | Q2 '26 | Phase 1 validated | — | P4 |
 | Softeria MS365 MCP (read-only, Windsurf) | Greg | Q2 '26 | npm install | — | P4 |
 | File Server MCP | Bob | Q2 '26 | Assessment needed | Planned | I-50 Ph2 |
 | CI/CD Phase 1 (Odoo + PyRevit, cloud runners) | Victor + Bob | Q2 '26 | D-GH decisions resolved | UNBLOCKED | I-52 |
 | CI/CD Phase 2 (RevitPrint Minion runner) | Bob | Q3 '26 | Jason (April 1), credential persistence check | — | I-52 Ph2 |
-| Loki log aggregation | Jason + Bob | Q2–Q3 '26 | Prometheus + Grafana stable | — | P5-002 |
+| Loki log aggregation | Jason + Bob | Q2–Q3 '26 | Prometheus + Grafana stable | Prometheus stable — Jason decision pending | P5-002 |
 | GitLab on-prem mirror | Bob | Q2 '26 | — | In progress | P9 I-41 |
 | Temp ANY-to-ANY rule removal | Bob | TBD | Target date needed | — | P5, P5-002 |
 | WireGuard Phase 2 (PSK, Vader, HA) | Bob | Q2 '26 | Phase 1 complete | — | P5-002 |
@@ -533,7 +552,7 @@ Summary of purchased peripherals. Detailed line items available in source purcha
 | Smart Lock | eufy Video Smart Lock S330 | 1 | Jul 2024 | TBD | Same order as cameras. |
 | Smart Switch | Zooz Z-Wave Long Range Double | 1 | Mar 2026 | $44.95 | Z-Wave. |
 
-**Note:** Physical security devices are on a separate network segment from IT infrastructure. [BOB CONFIRM: VLAN isolation for IoT devices.]
+**Network isolation confirmed (v1.5):** IoT devices are on VLAN 50 (IOT_Devices, 192.168.50.0/24), isolated from production VLANs. See Section 6.8 Subnet Map.
 
 ---
 
@@ -554,16 +573,22 @@ Items requiring Bob's physical audit before this inventory version can be approv
 | 7 | Custom Build #2 — incomplete BOM | Identify missing components (motherboard, GPU, memory, storage, case) | Bob |
 | 8 | MokerLink 10G switch — role unknown | Confirm role, location, managed vs. unmanaged, VLAN participation | Bob |
 | 9 | Highland Village branch — incomplete network detail | WAN IP, subnet, WireGuard status, equipment inventory | Bob |
+| 10 | ClarkKent Docker Compose layout — undocumented | Container names, volume paths, provisioning directory, restart procedure | Bob/Jason |
 
-### Corrections Applied in v1.4
+### Corrections Applied
 
-| # | Item | What Changed |
-|---|------|-------------|
-| 1 | QNAP switch model | Enriched from "[BOB CONFIRM: model]" to QSW-M3216R-8S8T (8x SFP+, 8x 10GbE RJ45) |
-| 2 | DC hostnames | Added DREBIN (192.168.40.33) and PALLAZZO (192.168.40.34) to Servers table |
-| 3 | Cloudflare Pages dashboard | Added to Cloud Platforms (Section 8) |
-| 4 | Headscale VPN | Added to VPN section as decommissioning — needs initiative ID or P5-001 tracking |
-| 5 | pfSense+ subscription | Added Netgate SO reference to Section 6.1 |
+| # | Version | Item | What Changed |
+|---|---------|------|-------------|
+| 1 | v1.4 | QNAP switch model | Enriched from "[BOB CONFIRM: model]" to QSW-M3216R-8S8T (8x SFP+, 8x 10GbE RJ45) |
+| 2 | v1.4 | DC hostnames | Added DREBIN (192.168.40.33) and PALLAZZO (192.168.40.34) to Servers table |
+| 3 | v1.4 | Cloudflare Pages dashboard | Added to Cloud Platforms (Section 8) |
+| 4 | v1.4 | Headscale VPN | Added to VPN section as decommissioning — needs initiative ID or P5-001 tracking |
+| 5 | v1.4 | pfSense+ subscription | Added Netgate SO reference to Section 6.1 |
+| 6 | v1.5 | VLAN Subnet Map | Expanded from 2 Denton entries to complete 6-VLAN map plus HASYNC. VLANs 30, 50, 60 were previously undocumented. |
+| 7 | v1.5 | VLAN 20/40 label swap | Corrected in Grafana dashboards. VLAN 20 = Workstations, VLAN 40 = Servers (were swapped in Jason's deployment). |
+| 8 | v1.5 | ClarkKent server entry | Added IP (192.168.40.185), DNS (grafana.bcg-corp.com), confirmed Docker Compose + Grafana OAuth operational. |
+| 9 | v1.5 | IoT VLAN isolation | Confirmed IoT devices on VLAN 50 (192.168.50.0/24). Resolved [BOB CONFIRM] in Section 22. |
+| 10 | v1.5 | Monitoring Section 11 | Restructured to reflect operational status. Added dashboard inventory table (6 dashboards, 141 panels). Updated MCP server status. |
 
 ### Items NOT Included (Require Separate Audit)
 
@@ -582,6 +607,7 @@ Items requiring Bob's physical audit before this inventory version can be approv
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.5 | 2026-03-24 | P5-002 updates: Expanded Section 6.8 Subnet Map to include all 6 Denton VLANs (10/Management, 20/Workstations, 30/Remote, 40/Servers, 50/IOT_Devices, 60/DMZ) plus HASYNC (10.255.255.0/30). Corrected VLAN 20/40 label swap in dashboard JSONs. Updated Section 6.1 firewall entries with complete VLAN list. Restructured Section 11 (Monitoring) — confirmed Docker Compose stack operational on ClarkKent (192.168.40.185), Grafana OAuth via AzureAD active, added dashboard inventory table. Updated ClarkKent entry in Section 4 with IP and DNS. Updated Section 14 Docker Compose status to deployed. Resolved Section 22 IoT VLAN isolation (VLAN 50). Added ClarkKent stack layout to data gaps (Section 23 #10). Source: P5-002 Phase 2 Deployment Plan Rev 2, pfSense verification, DNS confirmation. |
 | 1.4 DRAFT | 2026-03-22 | Merged email purchase records (Jul 2024–Mar 2026). Expanded Section 5 (workstations, laptops, custom builds). Enriched Section 6.2 (QNAP model QSW-M3216R-8S8T, MokerLink 10G switch, NICs). Added DC hostnames to Section 4. Added Cloudflare Pages to Section 8. Added Headscale to VPN. Added Bitwarden to Security. Created Section 15 (Software & Services), Section 16 (Storage), Section 17 (UPS/Power), Section 18 (Rack), Section 19 (KVM), Section 20 (Displays), Section 21 (Peripherals), Section 22 (Physical Security), Section 23 (Data Gaps Checklist). Added 15 kW generator to Planned Changes. Source: email purchase records, P5 project docs, WireGuard Phase 1 doc, Cloudflare deployment summary. |
 | 1.3 | 2026-03-16 | Scope P0–P9 → P0–P10. Added NUC9 cluster to Section 3 (Compute — AI Infrastructure). Added Highland Village branch to Section 6.5 (Network). Added BIM 360 and ACC to Section 8 (Cloud Platforms). Updated Claude.ai project count 16→17. Updated bcg-ops-claude-projects file count to 17. |
 | 1.2 | 2026-03-15 | Section 8 (Cloud Platforms): Removed `bcg-ops-revit-tools` from GitHub repos table; noted PyRevit source is now on self-hosted GitLab. Section 13 (Repos): Corrected `bcg-ops-revit-tools` entry — platform changed GitHub→GitLab self-hosted, added GitLab hostname (alexandria.bcg-corp.com), SSH remote, deploy target path, and deletion notice for GitHub repo. Removed stale GitHub-only scope note. |
