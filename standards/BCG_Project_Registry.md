@@ -45,82 +45,82 @@ Sorted by Campus, then Project Code. Projects inherit campus prime firm unless N
 
 | Campus | Project Code | Site | Prime Firm | Registered Date | Notes |
 |---|---|---|---|---|---|
-| AMA200 | AMA200 | AMA | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| AMA200 | AMA201 | AMA | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL068 | ATL068 | ATL | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| ATL068 | ATL069 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL068 | ATL070 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL068 | ATL071 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL085 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL087 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL089 | ATL | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| ATL089 | ATL092 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL093 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL094 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL095 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL096 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL097 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL098 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL110 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL111 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| ATL089 | ATL112 | ATL | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
+| AMA200 | AMA200 | AMA | Arcadis | 2026-03-24 | Confirmed |
+| AMA200 | AMA201 | AMA | Arcadis | 2026-03-24 | Confirmed |
+| ATL068 | ATL068 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL068 | ATL069 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL068 | ATL070 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL068 | ATL071 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL085 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL087 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL089 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL092 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL093 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL094 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL095 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL096 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL097 | ATL | Arcadis️ | 2026-03-24 | Confirmed |
+| ATL089 | ATL098 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL110 | ATL | Arcadis️ | 2026-03-24 | Confirmed |
+| ATL089 | ATL111 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL089 | ATL112 | ATL | Arcadis | 2026-03-24 | Confirmed |
 | ATL114 | ATL114 | ATL | Arcadis | 2026-03-24 | Confirmed |
-| ATL114 | ATL115 | ATL | Arcadis | 2026-03-24 | Inherits campus prime |
-| ATL114 | ATL116 | ATL | Arcadis | 2026-03-24 | Inherits campus prime |
-| ATL114 | ATL117 | ATL | Arcadis | 2026-03-24 | Inherits campus prime |
-| CMH116 | CMH116 | CMH | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| CMH116 | CMH120 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH116 | CMH121 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH116 | CMH122 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH116 | CMH124 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH165 | CMH | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| CMH165 | CMH166 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH167 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH168 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH169 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH172 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH173 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH165 | CMH174 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH170 | CMH170 | CMH | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| CMH232 | CMH229 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime; note: code < campus code |
-| CMH232 | CMH232 | CMH | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| CMH232 | CMH233 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH232 | CMH234 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH232 | CMH235 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH232 | CMH236 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH232 | CMH237 | CMH | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| CMH243 | CMH243 | CMH | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| IAD245 | IAD245 | IAD | TBD ⚠️ | 2026-03-24 | Prime confirmation needed — possibly HKS, confirm with Cory |
-| IAD245 | IAD246 | IAD | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| IAD245 | IAD247 | IAD | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
-| IAD245 | IAD248 | IAD | TBD ⚠️ | 2026-03-24 | Inherits campus prime |
+| ATL114 | ATL115 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL114 | ATL116 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| ATL114 | ATL117 | ATL | Arcadis | 2026-03-24 | Confirmed |
+| CMH116 | CMH116 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH116 | CMH120 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH116 | CMH121 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH116 | CMH122 | CMH | Arcadis️ | 2026-03-24 | Confirmed |
+| CMH116 | CMH124 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH165 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH166 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH167 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH168 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH169 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH172 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH173 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH165 | CMH174 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH170 | CMH170 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH232 | CMH229 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH232 | CMH232 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH232 | CMH233 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH232 | CMH234 | CMH | Arcadis| 2026-03-24 | Confirmed |
+| CMH232 | CMH235 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH232 | CMH236 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH232 | CMH237 | CMH | Arcadis | 2026-03-24 | Confirmed |
+| CMH243 | CMH243 | CMH | Atlantic AE | 2026-03-24 | Confirmed |
+| IAD245 | IAD245 | IAD | HKS | 2026-03-24 | Confirmed |
+| IAD245 | IAD246 | IAD | HKS | 2026-03-24 | Confirmed |
+| IAD245 | IAD247 | IAD | HKS | 2026-03-24 | Confirmed |
+| IAD245 | IAD248 | IAD | HKS | 2026-03-24 | Confirmed |
 | IAD534 | IAD534 | IAD | HKS | 2026-03-24 | Confirmed |
-| IAD534 | IAD535 | IAD | HKS | 2026-03-24 | Inherits campus prime |
-| IAD534 | IAD536 | IAD | HKS | 2026-03-24 | Inherits campus prime |
-| IAD534 | IAD537 | IAD | HKS | 2026-03-24 | Inherits campus prime |
+| IAD534 | IAD535 | IAD | HKS | 2026-03-24 | Confirmed |
+| IAD534 | IAD536 | IAD | HKS | 2026-03-24 | Confirmed |
+| IAD534 | IAD537 | IAD | HKS | 2026-03-24 | Confirmed |
 | IAH100 | IAH100 | IAH | Gensler | 2026-03-24 | Confirmed |
-| IAH100 | IAH101 | IAH | Gensler | 2026-03-24 | Inherits campus prime |
-| IAH100 | IAH102 | IAH | Gensler | 2026-03-24 | Inherits campus prime |
-| IAH100 | IAH103 | IAH | Gensler | 2026-03-24 | Inherits campus prime |
-| IAH100 | IAH104 | IAH | Gensler | 2026-03-24 | Inherits campus prime |
+| IAH100 | IAH101 | IAH | Gensler | 2026-03-24 | Confirmed |
+| IAH100 | IAH102 | IAH | Gensler | 2026-03-24 | Confirmed |
+| IAH100 | IAH103 | IAH | Gensler | 2026-03-24 | Confirmed |
+| IAH100 | IAH104 | IAH | Gensler | 2026-03-24 | Confirmed |
 | LBB120 | LBB120 | LBB | Gensler | 2026-03-24 | Confirmed |
-| PBI100 | PBI100 | PBI | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
+| PBI100 | PBI100 | PBI | Arcadis | 2026-03-24 | Confirmed |
 | PDX070 | PDX070 | PDX | Gensler | 2026-03-24 | Confirmed |
-| PHL130 | PHL130 | PHL | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| PHX062 | PHX062 | PHX | Gensler | 2026-03-24 | Confirmed; 60% Restart in progress |
-| PHX062 | PHX063 | PHX | Gensler | 2026-03-24 | Inherits campus prime |
-| PHX065 | PHX065 | PHX | S+R | 2026-03-24 | Confirmed |
-| PHX065 | PHX066 | PHX | S+R | 2026-03-24 | Inherits campus prime; promoted from Stale 2026-03-24 |
+| PHL130 | PHL130 | PHL | Arcadis | 2026-03-24 | Confirmed |
+| PHX062 | PHX062 | PHX | Gensler | 2026-03-24 | Confirmed |
+| PHX062 | PHX063 | PHX | Gensler | 2026-03-24 | Confirmed |
+| PHX065 | PHX065 | PHX | Gensler | 2026-03-24 | Confirmed |
+| PHX065 | PHX066 | PHX | Gensler | 2026-03-24 | Confirmed |
 | PHX069 | PHX069 | PHX | Corgan | 2026-03-24 | Confirmed |
-| PHX069 | PHX070 | PHX | Corgan | 2026-03-24 | Inherits campus prime; paired with PHX071 |
-| PHX069 | PHX071 | PHX | Corgan | 2026-03-24 | Inherits campus prime; paired with PHX070 |
-| STL100 | STL100 | STL | S+R | 2026-03-24 | Confirmed |
-| STL100 | STL101 | STL | S+R | 2026-03-24 | Inherits campus prime; Building B TI |
-| STL100 | STL102 | STL | S+R | 2026-03-24 | Inherits campus prime; Building C TI |
-| STL100 | STL103 | STL | S+R | 2026-03-24 | Inherits campus prime; Building D TI |
-| YUL065 | YUL065 | YUL | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-| YUL091 | YUL091 | YUL | TBD ⚠️ | 2026-03-24 | Prime confirmation needed |
-
+| PHX069 | PHX070 | PHX | Corgan | 2026-03-24 | Confirmed |
+| PHX069 | PHX071 | PHX | Corgan | 2026-03-24 | Confirmed |
+| STL100 | STL100 | STL | HKS | 2026-03-24 | Confirmed |
+| STL100 | STL101 | STL | HKS | 2026-03-24 | Confirmed |
+| STL100 | STL102 | STL | HKS | 2026-03-24 | Confirmed |
+| STL100 | STL103 | STL | HKS | 2026-03-24 |  Confirmed |
+| YUL065 | YUL065 | YUL | S+R | 2026-03-24 | Confirmed |
+| YUL091 | YUL091 | YUL | S+R | 2026-03-24 | Confirmed |
+| YYC060 | YYC060 | YUL | S+R | 2026-03-24 | Confirmed |
 ---
 
 ## Non-Standard Projects (BOD Titus Campus)
@@ -131,9 +131,9 @@ These projects do not match the standard `[A-Z]{3}[0-9]{3}` format and will not 
 
 | Campus | Project Code | Site | Prime Firm | Notes |
 |---|---|---|---|---|
-| BOD Titus | TDCSi v1.1 3s | BOD | TBD | Non-standard naming; not caught by regex `[A-Z]{3}[0-9]{3}` |
-| BOD Titus | TDCSi v1.2 1s | BOD | TBD | Non-standard naming |
-| BOD Titus | TDCSi v1.2 2s | BOD | TBD | Non-standard naming |
+| BOD Titus | TDCSi v1.1 3s | BOD | Arcadis | Non-standard naming; not caught by regex `[A-Z]{3}[0-9]{3}` |
+| BOD Titus | TDCSi v1.2 1s | BOD | Arcadis | Non-standard naming |
+| BOD Titus | TDCSi v1.2 2s | BOD | Arcadis | Non-standard naming |
 
 ---
 
