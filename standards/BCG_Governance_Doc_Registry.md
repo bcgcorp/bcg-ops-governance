@@ -85,9 +85,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.4 |
+| **Current Version** | 2.5 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 67 active initiatives (I-01--I-69, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-70. |
+| **Governs** | 68 active initiatives (I-01--I-70, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-71. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -132,7 +132,7 @@ These documents are fetched by Claude during conversations when the task matches
 | **File** | `BCG_Tools_Inventory.md` |
 | **Current Version** | 1.2 |
 | **Fetch before** | PyRevit button development, backlog review, panel inventory check, status confirmation, print button references |
-| **Governs** | BCGTools pyRevit extension inventory. 46 buttons across 10 panels. Complete button descriptions, panel assignments, deployment status (Complete/Beta/In Development), and gate conditions for print buttons (B-43--B-46). |
+| **Governs** | BCGTools pyRevit extension inventory. 46 buttons across 10 panels. Complete button descriptions, panel assignments, deployment status, gate conditions for print buttons (B-43--B-46). |
 
 ### 3.12 SOP Governance & Intake Protocol (SOP-GOV-001)
 
@@ -184,9 +184,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Project_Registry.md` |
-| **Current Version** | 2.1 |
-| **Fetch before** | Any 4am Cowork schedule tracking run, any Team Project consolidation, any Odoo intake processing, any project code or campus validation, any prime firm lookup, any P3 competitive intel update involving prime firm assignments |
-| **Governs** | All registered BCG project codes, campus groupings, site assignments, prime firm relationships. 79 standard active + 3 non-standard (BOD Titus) = 82 total entries across 24 campuses and 14 sites (AMA, ATL, BOD, CMH, IAD, IAH, LBB, PBI, PDX, PHL, PHX, STL, YUL, YYC). 1 placeholder (AUS150). All 24 campus prime firms confirmed as of 2026-03-24. 6 prime firms: Arcadis, Atlantic AE, Corgan, Gensler, HKS, S+R. Source of truth for Cowork Schedule Tracker (I-70) confidence scoring. |
+| **Current Version** | 2.2 |
+| **Fetch before** | Any 4am Cowork schedule tracking run, any Team Project consolidation, any Odoo intake processing, any project code validation or prime firm lookup, any P3 competitive intel update involving prime firm assignments |
+| **Governs** | All registered BCG project codes, campus groupings, site assignments, prime firm relationships. 82 total entries (79 standard + 3 non-standard BOD Titus) across 24 campuses and 14 sites (AMA, ATL, BOD, CMH, IAD, IAH, LBB, PBI, PDX, PHL, PHX, STL, YUL, YYC). 1 placeholder (AUS150). All 24 campuses confirmed. 6 prime firms (Arcadis, HKS, Gensler, Corgan, S+R, Atlantic AE). Updated when projects are awarded or closed. Source of truth for I-70 Cowork Schedule Tracker confidence scoring. |
 
 ---
 
@@ -238,7 +238,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 ### 6.2 Total Document Count
 
 | Category | Count | Documents |
-|----------|-------|-----------|
+|----------|-------|----------|
 | Runtime-fetched | 17 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry |
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
@@ -263,17 +263,17 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 2.7 | 2026-03-24 | Updated GOV-018 tracked version 2.0 → 2.1 (Section 3.17). Updated governs description: 82 total entries, 24 campuses, 14 sites (added YYC), 6 confirmed prime firms (Arcadis, Atlantic AE, Corgan, Gensler, HKS, S+R), all 24 primes confirmed. |
-| 2.6 | 2026-03-24 | Updated GOV-018 tracked version 1.0 → 2.0 (Section 3.17). Updated governs description: 78 entries, 23 campuses, 13 sites, 14 unconfirmed primes. |
-| 2.5 | 2026-03-24 | Added Section 3.17 -- BCG Project Code Registry (GOV-018, v1.0). Updated runtime-fetched count 16 → 17. Updated total doc count 19 → 20. |
-| 2.4 | 2026-03-22 | Bumped Catalog tracked version 2.1 → 2.4 (Section 3.6). Added raw.githubusercontent.com hard fetch rule to Section 2 and Rule 3. |
-| 2.3 | 2026-03-22 | Bumped GOV-013 v1.1 → 1.2. Bumped GOV-017 v1.0 → 1.1. |
-| 2.2 | 2026-03-22 | Added GOV-017 (P4-002 Technical Architecture Standards). Updated total 18 → 19. |
-| 2.1 | 2026-03-17 | Corrected tracked versions: Performance Assessment Prompt and P9 Risk Prompt 1.0 → 1.1. |
-| 2.0 | 2026-03-17 | Bumped Style Guide 1.4 → 1.5. |
-| 1.9 | 2026-03-17 | Updated scope P0-P10 → P0-P11 (P11 registered). Bumped Handoffs, Catalog, EAB versions. |
-| 1.8 | 2026-03-17 | Complete rewrite. Migrated to GitHub. Updated from 9 to 18 tracked files. |
-| 1.1 | 2026-03-07 | Added Section 3.7 -- BCG Custom Module Registry. |
+| 2.7 | 2026-03-24 | Updated GOV-002 tracked version 2.4→2.5 (68 active initiatives, next slot I-71). Updated GOV-018 tracked version 2.1→2.2 (BOD Titus clarification). |
+| 2.6 | 2026-03-24 | Updated GOV-018 tracked version 1.0→2.0. Updated governs description: 78 entries, 23 campuses, 13 sites, 14 unconfirmed primes. |
+| 2.5 | 2026-03-24 | Added Section 3.17 -- BCG Project Code Registry (GOV-018, v1.0). Updated runtime-fetched count 16→17. Updated total doc count 19→20. |
+| 2.4 | 2026-03-22 | Bumped Catalog tracked version 2.1→2.4. Added raw.githubusercontent.com hard fetch rule. Added EAB propagation status note. |
+| 2.3 | 2026-03-22 | Bumped GOV-013 tracked version 1.1→1.2. Bumped GOV-017 tracked version 1.0→1.1. |
+| 2.2 | 2026-03-22 | Added GOV-017 (P4-002 Technical Architecture Standards). Updated total doc count 18→19. |
+| 2.1 | 2026-03-17 | Corrected tracked versions: Performance Assessment Prompt 1.0→1.1, P9 Risk Prompt 1.0→1.1. |
+| 2.0 | 2026-03-17 | Bumped Style Guide 1.4→1.5. Self-reference 1.9→2.0. |
+| 1.9 | 2026-03-17 | Updated scope P0-P10 to P0-P11. Bumped Handoffs, Catalog, EAB versions. |
+| 1.8 | 2026-03-17 | Complete rewrite. Migrated to GitHub-first governance. |
+| 1.1 | 2026-03-07 | Added BCG Custom Module Registry. |
 | 1.0 | 2026-03-01 | Initial version. |
 
 ---

@@ -1,7 +1,7 @@
 # BCG Project Code Registry
 
 **Document ID:** GOV-018
-**Version:** 2.1
+**Version:** 2.2
 **Owner:** Gregory Bernardo, President
 **Project:** P0 — Master Strategic Plan & Executive Advisory
 **Operational Owner:** Rachel McGee (daily intake ops)
@@ -128,11 +128,13 @@ Sorted by Campus, then Project Code. Projects inherit campus prime firm unless N
 
 These projects do not match the standard `[A-Z]{3}[0-9]{3}` format and will not be caught by Cowork's email regex. Listed explicitly to prevent false-positive Low confidence if encountered.
 
+BOD Titus is an active client engagement with a non-standard project naming convention.
+
 | Campus | Project Code | Site | Prime Firm | Notes |
 |---|---|---|---|---|
-| BOD Titus | TDCSi v1.1 3s | BOD | Arcadis | Non-standard naming; not caught by regex `[A-Z]{3}[0-9]{3}` |
-| BOD Titus | TDCSi v1.2 1s | BOD | Arcadis | Non-standard naming |
-| BOD Titus | TDCSi v1.2 2s | BOD | Arcadis | Non-standard naming |
+| BOD Titus | TDCSi v1.1 3s | BOD | Arcadis | Active client engagement; non-standard naming convention; not caught by regex `[A-Z]{3}[0-9]{3}` |
+| BOD Titus | TDCSi v1.2 1s | BOD | Arcadis | Active client engagement; non-standard naming |
+| BOD Titus | TDCSi v1.2 2s | BOD | Arcadis | Active client engagement; non-standard naming |
 
 ---
 
@@ -156,7 +158,7 @@ These projects do not match the standard `[A-Z]{3}[0-9]{3}` format and will not 
 
 | Prime Firm | Campuses | Project Count |
 |---|---|---|
-| Arcadis | AMA200, ATL068, ATL089, ATL114, BOD Titus, CMH116, CMH165, CMH170, CMH232, PBI100, PHL130 | 46 + 3 non-standard = 49 |
+| Arcadis | AMA200, ATL068, ATL089, ATL114, BOD Titus, CMH116, CMH165, CMH170, CMH232, PBI100, PHL130 | 46 standard + 3 non-standard = 49 |
 | HKS | IAD245, IAD534, STL100 | 12 |
 | Gensler | IAH100, LBB120, PDX070, PHX062, PHX065 | 11 |
 | Corgan | PHX069 | 3 |
@@ -201,7 +203,8 @@ These projects do not match the standard `[A-Z]{3}[0-9]{3}` format and will not 
 
 | Version | Date | Changed By | Change |
 |---|---|---|---|
-| 2.1 | 2026-03-24 | Gregory Bernardo | All 24 campus primes confirmed. Fixed 4 emoji copy-paste artifacts in Prime Firm column (ATL097, ATL110, CMH122, CMH234). Corrected YYC060 site YUL → YYC. Added YYC to site list. Rebuilt Prime Firm Quick Reference with all 6 confirmed primes (Arcadis, HKS, Gensler, Corgan, S+R, Atlantic AE). Campus Summary updated — 24 of 24 confirmed. Removed Prime Confirmation Needed section (all resolved). Total: 79 standard + 3 non-standard = 82 across 24 campuses and 14 sites. |
-| 2.0 | 2026-03-24 | Gregory Bernardo | Major restructure from Odoo project export. Added Campus column and Campus Registry Summary. 61 net-new project codes across 16 new campuses. Promoted PHX066 from Stale to Active. Replaced generic YUL/CMH placeholders with specific campus codes. Added BOD Titus non-standard campus. |
-| 1.0 | 2026-03-24 | Gregory Bernardo | Ecosystem compliance update: GOV-018 document ID, version, fetch rule, corrected primes, moved AUS150 to Placeholder, Prime Firm Reference table. |
-| — | 2026-03-24 | Gregory Bernardo | Initial registry created from full inbox sweep (Cowork initial setup run). |
+| 2.2 | 2026-03-24 | Gregory Bernardo | Clarified BOD Titus as active client engagement with non-standard naming convention. Removed ambiguous client/purpose warning. |
+| 2.1 | 2026-03-24 | Gregory Bernardo | All 24 campus primes confirmed. Fixed 4 emoji copy-paste artifacts. Corrected YYC060 site YUL→YYC. Rebuilt Prime Firm Quick Reference (6 firms). Campus Summary 24/24 ✅. Total: 79 standard + 3 non-standard = 82 across 24 campuses and 14 sites. |
+| 2.0 | 2026-03-24 | Gregory Bernardo | Major restructure from Odoo project export. Added Campus column. 61 net-new project codes. Promoted PHX066 from Stale. Replaced generic YUL/CMH placeholders. Added BOD Titus. |
+| 1.0 | 2026-03-24 | Gregory Bernardo | Ecosystem compliance update: GOV-018 document ID, version, fetch rule, corrected primes, Placeholder/Stale tables, Prime Firm Reference. |
+| — | 2026-03-24 | Gregory Bernardo | Initial registry created from full inbox sweep (Cowork Phase 1). |
