@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 2.4
+**Version:** 2.5
 **Effective:** March 2026
-**Last Updated:** 2026-03-22
+**Last Updated:** 2026-03-24
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -179,6 +179,15 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Any pyRevit code review, CLAUDE.md authoring, PR triage for bcg-ops-revit-tools, or when an architectural decision is in question |
 | **Governs** | IronPython ASCII constraint, AppSettings_01 opaque schema rules (including violation patterns), three-transaction sheet architecture, Revit API constraints, Windsurf/windsurfrules coding environment, CI/CD pipeline phase status, pending P4-002 deliverables. |
 
+### 3.17 Project Code Registry (GOV-018)
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Project_Registry.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Any 4am Cowork schedule tracking run, any Team Project consolidation, any Odoo intake processing, any project code validation or prime firm lookup, any P3 competitive intel update involving prime firm assignments |
+| **Governs** | All registered BCG project codes, site assignments, prime firm relationships. 17 active codes across 8 sites (ATL, IAD, IAH, LBB, PDX, PHX, STL). 3 placeholder codes (AUS150, YUL, CMH — anticipated awards). 1 stale code (PHX066). Updated when projects are awarded or closed. Source of truth for Cowork Schedule Tracker (I-70) confidence scoring. |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -222,7 +231,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.4 |
+| **Current Version** | 2.5 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -230,11 +239,11 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Category | Count | Documents |
 |----------|-------|-----------|
-| Runtime-fetched | 16 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture |
+| Runtime-fetched | 17 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry |
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total in standards folder** | **19** | -- |
+| **Total in standards folder** | **20** | -- |
 
 ---
 
@@ -254,6 +263,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.5 | 2026-03-24 | Added Section 3.17 -- BCG Project Code Registry (GOV-018, v1.0). Updated runtime-fetched count 16 → 17. Updated total doc count 19 → 20. |
 | 2.4 | 2026-03-22 | Bumped Catalog tracked version 2.1 → 2.4 (Section 3.6). Updated Catalog governs description: 62 → 67 active initiatives, I-01--I-64 → I-01--I-69 (minus I-20, I-30, I-32), next I-65 → I-70. Added raw.githubusercontent.com hard fetch rule to Section 2 and Rule 3. Added EAB propagation status note (Section 4.1). |
 | 2.3 | 2026-03-22 | Bumped GOV-013 tracked version 1.1 to 1.2 (Section 3.11, 46 buttons / 10 panels). Bumped GOV-017 tracked version 1.0 to 1.1 (Section 3.16). Updated GOV-013 governs description. |
 | 2.2 | 2026-03-22 | Added GOV-017 (P4-002 Technical Architecture Standards, Section 3.16). Bumped GOV-013 tracked version 1.0 to 1.1 (Section 3.11). Updated total doc count 18 to 19. |
