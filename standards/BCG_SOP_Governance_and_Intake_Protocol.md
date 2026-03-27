@@ -1,8 +1,8 @@
 # BCG Corp — SOP Governance & Intake Protocol
 
-**Version:** 1.4
+**Version:** 1.5
 **Effective:** March 2026
-**Last Updated:** 2026-03-22
+**Last Updated:** 2026-03-26
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 **Maintenance:** Jennifer Brezniak (post-approval)
@@ -53,9 +53,11 @@ Before any idea is handed off to P2 for drafting, it must be classified. This is
 
 ### Step 3 — W-Series ID Assignment
 
-**Current highest assigned ID:** W-23 (as of 2026-03-17). Next available: **W-24**.
+**Current highest assigned ID:** W-24 (assigned to I-70 Schedule Tracking & Sync SOP — pending draft). Next available: **W-25**.
 
 IDs are sequential and permanent. Once assigned, an ID is not reused even if the SOP is retired. Retired SOPs are marked [RETIRED] — not deleted. PROD-series uses a separate numbering sequence.
+
+**Known W-25 candidate:** Sanitized Development Model Maintenance & Usage SOP (dependency for I-71 On-Premise AI / Revit Live Model Integration). Route to P2/Jennifer for authoring once Gregory approves classification. Owner: Cory Bialke (primary) / Stephanie Bernardo (backup).
 
 ### Step 4 — Key Design Decisions
 
@@ -163,6 +165,7 @@ When a new SOP enters the drafting queue, notify: process owner, process backup,
 
 | Version | Date | Author | What Changed |
 |---------|------|--------|-------------|
+| 1.5 | 2026-03-26 | Gregory Bernardo | W-slot updated: W-24 assigned (I-70 Schedule Tracking SOP), next available W-25. Added W-25 candidate note (Sanitized Dev Model SOP for I-71). Corrected Registry tracked version (was 1.3, file was already 1.4). |
 | 1.4 | 2026-03-22 | Gregory Bernardo | Updated scope P0–P10 to P0–P11. Updated Section 3 satellite reference P1–P10 to P1–P11. Corrected footer fetch reference from "web_fetch" to "GitHub MCP". |
 | 1.3 | 2026-03-17 | Gregory Bernardo | Updated scope P0-P9 to P0-P10. W-ID pointer W-17 to W-23 (next: W-24). Added P10 flag to dependency mapping and handoff template. Added Victor and P10 to execution roles. |
 | 1.2 | 2026-03-15 | Gregory Bernardo | Updated W-ID pointer W-17 to W-22. |

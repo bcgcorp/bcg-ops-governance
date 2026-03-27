@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 2.7
+**Version:** 2.8
 **Effective:** March 2026
-**Last Updated:** 2026-03-24
+**Last Updated:** 2026-03-26
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -85,9 +85,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.5 |
+| **Current Version** | 2.6 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 68 active initiatives (I-01--I-70, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-71. |
+| **Governs** | 69 active initiatives (I-01--I-71, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-72. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -139,9 +139,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_SOP_Governance_and_Intake_Protocol.md` |
-| **Current Version** | 1.3 |
+| **Current Version** | 1.5 |
 | **Fetch before** | Proposing a new SOP, classifying a workflow idea, generating a P0 to P2 handoff for SOP drafting |
-| **Governs** | SOP intake classification, W-series ID assignment (current highest: W-23, next: W-24), tier assignment, key design decisions, standard handoff prompt format, approval loop. |
+| **Governs** | SOP intake classification, W-series ID assignment (current highest: W-24 claimed by I-70; next available: W-25), tier assignment, key design decisions, standard handoff prompt format, approval loop. |
 
 ### 3.13 W-20 Ecosystem Triage SOP
 
@@ -231,7 +231,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.7 |
+| **Current Version** | 2.8 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -263,6 +263,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.8 | 2026-03-26 | GOV-002 tracked version 2.5→2.6 (69 active initiatives, next slot I-72, W-24 claimed/W-25 next). SOP-GOV-001 corrected tracked version 1.3→1.5 (file was already v1.4; bumped to v1.5 this session for W-slot update). |
 | 2.7 | 2026-03-24 | Updated GOV-002 tracked version 2.4→2.5 (68 active initiatives, next slot I-71). Updated GOV-018 tracked version 2.1→2.2 (BOD Titus clarification). |
 | 2.6 | 2026-03-24 | Updated GOV-018 tracked version 1.0→2.0. Updated governs description: 78 entries, 23 campuses, 13 sites, 14 unconfirmed primes. |
 | 2.5 | 2026-03-24 | Added Section 3.17 -- BCG Project Code Registry (GOV-018, v1.0). Updated runtime-fetched count 16→17. Updated total doc count 19→20. |
