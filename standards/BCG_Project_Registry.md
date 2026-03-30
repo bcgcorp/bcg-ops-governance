@@ -1,11 +1,11 @@
 # BCG Project Code Registry
 
 **Document ID:** GOV-018
-**Version:** 2.2
+**Version:** 2.3
 **Owner:** Gregory Bernardo, President
 **Project:** P0 — Master Strategic Plan & Executive Advisory
 **Operational Owner:** Rachel McGee (daily intake ops)
-**Last Updated:** 2026-03-24
+**Last Updated:** 2026-03-30
 **Storage:** `bcg-ops-governance/standards/BCG_Project_Registry.md`
 
 ---
@@ -118,9 +118,9 @@ Sorted by Campus, then Project Code. Projects inherit campus prime firm unless N
 | STL100 | STL101 | STL | HKS | 2026-03-24 | Inherits campus prime |
 | STL100 | STL102 | STL | HKS | 2026-03-24 | Inherits campus prime |
 | STL100 | STL103 | STL | HKS | 2026-03-24 | Inherits campus prime |
-| YUL065 | YUL065 | YUL | S+R | 2026-03-24 | Confirmed |
-| YUL091 | YUL091 | YUL | S+R | 2026-03-24 | Confirmed |
-| YYC060 | YYC060 | YYC | S+R | 2026-03-24 | Confirmed |
+| YUL065 | YUL065 | YUL | Stendel+Reich | 2026-03-24 | Confirmed |
+| YUL091 | YUL091 | YUL | Stendel+Reich | 2026-03-24 | Confirmed |
+| YYC060 | YYC060 | YYC | Stendel+Reich | 2026-03-24 | Confirmed |
 
 ---
 
@@ -156,14 +156,16 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 
 ## Prime Firm Quick Reference
 
-| Prime Firm | Campuses | Project Count |
-|---|---|---|
-| Arcadis | AMA200, ATL068, ATL089, ATL114, BOD Titus, CMH116, CMH165, CMH170, CMH232, PBI100, PHL130 | 46 standard + 3 non-standard = 49 |
-| HKS | IAD245, IAD534, STL100 | 12 |
-| Gensler | IAH100, LBB120, PDX070, PHX062, PHX065 | 11 |
-| Corgan | PHX069 | 3 |
-| S+R | YUL065, YUL091, YYC060 | 3 |
-| Atlantic AE | CMH243 | 1 |
+| Prime Firm | Sending Domain | Campuses | Project Count |
+|---|---|---|---|
+| Arcadis | arcadis.com | AMA200, ATL068, ATL089, ATL114, BOD Titus, CMH116, CMH165, CMH170, CMH232, PBI100, PHL130 | 46 standard + 3 non-standard = 49 |
+| HKS | hksinc.com | IAD245, IAD534, STL100 | 12 |
+| Gensler | gensler.com | IAH100, LBB120, PDX070, PHX062, PHX065 | 11 |
+| Corgan | corgan.com | PHX069 | 3 |
+| Stendel+Reich | stendelreich.com | YUL065, YUL091, YYC060 | 3 |
+| Atlantic AE | atlantic-ae.com | CMH243 | 1 |
+
+> **Note:** Prior versions of this document listed `sandrs.com` as the Stendel+Reich sending domain. This was incorrect — confirmed via 4-month email analysis (zero messages from sandrs.com; 13 messages from stendelreich.com on YUL/YYC projects). Corrected in v2.3.
 
 ---
 
@@ -192,9 +194,9 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 | PHX065 | PHX | 2 | Gensler | ✅ |
 | PHX069 | PHX | 3 | Corgan | ✅ |
 | STL100 | STL | 4 | HKS | ✅ |
-| YUL065 | YUL | 1 | S+R | ✅ |
-| YUL091 | YUL | 1 | S+R | ✅ |
-| YYC060 | YYC | 1 | S+R | ✅ |
+| YUL065 | YUL | 1 | Stendel+Reich | ✅ |
+| YUL091 | YUL | 1 | Stendel+Reich | ✅ |
+| YYC060 | YYC | 1 | Stendel+Reich | ✅ |
 | **TOTAL** | | **79 std + 3 non-std = 82** | | **24 of 24 confirmed ✅** |
 
 ---
@@ -203,6 +205,7 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 
 | Version | Date | Changed By | Change |
 |---|---|---|---|
+| 2.3 | 2026-03-30 | Gregory Bernardo | Corrected prime firm name S+R → Stendel+Reich; corrected sending domain sandrs.com → stendelreich.com (confirmed via email analysis); added Sending Domain column to Prime Firm Quick Reference; added atlantic-ae.com for Atlantic AE (CMH243). |
 | 2.2 | 2026-03-24 | Gregory Bernardo | Clarified BOD Titus as active client engagement with non-standard naming convention. Removed ambiguous client/purpose warning. |
 | 2.1 | 2026-03-24 | Gregory Bernardo | All 24 campus primes confirmed. Fixed 4 emoji copy-paste artifacts. Corrected YYC060 site YUL→YYC. Rebuilt Prime Firm Quick Reference (6 firms). Campus Summary 24/24 ✅. Total: 79 standard + 3 non-standard = 82 across 24 campuses and 14 sites. |
 | 2.0 | 2026-03-24 | Gregory Bernardo | Major restructure from Odoo project export. Added Campus column. 61 net-new project codes. Promoted PHX066 from Stale. Replaced generic YUL/CMH placeholders. Added BOD Titus. |
