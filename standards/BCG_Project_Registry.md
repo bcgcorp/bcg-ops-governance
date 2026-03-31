@@ -1,11 +1,11 @@
 # BCG Project Code Registry
 
 **Document ID:** GOV-018
-**Version:** 2.3
+**Version:** 2.4
 **Owner:** Gregory Bernardo, President
 **Project:** P0 — Master Strategic Plan & Executive Advisory
 **Operational Owner:** Rachel McGee (daily intake ops)
-**Last Updated:** 2026-03-30
+**Last Updated:** 2026-03-31
 **Storage:** `bcg-ops-governance/standards/BCG_Project_Registry.md`
 
 ---
@@ -90,6 +90,9 @@ Sorted by Campus, then Project Code. Projects inherit campus prime firm unless N
 | CMH232 | CMH236 | CMH | Arcadis | 2026-03-24 | Inherits campus prime |
 | CMH232 | CMH237 | CMH | Arcadis | 2026-03-24 | Inherits campus prime |
 | CMH243 | CMH243 | CMH | Atlantic AE | 2026-03-24 | Confirmed |
+| CMH243 | CMH244 | CMH | Atlantic AE | 2026-03-31 | Inherits campus prime |
+| CMH243 | CMH245 | CMH | Atlantic AE | 2026-03-31 | Inherits campus prime |
+| CMH243 | CMH246 | CMH | Atlantic AE | 2026-03-31 | Inherits campus prime |
 | IAD245 | IAD245 | IAD | HKS | 2026-03-24 | Confirmed |
 | IAD245 | IAD246 | IAD | HKS | 2026-03-24 | Inherits campus prime |
 | IAD245 | IAD247 | IAD | HKS | 2026-03-24 | Inherits campus prime |
@@ -104,6 +107,13 @@ Sorted by Campus, then Project Code. Projects inherit campus prime firm unless N
 | IAH100 | IAH103 | IAH | Gensler | 2026-03-24 | Inherits campus prime |
 | IAH100 | IAH104 | IAH | Gensler | 2026-03-24 | Inherits campus prime |
 | LBB120 | LBB120 | LBB | Gensler | 2026-03-24 | Confirmed |
+| LBB120 | LBB121 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
+| LBB120 | LBB122 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
+| LBB120 | LBB123 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
+| LBB120 | LBB124 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
+| LBB120 | LBB125 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
+| LBB120 | LBB126 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
+| LBB120 | LBB127 | LBB | Gensler | 2026-03-31 | Inherits campus prime |
 | PBI100 | PBI100 | PBI | Arcadis | 2026-03-24 | Confirmed |
 | PDX070 | PDX070 | PDX | Gensler | 2026-03-24 | Confirmed |
 | PHL130 | PHL130 | PHL | Arcadis | 2026-03-24 | Confirmed |
@@ -124,17 +134,38 @@ Sorted by Campus, then Project Code. Projects inherit campus prime firm unless N
 
 ---
 
-## Non-Standard Projects (BOD Titus Campus)
+## Non-Standard Projects
 
 These projects do not match the standard `[A-Z]{3}[0-9]{3}` format and will not be caught by Cowork's email regex. Listed explicitly to prevent false-positive Low confidence if encountered.
 
-BOD Titus is an active client engagement with a non-standard project naming convention.
+### BOD Titus Campus (Arcadis)
 
 | Campus | Project Code | Site | Prime Firm | Notes |
 |---|---|---|---|---|
 | BOD Titus | TDCSi v1.1 3s | BOD | Arcadis | Active client engagement; non-standard naming convention; not caught by regex `[A-Z]{3}[0-9]{3}` |
 | BOD Titus | TDCSi v1.2 1s | BOD | Arcadis | Active client engagement; non-standard naming |
 | BOD Titus | TDCSi v1.2 2s | BOD | Arcadis | Active client engagement; non-standard naming |
+| BOD Titus | TDC3Si | BOD | Arcadis | Active client engagement; non-standard naming |
+
+### LBB120 Sub-Buildings (Gensler)
+
+Sub-building codes within the LBB120 campus. Inherit LBB120 campus prime (Gensler).
+
+| Campus | Project Code | Site | Prime Firm | Notes |
+|---|---|---|---|---|
+| LBB120 | LBB120 ACB | LBB | Gensler | Sub-building of LBB120; non-standard naming (space + suffix); not caught by regex |
+| LBB120 | LBB120 AWB | LBB | Gensler | Sub-building of LBB120; non-standard naming |
+| LBB120 | LBB120 CAB | LBB | Gensler | Sub-building of LBB120; non-standard naming |
+
+### CMH243 Sub-Buildings (Atlantic AE)
+
+Sub-building codes within the CMH243 campus. Inherit CMH243 campus prime (Atlantic AE).
+
+| Campus | Project Code | Site | Prime Firm | Notes |
+|---|---|---|---|---|
+| CMH243 | CMH243 ACB | CMH | Atlantic AE | Sub-building of CMH243; non-standard naming (space + suffix); not caught by regex |
+| CMH243 | CMH243 AWB | CMH | Atlantic AE | Sub-building of CMH243; non-standard naming |
+| CMH243 | CMH243 CAB | CMH | Atlantic AE | Sub-building of CMH243; non-standard naming |
 
 ---
 
@@ -158,12 +189,12 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 
 | Prime Firm | Sending Domain | Campuses | Project Count |
 |---|---|---|---|
-| Arcadis | arcadis.com | AMA200, ATL068, ATL089, ATL114, BOD Titus, CMH116, CMH165, CMH170, CMH232, PBI100, PHL130 | 46 standard + 3 non-standard = 49 |
+| Arcadis | arcadis.com | AMA200, ATL068, ATL089, ATL114, BOD Titus, CMH116, CMH165, CMH170, CMH232, PBI100, PHL130 | 46 standard + 4 non-standard = 50 |
 | HKS | hksinc.com | IAD245, IAD534, STL100 | 12 |
-| Gensler | gensler.com | IAH100, LBB120, PDX070, PHX062, PHX065 | 11 |
+| Gensler | gensler.com | IAH100, LBB120, PDX070, PHX062, PHX065 | 18 standard + 3 non-standard = 21 |
 | Corgan | corgan.com | PHX069 | 3 |
 | Stendel+Reich | stendelreich.com | YUL065, YUL091, YYC060 | 3 |
-| Atlantic AE | atlantic-ae.com | CMH243 | 1 |
+| Atlantic AE | atlantic-ae.com | CMH243 | 4 standard + 3 non-standard = 7 |
 
 > **Note:** Prior versions of this document listed `sandrs.com` as the Stendel+Reich sending domain. This was incorrect — confirmed via 4-month email analysis (zero messages from sandrs.com; 13 messages from stendelreich.com on YUL/YYC projects). Corrected in v2.3.
 
@@ -177,16 +208,16 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 | ATL068 | ATL | 4 | Arcadis | ✅ |
 | ATL089 | ATL | 13 | Arcadis | ✅ |
 | ATL114 | ATL | 4 | Arcadis | ✅ |
-| BOD Titus | BOD | 3 (non-std) | Arcadis | ✅ |
+| BOD Titus | BOD | 4 (non-std) | Arcadis | ✅ |
 | CMH116 | CMH | 5 | Arcadis | ✅ |
 | CMH165 | CMH | 8 | Arcadis | ✅ |
 | CMH170 | CMH | 1 | Arcadis | ✅ |
 | CMH232 | CMH | 7 | Arcadis | ✅ |
-| CMH243 | CMH | 1 | Atlantic AE | ✅ |
+| CMH243 | CMH | 4 std + 3 non-std | Atlantic AE | ✅ |
 | IAD245 | IAD | 4 | HKS | ✅ |
 | IAD534 | IAD | 4 | HKS | ✅ |
 | IAH100 | IAH | 5 | Gensler | ✅ |
-| LBB120 | LBB | 1 | Gensler | ✅ |
+| LBB120 | LBB | 8 std + 3 non-std | Gensler | ✅ |
 | PBI100 | PBI | 1 | Arcadis | ✅ |
 | PDX070 | PDX | 1 | Gensler | ✅ |
 | PHL130 | PHL | 1 | Arcadis | ✅ |
@@ -197,7 +228,7 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 | YUL065 | YUL | 1 | Stendel+Reich | ✅ |
 | YUL091 | YUL | 1 | Stendel+Reich | ✅ |
 | YYC060 | YYC | 1 | Stendel+Reich | ✅ |
-| **TOTAL** | | **79 std + 3 non-std = 82** | | **24 of 24 confirmed ✅** |
+| **TOTAL** | | **89 std + 10 non-std = 99** | | **24 of 24 confirmed ✅** |
 
 ---
 
@@ -205,6 +236,7 @@ BOD Titus is an active client engagement with a non-standard project naming conv
 
 | Version | Date | Changed By | Change |
 |---|---|---|---|
+| 2.4 | 2026-03-31 | Gregory Bernardo | Added LBB121–LBB127 (LBB120 campus, Gensler); added CMH244, CMH245, CMH246 (CMH243 campus, Atlantic AE); added TDC3Si (BOD Titus, Arcadis); added sub-building non-standard codes LBB120 ACB/AWB/CAB (LBB120, Gensler) and CMH243 ACB/AWB/CAB (CMH243, Atlantic AE). Expanded Non-Standard section with sub-headings. Total: 89 std + 10 non-std = 99. |
 | 2.3 | 2026-03-30 | Gregory Bernardo | Corrected prime firm name S+R → Stendel+Reich; corrected sending domain sandrs.com → stendelreich.com (confirmed via email analysis); added Sending Domain column to Prime Firm Quick Reference; added atlantic-ae.com for Atlantic AE (CMH243). |
 | 2.2 | 2026-03-24 | Gregory Bernardo | Clarified BOD Titus as active client engagement with non-standard naming convention. Removed ambiguous client/purpose warning. |
 | 2.1 | 2026-03-24 | Gregory Bernardo | All 24 campus primes confirmed. Fixed 4 emoji copy-paste artifacts. Corrected YYC060 site YUL→YYC. Rebuilt Prime Firm Quick Reference (6 firms). Campus Summary 24/24 ✅. Total: 79 standard + 3 non-standard = 82 across 24 campuses and 14 sites. |
