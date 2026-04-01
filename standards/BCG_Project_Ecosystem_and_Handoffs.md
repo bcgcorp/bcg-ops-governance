@@ -1,8 +1,8 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.7
+**Version:** 1.8
 **Effective:** March 2026
-**Last Updated:** 2026-03-23
+**Last Updated:** 2026-04-01
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -41,10 +41,10 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | P8 | Proposals & RFP Operations | Gregory | Bid/no-bid recommendations, proposals, promise tracking, pipeline analytics | P0, P1, P2, P3, P7 |
 | P9 | Business Continuity & Resilience | Gregory | Enterprise BCP, dependency risk register, continuity protocols | P0 |
 | P10 | Legal, Compliance & Risk | Gregory (only) | Legal clearances, compliance status, insurance governance, contract review | P0 |
-| P11 | Candidate OSINT & Pre-Hire Intelligence | Gregory (only) | Candidate Intelligence Reports (CIRs) — pre-hire public record and digital footprint review. RESTRICTED. | P10 (CIR custody), P6 (go/no-go decision) |
+| P11 | Candidate OSINT & Pre-Hire Intelligence | Gregory & Jennifer | Candidate Intelligence Reports (CIRs) — pre-hire public record and digital footprint review. RESTRICTED. | P10 (CIR custody — Gregory files), P6 (go/no-go decision — Gregory or Jennifer) |
 
 **Note:** P6 is HR & People ONLY. Legal, compliance, licensing, and insurance governance migrated to P10 as of 2026-03-15.
-**Note:** P11 is Gregory-only, RESTRICTED. CIRs are triggered pre-offer and filed to P10 for custody. Go/no-go hiring decisions route to P6.
+**Note:** P11 is Gregory & Jennifer only, RESTRICTED. CIRs are triggered pre-offer and filed to P10 for custody (Gregory only). Go/no-go hiring decisions route to P6 via Gregory or Jennifer. Jennifer may carry CIR findings into P6 directly.
 
 ### 2.3 Subproject Registry
 
@@ -89,11 +89,11 @@ Every handoff must include: standardized label, approval status, summary of what
 | Odoo configuration needed | Flag for P7 |
 | Legal/compliance implication | Flag for P10 (Gregory only) |
 | Business continuity gap | Flag for P9 |
-| Pre-hire candidate investigation | Flag for P11 (Gregory only) |
+| Pre-hire candidate investigation | Flag for P11 (Gregory & Jennifer only) |
 
 **Core rule:** Subprojects report to their parent satellite — never directly to P0.
 **P10 rule:** P10 outputs route directly to P0. P10 does NOT route to other satellites.
-**P11 rule:** P11 outputs route to P10 (CIR custody) and P6 (go/no-go). P11 does NOT route to P0 directly. Gregory-only.
+**P11 rule:** P11 outputs route to P10 (CIR custody — Gregory files) and P6 (go/no-go — Gregory or Jennifer). P11 does NOT route to P0 directly. Gregory & Jennifer only.
 
 ### 3.5 Handoff Validation Protocol
 
@@ -104,7 +104,7 @@ In which Claude project was this work actually produced?
 That project is the FROM. Not the topic, not the destination, not who will use it — where was it made.
 
 | Work produced in... | FROM must be... |
-|--------------------|-----------------|
+|--------------------|----------------|
 | A P0 advisory or synthesis session | `P0 — Master Strategic Plan` |
 | A P1–P11 satellite session | That satellite (e.g., `P7 — Odoo Platform & ERP`) |
 | A subproject session | That subproject (e.g., `P4-002 — Revit & BIM Automation`) |
@@ -152,7 +152,7 @@ The `[ORIGIN:]` line is stripped before delivery to the receiving project but mu
 | Inbound business document intake | P8-001 |
 | Business continuity planning | P9 |
 | Licensing, insurance, contract review, legal | P10 (Gregory only) |
-| Pre-hire candidate background investigation | P11 (Gregory only) |
+| Pre-hire candidate background investigation | P11 (Gregory & Jennifer only) |
 
 ---
 
@@ -172,7 +172,7 @@ Creation (owner assigns ID, creates project) → Active (produces deliverables, 
 
 ### 5.4 Ecosystem Awareness Block (EAB)
 
-Every satellite's custom instructions must include the EAB. Master file: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Current version: **v1.5**. Deployed by copy-paste (embedded, not runtime-fetched). Placement: after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS.
+Every satellite's custom instructions must include the EAB. Master file: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Current version: **v1.6**. Deployed by copy-paste (embedded, not runtime-fetched). Placement: after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS.
 
 ---
 
@@ -192,8 +192,8 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 | P6 | I-24 Track A counsel opinion (Q4-Q5) | P10 | TBD | Gates W-23 |
 | P3 | I-24 Track A counsel opinion (Q1-Q3) | P10 | TBD | Gates I-16, I-17, I-18, I-19, I-37 |
 | P7 | Accounting data source decision | D-01 | TBD | Blocks I-23 |
-| P6 | CIR go/no-go for finalist candidates | P11 | Ongoing | Active — triggered pre-offer |
-| P10 | CIR custody filing | P11 | Ongoing | Active — P11 outputs to P10 |
+| P6 | CIR go/no-go for finalist candidates | P11 | Ongoing | Active — triggered pre-offer; Gregory or Jennifer communicates |
+| P10 | CIR custody filing | P11 | Ongoing | Active — P11 outputs to P10 (Gregory files) |
 
 ---
 
@@ -215,6 +215,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.8 | 2026-04-01 | P11 access expanded: Gregory (only) → Gregory & Jennifer Brezniak (full access). Updated Section 2.2 owner and notes. Updated Section 3.4 routing rules and P11 rule. Updated Section 4 redirect. Updated Section 5.4 EAB reference to v1.6. Updated Section 6 dependency notes. P10 custody filing remains Gregory-only. |
 | 1.7 | 2026-03-23 | Added Section 3.5 — Handoff Validation Protocol. Three-question pre-generation check (origin, destination, P0 special case). Automation constraint requiring [ORIGIN:] audit line for all automated handoff pipelines. Added 2026-03-22 handoffs to log (P0→P4 CIP/DDL, P7→P0 Dev Lifecycle). |
 | 1.6 | 2026-03-22 | Section 2.3: Updated P4-002 button count 42 → 47. |
 | 1.5 | 2026-03-17 | Added P11 to satellite registry. Added P11 routing rules and redirect. Added P6/P10 dependencies from P11. Updated scope P0–P11. Updated EAB reference to v1.5. |

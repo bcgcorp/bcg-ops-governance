@@ -1,8 +1,8 @@
 # BCG Corp — Team Directory & Roles
 
-**Version:** 2.2
+**Version:** 2.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-22
+**Last Updated:** 2026-04-01
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -26,8 +26,8 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Email:** gb@bcg-corp.com
 - **Role:** Founder, final approver on all deliverables, primary strategic decision-maker. Currently absorbing BIM Lead responsibilities (temporary — pending I-40 benefits resolution and re-recruitment).
 - **Tools:** Windsurf IDE, Claude Code, Claude.ai, Odoo (admin), Open WebUI, Xmind
-- **Project Assignments:** P0 (owner), P0-001 (owner), P1 (owner), P3 (owner), P8 (owner), P9 (owner), P10 (owner), P11 (owner — sole, restricted)
-- **Active Initiatives:** I-24 (Licensing & Insurance Audit — self-execute), I-54 (Production Rework Module — architecture), I-64 (Candidate Pre-Hire OSINT — sole operator)
+- **Project Assignments:** P0 (owner), P0-001 (owner), P1 (owner), P3 (owner), P8 (owner), P9 (owner), P10 (owner), P11 (owner — restricted, shared with Jennifer Brezniak)
+- **Active Initiatives:** I-24 (Licensing & Insurance Audit — self-execute), I-54 (Production Rework Module — architecture), I-64 (Candidate Pre-Hire OSINT)
 - **Open Decisions:** D-01 (accounting data source), D-05 (bcg-ops-knowledge repo — Bob), D-06 (@cap chatbot — Jason)
 - **Notes:** All outputs require Gregory's approval before flowing between projects. Backup bid/no-bid authority delegated to Stephanie Bernardo (triggers after 48hr non-response). April 12 calendar hold: CI/CD write mode upgrade review.
 
@@ -35,11 +35,11 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 - **Title:** Senior HR Generalist
 - **Status:** Active — Full-time
 - **Email:** jlb@bcg-corp.com
-- **Role:** HR operations, benefits administration, SOP library ownership, process documentation coordination. P2 and P6 project owner.
+- **Role:** HR operations, benefits administration, SOP library ownership, process documentation coordination. P2 and P6 project owner. Full access to P11 (Candidate OSINT & Pre-Hire Intelligence) — can trigger, review, and act on CIRs; carries findings directly into P6 hiring pipeline.
 - **Tools:** Claude.ai, Odoo, Open WebUI
-- **Project Assignments:** P2 (owner), P6 (owner)
+- **Project Assignments:** P2 (owner), P6 (owner), P11 (full access)
 - **Active Initiatives:** I-40 (Benefits Package Restructuring), I-50 Phase 1 (Standard Folder & File Structure — owner/coordinator), I-57 (W-19 Chat Quality Evaluation SOP)
-- **Notes:** Jason Harris April 1 payroll/onboarding prep. I-50 Ph1: collect input from Cory, Bob, Rachel, Victor, Stephanie.
+- **Notes:** Jason Harris April 1 payroll/onboarding prep. I-50 Ph1: collect input from Cory, Bob, Rachel, Victor, Stephanie. P11 access does not extend to P10 — CIR custody filing remains Gregory-only.
 
 ### Bob Brezniak
 - **Title:** Manager, Information Technology
@@ -146,7 +146,7 @@ Quick reference for primary project assignments. Dash (—) means no current ass
 | Name | Primary Projects | Role |
 |------|-----------------|------|
 | Gregory | P0, P0-001, P1, P3, P8, P9, P10, P11 | Owner |
-| Jennifer | P2, P6 | Owner |
+| Jennifer | P2, P6, P11 | Owner / Full Access |
 | Bob | P5, P5-001, P5-002, P9 | Lead / Owner |
 | Victor | P7 | Owner (sole) |
 | Jason (April 1) | P4, P4-001, P4-002 | Owner / Contributor |
@@ -190,6 +190,7 @@ The following individual must NOT be assigned to any initiative, role, or projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 2.3 | 2026-04-01 | P11 access expanded: Gregory sole → Gregory & Jennifer Brezniak (full access). Updated Gregory project assignments (P11 now "restricted, shared with Jennifer Brezniak"). Updated Gregory I-64 (removed "sole operator"). Updated Jennifer role description, project assignments (added P11 full access), and notes (P10 custody exclusion). Updated Role-to-Project Matrix (Jennifer adds P11, role "Owner / Full Access"). |
 | 2.2 | 2026-03-22 | Scope P0–P10 → P0–P11. Added P11 to Gregory's project assignments and active initiatives (I-64). Updated Role-to-Project Matrix Gregory row to include P11. Sync Liaisons 17 → 18. Removed stale odoo.sh decommission note from Bob (complete). Updated Bob open actions to current (D-05, I-69 AD group, MCP replication). Added Jason D-06 and EA filing note. Updated Victor active initiatives (I-56, I-66). Added Rachel I-66 approver role. |
 | 2.1 | 2026-03-16 | Scope P0–P9 → P0–P10. Added P10 to Gregory's project assignments. Updated Role-to-Project Matrix (Gregory row includes P10). Sync Liaisons 16→17 projects. Added I-24 co-owner to Rachel McGee entry. |
 | 2.0 | 2026-03-12 | Complete rewrite. Updated all titles, roles, and project assignments to reflect current ecosystem (16 projects). Added Jason start date (April 1). Added Stephanie as backup bid/no-bid authority. Updated Victor to P7 sole owner (P7 subprojects retired). Added Rachel as P8-001 owner. Added BIM Lead vacancy. Added Bernard Lewis restriction. Added active initiatives per person. Updated source of truth to GitHub (GOV-001). Simplified Role-to-Project Matrix. Removed stale "P0–P7" scope. |

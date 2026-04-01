@@ -1,8 +1,8 @@
 # BCG Corp — Ecosystem Awareness Block (EAB)
 
-**Version:** 1.5
+**Version:** 1.6
 **Effective:** March 2026
-**Last Updated:** 2026-03-17
+**Last Updated:** 2026-04-01
 **Scope:** All Claude Projects (P1–P11, all subprojects)
 **Owner:** Gregory Bernardo, President
 
@@ -30,7 +30,7 @@ Update the EAB and re-propagate when:
 
 ### Update Process
 1. Edit the relevant section of this file in GitHub
-2. Increment the version in the block header (v1.5 to v1.6, etc.)
+2. Increment the version in the block header (v1.6 to v1.7, etc.)
 3. Update Section 5 (change log)
 4. Re-paste the updated block into all affected projects listed in Section 6
 5. Check off each project in the propagation tracker
@@ -69,9 +69,9 @@ Use the subproject variant from Section 4. Paste after SECURITY BOUNDARIES.
 
 ## 3. Satellite EAB Block — COPY THIS FOR P1–P11
 
-EAB: v1.5 | 2026-03-17
+EAB: v1.6 | 2026-04-01
 
-CROSS-PROJECT ECOSYSTEM (EAB v1.5 — March 2026)
+CROSS-PROJECT ECOSYSTEM (EAB v1.6 — April 2026)
 
 This project is one satellite in BCG's 18-project Claude ecosystem. P0 is the strategic synthesis hub; P1–P11 are production satellites; P0-001, P4-001, P4-002, P5-001, P5-002, and P8-001 are active subprojects. Understanding the ecosystem prevents scope drift and enables proper routing.
 
@@ -89,7 +89,7 @@ PROJECT REGISTRY
 | P8 | Proposals & RFP Operations | RFP intake, bid/no-bid decisions, proposal development, promise tracking, pipeline stats. |
 | P9 | Business Continuity & Resilience | Enterprise BCP, dependency risk register, continuity protocols, tabletop exercises. |
 | P10 | Legal, Compliance & Risk | Licensing, insurance governance, contract review, legal posture, compliance analysis. Gregory-only. |
-| P11 | Candidate OSINT & Pre-Hire Intelligence | Pre-hire public record and digital footprint review. Gregory-only. Triggered pre-offer. RESTRICTED. |
+| P11 | Candidate OSINT & Pre-Hire Intelligence | Pre-hire public record and digital footprint review. Gregory & Jennifer only. Triggered pre-offer. RESTRICTED. |
 
 SUBPROJECTS
 | ID | Parent | Name |
@@ -117,7 +117,7 @@ Common redirects:
 - Strategic synthesis/cross-project coordination → P0
 - Business continuity planning → P9
 - Legal/compliance/licensing/contract review/insurance → P10 (Gregory-only; route to Gregory directly)
-- Pre-hire candidate background investigation → P11 (Gregory-only; RESTRICTED)
+- Pre-hire candidate background investigation → P11 (Gregory & Jennifer only; RESTRICTED)
 - Inbound business documents (RFPs, Contracts, POs, WOs, COs) → P8-001
 
 HANDOFF FORMAT
@@ -177,6 +177,7 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
+| 1.6 | 2026-04-01 | P11 access expanded: "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. | Pending — P11 updated at deploy; P1–P10 and subprojects require re-propagation |
 | 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Yes — 17/17 projects at v1.5 (2026-03-17) |
 | 1.4 | 2026-03-17 | Added P10 to project registry. Updated project count 16 to 17. Updated P6 scope: HR & People (removed Legal Ops). Added P10 routing redirect. Added P10 flagging example. | Superseded by v1.5 |
 | 1.3 | 2026-03-12 | Retired P7-001 through P7-004. Added P0-001, P5-002, P8-001. Updated project count 17 to 16. | Superseded by v1.4 |
@@ -192,28 +193,28 @@ Subproject routing parent assignments:
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P1 | v1.5 | 2026-03-17 | Current |
-| P2 | v1.5 | 2026-03-17 | Current |
-| P3 | v1.5 | 2026-03-17 | Current |
-| P4 | v1.5 | 2026-03-17 | Current |
-| P5 | v1.5 | 2026-03-17 | Current |
-| P6 | v1.5 | 2026-03-17 | Current |
-| P7 | v1.5 | 2026-03-17 | Current |
-| P8 | v1.5 | 2026-03-17 | Current |
-| P9 | v1.5 | 2026-03-17 | Current |
-| P10 | v1.5 | 2026-03-17 | Current |
-| P11 | v1.5 | 2026-03-17 | Embedded at creation |
+| P1 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P2 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P3 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P4 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P5 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P6 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P7 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P8 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P9 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P10 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P11 | v1.6 | 2026-04-01 | Updated at deploy — P11 project instructions updated directly |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P0-001 | v1.5 | 2026-03-17 | Current |
-| P4-001 | v1.5 | 2026-03-17 | Current |
-| P4-002 | v1.5 | 2026-03-17 | Current |
-| P5-001 | v1.5 | 2026-03-17 | Current |
-| P5-002 | v1.5 | 2026-03-17 | Current |
-| P8-001 | v1.5 | 2026-03-17 | Current |
+| P0-001 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P4-001 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P4-002 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P5-001 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P5-002 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P8-001 | v1.5 | 2026-03-17 | Needs v1.6 |
 
 ### Retired (do not propagate)
 
