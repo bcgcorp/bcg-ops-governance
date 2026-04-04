@@ -1,9 +1,9 @@
 # BCG Corp -- Tools Inventory
 
 **Document ID:** GOV-013
-**Version:** 1.2
+**Version:** 1.3
 **Effective:** March 2026
-**Last Updated:** 2026-03-22
+**Last Updated:** 2026-04-04
 **Project:** P4-001
 **Owner:** Gregory Bernardo, President
 **GitHub Path:** `standards/BCG_Tools_Inventory.md`
@@ -12,13 +12,16 @@
 
 # BCGTools pyRevit Extension Inventory
 
-**Total: 46 buttons** across **10 panels**
+**Total: 52 buttons** across **11 panels**
 
-**Status key:** Complete | Beta | In Development | TBD
+**Status key:** Complete | Beta | In Development | Designed | On Hold | TBD
 
 > **NOTE (2026-03-22):** The IronRacks panel (2 buttons) is present in this inventory but does not
 > appear in the P4-002 EAB button table (B-01 through B-46). Panel-to-B-number mapping for
 > IronRacks requires Gregory confirmation before the gap can be closed.
+
+> **NOTE (2026-04-04):** B-47 and B-48 panel assignments are pending Gregory confirmation.
+> B-49 through B-52 are assigned to the new BCG Notes panel (Panel 11).
 
 ---
 
@@ -161,14 +164,55 @@ Scope box utilities (experimental/temporary).
 
 ---
 
+## 11. BCG Notes Panel (4 buttons)
+Model-embedded issue tracking with Odoo Rework module integration.
+
+| B# | Button | Status | Description |
+|----|--------|--------|-------------|
+| B-49 | **New Note** | Designed | Create a new model note (category: Issue/Todo/Warning/Info/Note). Captures model context automatically (project number, model name, active view). Writes to sidecar JSON at Q:\Pearl_Prod\zz_revit_BCGNotes\ then attempts Odoo sync. |
+| B-50 | **View Notes** | Designed | Display all notes for the current model filtered by status and category. Reads from sidecar JSON. Shows Odoo sync status per entry. |
+| B-51 | **Edit / Resolve** | Designed | Select an existing note to edit or mark resolved. Updates sidecar JSON and calls Odoo update endpoint. Resolution is authoritative in Odoo; this button is a convenience path. |
+| B-52 | **Sync Pending** | Designed | Sweep all sidecar JSON entries with odoo_synced: false and retry Odoo push. Handles offline/connectivity gap recovery. |
+
+> **Architecture note:** Write-ahead JSON sidecar at `Q:\Pearl_Prod\zz_revit_BCGNotes\{ProjectNumber}_notes.json`
+> is written first on every create/edit operation. Odoo push is attempted second. JSON is the
+> write-ahead log; Odoo Rework module is the system of record. Entries carry `odoo_synced`
+> boolean and `odoo_record_id` for reconciliation.
+>
+> **Integration gate:** Odoo REST/MCP endpoint definition required from P7 (Victor) before
+> Revit-side API calls can be implemented. Field mapping to existing Rework module record
+> structure pending P7 response to handoff issued 2026-04-04.
+>
+> **Future Odoo integration:** Revit-originated entries distinguishable from manual Rework
+> entries via `source: "revit"` field. Revit context (model name, path, project number,
+> active view, Revit version, optional element ID) stored as structured data on Odoo record.
+
+---
+
+## Pending Panel Assignment
+
+The following buttons have been designed but panel placement has not yet been confirmed by Gregory.
+
+| B# | Button | Status | Description |
+|----|--------|--------|-------------|
+| B-47 | **Project Info Writer** | On Hold | Read project parameters from Excel at fixed network path, match row by Project Number, present read-only confirmation before writing to model. Blocked: title block shared parameter list not yet received. Unblock path: extract from title block .rfa or IAH100 model. |
+| B-48 | **Door/Room Resolve & Tag** | In Development | Three-phase: Phase 1 investigates blocking via nested link walk; Phase 2 self-heals via workset/path/Approach-B tiers; Phase 2b rehosts orphaned tags; Phase 3 tags untagged doors/rooms in directly-loaded links. Windsurf prompt delivered. Live test on IAH100 pending. |
+
+> **Action required:** Gregory to confirm panel placement for B-47 and B-48 so these rows
+> can be moved to their correct panel sections in the next GOV-013 update.
+
+---
+
 ## Summary by Status
 
 | Status | Count |
 |--------|-------|
 | Complete | 26 |
 | Beta | 12 |
-| In Development | 8 |
-| **Total** | **46** |
+| In Development | 9 |
+| Designed | 4 |
+| On Hold | 1 |
+| **Total** | **52** |
 
 ## Summary by Panel
 
@@ -180,10 +224,12 @@ Scope box utilities (experimental/temporary).
 | **Print** | 4 | PDF and print output automation |
 | **FOV** | 4 | Camera FOV visualization |
 | **LinkedModel** | 4 | Linked model management |
+| **BCG Notes** | 4 | Model issue tracking / Odoo integration |
 | **Linked CAD** | 3 | DWG layer management |
 | **Temp** | 3 | Scope box utilities |
 | **IronRacks** | 2 | Network switch assignment |
 | **Parameters** | 2 | Parameter/family tools |
+| **Pending Assignment** | 2 | B-47, B-48 -- panel TBD |
 
 ---
 
@@ -191,6 +237,7 @@ Scope box utilities (experimental/temporary).
 
 | Version | Date | Change |
 |---------|------|--------|
+| 1.3 | 2026-04-04 | Added B-47 (Project Info Writer, On Hold) and B-48 (Door/Room Resolve & Tag, In Development) to Pending Panel Assignment section. Added BCG Notes panel (Panel 11) with B-49 through B-52 (status: Designed). Updated total 46 to 52 buttons, 10 to 11 panels. Added Designed and On Hold to status key. |
 | 1.2 | 2026-03-22 | Added Print panel (Section 7) with B-43 through B-46. Updated total 42 to 46 buttons, 9 to 10 panels. In Development count updated 4 to 8. Decisions: B-numbers append (not insert), dedicated Print panel (not Sheets or Temp). |
 | 1.1 | 2026-03-22 | Added Status column to all panels. Corrected Sheets panel button name: "Duplicate Sheet Set" to "Duplicate Sheet Set to New Level" (B-42, confirmed Complete 2026-03-17). Added IronRacks and RenumberElements panel gap notes for Gregory confirmation. |
 | 1.0 | 2026-03-16 | Initial version. |
