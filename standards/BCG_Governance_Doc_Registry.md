@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 2.8
+**Version:** 2.9
 **Effective:** March 2026
-**Last Updated:** 2026-03-26
+**Last Updated:** 2026-04-04
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -130,9 +130,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Tools_Inventory.md` |
-| **Current Version** | 1.2 |
+| **Current Version** | 1.3 |
 | **Fetch before** | PyRevit button development, backlog review, panel inventory check, status confirmation, print button references |
-| **Governs** | BCGTools pyRevit extension inventory. 46 buttons across 10 panels. Complete button descriptions, panel assignments, deployment status, gate conditions for print buttons (B-43--B-46). |
+| **Governs** | BCGTools pyRevit extension inventory. 52 buttons across 11 panels. Complete button descriptions, panel assignments, deployment status, gate conditions for print buttons (B-43--B-46). BCG Notes panel (B-49--B-52, status: Designed). B-47/B-48 pending panel assignment confirmation. |
 
 ### 3.12 SOP Governance & Intake Protocol (SOP-GOV-001)
 
@@ -231,7 +231,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.8 |
+| **Current Version** | 2.9 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -263,6 +263,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.9 | 2026-04-04 | Bumped GOV-013 tracked version 1.2→1.3. Updated governs description: 52 buttons, 11 panels, BCG Notes panel (B-49--B-52), B-47/B-48 pending. |
 | 2.8 | 2026-03-26 | GOV-002 tracked version 2.5→2.6 (69 active initiatives, next slot I-72, W-24 claimed/W-25 next). SOP-GOV-001 corrected tracked version 1.3→1.5 (file was already v1.4; bumped to v1.5 this session for W-slot update). |
 | 2.7 | 2026-03-24 | Updated GOV-002 tracked version 2.4→2.5 (68 active initiatives, next slot I-71). Updated GOV-018 tracked version 2.1→2.2 (BOD Titus clarification). |
 | 2.6 | 2026-03-24 | Updated GOV-018 tracked version 1.0→2.0. Updated governs description: 78 entries, 23 campuses, 13 sites, 14 unconfirmed primes. |
