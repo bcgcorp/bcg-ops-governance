@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 2.9
+**Version:** 3.0
 **Effective:** March 2026
-**Last Updated:** 2026-04-04
+**Last Updated:** 2026-04-15
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -58,18 +58,18 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Project_Ecosystem_and_Handoffs.md` |
-| **Current Version** | 1.5 |
+| **Current Version** | 1.8 |
 | **Fetch before** | Cross-project routing decisions, handoff creation, subproject setup, dependency tracking |
-| **Governs** | Project registry (P0-P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4) |
+| **Governs** | Project registry (P0-P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4). Section 3.5: Handoff Validation Protocol (three-question origin check + [ORIGIN:] audit line for automated pipelines). P11 access: Gregory & Jennifer Brezniak. |
 
 ### 3.4 Team Directory & Roles (GOV-016)
 
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Team_Directory.md` |
-| **Current Version** | 2.1 |
+| **Current Version** | 2.4 |
 | **Fetch before** | Assigning owners/reviewers, referencing team members, onboarding tasks, headcount questions |
-| **Governs** | Roster (11 members + 1 vacant), titles, emails, project assignments, availability, current headcount, restricted assignments |
+| **Governs** | Roster (12 members + 1 vacant), titles, emails, project assignments, availability, current headcount, restricted assignments. Includes Jason Harris (Active, Fractional W-2, started 2026-04-01) and Oscar Cucaita Sanchez (Project Manager, full-time, started 2026-04-15). |
 
 ### 3.5 Infrastructure Inventory (GOV-009)
 
@@ -85,9 +85,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.6 |
+| **Current Version** | 2.7 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 69 active initiatives (I-01--I-71, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-72. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. |
+| **Governs** | 68 active initiatives (I-01--I-71, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-72. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -199,13 +199,13 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Ecosystem_Awareness_Block.md` |
-| **Current Version** | 1.5 |
+| **Current Version** | 1.6 |
 | **Deployment method** | Copy-paste into custom instructions (not fetched at runtime) |
 | **Placement** | After SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS |
 | **Scope** | All satellite projects (P1-P11) and subprojects |
 | **Update trigger** | New project/subproject created, project renamed/closed, routing pattern added |
 | **See also** | Style Guide Section 16 for full EAB specification |
-| **Propagation status** | v1.5 embedded in P11 at creation. Propagation to 16 remaining instruction files pending. |
+| **Propagation status** | v1.5 fully propagated to all 17 projects (complete 2026-03-17). v1.6 deployed to P11 (2026-04-01). Propagation of v1.6 to remaining 16 projects pending. |
 
 **Why embedded, not fetched:** The EAB provides cross-project routing and handoff capabilities. These must work even when GitHub is unavailable. Embedding ensures zero-dependency availability.
 
@@ -231,7 +231,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 2.9 |
+| **Current Version** | 3.0 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -243,7 +243,9 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
-| **Total in standards folder** | **20** | -- |
+| Reference documents | 1 | Ecosystem Architecture Analysis |
+| Status documents | 1 | Ecosystem Status (current: 2026-04-15) |
+| **Total in standards folder** | **22** | -- |
 
 ---
 
@@ -263,6 +265,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 3.0 | 2026-04-15 | Audit fixes: GOV-007 tracked version 1.5→1.8 (Handoff Validation Protocol, P11 Jennifer access). GOV-016 tracked version 2.1→2.4 (Jason active, Oscar added). GOV-002 tracked version 2.6→2.7 (count corrected 69→68). EAB tracked version 1.5→1.6; corrected propagation note (v1.5 complete 2026-03-17; v1.6 to P11 only; 16 projects pending v1.6). Added Section 9 (Reference Documents — Ecosystem Architecture Analysis). Added Section 10 (Status Documents — Ecosystem Status). Updated total document count 20→22. |
 | 2.9 | 2026-04-04 | Bumped GOV-013 tracked version 1.2→1.3. Updated governs description: 52 buttons, 11 panels, BCG Notes panel (B-49--B-52), B-47/B-48 pending. |
 | 2.8 | 2026-03-26 | GOV-002 tracked version 2.5→2.6 (69 active initiatives, next slot I-72, W-24 claimed/W-25 next). SOP-GOV-001 corrected tracked version 1.3→1.5 (file was already v1.4; bumped to v1.5 this session for W-slot update). |
 | 2.7 | 2026-03-24 | Updated GOV-002 tracked version 2.4→2.5 (68 active initiatives, next slot I-71). Updated GOV-018 tracked version 2.1→2.2 (BOD Titus clarification). |
@@ -277,6 +280,36 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | 1.8 | 2026-03-17 | Complete rewrite. Migrated to GitHub-first governance. |
 | 1.1 | 2026-03-07 | Added BCG Custom Module Registry. |
 | 1.0 | 2026-03-01 | Initial version. |
+
+---
+
+## 9. Reference Documents
+
+These documents are committed to `standards/` for reference and are indexed here for folder hygiene. They are not runtime-fetched governance standards but are tracked to prevent unregistered orphan files.
+
+### 9.1 Ecosystem Architecture Analysis
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Ecosystem_Architecture_Analysis.md` |
+| **Type** | Reference document — informational, not runtime-fetched |
+| **Registered** | 2026-04-15 |
+| **Governs** | Comprehensive architecture analysis of BCG's 18-project Claude ecosystem. Produced 2026-03-22. |
+
+---
+
+## 10. Status Documents
+
+Status documents are operational snapshots committed to `standards/` at each sync cycle. The current file is authoritative; prior versions are superseded and may be deleted. Not runtime-fetched — upload current version to P0 project knowledge to activate as runtime reference.
+
+### 10.1 Ecosystem Status
+
+| Field | Value |
+|-------|-------|
+| **File pattern** | `BCG_Ecosystem_Status_YYYY-MM-DD.md` |
+| **Current file** | `BCG_Ecosystem_Status_2026-04-15.md` |
+| **Type** | Operational status snapshot — superseded by next sync |
+| **Governs** | Current state of all 18 projects, team load, open decisions, 30/60/90-day horizon. Upload to P0 project knowledge to activate as runtime reference. Delete prior dated versions after upload. |
 
 ---
 
