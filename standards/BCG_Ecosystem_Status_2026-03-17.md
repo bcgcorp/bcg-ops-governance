@@ -1,1 +1,0 @@
-# SUPERSEDED\n\nThis file has been superseded by `BCG_Ecosystem_Status_2026-03-22.md`.\n\nRetained for git history only. Safe to delete via GitHub web UI.\n
