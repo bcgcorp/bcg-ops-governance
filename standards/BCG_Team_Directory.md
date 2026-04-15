@@ -1,6 +1,6 @@
 # BCG Corp — Team Directory & Roles
 
-**Version:** 2.4
+**Version:** 2.5
 **Effective:** March 2026
 **Last Updated:** 2026-04-15
 **Scope:** All Claude Projects (P0–P11) and subprojects
@@ -77,7 +77,7 @@ This document is the single source of truth for BCG Corp's team roster, roles, p
 ### Oscar Cucaita Sanchez
 - **Title:** Project Manager
 - **Status:** Active — Full-time (started approx. 2026-04-15)
-- **Email:** oscar@bcg-corp.com
+- **Email:** ocs@bcg-corp.com
 - **Role:** Project management support. Direct report to Gregory Bernardo.
 - **Tools:** Claude.ai, Odoo, Open WebUI
 - **Project Assignments:** — (TBD — pending initiative assignments from Gregory)
@@ -201,6 +201,7 @@ The following individual must NOT be assigned to any initiative, role, or projec
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 2.5 | 2026-04-15 | Corrected Oscar Cucaita Sanchez email: oscar@bcg-corp.com → ocs@bcg-corp.com. |
 | 2.4 | 2026-04-15 | Jason Harris status updated: Pre-employment → Active Fractional W-2 (started 2026-04-01). Active initiatives updated to reflect week-2 state. Added Oscar Cucaita Sanchez (PM, full-time, Gregory direct report). Updated Role-to-Project Matrix (added Oscar, confirmed Jason row). Updated Jennifer notes (BCG-Wizard received, Layer B integration task). Updated Bob open actions (AI Config approved, checklist active). Headcount 11→12 FTE + 1 vacant. |
 | 2.3 | 2026-04-01 | P11 access expanded: Gregory sole → Gregory & Jennifer Brezniak (full access). Updated Gregory project assignments (P11 now "restricted, shared with Jennifer Brezniak"). Updated Gregory I-64 (removed "sole operator"). Updated Jennifer role description, project assignments (added P11 full access), and notes (P10 custody exclusion). Updated Role-to-Project Matrix (Jennifer adds P11, role "Owner / Full Access"). |
 | 2.2 | 2026-03-22 | Scope P0–P10 → P0–P11. Added P11 to Gregory's project assignments and active initiatives (I-64). Updated Role-to-Project Matrix Gregory row to include P11. Sync Liaisons 17 → 18. Removed stale odoo.sh decommission note from Bob (complete). Updated Bob open actions to current (D-05, I-69 AD group, MCP replication). Added Jason D-06 and EA filing note. Updated Victor active initiatives (I-56, I-66). Added Rachel I-66 approver role. |
