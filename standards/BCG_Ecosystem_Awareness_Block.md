@@ -2,7 +2,7 @@
 
 **Version:** 1.6
 **Effective:** March 2026
-**Last Updated:** 2026-04-01
+**Last Updated:** 2026-04-15
 **Scope:** All Claude Projects (P1–P11, all subprojects)
 **Owner:** Gregory Bernardo, President
 
@@ -177,7 +177,7 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.6 | 2026-04-01 | P11 access expanded: "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. | Pending — P11 updated at deploy; P1–P10 and subprojects require re-propagation |
+| 1.6 | 2026-04-01 | P11 access expanded: "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. | ✅ Yes — all 17 projects at v1.6 (2026-04-15). P11 updated at deploy (2026-04-01); P1–P10 and all subprojects updated 2026-04-15 via GitHub MCP batch commits. |
 | 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Yes — 17/17 projects at v1.5 (2026-03-17) |
 | 1.4 | 2026-03-17 | Added P10 to project registry. Updated project count 16 to 17. Updated P6 scope: HR & People (removed Legal Ops). Added P10 routing redirect. Added P10 flagging example. | Superseded by v1.5 |
 | 1.3 | 2026-03-12 | Retired P7-001 through P7-004. Added P0-001, P5-002, P8-001. Updated project count 17 to 16. | Superseded by v1.4 |
@@ -193,28 +193,28 @@ Subproject routing parent assignments:
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P1 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P2 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P3 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P4 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P5 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P6 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P7 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P8 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P9 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P10 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P11 | v1.6 | 2026-04-01 | Updated at deploy — P11 project instructions updated directly |
+| P1 | v1.6 | 2026-04-15 | ✅ Complete |
+| P2 | v1.6 | 2026-04-15 | ✅ Complete |
+| P3 | v1.6 | 2026-04-15 | ✅ Complete |
+| P4 | v1.6 | 2026-04-15 | ✅ Complete |
+| P5 | v1.6 | 2026-04-15 | ✅ Complete |
+| P6 | v1.6 | 2026-04-15 | ✅ Complete |
+| P7 | v1.6 | 2026-04-15 | ✅ Complete |
+| P8 | v1.6 | 2026-04-15 | ✅ Complete |
+| P9 | v1.6 | 2026-04-15 | ✅ Complete |
+| P10 | v1.6 | 2026-04-15 | ✅ Complete |
+| P11 | v1.6 | 2026-04-01 | ✅ Complete — updated at deploy |
 
 ### Subprojects (6)
 
 | Project | EAB Version | Date Pasted | Notes |
 |---------|-------------|-------------|-------|
-| P0-001 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P4-001 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P4-002 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P5-001 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P5-002 | v1.5 | 2026-03-17 | Needs v1.6 |
-| P8-001 | v1.5 | 2026-03-17 | Needs v1.6 |
+| P0-001 | v1.6 | 2026-04-15 | ✅ Complete |
+| P4-001 | v1.6 | 2026-04-15 | ✅ Complete |
+| P4-002 | v1.6 | 2026-04-15 | ✅ Complete |
+| P5-001 | v1.6 | 2026-04-15 | ✅ Complete |
+| P5-002 | v1.6 | 2026-04-15 | ✅ Complete |
+| P8-001 | v1.6 | 2026-04-15 | ✅ Complete |
 
 ### Retired (do not propagate)
 
