@@ -1,0 +1,15 @@
+{
+  "_description": "Checkpoint file for the BCG contact batch runner. Tracks progress through historical email archive to build known-associates.md. Updated automatically after each batch. Do not edit manually unless recovering from a corrupted run.",
+  "status": "not_started",
+  "lastProcessedDateTime": null,
+  "lastProcessedEmailId": null,
+  "totalEmailsProcessed": 0,
+  "totalContactsAdded": 0,
+  "totalContactsSkipped": 0,
+  "totalContactsAlreadyKnown": 0,
+  "currentBatch": 0,
+  "lastRunAt": null,
+  "lastError": null,
+  "completedAt": null,
+  "notes": "Set status to 'not_started' to trigger a fresh run from the beginning. Set to 'in_progress' during active processing. Set to 'complete' when all historical emails have been processed. Set to 'paused' to safely stop and resume later."
+}
