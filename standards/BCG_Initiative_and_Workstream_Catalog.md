@@ -1,12 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.7
-**Effective:** March 2026
-**Last Updated:** 2026-04-15
+**Version:** 2.8
+**Effective:** April 2026
+**Last Updated:** 2026-04-17
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**What Changed (v2.7):** Corrected initiative count header: 69 → 68 (verified by row count 2026-04-15 audit). No rows added or removed. Next slot I-72 unchanged.
+**What Changed (v2.8):** Added I-72 (Superpowers Methodology Framework — Evaluation & Integration). Windsurf compatibility confirmed via native Agent Skills support (no porting required). Updated P4 cross-reference (12→13). Added I-72 to WS-10. Next slot I-72 → I-73.
 
 ---
 
@@ -24,7 +24,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 2. Initiative Registry
 
-68 active initiatives (I-01 through I-71, minus I-20 removed, minus I-30 removed, minus I-32 rejected). Next available slot: **I-72**.
+69 active initiatives (I-01 through I-72, minus I-20 removed, minus I-30 removed, minus I-32 rejected). Next available slot: **I-73**.
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -99,6 +99,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-69 | BCG Master Strategic Plan Dashboard — Cloudflare Pages | Bob Brezniak / Gregory Bernardo | Complete | P5 / P0 | 2026-03-17 | dashboard.bcg-corp.com. Azure AD SSO. Auto-deploys on push to main. Open action: Bob to add Jennifer/Rachel/Cory/Stephanie to AD group before URL distribution. |
 | I-70 | Client Deliverable Schedule Tracker | Rachel McGee / Gregory Bernardo | Active | P8-001 / P7 / P4 | Q2 '26 | Automated 4am Cowork run on Gregory's workstation. Reads `intake_staging.csv` + Gregory email scan → writes `bcg_deliverable_schedule.xlsx` (OneDrive) → posts Teams digest to #schedule-updates. Staff intake via Claude.ai Team Project (CW-002, Rachel owns 5pm consolidate). Odoo approval queue: Cory Bialke (CW-003, Victor build, ~14–16hrs). Phase 1 complete 2026-03-24 (82 projects, 24 campuses, 14 sites registered). Phase 2 active (bridge). Phase 3 gated on Odoo MCP (D-06). Project code registry: GOV-018. Instruction files: `bcg-ops-claude-projects/cowork/` (CW-001, CW-002, CW-003). Associated SOP: W-24 (Schedule Tracking & Sync SOP — pending). |
 | I-71 | On-Premise AI / Revit Live Model Integration | Jason Harris | Planned | P4-002 | Q3 '26 | Deploy locally-hosted MCP server (RevitMCP pattern) connecting BCG on-premise LLM (DGX Spark / Open WebUI) to client Revit models. DATA BOUNDARY: cloud AI (Claude.ai) NEVER has direct access to client Revit models — script dev uses sanitized model only (W-25 SOP). Phase 1: read-only — parameter queries, QC audits, zone validation, device schedule verification. Phase 2: write-capable — device parameter population, schedule generation, zone assignment. Hard deps: I-65 Ph1 complete, I-22 model deployed, W-25 Sanitized Dev Model SOP exists, Jason onboarded. Coordinate with I-67 (shared parameter overlap risk — resolve before independent builds). Market angle: on-prem AI differentiator for hyperscaler clients — no cloud exposure of client model data. |
+| I-72 | Superpowers Methodology Framework — Evaluation & Integration | Jason Harris / Gregory (Ph1) | Planned | P4 | Q3 '26 | Open-source skills framework (obra/superpowers, MIT, Anthropic official marketplace, v5.0.7). Windsurf natively supports Agent Skills spec (Jan 2026) — skills are portable across Claude Code and Windsurf with no rewriting. Ph1 (Q2): Gregory personal eval in Claude Code + Windsurf — low-stakes tasks, both surfaces. Ph2 (Q2): Jason scopes deployment pattern (git-vendored into bcg-ops-revit-tools/.windsurf/skills/ for workspace-level install; Claude Code install via plugin marketplace for I-52 CI/CD). Bob runs scoped security review (supply chain posture post-v5.0.2, SessionStart hook analysis, pinned-version policy). Ph3 (Q3): Team deployment + BCG-specific skills authored on top (Revit QC patterns, hyperscaler review discipline, Odoo module review patterns). Known degradation: subagent-driven-development and dispatching-parallel-agents fall back to serial execution in Windsurf (Cascade is single-agent-flow); for these workflows prefer Claude Code. Coexists with .windsurfrules v1.1 — Rules and Skills are distinct layers. Architectural reference for I-65 (subagent pattern) and I-71 (on-prem AI methodology template). No Windsurf porting work required. |
 
 ### Initiative Status Definitions
 
@@ -127,7 +128,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | WS-07 | Capture Strategy | Greg | Active | P0/P3/P8 | — | 17 firms, 3 segments tracked. |
 | WS-08 | Direct MSA Evaluation | Greg | Active | P0/P3 | — | |
 | WS-09 | New Teaming & Diversification | Greg | Active | P0/P3 | I-37 | CA Takeover playbook (I-37) approved. |
-| WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-25, I-26, I-27, I-28, I-31, I-43, I-44, I-45, I-46, I-47, I-48, I-49, I-51, I-52, I-60, I-61, I-65, I-67, I-70, I-71 | Revit automation, CI/CD, Cowork, AI Context Store, On-Prem AI Intelligence Suite, Schedule Tracker, On-Prem AI/Revit Live Integration. |
+| WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-25, I-26, I-27, I-28, I-31, I-43, I-44, I-45, I-46, I-47, I-48, I-49, I-51, I-52, I-60, I-61, I-65, I-67, I-70, I-71, I-72 | Revit automation, CI/CD, Cowork, AI Context Store, On-Prem AI Intelligence Suite, Schedule Tracker, On-Prem AI/Revit Live Integration, Superpowers methodology framework. |
 | WS-11 | Resource Planning | Greg/Jennifer | Active | P0/P6 | I-03, I-35, I-36, I-40, I-50, I-63 | BIM Lead on hold pending I-40. |
 
 ---
@@ -140,7 +141,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P1 | 0 | Consumes WS-02, WS-03, WS-06 |
 | P2 | 8 | I-01, I-02, I-10, I-11, I-12, I-13, I-28, I-57 |
 | P3 | 9 | I-04, I-16, I-17, I-18, I-19, I-22, I-33, I-34, I-37 |
-| P4 | 12 | I-09, I-25, I-26, I-27, I-31, I-43, I-47, I-48, I-51, I-52, I-60, I-65 |
+| P4 | 13 | I-09, I-25, I-26, I-27, I-31, I-43, I-47, I-48, I-51, I-52, I-60, I-65, I-72 |
 | P4-002 | 6 | I-44, I-45, I-46, I-49, I-67, I-71 |
 | P5 | 6 | I-08, I-15, I-38, I-61, I-68, I-69 |
 | P6 | 8 | I-03, I-21, I-24, I-35, I-36, I-40, I-50, I-63 |
@@ -150,7 +151,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P10 | 1 | I-24 (shared P6) |
 | P11 | 1 | I-64 |
 
-**Note:** Some initiatives span multiple projects; counted under primary. I-24 assigned to P10 (post-split) but gates P3/P6 initiatives. I-66 spans P7 (build) and P5 (operational ownership). I-69 spans P5 (deployment infrastructure) and P0 (dashboard content). I-70 primary owner P8-001; also spans P7 (Odoo build) and P4 (Phase 3 MCP). I-71 primary owner P4-002; coordinates with P4 (I-65 dep) and P5-002 (monitoring integration).
+**Note:** Some initiatives span multiple projects; counted under primary. I-24 assigned to P10 (post-split) but gates P3/P6 initiatives. I-66 spans P7 (build) and P5 (operational ownership). I-69 spans P5 (deployment infrastructure) and P0 (dashboard content). I-70 primary owner P8-001; also spans P7 (Odoo build) and P4 (Phase 3 MCP). I-71 primary owner P4-002; coordinates with P4 (I-65 dep) and P5-002 (monitoring integration). I-72 primary P4; deployment spans Claude Code (I-52 CI/CD) and Windsurf (bcg-ops-revit-tools workspace).
 
 ---
 
@@ -171,7 +172,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 6. Numbering Conventions
 
-- **Initiatives:** I-01 through I-## (sequential, never reuse). Next: **I-72**.
+- **Initiatives:** I-01 through I-## (sequential, never reuse). Next: **I-73**.
 - **Workstreams:** WS-01 through WS-## (sequential).
 - **Subprojects:** P{#}-{###} (parent dash three-digit sequence).
 - **Removed items:** Keep row with strikethrough. Do not renumber.
@@ -184,6 +185,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.8 | 2026-04-17 | Added I-72 (Superpowers Methodology Framework — Evaluation & Integration / Jason Harris+Gregory / P4 / Planned / Q3 '26). Windsurf compatibility confirmed via native Agent Skills support (no porting required). Updated P4 cross-reference (12→13). Added I-72 to WS-10. Total: 69 active, 3 removed, 11 workstreams, 6 subprojects. Next I-slot: I-73. |
 | 2.7 | 2026-04-15 | Corrected initiative count header: 69 → 68 (verified by full row count during 2026-04-15 ecosystem audit). No rows added or removed. |
 | 2.6 | 2026-03-26 | Added I-71 (On-Premise AI / Revit Live Model Integration / Jason Harris / P4-002 / Planned / Q3 '26). Updated cross-reference P4-002 (5→6). Added I-71 to WS-10. Added I-67 coordination note. Noted W-24 claimed (I-70 SOP); next W-slot W-25 (Sanitized Dev Model SOP candidate). Next I-slot I-71→I-72. Total: 69 active (corrected to 68 in v2.7), 3 removed, 11 workstreams, 6 subprojects. |
 | 2.5 | 2026-03-24 | Added I-70 (Client Deliverable Schedule Tracker / P8-001+P7+P4 / Rachel McGee+Gregory / Active / Q2 '26 / Phase 2 active). Updated cross-reference P8 (2→3). Updated P8-001 subproject registry (+I-70). Added I-70 to WS-10. Updated numbering next slot I-70→I-71. Total: 68 active, 3 removed, 11 workstreams, 6 subprojects. |
