@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 3.0
+**Version:** 3.1
 **Effective:** March 2026
-**Last Updated:** 2026-04-15
+**Last Updated:** 2026-04-17
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -58,9 +58,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Project_Ecosystem_and_Handoffs.md` |
-| **Current Version** | 1.8 |
+| **Current Version** | 1.9 |
 | **Fetch before** | Cross-project routing decisions, handoff creation, subproject setup, dependency tracking |
-| **Governs** | Project registry (P0-P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4). Section 3.5: Handoff Validation Protocol (three-question origin check + [ORIGIN:] audit line for automated pipelines). P11 access: Gregory & Jennifer Brezniak. |
+| **Governs** | Project registry (P0-P11), subproject registry (6 active), routing rules, handoff label format, dependency tracking, EAB deployment specification (Section 5.4). Section 3.5: Handoff Validation Protocol (three-question origin check + [ORIGIN:] audit line for automated pipelines). P11 access: Gregory & Jennifer Brezniak. Section 7: Approved Handoff Log maintained in chronological order. |
 
 ### 3.4 Team Directory & Roles (GOV-016)
 
@@ -85,9 +85,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.7 |
+| **Current Version** | 2.8 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 68 active initiatives (I-01--I-71, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-72. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. |
+| **Governs** | 69 active initiatives (I-01--I-72, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-73. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -188,6 +188,15 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Any 4am Cowork schedule tracking run, any Team Project consolidation, any Odoo intake processing, any project code validation or prime firm lookup, any P3 competitive intel update involving prime firm assignments |
 | **Governs** | All registered BCG project codes, campus groupings, site assignments, prime firm relationships. 82 total entries (79 standard + 3 non-standard BOD Titus) across 24 campuses and 14 sites (AMA, ATL, BOD, CMH, IAD, IAH, LBB, PBI, PDX, PHL, PHX, STL, YUL, YYC). 1 placeholder (AUS150). All 24 campuses confirmed. 6 prime firms (Arcadis, HKS, Gensler, Corgan, S+R, Atlantic AE). Updated when projects are awarded or closed. Source of truth for I-70 Cowork Schedule Tracker confidence scoring. |
 
+### 3.18 Windsurf Agent Skills Deployment Pattern (GOV-019)
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Windsurf_Skills_Deployment_Pattern.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Deploying any new third-party skill source to Windsurf/Cascade, bumping versions of existing vendored skills, authoring new BCG-specific skills, resolving per-user-drift issues in skill behavior |
+| **Governs** | Workspace-scope + git-vendoring + pinned-version pattern for all BCG skill deployments. Directory structure (`.windsurf/skills/`), SKILL.md requirements, version marker file convention, install/update procedures, coexistence rules with Rules/Workflows/AGENTS.md, Claude Code portability notes, known BCG deployments tracker. Derived from I-72 Superpowers v5.0.7 installation. |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -231,7 +240,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 3.0 |
+| **Current Version** | 3.1 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -239,13 +248,13 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Category | Count | Documents |
 |----------|-------|----------|
-| Runtime-fetched | 17 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry |
+| Runtime-fetched | 18 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern |
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
 | Reference documents | 1 | Ecosystem Architecture Analysis |
 | Status documents | 1 | Ecosystem Status (current: 2026-04-15) |
-| **Total in standards folder** | **22** | -- |
+| **Total in standards folder** | **23** | -- |
 
 ---
 
@@ -265,6 +274,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 3.1 | 2026-04-17 | Added Section 3.18 -- Windsurf Agent Skills Deployment Pattern (GOV-019, v1.0). Derived from I-72 Superpowers v5.0.7 install. Updated GOV-007 tracked version 1.8→1.9 (added 2026-04-17 P0→P4 handoff to log). Updated GOV-002 tracked version 2.7→2.8 (I-72 registered, 69 active, next slot I-73). Updated runtime-fetched count 17→18. Updated total doc count 22→23. |
 | 3.0 | 2026-04-15 | Audit fixes: GOV-007 tracked version 1.5→1.8 (Handoff Validation Protocol, P11 Jennifer access). GOV-016 tracked version 2.1→2.4 (Jason active, Oscar added). GOV-002 tracked version 2.6→2.7 (count corrected 69→68). EAB tracked version 1.5→1.6; corrected propagation note (v1.5 complete 2026-03-17; v1.6 to P11 only; 16 projects pending v1.6). Added Section 9 (Reference Documents — Ecosystem Architecture Analysis). Added Section 10 (Status Documents — Ecosystem Status). Updated total document count 20→22. |
 | 2.9 | 2026-04-04 | Bumped GOV-013 tracked version 1.2→1.3. Updated governs description: 52 buttons, 11 panels, BCG Notes panel (B-49--B-52), B-47/B-48 pending. |
 | 2.8 | 2026-03-26 | GOV-002 tracked version 2.5→2.6 (69 active initiatives, next slot I-72, W-24 claimed/W-25 next). SOP-GOV-001 corrected tracked version 1.3→1.5 (file was already v1.4; bumped to v1.5 this session for W-slot update). |
