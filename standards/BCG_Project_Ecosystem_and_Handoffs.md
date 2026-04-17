@@ -1,8 +1,8 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.8
+**Version:** 1.9
 **Effective:** March 2026
-**Last Updated:** 2026-04-01
+**Last Updated:** 2026-04-17
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -201,6 +201,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
+| 2026-04-17 | P0 | P4 | I-72 Superpowers Methodology Framework — Phase 1 complete, Phase 2/3 scope | Gregory |
 | 2026-03-22 | P0 | P4 | CIP/DDL Knowledge Capture Architecture — feeds I-65 Phase 1 RAG corpus | Gregory |
 | 2026-03-22 | P7 | P0 | Odoo Dev Request Lifecycle SOP — BCG_P7_Dev_Request_Lifecycle.docx | Gregory |
 | 2026-03-17 | P0 | P11 | P11 activation — I-64, Candidate OSINT & Pre-Hire Intelligence | Gregory |
@@ -215,6 +216,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.9 | 2026-04-17 | Added 2026-04-17 P0→P4 handoff to log (I-72 Superpowers Methodology Framework). Handoff document committed at `handoffs/P4_Handoff_I-72_Superpowers_Methodology_Framework_2026-04-17.md`. |
 | 1.8 | 2026-04-01 | P11 access expanded: Gregory (only) → Gregory & Jennifer Brezniak (full access). Updated Section 2.2 owner and notes. Updated Section 3.4 routing rules and P11 rule. Updated Section 4 redirect. Updated Section 5.4 EAB reference to v1.6. Updated Section 6 dependency notes. P10 custody filing remains Gregory-only. |
 | 1.7 | 2026-03-23 | Added Section 3.5 — Handoff Validation Protocol. Three-question pre-generation check (origin, destination, P0 special case). Automation constraint requiring [ORIGIN:] audit line for all automated handoff pipelines. Added 2026-03-22 handoffs to log (P0→P4 CIP/DDL, P7→P0 Dev Lifecycle). |
 | 1.6 | 2026-03-22 | Section 2.3: Updated P4-002 button count 42 → 47. |
