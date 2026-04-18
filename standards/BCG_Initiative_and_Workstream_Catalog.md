@@ -1,12 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.9
+**Version:** 2.10
 **Effective:** April 2026
 **Last Updated:** 2026-04-18
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
-**What Changed (v2.9):** Added I-73 (BCGTools Licensing Gate (Option 3 + Option 4) / Greg operational + Jason Harris architecture / P4-002). Updated P4-002 cross-reference (6→7). Added I-73 to WS-10. Next slot I-73 → I-74.
+**What Changed (v2.10):** Added PLAN LINK RULE (Section 2 preamble). Active initiatives must record a plan reference at the start of their Notes entry, formatted as `Plan: <path or URL>`. Use `Plan: TBD` as placeholder while backfilling. Rule is enforced at Planned → Active transition (per W-20 v1.1 Trigger 3 gate) and at Active → Complete transition (per W-20 v1.1 Checklist 4D). Existing Active items marked for opportunistic backfill during scheduled triage. Status Definitions table updated. Derived from I-72 Superpowers methodology port: writing-plans discipline adapted to BCG governance.
 
 ---
 
@@ -26,17 +26,24 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 70 active initiatives (I-01 through I-73, minus I-20 removed, minus I-30 removed, minus I-32 rejected). Next available slot: **I-74**.
 
+**PLAN LINK RULE (v2.10):** Initiatives in Active status must record a plan reference at the start of their Notes entry, formatted as `Plan: <path or URL> — <rest of notes>`. Use `Plan: TBD` as placeholder when the plan is being backfilled. The rule is enforced at two gates:
+
+1. **Planned → Active transition:** Per W-20 v1.1 Trigger 3, owner must supply a plan reference before status changes to Active. P0 will not update status without it.
+2. **Active → Complete transition:** Per W-20 v1.1 Checklist 4D, completion verification requires both the plan reference AND a resolving evidence link.
+
+**Backfill for existing Active items:** Items in Active status before v2.10 may show `Plan: TBD` pending backfill. Backfill occurs opportunistically during scheduled triage (W-20 v1.1 Tier 2 monthly audit includes a Plan Link Backfill Sweep). A plan reference can be as short as one paragraph; it need not be a formal document. It must be written down somewhere, not held in chat or memory.
+
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
-| I-01 | ACC Fundamentals Training | Greg | Active | P2 | Q2 '26 | QR-ACC-01 session with Joshua + Cory pending. Owner changed from Bernard Lewis (2026-03-05). |
-| I-02 | Peer Review Workflows (QC 30/60/90%) | Jeff Bernardo | Active | P2 | Q1 '26 | Define QC checkpoints |
+| I-01 | ACC Fundamentals Training | Greg | Active | P2 | Q2 '26 | Plan: TBD — QR-ACC-01 session with Joshua + Cory pending. Owner changed from Bernard Lewis (2026-03-05). |
+| I-02 | Peer Review Workflows (QC 30/60/90%) | Jeff Bernardo | Active | P2 | Q1 '26 | Plan: TBD — Define QC checkpoints |
 | I-03 | Employee Recognition & Merch Platform | TBD | Planned | P6 | Q3 '26 | |
 | I-04 | Website Build (7 Pages) | Greg | Planned | P3 | Q2 '26 | |
-| I-05 | Canvas Image Editor (Odoo Module) | TBD | Active | P7 | Q2 '26 | Phase 1 deployed |
+| I-05 | Canvas Image Editor (Odoo Module) | TBD | Active | P7 | Q2 '26 | Plan: TBD — Phase 1 deployed |
 | I-06 | Production Rework Module (Odoo) | TBD | Planned | P7 | Q3 '26 | Pre-dev blockers |
 | I-07 | Odoo Automated Testing Framework | TBD | Planned | P7 | Q2 '26 | Shared scope with I-53 |
-| I-08 | ASR/AppLocker Remediation | Bob | Active | P5 | Q1 '26 | AppLocker disabled; ASR tiered model (4 Block / 14 Audit) |
-| I-09 | Revit Batch Print Utility | TBD | Active | P4 | Q2 '26 | Started — not functional |
+| I-08 | ASR/AppLocker Remediation | Bob | Active | P5 | Q1 '26 | Plan: TBD — AppLocker disabled; ASR tiered model (4 Block / 14 Audit) |
+| I-09 | Revit Batch Print Utility | TBD | Active | P4 | Q2 '26 | Plan: TBD — Started — not functional |
 | I-10 | DD Sprint Delivery SOP (W-01) | Cory | Planned | P2 | Q2 '26 | |
 | I-11 | CA Workflow SOP (W-02) | Joshua | Planned | P2 | Q2 '26 | |
 | I-12 | Project Kickoff Checklist (W-05) | Greg → PM | Planned | P2 | Q2 '26 | |
@@ -50,15 +57,15 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | ~~I-20~~ | ~~Federal/DoD Market Entry~~ | — | Removed | — | — | Removed from catalog. Retained for numbering continuity. |
 | I-21 | Expert Witness Entity Structure | Greg | Planned | P6 | Q2 '26 | GATED on I-24 |
 | I-22 | AI-Assisted Proposal & BD | Greg/Jason | Planned | P3/P4 | Q3 '26 | |
-| I-23 | Odoo Accounting / Financial Baseline | Bob/Victor | On Hold | P7 | Q1 '26 | Blocked — D-01 accounting data source decision |
-| I-24 | Licensing & Insurance Audit | Greg/Rachel | Active | P10 | Q1 '26 | GATING — gates I-16, I-17, I-18, I-19, I-21, I-37. Track A (Licensing): Gregory. Track B (Insurance): Rachel. 5 counsel questions pending. |
+| I-23 | Odoo Accounting / Financial Baseline | Bob/Victor | On Hold | P7 | Q1 '26 | Plan: TBD — Blocked — D-01 accounting data source decision |
+| I-24 | Licensing & Insurance Audit | Greg/Rachel | Active | P10 | Q1 '26 | Plan: TBD — GATING — gates I-16, I-17, I-18, I-19, I-21, I-37. Track A (Licensing): Gregory. Track B (Insurance): Rachel. 5 counsel questions pending. |
 | I-25 | AI Standards & Guardrails Framework | Greg/Jason | Planned | P4 | Q2 '26 | |
-| I-26 | Claude Cowork Enablement | Greg | Active | P4 | Q1 '26 | Sprint 1: Greg, Rachel, Jen; Sprint 2: Cory, Joshua, Stephanie |
+| I-26 | Claude Cowork Enablement | Greg | Active | P4 | Q1 '26 | Plan: TBD — Sprint 1: Greg, Rachel, Jen; Sprint 2: Cory, Joshua, Stephanie |
 | I-27 | Windsurf IDE Enablement | Greg/Bob | Planned | P4 | Q2 '26 | Depends on I-26 |
 | I-28 | Production Force Multipliers | Greg | Planned | P2/P4 | Q2 '26 | Depends on PROD-01, PROD-02. AI agents, scripts, automation for production workflows. |
-| I-29 | Odoo Knowledge Repository | Bob/Victor | On Hold | P7 | Q1 '26 | Blocked — 3 Greg decisions: category structure, publishing workflow, first-publish scope. |
+| I-29 | Odoo Knowledge Repository | Bob/Victor | On Hold | P7 | Q1 '26 | Plan: TBD — Blocked — 3 Greg decisions: category structure, publishing workflow, first-publish scope. |
 | ~~I-30~~ | ~~Cross-Project Sync Pipeline (Phase 1 — Email)~~ | — | Removed | — | — | Cancelled 2026-03-17. Email-based sync pipeline retired. BCG pursuing I-31 (direct Odoo-to-Claude MCP server) only. |
-| I-31 | Cross-Project Sync MCP Server | Jason | On Hold | P7/P4 | Q2 '26 | Direct Odoo-to-Claude MCP bridge. Primary path (I-30 email pipeline cancelled). Gated on D-06 (Odoo receiver build by Victor) which is gated on D-05. |
+| I-31 | Cross-Project Sync MCP Server | Jason | On Hold | P7/P4 | Q2 '26 | Plan: TBD — Direct Odoo-to-Claude MCP bridge. Primary path (I-30 email pipeline cancelled). Gated on D-06 (Odoo receiver build by Victor) which is gated on D-05. |
 | ~~I-32~~ | ~~Oracle Opportunity Evaluation~~ | — | Removed | — | — | Rejected — tracked as WS-09 workstream activity, not standalone initiative. |
 | I-33 | DM Stakeholder Engagement Strategy | Greg | Planned | P3 | Q2 '26 | DM relationship playbook + target DM identification. Feeds WS-05. |
 | I-34 | Competitor Tracking Dashboard / BI Tool | Greg | Planned | P3 | Q2 '26 | Deferred from original proposal. Requires P3 knowledge base population first. |
@@ -67,49 +74,49 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-37 | CA Takeover Service Playbook | Greg | Planned | P3 | Q2 '26 | Playbook + pricing model + staffing template. GATED on I-24 licensing. |
 | I-38 | Network Infrastructure Configuration Assessment | Bob/Greg | Planned | P5 (P5-001) / P4 | Q2 '26 | AI-assisted firewall/switch config extraction + assessment. 3 phases, 6 weeks. |
 | I-39 | Promise Tracking & Proposal Forensics | Greg | Planned | P8 | Q2 '26 | Build promise tracking register for active projects. |
-| I-40 | Benefits Package Restructuring | Jennifer | Active | P6 | Q2 '26 | Competitive benefits analysis — Tier 1 health insurance gap identified as BIM Lead hiring blocker. |
-| I-41 | Enterprise Business Continuity Planning | Greg | Active | P9 | Q3 '26 | Three phases: Risk Register, Continuity Playbook, Tabletop Exercises + W-18 SOP. |
+| I-40 | Benefits Package Restructuring | Jennifer | Active | P6 | Q2 '26 | Plan: TBD — Competitive benefits analysis — Tier 1 health insurance gap identified as BIM Lead hiring blocker. |
+| I-41 | Enterprise Business Continuity Planning | Greg | Active | P9 | Q3 '26 | Plan: TBD — Three phases: Risk Register, Continuity Playbook, Tabletop Exercises + W-18 SOP. |
 | I-42 | JSX Artifact Workflow Standard | Greg | Planned | P0 | Q2 '26 | Pattern library entry for JSX artifact creation and delivery workflow. |
 | I-43 | Outlook Forward Guard Add-in | Greg | Planned | P4 | Q2 '26 | Office Web Add-in (ItemSend event). Bob Brezniak: Defender/ASR review pending. |
-| I-44 | FOV Camera Tool Suite | Greg | Active | P4-002 | Q2 '26 | Four pyRevit buttons (FOV ZERO, FOV RESTORE, HIDE FOV, SHOW FOV). B-13/B-14/B-15/B-16. Beta — code complete, IAH100 live test pending. |
-| I-45 | Site Grid & Sheet Builder | Greg | Active | P4-002 | Q2 '26 | PyRevit button suite: sector grid, cropped views/sheets, key plan index. B-34 through B-38. In Development. |
-| I-46 | Bulk Title Block Parameter Editor | Greg | Active | P4-002 | Q2 '26 | PyRevit button with WPF dialog. B-33 (Quikset Keyplan N Arrow). Beta — live Revit test pending. |
+| I-44 | FOV Camera Tool Suite | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — Four pyRevit buttons (FOV ZERO, FOV RESTORE, HIDE FOV, SHOW FOV). B-13/B-14/B-15/B-16. Beta — code complete, IAH100 live test pending. |
+| I-45 | Site Grid & Sheet Builder | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — PyRevit button suite: sector grid, cropped views/sheets, key plan index. B-34 through B-38. In Development. |
+| I-46 | Bulk Title Block Parameter Editor | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — PyRevit button with WPF dialog. B-33 (Quikset Keyplan N Arrow). Beta — live Revit test pending. |
 | I-47 | AI Context Store (pgvector/PostgreSQL) | Jason | Planned | P4 | Q3 '26 | Self-hosted on DGX Spark. 12-month target: Graphiti temporal knowledge graph. |
-| I-48 | API-Driven Hub Script (Alternative E) | Jason | Active | P4 | Q2 '26 | Automated P0 sync via Claude API. |
-| I-49 | Linked CAD Layer Manager | Greg | Active | P4-002 | Q2 '26 | Three pyRevit buttons: CAD Layers Export, CAD Layers Apply, Update Defaults. B-17/B-18/B-19. Complete. IAH100 live test pending — confirm Civil DWG link current before scheduling. |
-| I-50 | Standard Folder & File Structure | Jennifer | Active | P6 | Q2 '26 | Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
+| I-48 | API-Driven Hub Script (Alternative E) | Jason | Active | P4 | Q2 '26 | Plan: TBD — Automated P0 sync via Claude API. |
+| I-49 | Linked CAD Layer Manager | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — Three pyRevit buttons: CAD Layers Export, CAD Layers Apply, Update Defaults. B-17/B-18/B-19. Complete. IAH100 live test pending — confirm Civil DWG link current before scheduling. |
+| I-50 | Standard Folder & File Structure | Jennifer | Active | P6 | Q2 '26 | Plan: TBD — Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
 | I-51 | Email Attachment Ingestion Agent | Jason | Planned | P4 | Q3 '26 | Automated email attachment extraction and filing. |
-| I-52 | CI/CD Pipeline (Claude Code GitHub Actions) | Bob/Victor | Active | P4 | Q2 '26 | Phase 1: Odoo + PyRevit repos, read-only 30 days, $100/mo cap. Victor owns CLAUDE.md. Phase 2: RevitPrint Minion runner (gated Jason). |
-| I-53 | Odoo Automated Testing Framework | Bob | Active | P7 | Q2 '26 | Bob execution lead. BB-8 staging target. Shared scope with I-07. |
+| I-52 | CI/CD Pipeline (Claude Code GitHub Actions) | Bob/Victor | Active | P4 | Q2 '26 | Plan: TBD — Phase 1: Odoo + PyRevit repos, read-only 30 days, $100/mo cap. Victor owns CLAUDE.md. Phase 2: RevitPrint Minion runner (gated Jason). |
+| I-53 | Odoo Automated Testing Framework | Bob | Active | P7 | Q2 '26 | Plan: TBD — Bob execution lead. BB-8 staging target. Shared scope with I-07. |
 | I-54 | Production Rework Module | Greg | Planned | P7 | Q3 '26 | Architecture definition phase. Links to I-06. |
 | I-55 | Appointment Coverage Request System | Victor | Planned | P7 | Q2 '26 | Recommended as Victor's first Odoo module build. |
-| I-56 | Odoo Notification Center | Victor | Active | P7 | Q2 '26 | bcg_notification_center module. Consolidated from retired P7-004. Phase A remediation in progress. |
+| I-56 | Odoo Notification Center | Victor | Active | P7 | Q2 '26 | Plan: TBD — bcg_notification_center module. Consolidated from retired P7-004. Phase A remediation in progress. |
 | I-57 | W-19 Chat Quality Evaluation SOP | Jennifer | Planned | P2 | Q2 '26 | Gates Wave 1 SOP Lookup Pilot (Q2 2026, requires 5 approved SOPs from P2). |
-| I-58 | P8-001 Document Intake & Routing | Rachel | Active | P8 | Q2 '26 | Go-live. Instructions v1.2 approved 2026-03-15. |
+| I-58 | P8-001 Document Intake & Routing | Rachel | Active | P8 | Q2 '26 | Plan: TBD — Go-live. Instructions v1.2 approved 2026-03-15. |
 | I-59 | NL Command Interface (Odoo) | Victor | Planned | P7 | Q3 '26 | Gated on P8-001 operational stability. |
-| I-60 | Cowork Plugin | Greg | Active | P4 | Q2 '26 | Phase 1 complete. Phases 2–3 gated on Jason (April 1). |
+| I-60 | Cowork Plugin | Greg | Active | P4 | Q2 '26 | Plan: TBD — Phase 1 complete. Phases 2–3 gated on Jason (April 1). Superpowers is canonical structural reference for skill authoring (per 2026-04-18 P0 handoff). |
 | I-61 | Cowork Security/Audit Assessment | Bob | Planned | P5 | Q2 '26 | Security review of Cowork deployment. |
-| I-62 | BCG Ecosystem Vocabulary | Greg | Complete | P0 | Q1 '26 | Deliverable: BCG_Ecosystem_Vocabulary.md (W-22 artifact). Published to GitHub 2026-03-14. |
-| I-63 | Candidate Data Management & ADP Recruiting Transition | Jennifer | Active | P6 | Q2 '26 | Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
-| I-64 | Candidate Pre-Hire OSINT Program | Greg | Active | P11 | Ongoing | Gregory-only. RESTRICTED. Pre-hire public record and digital footprint investigation for every finalist candidate at conditional offer stage. Feeds P10 (CIR custody) and P6 (go/no-go). |
-| I-65 | On-Prem AI Production Intelligence Suite | Jason | Active | P4 | Q3 '26 | Owner: Jason Harris (VP AI). 12-item capability suite for on-premise DGX Spark deployment. Phase 1: RAG archive over completed project docs + meeting transcription/action item extraction. Phase 2: RFI/submittal triage, drawing delta analysis. Phase 3: constructability/code compliance check (gated on mature RAG corpus). |
-| I-66 | IT Equipment Inventory & Asset Register | Bob Brezniak / Victor Carrillo | Active | P7/P5 | Q2 '26 | Three-phase initiative. Ph1: Bob runs Claude Vision bulk image analysis → structured CSV → Victor imports into Odoo Maintenance. Ph2 (Q3 2026): Victor builds bcg_equipment_intake Odoo module. Ph3 (Q4 2026 / Jason Harris): CVE/recall cross-reference. |
+| I-62 | BCG Ecosystem Vocabulary | Greg | Complete | P0 | Q1 '26 | Evidence: BCG_Ecosystem_Vocabulary.md (W-22 artifact). Published to GitHub 2026-03-14. |
+| I-63 | Candidate Data Management & ADP Recruiting Transition | Jennifer | Active | P6 | Q2 '26 | Plan: TBD — Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
+| I-64 | Candidate Pre-Hire OSINT Program | Greg | Active | P11 | Ongoing | Plan: TBD — Gregory-only. RESTRICTED. Pre-hire public record and digital footprint investigation for every finalist candidate at conditional offer stage. Feeds P10 (CIR custody) and P6 (go/no-go). |
+| I-65 | On-Prem AI Production Intelligence Suite | Jason | Active | P4 | Q3 '26 | Plan: TBD — Owner: Jason Harris (VP AI). 12-item capability suite for on-premise DGX Spark deployment. Phase 1: RAG archive over completed project docs + meeting transcription/action item extraction. Phase 2: RFI/submittal triage, drawing delta analysis. Phase 3: constructability/code compliance check (gated on mature RAG corpus). |
+| I-66 | IT Equipment Inventory & Asset Register | Bob Brezniak / Victor Carrillo | Active | P7/P5 | Q2 '26 | Plan: TBD — Three-phase initiative. Ph1: Bob runs Claude Vision bulk image analysis → structured CSV → Victor imports into Odoo Maintenance. Ph2 (Q3 2026): Victor builds bcg_equipment_intake Odoo module. Ph3 (Q4 2026 / Jason Harris): CVE/recall cross-reference. |
 | I-67 | Project Info Writer | Greg | Planned | P4-002 | Q2 '26 | PyRevit button (B-47). Writes project information to title block shared parameters. Spec complete, blocked — title block shared parameter list needed. On hold per Gregory. Coordinate with I-71 (shared parameter overlap risk). |
-| I-68 | WireGuard Site-to-Site VPN — Denton ↔ Harris Lab | Bob Brezniak | Active | P5 | Q2 '26 | Phase 1 complete 2026-03-09. Phase 2 pending: DNS integration, PSK post-quantum hardening, Vader CARP failover, tighten WG_BCG_SITE firewall rules. |
-| I-69 | BCG Master Strategic Plan Dashboard — Cloudflare Pages | Bob Brezniak / Gregory Bernardo | Complete | P5 / P0 | 2026-03-17 | dashboard.bcg-corp.com. Azure AD SSO. Auto-deploys on push to main. Open action: Bob to add Jennifer/Rachel/Cory/Stephanie to AD group before URL distribution. |
-| I-70 | Client Deliverable Schedule Tracker | Rachel McGee / Gregory Bernardo | Active | P8-001 / P7 / P4 | Q2 '26 | Automated 4am Cowork run on Gregory's workstation. Reads `intake_staging.csv` + Gregory email scan → writes `bcg_deliverable_schedule.xlsx` (OneDrive) → posts Teams digest to #schedule-updates. Staff intake via Claude.ai Team Project (CW-002, Rachel owns 5pm consolidate). Odoo approval queue: Cory Bialke (CW-003, Victor build, ~14–16hrs). Phase 1 complete 2026-03-24 (82 projects, 24 campuses, 14 sites registered). Phase 2 active (bridge). Phase 3 gated on Odoo MCP (D-06). Project code registry: GOV-018. Instruction files: `bcg-ops-claude-projects/cowork/` (CW-001, CW-002, CW-003). Associated SOP: W-24 (Schedule Tracking & Sync SOP — pending). |
+| I-68 | WireGuard Site-to-Site VPN — Denton ↔ Harris Lab | Bob Brezniak | Active | P5 | Q2 '26 | Plan: TBD — Phase 1 complete 2026-03-09. Phase 2 pending: DNS integration, PSK post-quantum hardening, Vader CARP failover, tighten WG_BCG_SITE firewall rules. |
+| I-69 | BCG Master Strategic Plan Dashboard — Cloudflare Pages | Bob Brezniak / Gregory Bernardo | Complete | P5 / P0 | 2026-03-17 | Evidence: dashboard.bcg-corp.com. Azure AD SSO. Auto-deploys on push to main. Open action: Bob to add Jennifer/Rachel/Cory/Stephanie to AD group before URL distribution. |
+| I-70 | Client Deliverable Schedule Tracker | Rachel McGee / Gregory Bernardo | Active | P8-001 / P7 / P4 | Q2 '26 | Plan: TBD — Automated 4am Cowork run on Gregory's workstation. Reads `intake_staging.csv` + Gregory email scan → writes `bcg_deliverable_schedule.xlsx` (OneDrive) → posts Teams digest to #schedule-updates. Staff intake via Claude.ai Team Project (CW-002, Rachel owns 5pm consolidate). Odoo approval queue: Cory Bialke (CW-003, Victor build, ~14–16hrs). Phase 1 complete 2026-03-24 (82 projects, 24 campuses, 14 sites registered). Phase 2 active (bridge). Phase 3 gated on Odoo MCP (D-06). Project code registry: GOV-018. Instruction files: `bcg-ops-claude-projects/cowork/` (CW-001, CW-002, CW-003). Associated SOP: W-24 (Schedule Tracking & Sync SOP — pending). |
 | I-71 | On-Premise AI / Revit Live Model Integration | Jason Harris | Planned | P4-002 | Q3 '26 | Deploy locally-hosted MCP server (RevitMCP pattern) connecting BCG on-premise LLM (DGX Spark / Open WebUI) to client Revit models. DATA BOUNDARY: cloud AI (Claude.ai) NEVER has direct access to client Revit models — script dev uses sanitized model only (W-25 SOP). Phase 1: read-only — parameter queries, QC audits, zone validation, device schedule verification. Phase 2: write-capable — device parameter population, schedule generation, zone assignment. Hard deps: I-65 Ph1 complete, I-22 model deployed, W-25 Sanitized Dev Model SOP exists, Jason onboarded. Coordinate with I-67 (shared parameter overlap risk — resolve before independent builds). Market angle: on-prem AI differentiator for hyperscaler clients — no cloud exposure of client model data. |
-| I-72 | Superpowers Methodology Framework — Evaluation & Integration | Jason Harris / Gregory (Ph1) | Planned | P4 | Q3 '26 | Open-source skills framework (obra/superpowers, MIT, Anthropic official marketplace, v5.0.7). Windsurf natively supports Agent Skills spec (Jan 2026) — skills are portable across Claude Code and Windsurf with no rewriting. Ph1 (Q2): Gregory personal eval in Claude Code + Windsurf — low-stakes tasks, both surfaces. Ph2 (Q2): Jason scopes deployment pattern (git-vendored into bcg-ops-revit-tools/.windsurf/skills/ for workspace-level install; Claude Code install via plugin marketplace for I-52 CI/CD). Bob runs scoped security review (supply chain posture post-v5.0.2, SessionStart hook analysis, pinned-version policy). Ph3 (Q3): Team deployment + BCG-specific skills authored on top (Revit QC patterns, hyperscaler review discipline, Odoo module review patterns). Known degradation: subagent-driven-development and dispatching-parallel-agents fall back to serial execution in Windsurf (Cascade is single-agent-flow); for these workflows prefer Claude Code. Coexists with .windsurfrules v1.1 — Rules and Skills are distinct layers. Architectural reference for I-65 (subagent pattern) and I-71 (on-prem AI methodology template). No Windsurf porting work required. |
+| I-72 | Superpowers Methodology Framework — Evaluation & Integration | Jason Harris / Gregory (Ph1) | Planned | P4 | Q3 '26 | Open-source skills framework (obra/superpowers, MIT, Anthropic official marketplace, v5.0.7). Windsurf natively supports Agent Skills spec (Jan 2026) — skills are portable across Claude Code and Windsurf with no rewriting. Ph1 (Q2): Gregory personal eval in Claude Code + Windsurf — low-stakes tasks, both surfaces. Ph2 (Q2): Jason scopes deployment pattern (git-vendored into bcg-ops-revit-tools/.windsurf/skills/ for workspace-level install; Claude Code install via plugin marketplace for I-52 CI/CD). Bob runs scoped security review (supply chain posture post-v5.0.2, SessionStart hook analysis, pinned-version policy). Ph3 (Q3): Team deployment + BCG-specific skills authored on top (Revit QC patterns, hyperscaler review discipline, Odoo module review patterns). Known degradation: subagent-driven-development and dispatching-parallel-agents fall back to serial execution in Windsurf (Cascade is single-agent-flow); for these workflows prefer Claude Code. Coexists with .windsurfrules v1.1 — Rules and Skills are distinct layers. Architectural reference for I-65 (subagent pattern) and I-71 (on-prem AI methodology template). Governance-layer port of three Superpowers patterns (verification-before-completion, writing-plans, systematic-debugging) landed 2026-04-18 in W-20 v1.1, Catalog v2.10, and BCG_Post_Mortem_Template.md v1.0. |
 | I-73 | BCGTools Licensing Gate (Option 3 + Option 4) | Greg / Jason (arch) | Planned | P4-002 | Q3 '26 | Operationally Gregory-owned; architecture owner Jason Harris. Gating mechanism for BCGTools deployment across production workstations. Option 3 + Option 4 scope [FILL IN — Gregory to specify]. Coordinates with I-52 (CI/CD Phase 2 — Minion runner licensing implications) and I-72 (Superpowers Methodology — deployment pattern for skills distribution). |
 
 ### Initiative Status Definitions
 
 | Status | Meaning |
 |--------|--------|
-| **Active** | In progress, resources assigned |
-| **Planned** | Approved, not yet started |
-| **On Hold** | Paused pending dependency or decision |
-| **Complete** | Delivered, acceptance criteria met |
+| **Active** | In progress, resources assigned, plan link recorded in Notes (Plan Link Rule v2.10) |
+| **Planned** | Approved, not yet started. Plan link recorded in Notes at moment of Active transition. |
+| **On Hold** | Paused pending dependency or decision. Plan link recorded if previously Active. |
+| **Complete** | Delivered, acceptance criteria met, evidence link recorded in Notes (W-20 v1.1 Checklist 4D) |
 | **Removed** | Dropped from catalog (retain row for numbering continuity) |
 
 ---
@@ -152,7 +159,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | P10 | 1 | I-24 (shared P6) |
 | P11 | 1 | I-64 |
 
-**Note:** Some initiatives span multiple projects; counted under primary. I-24 assigned to P10 (post-split) but gates P3/P6 initiatives. I-66 spans P7 (build) and P5 (operational ownership). I-69 spans P5 (deployment infrastructure) and P0 (dashboard content). I-70 primary owner P8-001; also spans P7 (Odoo build) and P4 (Phase 3 MCP). I-71 primary owner P4-002; coordinates with P4 (I-65 dep) and P5-002 (monitoring integration). I-72 primary P4; deployment spans Claude Code (I-52 CI/CD) and Windsurf (bcg-ops-revit-tools workspace).
+**Note:** Some initiatives span multiple projects; counted under primary. I-24 assigned to P10 (post-split) but gates P3/P6 initiatives. I-66 spans P7 (build) and P5 (operational ownership). I-69 spans P5 (deployment infrastructure) and P0 (dashboard content). I-70 primary owner P8-001; also spans P7 (Odoo build) and P4 (Phase 3 MCP). I-71 primary owner P4-002; coordinates with P4 (I-65 dep) and P5-002 (monitoring integration). I-72 primary P4; deployment spans Claude Code (I-52 CI/CD) and Windsurf (bcg-ops-revit-tools workspace); governance-layer port landed in W-20 v1.1, Catalog v2.10, and Post-Mortem Template v1.0 (2026-04-18).
 
 ---
 
@@ -186,6 +193,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.10 | 2026-04-18 | Added PLAN LINK RULE (Section 2 preamble). Active initiatives must record plan reference at start of Notes as `Plan: <path or URL>`. `Plan: TBD` marks backfill state. Enforced at Planned → Active (W-20 v1.1 Trigger 3) and Active → Complete (W-20 v1.1 Checklist 4D). All existing Active items marked `Plan: TBD` for opportunistic backfill. Status Definitions table updated. Evidence link convention noted for Complete items (I-62, I-69 backfilled). Derived from I-72 Superpowers methodology port: writing-plans discipline adapted to BCG governance. |
 | 2.9 | 2026-04-18 | Added I-73 (BCGTools Licensing Gate (Option 3 + Option 4) / Greg operational + Jason Harris architecture / P4-002 / Planned / Q3 '26). Updated P4-002 cross-reference (6→7). Added I-73 to WS-10. Updated subproject registry P4-002 initiatives list. Total: 70 active, 3 removed, 11 workstreams, 6 subprojects. Next I-slot: I-74. |
 | 2.8 | 2026-04-17 | Added I-72 (Superpowers Methodology Framework — Evaluation & Integration / Jason Harris+Gregory / P4 / Planned / Q3 '26). Windsurf compatibility confirmed via native Agent Skills support (no porting required). Updated P4 cross-reference (12→13). Added I-72 to WS-10. Total: 69 active, 3 removed, 11 workstreams, 6 subprojects. Next I-slot: I-73. |
 | 2.7 | 2026-04-15 | Corrected initiative count header: 69 → 68 (verified by full row count during 2026-04-15 ecosystem audit). No rows added or removed. |

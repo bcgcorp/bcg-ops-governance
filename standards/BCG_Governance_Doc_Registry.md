@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 3.1
+**Version:** 3.2
 **Effective:** March 2026
-**Last Updated:** 2026-04-17
+**Last Updated:** 2026-04-18
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -85,9 +85,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Initiative_and_Workstream_Catalog.md` |
-| **Current Version** | 2.8 |
+| **Current Version** | 2.10 |
 | **Fetch before** | Strategic planning, initiative status checks, resource allocation, workstream references, I-number assignment |
-| **Governs** | 69 active initiatives (I-01--I-72, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-73. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. |
+| **Governs** | 70 active initiatives (I-01--I-73, minus I-20, I-30, and I-32), 11 workstreams (WS-01--WS-11), initiative ownership, target timelines, dependencies. Next available slot: I-74. W-24 claimed (I-70 Schedule Tracking SOP). Next W-slot: W-25. **Plan Link Rule (v2.10):** Active initiatives must record `Plan: <path or URL>` reference in Notes; enforced at Planned → Active and Active → Complete transitions per W-20 v1.1. |
 
 ### 3.7 Custom Module Registry (GOV-015)
 
@@ -148,9 +148,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_W20_Ecosystem_Triage_SOP.md` |
-| **Current Version** | 1.0 |
-| **Fetch before** | Running triage sessions, performing governance audits, processing ecosystem updates |
-| **Governs** | Intake-process-route cycle for BCG's Claude ecosystem. Three trigger types, four processing checklists, four audit tiers (biweekly/monthly/quarterly/annual), health metrics dashboard. |
+| **Current Version** | 1.1 |
+| **Fetch before** | Running triage sessions, performing governance audits, processing ecosystem updates, approving Active → Complete transitions, initiating post-mortems |
+| **Governs** | Intake-process-route cycle for BCG's Claude ecosystem. Four trigger types (Scheduled, Event-Driven, Structural, Completion), five processing checklists (4A–4E), four audit tiers (biweekly/monthly/quarterly/annual), health metrics dashboard. v1.1: Checklist 4D Completion Verification and Section 4E Ecosystem Failure Response added (Superpowers port — verification-before-completion and systematic-debugging patterns). |
 
 ### 3.14 Ecosystem Performance Assessment Prompt
 
@@ -197,6 +197,15 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Deploying any new third-party skill source to Windsurf/Cascade, bumping versions of existing vendored skills, authoring new BCG-specific skills, resolving per-user-drift issues in skill behavior |
 | **Governs** | Workspace-scope + git-vendoring + pinned-version pattern for all BCG skill deployments. Directory structure (`.windsurf/skills/`), SKILL.md requirements, version marker file convention, install/update procedures, coexistence rules with Rules/Workflows/AGENTS.md, Claude Code portability notes, known BCG deployments tracker. Derived from I-72 Superpowers v5.0.7 installation. |
 
+### 3.19 Post-Mortem Template (GOV-020)
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Post_Mortem_Template.md` |
+| **Current Version** | 1.0 |
+| **Fetch before** | Initiating a post-mortem after an ecosystem-level incident (governance doc produced wrong output, infrastructure failure affecting multiple projects, I-number collision, SOP produced unexpected outcome, ecosystem drift discovered) |
+| **Governs** | Four-phase systematic debugging structure (Symptom → Hypothesis → Isolation → Root Cause), mandatory permanent rule change, closure checklist, filing location (bcg-ops-governance/post-mortems/), lifecycle stages, aggregation cadence (Tier 2 monthly review, Tier 3 quarterly pattern detection). Derived from I-72 Superpowers port: systematic-debugging skill adapted to BCG governance. Referenced by W-20 v1.1 Section 4E. |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -240,7 +249,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 3.1 |
+| **Current Version** | 3.2 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -248,13 +257,13 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Category | Count | Documents |
 |----------|-------|----------|
-| Runtime-fetched | 18 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern |
+| Runtime-fetched | 19 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern, Post-Mortem Template |
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
 | Reference documents | 1 | Ecosystem Architecture Analysis |
 | Status documents | 1 | Ecosystem Status (current: 2026-04-15) |
-| **Total in standards folder** | **23** | -- |
+| **Total in standards folder** | **24** | -- |
 
 ---
 
@@ -267,6 +276,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 5. **When updating any governance document,** update this registry if the version number, filename, or fetch triggers changed.
 6. **EAB updates require propagation** to all satellite projects. See Style Guide Section 16 for the propagation protocol.
 7. **Do NOT rely on previously uploaded copies** of governance documents in project knowledge bases. The GitHub versions are authoritative.
+8. **Post-mortems (v3.2+)** are initiated per W-20 v1.1 Section 4E and filed to `bcg-ops-governance/post-mortems/`. Every post-mortem produces a permanent rule change landed in an affected governance doc.
 
 ---
 
@@ -274,6 +284,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 3.2 | 2026-04-18 | Added Section 3.19 -- Post-Mortem Template (GOV-020, v1.0). Bumped GOV-002 tracked version 2.8 → 2.10 (Plan Link Rule landed, 70 active, next slot I-74; note includes I-73 addition from v2.9). Bumped W-20 Triage SOP tracked version 1.0 → 1.1 (Trigger 4 Completion Verification, Section 4E Ecosystem Failure Response). Added Rule 8 (post-mortem filing). Runtime-fetched count 18 → 19. Total doc count 23 → 24. All three changes derived from I-72 Superpowers methodology port. |
 | 3.1 | 2026-04-17 | Added Section 3.18 -- Windsurf Agent Skills Deployment Pattern (GOV-019, v1.0). Derived from I-72 Superpowers v5.0.7 install. Updated GOV-007 tracked version 1.8→1.9 (added 2026-04-17 P0→P4 handoff to log). Updated GOV-002 tracked version 2.7→2.8 (I-72 registered, 69 active, next slot I-73). Updated runtime-fetched count 17→18. Updated total doc count 22→23. |
 | 3.0 | 2026-04-15 | Audit fixes: GOV-007 tracked version 1.5→1.8 (Handoff Validation Protocol, P11 Jennifer access). GOV-016 tracked version 2.1→2.4 (Jason active, Oscar added). GOV-002 tracked version 2.6→2.7 (count corrected 69→68). EAB tracked version 1.5→1.6; corrected propagation note (v1.5 complete 2026-03-17; v1.6 to P11 only; 16 projects pending v1.6). Added Section 9 (Reference Documents — Ecosystem Architecture Analysis). Added Section 10 (Status Documents — Ecosystem Status). Updated total document count 20→22. |
 | 2.9 | 2026-04-04 | Bumped GOV-013 tracked version 1.2→1.3. Updated governs description: 52 buttons, 11 panels, BCG Notes panel (B-49--B-52), B-47/B-48 pending. |
