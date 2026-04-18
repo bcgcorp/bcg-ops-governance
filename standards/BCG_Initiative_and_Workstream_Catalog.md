@@ -1,10 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 2.10
+**Version:** 2.10.1
 **Effective:** April 2026
 **Last Updated:** 2026-04-18
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
+
+**What Changed (v2.10.1):** Backfilled plan references for 4 Active initiatives: I-24 (Track A + Track B scoped), I-41 (BCP three-phase sequencing), I-44 (IAH100 live-test block, covers I-45/I-49 by proximity), I-60 (Cowork Plugin Phase 1a/1b/1c). 22 Active + 3 On Hold items remain with `Plan: TBD` pending future backfill during scheduled triage. First application of Plan Link Rule since v2.10 landed.
 
 **What Changed (v2.10):** Added PLAN LINK RULE (Section 2 preamble). Active initiatives must record a plan reference at the start of their Notes entry, formatted as `Plan: <path or URL>`. Use `Plan: TBD` as placeholder while backfilling. Rule is enforced at Planned → Active transition (per W-20 v1.1 Trigger 3 gate) and at Active → Complete transition (per W-20 v1.1 Checklist 4D). Existing Active items marked for opportunistic backfill during scheduled triage. Status Definitions table updated. Derived from I-72 Superpowers methodology port: writing-plans discipline adapted to BCG governance.
 
@@ -58,7 +60,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-21 | Expert Witness Entity Structure | Greg | Planned | P6 | Q2 '26 | GATED on I-24 |
 | I-22 | AI-Assisted Proposal & BD | Greg/Jason | Planned | P3/P4 | Q3 '26 | |
 | I-23 | Odoo Accounting / Financial Baseline | Bob/Victor | On Hold | P7 | Q1 '26 | Plan: TBD — Blocked — D-01 accounting data source decision |
-| I-24 | Licensing & Insurance Audit | Greg/Rachel | Active | P10 | Q1 '26 | Plan: TBD — GATING — gates I-16, I-17, I-18, I-19, I-21, I-37. Track A (Licensing): Gregory. Track B (Insurance): Rachel. 5 counsel questions pending. |
+| I-24 | Licensing & Insurance Audit | Greg/Rachel | Active | P10 | Q1 '26 | Plan: Track A (Greg, Licensing) — schedule counsel call on 5 scoped questions (VA DCJS exemption, CA physical presence, title block "holding out," remote employee nexus, multi-state employer obligations); capture per-jurisdiction opinions; update license matrix; release I-24 gate on I-16/I-17/I-18/I-19/I-21/I-37 as opinions allow. Track B (Rachel, Insurance) — parallel contracts upload + broker outreach; address AI exclusion risk in E&O/professional liability (Verisk generative AI exclusion forms, Q1–Q2 renewals). Success = counsel opinions documented per jurisdiction + license matrix updated + insurance renewed without AI gap. — GATING. |
 | I-25 | AI Standards & Guardrails Framework | Greg/Jason | Planned | P4 | Q2 '26 | |
 | I-26 | Claude Cowork Enablement | Greg | Active | P4 | Q1 '26 | Plan: TBD — Sprint 1: Greg, Rachel, Jen; Sprint 2: Cory, Joshua, Stephanie |
 | I-27 | Windsurf IDE Enablement | Greg/Bob | Planned | P4 | Q2 '26 | Depends on I-26 |
@@ -75,15 +77,15 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-38 | Network Infrastructure Configuration Assessment | Bob/Greg | Planned | P5 (P5-001) / P4 | Q2 '26 | AI-assisted firewall/switch config extraction + assessment. 3 phases, 6 weeks. |
 | I-39 | Promise Tracking & Proposal Forensics | Greg | Planned | P8 | Q2 '26 | Build promise tracking register for active projects. |
 | I-40 | Benefits Package Restructuring | Jennifer | Active | P6 | Q2 '26 | Plan: TBD — Competitive benefits analysis — Tier 1 health insurance gap identified as BIM Lead hiring blocker. |
-| I-41 | Enterprise Business Continuity Planning | Greg | Active | P9 | Q3 '26 | Plan: TBD — Three phases: Risk Register, Continuity Playbook, Tabletop Exercises + W-18 SOP. |
+| I-41 | Enterprise Business Continuity Planning | Greg | Active | P9 | Q3 '26 | Plan: Phase 1 — complete BCG Dependency Risk Register v1.0 via P9 Risk Prompt (6 dependency categories × 5 risk dimensions). Phase 2 — author Continuity Playbook covering recovery procedures for top 10 risks identified in Phase 1. Phase 3 — run two tabletop exercises and draft W-18 SOP. Success = all three phases delivered; W-18 approved and committed to GitHub; Risk Register referenced in Tier 3 quarterly governance audit. |
 | I-42 | JSX Artifact Workflow Standard | Greg | Planned | P0 | Q2 '26 | Pattern library entry for JSX artifact creation and delivery workflow. |
 | I-43 | Outlook Forward Guard Add-in | Greg | Planned | P4 | Q2 '26 | Office Web Add-in (ItemSend event). Bob Brezniak: Defender/ASR review pending. |
-| I-44 | FOV Camera Tool Suite | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — Four pyRevit buttons (FOV ZERO, FOV RESTORE, HIDE FOV, SHOW FOV). B-13/B-14/B-15/B-16. Beta — code complete, IAH100 live test pending. |
-| I-45 | Site Grid & Sheet Builder | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — PyRevit button suite: sector grid, cropped views/sheets, key plan index. B-34 through B-38. In Development. |
+| I-44 | FOV Camera Tool Suite | Greg | Active | P4-002 | Q2 '26 | Plan: Schedule 30-min IAH100 live-test block covering I-44 first (lowest risk), then I-45 Site Grid and I-49 Linked CAD Layer Manager on the same block. Prereq = Stephanie confirms Civil DWG link current on IAH100 (OQ-2). Success = all four FOV buttons pass on IAH100 with no regression; any failure triggers W-20 v1.1 §4E post-mortem. Four pyRevit buttons: FOV ZERO, FOV RESTORE, HIDE FOV, SHOW FOV (B-13/B-14/B-15/B-16). Beta — code complete, IAH100 live test pending. |
+| I-45 | Site Grid & Sheet Builder | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — PyRevit button suite: sector grid, cropped views/sheets, key plan index. B-34 through B-38. In Development. Covered by I-44 IAH100 live-test block when code complete. |
 | I-46 | Bulk Title Block Parameter Editor | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — PyRevit button with WPF dialog. B-33 (Quikset Keyplan N Arrow). Beta — live Revit test pending. |
 | I-47 | AI Context Store (pgvector/PostgreSQL) | Jason | Planned | P4 | Q3 '26 | Self-hosted on DGX Spark. 12-month target: Graphiti temporal knowledge graph. |
 | I-48 | API-Driven Hub Script (Alternative E) | Jason | Active | P4 | Q2 '26 | Plan: TBD — Automated P0 sync via Claude API. |
-| I-49 | Linked CAD Layer Manager | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — Three pyRevit buttons: CAD Layers Export, CAD Layers Apply, Update Defaults. B-17/B-18/B-19. Complete. IAH100 live test pending — confirm Civil DWG link current before scheduling. |
+| I-49 | Linked CAD Layer Manager | Greg | Active | P4-002 | Q2 '26 | Plan: TBD — Three pyRevit buttons: CAD Layers Export, CAD Layers Apply, Update Defaults. B-17/B-18/B-19. Complete. IAH100 live test pending — confirm Civil DWG link current before scheduling. Covered by I-44 IAH100 live-test block. |
 | I-50 | Standard Folder & File Structure | Jennifer | Active | P6 | Q2 '26 | Plan: TBD — Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
 | I-51 | Email Attachment Ingestion Agent | Jason | Planned | P4 | Q3 '26 | Automated email attachment extraction and filing. |
 | I-52 | CI/CD Pipeline (Claude Code GitHub Actions) | Bob/Victor | Active | P4 | Q2 '26 | Plan: TBD — Phase 1: Odoo + PyRevit repos, read-only 30 days, $100/mo cap. Victor owns CLAUDE.md. Phase 2: RevitPrint Minion runner (gated Jason). |
@@ -94,7 +96,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-57 | W-19 Chat Quality Evaluation SOP | Jennifer | Planned | P2 | Q2 '26 | Gates Wave 1 SOP Lookup Pilot (Q2 2026, requires 5 approved SOPs from P2). |
 | I-58 | P8-001 Document Intake & Routing | Rachel | Active | P8 | Q2 '26 | Plan: TBD — Go-live. Instructions v1.2 approved 2026-03-15. |
 | I-59 | NL Command Interface (Odoo) | Victor | Planned | P7 | Q3 '26 | Gated on P8-001 operational stability. |
-| I-60 | Cowork Plugin | Greg | Active | P4 | Q2 '26 | Plan: TBD — Phase 1 complete. Phases 2–3 gated on Jason (April 1). Superpowers is canonical structural reference for skill authoring (per 2026-04-18 P0 handoff). |
+| I-60 | Cowork Plugin | Greg | Active | P4 | Q2 '26 | Plan: Phase 1a (Jason scoping) — finalize BCG-specific skill roster; candidates: bcg-revit-qc-patterns, bcg-hyperscaler-review, bcg-odoo-module-review, bcg-sop-authoring. Phase 1b (authoring) — author skills against Superpowers structural pattern (commit 03bcaf8 vendored upstream skills are reference only; do NOT re-author). Phase 1c (pilot) — Gregory tests trigger-phrase invocation in Claude Code; memo back to P0. Dep = Jason onboarded (cleared 2026-04-01) + I-61 Bob security review complete. Phases 2–3 (Jason: commands, then connectors + agents) gated on Phase 1 handback. Superpowers is canonical structural reference (per 2026-04-18 P0 handoff). |
 | I-61 | Cowork Security/Audit Assessment | Bob | Planned | P5 | Q2 '26 | Security review of Cowork deployment. |
 | I-62 | BCG Ecosystem Vocabulary | Greg | Complete | P0 | Q1 '26 | Evidence: BCG_Ecosystem_Vocabulary.md (W-22 artifact). Published to GitHub 2026-03-14. |
 | I-63 | Candidate Data Management & ADP Recruiting Transition | Jennifer | Active | P6 | Q2 '26 | Plan: TBD — Three phases. Phase 3 contingent. Integrates into W-23 hiring nexus workflow. |
@@ -193,6 +195,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 2.10.1 | 2026-04-18 | Backfilled plan references for 4 Active initiatives: I-24 (Track A + Track B scoped with 5 counsel questions + insurance renewal AI-exclusion scope), I-41 (BCP three-phase sequencing), I-44 (IAH100 live-test block, covers I-45/I-49 by proximity note), I-60 (Cowork Plugin Phase 1a/1b/1c per 2026-04-18 P4 handoff). Remaining TBD: 22 Active + 3 On Hold. First application of Plan Link Rule since v2.10. |
 | 2.10 | 2026-04-18 | Added PLAN LINK RULE (Section 2 preamble). Active initiatives must record plan reference at start of Notes as `Plan: <path or URL>`. `Plan: TBD` marks backfill state. Enforced at Planned → Active (W-20 v1.1 Trigger 3) and Active → Complete (W-20 v1.1 Checklist 4D). All existing Active items marked `Plan: TBD` for opportunistic backfill. Status Definitions table updated. Evidence link convention noted for Complete items (I-62, I-69 backfilled). Derived from I-72 Superpowers methodology port: writing-plans discipline adapted to BCG governance. |
 | 2.9 | 2026-04-18 | Added I-73 (BCGTools Licensing Gate (Option 3 + Option 4) / Greg operational + Jason Harris architecture / P4-002 / Planned / Q3 '26). Updated P4-002 cross-reference (6→7). Added I-73 to WS-10. Updated subproject registry P4-002 initiatives list. Total: 70 active, 3 removed, 11 workstreams, 6 subprojects. Next I-slot: I-74. |
 | 2.8 | 2026-04-17 | Added I-72 (Superpowers Methodology Framework — Evaluation & Integration / Jason Harris+Gregory / P4 / Planned / Q3 '26). Windsurf compatibility confirmed via native Agent Skills support (no porting required). Updated P4 cross-reference (12→13). Added I-72 to WS-10. Total: 69 active, 3 removed, 11 workstreams, 6 subprojects. Next I-slot: I-73. |
