@@ -1,8 +1,8 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 1.9
-**Effective:** March 2026
-**Last Updated:** 2026-04-17
+**Version:** 2.0
+**Effective:** April 2026
+**Last Updated:** 2026-04-18
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -44,7 +44,7 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | P11 | Candidate OSINT & Pre-Hire Intelligence | Gregory & Jennifer | Candidate Intelligence Reports (CIRs) — pre-hire public record and digital footprint review. RESTRICTED. | P10 (CIR custody — Gregory files), P6 (go/no-go decision — Gregory or Jennifer) |
 
 **Note:** P6 is HR & People ONLY. Legal, compliance, licensing, and insurance governance migrated to P10 as of 2026-03-15.
-**Note:** P11 is Gregory & Jennifer only, RESTRICTED. CIRs are triggered pre-offer and filed to P10 for custody (Gregory only). Go/no-go hiring decisions route to P6 via Gregory or Jennifer. Jennifer may carry CIR findings into P6 directly.
+**Note:** P11 is Gregory & Jennifer only, RESTRICTED. CIRs are triggered pre-offer and filed to P10 for custody (Gregory only). Go/no-go hiring decisions route to P6 via Gregory or Jennifer.
 
 ### 2.3 Subproject Registry
 
@@ -53,6 +53,7 @@ This document is the single source of truth for BCG's Claude Project structure: 
 | P0-001 | P0 | Ecosystem Triage & Routing Protocol | Classified updates, handoff prompts, I-number registrations | Active |
 | P4-001 | P4 | MCP Evaluation & Selection | MCP server evaluations, capability matrices | Active |
 | P4-002 | P4 | Revit & BIM Automation | PyRevit buttons (47-button backlog B-01–B-47 across 10 panels), Dynamo scripts | Active |
+| **P4-003** | **P4** | **BCG EasyButton / Idea Capture** | **Voice-activated idea capture tool: code, governance, beta testing, rollout, ecosystem integration** | **Active (NEW 2026-04-18)** |
 | P5-001 | P5 | Network Infrastructure Assessment | Firewall/switch config assessment, gap analysis | Planned |
 | P5-002 | P5 | Monitoring & Observability Infrastructure | Prometheus/Grafana/Loki stack, telemetry | Active (Ph1 complete) |
 | P8-001 | P8 | Document Intake & Routing | RFP/CO/PO intake processing, file placement | Active |
@@ -143,6 +144,7 @@ The `[ORIGIN:]` line is stripped before delivery to the receiving project but mu
 | AI/MCP deployment | P4 |
 | MCP server evaluation | P4-001 |
 | PyRevit/Revit automation | P4-002 |
+| Voice-activated idea capture / EasyButton | P4-003 |
 | Defender or compliance policy | P5 |
 | Network infrastructure assessment | P5-001 |
 | Monitoring/observability stack | P5-002 |
@@ -164,7 +166,7 @@ Create when a workstream needs its own custom instructions, has a knowledge base
 
 ### 5.2 Subproject Structure
 
-Numbering: Three-digit sequential within parent (P4-001, P4-002). Each gets its own Claude Project. Subprojects inherit all security boundaries and formatting standards. Parent instructions take precedence in conflict.
+Numbering: Three-digit sequential within parent (P4-001, P4-002, P4-003). Each gets its own Claude Project. Subprojects inherit all security boundaries and formatting standards. Parent instructions take precedence in conflict.
 
 ### 5.3 Subproject Lifecycle
 
@@ -174,13 +176,15 @@ Creation (owner assigns ID, creates project) → Active (produces deliverables, 
 
 Every satellite's custom instructions must include the EAB. Master file: `bcg-ops-governance/standards/BCG_Ecosystem_Awareness_Block.md`. Current version: **v1.6**. Deployed by copy-paste (embedded, not runtime-fetched). Placement: after SECURITY BOUNDARIES, before COMMANDS & SHORTCUTS.
 
+**Note:** EAB update pending to reflect P4-003 addition (ecosystem count 18 → 19 projects). Queued for next EAB propagation sprint.
+
 ---
 
 ## 6. Cross-Project Dependency Tracking
 
 Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
-**Active Dependencies (March 2026):**
+**Active Dependencies (April 2026):**
 
 | Dependent | Needs | From | By When | Status |
 |-----------|-------|------|---------|--------|
@@ -194,6 +198,8 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 | P7 | Accounting data source decision | D-01 | TBD | Blocks I-23 |
 | P6 | CIR go/no-go for finalist candidates | P11 | Ongoing | Active — triggered pre-offer; Gregory or Jennifer communicates |
 | P10 | CIR custody filing | P11 | Ongoing | Active — P11 outputs to P10 (Gregory files) |
+| **P4-003** | **DGX Spark faster-whisper deployment (Ph2)** | **P4** | **Q3 '26** | **Hard dep — cloud STT is Ph1-only; Ph3 rollout blocked on on-prem STT** |
+| **P4-003** | **I-65 Ph1 RAG corpus + guardrails alignment** | **P4** | **Q3 '26** | **Soft dep — informs Ph4 MCP + Odoo `bcg_ai_rfi` routing** |
 
 ---
 
@@ -201,6 +207,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
+| **2026-04-18** | **P0** | **P4-003** | **P4-003 stand-up — I-73 BCG EasyButton / Idea Capture registered; Gregory Ph1 → Jason Ph2–4; 4-file package per standard pattern** | **Gregory** |
 | 2026-04-17 | P0 | P4 | I-72 Superpowers Methodology Framework — Phase 1 complete, Phase 2/3 scope | Gregory |
 | 2026-03-22 | P0 | P4 | CIP/DDL Knowledge Capture Architecture — feeds I-65 Phase 1 RAG corpus | Gregory |
 | 2026-03-22 | P7 | P0 | Odoo Dev Request Lifecycle SOP — BCG_P7_Dev_Request_Lifecycle.docx | Gregory |
@@ -216,10 +223,11 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| 1.9 | 2026-04-17 | Added 2026-04-17 P0→P4 handoff to log (I-72 Superpowers Methodology Framework). Handoff document committed at `handoffs/P4_Handoff_I-72_Superpowers_Methodology_Framework_2026-04-17.md`. |
-| 1.8 | 2026-04-01 | P11 access expanded: Gregory (only) → Gregory & Jennifer Brezniak (full access). Updated Section 2.2 owner and notes. Updated Section 3.4 routing rules and P11 rule. Updated Section 4 redirect. Updated Section 5.4 EAB reference to v1.6. Updated Section 6 dependency notes. P10 custody filing remains Gregory-only. |
-| 1.7 | 2026-03-23 | Added Section 3.5 — Handoff Validation Protocol. Three-question pre-generation check (origin, destination, P0 special case). Automation constraint requiring [ORIGIN:] audit line for all automated handoff pipelines. Added 2026-03-22 handoffs to log (P0→P4 CIP/DDL, P7→P0 Dev Lifecycle). |
-| 1.6 | 2026-03-22 | Section 2.3: Updated P4-002 button count 42 → 47. |
+| **2.0** | **2026-04-18** | **Added P4-003 (BCG EasyButton / Idea Capture) to subproject registry per P0-001 sprint 2026-04-18 structural registration. Added P4-003 routing redirect in §4. Added P4-003 dependencies (DGX Spark on-prem STT Ph2, I-65 Ph1 soft dep) in §6. Added 2026-04-18 P0→P4-003 handoff to approved handoff log. Flagged EAB update queued (ecosystem 18 → 19 projects). Companion to Initiative Catalog v2.9 reconciliation commit same day (registers I-73 EasyButton + I-74 Notification Center Ph A Remediation).** |
+| 1.9 | 2026-04-17 | Added 2026-04-17 P0→P4 handoff to log (I-72 Superpowers Methodology Framework). |
+| 1.8 | 2026-04-01 | P11 access expanded: Gregory (only) → Gregory & Jennifer Brezniak. Updated §2.2, §3.4, §4, §5.4 EAB reference to v1.6. |
+| 1.7 | 2026-03-23 | Added §3.5 — Handoff Validation Protocol. Added 2026-03-22 handoffs to log (P0→P4 CIP/DDL, P7→P0 Dev Lifecycle). |
+| 1.6 | 2026-03-22 | §2.3: Updated P4-002 button count 42 → 47. |
 | 1.5 | 2026-03-17 | Added P11 to satellite registry. Added P11 routing rules and redirect. Added P6/P10 dependencies from P11. Updated scope P0–P11. Updated EAB reference to v1.5. |
 | 1.4 | 2026-03-17 | Added P9, P10 to project registry. Added P0-001, P4-002, P5-002, P8-001 to subproject registry. Added retired subproject table. Updated P6 name. Added P10 routing rules. Updated dependencies. Updated scope P0-P10. |
 | 1.3 | 2026-03-09 | Added P5 VPN dependency. |
