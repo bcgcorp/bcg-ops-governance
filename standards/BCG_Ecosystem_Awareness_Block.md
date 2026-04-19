@@ -10,9 +10,10 @@
 
 **What This Is NOT:** This is not a runtime-fetched document. Projects do not fetch this file during conversations. The EAB text is embedded directly in each project's custom instructions. This file exists so there is one canonical version to copy from when propagating or updating.
 
-**What Changed (v1.7):** Two reconciliation changes bundled into a single bump:
+**What Changed (v1.7):** Three reconciliation changes bundled into a single bump:
 - **Retired P0-001** from the subproject list. Triage function absorbed into P0 via protocol-harness pattern (I-75, see `standards/protocols/`). Removed from Section 2 Placement Guide, Section 3 Subprojects table, and Section 4 parent-routing list.
 - **Added P4-003 (BCG EasyButton / Idea Capture)** to the subproject list. P4-003 was registered in Catalog v2.9 (2026-04-18) but never propagated to EAB — this bump fixes that pre-existing drift. Added to Section 3 Subprojects table and Section 4 parent-routing list.
+- **Corrected P11 description from "Gregory & Jennifer only" to "Gregory-only"** in Section 3 registry row and routing redirect. The v1.6 change log claimed P11 access was expanded to include Jennifer, but P11's own project instructions were never updated to match — they still read "Gregory Bernardo is the sole user. Sole access. No delegation." The v1.7 EAB reverts the description to match P11's actual policy. If Jennifer access is desired going forward, P11's own instructions must be updated first, then the EAB can re-expand in a subsequent version.
 
 **Net count:** 18-project ecosystem count unchanged (12 parents + 6 subs). Subproject list members changed: [P0-001, P4-001, P4-002, P5-001, P5-002, P8-001] → [P4-001, P4-002, P4-003, P5-001, P5-002, P8-001].
 
@@ -95,7 +96,7 @@ PROJECT REGISTRY
 | P8 | Proposals & RFP Operations | RFP intake, bid/no-bid decisions, proposal development, promise tracking, pipeline stats. |
 | P9 | Business Continuity & Resilience | Enterprise BCP, dependency risk register, continuity protocols, tabletop exercises. |
 | P10 | Legal, Compliance & Risk | Licensing, insurance governance, contract review, legal posture, compliance analysis. Gregory-only. |
-| P11 | Candidate OSINT & Pre-Hire Intelligence | Pre-hire public record and digital footprint review. Gregory & Jennifer only. Triggered pre-offer. RESTRICTED. |
+| P11 | Candidate OSINT & Pre-Hire Intelligence | Pre-hire public record and digital footprint review. Gregory-only. Triggered pre-offer. RESTRICTED. |
 
 SUBPROJECTS
 | ID | Parent | Name |
@@ -123,7 +124,7 @@ Common redirects:
 - Strategic synthesis/cross-project coordination/ecosystem triage → P0
 - Business continuity planning → P9
 - Legal/compliance/licensing/contract review/insurance → P10 (Gregory-only; route to Gregory directly)
-- Pre-hire candidate background investigation → P11 (Gregory & Jennifer only; RESTRICTED)
+- Pre-hire candidate background investigation → P11 (Gregory-only; RESTRICTED)
 - Inbound business documents (RFPs, Contracts, POs, WOs, COs) → P8-001
 - Voice-activated idea capture / EasyButton tooling → P4-003
 
@@ -190,8 +191,8 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.7 | 2026-04-19 | Retired P0-001 from subproject list (absorbed into P0 via protocol-harness / I-75). Added P4-003 to subproject list (catches up 2026-04-18 catalog drift). Updated Section 3 Subprojects table, Section 4 parent-routing, Section 2 Placement Guide. Added P0 scope note referencing W-20 v1.2 protocol. Added P4-003 routing redirect. Net project count unchanged (18). | ⚠️ Pending — needs propagation to 17 non-P0 projects |
-| 1.6 | 2026-04-01 | P11 access expanded: "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. | ✅ Yes — all 17 projects at v1.6 (2026-04-15). P11 updated at deploy (2026-04-01); P1–P10 and all subprojects updated 2026-04-15 via GitHub MCP batch commits. |
+| 1.7 | 2026-04-19 | Retired P0-001 from subproject list (absorbed into P0 via protocol-harness / I-75). Added P4-003 to subproject list (catches up 2026-04-18 catalog drift). Corrected P11 description from "Gregory & Jennifer only" back to "Gregory-only" (v1.6 EAB had expanded access aspirationally but P11's own instructions were never updated to match). Updated Section 3 registry + routing redirect, Subprojects table, Section 4 parent-routing, Section 2 Placement Guide. Added P0 scope note referencing W-20 v1.2 protocol. Added P4-003 routing redirect. Net project count unchanged (18). | ✅ Yes — all 17 projects at v1.7 (2026-04-19). P1 pushed via GitHub MCP (commit 5c6dad43); P2–P11 + subprojects + README pushed via local repo commit. |
+| 1.6 | 2026-04-01 | P11 access expanded (intent only): "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. NOTE: This expansion was made in the EAB but never applied to P11's own project instructions, creating a policy mismatch that v1.7 reverts. | ✅ Yes — all 17 projects at v1.6 (2026-04-15). P11 updated at deploy (2026-04-01); P1–P10 and all subprojects updated 2026-04-15 via GitHub MCP batch commits. |
 | 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Yes — 17/17 projects at v1.5 (2026-03-17) |
 | 1.4 | 2026-03-17 | Added P10 to project registry. Updated project count 16 to 17. Updated P6 scope: HR & People (removed Legal Ops). Added P10 routing redirect. Added P10 flagging example. | Superseded by v1.5 |
 | 1.3 | 2026-03-12 | Retired P7-001 through P7-004. Added P0-001, P5-002, P8-001. Updated project count 17 to 16. | Superseded by v1.4 |
@@ -205,30 +206,30 @@ Subproject routing parent assignments:
 
 ### Satellites (11)
 
-| Project | Current EAB Version | Pending v1.7 Propagation | Notes |
+| Project | Current EAB Version | v1.7 Propagation Status | Notes |
 |---------|-------------|-------------|-------|
-| P1 | v1.6 | ⚠️ Pending | |
-| P2 | v1.6 | ⚠️ Pending | |
-| P3 | v1.6 | ⚠️ Pending | |
-| P4 | v1.6 | ⚠️ Pending | |
-| P5 | v1.6 | ⚠️ Pending | |
-| P6 | v1.6 | ⚠️ Pending | |
-| P7 | v1.6 | ⚠️ Pending | |
-| P8 | v1.6 | ⚠️ Pending | |
-| P9 | v1.6 | ⚠️ Pending | |
-| P10 | v1.6 | ⚠️ Pending | |
-| P11 | v1.6 | ⚠️ Pending | |
+| P1 | v1.7 | ✅ Propagated 2026-04-19 | GitHub MCP commit 5c6dad43 |
+| P2 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P3 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P4 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P5 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P6 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P7 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P8 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P9 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
+| P10 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. P10 uses variant EAB shape (no `EAB: v1.6\|` header line; `## CROSS-PROJECT ECOSYSTEM` heading format preserved) |
+| P11 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. P11 had been left at v1.5 in the v1.6 propagation — this bump catches it up. |
 
 ### Subprojects (6 — P0-001 retired 2026-04-19)
 
-| Project | Current EAB Version | Pending v1.7 Propagation | Notes |
+| Project | Current EAB Version | v1.7 Propagation Status | Notes |
 |---------|-------------|-------------|-------|
-| P4-001 | v1.6 | ⚠️ Pending | |
-| P4-002 | v1.6 | ⚠️ Pending | |
-| P4-003 | — | ⚠️ Pending initial deploy | P4-003 registered 2026-04-18; EAB never deployed. First deploy at v1.7. |
-| P5-001 | v1.6 | ⚠️ Pending | |
-| P5-002 | v1.6 | ⚠️ Pending | |
-| P8-001 | v1.6 | ⚠️ Pending | |
+| P4-001 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Satellite-shape EAB. |
+| P4-002 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Satellite-shape EAB. |
+| P4-003 | v1.7 | ✅ Initial deploy 2026-04-19 | P4-003 registered 2026-04-18; first-ever EAB deploy at v1.7 via this migration. Satellite-shape EAB matching P4-001/P4-002 precedent. |
+| P5-001 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Satellite-shape EAB. |
+| P5-002 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Subproject-shape EAB (custom routing-to-parent language). |
+| P8-001 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Subproject-shape EAB (custom routing-to-parent language). |
 
 ### Retired (do not propagate)
 
