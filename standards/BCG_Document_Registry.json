@@ -1,8 +1,8 @@
 {
-  "version": "1.2",
-  "lastUpdated": "2026-03-17",
+  "version": "1.4",
+  "lastUpdated": "2026-04-19",
   "updatedBy": "Gregory Bernardo",
-  "note": "Post-integrity-audit sync. All 8 stale governance .md files committed to GitHub. Version numbers in this registry now match actual HEAD content. v1.2: Synced all GOV- entries to committed versions.",
+  "note": "v1.4: Bumped GOV-021 entry 1.0 -> 1.1 (sync-mode vocabulary formalized; A3 B:\\ copy clarified as additive superset, not exact mirror, per the 2026-04-19 script change from /MIR to /E /XO). v1.3: Registered GOV-021 v1.0 Artifact Deployment Routing Standard (approved 2026-04-19). Broader drift-sync of older GOV-### entries to current file versions (GOV-002 at 2.10, GOV-007 at 2.0, GOV-013 at 1.3, GOV-014 at 1.4, GOV-016 at 2.4, GOV-017 at 1.1, etc.) is deferred -- this file is currently stale relative to committed markdown versions and needs a dedicated sync pass. See BCG_Governance_Doc_Registry.md for authoritative tracked versions.",
   "documents": [
     {
       "id": "GOV-001",
@@ -62,12 +62,12 @@
       "type": "governance",
       "project": "P0",
       "owner": "Gregory Bernardo",
-      "version": "v1.2",
+      "version": "v1.4",
       "status": "published",
       "githubPath": "standards/BCG_Document_Registry.json",
       "onedrivePath": null,
-      "lastUpdated": "2026-03-17",
-      "notes": "This file. Machine-readable document status tracking. v1.2: synced to actual committed governance file versions."
+      "lastUpdated": "2026-04-19",
+      "notes": "This file. Machine-readable document status tracking. v1.4: GOV-021 entry 1.0 -> 1.1; broader drift-sync deferred."
     },
     {
       "id": "GOV-006",
@@ -211,6 +211,19 @@
       "onedrivePath": null,
       "lastUpdated": "2026-03-16",
       "notes": "Current. P0-P10 scope. All team members present. Nick Bernardo included. Bernard Lewis restriction documented."
+    },
+    {
+      "id": "GOV-021",
+      "title": "Artifact Deployment Routing Standard",
+      "type": "governance",
+      "project": "P0",
+      "owner": "Gregory Bernardo",
+      "version": "v1.1",
+      "status": "published",
+      "githubPath": "standards/BCG_Artifact_Deployment_Routing_Standard.md",
+      "onedrivePath": null,
+      "lastUpdated": "2026-04-19",
+      "notes": "Ecosystem-wide artifact class taxonomy, canonical/mirror model with sync-mode vocabulary (exact/additive/snapshot), phased-migration framework, per-project DEPLOYMENT.md convention, finishing-work routing check. 8 groups (A-H), 30+ classes, 5 active migrations. v1.1 (2026-04-19): sync-mode vocabulary formalized; A3 B:\\ copy clarified as additive superset (not exact mirror) per the same-day script change from /MIR to /E /XO. 17 [NEEDS INPUT] gaps targeting v1.2 closure. Scope P0-P11 and all subprojects."
     },
     {
       "id": "SOP-GOV-001",
