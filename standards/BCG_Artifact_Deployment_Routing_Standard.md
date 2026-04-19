@@ -1,9 +1,9 @@
 # BCG Corp -- Artifact Deployment Routing Standard
 
 **Document ID:** GOV-021
-**Version:** 1.0 DRAFT
-**Status:** [DRAFT -- PENDING REVIEW]
-**Effective:** [pending Gregory approval]
+**Version:** 1.0
+**Status:** APPROVED
+**Effective:** 2026-04-19
 **Last Updated:** 2026-04-19
 **Scope:** All Claude Projects (P0-P11), subprojects, code repositories, and operational artifacts
 **Owner:** Gregory Bernardo, President
@@ -346,31 +346,7 @@ The answer is recorded in one of three places depending on trigger:
 The A3 status-update-prompt mirror runs via Windows Task Scheduler invoking
 a PowerShell script that wraps `robocopy /MIR` and writes a timestamp file.
 
-**Script:** `scripts/sync-a-to-b.ps1` (to be created alongside this standard)
-
-**Sketch:**
-
-```powershell
-# sync-a-to-b.ps1 -- one-way mirror A:\AI Accessible\Outputs\ -> B:\AI Accessible\Outputs\
-# Task Scheduler: run hourly, user context with access to both A:\ and B:\
-
-$src = "A:\AI Accessible\Outputs"
-$dst = "B:\AI Accessible\Outputs"
-$log = "B:\AI Accessible\Outputs\_sync\robocopy.log"
-$stamp = "B:\AI Accessible\Outputs\_sync\last-sync.txt"
-
-New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
-
-robocopy $src $dst /MIR /R:2 /W:5 /NP /LOG+:$log
-
-if ($LASTEXITCODE -lt 8) {
-    # robocopy 0-7 are success codes; 8+ are errors
-    (Get-Date).ToString("o") | Out-File -Encoding utf8 $stamp
-} else {
-    "FAILED at $(Get-Date -Format o); robocopy exit $LASTEXITCODE" |
-        Out-File -Encoding utf8 $stamp -Append
-}
-```
+**Script:** [`scripts/sync-a-to-b.ps1`](../scripts/sync-a-to-b.ps1) (committed with this standard v1.0)
 
 **Task Scheduler settings:**
 - Trigger: hourly
@@ -381,12 +357,15 @@ if ($LASTEXITCODE -lt 8) {
 **Canonical / mirror semantics:**
 `/MIR` makes B:\ an exact mirror of A:\. This is the correct choice because
 A:\ is canonical -- any divergent edit on B:\ is drift to be corrected, not
-content to preserve.
+content to preserve. The script refuses to run if A:\ has fewer files than
+B:\ (migration-not-complete guard).
 
 ### 8.2 `last-sync.txt` contract
 
 The `last-sync.txt` timestamp file is the single mechanism the finishing-work
 check uses to detect stale mirrors.
+
+**Path:** `C:\ProgramData\BCG\sync-a-to-b\last-sync.txt` (outside the mirrored tree)
 
 **Contents:** one line, ISO-8601 timestamp, UTF-8.
 
@@ -499,12 +478,11 @@ governing standard (or the section of GOV-021 where the class now lives).
 
 ### 11.3 Cleanup actions triggered by v1.0
 
-On approval of this standard, the following one-time cleanups are executed:
+On approval of this standard, the following one-time cleanups execute:
 
 1. **Archive `BCG-Greg/bcg-easybutton`** (personal-account duplicate of the
-   canonical `bcgcorp/bcg-easybutton`). Set GitHub archive flag and replace
-   `README.md` with a three-line redirect to the canonical org repo. Zero
-   ongoing risk of accidental writes; permanent discoverability.
+   canonical `bcgcorp/bcg-easybutton`). README replaced with redirect;
+   archive flag to be set manually in GitHub Settings (no API tool available).
 2. **Create `DEPLOYMENT.md` in `bcgcorp/bcg-easybutton`** as the pilot for
    §6 using the template in §6.2.
 3. **Register GOV-021** in `BCG_Governance_Doc_Registry.md` §3.20 and in
@@ -515,20 +493,16 @@ On approval of this standard, the following one-time cleanups are executed:
 5. **Deploy `scripts/sync-a-to-b.ps1`** and the Task Scheduler job (§8.1)
    on Gregory's workstation.
 
-None of the above happen until this file's status flips from `[DRAFT --
-PENDING REVIEW]` to `APPROVED`.
-
 ---
 
 ## 12. Change Log
 
 | Version | Date | What Changed |
 |---|---|---|
-| 1.0 DRAFT | 2026-04-19 | Initial draft. Establishes taxonomy (8 groups A-H), canonical/mirror model, phased-migration framework, per-project `DEPLOYMENT.md` convention, finishing-work routing check integration with W-20 Checklist 4D, `A:\ -> B:\` auto-mirror tooling, and explicit `[NEEDS INPUT]` gaps table as v1.0 forcing function. Locks routing for the classes Gregory owns directly: A3 (status-update prompts, A:\ canonical with auto-mirror to B:\), C1/C4 (GitHub->GitLab phased migration with claude.ai connector flip trigger), E1/E1b (P4-003 RAG feed/digests, `~/BCG/` canonical with DGX Spark as Ph2 target), G1 (CascadeProjects never canonical; end-of-session commit rule), H1 (P4-003 installers, Azure Blob canonical + GitHub Releases mirror). 17 remaining gaps explicitly tagged with `[NEEDS INPUT: <owner>]` targeting Bob/Victor/Rachel/Jason/Gregory/Jennifer for resolution in v1.1 and v1.2. |
+| 1.0 | 2026-04-19 | APPROVED. Initial version. Establishes taxonomy (8 groups A-H), canonical/mirror model, phased-migration framework, per-project `DEPLOYMENT.md` convention, finishing-work routing check integration with W-20 Checklist 4D, `A:\ -> B:\` auto-mirror tooling (scripts/sync-a-to-b.ps1), and explicit `[NEEDS INPUT]` gaps table as v1.0 forcing function. Locks routing for the classes Gregory owns directly: A3 (status-update prompts, A:\ canonical with auto-mirror to B:\), C1/C4 (GitHub->GitLab phased migration with claude.ai connector flip trigger), E1/E1b (P4-003 RAG feed/digests, `~/BCG/` canonical with DGX Spark as Ph2 target), G1 (CascadeProjects never canonical; end-of-session commit rule), H1 (P4-003 installers, Azure Blob canonical + GitHub Releases mirror). 17 remaining gaps explicitly tagged with `[NEEDS INPUT: <owner>]` targeting Bob/Victor/Rachel/Jason/Gregory/Jennifer for resolution in v1.1 and v1.2. |
 
 ---
 
-*This document is maintained in GitHub at `bcg-ops-governance/standards/`. Not yet
-registered in `BCG_Governance_Doc_Registry.md` or `BCG_Document_Registry.json`
-pending Gregory's approval. On approval, §11.3 cleanup actions execute in the
-order listed.*
+*This document is maintained in GitHub at `bcg-ops-governance/standards/`. Registered in
+`BCG_Governance_Doc_Registry.md` §3.20 and `BCG_Document_Registry.json` as of v1.0
+approval on 2026-04-19.*
