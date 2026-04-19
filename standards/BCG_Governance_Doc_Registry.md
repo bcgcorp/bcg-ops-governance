@@ -1,6 +1,6 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 3.5
+**Version:** 3.6
 **Effective:** March 2026
 **Last Updated:** 2026-04-19
 **Scope:** All Claude Projects (P0-P11) and subprojects
@@ -67,7 +67,7 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Team_Directory.md` |
-| **Current Version** | 2.4 |
+| **Current Version** | 2.5 |
 | **Fetch before** | Assigning owners/reviewers, referencing team members, onboarding tasks, headcount questions |
 | **Governs** | Roster (12 members + 1 vacant), titles, emails, project assignments, availability, current headcount, restricted assignments. Includes Jason Harris (Active, Fractional W-2, started 2026-04-01) and Oscar Cucaita Sanchez (Project Manager, full-time, started 2026-04-15). |
 
@@ -278,7 +278,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | **Scope** | All satellite projects (P1-P11) and subprojects |
 | **Update trigger** | New project/subproject created, project renamed/closed, routing pattern added |
 | **See also** | Style Guide Section 16 for full EAB specification |
-| **Propagation status** | v1.6 fully propagated to all 17 projects (complete 2026-04-15). **v1.7 pending propagation to 17 non-P0 projects** (P0-001 retired, P4-003 added, P0 scope note referencing W-20 v1.2). |
+| **Propagation status** | v1.6 fully propagated to all 17 projects (complete 2026-04-15). **v1.7 propagated to all 17 non-P0 projects 2026-04-19** (P0-001 retired, P4-003 added, P0 scope note referencing W-20 v1.2). |
 
 **Why embedded, not fetched:** The EAB provides cross-project routing and handoff capabilities. These must work even when GitHub is unavailable. Embedding ensures zero-dependency availability.
 
@@ -304,7 +304,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 3.5 |
+| **Current Version** | 3.6 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, moved, or fetch triggers changed |
 
@@ -319,7 +319,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
 | Reference documents | 1 | Ecosystem Architecture Analysis |
-| Status documents | 1 | Ecosystem Status (current: 2026-04-15) |
+| Status documents | 1 | Ecosystem Status (current: 2026-04-19) |
 | Redirect stubs (sunset 2026-07-18) | 2 | Old W-20 SOP path, Old Post-Mortem Template path |
 | **Total in standards folder tree** | **31** | -- |
 
@@ -345,7 +345,8 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| **3.5** | **2026-04-19** | **PROTOCOL-HARNESS MIGRATION.** Added `standards/protocols/` folder structure to registry: Section 3.13 W-20 Triage relocated (path + version 1.1 → 1.2), Section 3.14 Initiative Closure Verification (new, v1.0), Section 3.15 Initiative Plan Discipline (new, v1.0), Section 3.16 Post-Mortem Protocol (new, v1.0), Section 3.17 Post-Mortem Template relocated to `protocols/resources/` (path change; v1.0 unchanged — content split from GOV-020, procedural moved to Section 3.16), Section 3.18 Protocols README (new, v1.0). **Fixed internal drift:** tracked version of Initiative Catalog corrected 2.10 → 3.0 (registry v3.2 had forward-referenced a v2.10 Plan Link Rule commit that never shipped; the Plan Link Rule was effective via W-20 v1.1 enforcement and is now canonically landed in `Initiative_Plan_Discipline.md` v1.0; Catalog lands directly at v3.0 per the migration's era-boundary decision). Added Rule 10 (Protocols vs SOPs convention) and Rule 11 (Redirect stubs). Added redirect stub entries for old W-20 path and old Post-Mortem Template path (90-day sunset, deletion scheduled 2026-07-18). GOV-020 retired as standalone ID — its procedural content lives in the Post-Mortem Protocol (3.16); its template lives as the resource (3.17). EAB bumped to v1.7 (Section 4.1) reflecting P0-001 retirement + P4-003 addition. Document count: runtime-fetched standards root 19 → 18 (W-20 and Post-Mortem Template removed), + 5 protocol files (new), + 1 protocol resource file (new), total 25 → 31. |
+| **3.6** | **2026-04-19** | **Same-day pointer refinement (post-Protocol-Harness sync).** §10.1 Current file updated from `BCG_Ecosystem_Status_2026-04-15.md` to `BCG_Ecosystem_Status_2026-04-19.md` reflecting new Ecosystem Status committed 2026-04-19 as the Protocol-Harness Era Boundary status snapshot. Previous 2026-04-15 file superseded per §10.1 operational convention. Section 6.2 current-status-file reference updated in document count table. Self-reference §6.1 bumped 3.5 → 3.6. EAB propagation note refined to record v1.7 full propagation complete 2026-04-19. No other content changes. |
+| 3.5 | 2026-04-19 | **PROTOCOL-HARNESS MIGRATION.** Added `standards/protocols/` folder structure to registry: Section 3.13 W-20 Triage relocated (path + version 1.1 → 1.2), Section 3.14 Initiative Closure Verification (new, v1.0), Section 3.15 Initiative Plan Discipline (new, v1.0), Section 3.16 Post-Mortem Protocol (new, v1.0), Section 3.17 Post-Mortem Template relocated to `protocols/resources/` (path change; v1.0 unchanged — content split from GOV-020, procedural moved to Section 3.16), Section 3.18 Protocols README (new, v1.0). **Fixed internal drift:** tracked version of Initiative Catalog corrected 2.10 → 3.0 (registry v3.2 had forward-referenced a v2.10 Plan Link Rule commit that never shipped; the Plan Link Rule was effective via W-20 v1.1 enforcement and is now canonically landed in `Initiative_Plan_Discipline.md` v1.0; Catalog lands directly at v3.0 per the migration's era-boundary decision). Added Rule 10 (Protocols vs SOPs convention) and Rule 11 (Redirect stubs). Added redirect stub entries for old W-20 path and old Post-Mortem Template path (90-day sunset, deletion scheduled 2026-07-18). GOV-020 retired as standalone ID — its procedural content lives in the Post-Mortem Protocol (3.16); its template lives as the resource (3.17). EAB bumped to v1.7 (Section 4.1) reflecting P0-001 retirement + P4-003 addition. Document count: runtime-fetched standards root 19 → 18 (W-20 and Post-Mortem Template removed), + 5 protocol files (new), + 1 protocol resource file (new), total 25 → 31. |
 | 3.4 | 2026-04-19 | Bumped GOV-021 tracked version 1.0 → 1.1 (sync-mode vocabulary formalized in Rule 2; A3 B:\ copy clarified as additive superset per 2026-04-19 script change from `/MIR` to `/E /XO`). Updated GOV-021 governs description accordingly. Bumped JSON registry (Section 5.1) tracked version 1.3 → 1.4. Self-reference 3.3 → 3.4. Runtime count unchanged (20). |
 | 3.3 | 2026-04-19 | Added GOV-021 entry -- Artifact Deployment Routing Standard (v1.0). Bumped GOV-014 tracked version 1.2 → 1.4 (Section 3 scope note pointing to GOV-021). Updated Section 5.1 JSON version 1.1 → 1.3. Added Rule 9 (non-document artifact routing governed by GOV-021). Runtime-fetched count 19 → 20. Total doc count 24 → 25. |
 | 3.2 | 2026-04-18 | Added Post-Mortem Template (GOV-020, v1.0). Bumped GOV-002 tracked version 2.8 → 2.10 (Plan Link Rule landed, 70 active, next slot I-74; note includes I-73 addition from v2.9). **Note:** The v2.10 forward-reference was never shipped as a standalone Catalog commit. Plan Link Rule content was effective via W-20 v1.1 enforcement; Catalog actual state at that time was v2.9 (71 active, next I-75). Resolved in registry v3.5. Bumped W-20 Triage SOP tracked version 1.0 → 1.1 (Trigger 4 Completion Verification, Section 4E Ecosystem Failure Response). Added Rule 8 (post-mortem filing). Runtime-fetched count 18 → 19. Total doc count 23 → 24. All three changes derived from I-72 Superpowers methodology port. |
@@ -392,7 +393,7 @@ Status documents are operational snapshots committed to `standards/` at each syn
 | Field | Value |
 |-------|-------|
 | **File pattern** | `BCG_Ecosystem_Status_YYYY-MM-DD.md` |
-| **Current file** | `BCG_Ecosystem_Status_2026-04-15.md` |
+| **Current file** | `BCG_Ecosystem_Status_2026-04-19.md` |
 | **Type** | Operational status snapshot — superseded by next sync |
 | **Governs** | Current state of all 18 projects, team load, open decisions, 30/60/90-day horizon. Upload to P0 project knowledge to activate as runtime reference. Delete prior dated versions after upload. |
 
