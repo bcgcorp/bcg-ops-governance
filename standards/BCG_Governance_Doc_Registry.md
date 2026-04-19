@@ -1,8 +1,8 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 3.2
+**Version:** 3.4
 **Effective:** March 2026
-**Last Updated:** 2026-04-18
+**Last Updated:** 2026-04-19
 **Scope:** All Claude Projects (P0-P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -103,9 +103,9 @@ These documents are fetched by Claude during conversations when the task matches
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Artifact_Naming_and_Capture_Standard.md` |
-| **Current Version** | 1.2 |
+| **Current Version** | 1.4 |
 | **Fetch before** | Naming any Claude-generated artifact, filing outputs to OneDrive, exporting UI artifacts |
-| **Governs** | Document output naming convention, UI artifact naming, capture workflow, security constraints for artifact export. 18 project codes registered. |
+| **Governs** | Document output naming convention, UI artifact naming, capture workflow, security constraints for artifact export. 18 project codes registered. v1.4 (2026-04-19): Section 3 scope note added pointing to GOV-021 for non-document artifact classes (source code, installers, RAG feeds, infrastructure configs, etc.). |
 
 ### 3.9 Ecosystem Vocabulary (GOV-012)
 
@@ -206,6 +206,15 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Initiating a post-mortem after an ecosystem-level incident (governance doc produced wrong output, infrastructure failure affecting multiple projects, I-number collision, SOP produced unexpected outcome, ecosystem drift discovered) |
 | **Governs** | Four-phase systematic debugging structure (Symptom → Hypothesis → Isolation → Root Cause), mandatory permanent rule change, closure checklist, filing location (bcg-ops-governance/post-mortems/), lifecycle stages, aggregation cadence (Tier 2 monthly review, Tier 3 quarterly pattern detection). Derived from I-72 Superpowers port: systematic-debugging skill adapted to BCG governance. Referenced by W-20 v1.1 Section 4E. |
 
+### 3.20 Artifact Deployment Routing Standard (GOV-021)
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Artifact_Deployment_Routing_Standard.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Any decision about where an artifact lives, any phased migration planning (GitHub→GitLab, B:\→A:\, or new ones), any orphan investigation, any finishing-work completion check (W-20 Checklist 4D), any new project setup requiring a `DEPLOYMENT.md` |
+| **Governs** | Ecosystem-wide artifact class taxonomy (8 groups A–H, 30+ classes), canonical/mirror model with sync-mode vocabulary (exact / additive / snapshot per Rule 2), phased-migration framework with flip triggers (5 active migrations + 2 historical), per-project `DEPLOYMENT.md` convention (repo-root placement), finishing-work routing check integrated with W-20 Checklist 4D and status-update trigger and end-of-session commit rule, A:\→B:\ additive hourly sync tooling (`scripts/sync-a-to-b.ps1` using robocopy `/E /XO` + `last-sync.txt` contract). Locks routing for A3 status-update prompts, C1/C4 `bcg-ops-governance` + `bcg-easybutton` source, E1/E1b P4-003 RAG feed/digests, G1 CascadeProjects-never-canonical rule, H1 P4-003 installers. v1.1 (2026-04-19): sync-mode vocabulary formalized; A3 B:\ copy clarified as additive superset (not exact mirror). 17 [NEEDS INPUT] gaps routed to Bob/Victor/Rachel/Jason/Gregory/Jennifer targeting v1.2 closure. |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -236,9 +245,9 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Document_Registry.json` |
-| **Current Version** | 1.1 |
+| **Current Version** | 1.4 |
 | **Deployment method** | Fetched programmatically by dashboard and automation tools |
-| **Governs** | Machine-readable document status tracking for all governance documents and SOPs. Used by the P0 dashboard for document health scoring. |
+| **Governs** | Machine-readable document status tracking for all governance documents and SOPs. Used by the P0 dashboard for document health scoring. v1.4 (2026-04-19): GOV-021 entry bumped to v1.1; broader drift-sync to current file versions remains deferred. |
 
 ---
 
@@ -249,7 +258,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 3.2 |
+| **Current Version** | 3.4 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, or fetch triggers changed |
 
@@ -257,13 +266,13 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Category | Count | Documents |
 |----------|-------|----------|
-| Runtime-fetched | 19 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern, Post-Mortem Template |
+| Runtime-fetched | 20 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, W-20 Triage SOP, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern, Post-Mortem Template, Artifact Deployment Routing |
 | Embedded | 1 | EAB |
 | Machine-readable | 1 | Document Registry JSON |
 | Registry (this file) | 1 | Governance Doc Registry |
 | Reference documents | 1 | Ecosystem Architecture Analysis |
 | Status documents | 1 | Ecosystem Status (current: 2026-04-15) |
-| **Total in standards folder** | **24** | -- |
+| **Total in standards folder** | **25** | -- |
 
 ---
 
@@ -277,6 +286,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 6. **EAB updates require propagation** to all satellite projects. See Style Guide Section 16 for the propagation protocol.
 7. **Do NOT rely on previously uploaded copies** of governance documents in project knowledge bases. The GitHub versions are authoritative.
 8. **Post-mortems (v3.2+)** are initiated per W-20 v1.1 Section 4E and filed to `bcg-ops-governance/post-mortems/`. Every post-mortem produces a permanent rule change landed in an affected governance doc.
+9. **Non-document artifact routing (v3.3+)** is governed by GOV-021. Source code, installers, RAG feed artifacts, infrastructure configs, staging caches, and any other non-document artifact class route per GOV-021 section 3. GOV-014 continues to own the naming and OneDrive capture workflow for Claude-generated documents and UI artifacts only.
 
 ---
 
@@ -284,6 +294,8 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 3.4 | 2026-04-19 | Bumped GOV-021 tracked version 1.0 → 1.1 (sync-mode vocabulary formalized in Rule 2; A3 B:\ copy clarified as additive superset per 2026-04-19 script change from `/MIR` to `/E /XO`). Updated GOV-021 governs description accordingly. Bumped JSON registry (Section 5.1) tracked version 1.3 → 1.4. Self-reference 3.3 → 3.4. Runtime count unchanged (20). |
+| 3.3 | 2026-04-19 | Added Section 3.20 -- Artifact Deployment Routing Standard (GOV-021, v1.0). Bumped GOV-014 tracked version 1.2 → 1.4 (Section 3 scope note pointing to GOV-021). Updated Section 5.1 JSON version 1.1 → 1.3. Added Rule 9 (non-document artifact routing governed by GOV-021). Runtime-fetched count 19 → 20. Total doc count 24 → 25. |
 | 3.2 | 2026-04-18 | Added Section 3.19 -- Post-Mortem Template (GOV-020, v1.0). Bumped GOV-002 tracked version 2.8 → 2.10 (Plan Link Rule landed, 70 active, next slot I-74; note includes I-73 addition from v2.9). Bumped W-20 Triage SOP tracked version 1.0 → 1.1 (Trigger 4 Completion Verification, Section 4E Ecosystem Failure Response). Added Rule 8 (post-mortem filing). Runtime-fetched count 18 → 19. Total doc count 23 → 24. All three changes derived from I-72 Superpowers methodology port. |
 | 3.1 | 2026-04-17 | Added Section 3.18 -- Windsurf Agent Skills Deployment Pattern (GOV-019, v1.0). Derived from I-72 Superpowers v5.0.7 install. Updated GOV-007 tracked version 1.8→1.9 (added 2026-04-17 P0→P4 handoff to log). Updated GOV-002 tracked version 2.7→2.8 (I-72 registered, 69 active, next slot I-73). Updated runtime-fetched count 17→18. Updated total doc count 22→23. |
 | 3.0 | 2026-04-15 | Audit fixes: GOV-007 tracked version 1.5→1.8 (Handoff Validation Protocol, P11 Jennifer access). GOV-016 tracked version 2.1→2.4 (Jason active, Oscar added). GOV-002 tracked version 2.6→2.7 (count corrected 69→68). EAB tracked version 1.5→1.6; corrected propagation note (v1.5 complete 2026-03-17; v1.6 to P11 only; 16 projects pending v1.6). Added Section 9 (Reference Documents — Ecosystem Architecture Analysis). Added Section 10 (Status Documents — Ecosystem Status). Updated total document count 20→22. |
