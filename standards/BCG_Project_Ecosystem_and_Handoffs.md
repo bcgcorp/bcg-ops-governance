@@ -1,8 +1,8 @@
 # BCG Corp — Project Ecosystem & Handoffs
 
-**Version:** 2.0
+**Version:** 2.1
 **Effective:** April 2026
-**Last Updated:** 2026-04-18
+**Last Updated:** 2026-04-19
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
 
@@ -155,6 +155,7 @@ The `[ORIGIN:]` line is stripped before delivery to the receiving project but mu
 | Business continuity planning | P9 |
 | Licensing, insurance, contract review, legal | P10 (Gregory only) |
 | Pre-hire candidate background investigation | P11 (Gregory & Jennifer only) |
+| Artifact routing / deployment manifest / canonical-mirror questions | GOV-021 (governance standard, not a project) |
 
 ---
 
@@ -200,6 +201,7 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 | P10 | CIR custody filing | P11 | Ongoing | Active — P11 outputs to P10 (Gregory files) |
 | **P4-003** | **DGX Spark faster-whisper deployment (Ph2)** | **P4** | **Q3 '26** | **Hard dep — cloud STT is Ph1-only; Ph3 rollout blocked on on-prem STT** |
 | **P4-003** | **I-65 Ph1 RAG corpus + guardrails alignment** | **P4** | **Q3 '26** | **Soft dep — informs Ph4 MCP + Odoo `bcg_ai_rfi` routing** |
+| **P4** | **Closure of GOV-021 §9 gaps C8, D1, D2, E4 (Jason-owned)** | **P0 → P4 handoff 2026-04-19** | **GOV-021 v1.2 (no hard deadline)** | **Active — routed per GOV-021 v1.1 §9 forcing function** |
 
 ---
 
@@ -207,7 +209,8 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Date | From | To | Topic | Approver |
 |------|------|----|-------|----------|
-| **2026-04-18** | **P0** | **P4-003** | **P4-003 stand-up — I-73 BCG EasyButton / Idea Capture registered; Gregory Ph1 → Jason Ph2–4; 4-file package per standard pattern** | **Gregory** |
+| **2026-04-19** | **P0** | **P4** | **GOV-021 v1.1 landed; P4-003 pilot DEPLOYMENT.md live; Jason assigned to four [NEEDS INPUT] gaps (C8, D1, D2, E4) targeting v1.2 closure** | **Gregory** |
+| 2026-04-18 | P0 | P4-003 | P4-003 stand-up — I-73 BCG EasyButton / Idea Capture registered; Gregory Ph1 → Jason Ph2–4; 4-file package per standard pattern | Gregory |
 | 2026-04-17 | P0 | P4 | I-72 Superpowers Methodology Framework — Phase 1 complete, Phase 2/3 scope | Gregory |
 | 2026-03-22 | P0 | P4 | CIP/DDL Knowledge Capture Architecture — feeds I-65 Phase 1 RAG corpus | Gregory |
 | 2026-03-22 | P7 | P0 | Odoo Dev Request Lifecycle SOP — BCG_P7_Dev_Request_Lifecycle.docx | Gregory |
@@ -223,7 +226,8 @@ Format: `[DEPENDENCY: P{#} needs {what} from P{#} by {when}]`
 
 | Version | Date | What Changed |
 |---------|------|-------------|
-| **2.0** | **2026-04-18** | **Added P4-003 (BCG EasyButton / Idea Capture) to subproject registry per P0-001 sprint 2026-04-18 structural registration. Added P4-003 routing redirect in §4. Added P4-003 dependencies (DGX Spark on-prem STT Ph2, I-65 Ph1 soft dep) in §6. Added 2026-04-18 P0→P4-003 handoff to approved handoff log. Flagged EAB update queued (ecosystem 18 → 19 projects). Companion to Initiative Catalog v2.9 reconciliation commit same day (registers I-73 EasyButton + I-74 Notification Center Ph A Remediation).** |
+| **2.1** | **2026-04-19** | **Added 2026-04-19 P0→P4 handoff to §7 Approved Handoff Log (GOV-021 v1.1 landed; pilot DEPLOYMENT.md; four [NEEDS INPUT] gaps routed to Jason). Added §6 dependency row tracking closure of GOV-021 §9 gaps C8/D1/D2/E4 against GOV-021 v1.2. Added §4 routing-redirect row for artifact-deployment/canonical-mirror questions pointing to GOV-021. Handoff filed at `handoffs/2026-04-19-P0-P4-GOV021-v11-landed.md` in same commit.** |
+| 2.0 | 2026-04-18 | Added P4-003 (BCG EasyButton / Idea Capture) to subproject registry per P0-001 sprint 2026-04-18 structural registration. Added P4-003 routing redirect in §4. Added P4-003 dependencies (DGX Spark on-prem STT Ph2, I-65 Ph1 soft dep) in §6. Added 2026-04-18 P0→P4-003 handoff to approved handoff log. Flagged EAB update queued (ecosystem 18 → 19 projects). Companion to Initiative Catalog v2.9 reconciliation commit same day (registers I-73 EasyButton + I-74 Notification Center Ph A Remediation). |
 | 1.9 | 2026-04-17 | Added 2026-04-17 P0→P4 handoff to log (I-72 Superpowers Methodology Framework). |
 | 1.8 | 2026-04-01 | P11 access expanded: Gregory (only) → Gregory & Jennifer Brezniak. Updated §2.2, §3.4, §4, §5.4 EAB reference to v1.6. |
 | 1.7 | 2026-03-23 | Added §3.5 — Handoff Validation Protocol. Added 2026-03-22 handoffs to log (P0→P4 CIP/DDL, P7→P0 Dev Lifecycle). |
