@@ -1,9 +1,9 @@
 # BCG Corp -- Artifact Deployment Routing Standard
 
 **Document ID:** GOV-021
-**Version:** 1.0 DRAFT
-**Status:** [DRAFT -- PENDING REVIEW]
-**Effective:** [pending Gregory approval]
+**Version:** 1.1
+**Status:** APPROVED
+**Effective:** 2026-04-19
 **Last Updated:** 2026-04-19
 **Scope:** All Claude Projects (P0-P11), subprojects, code repositories, and operational artifacts
 **Owner:** Gregory Bernardo, President
@@ -68,7 +68,7 @@ location, known mirrors with direction, and status.
 |---|---|---|---|---|---|
 | A1 | Documents (.docx/.md/.pdf/.xlsx) | OneDrive `Corp/AI/Outputs/[P#]/` | -- | Stable | GOV-014 §1 |
 | A2 | UI artifacts (.html/.jsx) | OneDrive `Corp/AI/Tools/UI-Library/` | -- | Stable | GOV-014 §2 |
-| A3 | Status-update prompts for Claude Projects | `A:\AI Accessible\Outputs\<P#>\` | `B:\AI Accessible\Outputs\<P#>\` (auto-mirror A:\ -> B:\ hourly, see §8.1) | In-flight migration (see §5.2) | New in GOV-021 |
+| A3 | Status-update prompts for Claude Projects | `A:\AI Accessible\Outputs\<P#>\` | `B:\AI Accessible\Outputs\<P#>\` (additive hourly copy from A:\, see §8.1) | In-flight migration (see §5.2) | New in GOV-021 |
 
 ### 3.2 Group B -- Governance artifacts (`bcg-ops-governance` repository)
 
@@ -152,7 +152,12 @@ location, known mirrors with direction, and status.
 2. **Every other copy is a mirror.** Mirrors are documented with direction of
    flow: canonical -> mirror. The reverse direction is forbidden unless
    explicitly declared (e.g., a Phase-0 one-time import before flipping
-   canonical).
+   canonical). Each mirror row also declares its **sync mode** -- exact
+   (destructive; destination pruned to match source), additive (new + newer
+   source overwrites; destination-only content preserved), or snapshot
+   (one-off copy, not kept in sync). The sync mode is load-bearing; it
+   determines whether the mirror is a reliable copy of canonical or a
+   superset of it.
 3. **No dual-write.** For classes where the canonical can be written, writes go
    to the canonical only. Mirrors are populated by an explicit, documented
    sync mechanism (§8). This is non-negotiable for source code -- dual-write
@@ -196,7 +201,8 @@ milestone, a head-count threshold), not a date guess.
 transition. One of:
 
 - **None** -- target has no content yet; migrate in one cutover
-- **One-way canonical -> target** -- legacy users read from the mirror; target is building up
+- **One-way exact canonical -> target** -- destination kept identical to source (destination-only content is pruned)
+- **One-way additive canonical -> target** -- new + newer source files overwrite; destination-only content preserved; no pruning
 - **One-way target -> canonical** -- rarely correct; only when target can't yet accept writes but content is already there
 - **Read-only** -- target exists but accepts no writes
 
@@ -204,10 +210,10 @@ transition. One of:
 
 | Class | Current canonical | Target canonical | Flip trigger | Mirror rule | Status |
 |---|---|---|---|---|---|
-| A3 Status-update prompts | `A:\AI Accessible\Outputs\<P#>\` | Same path (no further migration after team has A:\ access) | All project contributors have A:\ access | One-way canonical (A:\) -> mirror (B:\) via Task Scheduler hourly, see §8.1 | Active as of 2026-04-19. Canonical already flipped to A:\; B:\ kept as compatibility mirror for non-A:\ users. |
+| A3 Status-update prompts | `A:\AI Accessible\Outputs\<P#>\` | Same path (no further migration after team has A:\ access) | All project contributors have A:\ access | One-way additive canonical (A:\) -> secondary copy (B:\) via Task Scheduler hourly, see §8.1. Non-destructive: new files and newer-on-A:\ overwrites copy to B:\; B:\-only content is preserved. B:\ is a strict superset of A:\, not an exact mirror. | Active as of 2026-04-19. Canonical already flipped to A:\; B:\ kept as compatibility copy for non-A:\ users. Pruning, if ever needed, is a separate manual pass. |
 | C1 `bcg-ops-governance` source | GitHub `bcgcorp/bcg-ops-governance` | GitLab self-hosted `alexandria.bcg-corp.com` | claude.ai GitLab connector GA | None -- do not dual-write to GitHub and GitLab. Optional one-way read-only mirror GitHub -> GitLab for visibility. | Active |
-| C4 `bcg-easybutton` source | GitHub `bcgcorp/bcg-easybutton` | GitLab self-hosted `alexandria.bcg-corp.com/?/bcg-easybutton` (path TBD by Jason) | claude.ai GitLab connector GA (same trigger as C1) | None | Active. Note: `BCG-Greg/bcg-easybutton` (personal account duplicate) to be GitHub-archived with README redirect to the canonical org repo -- see §11 cleanup actions. |
-| E1 P4-003 idea-queue markdown | `~/BCG/idea-queue/*.md` on capture device | DGX Spark RAG corpus (path TBD by Jason under I-65 Ph1) | I-65 Ph1 RAG corpus operational (see P4-003 hard dependency in Project Ecosystem & Handoffs v2.0 §6) | One-way canonical (~/BCG/) -> target (RAG corpus) during burn-in; then flip | Active. Cloud STT is Ph1-only per P4-003 invariants; Ph3 rollout gated on Ph2 on-prem STT + RAG corpus. |
+| C4 `bcg-easybutton` source | GitHub `bcgcorp/bcg-easybutton` | GitLab self-hosted `alexandria.bcg-corp.com/?/bcg-easybutton` (path TBD by Jason) | claude.ai GitLab connector GA (same trigger as C1) | None | Active. Note: `BCG-Greg/bcg-easybutton` (personal account duplicate) archived 2026-04-19 with README redirect to the canonical org repo per §11.3. |
+| E1 P4-003 idea-queue markdown | `~/BCG/idea-queue/*.md` on capture device | DGX Spark RAG corpus (path TBD by Jason under I-65 Ph1) | I-65 Ph1 RAG corpus operational (see P4-003 hard dependency in Project Ecosystem & Handoffs v2.0 §6) | One-way additive canonical (~/BCG/) -> target (RAG corpus) during burn-in; then flip | Active. Cloud STT is Ph1-only per P4-003 invariants; Ph3 rollout gated on Ph2 on-prem STT + RAG corpus. |
 | E1b P4-003 digest markdown | `~/BCG/digests/*.md` on capture device | Same as E1 | Same as E1 | Same as E1 | Active (paired with E1) |
 
 ### 5.3 Completed migrations (historical reference)
@@ -341,36 +347,12 @@ The answer is recorded in one of three places depending on trigger:
 
 ## 8. Tooling
 
-### 8.1 A:\ -> B:\ auto-mirror
+### 8.1 A:\ -> B:\ additive hourly sync
 
-The A3 status-update-prompt mirror runs via Windows Task Scheduler invoking
-a PowerShell script that wraps `robocopy /MIR` and writes a timestamp file.
+The A3 status-update-prompt copy runs via Windows Task Scheduler invoking a
+PowerShell script that wraps `robocopy /E /XO` and writes a timestamp file.
 
-**Script:** `scripts/sync-a-to-b.ps1` (to be created alongside this standard)
-
-**Sketch:**
-
-```powershell
-# sync-a-to-b.ps1 -- one-way mirror A:\AI Accessible\Outputs\ -> B:\AI Accessible\Outputs\
-# Task Scheduler: run hourly, user context with access to both A:\ and B:\
-
-$src = "A:\AI Accessible\Outputs"
-$dst = "B:\AI Accessible\Outputs"
-$log = "B:\AI Accessible\Outputs\_sync\robocopy.log"
-$stamp = "B:\AI Accessible\Outputs\_sync\last-sync.txt"
-
-New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
-
-robocopy $src $dst /MIR /R:2 /W:5 /NP /LOG+:$log
-
-if ($LASTEXITCODE -lt 8) {
-    # robocopy 0-7 are success codes; 8+ are errors
-    (Get-Date).ToString("o") | Out-File -Encoding utf8 $stamp
-} else {
-    "FAILED at $(Get-Date -Format o); robocopy exit $LASTEXITCODE" |
-        Out-File -Encoding utf8 $stamp -Append
-}
-```
+**Script:** [`scripts/sync-a-to-b.ps1`](../scripts/sync-a-to-b.ps1)
 
 **Task Scheduler settings:**
 - Trigger: hourly
@@ -378,32 +360,60 @@ if ($LASTEXITCODE -lt 8) {
 - Run whether user is logged on or not: yes
 - Run with highest privileges if either drive requires elevation
 
-**Canonical / mirror semantics:**
-`/MIR` makes B:\ an exact mirror of A:\. This is the correct choice because
-A:\ is canonical -- any divergent edit on B:\ is drift to be corrected, not
-content to preserve.
+**Sync semantics (non-destructive additive, v1.1 change from v1.0 /MIR):**
+
+`/E` copies subdirectories including empty ones. `/XO` excludes older
+source files -- only copies when the source file is strictly newer than
+the destination file, or when the destination file does not exist.
+
+The consequence is that B:\ becomes a **strict superset** of A:\ with
+source-newer-wins conflict resolution:
+
+- Files present on A:\ but missing from B:\ are copied to B:\
+- Files on A:\ that are newer than B:\ overwrite B:\
+- Files on A:\ that are older than B:\ are **not** copied (B:\ wins)
+- Files on B:\ that do not exist on A:\ are **preserved**
+- No deletions ever occur on B:\
+
+This trades exact-mirror semantics for safety-of-content. Un-migrated
+historical content on B:\ is preserved rather than wiped when the script
+runs against a partially-populated A:\. The tradeoff is that B:\ can
+accumulate stale or orphaned content; pruning, if ever required, is a
+separate manual pass, not an automated step.
+
+**Prior behavior (v1.0 history):** The v1.0 release of this standard
+shipped the script with `/MIR` (destructive mirror) plus two file-count
+safety guards (refuse to run if A:\ is empty while B:\ has content, or if
+A:\ has fewer files than B:\). Gregory revised the approach on
+2026-04-19 to remove both the destructive operation and the guards in
+favor of additive semantics. See the change log below.
 
 ### 8.2 `last-sync.txt` contract
 
-The `last-sync.txt` timestamp file is the single mechanism the finishing-work
-check uses to detect stale mirrors.
+The `last-sync.txt` timestamp file is the single mechanism the
+finishing-work check uses to detect stale syncs.
+
+**Path:** `C:\ProgramData\BCG\sync-a-to-b\last-sync.txt` (outside the synced tree)
 
 **Contents:** one line, ISO-8601 timestamp, UTF-8.
 
-**Consumers:** the §7 routing check reads this file. If its age exceeds 2x the
-expected sync interval (so 2 hours for the A3 mirror), the check reports
-`STALE MIRROR` and the unit of work does not transition to Complete.
+**Consumers:** the §7 routing check reads this file. If its age exceeds 2x
+the expected sync interval (so 2 hours for the A3 sync), the check reports
+`STALE SYNC` and the unit of work does not transition to Complete.
 
 **Failure semantics:** a robocopy failure writes a `FAILED` line to
-`last-sync.txt` without advancing the timestamp. This makes silent sync
-failures loud at the next routing check.
+`last-sync.txt` without advancing the success timestamp. This makes silent
+sync failures loud at the next routing check. The contract is mode-agnostic
+-- it works identically whether the script runs in exact-mirror or additive
+mode.
 
 ### 8.3 Other sync scripts
 
 As migrations land and new sync needs arise, tools go under
 `scripts/` in this repo. The naming pattern is
 `sync-<source>-to-<target>.ps1` (or `.sh` if cross-platform). Every new
-script commits with a one-paragraph entry in §8.
+script commits with a one-paragraph entry in §8 describing canonical,
+destination, sync mode (§4.1 Rule 2), and schedule.
 
 ---
 
@@ -416,23 +426,23 @@ appropriate §3 subsection and update the change log.
 
 | # | Class | Owner to resolve | Target v1.x | What's needed |
 |---|---|---|---|---|
-| B5 | governance `archive/` directory purpose | Gregory | 1.1 | Retention rule, what goes here, when |
-| C3 | `bcg-ops-claude-projects` exact location | Gregory | 1.1 | Owner/repo path + GitLab flip applicability |
+| B5 | governance `archive/` directory purpose | Gregory | 1.2 | Retention rule, what goes here, when |
+| C3 | `bcg-ops-claude-projects` exact location | Gregory | 1.2 | Owner/repo path + GitLab flip applicability |
 | C5 | Odoo custom modules repo locations (17 modules, 7 catalogued) | Victor | 1.2 (paced with GOV-015 Track 2 repo audit) | Per-module repo of record; tie to D4 |
-| C8 | Windsurf rebuild prompts canonical path | Gregory + Jason | 1.1 | Path convention (repo subfolder? filename pattern?) |
+| C8 | Windsurf rebuild prompts canonical path | Gregory + Jason | 1.2 | Path convention (repo subfolder? filename pattern?) |
 | D1 | ClarkKent Docker Compose stack source of truth | Bob + Jason | 1.2 | Container names, volumes, provisioning dir, repo-of-record for compose files (Infrastructure Inventory v1.5 Gap #10) |
 | D2 | Grafana dashboards source of truth | Bob + Jason | 1.2 | Tied to D1 |
 | D3 | pfSense config backup destination | Bob | 1.2 | Backup target, retention, config-as-code repo (if any) |
 | D4 | Odoo custom addons source-of-truth per module | Victor | 1.2 | Tied to C5 |
 | D5 | RevitPrint Minion CI/CD cross-platform situation | Bob | 1.2 | Current execution platform given bcg-ops-revit-tools moved to GitLab |
 | D6 | Veeam backup targets and retention | Bob | 1.2 | Targets, retention, immutability (Infrastructure Inventory v1.5 Gap #6) |
-| E2 | P8-001 intake routing per doc type | Rachel | 1.1 | RFP/CO/PO file placement destinations |
-| E3 | Cowork 4am daily run outputs location | Rachel + Gregory | 1.1 | Where Cowork writes its own outputs each run |
+| E2 | P8-001 intake routing per doc type | Rachel | 1.2 | RFP/CO/PO file placement destinations |
+| E3 | Cowork 4am daily run outputs location | Rachel + Gregory | 1.2 | Where Cowork writes its own outputs each run |
 | E4 | I-48 API-Driven Hub outputs | Jason | 1.2 | Destination path(s) for the API-driven P0 sync |
 | F1 | Client-project delivery conventions (per-prime) | Gregory | 1.2 or separate standard | Catalogue of per-prime handoff paths and any BCG-retained copies |
-| G2 | Retired subproject KB archive location | Gregory | 1.1 | Physical archive for retired P7-001 through P7-004 KB content |
+| G2 | Retired subproject KB archive location | Gregory | 1.2 | Physical archive for retired P7-001 through P7-004 KB content |
 | G3 | Pre-2024 legacy records target | Bob | 1.2 | Routing target or formal "not retained" marker |
-| G4 | Post-mortem aggregation artifact location | Gregory + Jennifer | 1.1 | Monthly Tier 2 / quarterly Tier 3 review output home |
+| G4 | Post-mortem aggregation artifact location | Gregory + Jennifer | 1.2 | Monthly Tier 2 / quarterly Tier 3 review output home |
 
 When a row is resolved, note the closure in the change log and reference the
 governing standard (or the section of GOV-021 where the class now lives).
@@ -443,9 +453,11 @@ governing standard (or the section of GOV-021 where the class now lives).
 
 1. **One canonical per artifact class per project.** (See §4.1 Rule 1 and
    §4.2 exemptions for per-user and client-owned classes.)
-2. **Every mirror direction is documented, or it doesn't exist.** A copy
-   without a documented direction is a fragmentation hazard and must be
-   resolved (documented or eliminated) when surfaced by the §7 check.
+2. **Every mirror direction and sync mode is documented, or it doesn't
+   exist.** A copy without a documented direction is a fragmentation hazard
+   and must be resolved (documented or eliminated) when surfaced by the §7
+   check. A mirror whose sync mode (exact / additive / snapshot) is
+   ambiguous is equivalent to a mirror with undocumented direction.
 3. **No dual-write for source code.** Pick GitHub XOR GitLab per repo, not
    both. Until the C1/C4 flip trigger fires, GitHub is canonical. After
    flip, GitLab is canonical. Dual-write is forbidden in all phases.
@@ -497,26 +509,21 @@ governing standard (or the section of GOV-021 where the class now lives).
 - Govern artifact content, naming, or quality (those are per-class standards).
 - Own credentials or secrets storage (that's P5 / GOV-009 data classification).
 
-### 11.3 Cleanup actions triggered by v1.0
+### 11.3 v1.0 cleanup actions (completed 2026-04-19)
 
-On approval of this standard, the following one-time cleanups are executed:
-
-1. **Archive `BCG-Greg/bcg-easybutton`** (personal-account duplicate of the
-   canonical `bcgcorp/bcg-easybutton`). Set GitHub archive flag and replace
-   `README.md` with a three-line redirect to the canonical org repo. Zero
-   ongoing risk of accidental writes; permanent discoverability.
-2. **Create `DEPLOYMENT.md` in `bcgcorp/bcg-easybutton`** as the pilot for
+1. **Archived `BCG-Greg/bcg-easybutton`** -- personal-account duplicate of the
+   canonical `bcgcorp/bcg-easybutton`. README replaced with redirect;
+   archive flag set manually in GitHub Settings.
+2. **Created `DEPLOYMENT.md` in `bcgcorp/bcg-easybutton`** as the pilot for
    §6 using the template in §6.2.
-3. **Register GOV-021** in `BCG_Governance_Doc_Registry.md` §3.20 and in
+3. **Registered GOV-021** in `BCG_Governance_Doc_Registry.md` §3.20 and in
    `BCG_Document_Registry.json`. Runtime-fetched count 19 -> 20; total doc
    count 24 -> 25.
 4. **Cross-reference insertion** into GOV-014 §3 pointing to GOV-021 for
-   non-document artifact classes produced by capture workflows.
-5. **Deploy `scripts/sync-a-to-b.ps1`** and the Task Scheduler job (§8.1)
+   non-document artifact classes produced by capture workflows. GOV-014
+   bumped v1.3 -> v1.4.
+5. **Deployed `scripts/sync-a-to-b.ps1`** and the Task Scheduler job (§8.1)
    on Gregory's workstation.
-
-None of the above happen until this file's status flips from `[DRAFT --
-PENDING REVIEW]` to `APPROVED`.
 
 ---
 
@@ -524,11 +531,11 @@ PENDING REVIEW]` to `APPROVED`.
 
 | Version | Date | What Changed |
 |---|---|---|
-| 1.0 DRAFT | 2026-04-19 | Initial draft. Establishes taxonomy (8 groups A-H), canonical/mirror model, phased-migration framework, per-project `DEPLOYMENT.md` convention, finishing-work routing check integration with W-20 Checklist 4D, `A:\ -> B:\` auto-mirror tooling, and explicit `[NEEDS INPUT]` gaps table as v1.0 forcing function. Locks routing for the classes Gregory owns directly: A3 (status-update prompts, A:\ canonical with auto-mirror to B:\), C1/C4 (GitHub->GitLab phased migration with claude.ai connector flip trigger), E1/E1b (P4-003 RAG feed/digests, `~/BCG/` canonical with DGX Spark as Ph2 target), G1 (CascadeProjects never canonical; end-of-session commit rule), H1 (P4-003 installers, Azure Blob canonical + GitHub Releases mirror). 17 remaining gaps explicitly tagged with `[NEEDS INPUT: <owner>]` targeting Bob/Victor/Rachel/Jason/Gregory/Jennifer for resolution in v1.1 and v1.2. |
+| 1.1 | 2026-04-19 | Aligned §8.1 and §5.2 A3 row to the script change from `/MIR` to `/E /XO` (committed earlier the same day per Gregory direction). Added sync-mode vocabulary to §4.1 Rule 2 and §5.1 (exact / additive / snapshot). Clarified that B:\ under the A3 migration is a strict superset of A:\, not an exact mirror -- B:\-only content is preserved, not pruned. Removed v1.0 file-count safety guards from §8.1 (no destructive operation to guard against). `last-sync.txt` contract unchanged (mode-agnostic). Updated Rule 2 to require sync-mode documentation alongside direction. §11.3 cleanup actions marked completed. §9 gap target versions bumped from v1.1/v1.2 to v1.2 uniformly since v1.1 is consumed by this sync-mode clarification. |
+| 1.0 | 2026-04-19 | APPROVED. Initial version. Establishes taxonomy (8 groups A-H), canonical/mirror model, phased-migration framework, per-project `DEPLOYMENT.md` convention, finishing-work routing check integration with W-20 Checklist 4D, `A:\ -> B:\` auto-mirror tooling (scripts/sync-a-to-b.ps1 shipped with /MIR and file-count guards), and explicit `[NEEDS INPUT]` gaps table as v1.0 forcing function. Locks routing for the classes Gregory owns directly: A3 (status-update prompts, A:\ canonical with auto-mirror to B:\), C1/C4 (GitHub->GitLab phased migration with claude.ai connector flip trigger), E1/E1b (P4-003 RAG feed/digests, `~/BCG/` canonical with DGX Spark as Ph2 target), G1 (CascadeProjects never canonical; end-of-session commit rule), H1 (P4-003 installers, Azure Blob canonical + GitHub Releases mirror). 17 remaining gaps explicitly tagged with `[NEEDS INPUT: <owner>]` targeting Bob/Victor/Rachel/Jason/Gregory/Jennifer for resolution in v1.1 and v1.2. |
 
 ---
 
-*This document is maintained in GitHub at `bcg-ops-governance/standards/`. Not yet
-registered in `BCG_Governance_Doc_Registry.md` or `BCG_Document_Registry.json`
-pending Gregory's approval. On approval, §11.3 cleanup actions execute in the
-order listed.*
+*This document is maintained in GitHub at `bcg-ops-governance/standards/`. Registered in
+`BCG_Governance_Doc_Registry.md` §3.20 and `BCG_Document_Registry.json` as of v1.0
+approval on 2026-04-19.*
