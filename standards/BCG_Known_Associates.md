@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 1.9
+**Version:** 2.0
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -84,6 +84,8 @@
 | Marc-André Lamanque | malamanque@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL06 ROMP01 substantial completion |
 | Jason Harris (personal) | trash.master.repo@gmail.com | Bernardo Consulting Group LLC | VP, AI & Emerging Technology (personal email) | internal BCG | Personal Gmail; see jh@bcg-corp.com. Used for forwarding resumes. |
 | Rachel McGee (personal) | mrachelmcgee@outlook.com | Bernardo Consulting Group LLC | Administrative Manager (personal email) | internal BCG | Personal Outlook; see rm@bcg-corp.com. Gregory forwarded M365 welcome to this address. |
+| Aubry Dameron | aubry@springer-lyle.com | Springer & Lyle LLP (now Springer Lyle & Dameron) | Attorney / Named Partner | vendor | BCG legal counsel; Denton, TX law firm (est. 1994); personal injury, business litigation, real estate |
+| Rhonda Dowling | Rhonda@springer-lyle.com | Springer & Lyle LLP | unknown — manual review needed | vendor | BCG legal counsel; Denton, TX |
 
 ---
 
@@ -119,6 +121,7 @@ The following contacts were added by automation but could not be fully resolved.
 | gmaamari@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
 | stephaniedufour@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
 | malamanque@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| Rhonda@springer-lyle.com | 2026-04-20 | BCG legal counsel correspondence |
 
 ---
 
@@ -126,6 +129,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 2.0 | 2026-04-20 | Batch 18: added Aubry Dameron and Rhonda Dowling (Springer & Lyle LLP, BCG legal counsel, Denton TX). Automated batch run through 2024-05-22. |
 | 1.9 | 2026-04-20 | Batch 17: added Rachel McGee personal Outlook (mrachelmcgee@outlook.com). Automated batch run through 2024-05-17. |
 | 1.8 | 2026-04-20 | Batches 14–16: added Jason Harris personal Gmail (trash.master.repo@gmail.com). Batches 14–15 yielded zero new contacts (marketing/system noise). Automated batch run through 2024-05-15. |
 | 1.7 | 2026-04-20 | Batch 13: added 16 contacts from YUL06 ROMP01 substantial completion email — Wolinsky, Deslauriers, S. Reich, Ehrlicher (Stendel+Reich); Roldan, Momen, Floge (AWS); Plante, Doyon (STG Engineering); Bray (Équipe Laurence); Vézina-Durocher, Périard, Maamari (BPA); Dufour, Lamanque (Groupe Montoni); Gregory Bernardo Aella alias. Automated batch run through 2024-04-10. |
