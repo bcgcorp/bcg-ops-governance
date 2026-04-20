@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 1.7
+**Version:** 1.8
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -82,6 +82,7 @@
 | Georges Maamari | gmaamari@bpa.ca | BPA (Bouthillette Parizeau) | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion |
 | Stéphanie Dufour | stephaniedufour@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL06 ROMP01 substantial completion; Quebec GC/developer (est. 1995, 700+ projects) |
 | Marc-André Lamanque | malamanque@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL06 ROMP01 substantial completion |
+| Jason Harris (personal) | trash.master.repo@gmail.com | Bernardo Consulting Group LLC | VP, AI & Emerging Technology (personal email) | internal BCG | Personal Gmail; see jh@bcg-corp.com. Used for forwarding resumes. |
 
 ---
 
@@ -124,6 +125,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.8 | 2026-04-20 | Batches 14–16: added Jason Harris personal Gmail (trash.master.repo@gmail.com). Batches 14–15 yielded zero new contacts (marketing/system noise). Automated batch run through 2024-05-15. |
 | 1.7 | 2026-04-20 | Batch 13: added 16 contacts from YUL06 ROMP01 substantial completion email — Wolinsky, Deslauriers, S. Reich, Ehrlicher (Stendel+Reich); Roldan, Momen, Floge (AWS); Plante, Doyon (STG Engineering); Bray (Équipe Laurence); Vézina-Durocher, Périard, Maamari (BPA); Dufour, Lamanque (Groupe Montoni); Gregory Bernardo Aella alias. Automated batch run through 2024-04-10. |
 | 1.6 | 2026-04-20 | Added 19 new contacts from morning briefing 2026-04-20: Khanvilkar, Gierlach, Jennison, Batty, Fair, Rosenthal, Culliton, Talwar, Mamada, Nicol, Ma, McGowen, Rusu, Jokhadar, Da Ponte, Gauthier Besner, Migneault, Nock, Wali. Updated Xieran Cai role to Associate, AIA, PMP, LEED AP BD+C. |
 | 1.5 | 2026-04-19 | Batch 12: added Aaron Gearhart, Pratik Khare, Jeremy Zweeres (AWS). NDA-related contacts. Aaron Gearhart flagged for possible company change to 3Degrees. Automated batch run through 2024-04-06. |
