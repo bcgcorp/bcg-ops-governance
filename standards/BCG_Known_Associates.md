@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.4
+**Version:** 2.5
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -95,7 +95,7 @@
 | Mike Connell | Mike.Connell@corgan.com | Corgan | Principal | prime | Aella restructuring announcement recipient |
 | Bobby Brown | Bobby.Brown@corgan.com | Corgan | unknown — manual review needed | prime | Aella restructuring announcement recipient |
 | Sarah Turner | Sarah.Turner@corgan.com | Corgan | unknown — manual review needed | prime | Aella restructuring announcement recipient |
-| Tara Nations | tnations@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Tara Nations | tnations@hksinc.com | HKS, Inc. | Studio Practice Manager / VP, AIA, CDT | prime | Role confirmed batch 11 from email signature. Aella restructuring recipient; BWI110 Liquid Cooling |
 | Seth Meltzer | smeltzer@hksinc.com | HKS, Inc. | Senior Project Architect | prime | Aella restructuring announcement recipient |
 | Mark Pataky | mpataky@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | Aella restructuring announcement recipient |
 | Steve Radke | sradke@hksinc.com | HKS, Inc. | Principal, Studio Practice Manager, Commercial/Mixed Use | prime | Aella restructuring announcement recipient |
@@ -196,7 +196,7 @@
 | Soleil Oladeji | soleilo@atlantic-ae.com | Atlantic AE | unknown — manual review needed | prime | CMH243 Design Weekly Call |
 | Ariel Becker | Ariel_Becker@gensler.com | Gensler | unknown — manual review needed | prime | PDX070 door hardware set questions for IFP |
 | Tyler Davis | Tyler.Davis@allegion.com | Allegion | unknown — manual review needed | vendor | PDX070 door hardware set questions; Allegion = global door hardware manufacturer |
-| Jaclyn Hardiman | jaclynhd@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PDX070 door hardware set questions |
+| Jaclyn Hardiman | jaclynhd@amazon.com | Amazon Web Services | DC Project Architect, AIA, NCARB | AWS/client-side | PHX069 door hardware; role confirmed batch 11 from email signature |
 | Jason Relyea | Jason.Relyea@allegion.com | Allegion | unknown — manual review needed | vendor | PDX070 door hardware set questions |
 | Amy Esposito | Amy_Esposito@gensler.com | Gensler | unknown — manual review needed | prime | PDX070 door hardware coordination |
 | Sam McGlone | Sam_McGlone@gensler.com | Gensler | unknown — manual review needed | prime | PDX070 door hardware coordination |
@@ -270,7 +270,7 @@
 | Cristhian Godoy | crisgodo@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH116 security coordination; Procore directory |
 | Ajith Poduval | ampdvl@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH116 security RFIs |
 | Kara Fry | kara.fry@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 HV transformer yard security RFIs |
-| Nathan Lav | nathan.lav.ext@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 HV transformer yard RFIs; ext = external/contractor designation |
+| Nathan Lav | nathan.lav.ext@siemens-energy.com | Siemens Energy | Intern | vendor | CMH116 HV transformer yard RFIs; confirmed Intern at Siemens Energy Inc. from Procore request email |
 | Kyle Hoover | khoover@rowan.digital | Rowan Digital | unknown — manual review needed | unknown — manual review needed | BWI150 Civil Design Coordination Call; Rowan Digital firm type unconfirmed — research needed |
 | Jamie Galliger | egaljami@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | BWI150 Civil Design Coordination Call; contractor designation [C] |
 | Abi Sharma | abishrma@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | BWI150 Civil Design Coordination Call |
@@ -289,6 +289,21 @@
 | Jim Hennessey | jamhenne@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | Procore directory / Wisteria project coordination |
 | Donnie (Veteran Web Design) | donnie@veteranwebdesign.com | Veteran Web Design | Web Designer/Developer | vendor | Aella domain transfer; aellaconsulting.com domain handover to Frank Davies |
 | Frank Davies | fjd@aellagroup.com | Aella Consulting Group (former) | unknown — manual review needed | unknown — manual review needed | Former Aella colleague/partner; aellagroup.com email; involved in Aella domain transfer handover |
+| Melissa McMorrow | melmcmoz@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 door hardware coordination |
+| Justin King | kingjmx@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 door hardware coordination |
+| Eric Miles | Eric.Miles@allegion.com | Allegion | unknown — manual review needed | vendor | PHX069 door hardware; Allegion door hardware specialist |
+| Ryan Tator | rtator@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 door hardware coordination |
+| Grant Loring | Grant.Loring@corgan.com | Corgan | unknown — manual review needed | prime | PHX069 door hardware design team |
+| Elizabeth Lenox | elizabeth.lenox@allegion.com | Allegion | unknown — manual review needed | vendor | PHX069 door hardware; Allegion hardware sets coordination |
+| [Unknown] (Amazon) | imalus@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | BWI110 Liquid Cooling; name not in address book — identify person |
+| Datta Sai Yadav Suruboyina | dattasys@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Procore access administration |
+| Heike Nelson | heike.nelson@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 Security Sub-Contract SOW coordination |
+| Scott Straton | Scott.Straton@allegion.com | Allegion | unknown — manual review needed | vendor | CMH116/120 Entry Door; Allegion door hardware |
+| Ankit Udani | ankit.udani@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH116/120 Entry Door design coordination |
+| Gagan Chambal | gchambal@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH116 Procore HV Permanent project |
+| Janie Schaumburg | janie.schaumburg@jsdinc.com | JSDI Inc. | unknown — manual review needed | unknown — manual review needed | CMH116 Procore HV Permanent new user; JSDI Inc. firm type unconfirmed — research needed |
+| Manohar Datta | Manohar.Datta@arcadis.com | Arcadis | unknown — manual review needed | prime | Physical Security Subconsultant Request |
+| Pete Bretzke | pbretzke@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 C&S Security Pricing Questions |
 
 ---
 
@@ -330,7 +345,6 @@ The following contacts were added by automation but could not be fully resolved.
 | jeff.gyzen@arcadis.com | 2026-04-20 | Aella restructuring announcement |
 | Bobby.Brown@corgan.com | 2026-04-20 | Aella restructuring announcement |
 | Sarah.Turner@corgan.com | 2026-04-20 | Aella restructuring announcement |
-| tnations@hksinc.com | 2026-04-20 | Aella restructuring announcement |
 | mpataky@hksinc.com | 2026-04-20 | Aella restructuring announcement |
 | bwoytek@hksinc.com | 2026-04-20 | Aella restructuring announcement; first name confirmed Bernie (batch 10) — update row name from "B. Woytek" to "Bernie Woytek" |
 | gzimmerman@fordarchitects.com | 2026-04-20 | Aella restructuring announcement |
@@ -416,7 +430,6 @@ The following contacts were added by automation but could not be fully resolved.
 | soleilo@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
 | Ariel_Becker@gensler.com | 2026-04-20 | PDX070 door hardware set questions for IFP |
 | Tyler.Davis@allegion.com | 2026-04-20 | PDX070 door hardware; Allegion door hardware manufacturer |
-| jaclynhd@amazon.com | 2026-04-20 | PDX070 door hardware set questions |
 | Jason.Relyea@allegion.com | 2026-04-20 | PDX070 door hardware questions |
 | Amy_Esposito@gensler.com | 2026-04-20 | PDX070 door hardware coordination |
 | Sam_McGlone@gensler.com | 2026-04-20 | PDX070 door hardware coordination |
@@ -485,7 +498,6 @@ The following contacts were added by automation but could not be fully resolved.
 | crisgodo@amazon.com | 2026-04-20 | CMH116 security; Procore directory; AWS |
 | ampdvl@amazon.com | 2026-04-20 | CMH116 security RFIs; AWS |
 | kara.fry@siemens-energy.com | 2026-04-20 | CMH116 HV transformer yard RFIs; Siemens Energy |
-| nathan.lav.ext@siemens-energy.com | 2026-04-20 | CMH116 HV transformer yard RFIs; Siemens Energy contractor |
 | khoover@rowan.digital | 2026-04-20 | BWI150 Civil Design Coordination Call; Rowan Digital — research firm type |
 | egaljami@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS contractor [C] |
 | abishrma@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
@@ -503,6 +515,21 @@ The following contacts were added by automation but could not be fully resolved.
 | nealnkat@amazon.com | 2026-04-20 | CMH116 Procore directory / NDA; AWS |
 | jamhenne@amazon.com | 2026-04-20 | Procore directory / Wisteria project; AWS |
 | fjd@aellagroup.com | 2026-04-20 | Former Aella colleague/partner; involved in domain transfer handover — identify role and relationship to BCG |
+| melmcmoz@amazon.com | 2026-04-20 | PHX069 door hardware; AWS |
+| kingjmx@amazon.com | 2026-04-20 | PHX069 door hardware; AWS |
+| Eric.Miles@allegion.com | 2026-04-20 | PHX069 door hardware; Allegion vendor |
+| rtator@amazon.com | 2026-04-20 | PHX069 door hardware; AWS |
+| Grant.Loring@corgan.com | 2026-04-20 | PHX069 door hardware design team; Corgan prime |
+| elizabeth.lenox@allegion.com | 2026-04-20 | PHX069 door hardware; Allegion hardware sets coordination |
+| imalus@amazon.com | 2026-04-20 | BWI110 Liquid Cooling; AWS; name unknown — identify person |
+| dattasys@amazon.com | 2026-04-20 | PHX069 Procore access admin; AWS |
+| heike.nelson@siemens-energy.com | 2026-04-20 | CMH116 Security Sub-Contract; Siemens Energy |
+| Scott.Straton@allegion.com | 2026-04-20 | CMH116/120 Entry Door; Allegion vendor |
+| ankit.udani@arcadis.com | 2026-04-20 | CMH116/120 Entry Door design; Arcadis prime |
+| gchambal@amazon.com | 2026-04-20 | CMH116 Procore HV Permanent; AWS |
+| janie.schaumburg@jsdinc.com | 2026-04-20 | CMH116 Procore HV Permanent; JSDI Inc. — research firm type |
+| Manohar.Datta@arcadis.com | 2026-04-20 | Physical Security Subconsultant Request; Arcadis prime |
+| pbretzke@amazon.com | 2026-04-20 | ATL068 C&S Security Pricing Questions; AWS |
 
 ---
 
@@ -510,7 +537,8 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
-| 2.4 | 2026-04-20 | Batch 10: added 27 contacts. Archive (2024-06-04T17:00–21:18): Alexandra Vladuca (AWS/BWI110); Sarah Champine (HKS Job Captain/BWI100-110-150); Kyle Stanislawczyk + Cristhian Godoy + Ajith Poduval + Kate Neal + Jim Hennessey (AWS); Lisa Plumley + Josh Dust + Kara Fry + Nathan Lav (Siemens Energy/CMH116); Kyle Hoover (Rowan Digital/BWI150); Jamie Galliger [C] + Abi Sharma + Brandon Fox + Vanessa Cottle + Pubudu Ranasinghe + Tom Patzold + Sam Ofori + Mark Petrakis (AWS/BWI150). Sent Items (2024-06-05–06): Jeremy Galvin + Dave Williams (PAE Engineers/BWI150); Chris Brensinger + Kevin Olsavsky + MaryLou Poole (Jacobs/ATL085 RFP); Donnie (Veteran Web Design) + Frank Davies (Aella domain transfer). Flags: Phillip Wagner title updated to Senior Team Engineer/Senior Associate, P.E. per email signature; B. Woytek first name confirmed as Bernie; michael.sheehan@wsp.com in batch 9 may be incorrect — actual email is michael.j.sheehan@wsp.com, flag for manual correction. Automated batch run through 2024-06-04T21:18:57Z. |
+| 2.5 | 2026-04-20 | Batch 11: added 15 contacts. PHX069 door hardware thread: Melissa McMorrow + Justin King + Ryan Tator (AWS), Eric Miles + Elizabeth Lenox (Allegion), Grant Loring (Corgan). BWI110 Liquid Cooling: [Unknown] imalus@amazon.com. PHX069 Procore: Datta Sai Yadav Suruboyina (AWS). CMH116 HV RFIs: Heike Nelson (Siemens Energy). CMH116/120 Entry Door: Scott Straton (Allegion), Ankit Udani (Arcadis). CMH116 Procore: Gagan Chambal (AWS), Janie Schaumburg (JSDI Inc. — firm unconfirmed). Physical Security Subconsultant RFP: Manohar Datta (Arcadis). ATL068 pricing: Pete Bretzke (AWS). Role updates (non-new contacts): Tara Nations confirmed Studio Practice Manager / VP, AIA, CDT; Jaclyn Hardiman confirmed DC Project Architect, AIA, NCARB; Nathan Lav confirmed Intern at Siemens Energy. Note: Donnie's personal Outlook s1guy@outlook.com observed — same person as donnie@veteranwebdesign.com, not added separately. Automated batch run through 2024-06-05T15:45:19Z. |
+| 2.4 | 2026-04-20 | Batch 10: added 27 contacts. Archive (2024-06-04T17:00–21:18): Alexandra Vladuca (AWS/BWI110); Sarah Champine (HKS Job Captain); CMH116 HV RFI thread introduced Kyle Stanislawczyk + Cristhian Godoy + Ajith Poduval (AWS), Lisa Plumley + Josh Dust + Kara Fry + Nathan Lav (Siemens Energy); BWI150 civil call introduced Kyle Hoover (Rowan Digital), Jamie Galliger [C] + Abi Sharma + Brandon Fox + Vanessa Cottle + Pubudu Ranasinghe + Tom Patzold + Sam Ofori + Mark Petrakis (AWS), Jeremy Galvin + Dave Williams (PAE Engineers). Sent Items: Chris Brensinger + Kevin Olsavsky + MaryLou Poole (Jacobs Engineering/ATL085 prime); Kate Neal + Jim Hennessey (AWS); Donnie (Veteran Web Design) + Frank Davies (Aella domain). Corrections flagged: michael.sheehan@wsp.com (batch 9) should be michael.j.sheehan@wsp.com per actual email; B. Woytek first name confirmed Bernie. Automated batch run through 2024-06-04T21:18:57Z. |
 | 2.3 | 2026-04-20 | Batch 9: added 45 contacts. Archive (2024-06-04 to 06-04T17:00): Adam Schilling (Arcadis/CMH121). Sent Items / BIM Coord threads (PHX069): Kraig Walsleben + Phillip Wagner (Rodgers Consulting — civil/site); 15 WSP contacts (Hoffmann, Stratton, Sheehan, Herrmann, Elger, Olson, Sarrantonio, Bournelis, T. Smith, Tate, Sramek, Reuter, Gehler, Jimenez, Mohammed); 4 LAFP contacts (Matthews, Campos, Pitts, Tamakuwala); 3 KWMCE contacts (Spring, Jimenez alias, Hoffmann alias); 4 Corgan contacts (X. Huang, Sipes, Y. Zhang, Brandon); 3 Kimley-Horn contacts (Torpey, Koakowski, Gallini). BWI110 threads: 4 HKS contacts (Nash, Boal/Myers, Ingerson, A. Bhandari); 3 PAE Engineers contacts (Monroe, Marino, Enright); 2 Ramboll contacts (Patchett, Szymanski); Bruno Gregl (AWS). DFW IT Partner: Sagar Khatri. RingCentral: Nicole Lee (jack.lee alias — identity flag). Rachel McGee personal Gmail (marianramcgee@gmail.com). Automated batch run through 2024-06-04T17:00:08Z. |
 | 2.2 | 2026-04-20 | Batch 8: added 113 contacts. Archive (2024-06-01 to 06-04): Brad Latson (Corgan), David Varghese + Nima Afzali (T5 Data Centers), Dexter Haynes (AWS), David Morrison (Siemens Energy), Lu Zhang (AWS), Gabriela Mesa Soto (HKS), Rima Khalaili + Benjamin Del Fante (Odoo), Abdulrahim Atassi + Marcus Tung + Minghui Huang (Arcadis), Alexis Christensen + Gary Heath (Kimley-Horn). Sent Items (2024-05-31 to 06-05): Margaret Elgin (Gresham Smith), Geno Dudley (RingCentral), Trevor Donlin + Nikki Ivie + John Temple + Dhanraj Vyas (AWS), Sonu Bhandari (DFW IT Partner), Pak Ling Chiu + Richard Mall + Michelle Petersen (Arcadis), Hannah Serra (HKS). Inbox (2025-11-21 to 2026-01-23): Hinesh Rathod + Bilal Ahmad + Duane Keu + Ryan Dlesk + Caleb Marrero + Yasser Al Bochi + Chad Elrod + Michael Green + Jason Segna (AWS — ATL089); Nicholas Juhasz + Michael Vander Ploeg + Jonathan Mesik (DLR Group); 51 Amazon contacts + 8 Atlantic AE + 6 Arcadis + 4 Kimley-Horn + 3 Viatechnik + 3 Gensler + 2 Allegion + 1 Ramboll + 2 Apex Structural + 1 Wolf Engineering (CMH243, PDX070, TDCi threads). Automated batch run through 2024-06-04. |
 | 2.1 | 2026-04-20 | Batch 19–21: added 18 contacts from Aella restructuring announcement emails and NDA thread — Gundarapu (AWS); Dickson, Osses, Schapsis, Gyzen (Arcadis); Schuknecht, Connell, Brown, Turner (Corgan); Nations, Meltzer, Pataky, Radke, Woytek, Wickes (HKS); Ford, Zimmerman (Ford & Associates); Kertland (Stendel+Reich). Wickes flagged for company change to Ci Design. Schuknecht flagged for possible move to EYPMCF. Batches 19–20 were pure marketing/SaaS noise. Automated batch run through 2024-05-31. |
