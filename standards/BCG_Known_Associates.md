@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.9
+**Version:** 2.10
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -462,6 +462,18 @@
 | Curt Carlson | curcarls@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 BIM Kickoff organizer; contractor designation [C] |
 | Hannah Franks | Hannah.Franks@pae-engineers.com | PAE Engineers | unknown — manual review needed | sub-consultant | BWI110 60% Re-Look Submission coordination |
 | Cory Bialke (Amazon alias) | cbialke@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH120 60% Security Page Turn; ⚠️ possible overlap with BCG internal Cory Bialke (cb@bcg-corp.com) — confirm if same person |
+| Bryan Toler | bryan.toler.ext@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 Substation weekly meeting; .ext = external/contractor designation |
+| Paulino Buna | paulino.buna@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 Substation weekly meeting |
+| Eduardo Molina-Ochoa | eduardo.molina-ochoa@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 Substation weekly meeting |
+| Jeff Prentiss | jeff.prentiss@greshamsmith.com | Gresham Smith | unknown — manual review needed | prime | CMH116 Substation weekly meeting; see also Margaret Elgin at same firm |
+| Casey Wongso | cwongso@age-se.com | AGE-SE | unknown — manual review needed | unknown — manual review needed | PHX069 TI 90% Design Review Issuance; AGE-SE firm type unconfirmed — research needed |
+| Samir Palepu | spalepu@age-se.com | AGE-SE | unknown — manual review needed | unknown — manual review needed | PHX069 TI 90% Design Review Issuance; AGE-SE |
+| Andrea B. | andreab@gcattorneys.com | GC Attorneys | unknown — manual review needed | vendor | Frank Davies Transfer Agreement thread; first name confirmed Andrea, last name unconfirmed — research needed |
+| Kathleen Linderkamp | Kathleen.Linderkamp@rsparch.com | RSP Architects | unknown — manual review needed | prime | AWS MSP100 RFP inquiry; RSP Architects = design firm |
+| Samantha Davis | sdavis@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | AWS MSP100 Campus RFIs coordination |
+| R. Barrett | rbarrett@swansonrink.com | Swanson Rink | unknown — manual review needed | sub-consultant | AWS MSP100 Campus RFIs; Swanson Rink = MEP/structural engineering firm |
+| Michael Malone | mmalone@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | AWS MSP100 Campus RFIs coordination |
+| Michael Lyons | mlyons@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | AWS MSP100 Campus RFIs coordination |
 
 ---
 
@@ -469,6 +481,7 @@
 
 | Version | Date | What Changed |
 |---------|------|--------------| 
+| 2.10 | 2026-04-20 | Batch 16: added 12 contacts. Archive (2024-06-10T15:04Z – 2024-06-12T05:59Z): CMH116 Substation weekly: Bryan Toler + Paulino Buna + Eduardo Molina-Ochoa (all Siemens Energy, Toler is .ext/contractor); Jeff Prentiss (Gresham Smith). PHX069 TI 90% Design Review: Casey Wongso + Samir Palepu (both AGE-SE). Sent Items (2024-06-28 – 2024-07-09T18:47Z): Transfer Agreement: Andrea B. (GC Attorneys — last name unconfirmed). AWS MSP100 RFP: Kathleen Linderkamp (RSP Architects), Samantha Davis + Michael Malone + Michael Lyons (HKS), R. Barrett (Swanson Rink). Automated batch run through 2024-06-12T05:59:01Z archive / 2024-07-09T18:47:26Z sent. |
 | 2.9 | 2026-04-20 | Batch 15: added 31 contacts. Sent Items (2024-06-18T21:35Z – 2024-06-28T19:57Z): SEI contract negotiation: David Munroe (Siemens Energy). HKS/AWS PNE100-103: Prince Ambooken (HKS). PHX069 site security poles: Gracyn Ruha (Kimley-Horn). PHX069 CSB Action Items distribution list: Lisa Beighton + Nicolas LeDuc + Linh Nguyen + Patrick Burns + Rowena Claux + Bryon Parsons + Blake Carruthers + Jake Garrett + Shane Bigham + Morgan O'Connor + Jeremy Snyder + Darren Wilton + Ferdinand Elayba + Fred Markham + Daniel Pollock + Sam Williams [C] + Dimitrios Loukas + Mel Nyagba (all AWS); Jon Lichtenfels (Corgan); Byron Yeatts (AGE-SE); Eric Burdak (Stack Infra); KWMCE aliases: dsramek@kwmce.com + tdsmith@kwmce.com (⚠️ confirm vs WSP counterparts); Cerone Thompson + Carlos Morales (WSP). ATL085 BIM Kickoff: Curt Carlson [C] (AWS). Archive (2024-06-07 – 2024-06-10T15:04Z): Hannah Franks (PAE Engineers/BWI110). Cory Bialke cbialke@amazon.com added with flag (possible overlap with BCG internal cb@bcg-corp.com). Automated batch run through 2024-06-10T15:04:31Z archive / 2024-06-28T19:57:15Z sent. |
 | 2.8 | 2026-04-20 | Batch 14: added 98 contacts. Archive (2024-06-06T14:49–20:14): CMH116 permit alignment thread added austhoun@amazon.com (identity unknown). CMH121 compressed schedule: Joharapuram Para + Bhagat (Arcadis). CMH121 TITUS Design KOM: 55 new contacts including Fox, Harwood, Mueller, Pinheiro, Edinger, Walters, McHugh, Lubin, Umana, Larson, Stoermer, Tariq, J. Lee, Pazzani [C], Niyazi, Doody [C] (AWS); Ricard, S. Jennings, T. Sen, Afon, Pichai (Arcadis); Muller (Kimley-Horn); Peli, Chirco, Millyard, Laskar (Walbridge); Dahan (A100 DCO); + 30 more AWS attendees; Borbely .com variant flagged. Sent Items (2024-06-18): PHX069 Site Security Poles: 40 new contacts including Molina, Stinnett, Cofield, Bokka, Blanchard, Mayer, Yang, Loyo, Sonnen, Jun, Gorji, Duran, Arslan (AWS); Cardwell (Corgan); Manning, Kennedy, Poffenroth, Walker, Hart, Eicker, Hughes (Stack Infrastructure); Gilpin, Goldsmith (IPI Partners); Pyle (Treat Consulting); Santos, Shah, Jiansinlapadamrong (AGE-SE); KWMCE aliases: Elger, Mohammed, Sheehan, Ledesma; Labucki, Dill, Kadjan, Singh, Hawkins (Clay Corp); Beyer (LAFP). Other: McGrath (CNWR network consulting), Alves (AWS/PHX069), Andrade + McCartney (Bayard Law). Automated batch run through 2024-06-06T20:14:04Z archive / 2024-06-18T21:35:12Z sent. |
 | 2.7 | 2026-04-20 | Batch 13: added 5 contacts. BWI110 60% re-look: Anuj Bhandari abhandari@fivd.io (⚠️ fivd.io personal/consulting domain — likely same person as abhandari@hksinc.com; confirm identity). SBN250 RFP Addendum 2: Corinne Klocke + Allie McKenzie (both Gensler prime). CSB Design Call: Joseph Coleman (AWS). AWS QA ML Regions Office Hours: Maitreyi Yellapragada (AWS). Boundary email (batch 12 checkpoint ID) skipped. Automated batch run through 2024-06-06T14:49:07Z. |
