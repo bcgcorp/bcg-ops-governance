@@ -1,6 +1,6 @@
 # BCG Corp -- Governance Document Registry
 
-**Version:** 3.6
+**Version:** 3.7
 **Effective:** March 2026
 **Last Updated:** 2026-04-19
 **Scope:** All Claude Projects (P0-P11) and subprojects
@@ -261,6 +261,24 @@ These documents are fetched by Claude during conversations when the task matches
 | **Fetch before** | Any decision about where an artifact lives, any phased migration planning (GitHub→GitLab, B:\→A:\, or new ones), any orphan investigation, any finishing-work completion check (via `Initiative_Closure_Verification.md` Step 6), any new project setup requiring a `DEPLOYMENT.md` |
 | **Governs** | Ecosystem-wide artifact class taxonomy (8 groups A–H, 30+ classes), canonical/mirror model with sync-mode vocabulary (exact / additive / snapshot per Rule 2), phased-migration framework with flip triggers (5 active migrations + 2 historical), per-project `DEPLOYMENT.md` convention (repo-root placement), finishing-work routing check integrated with `Initiative_Closure_Verification.md` Step 6 and status-update trigger and end-of-session commit rule, A:\→B:\ additive hourly sync tooling (`scripts/sync-a-to-b.ps1` using robocopy `/E /XO` + `last-sync.txt` contract). Locks routing for A3 status-update prompts, C1/C4 `bcg-ops-governance` + `bcg-easybutton` source, E1/E1b P4-003 RAG feed/digests, G1 CascadeProjects-never-canonical rule, H1 P4-003 installers. v1.1 (2026-04-19): sync-mode vocabulary formalized; A3 B:\ copy clarified as additive superset (not exact mirror). 17 [NEEDS INPUT] gaps routed to Bob/Victor/Rachel/Jason/Gregory/Jennifer targeting v1.2 closure. |
 
+### 3.25 BCG Contact Blocklist (GOV-022) *(new 2026-04-19)*
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Contact_Blocklist.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Contact outreach planning, associate research workflows, blocklist validation, decisions about whether to annotate a new sender |
+| **Governs** | Domains and specific addresses excluded from automated associate research. Block lists for SaaS platforms, notification bots, and non-human senders. Address-pattern blocks (e.g., `noreply`, `mailer-daemon`). Canonical source shared by ecosystem governance and Claude Cowork automation. Changes take effect on the next briefing run. Renamed from `contact-blocklist.md` 2026-04-19. |
+
+### 3.26 BCG Known Associates (GOV-023) *(new 2026-04-19)*
+
+| Field | Value |
+|-------|-------|
+| **File** | `BCG_Known_Associates.md` |
+| **Current Version** | 1.1 |
+| **Fetch before** | Drafting outbound email, annotating incoming senders, proposal/BD contact lookups, onboarding checks, any task requiring role/company context for a known email address |
+| **Governs** | Master contact list with name, email, company, role, relationship type, and context notes. Canonical source shared by ecosystem governance and Claude Cowork automation. Populated via Cowork's daily briefing runner (appends new rows) and manual correction (overwrites rows). Includes research queue for contacts awaiting manual resolution. Renamed from `known-associates.md` 2026-04-19. |
+
 ---
 
 ## 4. Embedded Governance Documents
@@ -304,7 +322,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Field | Value |
 |-------|-------|
 | **File** | `BCG_Governance_Doc_Registry.md` |
-| **Current Version** | 3.6 |
+| **Current Version** | 3.7 |
 | **Deployment method** | Fetched at runtime via the governance stub in each project's instructions |
 | **Update trigger** | Governance document added, renamed, retired, moved, or fetch triggers changed |
 
@@ -312,7 +330,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Category | Count | Documents |
 |----------|-------|----------|
-| Runtime-fetched (standards/ root) | 18 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern, Artifact Deployment Routing |
+| Runtime-fetched (standards/ root) | 20 | Style Guide, Guiding Principles, Ecosystem & Handoffs, Team Directory, Infrastructure Inventory, Initiative Catalog, Custom Module Registry, Artifact Naming, Ecosystem Vocabulary, pyRevit Tab Style Guide, Tools Inventory, SOP Governance, Performance Assessment Prompt, P9 Risk Prompt, P4-002 Technical Architecture, Project Code Registry, Windsurf Skills Deployment Pattern, Artifact Deployment Routing, Contact Blocklist, Known Associates |
 | Runtime-fetched (standards/protocols/) | 5 | W-20 Ecosystem Triage (v1.2), Initiative Closure Verification (v1.0), Initiative Plan Discipline (v1.0), Post-Mortem (v1.0), Protocols README (v1.0) |
 | Protocol resources (standards/protocols/resources/) | 1 | Post-Mortem Template (v1.0) |
 | Embedded | 1 | EAB (v1.7) |
@@ -321,7 +339,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 | Reference documents | 1 | Ecosystem Architecture Analysis |
 | Status documents | 1 | Ecosystem Status (current: 2026-04-19) |
 | Redirect stubs (sunset 2026-07-18) | 2 | Old W-20 SOP path, Old Post-Mortem Template path |
-| **Total in standards folder tree** | **31** | -- |
+| **Total in standards folder tree** | **33** | -- |
 
 ---
 
@@ -345,6 +363,7 @@ These documents are NOT fetched at runtime. They are embedded directly into proj
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| **3.7** | **2026-04-19** | **CONTACT DATA REGISTRATION.** Added two new Section 3 entries: 3.25 BCG Contact Blocklist (GOV-022, v1.1) and 3.26 BCG Known Associates (GOV-023, v1.1). Renamed from unregistered `contact-blocklist.md` and `known-associates.md` per integrity check 2026-04-19. Declared canonical source shared by ecosystem governance and Claude Cowork automation. Section 6.2: runtime-fetched root 18→20, total tree 31→33. Old paths scheduled for deletion via web UI. Claude Cowork local working file `contact-batch-progress.json` relocated out of `standards/` to `bcg-ops-claude-projects/cowork/cowork_contact_batch_progress.json` (not governance, not registered). |
 | **3.6** | **2026-04-19** | **POINTER REFRESH + PROPAGATION CONFIRMATION.** §10.1 Current file pointer updated: `BCG_Ecosystem_Status_2026-04-15.md` → `BCG_Ecosystem_Status_2026-04-19.md` (supersedes the 2026-04-15 snapshot to reflect I-75 Protocol-Harness migration: P0-001 retirement, I-75/I-76 registration, Catalog v3.0, EAB v1.7, P0 custom instructions v1.0). §4.1 EAB propagation status updated: v1.7 fully propagated to all 17 projects (complete 2026-04-19) — closes the pending-propagation flag carried from v3.5. §6.1 self-reference bumped 3.5 → 3.6. §6.2 Ecosystem Status row updated to reflect current file. Document count unchanged (31). No new entries; no new rules. Closes self-inconsistency where `BCG_Ecosystem_Status_2026-04-19.md` asserted Registry v3.6 in its governance health table but the Registry itself was still at v3.5. |
 | 3.5 | 2026-04-19 | **PROTOCOL-HARNESS MIGRATION.** Added `standards/protocols/` folder structure to registry: Section 3.13 W-20 Triage relocated (path + version 1.1 → 1.2), Section 3.14 Initiative Closure Verification (new, v1.0), Section 3.15 Initiative Plan Discipline (new, v1.0), Section 3.16 Post-Mortem Protocol (new, v1.0), Section 3.17 Post-Mortem Template relocated to `protocols/resources/` (path change; v1.0 unchanged — content split from GOV-020, procedural moved to Section 3.16), Section 3.18 Protocols README (new, v1.0). **Fixed internal drift:** tracked version of Initiative Catalog corrected 2.10 → 3.0 (registry v3.2 had forward-referenced a v2.10 Plan Link Rule commit that never shipped; the Plan Link Rule was effective via W-20 v1.1 enforcement and is now canonically landed in `Initiative_Plan_Discipline.md` v1.0; Catalog lands directly at v3.0 per the migration's era-boundary decision). Added Rule 10 (Protocols vs SOPs convention) and Rule 11 (Redirect stubs). Added redirect stub entries for old W-20 path and old Post-Mortem Template path (90-day sunset, deletion scheduled 2026-07-18). GOV-020 retired as standalone ID — its procedural content lives in the Post-Mortem Protocol (3.16); its template lives as the resource (3.17). EAB bumped to v1.7 (Section 4.1) reflecting P0-001 retirement + P4-003 addition. Document count: runtime-fetched standards root 19 → 18 (W-20 and Post-Mortem Template removed), + 5 protocol files (new), + 1 protocol resource file (new), total 25 → 31. |
 | 3.4 | 2026-04-19 | Bumped GOV-021 tracked version 1.0 → 1.1 (sync-mode vocabulary formalized in Rule 2; A3 B:\ copy clarified as additive superset per 2026-04-19 script change from `/MIR` to `/E /XO`). Updated GOV-021 governs description accordingly. Bumped JSON registry (Section 5.1) tracked version 1.3 → 1.4. Self-reference 3.3 → 3.4. Runtime count unchanged (20). |
