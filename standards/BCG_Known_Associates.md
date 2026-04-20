@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 1.6
+**Version:** 1.7
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -66,6 +66,22 @@
 | Émilie Migneault | emilie.migneault@exp.com | exp | unknown — manual review needed | sub-consultant | Augusta SHL design team |
 | Dave Nock | dnock@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 5 Whys distribution; ATL114 IFP |
 | Sham Wali | walshami@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 5 Whys |
+| Gregory Bernardo (Aella) | gb@aellagroup.com | Bernardo Consulting Group LLC | President (former Aella Consulting Group email) | internal BCG | Previous company alias; Aella Consulting Group was predecessor to BCG |
+| Lainie Wolinsky | lwolinsky@stendelreich.com | Stendel + Reich | Project Coordinator | prime | YUL06 ROMP01 substantial completion coordination; Montreal |
+| Christian Deslauriers | cdeslauriers@stendelreich.com | Stendel + Reich | unknown — manual review needed | prime | YUL06 ROMP01 substantial completion; Montreal |
+| Sheldon Reich | sreich@stendelreich.com | Stendel + Reich | Principal | prime | YUL06 ROMP01; co-founder of Stendel + Reich Architecture (est. 1985); Montreal |
+| Katherine Ehrlicher | kehrlicher@stendelreich.com | Stendel + Reich | unknown — manual review needed | prime | YUL06 ROMP01 substantial completion; Montreal |
+| Ricardo Roldan | riroldan@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL06 ROMP01 substantial completion |
+| Samira Momen | samomen@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL06 ROMP01 substantial completion; M.Eng per LinkedIn |
+| Bob Floge | floge@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL06 ROMP01 substantial completion |
+| Charles Plante | c.plante@stg-ing.com | St-Georges Structures & Civil (STG Engineering) | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion; Sherbrooke, QC-based structural/civil firm |
+| Alex Doyon | a.doyon@stg-ing.com | St-Georges Structures & Civil (STG Engineering) | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion |
+| Benoit Bray | bbray@equipelaurence.ca | Équipe Laurence | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion; Quebec civil engineering firm (est. 1983) |
+| Maxime Vézina-Durocher | mvezina@bpa.ca | BPA (Bouthillette Parizeau) | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion; 700-person building engineering firm, Montreal |
+| G. Périard | gperiard@bpa.ca | BPA (Bouthillette Parizeau) | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion; first name unconfirmed |
+| Georges Maamari | gmaamari@bpa.ca | BPA (Bouthillette Parizeau) | unknown — manual review needed | sub-consultant | YUL06 ROMP01 substantial completion |
+| Stéphanie Dufour | stephaniedufour@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL06 ROMP01 substantial completion; Quebec GC/developer (est. 1995, 700+ projects) |
+| Marc-André Lamanque | malamanque@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL06 ROMP01 substantial completion |
 
 ---
 
@@ -88,6 +104,19 @@ The following contacts were added by automation but could not be fully resolved.
 | emilie.migneault@exp.com | 2026-04-20 | Augusta SHL design team |
 | dnock@amazon.com | 2026-04-20 | ATL068 5 Whys; ATL114 IFP distribution |
 | walshami@amazon.com | 2026-04-20 | ATL068 5 Whys |
+| cdeslauriers@stendelreich.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| kehrlicher@stendelreich.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| riroldan@amazon.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| samomen@amazon.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| floge@amazon.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| c.plante@stg-ing.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| a.doyon@stg-ing.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| bbray@equipelaurence.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| mvezina@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| gperiard@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| gmaamari@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| stephaniedufour@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
+| malamanque@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
 
 ---
 
@@ -95,6 +124,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.7 | 2026-04-20 | Batch 13: added 16 contacts from YUL06 ROMP01 substantial completion email — Wolinsky, Deslauriers, S. Reich, Ehrlicher (Stendel+Reich); Roldan, Momen, Floge (AWS); Plante, Doyon (STG Engineering); Bray (Équipe Laurence); Vézina-Durocher, Périard, Maamari (BPA); Dufour, Lamanque (Groupe Montoni); Gregory Bernardo Aella alias. Automated batch run through 2024-04-10. |
 | 1.6 | 2026-04-20 | Added 19 new contacts from morning briefing 2026-04-20: Khanvilkar, Gierlach, Jennison, Batty, Fair, Rosenthal, Culliton, Talwar, Mamada, Nicol, Ma, McGowen, Rusu, Jokhadar, Da Ponte, Gauthier Besner, Migneault, Nock, Wali. Updated Xieran Cai role to Associate, AIA, PMP, LEED AP BD+C. |
 | 1.5 | 2026-04-19 | Batch 12: added Aaron Gearhart, Pratik Khare, Jeremy Zweeres (AWS). NDA-related contacts. Aaron Gearhart flagged for possible company change to 3Degrees. Automated batch run through 2024-04-06. |
 | 1.4 | 2026-04-19 | Batch 3: added Stephanie Bernardo (personal Gmail). Automated batch run through 2024-02-20. |
