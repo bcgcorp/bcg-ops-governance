@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.10
+**Version:** 2.11
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -474,6 +474,54 @@
 | R. Barrett | rbarrett@swansonrink.com | Swanson Rink | unknown — manual review needed | sub-consultant | AWS MSP100 Campus RFIs; Swanson Rink = MEP/structural engineering firm |
 | Michael Malone | mmalone@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | AWS MSP100 Campus RFIs coordination |
 | Michael Lyons | mlyons@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | AWS MSP100 Campus RFIs coordination |
+| Tyler Lunevich | tyler.lunevich@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | CMH121 |
+| Darryl Belleza | darryl.belleza@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | CMH121 |
+| Jim Tarsio | jim.tarsio@corgan.com | Corgan | Architect | sub-consultant | PHX069 |
+| Andrew J Melnyk | amelnyk@aep.com | American Electric Power (AEP) | Utility Engineer | vendor | CMH116 power/utility |
+| Anthony J Greve | ajgreve@aep.com | American Electric Power (AEP) | Utility Engineer | vendor | CMH116 power/utility |
+| M.I. Wolfe | miwolfe@aep.com | American Electric Power (AEP) | Utility Engineer | vendor | CMH116 power/utility |
+| Joshua R Hultgren | jrhultgren@aep.com | American Electric Power (AEP) | Utility Engineer | vendor | CMH116 power/utility |
+| Chuck Bowman | cgbowman@aep.com | American Electric Power (AEP) | Utility Engineer | vendor | CMH116 power/utility |
+| C.P. Hull | cphull@aep.com | American Electric Power (AEP) | Utility Engineer | vendor | CMH116 power/utility |
+| Reid Irwin | reid.irwin@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL068 |
+| Austin Phan | austin.phan@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL068 |
+| Russell Noah | russell.noah@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL068 |
+| Phi Ho | phi.ho@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | MEP flex connection |
+| Pui-Yee So | pyso@pagethink.com | Page | Architect | sub-consultant | MSP (partner inquiry) |
+| Guerly Odolphe | godolphe@pagethink.com | Page | Architect | sub-consultant | MSP (partner inquiry) |
+| Elena Bollas | ebollas@pagethink.com | Page | Architect | sub-consultant | MSP (partner inquiry) |
+| Marco Aguero | maguero@rodgers.com | Rodgers Builders | Contractor / Builder | sub-consultant | BWI110 |
+| Terry Phillips | terry.phillips@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| David Sablotny | david.sablotny@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Bobbi Robertson | bobbi.robertson@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| J. Dellicarpini | jdellicarpini@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| M. O'Shaughnessy | moshaughnessy@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| B. Buckland | bbuckland@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| N. Georgas | ngeorgas@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| K. DeCastro | kdecastro@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| D. Maruskin | dmaruskin@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| B. Booker | bbooker@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| Jaimie Young | jaimie.young@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 |
+| Rob Aeck | robert.aeck@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Jason Riggs | jason.riggs@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Grant Purdy | grant.purdy@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Afzal Syed | afzal.syed@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Aman Madaan | aman.madaan@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Scott Walowsky | scott.walowsky@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Aaron Abb | aaron.abb@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Randy Lagumbay | randy.lagumbay@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| John Richardson | john.richardson@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Lee Mullin | lee.mullin@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Chris Hicks | christopher.hicks@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Rod Hesterman | rod.hesterman@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Mohammad Ikailan | mohammad.ikailan@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| John Benedict Atienza | johnbenedict.atienza@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Francisco Cervantes | francisco.cervantes@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Andrew Meissner | andrew.meissner@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Aung Hkam | aung.hkam@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Colter Williams | colter.williams@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL085 |
+| Marcus Rubenstein | marcus.rubenstein@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL085 |
+| Anna Figueroa-Soldner | anna.figueroa-soldner@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
 
 ---
 
@@ -481,6 +529,7 @@
 
 | Version | Date | What Changed |
 |---------|------|--------------| 
+| 2.11 | 2026-04-20 | Batch 17: +48 contacts (ATL085 Arcadis/Bohler/Kimley-Horn team, AEP CMH116 utility, Corgan PHX069, Page MSP, Rodgers BWI110, ATL068 Kimley-Horn) |
 | 2.10 | 2026-04-20 | Batch 16: added 12 contacts. Archive (2024-06-10T15:04Z – 2024-06-12T05:59Z): CMH116 Substation weekly: Bryan Toler + Paulino Buna + Eduardo Molina-Ochoa (all Siemens Energy, Toler is .ext/contractor); Jeff Prentiss (Gresham Smith). PHX069 TI 90% Design Review: Casey Wongso + Samir Palepu (both AGE-SE). Sent Items (2024-06-28 – 2024-07-09T18:47Z): Transfer Agreement: Andrea B. (GC Attorneys — last name unconfirmed). AWS MSP100 RFP: Kathleen Linderkamp (RSP Architects), Samantha Davis + Michael Malone + Michael Lyons (HKS), R. Barrett (Swanson Rink). Automated batch run through 2024-06-12T05:59:01Z archive / 2024-07-09T18:47:26Z sent. |
 | 2.9 | 2026-04-20 | Batch 15: added 31 contacts. Sent Items (2024-06-18T21:35Z – 2024-06-28T19:57Z): SEI contract negotiation: David Munroe (Siemens Energy). HKS/AWS PNE100-103: Prince Ambooken (HKS). PHX069 site security poles: Gracyn Ruha (Kimley-Horn). PHX069 CSB Action Items distribution list: Lisa Beighton + Nicolas LeDuc + Linh Nguyen + Patrick Burns + Rowena Claux + Bryon Parsons + Blake Carruthers + Jake Garrett + Shane Bigham + Morgan O'Connor + Jeremy Snyder + Darren Wilton + Ferdinand Elayba + Fred Markham + Daniel Pollock + Sam Williams [C] + Dimitrios Loukas + Mel Nyagba (all AWS); Jon Lichtenfels (Corgan); Byron Yeatts (AGE-SE); Eric Burdak (Stack Infra); KWMCE aliases: dsramek@kwmce.com + tdsmith@kwmce.com (⚠️ confirm vs WSP counterparts); Cerone Thompson + Carlos Morales (WSP). ATL085 BIM Kickoff: Curt Carlson [C] (AWS). Archive (2024-06-07 – 2024-06-10T15:04Z): Hannah Franks (PAE Engineers/BWI110). Cory Bialke cbialke@amazon.com added with flag (possible overlap with BCG internal cb@bcg-corp.com). Automated batch run through 2024-06-10T15:04:31Z archive / 2024-06-28T19:57:15Z sent. |
 | 2.8 | 2026-04-20 | Batch 14: added 98 contacts. Archive (2024-06-06T14:49–20:14): CMH116 permit alignment thread added austhoun@amazon.com (identity unknown). CMH121 compressed schedule: Joharapuram Para + Bhagat (Arcadis). CMH121 TITUS Design KOM: 55 new contacts including Fox, Harwood, Mueller, Pinheiro, Edinger, Walters, McHugh, Lubin, Umana, Larson, Stoermer, Tariq, J. Lee, Pazzani [C], Niyazi, Doody [C] (AWS); Ricard, S. Jennings, T. Sen, Afon, Pichai (Arcadis); Muller (Kimley-Horn); Peli, Chirco, Millyard, Laskar (Walbridge); Dahan (A100 DCO); + 30 more AWS attendees; Borbely .com variant flagged. Sent Items (2024-06-18): PHX069 Site Security Poles: 40 new contacts including Molina, Stinnett, Cofield, Bokka, Blanchard, Mayer, Yang, Loyo, Sonnen, Jun, Gorji, Duran, Arslan (AWS); Cardwell (Corgan); Manning, Kennedy, Poffenroth, Walker, Hart, Eicker, Hughes (Stack Infrastructure); Gilpin, Goldsmith (IPI Partners); Pyle (Treat Consulting); Santos, Shah, Jiansinlapadamrong (AGE-SE); KWMCE aliases: Elger, Mohammed, Sheehan, Ledesma; Labucki, Dill, Kadjan, Singh, Hawkins (Clay Corp); Beyer (LAFP). Other: McGrath (CNWR network consulting), Alves (AWS/PHX069), Andrade + McCartney (Bayard Law). Automated batch run through 2024-06-06T20:14:04Z archive / 2024-06-18T21:35:12Z sent. |
