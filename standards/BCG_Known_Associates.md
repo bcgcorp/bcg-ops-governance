@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 1.3
+**Version:** 1.4
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-19
 **Owner:** Gregory Bernardo, President
@@ -43,6 +43,7 @@
 | Christina Wicker | cwicker@eldoradoinsurance.com | El Dorado Insurance Agency | Account Representative | vendor | BCG insurance account handler; Houston, TX |
 | Dewey Thurgood | dthurgood@eldoradoinsurance.com | El Dorado Insurance Agency | Select Benefits Director / P&C Insurance Agent | vendor | Specializes in security industry insurance; Palestine, TX |
 | Susan Hansen | shansen@eldoradoinsurance.com | El Dorado Insurance Agency | unknown — manual review needed | vendor | Welcome/onboarding email to BCG; Houston, TX |
+| Stephanie Bernardo (personal) | stephbernardo@gmail.com | Bernardo Consulting Group LLC | Senior Designer / Production Lead (personal email) | internal BCG | Personal Gmail; see srb@bcg-corp.com |
 
 ---
 
@@ -63,6 +64,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.4 | 2026-04-19 | Batch 3: added Stephanie Bernardo (personal Gmail). Automated batch run through 2024-02-20. |
 | 1.3 | 2026-04-19 | Batch 2: added Susan Hansen (El Dorado Insurance Agency). Automated batch run through 2024-02-18. |
 | 1.2 | 2026-04-19 | Batch 1: added Gregory Bernardo (personal Gmail), Christina Wicker and Dewey Thurgood (El Dorado Insurance Agency). Automated batch run through 2024-02-15. |
 | 1.1 | 2026-04-19 | Renamed from `known-associates.md`. Registered in Governance Doc Registry as GOV-023 (Section 3.26). Declared canonical source shared by ecosystem governance and Claude Cowork automation. |
