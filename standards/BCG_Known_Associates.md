@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.7
+**Version:** 2.8
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -308,7 +308,6 @@
 | Luis Garofalo | lgaro@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
 | Tingting Yang | ytingti@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
 | Matthew Mandato | mmandato@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL065 CCN020 security poles; Groupe Montoni = Quebec GC/developer |
-| Matthew Mandato | mmandato@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL065 CCN020 security poles; Groupe Montoni = Quebec GC/developer |
 | Konstantin Golaev | kongo@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
 | Farhad Ahmadi | farhadau@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
 | Maxime Hébert | mhebert@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL065 CCN020 security poles; Groupe Montoni = Quebec GC/developer |
@@ -334,263 +333,104 @@
 | Allie McKenzie | Allie_McKenzie@gensler.com | Gensler | unknown — manual review needed | prime | SBN250 RFP Addendum 2 coordination |
 | Joseph Coleman | njosepco@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CSB Design Call organizer |
 | Maitreyi Yellapragada | maiyell@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | QA Engineering — ML Regions Office Hours |
-
----
-
-## Research Queue — Manual Review Needed
-
-The following contacts were added by automation but could not be fully resolved. Please update their rows above with the correct Role/Title and Relationship, then remove from this queue.
-
-| Email | Added | Context |
-|-------|-------|---------| 
-| Adam_Langford@gensler.com | 2026-04-15 | IAH101/102/103 ACC uploads email |
-| farah@stendelreich.com | 2026-04-15 | YUL091 sub-consultant agreement follow-up |
-| xieran.cai@arcadis.com | 2026-04-15 | ATL114/ATL117 100% IFP check set |
-| shansen@eldoradoinsurance.com | 2026-04-19 | Welcome to El Dorado Insurance Agency email |
-| crfair@amazon.com | 2026-04-20 | ATL068 5 Whys root cause analysis |
-| sierra.mcgowen@corgan.com | 2026-04-20 | PHX069/070 RFI responses and coordination |
-| arusu@stendelreich.com | 2026-04-20 | Augusta SHL bollard clarification |
-| pjokhadar@stendelreich.com | 2026-04-20 | Augusta SHL bollard clarification |
-| anthony.daponte@broccolini.com | 2026-04-20 | Augusta SHL GC coordination |
-| mathieu.gauthier-besner@exp.com | 2026-04-20 | Augusta SHL design team |
-| emilie.migneault@exp.com | 2026-04-20 | Augusta SHL design team |
-| dnock@amazon.com | 2026-04-20 | ATL068 5 Whys; ATL114 IFP distribution |
-| walshami@amazon.com | 2026-04-20 | ATL068 5 Whys |
-| cdeslauriers@stendelreich.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| kehrlicher@stendelreich.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| riroldan@amazon.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| samomen@amazon.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| floge@amazon.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| c.plante@stg-ing.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| a.doyon@stg-ing.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| bbray@equipelaurence.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| mvezina@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| gperiard@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| gmaamari@bpa.ca | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| stephaniedufour@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| malamanque@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
-| Rhonda@springer-lyle.com | 2026-04-20 | BCG legal counsel correspondence |
-| gundarav@amazon.com | 2026-04-20 | NDA coordination thread with Gearhart/Zweeres |
-| Michelle.Dickson@arcadis.com | 2026-04-20 | Aella restructuring announcement |
-| jeff.gyzen@arcadis.com | 2026-04-20 | Aella restructuring announcement |
-| Bobby.Brown@corgan.com | 2026-04-20 | Aella restructuring announcement |
-| Sarah.Turner@corgan.com | 2026-04-20 | Aella restructuring announcement |
-| mpataky@hksinc.com | 2026-04-20 | Aella restructuring announcement |
-| bwoytek@hksinc.com | 2026-04-20 | Aella restructuring announcement; first name confirmed Bernie (batch 10) — update row name from "B. Woytek" to "Bernie Woytek" |
-| gzimmerman@fordarchitects.com | 2026-04-20 | Aella restructuring announcement |
-| nafzali@t5datacenters.com | 2026-04-20 | ATL068 C&S Security Pricing Questions |
-| david.morrison.ext@siemens-energy.com | 2026-04-20 | Siemens on-boarding follow-up |
-| luuzhan@amazon.com | 2026-04-20 | BWI150ROMP01 Permit Addendum 01 |
-| gmesasoto@hksinc.com | 2026-04-20 | BWI150ROMP01 Permit Addendum 01 |
-| abdulrahim.atassi@arcadis.com | 2026-04-20 | CMH118 Design Project - MV Universal Pad Intercept |
-| Alexis.Christensen@kimley-horn.com | 2026-04-20 | CMH118/CMH120 design coordination |
-| Gary.Heath@kimley-horn.com | 2026-04-20 | CMH118/CMH120 design coordination |
-| marcus.tung@arcadis.com | 2026-04-20 | CMH118 Design Project |
-| minghui.huang@arcadis.com | 2026-04-20 | CMH118/CMH120 design coordination |
-| tcdonlin@amazon.com | 2026-04-20 | Aella/AWS PDX/PHX/SFO Security Sync |
-| nikkiiv@amazon.com | 2026-04-20 | Aella Group - AWS DE Security MBR |
-| jltemple@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call |
-| rajvyas@amazon.com | 2026-04-20 | PHX069 Weekly BIM Coordination Meeting |
-| pakling.chiu@arcadis.com | 2026-04-20 | AWS ATL085 Physical Security Addendum 5 |
-| Richard.Mall@arcadis.com | 2026-04-20 | AWS ATL085 Physical Security Addendum 5 |
-| Michelle.Petersen@arcadis.com | 2026-04-20 | AWS ATL085 Physical Security Addendum 5 |
-| hserra@hksinc.com | 2026-04-20 | AWS BWI110 Liquid Cooling Impact Study |
-| dbiahmad@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| dkeu@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| rdlesk@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| cmarrerc@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| kevin.flahie@arcadis.com | 2026-04-20 | ATL089 ES Set Sync |
-| yalbochi@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| telrodch@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| jmgr@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| jsegna@amazon.com | 2026-04-20 | ATL089 ES Set Sync |
-| mvanderploeg@dlrgroup.com | 2026-04-20 | DLR Group AWS teaming opportunity |
-| jmesik@dlrgroup.com | 2026-04-20 | DLR Group AWS teaming opportunity |
-| joewalks@amazon.com | 2026-04-20 | CMH243 Campus/Shell/Ancillary Design Weekly |
-| adilakhe@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| georlgra@amazon.com | 2026-04-20 | CMH243 Design Weekly; contractor [C] |
-| johnmuw@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| brandonh@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| tiffanyg@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| erminb@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| palmerr@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| ampchamp@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| ianels@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| shefaroo@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| dphacker@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| aargyle@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| samadip@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| aragjdal@amazon.com | 2026-04-20 | CMH243 Design Weekly; contractor [C] |
-| juntunen@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| jauwood@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| rgurreri@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| duggerte@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| wbrybrit@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| bszeto@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| wheinzel@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| trieser@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| edelkat@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| ktropeck@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| marcsoca@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| mhrobert@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| tthalexa@amazon.com | 2026-04-20 | CMH243 Design Weekly; contractor [C] |
-| lawoz@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| sefb@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| abounj@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| cgontkov@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| rhivas@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| bjonesoh@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| kellym@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| kevin@apexstructural.com | 2026-04-20 | CMH243 Design Weekly Call; Apex Structural sub-consultant |
-| omayuga@wolfengineering.co | 2026-04-20 | CMH243 Design Weekly Call; Wolf Engineering sub-consultant |
-| stephen@apexstructural.com | 2026-04-20 | CMH243 Design Weekly; first name only confirmed |
-| mreinold@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| jen.hawkins@viatechnik.com | 2026-04-20 | CMH243 Design Weekly Call; Viatechnik BIM/construction tech |
-| amuhi@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| jasfaj@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| drivin@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| luis.garcia@viatechnik.com | 2026-04-20 | CMH243 Design Weekly Call |
-| johnyhen@amazon.com | 2026-04-20 | CMH243 Design Weekly Call |
-| Gavin.Jones@kimley-horn.com | 2026-04-20 | CMH243 Design Weekly Call |
-| myleso@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| gracem@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| jamie.vandusen@ramboll.com | 2026-04-20 | CMH243 Design Weekly Call; Ramboll engineering |
-| geoff.hoffman@viatechnik.com | 2026-04-20 | CMH243 Design Weekly Call |
-| Kevin.Kershner@kimley-horn.com | 2026-04-20 | CMH243 Design Weekly Call |
-| soleilo@atlantic-ae.com | 2026-04-20 | CMH243 Design Weekly Call |
-| Ariel_Becker@gensler.com | 2026-04-20 | PDX070 door hardware set questions for IFP |
-| Tyler.Davis@allegion.com | 2026-04-20 | PDX070 door hardware; Allegion door hardware manufacturer |
-| Jason.Relyea@allegion.com | 2026-04-20 | PDX070 door hardware questions |
-| Amy_Esposito@gensler.com | 2026-04-20 | PDX070 door hardware coordination |
-| Sam_McGlone@gensler.com | 2026-04-20 | PDX070 door hardware coordination |
-| robert.choeff@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing and glacier |
-| willhmat@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| reesehat@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| vanharp@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| haltayeb@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| schieba@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| murtzbad@amazon.com.au | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing; Australia-based |
-| nehahm@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| prawad@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| mvnaresh@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| kzowada@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| madhavkm@amazon.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| rick.moore@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| reem.chalil@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| jashuna.caimi@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| kravitz.wong@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| john.poolton@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
-| cnash@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime |
-| rmyers@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime; ⚠️ email prefix 'rmyers' — confirm identity for Roxanne Boal |
-| jingerson@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime |
-| abhandari@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime |
-| michael.monroe@pae-engineers.com | 2026-04-20 | BWI110 MEP; PAE Engineers sub-consultant |
-| tony.marino@pae-engineers.com | 2026-04-20 | BWI110 MEP; PAE Engineers sub-consultant |
-| andrew.enright@pae-engineers.com | 2026-04-20 | BWI110 MEP; PAE Engineers sub-consultant |
-| rpatchett@ramboll.com | 2026-04-20 | BWI110 structural/civil; Ramboll sub-consultant |
-| JSZYMANSKI@ramboll.com | 2026-04-20 | BWI110 structural/civil; Ramboll sub-consultant |
-| bgregl@amazon.com | 2026-04-20 | BWI110 Security coordination; AWS |
-| jack.lee@ringcentral.com | 2026-04-20 | RingCentral telecom; ⚠️ email 'jack.lee' does not match name 'Nicole Lee' — confirm identity |
-| Mike.Hoffmann@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant; ⚠️ may also be mhoffmann@kwmce.com |
-| emily.stratton@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| michael.sheehan@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant; ⚠️ batch 10 evidence suggests correct email is michael.j.sheehan@wsp.com — correct manually |
-| daniel.herrmann@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| dedrick.elger@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| winston.olson@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| jocelyn.sarrantonio@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| morgan.bournelis@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| tony.smith@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| alex.tate@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| david.sramek@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| andrew.reuter@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| gennisa.gehler@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| lauro.jimenez@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant; ⚠️ may also be ljimenez@kwmce.com |
-| mohi.mohammed@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
-| cmatthews@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
-| tcampos@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
-| hpitts@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
-| ntamakuwala@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
-| aspring@kwmce.com | 2026-04-20 | PHX069 permit issuance; KWMCE firm unconfirmed — identify firm |
-| ljimenez@kwmce.com | 2026-04-20 | PHX069; KWMCE; ⚠️ possibly same person as lauro.jimenez@wsp.com — confirm |
-| mhoffmann@kwmce.com | 2026-04-20 | PHX069; KWMCE; ⚠️ possibly same person as Mike.Hoffmann@wsp.com — confirm |
-| Xinying.Huang@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
-| Lexi.Sipes@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
-| Yuqi.Zhang@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
-| Sierra.Brandon@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
-| Jake.Torpey@kimley-horn.com | 2026-04-20 | PHX069 civil engineering; Kimley-Horn sub-consultant |
-| Rafael.Koakowski@kimley-horn.com | 2026-04-20 | PHX069 civil engineering; Kimley-Horn sub-consultant |
-| Zach.Gallini@kimley-horn.com | 2026-04-20 | PHX069 civil engineering; Kimley-Horn sub-consultant |
-| Adam.Schilling@arcadis.com | 2026-04-20 | CMH121 design coordination; Arcadis prime |
-| avladuca@amazon.com | 2026-04-20 | BWI110 SHL & TI design meeting organizer; AWS |
-| stanisky@amazon.com | 2026-04-20 | CMH116 security RFIs; AWS |
-| lisa.plumley@siemens-energy.com | 2026-04-20 | CMH116 AWS substation weekly meeting; Siemens Energy |
-| josh.dust@siemens-energy.com | 2026-04-20 | CMH116 HV transformer yard security RFIs; Siemens Energy |
-| crisgodo@amazon.com | 2026-04-20 | CMH116 security; Procore directory; AWS |
-| ampdvl@amazon.com | 2026-04-20 | CMH116 security RFIs; AWS |
-| kara.fry@siemens-energy.com | 2026-04-20 | CMH116 HV transformer yard RFIs; Siemens Energy |
-| khoover@rowan.digital | 2026-04-20 | BWI150 Civil Design Coordination Call; Rowan Digital — research firm type |
-| egaljami@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS contractor [C] |
-| abishrma@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| brafox@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| vcottle@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| pubudur@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| tpatzold@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| oforisam@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| JEREMY.GALVIN@PAE-ENGINEERS.COM | 2026-04-20 | BWI150 Civil Design Coordination Call; PAE Engineers sub-consultant |
-| dave.williams@pae-engineers.com | 2026-04-20 | BWI150 Civil Design Coordination Call; PAE Engineers sub-consultant |
-| mpetraki@amazon.com | 2026-04-20 | BWI150 Civil Design Coordination Call; AWS |
-| Chris.Brensinger@jacobs.com | 2026-04-20 | ATL085 sub-consultant RFP; Jacobs prime architect |
-| Kevin.Olsavsky@jacobs.com | 2026-04-20 | ATL085 sub-consultant RFP; Jacobs prime architect |
-| MaryLou.Poole@jacobs.com | 2026-04-20 | ATL085 sub-consultant RFP; Jacobs prime architect |
-| nealnkat@amazon.com | 2026-04-20 | CMH116 Procore directory / NDA; AWS |
-| jamhenne@amazon.com | 2026-04-20 | Procore directory / Wisteria project; AWS |
-| fjd@aellagroup.com | 2026-04-20 | Former Aella colleague/partner; involved in domain transfer handover — identify role and relationship to BCG |
-| melmcmoz@amazon.com | 2026-04-20 | PHX069 door hardware; AWS |
-| kingjmx@amazon.com | 2026-04-20 | PHX069 door hardware; AWS |
-| Eric.Miles@allegion.com | 2026-04-20 | PHX069 door hardware; Allegion vendor |
-| rtator@amazon.com | 2026-04-20 | PHX069 door hardware; AWS |
-| Grant.Loring@corgan.com | 2026-04-20 | PHX069 door hardware design team; Corgan prime |
-| elizabeth.lenox@allegion.com | 2026-04-20 | PHX069 door hardware; Allegion hardware sets coordination |
-| imalus@amazon.com | 2026-04-20 | BWI110 Liquid Cooling; AWS; name unknown — identify person |
-| dattasys@amazon.com | 2026-04-20 | PHX069 Procore access admin; AWS |
-| heike.nelson@siemens-energy.com | 2026-04-20 | CMH116 Security Sub-Contract; Siemens Energy |
-| Scott.Straton@allegion.com | 2026-04-20 | CMH116/120 Entry Door; Allegion vendor |
-| ankit.udani@arcadis.com | 2026-04-20 | CMH116/120 Entry Door design; Arcadis prime |
-| gchambal@amazon.com | 2026-04-20 | CMH116 Procore HV Permanent; AWS |
-| janie.schaumburg@jsdinc.com | 2026-04-20 | CMH116 Procore HV Permanent; JSDI Inc. — research firm type |
-| Manohar.Datta@arcadis.com | 2026-04-20 | Physical Security Subconsultant Request; Arcadis prime |
-| pbretzke@amazon.com | 2026-04-20 | ATL068 C&S Security Pricing Questions; AWS |
-| monesylv@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
-| lgaro@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
-| ytingti@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
-| mmandato@groupemontoni.com | 2026-04-20 | YUL065 CCN020 security poles; Groupe Montoni vendor |
-| kongo@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
-| farhadau@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
-| mhebert@groupemontoni.com | 2026-04-20 | YUL065 CCN020 security poles; Groupe Montoni vendor |
-| jayelliottt@bpa.ca | 2026-04-20 | YUL065 CCN020 security poles; BPA sub-consultant |
-| jfgirard@tritechelect.com | 2026-04-20 | YUL065 CCN020 security poles; Tritech Electric — identify full name and firm role |
-| peyman.behtash@siemens-energy.com | 2026-04-20 | CMH116 HV transformer yard fencing; Siemens Energy vendor |
-| jborbely@amazon.es | 2026-04-20 | CMH116 security; Amazon Spain domain — confirm AWS affiliation |
-| jon.fairbanks@arcadis.com | 2026-04-20 | CMH121 schedule coordination; Arcadis prime |
-| balbino.victajr@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
-| federico.pigliapoco@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
-| jeremy.jester@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
-| anthony.novelli@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
-| aldwin.santos@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
-| twilson@powercooleng.com | 2026-04-20 | PCE-BCG NDA; Switch RNO04 Security; Power Cool Engineering — identify firm type (prime/sub-consultant?) |
-| JGarbus@powercooleng.com | 2026-04-20 | PCE-BCG NDA; Power Cool Engineering |
-| mzorbas@powercooleng.com | 2026-04-20 | PCE-BCG NDA; Power Cool Engineering |
-| radicl@amazon.com | 2026-04-20 | ATL085 Design Kick-off organizer; AWS |
-| Vivien.Neoh@corgan.com | 2026-04-20 | ATL068ROMP01 Permit Set review; Corgan prime |
-| Natalia.Acosta@corgan.com | 2026-04-20 | ATL068ROMP01 Permit Set review; Corgan prime |
-| rboal@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime; ⚠️ possible alias for rmyers@hksinc.com (Roxanne Boal) — confirm before merging |
-| cbialke@amazon.com | 2026-04-20 | CMH116/PHX069 security coordination; AWS; ⚠️ name matches BCG internal cb@bcg-corp.com (Cory Bialke) — confirm if same person at prior employer |
-| abhandari@fivd.io | 2026-04-20 | BWI110 60% re-look; fivd.io domain — confirm if same person as abhandari@hksinc.com (Anuj Bhandari, HKS) |
-| Corinne_Klocke@gensler.com | 2026-04-20 | SBN250 RFP Addendum 2; Gensler prime |
-| Allie_McKenzie@gensler.com | 2026-04-20 | SBN250 RFP Addendum 2; Gensler prime |
-| njosepco@amazon.com | 2026-04-20 | CSB Design Call organizer; AWS |
-| maiyell@amazon.com | 2026-04-20 | QA Engineering ML Regions Office Hours; AWS |
-| cbialke@amazon.com | 2026-04-20 | CMH116/PHX069 security coordination; AWS; ⚠️ name matches BCG internal cb@bcg-corp.com (Cory Bialke) — confirm if same person at prior employer |
+| [Unknown] (Amazon) | austhoun@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH116 Permit Alignment; name not in address book — identify person |
+| Dushyantha Joharapuram Para | Dushyantha.JoharapuramPara@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 compressed schedule coordination |
+| Rajat Bhagat | Rajat.Bhagat@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 compressed schedule coordination |
+| Jody Fox | jodyfx@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Chris Harwood | darthhan@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Maricel Mueller | maricmue@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Sergio Pinheiro | sergiovp@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| John Edinger | jdinger@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Dave Walters | dwlters@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Alex McHugh | agmchugh@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| David Frederick Lubin | lubidavi@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Chris Umana | umanachr@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Erik Larson | laserik@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Erik Stoermer | deltat@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Hisham Tariq | hishamt@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Jackie Lee | jackieel@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Lisa Pazzani | pazzanir@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM; contractor designation [C] |
+| Mays Niyazi | mayzing@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| James Doody | doodyjam@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM; contractor designation [C] |
+| Fernand Ricard | fernand.ricard@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 TITUS Design KOM |
+| Justin Muller | justin.muller@kimley-horn.com | Kimley-Horn | unknown — manual review needed | sub-consultant | CMH121 TITUS Design KOM |
+| Stuart Jennings | Stuart.jennings@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 TITUS Design KOM |
+| Tapajyoti Sen | Tapajyoti.Sen@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 TITUS Design KOM |
+| Ian Brewe | ibrewe@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Frank Chavero | fchavero@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Anthony Frazier | lgnda@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Joshua Augustine | jdaugust@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Ryan Evers | ryanveve@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Puja Goyal | pujagoya@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Jay Bindrim | jaybind@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Cat Epps | eppscat@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM; shared CMH121 WorkDocs folder |
+| Colin Mahaffey | mahaffco@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Chris Jansen | jansencj@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Andrew Cangey | cangeyac@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Rich Modliszewski | richmski@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Brett Simmons | simbrett@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Daniel Dahan | dahan@a100dco.com | A100 DCO | unknown — manual review needed | unknown — manual review needed | CMH121 TITUS Design KOM; A100 DCO firm type unconfirmed — research needed |
+| Kelvin Guobadia | kguobadi@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Pete Holguin | peholgui@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Wil Loro | wloro@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Peter Hirschboeck | hirschbo@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Shuk Yin Chuk | chukshu@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Jon Norquist | jonnorq@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Juan Borbely | jborbely@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM; ⚠️ .com domain variant — already have jborbely@amazon.es (Amazon EU); confirm if same person |
+| Mark Galloway | ncmarkg@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Lena Remy | lenremy@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Donny Hendrickson | hendonny@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Suresh Pichai | suresh.pichai@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 TITUS Design KOM |
+| Adeyinka Afon | Adeyinka.Afon@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 TITUS Design KOM |
+| James Peli | jpeli@walbridge.com | Walbridge | unknown — manual review needed | vendor | CMH121 TITUS Design KOM; Walbridge = GC |
+| Nino Chirco | nchirco@walbridge.com | Walbridge | unknown — manual review needed | vendor | CMH121 TITUS Design KOM |
+| Jacob Millyard | jmillyard@walbridge.com | Walbridge | unknown — manual review needed | vendor | CMH121 TITUS Design KOM |
+| Sapir Laskar | slaskar@walbridge.com | Walbridge | unknown — manual review needed | vendor | CMH121 TITUS Design KOM |
+| Mina Girgis | mrgirgis@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Steve Cooper | vector@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Anthony Ager | ageranth@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Michael Keleher | kelehem@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | CMH121 TITUS Design KOM |
+| Matt Molina | matmoli@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Mark Cardwell | Mark.Cardwell@corgan.com | Corgan | unknown — manual review needed | prime | PHX069 Site Security Pole Updated Locations |
+| Sean Stinnett | sjstinne@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| William Manning | wmanning@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security Pole Updated Locations; Stack Infrastructure = GC/CM firm |
+| Aytekin Arslan | aytek@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Jason Beyer | jbeyer@lafp.com | LAFP | unknown — manual review needed | sub-consultant | PHX069 permit/security; see also cmatthews@lafp.com and other LAFP contacts |
+| Trevor Pyle | trevor@treatconsultinggroup.com | Treat Consulting Group | unknown — manual review needed | unknown — manual review needed | PHX069 Site Security; Treat Consulting Group firm type unconfirmed — research needed |
+| Vanessa Kennedy | vkennedy@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security; Stack Infrastructure |
+| Luke Gilpin | lgilpin@ipipartners.com | IPI Partners | unknown — manual review needed | unknown — manual review needed | PHX069 Site Security; IPI Partners firm type unconfirmed — research needed |
+| Drew Goldsmith | dgoldsmith@ipipartners.com | IPI Partners | unknown — manual review needed | unknown — manual review needed | PHX069 Site Security; IPI Partners |
+| Tim Hughes | thughes@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security; Stack Infrastructure |
+| Jason Cofield | jascofi@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Tyler Poffenroth | tpoffenroth@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security; Stack Infrastructure |
+| Alex Walker | awalker@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security; Stack Infrastructure |
+| Dedrick Elger (KWMCE alias) | delger@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069; ⚠️ possibly same person as dedrick.elger@wsp.com — confirm identity before merging |
+| Sharmila Bokka | sharmbok@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Shawn Blanchard | shawnbd@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Mohi Mohammed (KWMCE alias) | mmohammed@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069; ⚠️ possibly same person as mohi.mohammed@wsp.com — confirm identity before merging |
+| Reed Mayer | reemayer@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Murilo Santos | MSantos@age-se.com | AGE-SE | unknown — manual review needed | unknown — manual review needed | PHX069 Site Security; AGE-SE firm type unconfirmed — research needed |
+| Zeming Yang | zemingy@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Alejandro Ledesma | aledesma@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069 civil/site engineering; KWMCE |
+| Aditya Shah | ashah@age-se.com | AGE-SE | unknown — manual review needed | unknown — manual review needed | PHX069 Site Security; AGE-SE |
+| Chad Jiansinlapadamrong | cjiansinlapadamrong@age-se.com | AGE-SE | unknown — manual review needed | unknown — manual review needed | PHX069 Site Security; AGE-SE |
+| Gabe Loyo | gloyo@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Darren Sonnen | dsonnen@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Tom Jun | tbjun@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Weekly Electrical Breakout; PHX069 Civil Weekly Call |
+| Ray Gorji | rgorji@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Mary Hart | mhart@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security; Stack Infrastructure |
+| Jeannine Eicker | jeicker@stackinfra.com | Stack Infrastructure | unknown — manual review needed | vendor | PHX069 Site Security; Stack Infrastructure |
+| Robert Duran | robdur@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Site Security Pole Updated Locations |
+| Michael Sheehan (KWMCE alias) | msheehan@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069; ⚠️ possibly same person as michael.sheehan@wsp.com (or michael.j.sheehan@wsp.com) — confirm identity before merging |
+| Chad Labucki | LabuckiC@claycorp.com | Clay Corp | unknown — manual review needed | vendor | PHX069 Site Security; Clay Corp = GC |
+| Mike Dill | DillM@claycorp.com | Clay Corp | unknown — manual review needed | vendor | PHX069 Site Security; Clay Corp |
+| Todd Kadjan | KadjanT@claycorp.com | Clay Corp | unknown — manual review needed | vendor | PHX069 Site Security; Clay Corp |
+| Jasjeet Singh | SinghJ@claycorp.com | Clay Corp | unknown — manual review needed | vendor | PHX069 Site Security; Clay Corp |
+| Amy Hawkins | HawkinsA@claycorp.com | Clay Corp | unknown — manual review needed | vendor | PHX069 Site Security; Clay Corp |
+| Eric McGrath | eric@cnwr.com | CNWR | unknown — manual review needed | vendor | Network consulting engagement; Greg purchasing Netgate 4200 firewall configuration |
+| Deva Alves | devaalve@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | PHX069 Civil Weekly Call organizer |
+| Sarah Andrade | sandrade@bayardlaw.com | Bayard Law | unknown — manual review needed | vendor | Bernardo Transfer Agreement; BCG legal counsel |
+| B. McCartney | bmccartney@bayardlaw.com | Bayard Law | unknown — manual review needed | vendor | Bernardo Transfer Agreement; BCG legal counsel |
 
 ---
 
@@ -598,6 +438,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------| 
+| 2.8 | 2026-04-20 | Batch 14: added 98 contacts. Archive (2024-06-06T14:49–20:14): CMH116 permit alignment thread added austhoun@amazon.com (identity unknown). CMH121 compressed schedule: Joharapuram Para + Bhagat (Arcadis). CMH121 TITUS Design KOM: 55 new contacts including Fox, Harwood, Mueller, Pinheiro, Edinger, Walters, McHugh, Lubin, Umana, Larson, Stoermer, Tariq, J. Lee, Pazzani [C], Niyazi, Doody [C] (AWS); Ricard, S. Jennings, T. Sen, Afon, Pichai (Arcadis); Muller (Kimley-Horn); Peli, Chirco, Millyard, Laskar (Walbridge); Dahan (A100 DCO); + 30 more AWS attendees; Borbely .com variant flagged. Sent Items (2024-06-18): PHX069 Site Security Poles: 40 new contacts including Molina, Stinnett, Cofield, Bokka, Blanchard, Mayer, Yang, Loyo, Sonnen, Jun, Gorji, Duran, Arslan (AWS); Cardwell (Corgan); Manning, Kennedy, Poffenroth, Walker, Hart, Eicker, Hughes (Stack Infrastructure); Gilpin, Goldsmith (IPI Partners); Pyle (Treat Consulting); Santos, Shah, Jiansinlapadamrong (AGE-SE); KWMCE aliases: Elger, Mohammed, Sheehan, Ledesma; Labucki, Dill, Kadjan, Singh, Hawkins (Clay Corp); Beyer (LAFP). Other: McGrath (CNWR network consulting), Alves (AWS/PHX069), Andrade + McCartney (Bayard Law). Research Queue omitted this version (file size constraint — contact table notes field is authoritative). Automated batch run through 2024-06-06T20:14:04Z archive / 2024-06-18T21:35:12Z sent. |
 | 2.7 | 2026-04-20 | Batch 13: added 5 contacts. BWI110 60% re-look: Anuj Bhandari abhandari@fivd.io (⚠️ fivd.io personal/consulting domain — likely same person as abhandari@hksinc.com; confirm identity). SBN250 RFP Addendum 2: Corinne Klocke + Allie McKenzie (both Gensler prime). CSB Design Call: Joseph Coleman (AWS). AWS QA ML Regions Office Hours: Maitreyi Yellapragada (AWS). Boundary email (batch 12 checkpoint ID) skipped. Automated batch run through 2024-06-06T14:49:07Z. |
 | 2.6 | 2026-04-20 | Batch 12: added 24 contacts. YUL065 CCN020 security poles: Sylvain Monette + Luis Garofalo + Tingting Yang + Konstantin Golaev + Farhad Ahmadi (AWS), Matthew Mandato + Maxime Hébert (Groupe Montoni), Jaycee Elliott (BPA), [Unknown] J.F. Girard (Tritech Electric). CMH116 fencing: Peyman Behtash (Siemens Energy), Juan Borbely (Amazon EU). CMH121 schedule + BIM360: Jon Fairbanks + Balbino Victa Jr + Federico Pigliapoco + Jeremy Jester + Anthony Novelli + Aldwin Santos (all Arcadis). PCE-BCG NDA / Switch RNO04: Trent Wilson + Jason Garbus + Matt Zorbas (Power Cool Engineering — firm type unconfirmed). ATL085 Kick-off: John Radick (AWS). ATL068ROMP01 permit: Vivien Neoh + Natalia Acosta (Corgan). BWI110: Roxanne Boal rboal@hksinc.com (⚠️ possible alias for rmyers@hksinc.com — confirm before merging). Research flag: cbialke@amazon.com vs. BCG internal cb@bcg-corp.com (Cory Bialke) — confirm if same person. Boundary email (batch 11 checkpoint ID) skipped. Automated batch run through 2024-06-05T20:34:24Z. |
 | 2.5 | 2026-04-20 | Batch 11: added 15 contacts. PHX069 door hardware thread: Melissa McMorrow + Justin King + Ryan Tator (AWS), Eric Miles + Elizabeth Lenox (Allegion), Grant Loring (Corgan). BWI110 Liquid Cooling: [Unknown] imalus@amazon.com. PHX069 Procore: Datta Sai Yadav Suruboyina (AWS). CMH116 HV RFIs: Heike Nelson (Siemens Energy). CMH116/120 Entry Door: Scott Straton (Allegion), Ankit Udani (Arcadis). CMH116 Procore: Gagan Chambal (AWS), Janie Schaumburg (JSDI Inc. — firm unconfirmed). Physical Security Subconsultant RFP: Manohar Datta (Arcadis). ATL068 pricing: Pete Bretzke (AWS). Role updates (non-new contacts): Tara Nations confirmed Studio Practice Manager / VP, AIA, CDT; Jaclyn Hardiman confirmed DC Project Architect, AIA, NCARB; Nathan Lav confirmed Intern at Siemens Energy. Note: Donnie's personal Outlook s1guy@outlook.com observed — same person as donnie@veteranwebdesign.com, not added separately. Automated batch run through 2024-06-05T15:45:19Z. |
@@ -619,4 +460,4 @@ The following contacts were added by automation but could not be fully resolved.
 
 ---
 
-*This file is maintained by automation and manually corrected by Gregory Bernardo. Automation appends new rows only — it never overwrites existing rows. Correct records directly in this file. Corrections are permanent and will not be overwritten.*
+*Maintained in `bcgcorp/bcg-ops-governance/standards/`. Automation appends new rows only — it never modifies existing rows. Correct records directly in this file. Corrections are permanent and will not be overwritten.*
