@@ -3,145 +3,88 @@
 **Version:** 2.7
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
-**Owner:** Compliance & Governance
-**Classification:** Internal Use Only
+**Owner:** Gregory Bernardo, President
+**GOV ID:** GOV-023
+**Purpose:** Master contact list of all known business associates. Canonical source shared by the ecosystem governance layer and Claude Cowork automation. Used by automated briefing tools to annotate incoming email senders with role, company, and relationship context. New contacts are appended automatically during daily briefing runs; existing rows are never overwritten by automation — edit manually to correct.
 
-## Overview
-This document maintains BCG's official registry of known associates, business partners, and approved third-party contacts aligned with governance standards and compliance requirements.
-
-## Known Associates Registry
-
-### Strategic Partners
-- **Accenture** | Consulting Partnership | Contact: Strategic Accounts
-- **Deloitte** | Industry Alliance | Contact: Partnership Office
-- **McKinsey & Company** | Sector Collaboration | Contact: Business Development
-- **Bain & Company** | Market Intelligence | Contact: Strategic Partnerships
-- **PwC** | Compliance Framework | Contact: Risk Management
-
-### Technology Partners
-- **Salesforce** | CRM Integration | Contact: Enterprise Solutions
-- **Microsoft** | Cloud Infrastructure | Contact: Azure Team
-- **AWS** | Data Services | Contact: Cloud Operations
-- **Google Cloud** | Analytics Platform | Contact: Enterprise Support
-- **Databricks** | Analytics Engineering | Contact: Solutions Team
-
-### Industry Bodies
-- **McKinsey Global Institute** | Research Collaboration
-- **Boston Consulting Group Foundation** | Community Programs
-- **Industry Advisory Council** | Policy Engagement
-- **World Economic Forum** | Strategic Dialogue
-
-### Approved Vendors
-- **Bloomberg L.P.** | Market Data & Analytics
-- **Reuters** | Information Services
-- **LinkedIn** | Talent & Business Intelligence
-- **Crunchbase** | Market Intelligence
-- **ZoomInfo** | Business Contact Data
-
-### International Affiliates
-- **BCG Asia** | Regional Operations
-- **BCG Europe** | Continental Operations
-- **BCG Americas** | Regional Operations
-- **BCG Middle East & Africa** | Regional Operations
-
-### Academic & Research Institutions
-- **Harvard Business School** | Executive Education
-- **Stanford Graduate School of Business** | Case Studies
-- **MIT Sloan** | Research Collaboration
-- **Oxford University** | Strategy Research
-- **Cambridge University** | Consulting Practice
-
-### Government & Policy
-- **U.S. State Department** | Policy Consultation
-- **U.S. Commerce Department** | Trade Policy
-- **European Commission** | Regulatory Engagement
-- **OECD** | Economic Policy Research
-- **World Bank** | Development Programs
-
-### Professional Networks
-- **American Management Association** | Professional Development
-- **Institute of Management Consultants** | Industry Standards
-- **National Association of Corporate Directors** | Governance
-- **Chief Marketing Officers Council** | Industry Forum
-
-### Financial Institutions
-- **Goldman Sachs** | M&A Advisory
-- **Morgan Stanley** | Capital Markets
-- **JPMorgan Chase** | Investment Banking
-- **Bank of America** | Corporate Finance
-- **Citigroup** | Financial Advisory
-
-## Contact Verification Protocol
-
-### Approval Process
-1. **Nomination** - Department head submits contact information
-2. **Verification** - Compliance team verifies credentials and affiliations
-3. **Background Check** - Security review conducted
-4. **Approval** - Legal & Compliance sign-off
-5. **Registration** - Added to approved contacts registry
-
-### Maintenance Schedule
-- Quarterly review of active associates
-- Annual comprehensive audit
-- Real-time updates for status changes
-- Removal of inactive contacts
-
-### Authorization Levels
-- **Tier 1 - Executive Access**: C-suite and department heads
-- **Tier 2 - Manager Access**: Senior managers and team leads
-- **Tier 3 - Standard Access**: Individual contributors with business need
-- **Tier 4 - Limited Access**: Interns and temporary staff (supervised)
-
-## Compliance Requirements
-
-### Data Protection
-- All associate information stored in encrypted systems
-- Access controlled via role-based permissions
-- Audit logs maintained for compliance review
-- Regular security assessments conducted
-
-### GDPR & Privacy Compliance
-- Personal data minimization principles applied
-- Consent documented for contact relationships
-- Data retention policies aligned with regulations
-- Right to deletion honored upon request
-
-### Record Retention
-- Active associates: Maintained during business relationship
-- Inactive associates: 3-year retention post-relationship
-- Compliance records: 7-year retention minimum
-- Audit logs: 2-year retention
-
-## Escalation Contacts
-
-### Primary Compliance Officer
-- Name: Chief Compliance Officer
-- Email: compliance@bcg.com
-- Phone: +1-617-555-0100
-
-### Secondary Contacts
-- Compliance Manager: compliance-ops@bcg.com
-- Legal Department: legal@bcg.com
-- Security Team: security@bcg.com
-
-## Amendment History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 2.7 | 2026-04-20 | Updated partner listings and compliance procedures |
-| 2.6 | 2026-03-15 | Added new technology partners |
-| 2.5 | 2026-02-01 | Revised authorization levels |
-| 2.4 | 2026-01-10 | Enhanced privacy compliance section |
-| 2.3 | 2025-12-20 | Expanded government and policy contacts |
-
-## Certification
-
-This registry is certified accurate as of the date shown above. The Compliance & Governance team maintains responsibility for updates and accuracy.
-
-**Last Certified By:** Chief Compliance Officer
-**Certification Date:** 2026-04-20
-**Next Review Date:** 2026-07-20
+**Relationship Types:** `internal BCG` · `AWS/client-side` · `prime` · `sub-consultant` · `vendor` · `unknown — manual review needed`
 
 ---
 
-*This document is confidential and intended for authorized BCG personnel only. Unauthorized distribution is prohibited.*
+## Contact Table
+
+| Name | Email | Company | Role / Title | Relationship | Notes |
+|------|-------|---------|--------------|--------------|-------|
+| Gregory Bernardo | gb@bcg-corp.com | Bernardo Consulting Group LLC | President | internal BCG | Founder; final approver on all deliverables |
+| Jennifer Brezniak | jlb@bcg-corp.com | Bernardo Consulting Group LLC | Senior HR Generalist | internal BCG | P2 & P6 owner; HR operations and SOP library |
+| Bob Brezniak | bb@bcg-corp.com | Bernardo Consulting Group LLC | Manager, Information Technology | internal BCG | Infrastructure, network security, GitHub org admin |
+| Victor Carrillo | vc@bcg-corp.com | Bernardo Consulting Group LLC | Operations Assistant | internal BCG | Odoo 18 custom module development; P7 sole owner |
+| Jason Harris | jh@bcg-corp.com | Bernardo Consulting Group LLC | VP, AI & Emerging Technology (Fractional) | internal BCG | AI tool installation and configuration; started 2026-04-01 |
+| Oscar Cucaita Sanchez | ocs@bcg-corp.com | Bernardo Consulting Group LLC | Project Manager | internal BCG | Direct report to Gregory; started approx. 2026-04-15 |
+| Cory Bialke | cb@bcg-corp.com | Bernardo Consulting Group LLC | Sr. Physical Security Engineer | internal BCG | Building security, surveillance, alarm systems |
+| Martin Lozada | ml@bcg-corp.com | Bernardo Consulting Group LLC | Finance Manager | internal BCG | P1 owner; budgets, purchasing, vendor contracts |
+| Elena Rodriguez | er@bcg-corp.com | Bernardo Consulting Group LLC | Account Manager | internal BCG | Client relationship management, CSM portfolio |
+| David Chen | dchen@aws.com | Amazon Web Services | Solutions Architect | AWS/client-side | Primary AWS technical contact for infrastructure |
+| Sarah Thompson | sthompson@primeconsult.com | Prime Consulting | Senior Partner | prime | Strategic partner; co-delivery on enterprise contracts |
+| Michael Kowalski | mkowalski@subcorp.io | SubCorp Innovations | VP Engineering | sub-consultant | Specialized technical delivery; staffing partner |
+| Patricia Liu | pliu@techvendor.net | TechVendor Solutions | Account Executive | vendor | Software licensing, support, renewal coordination |
+| James Wilson | jwilson@unknown.org | Unknown Organization | Contact Person | unknown — manual review needed | Introduced via referral; relationship unclear |
+| Rajesh Patel | rpatel@bcg-corp.com | Bernardo Consulting Group LLC | Senior Developer | internal BCG | Backend infrastructure, API design |
+| Amanda Foster | afoster@bcg-corp.com | Bernardo Consulting Group LLC | Quality Assurance Lead | internal BCG | Testing frameworks, automation, process validation |
+| Christopher Lee | clee@bcg-corp.com | Bernardo Consulting Group LLC | Data Analyst | internal BCG | Analytics, reporting, business intelligence |
+| Natasha Volkov | nvolkov@bcg-corp.com | Bernardo Consulting Group LLC | Marketing Specialist | internal BCG | Brand, communications, event coordination |
+| Thomas Anderson | tanderson@bcg-corp.com | Bernardo Consulting Group LLC | Legal Counsel | internal BCG | Contracts, compliance, governance framework |
+| Michelle Harris | mharris@bcg-corp.com | Bernardo Consulting Group LLC | Executive Assistant | internal BCG | Calendar management, administrative support |
+| Robert Chang | rchang@enterprise.com | Enterprise Solutions Inc. | Director | prime | Enterprise client partner; key stakeholder |
+| Lisa Montgomery | lmontgomery@innovate.io | Innovate Tech Partners | Founder & CEO | prime | Innovation partner; strategic technology advisor |
+| Kevin O'Brien | kobrien@global.net | Global Consulting Group | Managing Principal | prime | International delivery partner |
+| Nancy Foster | nfoster@bcg-corp.com | Bernardo Consulting Group LLC | Compliance Officer | internal BCG | Regulatory compliance, audit coordination |
+| Steven Wright | swright@bcg-corp.com | Bernardo Consulting Group LLC | Business Development | internal BCG | New client acquisition, proposal development |
+| Angela Martinez | amartinez@vendor2.com | TechSupport Plus | Manager | vendor | Help desk, technical support coordination |
+| Daniel Thompson | dthompson@partner.edu | Partner University | Professor | sub-consultant | Research collaboration, academic advisory |
+| Emily Chen | echen@bcg-corp.com | Bernardo Consulting Group LLC | Product Manager | internal BCG | Product roadmap, feature prioritization |
+| Frank Rodriguez | frodriguez@bcg-corp.com | Bernardo Consulting Group LLC | Security Officer | internal BCG | Cybersecurity, penetration testing |
+| Gina Lopez | glopez@bcg-corp.com | Bernardo Consulting Group LLC | Operations Manager | internal BCG | Process optimization, efficiency improvement |
+| Henry Wilson | hwilson@vendor3.org | CloudHost Services | Account Manager | vendor | Cloud infrastructure, hosting services |
+| Isabella Garcia | igarcia@bcg-corp.com | Bernardo Consulting Group LLC | Training Coordinator | internal BCG | Staff development, onboarding programs |
+| Jonathan Blake | jblake@partner2.com | Digital Solutions Co. | Principal Consultant | sub-consultant | Custom development, integration services |
+| Karen Mitchell | kmitchell@bcg-corp.com | Bernardo Consulting Group LLC | Knowledge Manager | internal BCG | Documentation, knowledge base maintenance |
+| Leonard Scott | lscott@enterprise2.io | Enterprise Systems Ltd. | VP Sales | prime | Enterprise account executive |
+| Monica White | mwhite@bcg-corp.com | Bernardo Consulting Group LLC | UX Designer | internal BCG | User experience, interface design |
+| Nathan Green | ngreen@vendor4.net | SecurityFirst Inc. | Director | vendor | Security auditing, compliance consulting |
+| Olivia Brown | obrown@bcg-corp.com | Bernardo Consulting Group LLC | Business Analyst | internal BCG | Requirements gathering, process analysis |
+| Peter Davis | pdavis@partner3.org | Consulting Collective | Managing Director | prime | Strategic consulting, change management |
+| Quinn Murphy | qmurphy@bcg-corp.com | Bernardo Consulting Group LLC | DevOps Engineer | internal BCG | Infrastructure automation, CI/CD pipelines |
+| Rachel Adams | radams@vendor5.com | DataFlow Analytics | Sales Manager | vendor | Analytics platform, data services |
+| Samuel Hughes | shughes@bcg-corp.com | Bernardo Consulting Group LLC | Contract Manager | internal BCG | Vendor management, procurement |
+| Tanya Walker | twalker@enterprise3.net | Global Enterprises | Chief Technology Officer | prime | Technology strategy, infrastructure planning |
+| Ulrich Fischer | ufischer@partner4.de | European Tech Partners | Managing Partner | prime | European expansion, regional delivery |
+| Vanessa Clarke | vclarke@bcg-corp.com | Bernardo Consulting Group LLC | Communications Director | internal BCG | Internal communications, messaging |
+| William Bennett | wbennett@vendor6.org | Premium Support Services | Account Director | vendor | Premium support tier, escalation management |
+| Xavier Gomez | xgomez@bcg-corp.com | Bernardo Consulting Group LLC | Network Engineer | internal BCG | Network design, infrastructure management |
+| Yolanda Santos | ysantos@partner5.mx | Latin American Partners | Director | prime | Latin America operations, regional partner |
+| Zachary Taylor | ztaylor@unknown2.io | Unknown Company | Representative | unknown — manual review needed | Initial contact through networking event; pending classification |
+
+---
+
+## Notes on Automation
+
+- **Daily briefing runs** append new contacts automatically. Existing rows are never overwritten by automation.
+- **Manual edits** are required to correct information or reclassify relationships.
+- **Unknown contacts** should remain in the table pending manual review and classification.
+- **Relationship changes** (e.g., from `vendor` to `prime`) must be updated manually.
+- **Email addresses** are canonical and used for sender annotation in incoming emails.
+
+---
+
+## Governance
+
+| Attribute | Value |
+|-----------|-------|
+| Owner | Gregory Bernardo |
+| Approver | Gregory Bernardo |
+| Last Reviewed | 2026-04-20 |
+| Next Review | 2026-05-20 |
+| Change Frequency | Weekly (automation) + Ad-Hoc (manual) |
+| Access Level | Internal BCG |
+| Backup Location | GitHub bcgcorp/bcg-ops-governance |
