@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.5
+**Version:** 2.6
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -304,6 +304,30 @@
 | Janie Schaumburg | janie.schaumburg@jsdinc.com | JSDI Inc. | unknown — manual review needed | unknown — manual review needed | CMH116 Procore HV Permanent new user; JSDI Inc. firm type unconfirmed — research needed |
 | Manohar Datta | Manohar.Datta@arcadis.com | Arcadis | unknown — manual review needed | prime | Physical Security Subconsultant Request |
 | Pete Bretzke | pbretzke@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 C&S Security Pricing Questions |
+| Sylvain Monette | monesylv@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
+| Luis Garofalo | lgaro@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
+| Tingting Yang | ytingti@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
+| Matthew Mandato | mmandato@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL065 CCN020 security poles; Groupe Montoni = Quebec GC/developer |
+| Konstantin Golaev | kongo@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
+| Farhad Ahmadi | farhadau@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | YUL065 CCN020 security poles |
+| Maxime Hébert | mhebert@groupemontoni.com | Groupe Montoni | unknown — manual review needed | vendor | YUL065 CCN020 security poles; Groupe Montoni = Quebec GC/developer |
+| Jaycee Elliott | jayelliottt@bpa.ca | BPA (Bouthillette Parizeau) | unknown — manual review needed | sub-consultant | YUL065 CCN020 security poles; BPA = building engineering firm, Montreal |
+| [Unknown] J.F. Girard | jfgirard@tritechelect.com | Tritech Electric | unknown — manual review needed | unknown — manual review needed | YUL065 CCN020 security poles; electrical contractor; full name unconfirmed — research needed |
+| Peyman Behtash | peyman.behtash@siemens-energy.com | Siemens Energy | unknown — manual review needed | vendor | CMH116 HV transformer yard fencing coordination |
+| Juan Borbely | jborbely@amazon.es | Amazon Web Services (EU) | unknown — manual review needed | AWS/client-side | CMH116 HV transformer yard; Amazon Spain domain |
+| Jon Fairbanks | jon.fairbanks@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 schedule coordination |
+| Balbino Victa Jr | balbino.victajr@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 BIM360 access coordination |
+| Federico Pigliapoco | federico.pigliapoco@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 BIM360 access coordination |
+| Jeremy Jester | jeremy.jester@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 BIM360 access coordination |
+| Anthony Novelli | anthony.novelli@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 BIM360 access coordination |
+| Aldwin Santos | aldwin.santos@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 BIM360 access coordination |
+| Trent Wilson | twilson@powercooleng.com | Power Cool Engineering | unknown — manual review needed | unknown — manual review needed | PCE-BCG NDA; Switch RNO04 Security Design project; firm type unconfirmed — research needed |
+| Jason Garbus | JGarbus@powercooleng.com | Power Cool Engineering | unknown — manual review needed | unknown — manual review needed | PCE-BCG NDA; Switch RNO04 Security Design project |
+| Matt Zorbas | mzorbas@powercooleng.com | Power Cool Engineering | unknown — manual review needed | unknown — manual review needed | PCE-BCG NDA; Switch RNO04 Security Design project |
+| John Radick | radicl@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Design Kick-off meeting organizer |
+| Vivien Neoh | Vivien.Neoh@corgan.com | Corgan | unknown — manual review needed | prime | ATL068ROMP01 Permit Set review comments |
+| Natalia Acosta | Natalia.Acosta@corgan.com | Corgan | unknown — manual review needed | prime | ATL068ROMP01 Permit Set review comments |
+| Roxanne Boal | rboal@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | BWI110 design team; ⚠️ may be same person as rmyers@hksinc.com — confirm identity before merging |
 
 ---
 
@@ -312,7 +336,7 @@
 The following contacts were added by automation but could not be fully resolved. Please update their rows above with the correct Role/Title and Relationship, then remove from this queue.
 
 | Email | Added | Context |
-|-------|-------|---------|
+|-------|-------|---------| 
 | Adam_Langford@gensler.com | 2026-04-15 | IAH101/102/103 ACC uploads email |
 | farah@stendelreich.com | 2026-04-15 | YUL091 sub-consultant agreement follow-up |
 | xieran.cai@arcadis.com | 2026-04-15 | ATL114/ATL117 100% IFP check set |
@@ -530,13 +554,39 @@ The following contacts were added by automation but could not be fully resolved.
 | janie.schaumburg@jsdinc.com | 2026-04-20 | CMH116 Procore HV Permanent; JSDI Inc. — research firm type |
 | Manohar.Datta@arcadis.com | 2026-04-20 | Physical Security Subconsultant Request; Arcadis prime |
 | pbretzke@amazon.com | 2026-04-20 | ATL068 C&S Security Pricing Questions; AWS |
+| monesylv@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
+| lgaro@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
+| ytingti@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
+| mmandato@groupemontoni.com | 2026-04-20 | YUL065 CCN020 security poles; Groupe Montoni vendor |
+| kongo@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
+| farhadau@amazon.com | 2026-04-20 | YUL065 CCN020 security poles; AWS |
+| mhebert@groupemontoni.com | 2026-04-20 | YUL065 CCN020 security poles; Groupe Montoni vendor |
+| jayelliottt@bpa.ca | 2026-04-20 | YUL065 CCN020 security poles; BPA sub-consultant |
+| jfgirard@tritechelect.com | 2026-04-20 | YUL065 CCN020 security poles; Tritech Electric — identify full name and firm role |
+| peyman.behtash@siemens-energy.com | 2026-04-20 | CMH116 HV transformer yard fencing; Siemens Energy vendor |
+| jborbely@amazon.es | 2026-04-20 | CMH116 security; Amazon Spain domain — confirm AWS affiliation |
+| jon.fairbanks@arcadis.com | 2026-04-20 | CMH121 schedule coordination; Arcadis prime |
+| balbino.victajr@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
+| federico.pigliapoco@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
+| jeremy.jester@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
+| anthony.novelli@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
+| aldwin.santos@arcadis.com | 2026-04-20 | CMH121 BIM360 access; Arcadis prime |
+| twilson@powercooleng.com | 2026-04-20 | PCE-BCG NDA; Switch RNO04 Security; Power Cool Engineering — identify firm type (prime/sub-consultant?) |
+| JGarbus@powercooleng.com | 2026-04-20 | PCE-BCG NDA; Power Cool Engineering |
+| mzorbas@powercooleng.com | 2026-04-20 | PCE-BCG NDA; Power Cool Engineering |
+| radicl@amazon.com | 2026-04-20 | ATL085 Design Kick-off organizer; AWS |
+| Vivien.Neoh@corgan.com | 2026-04-20 | ATL068ROMP01 Permit Set review; Corgan prime |
+| Natalia.Acosta@corgan.com | 2026-04-20 | ATL068ROMP01 Permit Set review; Corgan prime |
+| rboal@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime; ⚠️ possible alias for rmyers@hksinc.com (Roxanne Boal) — confirm before merging |
+| cbialke@amazon.com | 2026-04-20 | CMH116/PHX069 security coordination; AWS; ⚠️ name matches BCG internal cb@bcg-corp.com (Cory Bialke) — confirm if same person at prior employer |
 
 ---
 
 ## Change Log
 
 | Version | Date | What Changed |
-|---------|------|--------------|
+|---------|------|--------------| 
+| 2.6 | 2026-04-20 | Batch 12: added 24 contacts. YUL065 CCN020 security poles: Sylvain Monette + Luis Garofalo + Tingting Yang + Konstantin Golaev + Farhad Ahmadi (AWS), Matthew Mandato + Maxime Hébert (Groupe Montoni), Jaycee Elliott (BPA), [Unknown] J.F. Girard (Tritech Electric). CMH116 fencing: Peyman Behtash (Siemens Energy), Juan Borbely (Amazon EU). CMH121 schedule + BIM360: Jon Fairbanks + Balbino Victa Jr + Federico Pigliapoco + Jeremy Jester + Anthony Novelli + Aldwin Santos (all Arcadis). PCE-BCG NDA / Switch RNO04: Trent Wilson + Jason Garbus + Matt Zorbas (Power Cool Engineering — firm type unconfirmed). ATL085 Kick-off: John Radick (AWS). ATL068ROMP01 permit: Vivien Neoh + Natalia Acosta (Corgan). BWI110: Roxanne Boal rboal@hksinc.com (⚠️ possible alias for rmyers@hksinc.com — confirm before merging). Research flag: cbialke@amazon.com vs. BCG internal cb@bcg-corp.com (Cory Bialke) — confirm if same person. Boundary email (batch 11 checkpoint ID) skipped. Automated batch run through 2024-06-05T20:34:24Z. |
 | 2.5 | 2026-04-20 | Batch 11: added 15 contacts. PHX069 door hardware thread: Melissa McMorrow + Justin King + Ryan Tator (AWS), Eric Miles + Elizabeth Lenox (Allegion), Grant Loring (Corgan). BWI110 Liquid Cooling: [Unknown] imalus@amazon.com. PHX069 Procore: Datta Sai Yadav Suruboyina (AWS). CMH116 HV RFIs: Heike Nelson (Siemens Energy). CMH116/120 Entry Door: Scott Straton (Allegion), Ankit Udani (Arcadis). CMH116 Procore: Gagan Chambal (AWS), Janie Schaumburg (JSDI Inc. — firm unconfirmed). Physical Security Subconsultant RFP: Manohar Datta (Arcadis). ATL068 pricing: Pete Bretzke (AWS). Role updates (non-new contacts): Tara Nations confirmed Studio Practice Manager / VP, AIA, CDT; Jaclyn Hardiman confirmed DC Project Architect, AIA, NCARB; Nathan Lav confirmed Intern at Siemens Energy. Note: Donnie's personal Outlook s1guy@outlook.com observed — same person as donnie@veteranwebdesign.com, not added separately. Automated batch run through 2024-06-05T15:45:19Z. |
 | 2.4 | 2026-04-20 | Batch 10: added 27 contacts. Archive (2024-06-04T17:00–21:18): Alexandra Vladuca (AWS/BWI110); Sarah Champine (HKS Job Captain); CMH116 HV RFI thread introduced Kyle Stanislawczyk + Cristhian Godoy + Ajith Poduval (AWS), Lisa Plumley + Josh Dust + Kara Fry + Nathan Lav (Siemens Energy); BWI150 civil call introduced Kyle Hoover (Rowan Digital), Jamie Galliger [C] + Abi Sharma + Brandon Fox + Vanessa Cottle + Pubudu Ranasinghe + Tom Patzold + Sam Ofori + Mark Petrakis (AWS), Jeremy Galvin + Dave Williams (PAE Engineers). Sent Items: Chris Brensinger + Kevin Olsavsky + MaryLou Poole (Jacobs Engineering/ATL085 prime); Kate Neal + Jim Hennessey (AWS); Donnie (Veteran Web Design) + Frank Davies (Aella domain). Corrections flagged: michael.sheehan@wsp.com (batch 9) should be michael.j.sheehan@wsp.com per actual email; B. Woytek first name confirmed Bernie. Automated batch run through 2024-06-04T21:18:57Z. |
 | 2.3 | 2026-04-20 | Batch 9: added 45 contacts. Archive (2024-06-04 to 06-04T17:00): Adam Schilling (Arcadis/CMH121). Sent Items / BIM Coord threads (PHX069): Kraig Walsleben + Phillip Wagner (Rodgers Consulting — civil/site); 15 WSP contacts (Hoffmann, Stratton, Sheehan, Herrmann, Elger, Olson, Sarrantonio, Bournelis, T. Smith, Tate, Sramek, Reuter, Gehler, Jimenez, Mohammed); 4 LAFP contacts (Matthews, Campos, Pitts, Tamakuwala); 3 KWMCE contacts (Spring, Jimenez alias, Hoffmann alias); 4 Corgan contacts (X. Huang, Sipes, Y. Zhang, Brandon); 3 Kimley-Horn contacts (Torpey, Koakowski, Gallini). BWI110 threads: 4 HKS contacts (Nash, Boal/Myers, Ingerson, A. Bhandari); 3 PAE Engineers contacts (Monroe, Marino, Enright); 2 Ramboll contacts (Patchett, Szymanski); Bruno Gregl (AWS). DFW IT Partner: Sagar Khatri. RingCentral: Nicole Lee (jack.lee alias — identity flag). Rachel McGee personal Gmail (marianramcgee@gmail.com). Automated batch run through 2024-06-04T17:00:08Z. |
