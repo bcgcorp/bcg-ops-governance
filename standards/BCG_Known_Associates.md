@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.11
+**Version:** 2.12
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -522,6 +522,45 @@
 | Colter Williams | colter.williams@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL085 |
 | Marcus Rubenstein | marcus.rubenstein@kimley-horn.com | Kimley-Horn | Civil Engineer | sub-consultant | ATL085 |
 | Anna Figueroa-Soldner | anna.figueroa-soldner@arcadis.com | Arcadis | Engineer / Designer | sub-consultant | ATL085 |
+| Jacob Czechan | jacob.czechan@wsp.com | WSP | Civil Engineer | sub-consultant | PHX069 civil/site engineering team |
+| Al Spring (WSP alias) | al.spring@wsp.com | WSP | Civil Engineer | sub-consultant | PHX069; ⚠️ possibly same person as Al Spring aspring@kwmce.com (KWMCE) — confirm identity before merging |
+| Jack Mundinger | jack.mundinger@wsp.com | WSP | Civil Engineer | sub-consultant | PHX069 civil/site engineering team |
+| Geoffrey Rowlands | growlands@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | BWI/CMH project coordination |
+| Jason Woodworth | jwoodworth@atgusa.com | ATG USA | unknown — manual review needed | unknown — manual review needed | ATG USA firm type unconfirmed — research needed |
+| Jeffrey Gardner | jeffrey.gardner@arcadis.com | Arcadis | Engineer / Designer | prime | Security sub-consultant RFP inquiry; RFP declined by BCG (capacity) |
+| Doug Preston | douglas.preston@arcadis.com | Arcadis | Engineer / Designer | prime | Security sub-consultant RFP inquiry |
+| Zayin Wall | zwall@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 Crash Rated Boulders coordination |
+| Nick Lutz | nicklutz@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Civil Breakout / Security PIDS |
+| Ray Balan | raymbala@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Civil Breakout / Security PIDS |
+| Cam Clay | camxclay@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Natasha Nahas | natnahas@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Joanne White | joannemw@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Anthony Frazier (alt alias) | nthonfr@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS; ⚠️ possibly same person as lgnda@amazon.com (Anthony Frazier CMH121) — confirm identity |
+| Sadra Sarraf | sadrasar@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Greg Baron | gjbaron@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Rob Sims | smsjohn@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS; ⚠️ email prefix 'smsjohn' does not match display name 'Rob Sims' — confirm identity |
+| Keith Chan | kwchan@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Bijay Niraula | nbijay@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Christine Beyzaei | czb@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Lolly Kunkler | khlaurel@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS; ⚠️ email prefix 'khlaurel' does not match display name 'Lolly Kunkler' — confirm identity |
+| Sanika Abhyankar | ssabhyan@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Steven Smith | smithcno@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Jake Neumann | jakedart@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Brian Maguire | zmaguire@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Selas Araya | selasa@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| James Eivers | eiversj@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Mike Stone | mikston@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Matthew Tavares | matttav@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Hector Casablanca | hcasabla@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Thom Nickoli | tnickoli@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL085 Security PIDS |
+| Megan Baird | mbaird@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 Security PIDS / Civil Breakout |
+| C. Riddle | criddle@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 Security PIDS; full name unconfirmed — research needed |
+| Amy Huffine | ahuffine@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 Security PIDS |
+| Johanna Patrick | jpatrick@bohlereng.com | Bohler Engineering | Civil Engineer | sub-consultant | ATL085 Security PIDS |
+| Heather Crosby | hcrosby@t5datacenters.com | T5 Data Centers | unknown — manual review needed | vendor | ATL068 Procore access coordination |
+| Adam Freeby | adam.freeby@corgan.com | Corgan | Architect | prime | ATL068 Procore access / design team |
+| Leighann Dunn | leighann.dunn@corgan.com | Corgan | Architect | prime | ATL068 Procore access / design team |
+| Le Kevin Smith | lksmith@t5datacenters.com | T5 Data Centers | unknown — manual review needed | vendor | ATL068 Procore access coordination |
 
 ---
 
@@ -529,6 +568,7 @@
 
 | Version | Date | What Changed |
 |---------|------|--------------| 
+| 2.12 | 2026-04-20 | Batch 18: +39 contacts. Archive (2024-06-13T20:00Z – 2024-06-16T10:59Z): WSP PHX069 team: Jacob Czechan + Al Spring (WSP alias, ⚠️ possible KWMCE same person) + Jack Mundinger; HKS: Geoffrey Rowlands (BWI/CMH); ATG USA: Jason Woodworth (firm unconfirmed). Arcadis security RFP: Jeffrey Gardner + Doug Preston. ATL068 Crash Rated Boulders: Zayin Wall (AWS). ATL085 Security PIDS: Nick Lutz + Ray Balan + Cam Clay + Natasha Nahas + Joanne White + Anthony Frazier alt alias nthonfr (⚠️ possible dup of lgnda) + Sadra Sarraf + Greg Baron + Rob Sims (⚠️ prefix mismatch) + Keith Chan + Bijay Niraula + Christine Beyzaei + Lolly Kunkler (⚠️ prefix mismatch) + Sanika Abhyankar + Steven Smith + Jake Neumann + Brian Maguire + Selas Araya + James Eivers + Mike Stone + Matthew Tavares + Hector Casablanca + Thom Nickoli (all AWS). Bohler Engineering ATL085: Megan Baird + C. Riddle + Amy Huffine + Johanna Patrick. ATL068 Procore: Heather Crosby + Le Kevin Smith (T5 Data Centers), Adam Freeby + Leighann Dunn (Corgan). Automated batch run through 2024-06-16T10:59:29Z archive / 2024-07-31T13:40:39Z sent. |
 | 2.11 | 2026-04-20 | Batch 17: +48 contacts (ATL085 Arcadis/Bohler/Kimley-Horn team, AEP CMH116 utility, Corgan PHX069, Page MSP, Rodgers BWI110, ATL068 Kimley-Horn) |
 | 2.10 | 2026-04-20 | Batch 16: added 12 contacts. Archive (2024-06-10T15:04Z – 2024-06-12T05:59Z): CMH116 Substation weekly: Bryan Toler + Paulino Buna + Eduardo Molina-Ochoa (all Siemens Energy, Toler is .ext/contractor); Jeff Prentiss (Gresham Smith). PHX069 TI 90% Design Review: Casey Wongso + Samir Palepu (both AGE-SE). Sent Items (2024-06-28 – 2024-07-09T18:47Z): Transfer Agreement: Andrea B. (GC Attorneys — last name unconfirmed). AWS MSP100 RFP: Kathleen Linderkamp (RSP Architects), Samantha Davis + Michael Malone + Michael Lyons (HKS), R. Barrett (Swanson Rink). Automated batch run through 2024-06-12T05:59:01Z archive / 2024-07-09T18:47:26Z sent. |
 | 2.9 | 2026-04-20 | Batch 15: added 31 contacts. Sent Items (2024-06-18T21:35Z – 2024-06-28T19:57Z): SEI contract negotiation: David Munroe (Siemens Energy). HKS/AWS PNE100-103: Prince Ambooken (HKS). PHX069 site security poles: Gracyn Ruha (Kimley-Horn). PHX069 CSB Action Items distribution list: Lisa Beighton + Nicolas LeDuc + Linh Nguyen + Patrick Burns + Rowena Claux + Bryon Parsons + Blake Carruthers + Jake Garrett + Shane Bigham + Morgan O'Connor + Jeremy Snyder + Darren Wilton + Ferdinand Elayba + Fred Markham + Daniel Pollock + Sam Williams [C] + Dimitrios Loukas + Mel Nyagba (all AWS); Jon Lichtenfels (Corgan); Byron Yeatts (AGE-SE); Eric Burdak (Stack Infra); KWMCE aliases: dsramek@kwmce.com + tdsmith@kwmce.com (⚠️ confirm vs WSP counterparts); Cerone Thompson + Carlos Morales (WSP). ATL085 BIM Kickoff: Curt Carlson [C] (AWS). Archive (2024-06-07 – 2024-06-10T15:04Z): Hannah Franks (PAE Engineers/BWI110). Cory Bialke cbialke@amazon.com added with flag (possible overlap with BCG internal cb@bcg-corp.com). Automated batch run through 2024-06-10T15:04:31Z archive / 2024-06-28T19:57:15Z sent. |
