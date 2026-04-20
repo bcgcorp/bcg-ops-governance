@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.2
+**Version:** 2.3
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -217,6 +217,51 @@
 | Jashuna Caimi | jashuna.caimi@arcadis.com | Arcadis | unknown — manual review needed | prime | TDCi 1S/2S BOD FP/FA phasing |
 | Kravitz Wong | kravitz.wong@arcadis.com | Arcadis | unknown — manual review needed | prime | TDCi 1S/2S BOD FP/FA phasing |
 | John Poolton | john.poolton@arcadis.com | Arcadis | unknown — manual review needed | prime | TDCi 1S/2S BOD FP/FA phasing |
+| Kraig Walsleben | KWalsleben@RODGERS.com | Rodgers Consulting | Principal | sub-consultant | PHX069 civil/site engineering |
+| Phillip Wagner | PWagner@RODGERS.com | Rodgers Consulting | Design Engineer | sub-consultant | PHX069 civil/site engineering |
+| Clint Nash | cnash@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | BWI110 design team |
+| Roxanne Boal | rmyers@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | BWI110 design team; email prefix 'rmyers' may indicate name change — confirm identity |
+| Jeffrey Ingerson | jingerson@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | BWI110 design team |
+| Anuj Bhandari | abhandari@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | BWI110 design team |
+| Michael Monroe | michael.monroe@pae-engineers.com | PAE Engineers | unknown — manual review needed | sub-consultant | BWI110 MEP engineering |
+| Tony Marino | tony.marino@pae-engineers.com | PAE Engineers | unknown — manual review needed | sub-consultant | BWI110 MEP engineering |
+| Andrew Enright | andrew.enright@pae-engineers.com | PAE Engineers | unknown — manual review needed | sub-consultant | BWI110 MEP engineering |
+| Robert Patchett | rpatchett@ramboll.com | Ramboll | unknown — manual review needed | sub-consultant | BWI110 structural/civil engineering |
+| Jeff Szymanski | JSZYMANSKI@ramboll.com | Ramboll | unknown — manual review needed | sub-consultant | BWI110 structural/civil engineering |
+| Sagar Khatri | skhatri@dfwitpartner.com | DFW IT Partner | Solution Architect | vendor | IT services; Irving, TX; see also Sonu Bhandari (Managing Director) |
+| Bruno Gregl | bgregl@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | BWI110 Security coordination |
+| Nicole Lee | jack.lee@ringcentral.com | RingCentral | unknown — manual review needed | vendor | RingCentral telecom; ⚠️ email prefix 'jack.lee' does not match first name 'Nicole' — confirm identity |
+| Rachel McGee (personal Gmail) | marianramcgee@gmail.com | Bernardo Consulting Group LLC | Administrative Manager (personal Gmail) | internal BCG | Personal Gmail; see rm@bcg-corp.com; alternate personal address alongside mrachelmcgee@outlook.com |
+| Mike Hoffmann | Mike.Hoffmann@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 civil/structural engineering; ⚠️ may also be mhoffmann@kwmce.com — confirm identity |
+| Emily Stratton | emily.stratton@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Michael Sheehan | michael.sheehan@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Daniel Herrmann | daniel.herrmann@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Dedrick Elger | dedrick.elger@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Winston Olson | winston.olson@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Jocelyn Sarrantonio | jocelyn.sarrantonio@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Morgan Bournelis | morgan.bournelis@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Tony Smith | tony.smith@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Alex Tate | alex.tate@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| David Sramek | david.sramek@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Andrew Reuter | andrew.reuter@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Gennisa Gehler | gennisa.gehler@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Lauro Jimenez | lauro.jimenez@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering; ⚠️ may also be ljimenez@kwmce.com — confirm identity |
+| Mohi Mohammed | mohi.mohammed@wsp.com | WSP | unknown — manual review needed | sub-consultant | PHX069 engineering |
+| Chris Matthews | cmatthews@lafp.com | LAFP | unknown — manual review needed | sub-consultant | PHX069 permit issuance; LAFP firm type unconfirmed — research needed |
+| Tony Campos | tcampos@lafp.com | LAFP | unknown — manual review needed | sub-consultant | PHX069 permit issuance; LAFP firm type unconfirmed — research needed |
+| Holly Pitts | hpitts@lafp.com | LAFP | unknown — manual review needed | sub-consultant | PHX069 permit issuance; LAFP firm type unconfirmed — research needed |
+| Nishant Tamakuwala | ntamakuwala@lafp.com | LAFP | unknown — manual review needed | sub-consultant | PHX069 permit issuance; LAFP firm type unconfirmed — research needed |
+| Al Spring | aspring@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069 permit issuance; KWMCE firm type unconfirmed — research needed |
+| Lauro Jimenez (KWMCE alias) | ljimenez@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069; ⚠️ possibly same person as lauro.jimenez@wsp.com — confirm identity before merging |
+| Mike Hoffmann (KWMCE alias) | mhoffmann@kwmce.com | KWMCE | unknown — manual review needed | sub-consultant | PHX069; ⚠️ possibly same person as Mike.Hoffmann@wsp.com — confirm identity before merging |
+| Xinying Huang | Xinying.Huang@corgan.com | Corgan | unknown — manual review needed | prime | PHX069 design team |
+| Lexi Sipes | Lexi.Sipes@corgan.com | Corgan | unknown — manual review needed | prime | PHX069 design team |
+| Yuqi Zhang | Yuqi.Zhang@corgan.com | Corgan | unknown — manual review needed | prime | PHX069 design team |
+| Sierra Brandon | Sierra.Brandon@corgan.com | Corgan | unknown — manual review needed | prime | PHX069 design team |
+| Jake Torpey | Jake.Torpey@kimley-horn.com | Kimley-Horn | unknown — manual review needed | sub-consultant | PHX069 civil engineering |
+| Rafael Koakowski | Rafael.Koakowski@kimley-horn.com | Kimley-Horn | unknown — manual review needed | sub-consultant | PHX069 civil engineering |
+| Zach Gallini | Zach.Gallini@kimley-horn.com | Kimley-Horn | unknown — manual review needed | sub-consultant | PHX069 civil engineering |
+| Adam Schilling | Adam.Schilling@arcadis.com | Arcadis | unknown — manual review needed | prime | CMH121 design coordination |
 
 ---
 
@@ -365,6 +410,47 @@ The following contacts were added by automation but could not be fully resolved.
 | jashuna.caimi@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
 | kravitz.wong@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
 | john.poolton@arcadis.com | 2026-04-20 | TDCi 1S/2S BOD FP/FA phasing |
+| cnash@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime |
+| rmyers@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime; ⚠️ email prefix 'rmyers' — confirm identity for Roxanne Boal |
+| jingerson@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime |
+| abhandari@hksinc.com | 2026-04-20 | BWI110 design team; HKS prime |
+| michael.monroe@pae-engineers.com | 2026-04-20 | BWI110 MEP; PAE Engineers sub-consultant |
+| tony.marino@pae-engineers.com | 2026-04-20 | BWI110 MEP; PAE Engineers sub-consultant |
+| andrew.enright@pae-engineers.com | 2026-04-20 | BWI110 MEP; PAE Engineers sub-consultant |
+| rpatchett@ramboll.com | 2026-04-20 | BWI110 structural/civil; Ramboll sub-consultant |
+| JSZYMANSKI@ramboll.com | 2026-04-20 | BWI110 structural/civil; Ramboll sub-consultant |
+| bgregl@amazon.com | 2026-04-20 | BWI110 Security coordination; AWS |
+| jack.lee@ringcentral.com | 2026-04-20 | RingCentral telecom; ⚠️ email 'jack.lee' does not match name 'Nicole Lee' — confirm identity |
+| Mike.Hoffmann@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant; ⚠️ may also be mhoffmann@kwmce.com |
+| emily.stratton@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| michael.sheehan@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| daniel.herrmann@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| dedrick.elger@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| winston.olson@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| jocelyn.sarrantonio@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| morgan.bournelis@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| tony.smith@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| alex.tate@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| david.sramek@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| andrew.reuter@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| gennisa.gehler@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| lauro.jimenez@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant; ⚠️ may also be ljimenez@kwmce.com |
+| mohi.mohammed@wsp.com | 2026-04-20 | PHX069 WSP sub-consultant |
+| cmatthews@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
+| tcampos@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
+| hpitts@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
+| ntamakuwala@lafp.com | 2026-04-20 | PHX069 permit issuance; LAFP firm unconfirmed — identify firm |
+| aspring@kwmce.com | 2026-04-20 | PHX069 permit issuance; KWMCE firm unconfirmed — identify firm |
+| ljimenez@kwmce.com | 2026-04-20 | PHX069; KWMCE; ⚠️ possibly same person as lauro.jimenez@wsp.com — confirm |
+| mhoffmann@kwmce.com | 2026-04-20 | PHX069; KWMCE; ⚠️ possibly same person as Mike.Hoffmann@wsp.com — confirm |
+| Xinying.Huang@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
+| Lexi.Sipes@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
+| Yuqi.Zhang@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
+| Sierra.Brandon@corgan.com | 2026-04-20 | PHX069 design team; Corgan prime |
+| Jake.Torpey@kimley-horn.com | 2026-04-20 | PHX069 civil engineering; Kimley-Horn sub-consultant |
+| Rafael.Koakowski@kimley-horn.com | 2026-04-20 | PHX069 civil engineering; Kimley-Horn sub-consultant |
+| Zach.Gallini@kimley-horn.com | 2026-04-20 | PHX069 civil engineering; Kimley-Horn sub-consultant |
+| Adam.Schilling@arcadis.com | 2026-04-20 | CMH121 design coordination; Arcadis prime |
 
 ---
 
@@ -372,6 +458,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 2.3 | 2026-04-20 | Batch 9: added 45 contacts. Archive (2024-06-04 to 06-04T17:00): Adam Schilling (Arcadis/CMH121). Sent Items / BIM Coord threads (PHX069): Kraig Walsleben + Phillip Wagner (Rodgers Consulting — civil/site); 15 WSP contacts (Hoffmann, Stratton, Sheehan, Herrmann, Elger, Olson, Sarrantonio, Bournelis, T. Smith, Tate, Sramek, Reuter, Gehler, Jimenez, Mohammed); 4 LAFP contacts (Matthews, Campos, Pitts, Tamakuwala); 3 KWMCE contacts (Spring, Jimenez alias, Hoffmann alias); 4 Corgan contacts (X. Huang, Sipes, Y. Zhang, Brandon); 3 Kimley-Horn contacts (Torpey, Koakowski, Gallini). BWI110 threads: 4 HKS contacts (Nash, Boal/Myers, Ingerson, A. Bhandari); 3 PAE Engineers contacts (Monroe, Marino, Enright); 2 Ramboll contacts (Patchett, Szymanski); Bruno Gregl (AWS). DFW IT Partner: Sagar Khatri. RingCentral: Nicole Lee (jack.lee alias — identity flag). Rachel McGee personal Gmail (marianramcgee@gmail.com). Automated batch run through 2024-06-04T17:00:08Z. |
 | 2.2 | 2026-04-20 | Batch 8: added 113 contacts. Archive (2024-06-01 to 06-04): Brad Latson (Corgan), David Varghese + Nima Afzali (T5 Data Centers), Dexter Haynes (AWS), David Morrison (Siemens Energy), Lu Zhang (AWS), Gabriela Mesa Soto (HKS), Rima Khalaili + Benjamin Del Fante (Odoo), Abdulrahim Atassi + Marcus Tung + Minghui Huang (Arcadis), Alexis Christensen + Gary Heath (Kimley-Horn). Sent Items (2024-05-31 to 06-05): Margaret Elgin (Gresham Smith), Geno Dudley (RingCentral), Trevor Donlin + Nikki Ivie + John Temple + Dhanraj Vyas (AWS), Sonu Bhandari (DFW IT Partner), Pak Ling Chiu + Richard Mall + Michelle Petersen (Arcadis), Hannah Serra (HKS). Inbox (2025-11-21 to 2026-01-23): Hinesh Rathod + Bilal Ahmad + Duane Keu + Ryan Dlesk + Caleb Marrero + Yasser Al Bochi + Chad Elrod + Michael Green + Jason Segna (AWS — ATL089); Nicholas Juhasz + Michael Vander Ploeg + Jonathan Mesik (DLR Group); 51 Amazon contacts + 8 Atlantic AE + 6 Arcadis + 4 Kimley-Horn + 3 Viatechnik + 3 Gensler + 2 Allegion + 1 Ramboll + 2 Apex Structural + 1 Wolf Engineering (CMH243, PDX070, TDCi threads). Automated batch run through 2024-06-04. |
 | 2.1 | 2026-04-20 | Batch 19–21: added 18 contacts from Aella restructuring announcement emails and NDA thread — Gundarapu (AWS); Dickson, Osses, Schapsis, Gyzen (Arcadis); Schuknecht, Connell, Brown, Turner (Corgan); Nations, Meltzer, Pataky, Radke, Woytek, Wickes (HKS); Ford, Zimmerman (Ford & Associates); Kertland (Stendel+Reich). Wickes flagged for company change to Ci Design. Schuknecht flagged for possible move to EYPMCF. Batches 19–20 were pure marketing/SaaS noise. Automated batch run through 2024-05-31. |
 | 2.0 | 2026-04-20 | Batch 18: added Aubry Dameron and Rhonda Dowling (Springer & Lyle LLP, BCG legal counsel, Denton TX). Automated batch run through 2024-05-22. |
