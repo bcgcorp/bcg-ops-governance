@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 1.4
+**Version:** 1.5
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-19
 **Owner:** Gregory Bernardo, President
@@ -44,6 +44,9 @@
 | Dewey Thurgood | dthurgood@eldoradoinsurance.com | El Dorado Insurance Agency | Select Benefits Director / P&C Insurance Agent | vendor | Specializes in security industry insurance; Palestine, TX |
 | Susan Hansen | shansen@eldoradoinsurance.com | El Dorado Insurance Agency | unknown — manual review needed | vendor | Welcome/onboarding email to BCG; Houston, TX |
 | Stephanie Bernardo (personal) | stephbernardo@gmail.com | Bernardo Consulting Group LLC | Senior Designer / Production Lead (personal email) | internal BCG | Personal Gmail; see srb@bcg-corp.com |
+| Aaron Gearhart | ajgear@amazon.com | Amazon Web Services | Manager | AWS/client-side | NDA coordination contact; Arlington, VA. ⚠️ Company change: may have moved to 3Degrees as Sr. Director, Global Climate Strategy Consulting |
+| Pratik Khare | pratikrk@amazon.com | Amazon Web Services | Tech Infra Program Manager (CSPO) | AWS/client-side | NDA coordination; AI infrastructure and cloud computing programs |
+| Jeremy Zweeres | jzweeres@amazon.com | Amazon Web Services | Manager, Colo Physical Security Engineering (AMER) (PSP) | AWS/client-side | NDA coordination; 20+ years physical security experience; directly relevant to BCG's security consulting scope |
 
 ---
 
@@ -64,6 +67,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.5 | 2026-04-19 | Batch 12: added Aaron Gearhart, Pratik Khare, Jeremy Zweeres (AWS). NDA-related contacts. Aaron Gearhart flagged for possible company change to 3Degrees. Automated batch run through 2024-04-06. |
 | 1.4 | 2026-04-19 | Batch 3: added Stephanie Bernardo (personal Gmail). Automated batch run through 2024-02-20. |
 | 1.3 | 2026-04-19 | Batch 2: added Susan Hansen (El Dorado Insurance Agency). Automated batch run through 2024-02-18. |
 | 1.2 | 2026-04-19 | Batch 1: added Gregory Bernardo (personal Gmail), Christina Wicker and Dewey Thurgood (El Dorado Insurance Agency). Automated batch run through 2024-02-15. |
