@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 1.1
+**Version:** 1.2
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-19
 **Owner:** Gregory Bernardo, President
@@ -39,6 +39,9 @@
 | Oleg Saidov | SaidovO@hswc.com | Haskell (HSWC) | Assistant Project Manager | vendor | PDX070 OAC meeting minutes distribution |
 | Kendyll Borchert | kborchert@walbridge.com | Walbridge | Project Coordinator | vendor | AWS Campus 4 OAC meeting coordination |
 | Peyton Williamson | Peyton.Williamson@caddell.com | Caddell Construction | Assistant Project Manager | vendor | CMH170 RFI/Submittal/PDCM meeting coordinator |
+| Gregory Bernardo (personal) | bernardo.gregory@gmail.com | Bernardo Consulting Group LLC | President (personal email) | internal BCG | Owner's personal Gmail; used for forwarding |
+| Christina Wicker | cwicker@eldoradoinsurance.com | El Dorado Insurance Agency | Account Representative | vendor | BCG insurance account handler; Houston, TX |
+| Dewey Thurgood | dthurgood@eldoradoinsurance.com | El Dorado Insurance Agency | Select Benefits Director / P&C Insurance Agent | vendor | Specializes in security industry insurance; Palestine, TX |
 
 ---
 
@@ -58,6 +61,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.2 | 2026-04-19 | Batch 1: added Gregory Bernardo (personal Gmail), Christina Wicker and Dewey Thurgood (El Dorado Insurance Agency). Automated batch run through 2024-02-15. |
 | 1.1 | 2026-04-19 | Renamed from `known-associates.md`. Registered in Governance Doc Registry as GOV-023 (Section 3.26). Declared canonical source shared by ecosystem governance and Claude Cowork automation. |
 | 1.0 | 2026-04-15 | Initial version. Seeded with full BCG internal team (from BCG_Team_Directory.md v2.5) and external contacts identified in 2026-04-15 morning briefing run. |
 
