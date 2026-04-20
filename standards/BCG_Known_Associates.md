@@ -1,6 +1,6 @@
 # BCG Known Associates
 
-**Version:** 2.0
+**Version:** 2.1
 **Created:** 2026-04-15
 **Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
@@ -86,6 +86,24 @@
 | Rachel McGee (personal) | mrachelmcgee@outlook.com | Bernardo Consulting Group LLC | Administrative Manager (personal email) | internal BCG | Personal Outlook; see rm@bcg-corp.com. Gregory forwarded M365 welcome to this address. |
 | Aubry Dameron | aubry@springer-lyle.com | Springer & Lyle LLP (now Springer Lyle & Dameron) | Attorney / Named Partner | vendor | BCG legal counsel; Denton, TX law firm (est. 1994); personal injury, business litigation, real estate |
 | Rhonda Dowling | Rhonda@springer-lyle.com | Springer & Lyle LLP | unknown — manual review needed | vendor | BCG legal counsel; Denton, TX |
+| Vinaya Kumar Gundarapu | gundarav@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | NDA coordination contact; CC'd on NDA thread with Gearhart/Zweeres |
+| Michelle Dickson | Michelle.Dickson@arcadis.com | Arcadis | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Griselle Osses | Griselle.Osses@arcadis.com | Arcadis | Program Manager, Data Center Design, PE | prime | Aella restructuring announcement recipient; 17+ years at Arcadis; DEI Champion |
+| Vivian Schapsis | vivian.schapsis@arcadis.com | Arcadis | Senior Project Manager, Data Centers, AIA, LEED AP, NCARB | prime | Aella restructuring announcement recipient |
+| Jeff Gyzen | jeff.gyzen@arcadis.com | Arcadis | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Rick Schuknecht | Rick.Schuknecht@corgan.com | Corgan | VP | prime | Aella restructuring announcement recipient. ⚠️ Company change: may have moved to EYPMCF as Managing Principal |
+| Mike Connell | Mike.Connell@corgan.com | Corgan | Principal | prime | Aella restructuring announcement recipient |
+| Bobby Brown | Bobby.Brown@corgan.com | Corgan | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Sarah Turner | Sarah.Turner@corgan.com | Corgan | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Tara Nations | tnations@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Seth Meltzer | smeltzer@hksinc.com | HKS, Inc. | Senior Project Architect | prime | Aella restructuring announcement recipient |
+| Mark Pataky | mpataky@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Steve Radke | sradke@hksinc.com | HKS, Inc. | Principal, Studio Practice Manager, Commercial/Mixed Use | prime | Aella restructuring announcement recipient |
+| B. Woytek | bwoytek@hksinc.com | HKS, Inc. | unknown — manual review needed | prime | Aella restructuring announcement recipient; first name unconfirmed |
+| Dutch Wickes | dwickes@hksinc.com | HKS, Inc. | Principal, Mission Critical Practice Leader, AIA | prime | Aella restructuring announcement recipient. ⚠️ Company change: moved to Ci Design, Inc. as Global Director, Mission Critical Practice |
+| Mark Ford | mford@fordarchitects.com | Ford & Associates Architects, Inc. | President | prime | Aella restructuring announcement recipient; firm est. 1993, Dallas-area |
+| Gayle Zimmerman | gzimmerman@fordarchitects.com | Ford & Associates Architects, Inc. | unknown — manual review needed | prime | Aella restructuring announcement recipient |
+| Kelly Kertland | kelly@stendelreich.com | Stendel + Reich | Senior Associate / Office Manager | prime | Aella restructuring announcement recipient; Montreal |
 
 ---
 
@@ -122,6 +140,15 @@ The following contacts were added by automation but could not be fully resolved.
 | stephaniedufour@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
 | malamanque@groupemontoni.com | 2026-04-20 | YUL06 ROMP01 substantial completion |
 | Rhonda@springer-lyle.com | 2026-04-20 | BCG legal counsel correspondence |
+| gundarav@amazon.com | 2026-04-20 | NDA coordination thread with Gearhart/Zweeres |
+| Michelle.Dickson@arcadis.com | 2026-04-20 | Aella restructuring announcement |
+| jeff.gyzen@arcadis.com | 2026-04-20 | Aella restructuring announcement |
+| Bobby.Brown@corgan.com | 2026-04-20 | Aella restructuring announcement |
+| Sarah.Turner@corgan.com | 2026-04-20 | Aella restructuring announcement |
+| tnations@hksinc.com | 2026-04-20 | Aella restructuring announcement |
+| mpataky@hksinc.com | 2026-04-20 | Aella restructuring announcement |
+| bwoytek@hksinc.com | 2026-04-20 | Aella restructuring announcement; first name unconfirmed |
+| gzimmerman@fordarchitects.com | 2026-04-20 | Aella restructuring announcement |
 
 ---
 
@@ -129,6 +156,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 2.1 | 2026-04-20 | Batch 19–21: added 18 contacts from Aella restructuring announcement emails and NDA thread — Gundarapu (AWS); Dickson, Osses, Schapsis, Gyzen (Arcadis); Schuknecht, Connell, Brown, Turner (Corgan); Nations, Meltzer, Pataky, Radke, Woytek, Wickes (HKS); Ford, Zimmerman (Ford & Associates); Kertland (Stendel+Reich). Wickes flagged for company change to Ci Design. Schuknecht flagged for possible move to EYPMCF. Batches 19–20 were pure marketing/SaaS noise. Automated batch run through 2024-05-31. |
 | 2.0 | 2026-04-20 | Batch 18: added Aubry Dameron and Rhonda Dowling (Springer & Lyle LLP, BCG legal counsel, Denton TX). Automated batch run through 2024-05-22. |
 | 1.9 | 2026-04-20 | Batch 17: added Rachel McGee personal Outlook (mrachelmcgee@outlook.com). Automated batch run through 2024-05-17. |
 | 1.8 | 2026-04-20 | Batches 14–16: added Jason Harris personal Gmail (trash.master.repo@gmail.com). Batches 14–15 yielded zero new contacts (marketing/system noise). Automated batch run through 2024-05-15. |
