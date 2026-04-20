@@ -1,8 +1,8 @@
 # BCG Known Associates
 
-**Version:** 1.5
+**Version:** 1.6
 **Created:** 2026-04-15
-**Last Updated:** 2026-04-19
+**Last Updated:** 2026-04-20
 **Owner:** Gregory Bernardo, President
 **GOV ID:** GOV-023
 **Purpose:** Master contact list of all known business associates. Canonical source shared by the ecosystem governance layer and Claude Cowork automation. Used by automated briefing tools to annotate incoming email senders with role, company, and relationship context. New contacts are appended automatically during daily briefing runs; existing rows are never overwritten by automation — edit manually to correct.
@@ -35,7 +35,7 @@
 | Salma Teekay | steekay@hksinc.com | HKS, Inc. | Project Architect, Associate | prime | STL100 TI and AWB issuance coordinator; Chicago office |
 | Kyle Johnson | Kyle.Johnson@corgan.com | Corgan | Project Manager, Senior Associate | prime | PHX069 TI permit addendum coordination |
 | Farah Mohamad | farah@stendelreich.com | Stendel + Reich | unknown — manual review needed | prime | YUL091 sub-consultant service agreement |
-| Xieran Cai | xieran.cai@arcadis.com | Arcadis | unknown — manual review needed | prime | ATL114/ATL117 IFP check set distribution |
+| Xieran Cai | xieran.cai@arcadis.com | Arcadis | Associate, AIA, PMP, LEED AP BD+C | prime | ATL114/ATL117 IFP check set distribution; Los Angeles office |
 | Oleg Saidov | SaidovO@hswc.com | Haskell (HSWC) | Assistant Project Manager | vendor | PDX070 OAC meeting minutes distribution |
 | Kendyll Borchert | kborchert@walbridge.com | Walbridge | Project Coordinator | vendor | AWS Campus 4 OAC meeting coordination |
 | Peyton Williamson | Peyton.Williamson@caddell.com | Caddell Construction | Assistant Project Manager | vendor | CMH170 RFI/Submittal/PDCM meeting coordinator |
@@ -47,6 +47,25 @@
 | Aaron Gearhart | ajgear@amazon.com | Amazon Web Services | Manager | AWS/client-side | NDA coordination contact; Arlington, VA. ⚠️ Company change: may have moved to 3Degrees as Sr. Director, Global Climate Strategy Consulting |
 | Pratik Khare | pratikrk@amazon.com | Amazon Web Services | Tech Infra Program Manager (CSPO) | AWS/client-side | NDA coordination; AI infrastructure and cloud computing programs |
 | Jeremy Zweeres | jzweeres@amazon.com | Amazon Web Services | Manager, Colo Physical Security Engineering (AMER) (PSP) | AWS/client-side | NDA coordination; 20+ years physical security experience; directly relevant to BCG's security consulting scope |
+| Kaustubh Khanvilkar | kvkhanvi@amazon.com | Amazon Web Services | Sr. Manager, Regional Design | AWS/client-side | PHX070/071 TI design management lead; background at Baker Concrete, Parsons, Bechtel |
+| Paul Gierlach | paulg@atlantic-ae.com | Atlantic AE | Client Director, AIA | prime | CMH243 lead architect; Cleveland, OH based |
+| Alec Jennison | alecjenn@amazon.com | Amazon Web Services | Manager, Development | AWS/client-side | Augusta SHL project; M: 301.467.9323; background at Carmel Partners |
+| Michael Batty | michael.batty@broccolini.com | Broccolini | Manager, Development, P.Eng | vendor | Augusta SHL GC contact; Montreal-based |
+| Cullen Fair | crfair@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 5 Whys root cause analysis lead |
+| Josh Rosenthal | josh_rosenthal@gensler.com | Gensler | Studio Director | prime | LBB120 bid coordination; Houston office |
+| Isabella Culliton | isabella.culliton@kimley-horn.com | Kimley-Horn | Civil Engineer, P.E. | sub-consultant | CMH171 60% page turn civil coordination; Columbus, OH |
+| Harsh Talwar | voltamps@amazon.com | Amazon Web Services | Electrical Design Engineer | AWS/client-side | CMH243 Sunroom electrical reviewer |
+| Alain Mamada | alainmam@amazon.com | Amazon Web Services | PE (Fire Alarm / Protection) | AWS/client-side | CMH243 Sunroom fire alarm reviewer |
+| JT Nicol | jtnicol@amazon.com | Amazon Web Services | Lead Mechanical Design Engineer, PE | AWS/client-side | LBB120 mechanical submittal |
+| Liuyan Ma | maliuyan@amazon.com | Amazon Web Services | MV Design Reviewer | AWS/client-side | PHX070 TI MV comments |
+| Sierra McGowen | sierra.mcgowen@corgan.com | Corgan | unknown — manual review needed | prime | PHX069/070 RFI responses and coordination |
+| Andi Rusu | arusu@stendelreich.com | Stendel + Reich | unknown — manual review needed | prime | Augusta SHL bollard clarification |
+| Pamela Jokhadar | pjokhadar@stendelreich.com | Stendel + Reich | unknown — manual review needed | prime | Augusta SHL bollard clarification |
+| Anthony Da Ponte | anthony.daponte@broccolini.com | Broccolini | unknown — manual review needed | vendor | Augusta SHL, CC'd on bollard thread |
+| Mathieu Gauthier Besner | mathieu.gauthier-besner@exp.com | exp | unknown — manual review needed | sub-consultant | Augusta SHL design team |
+| Émilie Migneault | emilie.migneault@exp.com | exp | unknown — manual review needed | sub-consultant | Augusta SHL design team |
+| Dave Nock | dnock@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 5 Whys distribution; ATL114 IFP |
+| Sham Wali | walshami@amazon.com | Amazon Web Services | unknown — manual review needed | AWS/client-side | ATL068 5 Whys |
 
 ---
 
@@ -60,6 +79,15 @@ The following contacts were added by automation but could not be fully resolved.
 | farah@stendelreich.com | 2026-04-15 | YUL091 sub-consultant agreement follow-up |
 | xieran.cai@arcadis.com | 2026-04-15 | ATL114/ATL117 100% IFP check set |
 | shansen@eldoradoinsurance.com | 2026-04-19 | Welcome to El Dorado Insurance Agency email |
+| crfair@amazon.com | 2026-04-20 | ATL068 5 Whys root cause analysis |
+| sierra.mcgowen@corgan.com | 2026-04-20 | PHX069/070 RFI responses and coordination |
+| arusu@stendelreich.com | 2026-04-20 | Augusta SHL bollard clarification |
+| pjokhadar@stendelreich.com | 2026-04-20 | Augusta SHL bollard clarification |
+| anthony.daponte@broccolini.com | 2026-04-20 | Augusta SHL GC coordination |
+| mathieu.gauthier-besner@exp.com | 2026-04-20 | Augusta SHL design team |
+| emilie.migneault@exp.com | 2026-04-20 | Augusta SHL design team |
+| dnock@amazon.com | 2026-04-20 | ATL068 5 Whys; ATL114 IFP distribution |
+| walshami@amazon.com | 2026-04-20 | ATL068 5 Whys |
 
 ---
 
@@ -67,6 +95,7 @@ The following contacts were added by automation but could not be fully resolved.
 
 | Version | Date | What Changed |
 |---------|------|--------------|
+| 1.6 | 2026-04-20 | Added 19 new contacts from morning briefing 2026-04-20: Khanvilkar, Gierlach, Jennison, Batty, Fair, Rosenthal, Culliton, Talwar, Mamada, Nicol, Ma, McGowen, Rusu, Jokhadar, Da Ponte, Gauthier Besner, Migneault, Nock, Wali. Updated Xieran Cai role to Associate, AIA, PMP, LEED AP BD+C. |
 | 1.5 | 2026-04-19 | Batch 12: added Aaron Gearhart, Pratik Khare, Jeremy Zweeres (AWS). NDA-related contacts. Aaron Gearhart flagged for possible company change to 3Degrees. Automated batch run through 2024-04-06. |
 | 1.4 | 2026-04-19 | Batch 3: added Stephanie Bernardo (personal Gmail). Automated batch run through 2024-02-20. |
 | 1.3 | 2026-04-19 | Batch 2: added Susan Hansen (El Dorado Insurance Agency). Automated batch run through 2024-02-18. |
