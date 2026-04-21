@@ -11,5 +11,3 @@ and capture standard, project ecosystem and handoffs reference.
 
 Owner: Gregory Bernardo
 Maintained by: Gregory Bernardo (structure), Jennifer Brezniak (SOP/naming standards)
-
-Test
