@@ -1,0 +1,26 @@
+{
+  "_description": "Patch file: 13 new contacts from morning briefing 2026-04-23. Merge into BCG_Known_Associates.json — increment version to 2.16, set lastUpdated to 2026-04-23, append contacts to contacts array, prepend changelog entry.",
+  "target_file": "standards/BCG_Known_Associates.json",
+  "target_version_before": "2.15",
+  "target_version_after": "2.16",
+  "new_contacts": [
+    {"name": "Meaghan Perez", "email": "meaghan_perez@gensler.com", "company": "Gensler", "role": "Associate / Global Account Specialist", "relationship": "prime", "notes": "Denver office; Site Agnostic DC Benchmark fee request lead"},
+    {"name": "Carmen Chandler", "email": "carmen_chandler@gensler.com", "company": "Gensler", "role": "unknown \u2014 manual review needed", "relationship": "prime", "notes": "PHX065 Security Add Services"},
+    {"name": "Lakesha Begay", "email": "lakesha_begay@gensler.com", "company": "Gensler", "role": "unknown \u2014 manual review needed", "relationship": "prime", "notes": "PHX065 Security Add Services"},
+    {"name": "Justin Wait", "email": "justin_wait@gensler.com", "company": "Gensler", "role": "unknown \u2014 manual review needed", "relationship": "prime", "notes": "PHX065 Security Add Services"},
+    {"name": "Erica Ulit", "email": "erica_ulit@gensler.com", "company": "Gensler", "role": "unknown \u2014 manual review needed", "relationship": "prime", "notes": "PDX070 invoicing contact"},
+    {"name": "Nicholas Richards", "email": "nrichards@hksinc.com", "company": "HKS", "role": "Design Professional I", "relationship": "prime", "notes": "IAD534 PPA03/IFC kickoff lead; Phoenix office"},
+    {"name": "Kip Leibowitz", "email": "kip.leibowitz@corgan.com", "company": "Corgan", "role": "unknown \u2014 manual review needed", "relationship": "prime", "notes": "MD935 AWS Benchmark cc"},
+    {"name": "Daksh Rajput", "email": "drajput@fivd.io", "company": "fivD", "role": "Project Coordinator, Mission Critical", "relationship": "sub-consultant", "notes": "BIM/design support for HKS; likely same person as abhandari@fivd.io"},
+    {"name": "Scott Perrie", "email": "sperrie@atwell.com", "company": "Atwell / Strategic Construction Solutions", "role": "Director, Pre-Construction", "relationship": "vendor", "notes": "CMH165 HV Sub Security; Company change: SCS is Atwell subsidiary"},
+    {"name": "Katrina Stewart", "email": "kstewart@scsbuild.com", "company": "Strategic Construction Solutions", "role": "unknown \u2014 manual review needed", "relationship": "vendor", "notes": "CMH165 HV Sub Security MSA recipient"},
+    {"name": "Austin Shaulis", "email": "ashaulis@scsbuild.com", "company": "Strategic Construction Solutions", "role": "unknown \u2014 manual review needed", "relationship": "vendor", "notes": "CMH165 HV Sub Security"},
+    {"name": "Cody Forsberg", "email": "cforsberg@scsbuild.com", "company": "Strategic Construction Solutions", "role": "unknown \u2014 manual review needed", "relationship": "vendor", "notes": "CMH165 HV Sub Security"},
+    {"name": "Casey McClendon", "email": "cmcclendon@newsouthconstruction.com", "company": "New South Construction", "role": "Assistant Project Manager", "relationship": "vendor", "notes": "ATL068 OAC meeting minutes"}
+  ],
+  "new_changelog_entry": {
+    "version": "2.16",
+    "date": "2026-04-23",
+    "changes": "Morning briefing: +13 contacts. Gensler (Meaghan Perez/benchmark fees, Carmen Chandler + Lakesha Begay + Justin Wait/PHX065, Erica Ulit/PDX070 invoicing). HKS (Nicholas Richards/IAD534 kickoff). Corgan (Kip Leibowitz/MD935 benchmark). fivD (Daksh Rajput/IAD534 BIM). Atwell/SCS (Scott Perrie + Katrina Stewart + Austin Shaulis + Cody Forsberg/CMH165 HV Sub Security). New South Construction (Casey McClendon/ATL068 OAC)."
+  }
+}
