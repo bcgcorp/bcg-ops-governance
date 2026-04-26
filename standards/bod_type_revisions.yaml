@@ -1,0 +1,223 @@
+# =============================================================================
+# BCG BOD Type Revisions Registry
+# =============================================================================
+# Repo path:    bcg-ops-knowledge/registries/bod_type_revisions.yaml
+# Version:      v0.2
+# Status:       [DRAFT — SEED VALUES — PENDING POPULATION]
+# Owner:        Gregory Bernardo
+# Validated by: P4-RAG-SCH-001 v0.3 (ingest pipeline)
+# Last updated: 2026-04-26
+#
+# v0.2 CHANGES
+# - Added `patches` field (per schema v0.3 G-7 / OQ-12).
+# - Patch revisions (e.g., v2.3A patches v2.3) are ACTIVE alongside their parent.
+# - Supersession applies at family-major level (v2.4 supersedes v2.3 family,
+#   which transitions both v2.3 and its patches v2.3A and v2.3B to SUPERSEDED
+#   together).
+# - Seeded with corpus-visible OPTDC and TDC revisions.
+#
+# PURPOSE
+# This registry is the controlled vocabulary for the `bod_type_revision` field
+# in the RAG corpus metadata schema. Each entry pairs a `bod_type` (validated
+# against bod_types.yaml) with a specific revision identifier and tracks its
+# lifecycle, including patch relationships.
+#
+# CRITICAL ROLE
+# When a BOD revision changes, projects mid-flight may continue conforming to
+# the older revision. This registry preserves that history so RFIs and submittals
+# answered against an older revision retrieve the correct documents.
+# Do not delete superseded entries.
+#
+# EXTENSION
+# To add a new revision:
+#   1. Open a PR against this file in bcg-ops-knowledge
+#   2. Add the new revision entry as ACTIVE
+#   3. If this is a major release that supersedes a prior family:
+#      - Update prior major's `superseded_by` and `superseded_date`
+#      - Transition all patches of the prior major to SUPERSEDED
+#   4. If this is a patch:
+#      - Set `patches` to the parent revision code
+#      - Both parent and patch remain ACTIVE
+#   5. Greg approves and merges
+#
+# FIELDS
+#   code              Revision identifier used in `bod_type_revision` field.
+#                     Convention: {bod_type}-{REV_TAG} (e.g., OPTDC-v2.4)
+#                     Must be unique across this registry.
+#
+#   bod_type          Foreign key to bod_types.yaml. Must exist there.
+#
+#   release_kind      MAJOR | PATCH (NEW in v0.2)
+#                     MAJOR: Standalone release that may supersede prior majors.
+#                     PATCH: Additive to a parent revision (parent stays ACTIVE).
+#
+#   patches           Code of the parent revision this patches. (NEW in v0.2)
+#                     Only populated when release_kind = PATCH.
+#                     Patch + parent are both ACTIVE simultaneously.
+#                     null when release_kind = MAJOR.
+#
+#   issued_date       Date this revision was issued by the BOD owner (client).
+#
+#   superseded_date   Date this revision was replaced by a new MAJOR. null if ACTIVE.
+#                     For PATCH revisions: inherited from parent's supersession.
+#
+#   superseded_by     Code of the major revision that replaced the family.
+#                     null if ACTIVE.
+#
+#   status            ACTIVE | SUPERSEDED | WITHDRAWN
+#                     ACTIVE: current revision; default for new ingest
+#                     SUPERSEDED: prior revision; valid for projects ingested
+#                                 before supersession
+#                     WITHDRAWN: revision withdrawn entirely; not valid for any
+#                                project. Distinguished from SUPERSEDED.
+#
+#   change_summary    Short description of what changed from the prior revision.
+#                     High-value field for retrieval; populate when known.
+#
+#   notes             Free-form internal notes.
+# =============================================================================
+
+bod_type_revisions:
+
+  # ===== OPTDC revisions (seeded from corpus) =====
+
+  - code: OPTDC-v2.3
+    bod_type: OPTDC
+    release_kind: MAJOR
+    patches: null
+    issued_date: <TBD — approximately 23H2>
+    superseded_date: <TBD — date OPTDC-v2.4 issued>
+    superseded_by: OPTDC-v2.4
+    status: SUPERSEDED
+    change_summary: |
+      Major release. ~100+ BOD changes spanning structural, mechanical, electrical,
+      civil, fire protection, security, ICT. See REL_2_3_OPTDC_RELEASE_NOTES.pdf.
+    notes: |
+      Patched additively by OPTDC-v2.3A and OPTDC-v2.3B (which transitioned to
+      SUPERSEDED together with v2.3 when v2.4 was issued).
+
+  - code: OPTDC-v2.3A
+    bod_type: OPTDC
+    release_kind: PATCH
+    patches: OPTDC-v2.3
+    issued_date: <TBD>
+    superseded_date: <TBD — date OPTDC-v2.4 issued>
+    superseded_by: OPTDC-v2.4
+    status: SUPERSEDED
+    change_summary: |
+      Patch of v2.3. Targeted clarifications and corrections to ~15 BOD items
+      from v2.3. See REL_2_3A_OPTDC_RELEASE_NOTES.pdf.
+    notes: |
+      Additive to v2.3 (both were ACTIVE simultaneously). Transitioned to SUPERSEDED
+      when v2.4 family released.
+
+  - code: OPTDC-v2.3B
+    bod_type: OPTDC
+    release_kind: PATCH
+    patches: OPTDC-v2.3
+    issued_date: <TBD>
+    superseded_date: <TBD — date OPTDC-v2.4 issued>
+    superseded_by: OPTDC-v2.4
+    status: SUPERSEDED
+    change_summary: |
+      Patch of v2.3. Single BOD item (BOD-1956: ASHRAE design conditions reference
+      cleanup). See REL_2_3B_OPTDC_RELEASE_NOTES.pdf.
+    notes: |
+      Additive to v2.3. Transitioned to SUPERSEDED when v2.4 family released.
+
+  - code: OPTDC-v2.4
+    bod_type: OPTDC
+    release_kind: MAJOR
+    patches: null
+    issued_date: <TBD — approximately 24H1>
+    superseded_date: null
+    superseded_by: null
+    status: ACTIVE
+    change_summary: |
+      Major release ~24H1. ~70+ BOD changes including security door hardware
+      alignment, liquid cooling integration (IRHX), trapezoidal metal deck options
+      (EMEA), ISO 19650 drawing numbering, MARS racking, refrigerant updates
+      (<700 GWP / <675 GWP), generator yard updates. See REL_2_4_OPTDC_RELEASE_NOTES.pdf.
+    notes: |
+      Current major release for new builds. Patched additively by OPTDC-v2.4a.
+
+  - code: OPTDC-v2.4a
+    bod_type: OPTDC
+    release_kind: PATCH
+    patches: OPTDC-v2.4
+    issued_date: <TBD>
+    superseded_date: null
+    superseded_by: null
+    status: ACTIVE
+    change_summary: |
+      Patch of v2.4. Critical updates to incorporate into in-flight v2.4 projects.
+      Architectural / structural (MARS 6" posts in mid seismic), mechanical
+      (heat pump additions for larger UPS heat gain), plumbing (LC drain plugs),
+      and specification updates. See OPTDC_v2_4a_Updates_Needed_for_v2_4_Projects_Rev_1.docx.
+    notes: |
+      Issued as a retrofit memo for in-flight v2.4 projects. Modeled in the corpus
+      as a BOD_DEVIATION with applies_to_bod_type_revisions: ["OPTDC-v2.4"] (per
+      schema v0.3 worked example 5.4).
+
+  # ===== TDC revisions =====
+
+  - code: TDC-v1.1
+    bod_type: TDC
+    release_kind: MAJOR
+    patches: null
+    issued_date: <TBD — approximately 25H1>
+    superseded_date: null
+    superseded_by: null
+    status: ACTIVE
+    change_summary: |
+      Initial corpus visibility. Specification-only changes spanning Division 26,
+      27, 33, etc. See REL_1_1_TDC_Release_Notes.pdf.
+    notes: |
+      First TDC revision in the registry. Earlier revisions (TDC-v1.0) may exist
+      but not present in current corpus batch.
+
+  # ===== TITUS revisions (placeholder) =====
+
+  # - code: TITUS-<TBD>
+  #   bod_type: TITUS
+  #   release_kind: MAJOR
+  #   patches: null
+  #   issued_date: <YYYY-MM-DD>
+  #   superseded_date: null
+  #   superseded_by: null
+  #   status: ACTIVE
+  #   change_summary: <TBD>
+  #   notes: <TBD>
+
+  # =========================================================================
+  # TEMPLATE FOR NEW ENTRIES — copy and edit
+  # =========================================================================
+  #
+  # MAJOR release:
+  # - code: BODCODE-vX.Y
+  #   bod_type: BODCODE
+  #   release_kind: MAJOR
+  #   patches: null
+  #   issued_date: YYYY-MM-DD
+  #   superseded_date: null
+  #   superseded_by: null
+  #   status: ACTIVE
+  #   change_summary: |
+  #     <description of changes from prior major>
+  #   notes: |
+  #     <internal notes>
+  #
+  # PATCH release:
+  # - code: BODCODE-vX.Ya
+  #   bod_type: BODCODE
+  #   release_kind: PATCH
+  #   patches: BODCODE-vX.Y
+  #   issued_date: YYYY-MM-DD
+  #   superseded_date: null      # inherits from parent on parent's supersession
+  #   superseded_by: null
+  #   status: ACTIVE
+  #   change_summary: |
+  #     <patch scope>
+  #   notes: |
+  #     <internal notes>
+  # =========================================================================
