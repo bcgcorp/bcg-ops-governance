@@ -225,7 +225,8 @@ from the others.
 | EAB | Ecosystem Awareness Block | Embedded governance block in Claude project instructions providing cross-project routing. | BCG governance |
 | MCP | Model Context Protocol | Anthropic's protocol for connecting LLM clients to tool servers. | Anthropic / BCG infra |
 | NIST CSF | NIST Cybersecurity Framework | Primary security framework BCG operates under. | NIST |
-| pgvector | (PostgreSQL extension) | PostgreSQL extension for vector similarity search; selected for the AI Context Store (I-47). | Open source |
+| pgvector | (PostgreSQL extension) | PostgreSQL extension for vector similarity search; legacy March 2026 recommendation, superseded by Qdrant in approved AI Platform target architecture. | Open source / BCG |
+| Qdrant | (Vector database) | AI-native vector database; selected for AI Context Store per approved BCG AI Platform target architecture. | Open source / BCG |
 | P0–P11 | (BCG project codes) | BCG-internal project structure. P0 = Ecosystem; P4 = AI Infrastructure; etc. See `BCG_Project_Ecosystem_and_Handoffs.md` for the full registry. | BCG governance |
 | RAG | Retrieval-Augmented Generation | Pattern of grounding LLM responses in retrieved corpus content; central to I-65 / I-47. | Industry / BCG |
 | SOP | Standard Operating Procedure | BCG-internal procedural document; lives at `_INTERNAL` tier. | BCG governance |
@@ -250,8 +251,8 @@ Already covered inline in 5.2, 5.3, and 5.4. Cross-references:
 |--------|----------|-----------|
 | `0031.MULTI Glossary of Terms & Acronyms` (AWS BOD) | AWS-internal data center terminology | Authoritative for AWS terms; this file mirrors high-value subset only |
 | `BCG_Project_Ecosystem_and_Handoffs.md` | BCG project codes (P0–P11+) | Authoritative for BCG project structure |
-| `BCG_Infrastructure_Inventory.txt` | BCG infrastructure components | Authoritative for BCG infrastructure |
-| `BCG_Custom_Module_Registry.txt` | BCG custom Odoo modules | Authoritative for module list |
+| `BCG_Infrastructure_Inventory.md` | BCG infrastructure components | Authoritative for BCG infrastructure |
+| `BCG_Custom_Module_Registry.md` | BCG custom Odoo modules | Authoritative for module list |
 
 ---
 
@@ -262,7 +263,7 @@ Already covered inline in 5.2, 5.3, and 5.4. Cross-references:
 | GL-1 | Confirm full names for `PNTDC`, `TDC` (currently `<TBD>` in 5.1). |
 | GL-2 | Confirm full expansion of `MARS` racking system (currently `<TBD>`). |
 | GL-3 | Confirm origin and current revision of `TITUS` BOD type (seeded in registry; not in current corpus). |
-| GL-4 | Add this document to `BCG_Governance_Doc_Registry.md` Section 3 (Runtime-Fetched Governance Documents) once committed to `bcg-ops-governance/standards/`. Routing item for P0. |
+| GL-4 | (Closed by initial commit) Add this document to `BCG_Governance_Doc_Registry.md` Section 3 — registered as Section 3.27, GOV-024, in registry v3.8 (commit 2026-04-26). |
 | GL-5 | Decide whether this glossary is itself ingestable into the RAG corpus. Recommended: yes, as `document_type: DDL` with `project_code: _INTERNAL`. Defer to schema v0.3 lock. |
 
 ---
@@ -271,10 +272,10 @@ Already covered inline in 5.2, 5.3, and 5.4. Cross-references:
 
 | Version | Date | Change |
 |---------|------|--------|
-| v0.1 | 2026-04-26 | Seed version. Categories 5.1 (AWS BOD), 5.2 (Physical Security), 5.3 (AEC), 5.4 (BCG-internal) populated from P4 RAG corpus validation samples and EAB context. ~85 terms total. Open items GL-1 through GL-5 logged. |
+| v0.1 | 2026-04-26 | Seed version. Categories 5.1 (AWS BOD), 5.2 (Physical Security), 5.3 (AEC), 5.4 (BCG-internal) populated from P4 RAG corpus validation samples and EAB context. ~85 terms total. Open items GL-1 through GL-5 logged (GL-4 closed at initial commit when registered as GOV-024). |
 
 ---
 
 **END OF GLOSSARY BCG-GLOS-001 v0.1 DRAFT**
 
-Routing: Greg to commit to `bcg-ops-governance/standards/BCG_Acronyms_and_Glossary.md`. On commit, update `BCG_Governance_Doc_Registry.md` Section 3 to add this file. Future-state: ingest into RAG corpus per GL-5 decision.
+Routing: Future-state — ingest into RAG corpus per GL-5 decision once schema v0.3 locks.
