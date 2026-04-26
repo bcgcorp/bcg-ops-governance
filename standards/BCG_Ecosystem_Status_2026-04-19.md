@@ -1,25 +1,24 @@
 # BCG CORP — ECOSYSTEM ORIENTATION & EXECUTIVE SUMMARY
-**Generated:** 2026-04-19 | **Catalog:** v3.0.1 | **Registry:** v3.6 | **EAB:** v1.7 | **Team Dir:** v2.5
+**Generated:** 2026-04-19 | **Catalog:** v3.1 | **Registry:** v3.6 | **EAB:** v1.7 | **Team Dir:** v2.5
 **Scope:** All 18 active Claude projects
 **Status:** Protocol-Harness Era Boundary — I-75 shipped; P0-001 retired; four protocols live in `standards/protocols/`; P0 custom instructions formally versioned at v1.0
-**Closure log appended 2026-04-26:** I-27 closed via Path B; I-69 Section 5 Backfill verified.
+**Closure log appended 2026-04-26:** I-27 closed via Path B; I-69 Section 5 Backfill verified; v3.1 catalog realignment cleanup landed.
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-BCG Corp is a 9-person physical security consulting firm operating an 18-project Claude ecosystem. As of 2026-04-19, **73 active initiatives** are tracked across 11 workstreams. The headline change since the 2026-04-15 sync is the **Protocol-Harness Migration (I-75)**: ecosystem triage moves from a subproject (P0-001, retired) to a protocol-harness pattern under P0. Four executable protocols now live in `bcg-ops-governance/standards/protocols/` and are fetched by P0 on reserved trigger keywords. End-to-end smoke tests across all four triggers (`triage now`, `close I-*`, `activate I-*`, `post-mortem`) passed this session.
+BCG Corp is a 9-person physical security consulting firm operating an 18-project Claude ecosystem. As of 2026-04-26 (catalog v3.1), **65 active initiatives** are tracked across 11 workstreams (down from 73 after v3.1 realignment cleanup). The headline change since the 2026-04-15 sync is the **Protocol-Harness Migration (I-75)**: ecosystem triage moves from a subproject (P0-001, retired) to a protocol-harness pattern under P0. Four executable protocols now live in `bcg-ops-governance/standards/protocols/` and are fetched by P0 on reserved trigger keywords. End-to-end smoke tests across all four triggers (`triage now`, `close I-*`, `activate I-*`, `post-mortem`) passed.
 
 **Three headline facts:**
 - **Protocol-Harness live.** Triage, closure verification, plan discipline, and post-mortem are now runbook-executed governance — no memory-based routing. P0 is formally versioned at v1.0 (first formally versioned P0 instruction set).
-- **73 active initiatives, Catalog at v3.0.1 (era boundary + 2026-04-26 closure increment).** I-75 (Ecosystem Protocol Harness, Active) and I-76 (Grading Schema Extraction, Planned) registered 2026-04-19. P0-001 retired. P4-003 added to EAB (catches up 2026-04-18 catalog drift). I-27 closed via Path B; I-69 backfill verified (2026-04-26).
-- **Gregory remains the bottleneck on 7+ items.** D-01 (accounting) now 59+ days open. D-05 bootstrap handoff delivered to Bob this session — execution path restored. AI Config Architecture review closed (APPROVED 2026-04-15). BCG-Wizard P2 handoff closed (PASTED 2026-04-15).
+- **65 active initiatives, Catalog at v3.1.** 2026-04-19 era boundary (v3.0) registered I-75/I-76 and retired P0-001. 2026-04-26 increments closed I-27 (Path B) + verified I-69 backfill (v3.0.1), then executed realignment cleanup removing 7 initiatives, reclassifying 1, refreshing 5 status/dates, assigning 1 owner (v3.1).
+- **Gregory remains the bottleneck on 6+ items.** D-01 reframed 2026-04-26 — pending Odoo MCP currently in testing (infrastructure-gated rather than direct Gregory action). D-05 bootstrap handoff delivered to Bob — execution path restored. AI Config Architecture review closed (APPROVED 2026-04-15). BCG-Wizard P2 handoff closed (PASTED 2026-04-15).
 
 **Key changes since 2026-04-15:**
 - **Protocol-Harness migration (I-75, 2026-04-19).** W-20 v1.1 → v1.2 (migrated to `standards/protocols/`). Three protocols carved out: `Initiative_Closure_Verification.md` v1.0, `Initiative_Plan_Discipline.md` v1.0, `Post_Mortem.md` v1.0. Protocol folder README v1.0 published. Post-Mortem Template (was GOV-020) relocated to `protocols/resources/`. EAB v1.6 → v1.7. P0-001 subproject retired; triage absorbed into P0.
-- **I-76 registered** — Ecosystem Grading Schema Extraction (Gregory/Bob, Planned Q2 '26). Extracts dashboard grading constants into a canonical governance doc. Plan authoring required before activation per `Initiative_Plan_Discipline.md`.
-- **Catalog v2.6 → v3.0** (era boundary). Internal drift corrected: v2.10 forward-reference resolved (Plan Link Rule was effective via W-20 v1.1; now canonically landed in Plan Discipline protocol).
-- **Catalog v3.0 → v3.0.1** (2026-04-26). I-27 closed via Path B silent-completion exception per `Initiative_Closure_Verification.md` v1.0. I-69 Section 5 Backfill audit verified same day (no catalog status edit per Section 5 — backfill verification logged here). See Closure Log below.
+- **I-76 registered** — Ecosystem Grading Schema Extraction (Gregory/Bob, Planned Q2 '26).
+- **Catalog v2.6 → v3.0 → v3.0.1 → v3.1.** v3.0 era boundary (2026-04-19); v3.0.1 I-27 closure + I-69 backfill (2026-04-26); v3.1 realignment cleanup (2026-04-26). See Closure Log below for v3.1 details.
 - **Registry v2.7+ → v3.6** (sections 3.13–3.18 new for protocol folder; §10.1 pointer refreshed to this document).
 - **Team Directory v2.4 → v2.5** (Oscar Cucaita Sanchez email corrected: ocs@bcg-corp.com).
 - **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15** (was under review since March). Bob executing Section 5 10-task checklist. Jennifer integrating Layer B guidance into How-to-Use-AI guide. Folded into I-65 scope.
@@ -34,7 +33,7 @@ BCG Corp is a 9-person physical security consulting firm operating an 18-project
 | Layer | Count | Notes |
 |-------|-------|-------|
 | Active Claude projects | 18 | P0, P1–P11, P4-001, P4-002, P4-003, P5-001, P5-002, P8-001 |
-| Active initiatives | 73 | I-01–I-76, minus I-20, I-30, I-32 |
+| Active initiatives | **65** | I-01–I-76, minus 11 removed: I-06, I-07, I-20, I-25, I-26, I-30, I-31, I-32, I-47, I-61, I-64 (v3.1 cleanup 2026-04-26) |
 | Active workstreams | 11 | WS-01–WS-11 |
 | Active subprojects | 6 | P4-001, P4-002, P4-003, P5-001, P5-002, P8-001 |
 | Retired subprojects (2026-04-19) | 1 | P0-001 (triage absorbed into P0 via protocol-harness / I-75) |
@@ -49,29 +48,29 @@ BCG Corp is a 9-person physical security consulting firm operating an 18-project
 
 ### P0 — Master Strategic Plan ✅
 **Owner:** Gregory | **Health:** Active
-Dashboard v2.27 live on Cloudflare Pages (dashboard.bcg-corp.com). **Custom instructions now formally versioned at v1.0** — triage/closure/plan/post-mortem now protocol-harness driven. Reserved triggers: `triage now`, `close I-{n}`, `activate I-{n}`/`plan I-{n}`, `post-mortem`. W-20 triage function absorbed from retired P0-001. Ecosystem Status refreshed 2026-04-19 (this document).
+Dashboard v2.27 live on Cloudflare Pages (dashboard.bcg-corp.com). **Custom instructions formally versioned at v1.0** — triage/closure/plan/post-mortem now protocol-harness driven. Reserved triggers: `triage now`, `close I-{n}`, `activate I-{n}`/`plan I-{n}`, `post-mortem`. W-20 triage function absorbed from retired P0-001. Ecosystem Status refreshed 2026-04-19 (this document); v3.1 catalog cleanup logged 2026-04-26.
 
 ### P1 — Financial Modeling & Pricing 🔴
 **Owner:** Gregory | **Health:** Stalled
-No change from 2026-04-15. Zero active initiatives. All workstreams blocked on D-01 (accounting data source — 59+ days open).
+No change. Zero active initiatives. All workstreams blocked on D-01 (now reframed 2026-04-26 as pending Odoo MCP currently in testing — infrastructure-gated rather than direct Gregory action).
 
 ### P2 — SOP & Workflow Library 🟢 (was 🟡)
 **Owner:** Jennifer Brezniak | **Health:** Active — unblocked
-BCG-Wizard P2 handoff PASTED by Gregory 2026-04-15. Jen executing: confirm receipt, integrate into How-to-Use-AI guide, correct Section X placeholder, apply Style Guide, submit for Gregory approval. Layer B guidance from approved BCG_AI_Config_Architecture also integrating. W-21 Document Storage SOP fully unblocked — Jen can draft. Wave 1 SOP Lookup Pilot (Q2 2026) gates on 5 approved SOPs.
+BCG-Wizard P2 handoff PASTED by Gregory 2026-04-15. Jen executing: confirm receipt, integrate into How-to-Use-AI guide, correct Section X placeholder, apply Style Guide, submit for Gregory approval. Layer B guidance from approved BCG_AI_Config_Architecture also integrating. W-21 Document Storage SOP fully unblocked — Jen can draft. Wave 1 SOP Lookup Pilot (Q2 2026) gates on 5 approved SOPs. **I-02 (Peer Review Workflows QC 30/60/90%)** moved Active → On Hold per v3.1; deferred Q1 → Q4 '26.
 
 ### P3 — Competitive Intel & BD 🟡
-No change. 9 initiatives, all Planned. New service lines (I-16, I-17, I-18, I-19, I-21, I-37) gated on I-24 licensing audit.
+No change. 9 initiatives, all Planned. New service lines (I-16, I-17, I-18, I-19, I-21, I-37) gated on I-24 licensing audit (date refreshed Q1 → Q2 '26 in v3.1).
 
 ### P4 — AI Infrastructure & Deployment ✅
 **Owner:** Jason Harris | **Health:** Active — Week 3
-12 initiatives. **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15**, folded into I-65 scope. Jason active on I-65 Ph1 architecture, I-48 API-Driven Hub, I-71 architecture, P5-002 Ph2. I-72 Superpowers methodology framework: Ph1 complete; Ph2/3 handoff delivered 2026-04-17. vLLM + Unsloth recommendation available for I-65 ingestion. **I-27 (Windsurf IDE Enablement) closed 2026-04-26 via Path B silent-completion exception** — Catalog now reflects Complete status.
+**8 initiatives** (was 12 before v3.1 cleanup). **v3.1 cleanup 2026-04-26 removed:** I-25 (folded into I-65), I-26 (superseded by on-prem strategy), I-31 (Phase 2 delivered by I-48), I-47 (folded into I-65 as RAG vector storage). I-27 closed 2026-04-26 via Path B (v3.0.1). **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15**, folded into I-65 scope. Jason active on I-65 Ph1 architecture (now incorporates absorbed I-25/I-26/I-47/I-61 scopes), I-48 API-Driven Hub (now also delivers I-31 Phase 2 cross-project sync scope), I-71 architecture, P5-002 Ph2. I-72 Superpowers methodology framework: Ph1 complete; Ph2/3 handoff delivered 2026-04-17. vLLM + Unsloth recommendation available for I-65 ingestion.
 
 ### P4-001 — MCP Evaluation & Selection ✅
 Unchanged. Odoo MCP proven with Windsurf. MS365 MCP selected. Grafana + Prometheus MCPs blocked on P5-002 Ph2 stack deployment.
 
 ### P4-002 — Revit & BIM Automation ✅
 **Owner:** Gregory (BIM Lead vacancy, Stephanie backup) | **Health:** Active — largest backlog
-46 buttons deployed (Tools Inventory v1.3 tracks 52 across 11 panels including Designed state). 47-button backlog (B-01–B-47). Next B: B-48. I-71 Q3 2026 (hard constraint: zero cloud AI on client models). I-67 on hold — title block shared parameter blocker; coordinate with I-71. **Live-test block on IAH100 still pending** — confirm Civil DWG link with Stephanie (OQ-2) before scheduling. pyRevit source: GitLab `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`. Canonical working copy: `~\CascadeProjects\pyRevit`. `.windsurf/skills/` I-72 Superpowers v5.0.7 vendored (merged 2026-04-17).
+7 initiatives (unchanged in v3.1). 46 buttons deployed (Tools Inventory v1.3 tracks 52 across 11 panels including Designed state). 47-button backlog (B-01–B-47). Next B: B-48. I-71 Q3 2026 (hard constraint: zero cloud AI on client models). I-67 on hold — title block shared parameter blocker; coordinate with I-71. **I-09 (Revit Batch Print Utility) owner updated** TBD → Gregory (interim) per v3.1. **Live-test block on IAH100 still pending** — confirm Civil DWG link with Stephanie (OQ-2) before scheduling. pyRevit source: GitLab `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`. Canonical working copy: `~\CascadeProjects\pyRevit`. `.windsurf/skills/` I-72 Superpowers v5.0.7 vendored (merged 2026-04-17).
 
 ### P4-003 — BCG EasyButton / Idea Capture ✅ (NEW TO EAB 2026-04-19)
 **Owner:** Greg (Ph1) → Jason (Ph2–4) | **Health:** Active
@@ -79,7 +78,7 @@ Registered in Catalog v2.9 (2026-04-18); EAB v1.7 catches up 2026-04-19. Hosts I
 
 ### P5 — IT Security / QOS ✅
 **Owner:** Bob Brezniak | **Health:** Active — heavy
-Bob executing BCG_AI_Config Section 5 10-task checklist (dates need refresh from April 1 baseline). **D-05 bootstrap handoff delivered 2026-04-19** — MCP PAT 403 on repo creation, Bob executes directly (~10 min with complete package). I-68 Ph2 (WireGuard DNS + PSK hardening) active. I-43 Outlook Forward Guard ASR review pending. Claude Desktop security review open.
+**4 initiatives** (was 5 before v3.1). **v3.1 cleanup 2026-04-26 removed:** I-61 (Cowork Security Policy — superseded by on-prem strategy under I-65). Bob executing BCG_AI_Config Section 5 10-task checklist (dates need refresh from April 1 baseline). **D-05 bootstrap handoff delivered 2026-04-19** — MCP PAT 403 on repo creation, Bob executes directly (~10 min with complete package). I-68 Ph2 (WireGuard DNS + PSK hardening) active. I-43 Outlook Forward Guard ASR review pending. **I-08 (ASR/AppLocker Remediation) closure verification handoff to Bob pending** (separate `close I-08` protocol invocation). Claude Desktop security review open.
 
 ### P5-001 — Network Infrastructure Assessment 🟦
 Unchanged. Planned. I-38 defined. Gated on Bob capacity.
@@ -93,7 +92,7 @@ Unchanged. Ph1 complete. Jason Ph2 active — Grafana/Prometheus stack deploymen
 
 ### P7 — Odoo Platform & ERP 🟡
 **Owner:** Victor Carrillo | **Health:** Active — queue growing
-13 initiatives. I-74 Notification Center Ph A active (split from prior I-56 scope 2026-04-18). I-52 CI/CD UNBLOCKED (April 12 review cleared — due within 5 days of unblock). I-66 Ph1 (Claude Vision → CSV → Odoo Maintenance import) in progress. D-06 Odoo receiver scoped for Victor — live-eligible pending D-05. Environments: R2-D2 (prod), C-3PO (dev), BB-8 (staging). odoo.sh decommissioned.
+**11 initiatives** (was 13 before v3.1). **v3.1 cleanup 2026-04-26 removed:** I-06 (consolidated into I-54), I-07 (consolidated into I-53). I-74 Notification Center Ph A active (split from prior I-56 scope 2026-04-18). I-52 CI/CD UNBLOCKED (April 12 review cleared). **I-23 (Odoo Accounting/Financial Baseline)** moved On Hold → Active per v3.1 — D-01 reframed as pending Odoo MCP testing (still waiting on infrastructure). **I-29 (Odoo Knowledge Repository)** moved On Hold → Active per v3.1; 3 Greg decisions still pending. I-66 Ph1 (Claude Vision → CSV → Odoo Maintenance import) in progress. D-06 Odoo receiver scoped for Victor — live-eligible pending D-05. Environments: R2-D2 (prod), C-3PO (dev), BB-8 (staging). odoo.sh decommissioned.
 
 ### P8 — Proposals & RFP Operations 🟡
 Unchanged. P8-001 operational. P8 still needs rate card, historical proposals, W-17 RFP Intake SOP.
@@ -107,11 +106,11 @@ Unchanged. I-41 Phase 1 (Risk Register) current deliverable.
 
 ### P10 — Legal, Compliance & Risk ✅
 **Owner:** Gregory (only) | **Health:** Active
-I-24 Licensing & Insurance Audit active. Rachel owns insurance track (broker outreach, underwriter evidence package); Gregory owns licensing track (5 counsel questions pending contracts upload). AI exclusion risk in E&O/professional liability (Verisk generative AI exclusion forms, Q1–Q2 renewals). Katherine P10 IP assessment pending. Bernard Lewis active legal matter — never assign.
+I-24 Licensing & Insurance Audit active (date refreshed Q1 → Q2 '26 per v3.1). Rachel owns insurance track (broker outreach, underwriter evidence package); Gregory owns licensing track (5 counsel questions pending contracts upload). AI exclusion risk in E&O/professional liability (Verisk generative AI exclusion forms, Q1–Q2 renewals). Katherine P10 IP assessment pending. Bernard Lewis active legal matter — never assign.
 
 ### P11 — Candidate OSINT & Pre-Hire Intelligence ✅
 **Owner:** Gregory (sole CIR approver) / Jennifer (full access) | **Health:** Active — RESTRICTED
-EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 intent was never reflected in P11's own instructions; closed 2026-04-19 with P11 instructions updated). I-64 active.
+**0 tracked initiatives** (was 1 before v3.1). **I-64 reclassified to WS-11** as ongoing P11 standing capability per v3.1 (2026-04-26) — work continues, no longer tracked as bounded initiative. EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (closed 2026-04-19 with P11 instructions updated).
 
 ---
 
@@ -121,9 +120,9 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 
 | Person | Load | Immediate Focus |
 |--------|------|-----------------|
-| Gregory | 🔴 Bottleneck | D-01; I-24 counsel call; live-test block IAH100; Katherine decision; Oscar initiative assignments; I-29 Odoo decisions; I-76 plan authoring |
-| Jason | 🟠 Wk 3 | I-65 Ph1 architecture; P5-002 Ph2 Grafana/Prometheus; I-71 architecture; I-72 Ph2/3 (handoff 2026-04-17); D-06 (gated D-05) |
-| Bob | 🟠 Heavy | **D-05 execute (bootstrap ready)**; AI Config Section 5 10-task checklist; I-68 Ph2; I-43 ASR review |
+| Gregory | 🔴 Bottleneck | I-24 counsel call; live-test block IAH100; Katherine decision; Oscar initiative assignments; I-29 Odoo decisions (3 pending); I-76 plan authoring |
+| Jason | 🟠 Wk 3 | I-65 Ph1 architecture (now absorbing v3.1 consolidations); P5-002 Ph2 Grafana/Prometheus; I-71 architecture; I-72 Ph2/3 (handoff 2026-04-17); I-48 cross-project sync (now also covers former I-31 Phase 2); D-06 (gated D-05) |
+| Bob | 🟠 Heavy | **D-05 execute (bootstrap ready)**; **I-08 closure verification handoff (pending)**; AI Config Section 5 10-task checklist; I-68 Ph2; I-43 ASR review |
 | Victor | 🟠 Growing | I-74 Notification Center Ph A; I-66 Ph1; I-52 CI/CD (unblocked, 5 days); D-06 Odoo receiver (gated D-05) |
 | Jennifer | 🟡 Moderate | BCG-Wizard integration (Gregory pasted 2026-04-15, Jen executes); AI Config Layer B integration; W-21 SOP draft; I-63 ADP; Oscar onboarding |
 | Oscar | 🟡 Ramping | PM support — initiative assignments pending Gregory direction |
@@ -131,7 +130,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 | Cory | 🟢 Clear | IAH100 live test (unscheduled — Gregory action); W-25 SOP candidate |
 | Stephanie | 🟢 Clear | Backup bid/no-bid active; confirm Civil DWG link IAH100 (OQ-2) |
 | Joshua | 🟢 Clear | W-02 when prioritized |
-| Jeff | 🟢 Clear | I-02 QC peer review |
+| Jeff | 🟢 Clear | I-02 deferred to Q4 '26 (On Hold per v3.1) |
 | Nick | 🟢 Clear | Production support |
 
 ---
@@ -140,10 +139,10 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 
 | ID | Decision | Blocks | Age | Owner |
 |----|----------|--------|-----|-------|
-| 🔴 D-01 | Accounting data source | All P1 models, WS-02/03/06, I-23 | 59+ days | Gregory |
+| 🟡 D-01 | Accounting data source | All P1 models, WS-02/03/06, I-23 | **Reframed 2026-04-26 — pending Odoo MCP currently in testing.** Infrastructure-gated rather than direct Gregory action. | Gregory (infrastructure-gated) |
 | 🟡 D-05 | Create bcg-ops-knowledge private GitHub repo | D-06, @cap routing, CIP/DDL storage | **Bootstrap handoff delivered 2026-04-19** — Bob execute (~10 min) | Bob |
-| 🟡 D-06 | @cap chatbot routing → Odoo bcg.knowledge.capture queue | I-31 MCP, knowledge capture ops | Live-eligible, gated D-05 | Jason + Victor |
-| 🟡 I-29 | 3 Odoo Knowledge Repository decisions | I-29 start | 3+ weeks | Gregory |
+| 🟡 D-06 | @cap chatbot routing → Odoo bcg.knowledge.capture queue | Knowledge capture ops | Live-eligible, gated D-05 | Jason + Victor |
+| 🟡 I-29 | 3 Odoo Knowledge Repository decisions | I-29 progress | 3+ weeks | Gregory |
 | 🟡 Oscar initiative assignments | Which initiatives Oscar drives | P6 onboarding completion | Active since 2026-04-15 | Gregory → P6/Jennifer |
 | 🟡 Katherine fractional offer | Path A vs. B; IP risk framework | P4-002 BIM tool development | Open | Gregory (P10 assessment first) |
 | 🟡 I-76 plan | Authoring required before activation | I-76 Planned → Active | New 2026-04-19 | Gregory/Bob |
@@ -157,20 +156,22 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 - P11 access reconciliation — CLOSED ✅ (Gregory & Jennifer per v1.7)
 - I-75 Ecosystem Protocol Harness shipping — CLOSED ✅ (Active; formal closure pending evidence link inventory)
 - **I-27 Windsurf IDE Enablement — CLOSED ✅ 2026-04-26** via Path B silent-completion exception per `Initiative_Closure_Verification.md` v1.0. Owner attestation by Gregory: GitLab commit verified at `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`; Windsurf in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Catalog row updated `Planned` → `Complete` per Path B exception.
-- **I-69 Dashboard / Cloudflare Pages — Section 5 Backfill VERIFIED ✅ 2026-04-26.** Evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing confirmed at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`. Status remains `Complete` (no catalog status edit per Section 5 protocol — verification logged here as the audit record).
+- **I-69 Dashboard / Cloudflare Pages — Section 5 Backfill VERIFIED ✅ 2026-04-26.** Evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing confirmed at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`. Status remains `Complete` (no catalog status edit per Section 5 protocol).
+- **v3.1 Catalog Realignment Cleanup — LANDED ✅ 2026-04-26.** Removed 7 initiatives: I-06 (→ I-54), I-07 (→ I-53), I-25 (→ I-65), I-26 (superseded by on-prem under I-65), I-31 (Phase 2 → I-48; Phase 5 → D-01), I-47 (→ I-65 RAG vector storage), I-61 (superseded by on-prem under I-65). Reclassified I-64 (P11 OSINT) to WS-11 ongoing capability. Status/date refresh: I-23, I-24, I-29 (→ Active Q2 '26); I-02 (→ On Hold Q4 '26). Owner update: I-09 (→ Gregory interim). WS-10/WS-11 coverage lists updated. **73 → 65 active initiatives.**
 
 ---
 
 ## GREGORY BOTTLENECK — ITEMS ONLY GREGORY CAN UNBLOCK
 
-1. **D-01** — Accounting data source (blocks P1 + 3 workstreams, 59+ days)
-2. **Live-test block** — Schedule 30 min on IAH100: I-44 FOV Camera first (lowest risk), then I-45/B-24 Site Grid, then I-49 Linked CAD Layer Manager. Confirm Civil DWG link with Stephanie (OQ-2) before scheduling.
-3. **Oscar initiative assignments** — Route to P6/Jennifer for formal assignment sequence.
-4. **I-24 counsel call** — Contracts upload pending (Rachel running parallel insurance track).
-5. **I-29** — 3 open decisions on Odoo Knowledge Repository (3+ weeks).
-6. **Katherine fractional** — P10 IP Risk & Engagement Framework assessment first; then decide Path A vs. B.
-7. **I-76 plan authoring** — Before activation per `Initiative_Plan_Discipline.md` (four-element minimum: steps, deps, success criteria, target).
-8. **bcg-ops-governance → private** — Flag when GitHub MCP live on all workstations. Cloudflare Pages re-auth required after visibility change.
+1. **Live-test block** — Schedule 30 min on IAH100: I-44 FOV Camera first (lowest risk), then I-45/B-24 Site Grid, then I-49 Linked CAD Layer Manager. Confirm Civil DWG link with Stephanie (OQ-2) before scheduling.
+2. **Oscar initiative assignments** — Route to P6/Jennifer for formal assignment sequence.
+3. **I-24 counsel call** — Contracts upload pending (Rachel running parallel insurance track). Date refreshed Q2 '26 per v3.1.
+4. **I-29** — 3 open decisions on Odoo Knowledge Repository (3+ weeks). Status now Active per v3.1; pending Gregory decisions still gate progress.
+5. **Katherine fractional** — P10 IP Risk & Engagement Framework assessment first; then decide Path A vs. B.
+6. **I-76 plan authoring** — Before activation per `Initiative_Plan_Discipline.md` (four-element minimum: steps, deps, success criteria, target).
+7. **bcg-ops-governance → private** — Flag when GitHub MCP live on all workstations. Cloudflare Pages re-auth required after visibility change.
+
+*Note: D-01 (accounting data source) reframed 2026-04-26 — now pending Odoo MCP currently in testing (infrastructure-gated). No longer requires direct Gregory action; resolution gated on Odoo MCP general availability.*
 
 ---
 
@@ -183,10 +184,11 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 | Onboarding package (.docx, 8 tabs) | ✅ Delivered 2026-04-15 | Gregory |
 | D-05: bcg-ops-knowledge repo | 🟡 Bootstrap handoff to Bob 2026-04-19 | Bob |
 | D-06: @cap Odoo receiver | 🟡 Live-eligible, gated D-05 | Jason + Victor |
-| I-65 Ph1 architecture | 🟡 In progress | Jason |
+| I-65 Ph1 architecture | 🟡 In progress (now incorporating v3.1 absorbed scopes: I-25, I-26, I-47, I-61) | Jason |
 | P5-002 Ph2 Grafana/Prometheus | 🟡 In progress | Jason |
 | I-71 architecture | 🟡 In progress | Jason |
 | I-72 Ph2/3 handoff | ✅ Delivered 2026-04-17 | Jason |
+| I-48 API-Driven Hub | 🟡 Active (now also delivers former I-31 Phase 2 cross-project sync scope) | Jason |
 | Employment Agreement filed | ⚠️ Confirm filed in OneDrive | Gregory |
 | W-20 Triage backup operator | — (Bob assumed role per W-20 v1.2) | Bob |
 
@@ -197,6 +199,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 **30 days (by May 18)**
 - D-05 executed by Bob (~10 min with bootstrap package) → D-06 unblocked
 - D-06 @cap routing deployed — Victor Odoo receiver live
+- I-08 closure verification handoff to Bob executed (separate `close I-08` protocol invocation)
 - Bob completes AI Config Section 5 10-task checklist
 - Jennifer delivers BCG-Wizard integrated How-to-Use-AI guide (Gregory approval)
 - W-21 Document Storage SOP drafted
@@ -219,7 +222,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 
 **90 days (by July 18)**
 - I-24 Licensing Audit complete — 6 initiatives unlock (I-16, I-17, I-18, I-19, I-21, I-37)
-- B&F pricing model ready (P1+P3+P8 convergence, pending D-01)
+- D-01 resolution if Odoo MCP exits testing — P1 unblocks
 - All Beta pyRevit buttons validated on IAH100
 - Wave 1 SOP Lookup Pilot (Q2 2026) — requires 5 approved SOPs from P2
 - I-65 Phase 1 deliverables live on DGX Spark (RAG archive + meeting transcription)
@@ -239,7 +242,8 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 7. **I-76 activation** — Plan authoring required per `Initiative_Plan_Discipline.md` v1.0.
 8. **Registry §10.1 pointer** — Updated 2026-04-19 to reference this document (Registry v3.5 → v3.6).
 9. **I-75 formal closure** — Active status current; formal Closure Verification (`close I-75`) pending evidence link inventory for the six protocol files + P0 v1.0 instructions commit.
-10. **v3.1 catalog cleanup** — Pending Gregory approval. Includes: Removals (I-06, I-07, I-25, I-26, I-31, I-47, I-61), additional closures (I-08), reclassifications (I-64 → WS-11), date refreshes (I-01, I-02, I-23, I-24, I-29), owner update (I-09 → Gregory), D-01 note refresh.
+10. **v3.1 catalog cleanup — LANDED 2026-04-26.** Removals, reclassifications, date refreshes executed in commit (catalog v3.1, this doc). I-08 closure verification handoff to Bob — pending separate `close I-08` protocol invocation.
+11. **Ecosystem Status doc upload to P0 project knowledge** — Pending Gregory upload after v3.1 lands. Overwrites runtime copy with this 2026-04-26 closure-log-appended version.
 
 ---
 
@@ -250,7 +254,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 | Governance Doc Registry | ✅ v3.6 (2026-04-19) |
 | Style Guide | ✅ v1.5 |
 | Project Ecosystem & Handoffs | ✅ v1.9 |
-| Initiative & Workstream Catalog | ✅ **v3.0.1** (73 tracked, next I-77) |
+| Initiative & Workstream Catalog | ✅ **v3.1** (65 active, next I-77) |
 | Team Directory | ✅ v2.5 (2026-04-15) |
 | Infrastructure Inventory | ✅ v1.3 |
 | Ecosystem Awareness Block | ✅ v1.7 — all 17 projects propagated 2026-04-19 |
@@ -286,7 +290,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 
 *BCG Corp — CONFIDENTIAL INTERNAL USE ONLY*
 *Generated by P0 — Master Strategic Plan | 2026-04-19*
-*Closure log appended 2026-04-26 (I-27 Path B; I-69 Section 5 Backfill)*
+*Closure log appended 2026-04-26 (I-27 Path B; I-69 Section 5 Backfill; v3.1 realignment cleanup)*
 *Supersedes BCG_Ecosystem_Status_2026-04-15.md*
 *Upload to P0 project knowledge to activate as runtime reference; delete prior 2026-04-15 copy after upload*
 *Commit: bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Status_2026-04-19.md*
