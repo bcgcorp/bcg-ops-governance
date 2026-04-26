@@ -1,8 +1,8 @@
 # BCG CORP — ECOSYSTEM ORIENTATION & EXECUTIVE SUMMARY
-**Generated:** 2026-04-19 | **Catalog:** v3.1 | **Registry:** v3.6 | **EAB:** v1.7 | **Team Dir:** v2.5
+**Generated:** 2026-04-19 | **Catalog:** v3.1 | **Registry:** v1.3 | **EAB:** v1.7 | **Team Dir:** v2.5
 **Scope:** All 18 active Claude projects
 **Status:** Protocol-Harness Era Boundary — I-75 shipped; P0-001 retired; four protocols live in `standards/protocols/`; P0 custom instructions formally versioned at v1.0
-**Closure log appended 2026-04-26:** I-27 closed via Path B; I-69 Section 5 Backfill verified; v3.1 catalog realignment cleanup landed.
+**Closure log appended 2026-04-26:** I-27 closed via Path B; I-69 Section 5 Backfill verified; v3.1 catalog realignment cleanup landed; Registry v1.3 phantom version drift resolved.
 
 ---
 
@@ -19,7 +19,7 @@ BCG Corp is a 9-person physical security consulting firm operating an 18-project
 - **Protocol-Harness migration (I-75, 2026-04-19).** W-20 v1.1 → v1.2 (migrated to `standards/protocols/`). Three protocols carved out: `Initiative_Closure_Verification.md` v1.0, `Initiative_Plan_Discipline.md` v1.0, `Post_Mortem.md` v1.0. Protocol folder README v1.0 published. Post-Mortem Template (was GOV-020) relocated to `protocols/resources/`. EAB v1.6 → v1.7. P0-001 subproject retired; triage absorbed into P0.
 - **I-76 registered** — Ecosystem Grading Schema Extraction (Gregory/Bob, Planned Q2 '26).
 - **Catalog v2.6 → v3.0 → v3.0.1 → v3.1.** v3.0 era boundary (2026-04-19); v3.0.1 I-27 closure + I-69 backfill (2026-04-26); v3.1 realignment cleanup (2026-04-26). See Closure Log below for v3.1 details.
-- **Registry v2.7+ → v3.6** (sections 3.13–3.18 new for protocol folder; §10.1 pointer refreshed to this document).
+- ~~**Registry v2.7+ → v3.6** (sections 3.13–3.18 new for protocol folder; §10.1 pointer refreshed to this document).~~ **[Annotated 2026-04-26]:** PHANTOM VERSION REFERENCE — actual Registry sequence is v1.0 → v1.3; see Registry v1.3 changelog (2026-04-26). The 'sections 3.13–3.18' and '§10.1 pointer' described in this bullet do not exist in the actual Registry file. Bullet retained struck-through for audit trail.
 - **Team Directory v2.4 → v2.5** (Oscar Cucaita Sanchez email corrected: ocs@bcg-corp.com).
 - **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15** (was under review since March). Bob executing Section 5 10-task checklist. Jennifer integrating Layer B guidance into How-to-Use-AI guide. Folded into I-65 scope.
 - **BCG-Wizard guide P2 handoff PASTED 2026-04-15.** Jen to confirm receipt, integrate, correct Section X placeholder, apply Style Guide, submit for Gregory approval. Wave 1 SOP Lookup Pilot (Q2 2026) gates on 5 approved SOPs.
@@ -158,6 +158,7 @@ I-24 Licensing & Insurance Audit active (date refreshed Q1 → Q2 '26 per v3.1).
 - **I-27 Windsurf IDE Enablement — CLOSED ✅ 2026-04-26** via Path B silent-completion exception per `Initiative_Closure_Verification.md` v1.0. Owner attestation by Gregory: GitLab commit verified at `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`; Windsurf in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Catalog row updated `Planned` → `Complete` per Path B exception.
 - **I-69 Dashboard / Cloudflare Pages — Section 5 Backfill VERIFIED ✅ 2026-04-26.** Evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing confirmed at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`. Status remains `Complete` (no catalog status edit per Section 5 protocol).
 - **v3.1 Catalog Realignment Cleanup — LANDED ✅ 2026-04-26.** Removed 7 initiatives: I-06 (→ I-54), I-07 (→ I-53), I-25 (→ I-65), I-26 (superseded by on-prem under I-65), I-31 (Phase 2 → I-48; Phase 5 → D-01), I-47 (→ I-65 RAG vector storage), I-61 (superseded by on-prem under I-65). Reclassified I-64 (P11 OSINT) to WS-11 ongoing capability. Status/date refresh: I-23, I-24, I-29 (→ Active Q2 '26); I-02 (→ On Hold Q4 '26). Owner update: I-09 (→ Gregory interim). WS-10/WS-11 coverage lists updated. **73 → 65 active initiatives.**
+- **Registry phantom version drift resolved — RESOLVED ✅ 2026-04-26.** Discovered during Catalog reference bump that the actual `BCG_Governance_Doc_Registry.md` file in this repo tracked v1.0 → v1.1 → v1.2 (real sequence) while other docs (catalog, this status doc) were referencing it as v3.4/v3.5/v3.6. Phantom version pattern — same as the v2.10 catalog phantom resolved in catalog v3.0. Resolution: Registry bumped to v1.3 (real next sequential); Catalog v3.0 changelog row annotated; this doc's stale references annotated and corrected to v1.3. Commit `d012987`.
 
 ---
 
@@ -240,10 +241,11 @@ I-24 Licensing & Insurance Audit active (date refreshed Q1 → Q2 '26 per v3.1).
 5. **Claude Desktop security review** — Open action: assess data handling, file system access scope, MCP exposure, governance implications. Route findings to P5/P10.
 6. **Windsurf global_rules.md** — Drafted (P4, ~4,979 chars). Pending Gregory review; Bob deploys to all workstations. Confirm Victor inclusion (may not run Windsurf).
 7. **I-76 activation** — Plan authoring required per `Initiative_Plan_Discipline.md` v1.0.
-8. **Registry §10.1 pointer** — Updated 2026-04-19 to reference this document (Registry v3.5 → v3.6).
+8. ~~**Registry §10.1 pointer** — Updated 2026-04-19 to reference this document (Registry v3.5 → v3.6).~~ **[Annotated 2026-04-26]:** PHANTOM — Registry has no §10.1 section; actual Registry sequence is v1.0→v1.3. Item retained struck-through for audit trail. Resolution committed in Registry v1.3 changelog (commit `d012987`).
 9. **I-75 formal closure** — Active status current; formal Closure Verification (`close I-75`) pending evidence link inventory for the six protocol files + P0 v1.0 instructions commit.
 10. **v3.1 catalog cleanup — LANDED 2026-04-26.** Removals, reclassifications, date refreshes executed in commit (catalog v3.1, this doc). I-08 closure verification handoff to Bob — pending separate `close I-08` protocol invocation.
-11. **Ecosystem Status doc upload to P0 project knowledge** — Pending Gregory upload after v3.1 lands. Overwrites runtime copy with this 2026-04-26 closure-log-appended version.
+11. **Ecosystem Status doc upload to P0 project knowledge** — Pending Gregory upload after v3.1 lands. Overwrites runtime copy with this 2026-04-26 closure-log-appended version (now also includes Registry phantom-drift resolution annotations).
+12. **Broader Registry sweep** — Section 3 entries still reference OneDrive locations for several governance docs (Style Guide, Project Ecosystem, Team Directory, Infrastructure Inventory, Custom Module Registry) that should be GitHub-canonical per GOV-001. Section 4 (EAB) similarly OneDrive-referenced. Bumped catalog/this doc cleanly to v1.3 sequence; broader OneDrive→GitHub location updates flagged as future Registry sweep.
 
 ---
 
@@ -251,7 +253,7 @@ I-24 Licensing & Insurance Audit active (date refreshed Q1 → Q2 '26 per v3.1).
 
 | Check | Status |
 |-------|--------|
-| Governance Doc Registry | ✅ v3.6 (2026-04-19) |
+| Governance Doc Registry | ✅ **v1.3** (2026-04-26) — phantom v3.x version drift resolved; actual sequence is v1.0→v1.3 |
 | Style Guide | ✅ v1.5 |
 | Project Ecosystem & Handoffs | ✅ v1.9 |
 | Initiative & Workstream Catalog | ✅ **v3.1** (65 active, next I-77) |
@@ -290,7 +292,7 @@ I-24 Licensing & Insurance Audit active (date refreshed Q1 → Q2 '26 per v3.1).
 
 *BCG Corp — CONFIDENTIAL INTERNAL USE ONLY*
 *Generated by P0 — Master Strategic Plan | 2026-04-19*
-*Closure log appended 2026-04-26 (I-27 Path B; I-69 Section 5 Backfill; v3.1 realignment cleanup)*
+*Closure log appended 2026-04-26 (I-27 Path B; I-69 Section 5 Backfill; v3.1 realignment cleanup; Registry v1.3 phantom drift resolution)*
 *Supersedes BCG_Ecosystem_Status_2026-04-15.md*
 *Upload to P0 project knowledge to activate as runtime reference; delete prior 2026-04-15 copy after upload*
 *Commit: bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Status_2026-04-19.md*
