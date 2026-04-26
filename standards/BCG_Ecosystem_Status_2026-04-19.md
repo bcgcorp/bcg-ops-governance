@@ -1,7 +1,8 @@
 # BCG CORP — ECOSYSTEM ORIENTATION & EXECUTIVE SUMMARY
-**Generated:** 2026-04-19 | **Catalog:** v3.0 | **Registry:** v3.6 | **EAB:** v1.7 | **Team Dir:** v2.5
+**Generated:** 2026-04-19 | **Catalog:** v3.0.1 | **Registry:** v3.6 | **EAB:** v1.7 | **Team Dir:** v2.5
 **Scope:** All 18 active Claude projects
 **Status:** Protocol-Harness Era Boundary — I-75 shipped; P0-001 retired; four protocols live in `standards/protocols/`; P0 custom instructions formally versioned at v1.0
+**Closure log appended 2026-04-26:** I-27 closed via Path B; I-69 Section 5 Backfill verified.
 
 ---
 
@@ -11,13 +12,14 @@ BCG Corp is a 9-person physical security consulting firm operating an 18-project
 
 **Three headline facts:**
 - **Protocol-Harness live.** Triage, closure verification, plan discipline, and post-mortem are now runbook-executed governance — no memory-based routing. P0 is formally versioned at v1.0 (first formally versioned P0 instruction set).
-- **73 active initiatives, Catalog at v3.0 (era boundary).** I-75 (Ecosystem Protocol Harness, Active) and I-76 (Grading Schema Extraction, Planned) registered 2026-04-19. P0-001 retired. P4-003 added to EAB (catches up 2026-04-18 catalog drift).
+- **73 active initiatives, Catalog at v3.0.1 (era boundary + 2026-04-26 closure increment).** I-75 (Ecosystem Protocol Harness, Active) and I-76 (Grading Schema Extraction, Planned) registered 2026-04-19. P0-001 retired. P4-003 added to EAB (catches up 2026-04-18 catalog drift). I-27 closed via Path B; I-69 backfill verified (2026-04-26).
 - **Gregory remains the bottleneck on 7+ items.** D-01 (accounting) now 59+ days open. D-05 bootstrap handoff delivered to Bob this session — execution path restored. AI Config Architecture review closed (APPROVED 2026-04-15). BCG-Wizard P2 handoff closed (PASTED 2026-04-15).
 
 **Key changes since 2026-04-15:**
 - **Protocol-Harness migration (I-75, 2026-04-19).** W-20 v1.1 → v1.2 (migrated to `standards/protocols/`). Three protocols carved out: `Initiative_Closure_Verification.md` v1.0, `Initiative_Plan_Discipline.md` v1.0, `Post_Mortem.md` v1.0. Protocol folder README v1.0 published. Post-Mortem Template (was GOV-020) relocated to `protocols/resources/`. EAB v1.6 → v1.7. P0-001 subproject retired; triage absorbed into P0.
 - **I-76 registered** — Ecosystem Grading Schema Extraction (Gregory/Bob, Planned Q2 '26). Extracts dashboard grading constants into a canonical governance doc. Plan authoring required before activation per `Initiative_Plan_Discipline.md`.
 - **Catalog v2.6 → v3.0** (era boundary). Internal drift corrected: v2.10 forward-reference resolved (Plan Link Rule was effective via W-20 v1.1; now canonically landed in Plan Discipline protocol).
+- **Catalog v3.0 → v3.0.1** (2026-04-26). I-27 closed via Path B silent-completion exception per `Initiative_Closure_Verification.md` v1.0. I-69 Section 5 Backfill audit verified same day (no catalog status edit per Section 5 — backfill verification logged here). See Closure Log below.
 - **Registry v2.7+ → v3.6** (sections 3.13–3.18 new for protocol folder; §10.1 pointer refreshed to this document).
 - **Team Directory v2.4 → v2.5** (Oscar Cucaita Sanchez email corrected: ocs@bcg-corp.com).
 - **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15** (was under review since March). Bob executing Section 5 10-task checklist. Jennifer integrating Layer B guidance into How-to-Use-AI guide. Folded into I-65 scope.
@@ -62,7 +64,7 @@ No change. 9 initiatives, all Planned. New service lines (I-16, I-17, I-18, I-19
 
 ### P4 — AI Infrastructure & Deployment ✅
 **Owner:** Jason Harris | **Health:** Active — Week 3
-12 initiatives. **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15**, folded into I-65 scope. Jason active on I-65 Ph1 architecture, I-48 API-Driven Hub, I-71 architecture, P5-002 Ph2. I-72 Superpowers methodology framework: Ph1 complete; Ph2/3 handoff delivered 2026-04-17. vLLM + Unsloth recommendation available for I-65 ingestion.
+12 initiatives. **BCG_AI_Config_Architecture_v1.0.docx APPROVED 2026-04-15**, folded into I-65 scope. Jason active on I-65 Ph1 architecture, I-48 API-Driven Hub, I-71 architecture, P5-002 Ph2. I-72 Superpowers methodology framework: Ph1 complete; Ph2/3 handoff delivered 2026-04-17. vLLM + Unsloth recommendation available for I-65 ingestion. **I-27 (Windsurf IDE Enablement) closed 2026-04-26 via Path B silent-completion exception** — Catalog now reflects Complete status.
 
 ### P4-001 — MCP Evaluation & Selection ✅
 Unchanged. Odoo MCP proven with Windsurf. MS365 MCP selected. Grafana + Prometheus MCPs blocked on P5-002 Ph2 stack deployment.
@@ -154,6 +156,8 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 - Oscar onboarding status — CLOSED ✅ (PM, full-time, ocs@bcg-corp.com)
 - P11 access reconciliation — CLOSED ✅ (Gregory & Jennifer per v1.7)
 - I-75 Ecosystem Protocol Harness shipping — CLOSED ✅ (Active; formal closure pending evidence link inventory)
+- **I-27 Windsurf IDE Enablement — CLOSED ✅ 2026-04-26** via Path B silent-completion exception per `Initiative_Closure_Verification.md` v1.0. Owner attestation by Gregory: GitLab commit verified at `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`; Windsurf in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Catalog row updated `Planned` → `Complete` per Path B exception.
+- **I-69 Dashboard / Cloudflare Pages — Section 5 Backfill VERIFIED ✅ 2026-04-26.** Evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing confirmed at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`. Status remains `Complete` (no catalog status edit per Section 5 protocol — verification logged here as the audit record).
 
 ---
 
@@ -235,6 +239,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 7. **I-76 activation** — Plan authoring required per `Initiative_Plan_Discipline.md` v1.0.
 8. **Registry §10.1 pointer** — Updated 2026-04-19 to reference this document (Registry v3.5 → v3.6).
 9. **I-75 formal closure** — Active status current; formal Closure Verification (`close I-75`) pending evidence link inventory for the six protocol files + P0 v1.0 instructions commit.
+10. **v3.1 catalog cleanup** — Pending Gregory approval. Includes: Removals (I-06, I-07, I-25, I-26, I-31, I-47, I-61), additional closures (I-08), reclassifications (I-64 → WS-11), date refreshes (I-01, I-02, I-23, I-24, I-29), owner update (I-09 → Gregory), D-01 note refresh.
 
 ---
 
@@ -245,7 +250,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 | Governance Doc Registry | ✅ v3.6 (2026-04-19) |
 | Style Guide | ✅ v1.5 |
 | Project Ecosystem & Handoffs | ✅ v1.9 |
-| Initiative & Workstream Catalog | ✅ v3.0 (73 active, next I-77) |
+| Initiative & Workstream Catalog | ✅ **v3.0.1** (73 tracked, next I-77) |
 | Team Directory | ✅ v2.5 (2026-04-15) |
 | Infrastructure Inventory | ✅ v1.3 |
 | Ecosystem Awareness Block | ✅ v1.7 — all 17 projects propagated 2026-04-19 |
@@ -259,7 +264,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 | Windsurf Skills Deployment Pattern | ✅ GOV-019 v1.0 |
 | Artifact Deployment Routing Standard | ✅ GOV-021 v1.1 |
 | W-20 Ecosystem Triage | ✅ v1.2 (relocated to `standards/protocols/`) |
-| Initiative Closure Verification | ✅ v1.0 (NEW 2026-04-19) |
+| Initiative Closure Verification | ✅ v1.0 (NEW 2026-04-19) — first invocations 2026-04-26: I-27 Path B + I-69 Section 5 Backfill |
 | Initiative Plan Discipline | ✅ v1.0 (NEW 2026-04-19) |
 | Post-Mortem Protocol | ✅ v1.0 (NEW 2026-04-19) |
 | Post-Mortem Template | ✅ v1.0 (relocated to `protocols/resources/`) |
@@ -271,7 +276,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 | Raw GitHub fetch rule | ✅ Confirmed — always `github-write` MCP, never `web_fetch` on raw.githubusercontent.com |
 | odoo.sh references | ✅ Purged — any future reference is stale, must be corrected on sight |
 | pyRevit source repo | ✅ GitLab `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools` |
-| Dashboard | ✅ v2.27 live at dashboard.bcg-corp.com |
+| Dashboard | ✅ v2.27 live at dashboard.bcg-corp.com (Section 5 Backfill verified 2026-04-26) |
 | Slack MCP | ⚠️ Connected but NOT authorized — Teams is BCG standard. No Slack use until Gregory explicitly permits. |
 | `bcg-ops-governance` repo visibility | ⚠️ Still public — flag once GitHub MCP live on all workstations. Cloudflare Pages re-auth required. |
 | `bcg-ops-knowledge` repo | 🟡 Not yet created — Bob has bootstrap handoff as of 2026-04-19 |
@@ -281,6 +286,7 @@ EAB v1.7 reconciled: P11 description confirmed "Gregory & Jennifer only" (v1.6 i
 
 *BCG Corp — CONFIDENTIAL INTERNAL USE ONLY*
 *Generated by P0 — Master Strategic Plan | 2026-04-19*
+*Closure log appended 2026-04-26 (I-27 Path B; I-69 Section 5 Backfill)*
 *Supersedes BCG_Ecosystem_Status_2026-04-15.md*
 *Upload to P0 project knowledge to activate as runtime reference; delete prior 2026-04-15 copy after upload*
 *Commit: bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Status_2026-04-19.md*

@@ -1,10 +1,12 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 3.0
+**Version:** 3.0.1
 **Effective:** April 2026
-**Last Updated:** 2026-04-19
+**Last Updated:** 2026-04-26
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
+
+**What Changed (v3.0.1 — I-27 Closure):** I-27 (Windsurf IDE Enablement) closed via Path B (silent-completion exception) per `standards/protocols/Initiative_Closure_Verification.md` v1.0 (2026-04-26). Owner attestation by Gregory: GitLab commit verified at `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`; Windsurf deployed and in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Status drifted directly `Planned` → `Complete` — exception authorized by Gregory; documented per protocol Path B. I-69 Section 5 Backfill audit verified same day; evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing confirmed at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html` (no catalog edit per Section 5 — verification logged to Ecosystem Status doc). Counts unchanged: 73 tracked initiatives (Complete items remain in catalog per numbering convention). Next I-slot unchanged: **I-77**.
 
 **What Changed (v3.0 — Protocol-Harness Era Boundary):** Major version bump marking the transition to the protocol-harness pattern (see `standards/protocols/README.md`). This is a **structural commit**, not a scope change:
 - **Retires P0-001** from the Subproject Registry (Section 5). Triage function absorbed into P0 via the protocol-harness pattern; W-20 v1.2 is the protocol P0 fetches to execute triage. Archival is a manual Claude-UI action for Gregory.
@@ -57,7 +59,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-24 | Licensing & Insurance Audit | Greg | Active | P10 | Q1 '26 | Re-homed P6→P10 on 2026-03-15. GATING — gates I-16, I-17, I-18, I-19, I-21, I-37. Track A: Licensing (Gregory). Track B: Insurance (Rachel). |
 | I-25 | AI Standards & Guardrails Framework | Greg/Jason | Planned | P4 | Q2 '26 | |
 | I-26 | Claude Cowork Enablement | Greg | Active | P4 | Q1 '26 | Sprint 1: Greg, Rachel, Jen; Sprint 2: Cory, Joshua, Stephanie |
-| I-27 | Windsurf IDE Enablement | Greg/Bob | Planned | P4 | Q2 '26 | Depends on I-26 |
+| I-27 | Windsurf IDE Enablement | Greg/Bob | Complete | P4 | Q2 '26 | **Closed 2026-04-26 via Path B (silent-completion exception per `standards/protocols/Initiative_Closure_Verification.md` v1.0).** Owner attestation by Gregory: GitLab `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools` commit verified; Windsurf deployed and in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Status drifted directly `Planned` → `Complete` — exception authorized by Gregory; documented per protocol Path B. Original `Depends on I-26` resolved as moot at closure. |
 | I-28 | Production Force Multipliers | Greg | Planned | P2/P4 | Q2 '26 | Depends on PROD-01, PROD-02 |
 | I-29 | Odoo Knowledge Repository | Bob/Victor | On Hold | P7 | Q1 '26 | Blocked — 3 Greg decisions pending |
 | ~~I-30~~ | ~~Cross-Project Sync Pipeline (Phase 1 — Email)~~ | — | Removed | — | — | Superseded by I-48 (API-Driven Hub). Removed 2026-04-18. Retained for numbering continuity. |
@@ -99,7 +101,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-66 | IT Equipment Inventory | Bob + Victor | Active | P7/P5 | Q2 '26 | Claude Vision → CSV → Odoo Maintenance import. Ph1 in progress |
 | I-67 | B-47 Project Info Writer | Greg | On Hold | P4-002 | Q2 '26 | Title block shared parameter blocker. Coordinate with I-71 |
 | I-68 | WireGuard VPN Architecture | Bob | Active | P5 | Q2 '26 | Ph1 complete (2026-03-09). Ph2: DNS integration + PSK hardening |
-| I-69 | Dashboard / Cloudflare Pages | Greg | Complete | P0 | Q1 '26 | Dashboard v2.27 live at dashboard.bcg-corp.com. Evidence: https://dashboard.bcg-corp.com |
+| I-69 | Dashboard / Cloudflare Pages | Greg | Complete | P0 | Q1 '26 | Dashboard v2.27 live at dashboard.bcg-corp.com. Evidence: https://dashboard.bcg-corp.com. **Section 5 Backfill audit verified 2026-04-26** — canonical filing confirmed at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`. |
 | I-70 | Client Deliverable Schedule Tracker | Rachel | Active | P8-001 | Operational | 82 projects, 24 campuses, 14 sites. Rachel daily ops, Gregory oversight |
 | I-71 | On-Premise AI/Revit Live Integration | Jason | Planned | P4-002 | Q3 '26 | Hard constraint: zero cloud AI on client models. Hard deps: I-65 Ph1, I-22, W-25, Jason onboarded |
 | I-72 | Superpowers Methodology Framework | Greg → Jason | Active | P4 | Ph1 complete | Ph1 complete. Ph2/3 scope handed off 2026-04-17 (`handoffs/P4_Handoff_I-72_Superpowers_Methodology_Framework_2026-04-17.md`) |
@@ -203,6 +205,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| **3.0.1** | **2026-04-26** | **I-27 (Windsurf IDE Enablement) closed via Path B** silent-completion exception per `standards/protocols/Initiative_Closure_Verification.md` v1.0. Owner attestation by Gregory: GitLab commit verified at `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`; Windsurf in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Status drifted directly `Planned` → `Complete` — exception authorized by Gregory. Original `Depends on I-26` resolved as moot at closure. **I-69 (Dashboard / Cloudflare Pages) Section 5 Backfill audit verified same day** — evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`; verification logged to Ecosystem Status doc per protocol Section 5. Counts unchanged: 73 tracked initiatives. Next I-slot unchanged: I-77. |
 | **3.0** | **2026-04-19** | **PROTOCOL-HARNESS ERA BOUNDARY.** Retired P0-001 subproject (triage function absorbed into P0 via protocol-harness pattern). Registered I-75 (Ecosystem Protocol Harness — this migration's deliverable initiative) and I-76 (Ecosystem Grading Schema Extraction — next sprint). Counts: 73 active initiatives, 6 active subprojects, 11 workstreams. Next I-slot: I-77. Ecosystem scope unchanged (P0–P11 + 6 subs). **Note on v2.10:** Governance Doc Registry v3.2 (2026-04-18) forward-referenced a Catalog v2.10 shipping the Plan Link Rule. That standalone v2.10 commit never shipped — the Plan Link Rule was effective via W-20 v1.1 enforcement. v3.0 lands directly from v2.9; Registry v3.5 corrects the tracked version to match. |
 | 2.9 | 2026-04-18 | **RECONCILIATION COMMIT.** Reconstructs v1.5–v2.8 into single canonical commit from governance narrative + Gregory working-copy extraction (P0 session 2026-04-18). Added I-49 through I-72 (24 initiatives). Registered I-73 (BCG EasyButton — P4-003 / Greg Ph1 → Jason Ph2–4). Registered I-74 (Notification Center Ph A Remediation — Victor / P7). Registered P4-003 subproject under P4. Folded `BCG_AI_Config_Architecture_v1.0.docx` into I-65 scope. Re-homed I-24 to P10 (was P6). Removed I-30 (superseded by I-48). Retired P7-001–P7-004 (consolidated into P7 on 2026-03-12). Added P0-001, P5-002, P8-001, P4-003 to subproject registry. Updated scope P0–P11. Total: 71 active, 3 removed, 11 WS, 7 active subprojects + 4 retired. Next I-slot: I-75. |
 | v1.5–v2.8 | 2026-03-10 to 2026-04-17 | NOT PREVIOUSLY COMMITTED — rolled into v2.9. Working-copy versions existed locally but were never pushed to GitHub. |
