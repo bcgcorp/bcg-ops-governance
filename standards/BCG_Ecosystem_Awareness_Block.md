@@ -1,14 +1,16 @@
 # BCG Corp — Ecosystem Awareness Block (EAB)
 
-**Version:** 1.7
-**Effective:** April 2026
-**Last Updated:** 2026-04-19
+**Version:** 1.8
+**Effective:** May 2026
+**Last Updated:** 2026-05-03
 **Scope:** All Claude Projects (P1–P11, all subprojects)
 **Owner:** Gregory Bernardo, President
 
 **What This Is:** The Ecosystem Awareness Block is a standardized text block copy-pasted into every satellite and subproject's custom instructions. It gives each project awareness of the full 18-project ecosystem so that routing, handoffs, and dependency flagging work correctly. This GitHub file is the single source of truth — copy from here, paste into projects.
 
 **What This Is NOT:** This is not a runtime-fetched document. Projects do not fetch this file during conversations. The EAB text is embedded directly in each project's custom instructions. This file exists so there is one canonical version to copy from when propagating or updating.
+
+**What Changed (v1.8):** Removed CDN fetch URL from EAB block. Replaced `https://raw.githubusercontent.com/...` directive in the GOVERNANCE DOCUMENTS section with explicit instruction to fetch via `github-write:get_file_contents` MCP tool (or `git clone` from bash). This change implements the structural fix identified in the 2026-05-03 P4-002 chat audit and aligns with the 2026-03-22 post-mortem rule: never `web_fetch` against `raw.githubusercontent.com` — CDN serves stale content silently. Per ADR-001 (APPROVED 2026-05-02), governance fetch directives must specify the no-cache path. Re-propagation required to all 17 projects to pick up the corrected EAB text.
 
 **What Changed (v1.7):** Two reconciliation changes bundled into a single bump, plus one in-place correction:
 - **Retired P0-001** from the subproject list. Triage function absorbed into P0 via protocol-harness pattern (I-75, see `standards/protocols/`). Removed from Section 2 Placement Guide, Section 3 Subprojects table, and Section 4 parent-routing list.
@@ -76,9 +78,9 @@ Use the subproject variant from Section 4. Paste after SECURITY BOUNDARIES.
 
 ## 3. Satellite EAB Block — COPY THIS FOR P1–P11
 
-EAB: v1.7 | 2026-04-19
+EAB: v1.8 | 2026-05-03
 
-CROSS-PROJECT ECOSYSTEM (EAB v1.7 — April 2026)
+CROSS-PROJECT ECOSYSTEM (EAB v1.8 — May 2026)
 
 This project is one satellite in BCG's 18-project Claude ecosystem. P0 is the strategic synthesis hub; P1–P11 are production satellites; P4-001, P4-002, P4-003, P5-001, P5-002, and P8-001 are active subprojects. Understanding the ecosystem prevents scope drift and enables proper routing.
 
@@ -151,20 +153,26 @@ Examples:
   [FLAG FOR P11: New hire candidate at conditional offer stage — trigger pre-offer OSINT investigation]
 
 GOVERNANCE DOCUMENTS
-BCG maintains governance documents in GitHub as the single source of truth (GOV-001, approved 2026-03-11). The Governance Doc Registry is the entry point:
-  URL: https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Governance_Doc_Registry.md
+BCG maintains governance documents in GitHub as the single source of truth (GOV-001, approved 2026-03-11). The Governance Doc Registry is the entry point.
+
+**Fetch governance documents via the GitHub MCP tool (no-cache, direct API):**
+- Tool: `github-write:get_file_contents`
+- Parameters: owner=`bcgcorp`, repo=`bcg-ops-governance`, path=`standards/{filename}`
+- Example: to fetch the Doc Registry, call `github-write:get_file_contents` with path `standards/BCG_Governance_Doc_Registry.md`
+
+Do NOT use `web_fetch` against `raw.githubusercontent.com` URLs. CDN serves stale content silently with no error signal. Per ADR-001 (APPROVED 2026-05-02) and the 2026-03-22 post-mortem, the GitHub MCP API is the only authorized path. If `git clone` is available in a code-execution environment, that is also acceptable.
 
 For detailed routing rules and handoff requirements, fetch:
-  BCG_Project_Ecosystem_and_Handoffs.md (URL in Registry)
+  `BCG_Project_Ecosystem_and_Handoffs.md` via `github-write:get_file_contents`
 
 For current initiative and workstream status, fetch:
-  BCG_Initiative_and_Workstream_Catalog.md (URL in Registry)
+  `BCG_Initiative_and_Workstream_Catalog.md` via `github-write:get_file_contents`
 
-For ecosystem triage / classification / I-number assignment: P0 owns this function as of 2026-04-19 (absorbed from retired P0-001). P0 fetches `standards/protocols/W-20_Ecosystem_Triage.md` on matching triggers.
+For ecosystem triage / classification / I-number assignment: P0 owns this function as of 2026-04-19 (absorbed from retired P0-001). P0 fetches `standards/protocols/W-20_Ecosystem_Triage.md` on matching triggers via `github-write:get_file_contents`.
 
 Do NOT maintain separate copies of governance documents in this project's knowledge base. The GitHub versions are authoritative.
 
-If governance doc fetch fails, flag [NOTE: Governance docs unavailable — operating from embedded EAB only. Routing and handoff functions remain active.] and proceed with embedded routing rules. Do not halt the session.
+If GitHub MCP fetch fails, flag [NOTE: Governance docs unavailable — operating from embedded EAB only. Routing and handoff functions remain active.] and proceed with embedded routing rules. Do not halt the session. Do not fall back to `web_fetch` on CDN URLs as a workaround.
 
 ---
 
@@ -191,6 +199,7 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
+| 1.8 | 2026-05-03 | **Removed CDN fetch URL from EAB GOVERNANCE DOCUMENTS section.** Replaced `https://raw.githubusercontent.com/...` directive with explicit `github-write:get_file_contents` MCP tool instruction. Implements structural fix per 2026-05-03 audit and 2026-03-22 post-mortem. Added explicit "do not use web_fetch on CDN" prohibition with ADR-001 reference. Bumped EAB block version line `EAB: v1.7` to `EAB: v1.8`. Closes the smoking-gun finding from 2026-05-03 P4-002 chat: project system prompts were directing Claude to the CDN despite memory-rule prohibition. | 🟡 Pending — re-propagation required to all 17 projects. Greg owns the propagation tracker update. |
 | 1.7 | 2026-04-19 | Retired P0-001 from subproject list (absorbed into P0 via protocol-harness / I-75). Added P4-003 to subproject list (catches up 2026-04-18 catalog drift). Confirmed P11 access as "Gregory & Jennifer only" (reconciling v1.6 intent with P11's own instructions — see in-place correction note below). Updated Section 3 Subprojects table, Section 4 parent-routing, Section 2 Placement Guide. Added P0 scope note referencing W-20 v1.2 protocol. Added P4-003 routing redirect. Net project count unchanged (18). | ✅ Yes — all 17 projects at v1.7 (2026-04-19). P1 pushed via GitHub MCP (commit 5c6dad43); P2–P11 + subprojects + README pushed via local repo commit 2026-04-19. P11 description in-place correction pushed 2026-04-19. Claude UI propagation completed 2026-04-19. |
 | 1.6 | 2026-04-01 | P11 access expanded: "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. NOTE: The expansion was reflected in the EAB but not applied to P11's own project instructions at the time; that gap was closed during v1.7 propagation (2026-04-19). | ✅ Yes — all 17 projects at v1.6 (2026-04-15). P11 updated at deploy (2026-04-01); P1–P10 and all subprojects updated 2026-04-15 via GitHub MCP batch commits. |
 | 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Yes — 17/17 projects at v1.5 (2026-03-17) |
@@ -206,30 +215,30 @@ Subproject routing parent assignments:
 
 ### Satellites (11)
 
-| Project | Current EAB Version | v1.7 Propagation Status | Notes |
-|---------|-------------|-------------|-------|
-| P1 | v1.7 | ✅ Propagated 2026-04-19 | GitHub MCP commit 5c6dad43 |
-| P2 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P3 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P4 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P5 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P6 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P7 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P8 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P9 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit |
-| P10 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. P10 uses variant EAB shape (no `EAB: v1.6\|` header line; `## CROSS-PROJECT ECOSYSTEM` heading format preserved) |
-| P11 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. P11 had been left at v1.5 in the v1.6 propagation — this bump catches it up. |
+| Project | Current EAB Version | v1.7 Propagation Status | v1.8 Propagation Status | Notes |
+|---------|---------------------|-------------------------|-------------------------|-------|
+| P1 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | GitHub MCP commit 5c6dad43 (v1.7) |
+| P2 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P3 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P4 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P5 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P6 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P7 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P8 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P9 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P10 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7). P10 uses variant EAB shape. |
+| P11 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
 
 ### Subprojects (6 — P0-001 retired 2026-04-19)
 
-| Project | Current EAB Version | v1.7 Propagation Status | Notes |
-|---------|-------------|-------------|-------|
-| P4-001 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Satellite-shape EAB. |
-| P4-002 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Satellite-shape EAB. |
-| P4-003 | v1.7 | ✅ Initial deploy 2026-04-19 | P4-003 registered 2026-04-18; first-ever EAB deploy at v1.7 via this migration. Satellite-shape EAB matching P4-001/P4-002 precedent. |
-| P5-001 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Satellite-shape EAB. |
-| P5-002 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Subproject-shape EAB (custom routing-to-parent language). |
-| P8-001 | v1.7 | ✅ Propagated 2026-04-19 | Local repo commit. Subproject-shape EAB (custom routing-to-parent language). |
+| Project | Current EAB Version | v1.7 Propagation Status | v1.8 Propagation Status | Notes |
+|---------|---------------------|-------------------------|-------------------------|-------|
+| P4-001 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
+| P4-002 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
+| P4-003 | v1.7 | ✅ Initial deploy 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
+| P5-001 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
+| P5-002 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Subproject-shape EAB. |
+| P8-001 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Subproject-shape EAB. |
 
 ### Retired (do not propagate)
 
