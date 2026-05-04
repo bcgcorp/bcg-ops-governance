@@ -199,7 +199,7 @@ Subproject routing parent assignments:
 
 | Version | Date | What Changed | Propagated? |
 |---------|------|-------------|-------------|
-| 1.8 | 2026-05-03 | **Removed CDN fetch URL from EAB GOVERNANCE DOCUMENTS section.** Replaced `https://raw.githubusercontent.com/...` directive with explicit `github-write:get_file_contents` MCP tool instruction. Implements structural fix per 2026-05-03 audit and 2026-03-22 post-mortem. Added explicit "do not use web_fetch on CDN" prohibition with ADR-001 reference. Bumped EAB block version line `EAB: v1.7` to `EAB: v1.8`. Closes the smoking-gun finding from 2026-05-03 P4-002 chat: project system prompts were directing Claude to the CDN despite memory-rule prohibition. | 🟡 Pending — re-propagation required to all 17 projects. Greg owns the propagation tracker update. |
+| 1.8 | 2026-05-03 | **Removed CDN fetch URL from EAB GOVERNANCE DOCUMENTS section.** Replaced `https://raw.githubusercontent.com/...` directive with explicit `github-write:get_file_contents` MCP tool instruction. Implements structural fix per 2026-05-03 audit and 2026-03-22 post-mortem. Added explicit "do not use web_fetch on CDN" prohibition with ADR-001 reference. Bumped EAB block version line `EAB: v1.7` to `EAB: v1.8`. Closes the smoking-gun finding from 2026-05-03 P4-002 chat: project system prompts were directing Claude to the CDN despite memory-rule prohibition. | ✅ Yes — all 17 projects at v1.8 (2026-05-04). Canonical files in `bcg-ops-claude-projects` updated via Python migration script `migrate_eab_v1.7_to_v1.8.py` (3 dispatch paths: standard EAB block replacement for 14 satellite/subproject files, P0 GLOBAL GOVERNANCE rewrite, surgical variant migration for P10/P5-002/P8-001 to preserve project-specific routing content). Migration also adds canonical-instructions SOP rule to all 18 instructions.md files. Local repo commit + push by Gregory 2026-05-04. Claude UI propagation completed 2026-05-04. |
 | 1.7 | 2026-04-19 | Retired P0-001 from subproject list (absorbed into P0 via protocol-harness / I-75). Added P4-003 to subproject list (catches up 2026-04-18 catalog drift). Confirmed P11 access as "Gregory & Jennifer only" (reconciling v1.6 intent with P11's own instructions — see in-place correction note below). Updated Section 3 Subprojects table, Section 4 parent-routing, Section 2 Placement Guide. Added P0 scope note referencing W-20 v1.2 protocol. Added P4-003 routing redirect. Net project count unchanged (18). | ✅ Yes — all 17 projects at v1.7 (2026-04-19). P1 pushed via GitHub MCP (commit 5c6dad43); P2–P11 + subprojects + README pushed via local repo commit 2026-04-19. P11 description in-place correction pushed 2026-04-19. Claude UI propagation completed 2026-04-19. |
 | 1.6 | 2026-04-01 | P11 access expanded: "Gregory-only" → "Gregory & Jennifer only" in project registry row and routing redirect. No structural changes to EAB format. NOTE: The expansion was reflected in the EAB but not applied to P11's own project instructions at the time; that gap was closed during v1.7 propagation (2026-04-19). | ✅ Yes — all 17 projects at v1.6 (2026-04-15). P11 updated at deploy (2026-04-01); P1–P10 and all subprojects updated 2026-04-15 via GitHub MCP batch commits. |
 | 1.5 | 2026-03-17 | Added P11 (Candidate OSINT & Pre-Hire Intelligence) to project registry. Updated project count 17 to 18. Updated scope P1–P11. Added P11 routing redirect and flagging example. | Yes — 17/17 projects at v1.5 (2026-03-17) |
@@ -217,28 +217,28 @@ Subproject routing parent assignments:
 
 | Project | Current EAB Version | v1.7 Propagation Status | v1.8 Propagation Status | Notes |
 |---------|---------------------|-------------------------|-------------------------|-------|
-| P1 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | GitHub MCP commit 5c6dad43 (v1.7) |
-| P2 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P3 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P4 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P5 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P6 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P7 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P8 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P9 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
-| P10 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7). P10 uses variant EAB shape. |
-| P11 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Local repo commit (v1.7) |
+| P1 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | v1.7: GitHub MCP commit 5c6dad43. v1.8: bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P2 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P3 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P4 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P5 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P6 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P7 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P8 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P9 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P10 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Variant EAB shape (no `EAB:` version line; bare `## CROSS-PROJECT ECOSYSTEM` heading) + custom `Common redirects from P10:` routing list. Surgical variant migration via `migrate_eab_v1.7_to_v1.8.py` preserved all project-specific content. |
+| P11 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
 
 ### Subprojects (6 — P0-001 retired 2026-04-19)
 
 | Project | Current EAB Version | v1.7 Propagation Status | v1.8 Propagation Status | Notes |
 |---------|---------------------|-------------------------|-------------------------|-------|
-| P4-001 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
-| P4-002 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
-| P4-003 | v1.7 | ✅ Initial deploy 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
-| P5-001 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Satellite-shape EAB. |
-| P5-002 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Subproject-shape EAB. |
-| P8-001 | v1.7 | ✅ Propagated 2026-04-19 | 🟡 Pending | Subproject-shape EAB. |
+| P4-001 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Satellite-shape EAB. Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P4-002 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Satellite-shape EAB. Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. Migration also fixed GOV-017 fetch directive (CDN URL → `github-write:get_file_contents`). |
+| P4-003 | v1.8 | ✅ Initial deploy 2026-04-19 | ✅ Propagated 2026-05-04 | Satellite-shape EAB. Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P5-001 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Satellite-shape EAB. Bulk migration via `migrate_eab_v1.7_to_v1.8.py`. |
+| P5-002 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Subproject-shape EAB with `## EAB:` Markdown heading prefix. Surgical variant migration via `migrate_eab_v1.7_to_v1.8.py` preserved subproject-specific routing language. |
+| P8-001 | v1.8 | ✅ Propagated 2026-04-19 | ✅ Propagated 2026-05-04 | Subproject-shape EAB with `## EAB:` Markdown heading prefix. Surgical variant migration via `migrate_eab_v1.7_to_v1.8.py` preserved subproject-specific routing language. |
 
 ### Retired (do not propagate)
 
