@@ -1,10 +1,21 @@
 # BCG Corp — Initiative & Workstream Catalog
 
-**Version:** 3.1
+**Version:** 3.3
 **Effective:** April 2026
-**Last Updated:** 2026-04-26
+**Last Updated:** 2026-04-30
 **Scope:** All Claude Projects (P0–P11) and subprojects
 **Owner:** Gregory Bernardo, President
+
+**What Changed (v3.3 — I-77 Registration):** Added I-77 (PDF Deliverable Automation Pipeline) per Gregory approval 2026-04-30. Three-phase automation pipeline (bookmark/overlay/QC Model) for client PDF deliverables. Hard gate: I-09 (Revit Batch Print Utility) must be Complete before I-77 Active-flip. Development: 100–140 hours, $9k–$12.6k total. Reference: `BCG_PDF_Automation_Deep_Dive_v1_0.docx` (2026-04-30, 24 pages, filed at `B:\AI Accessible\Outputs\P4-002\`). **Counts:** **65 active initiatives** (was 64; +1 = I-77). 12 removed total (unchanged). Next I-slot: **I-78** (was I-77). No changes to subprojects, workstreams, or other initiatives.
+
+**What Changed (v3.2 — I-54 Plan Deepening, Greg directives 2026-04-28):** Catalog updates flowing from P7 handoff 2026-04-28 ("I-54 Plan Deepening — Decisions Returned to P0") and Gregory's three confirmed decisions:
+
+- **D1 — Single I-54.** Three phases (Core Tracking, Task Template Generation, SO Milestone Linkage) held under one initiative. No split. I-78 / I-79 not consumed; next slot remains **I-77**.
+- **D2 — Resourcing path (a):** descope I-56, let I-55 finish before I-54 Active flip. **I-56 (Odoo Task Calendar Display — Project Name Prefix) → Removed (descoped)** to free Victor capacity for I-54 build. LOW priority at descope time; can be re-registered as new I-number if calendar prefix work resurfaces. **I-55 (Appointment Coverage Request System) → unchanged Planned**, but flagged as gating I-54: I-55 must reach Complete before I-54 Active-flip is requested.
+- **D3 — I-53 / I-54 parallel sequencing.** Overrides P0's recommended I-53-first sequencing. Victor and Bob to coordinate test framework approach early in I-54 Phase 1 so test scaffolding aligns with I-53's framework rather than diverging. Risk acknowledged: some Phase 1 test code may need rework if I-53 framework lands mid-build.
+- **I-54 active-flip prerequisites refined:** B1 (schema extraction against C-3PO, ~2 hrs Victor, scheduled after I-66 Ph1 closes) + B2 (third-party parent-project module audit, pending Greg upload of `__manifest__.py` and model files) + I-55 Complete. Plan v0.2 (2026-04-28) authored as companion artifact; final Plan committed to `standards/plans/` at activation per `Initiative_Plan_Discipline.md`.
+- **Counts:** **64 active initiatives** (was 65; -1 = I-56 descoped). 12 removed total: I-06, I-07, I-20, I-25, I-26, I-30, I-31, I-32, I-47, I-56, I-61, I-64. Next I-slot unchanged: **I-77**.
+- **No changes to:** Section 3 (Workstreams — WS-10 row text unchanged because I-56 was never in the WS-10 explicit-list), Section 5 (Subprojects — no subproject impact), Section 6 (Numbering Conventions). EAB v1.7 unchanged (no project add/retire).
 
 **What Changed (v3.1 — Realignment Cleanup):** Comprehensive cleanup pass per Gregory directive 2026-04-26. Removes 7 initiatives (consolidations + strategic supersession + dead dependencies); reclassifies 1 initiative to workstream-level capability; refreshes 5 stale Q1 '26 targets; assigns owner to 1 orphaned initiative. Detailed changes:
 
@@ -44,7 +55,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 2. Initiative Registry
 
-**65 active initiatives** (I-01 through I-76, minus 11 removed: I-06, I-07, I-20, I-25, I-26, I-30, I-31, I-32, I-47, I-61, I-64).
+**65 active initiatives** (I-01 through I-77, minus 12 removed: I-06, I-07, I-20, I-25, I-26, I-30, I-31, I-32, I-47, I-56, I-61, I-64).
 
 | ID | Initiative Name | Owner | Status | Project | Target | Notes |
 |----|----------------|-------|--------|---------|--------|-------|
@@ -56,7 +67,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | ~~I-06~~ | ~~Production Rework Module (Odoo)~~ | — | Removed | — | — | Removed 2026-04-26 — consolidated into I-54 (Production Rework Tracking Module). Retained for numbering continuity. |
 | ~~I-07~~ | ~~Odoo Automated Testing Framework~~ | — | Removed | — | — | Removed 2026-04-26 — consolidated into I-53 (Odoo 18 Automated Testing Framework). Retained for numbering continuity. |
 | I-08 | ASR/AppLocker Remediation | Bob | Active | P5 | Q1 '26 | AppLocker disabled; ASR tiered model (4 Block / 14 Audit). Closure verification handoff to Bob pending (separate `close I-08` protocol invocation). |
-| I-09 | Revit Batch Print Utility | Gregory (interim) | Active | P4-002 | Q2 '26 | Started — not functional. Owner updated TBD → Gregory (interim) on 2026-04-26 per Gregory. |
+| I-09 | Revit Batch Print Utility | Gregory (interim) | Active | P4-002 | Q2 '26 | Started — not functional. Owner updated TBD → Gregory (interim) on 2026-04-26 per Gregory. **GATES I-77** — I-09 must be Complete before I-77 Active-flip. |
 | I-10 | DD Sprint Delivery SOP (W-01) | Cory | Planned | P2 | Q2 '26 | |
 | I-11 | CA Workflow SOP (W-02) | Joshua | Planned | P2 | Q2 '26 | |
 | I-12 | Project Kickoff Checklist (W-05) | Greg → PM | Planned | P2 | Q2 '26 | |
@@ -101,9 +112,9 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-51 | Email Attachment Ingestion Agent | Jason | Planned | P4 | Q3 '26 | Post D-04 dependency |
 | I-52 | Odoo CI/CD Pipeline (Claude Code GitHub Actions) | Victor | Planned | P7 | Q2 '26 (Ph1: 30 days) | |
 | I-53 | Odoo 18 Automated Testing Framework | Bob | Planned | P7 | Q2 '26 | **Absorbs I-07 scope (consolidated 2026-04-26).** |
-| I-54 | Production Rework Tracking Module | Greg (arch) / Victor (dev) | Planned | P7 | Q2–Q3 '26 | 2 blockers. **Absorbs I-06 scope (consolidated 2026-04-26).** |
-| I-55 | Appointment Coverage Request System | Greg (sponsor) / TBD dev | Planned | P7 | Q2 '26 | |
-| I-56 | Odoo Task Calendar Display — Project Name Prefix | Bob (exec) / Victor (dev) | Planned — LOW | P7 | Q3 '26 | |
+| I-54 | Production Rework Tracking Module | Greg (arch) / Victor (dev) | Planned | P7 | Q2–Q3 '26 | **Active-flip prerequisites: B1 (schema extraction, Victor ~2 hrs, scheduled after I-66 Ph1) + B2 (third-party parent-project module audit pending Greg upload) + I-55 Complete.** I-53 parallel sequencing per Greg 2026-04-28 (Victor/Bob coordinate test framework early Phase 1). Three phases (Core Tracking → Task Template Generation → SO Milestone Linkage) held single I-number per Greg D1. Plan v0.2 2026-04-28 (companion .md, pre-activation). Absorbs I-06 scope (consolidated 2026-04-26). |
+| I-55 | Appointment Coverage Request System | Greg (sponsor) / TBD dev | Planned | P7 | Q2 '26 | **Gates I-54 Active-flip per Greg D2 (2026-04-28)** — I-55 must reach Complete before I-54 activation requested. Path-(a) resourcing decision: I-55 finishes its 60-day horizon before I-54 build begins, freeing Victor capacity. |
+| ~~I-56~~ | ~~Odoo Task Calendar Display — Project Name Prefix~~ | — | Removed (descoped) | — | — | **Removed (descoped) 2026-04-28** per Greg D2 to free Victor capacity for I-54 build. LOW priority at descope time; can be re-registered as new I-number if calendar prefix work resurfaces in a future cycle. Retained for numbering continuity. |
 | I-57 | Chat Quality Evaluation SOP (W-19) | Jennifer | Planned | P2 | Q2 '26 | |
 | I-58 | P8-001 Document Intake & Routing — Go-Live | Rachel | Active | P8 | Q2 '26 | P8-001 operational scope |
 | I-59 | Odoo NL Command Interface (`bcg_nl_intake`) | Victor | Planned | P7 | Q2 '26 | |
@@ -122,8 +133,9 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | I-72 | Superpowers Methodology Framework | Greg → Jason | Active | P4 | Ph1 complete | Ph1 complete. Ph2/3 scope handed off 2026-04-17 (`handoffs/P4_Handoff_I-72_Superpowers_Methodology_Framework_2026-04-17.md`) |
 | I-73 | BCG EasyButton (Idea Capture) — Platform, Governance & Team Rollout | Greg (Ph1) → Jason (Ph2–4) | Active | P4-003 | Ph1 Q2 '26 / Ph2 Q3 '26 / Ph3 Q3–Q4 '26 / Ph4 2027 | Priority: Medium. Transition v3 voice-activated idea capture POC from single-user to governed, BCG-wide tool. 4 phases. Hard deps: Jason active (April 1 ✓), DGX Spark availability for faster-whisper. Soft deps: I-65, Windsurf global_rules.md. Ph3 gated on Ph2 complete — cloud STT is Ph1-only. Related: I-65. Touchpoints: P4 parent, P5 (data-path), P7 (`bcg_ai_rfi` routing), P2/P3/P8 (note routing). W-series registration deferred to Ph3 |
 | I-74 | Notification Center Ph A Remediation | Victor | Active | P7 | Q2 '26 | `bcg_notification_center` module. Split from prior I-56 scope on 2026-04-18 (pre-v2.9 status doc 2026-04-15 had mis-labeled I-56). Was P7-004 work pre-consolidation (2026-03-12) |
-| **I-75** | **Ecosystem Protocol Harness** | **Greg (Bob backup)** | **Active** | **P0** | **Q2 '26** | **NEW 2026-04-19.** Establishes `standards/protocols/` folder and the protocol-harness pattern (see `standards/protocols/README.md`). Ships four anchor protocols: W-20 v1.2 (migrated from SOP), Initiative_Closure_Verification v1.0 (carved from W-20 v1.1), Initiative_Plan_Discipline v1.0 (formalized from Plan Link Rule + W-20 Trigger 3), Post_Mortem v1.0 (carved from W-20 v1.1 Section 4E + GOV-020). Retires P0-001 subproject. Bumps P0 custom instructions to v1.0 (first formally versioned set). EAB v1.6 → v1.7 (P0-001 removed, P4-003 added, propagation to 18 projects). Registry v3.4 → v3.5. Plan: `standards/migrations/P0-001_Protocol_Harness_Migration_Prompt_2026-04-19.md` (authored during migration session). Distinct from I-60 (Windsurf/Cowork surface); same architectural pattern, different runtime. |
-| **I-76** | **Ecosystem Grading Schema Extraction** | **Greg (Bob backup)** | **Planned** | **P0** | **Q2 '26** | **NEW 2026-04-19.** Extracts grading schema from dashboard JS constants (freshness tiers `hot:7/active:14/slow_burn:30`, parity dimensions, integrity checks, scoring functions) into canonical governance doc `standards/BCG_Ecosystem_Grading_Schema.md`. EAB references it; dashboard becomes a rendering of canonical data rather than a source. Unblocks cross-protocol scoring references (W-20 audit, P5 health checks, P9 resilience scoring, P10 compliance audits). Hard dep: I-75 complete (needs protocol data-source registry in `standards/protocols/README.md` Section 8 to register the new doc's slot). Plan: TBD — author during activation. |
+| I-75 | Ecosystem Protocol Harness | Greg (Bob backup) | Active | P0 | Q2 '26 | Establishes `standards/protocols/` folder and the protocol-harness pattern (see `standards/protocols/README.md`). Ships four anchor protocols: W-20 v1.2 (migrated from SOP), Initiative_Closure_Verification v1.0 (carved from W-20 v1.1), Initiative_Plan_Discipline v1.0 (formalized from Plan Link Rule + W-20 Trigger 3), Post_Mortem v1.0 (carved from W-20 v1.1 Section 4E + GOV-020). Retires P0-001 subproject. Bumps P0 custom instructions to v1.0 (first formally versioned set). EAB v1.6 → v1.7 (P0-001 removed, P4-003 added, propagation to 18 projects). Registry v3.4 → v3.5. Plan: `standards/migrations/P0-001_Protocol_Harness_Migration_Prompt_2026-04-19.md` (authored during migration session). Distinct from I-60 (Windsurf/Cowork surface); same architectural pattern, different runtime. |
+| I-76 | Ecosystem Grading Schema Extraction | Greg (Bob backup) | Planned | P0 | Q2 '26 | Extracts grading schema from dashboard JS constants (freshness tiers `hot:7/active:14/slow_burn:30`, parity dimensions, integrity checks, scoring functions) into canonical governance doc `standards/BCG_Ecosystem_Grading_Schema.md`. EAB references it; dashboard becomes a rendering of canonical data rather than a source. Unblocks cross-protocol scoring references (W-20 audit, P5 health checks, P9 resilience scoring, P10 compliance audits). Hard dep: I-75 complete (needs protocol data-source registry in `standards/protocols/README.md` Section 8 to register the new doc's slot). Plan: TBD — author during activation. |
+| **I-77** | **PDF Deliverable Automation Pipeline** | **Greg (arch) / TBD dev (Ph1)** | **Planned** | **P4-002** | **Q3–Q4 '26** | **NEW 2026-04-30.** Three-phase automation pipeline for client PDF deliverables: (1) Bookmark automation (PyPDF2 + PDFtk Server) — extract Revit sheet names from B-43 PDFs, generate bookmark structure, inject via PDFtk (~30–40 hrs); (2) Overlay + hyperlink automation — Ghostscript overlay (current vs. previous), misalignment detection, hyperlink creation from sheet number text (~30–40 hrs); (3) Revit QC Model automation (B-22 architecture) — pyRevit button creates QC Model, links current/previous/reference models, applies BCG overlay view templates, overnight refresh on RevitPrint Minion (~40–60 hrs). **Hard gate: I-09 (Revit Batch Print Utility) must be Complete before I-77 Active-flip.** Also depends on B-22 (Linked QC Model architecture) for Phase 3. Deliverables: Fully automated Revit → PDF → bookmark → overlay → QC Model pipeline. Protects BCG IP via automated QC Model architecture (B-22 — never delivered to clients). Hard cost: $0–$599/year (Bluebeam license decision point after Phase 1 validation). Development: 100–140 hours at $90/hr blended = $9,000–$12,600 total. Reference: `BCG_PDF_Automation_Deep_Dive_v1_0.docx` (2026-04-30, 24 pages, filed at `B:\AI Accessible\Outputs\P4-002\`). **Critical validation gate (Phase 1):** Confirm Revit writes sheet names to PDF metadata. If absent, fallback to OCR/text extraction (+10–15 hours dev complexity). |
 
 ### Initiative Status Definitions
 
@@ -152,7 +164,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | WS-07 | Capture Strategy | Greg | Active | P0/P3/P8 | — | |
 | WS-08 | Direct MSA Evaluation | Greg | Active | P0/P3 | — | |
 | WS-09 | New Teaming & Diversification | Greg | Active | P0/P3 | I-37 | |
-| WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-27, I-28, I-43, I-44, I-45, I-46, I-48, I-49, I-51, I-52, I-60, I-65, I-66, I-67, I-71, I-72, I-73, **I-75**, **I-76** | v3.1 cleanup 2026-04-26: removed strikethrough'd I-25, I-26, I-31, I-47 from coverage list (all Removed). I-27 (Complete) retained. |
+| WS-10 | Efficiency & AI Deployment | Greg/Jason | Active | P0/P4 | I-09, I-22, I-27, I-28, I-43, I-44, I-45, I-46, I-48, I-49, I-51, I-52, I-60, I-65, I-66, I-67, I-71, I-72, I-73, I-75, I-76, **I-77** | v3.3: Added I-77 to coverage list. |
 | WS-11 | Resource Planning | Greg/Jennifer | Active | P0/P6/**P11** | I-03, I-35, I-36, I-40, I-63 + ongoing P11 OSINT capability (formerly I-64, reclassified 2026-04-26) | v3.1: Now includes ongoing P11 standing OSINT capability (RESTRICTED — Gregory sole CIR approver / Jennifer full access). |
 
 ---
@@ -161,19 +173,19 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Project | Active Initiative Count | Primary IDs |
 |---------|-----------------|-----|
-| P0 | **5** | I-14 (shared P2), I-42, I-69, **I-75, I-76** |
+| P0 | **5** | I-14 (shared P2), I-42, I-69, I-75, I-76 |
 | P1 | 0 | Consumes WS-02, WS-03, WS-06 |
 | P2 | 8 | I-01, I-02, I-10, I-11, I-12, I-13, I-50 (Ph1), I-57 |
 | P3 | 9 | I-04, I-16 (shared P6), I-17, I-18, I-19, I-22 (shared P4), I-33, I-34, I-37 |
 | P4 | 8 | I-27, I-28, I-43, I-48, I-51, I-60, I-65, I-72 |
 | P4-001 | 0 | |
-| P4-002 | 7 | I-09, I-44, I-45, I-46, I-49, I-67, I-71 |
+| P4-002 | **8** | I-09, I-44, I-45, I-46, I-49, I-67, I-71, **I-77** |
 | P4-003 | 1 | I-73 |
 | P5 | 4 | I-08, I-15, I-62, I-68 |
 | P5-001 | 1 | I-38 |
 | P5-002 | 0 | |
 | P6 | 6 | I-03, I-21, I-35, I-36, I-40, I-63 |
-| P7 | 11 | I-05, I-23, I-29, I-52 (shared P4), I-53, I-54, I-55, I-56, I-59, I-66 (shared P5), I-74 |
+| P7 | 10 | I-05, I-23, I-29, I-52 (shared P4), I-53, I-54, I-55, I-59, I-66 (shared P5), I-74 |
 | P8 | 2 | I-39, I-58 |
 | P8-001 | 1 | I-70 |
 | P9 | 1 | I-41 |
@@ -191,7 +203,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 | ID | Parent | Name | Initiatives | Status | What It Produces |
 |----|--------|------|-----------|--------|-----------------|
 | P4-001 | P4 | MCP Evaluation & Selection | — | Active | MCP server evaluations, capability matrices |
-| P4-002 | P4 | Revit & BIM Automation | I-09, I-44, I-45, I-46, I-49, I-67, I-71 | Active | PyRevit buttons (47-button backlog B-01–B-47 across 10 panels), Dynamo scripts. GitLab: `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools` |
+| P4-002 | P4 | Revit & BIM Automation | I-09, I-44, I-45, I-46, I-49, I-67, I-71, **I-77** | Active | PyRevit buttons (47-button backlog B-01–B-47 across 10 panels), Dynamo scripts. GitLab: `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools` |
 | P4-003 | P4 | BCG EasyButton / Idea Capture | I-73 | Active | Voice-activated idea capture tool: code, governance, beta testing, rollout, ecosystem integration |
 | P5-001 | P5 | Network Infrastructure Assessment | I-38 | Planned | Firewall/switch config assessment, gap analysis |
 | P5-002 | P5 | Monitoring & Observability Infrastructure | — | Active (Ph1 complete) | Prometheus/Grafana/Loki stack, telemetry |
@@ -207,7 +219,7 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 ## 6. Numbering Conventions
 
-- **Initiatives:** I-01 through I-## (sequential, never reuse removed numbers). Next: **I-77**
+- **Initiatives:** I-01 through I-## (sequential, never reuse removed numbers). Next: **I-78**
 - **Workstreams:** WS-01 through WS-## (sequential). Next: WS-12
 - **Subprojects:** P{#}-{###} (parent project dash three-digit sequence)
 - **Removed items:** Keep the row with strikethrough and "Removed" status. Do not renumber.
@@ -220,9 +232,11 @@ Update this file when: an initiative is added, completed, reprioritized, or remo
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| **3.3** | **2026-04-30** | **I-77 Registration.** Added I-77 (PDF Deliverable Automation Pipeline) per Gregory approval 2026-04-30. Three-phase automation pipeline (bookmark/overlay/QC Model) for client PDF deliverables. Hard gate: I-09 (Revit Batch Print Utility) must be Complete before I-77 Active-flip. Development: 100–140 hours, $9k–$12.6k total. Reference: `BCG_PDF_Automation_Deep_Dive_v1_0.docx` (2026-04-30, 24 pages, filed at `B:\AI Accessible\Outputs\P4-002\`). Added I-77 to WS-10 coverage list and P4-002 subproject initiatives. Updated I-09 notes to reflect gating relationship. **Counts:** **65 active initiatives** (was 64; +1 = I-77). 12 removed total (unchanged). Next I-slot: **I-78** (was I-77). No changes to other initiatives, subprojects, or workstreams. |
+| **3.2** | **2026-04-28** | **I-54 Plan Deepening, Greg D1/D2/D3 commits.** D1 — Single I-54 (3 phases, no split). D2 — I-56 → Removed (descoped); I-55 flagged as gating I-54 Active-flip. D3 — I-53/I-54 parallel sequencing (overrides P0 I-53-first recommendation). I-54 Active-flip prerequisites refined: B1 + B2 + I-55 Complete. Counts: **64 active initiatives** (was 65; -1 = I-56). 12 removed total. Next I-slot unchanged: I-77. No subproject or workstream changes. Plan v0.2 2026-04-28 authored as companion artifact. |
 | **3.1** | **2026-04-26** | **REALIGNMENT CLEANUP** per Gregory directive. Removed 7 initiatives: I-06 (consolidated → I-54), I-07 (consolidated → I-53), I-25 (folded → I-65), I-26 (superseded by on-prem strategy under I-65), I-31 (Phase 2 delivered by I-48; Phase 5 tracked via D-01), I-47 (folded → I-65 as RAG vector storage), I-61 (superseded by on-prem strategy under I-65). Reclassified I-64 to WS-11 (ongoing P11 capability, not bounded initiative). Status/date refresh: I-23 (On Hold/Q1 → Active/Q2), I-24 (Active/Q1 → Active/Q2), I-29 (On Hold/Q1 → Active/Q2). Status reset: I-02 (Active/Q1 → On Hold/Q4 — paused). Owner update: I-09 (TBD → Gregory interim). WS-10 coverage list cleaned (removed strikethrough'd I-25, I-26, I-31, I-47). WS-11 coverage updated to include reclassified I-64 capability. **Counts: 65 active initiatives** (was 73; -8). 11 total removed: I-06, I-07, I-20, I-25, I-26, I-30, I-31, I-32, I-47, I-61, I-64. Next I-slot unchanged: I-77. |
 | **3.0.1** | **2026-04-26** | **I-27 (Windsurf IDE Enablement) closed via Path B** silent-completion exception per `standards/protocols/Initiative_Closure_Verification.md` v1.0. Owner attestation by Gregory: GitLab commit verified at `alexandria.bcg-corp.com/revit/bcg-ops-revit-tools`; Windsurf in active production use across team; I-72 Superpowers v5.0.7 merge (2026-04-17) functional. Status drifted directly `Planned` → `Complete` — exception authorized by Gregory. Original `Depends on I-26` resolved as moot at closure. **I-69 (Dashboard / Cloudflare Pages) Section 5 Backfill audit verified same day** — evidence link `https://dashboard.bcg-corp.com` resolves; canonical filing at `bcgcorp/bcg-ops-claude-projects/dashboard/BCG_Master_Strategic_Plan.html`; verification logged to Ecosystem Status doc per protocol Section 5. Counts unchanged: 73 tracked initiatives. Next I-slot unchanged: I-77. |
-| **3.0** | **2026-04-19** | **PROTOCOL-HARNESS ERA BOUNDARY.** Retired P0-001 subproject (triage function absorbed into P0 via protocol-harness pattern). Registered I-75 (Ecosystem Protocol Harness — this migration's deliverable initiative) and I-76 (Ecosystem Grading Schema Extraction — next sprint). Counts: 73 active initiatives, 6 active subprojects, 11 workstreams. Next I-slot: I-77. Ecosystem scope unchanged (P0–P11 + 6 subs). **Note on v2.10:** Governance Doc Registry v3.2 (2026-04-18) forward-referenced a Catalog v2.10 shipping the Plan Link Rule. That standalone v2.10 commit never shipped — the Plan Link Rule was effective via W-20 v1.1 enforcement. v3.0 lands directly from v2.9; Registry v3.5 corrects the tracked version to match. **[Annotation 2026-04-26]:** Registry references in this entry ("v3.2", "v3.5") describe a phantom version sequence — see Registry v1.3 changelog (2026-04-26) for full resolution. The actual Registry file in this repo never tracked v3.x; its real sequence is v1.0 → v1.1 → v1.2 → v1.3 (current). The phantom 'v3.x' framing was an in-narrative artifact that became self-perpetuating across changelog entries. This annotation is the resolution, not a rewrite of historical changelog text. |
+| **3.0** | **2026-04-19** | **PROTOCOL-HARNESS ERA BOUNDARY.** Retired P0-001 subproject (triage function absorbed into P0 via protocol-harness pattern). Registered I-75 (Ecosystem Protocol Harness — this migration's deliverable initiative) and I-76 (Ecosystem Grading Schema Extraction — next sprint). Counts: 73 active initiatives, 6 active subprojects, 11 workstreams. Next I-slot: I-77. Ecosystem scope unchanged (P0–P11 + 6 subs). **Note on v2.10:** Governance Doc Registry v3.2 (2026-04-18) forward-referenced a Catalog v2.10 shipping the Plan Link Rule. That standalone v2.10 commit never shipped — the Plan Link Rule content was effective via W-20 v1.1 enforcement. v3.0 lands directly from v2.9; Registry v3.5 corrects the tracked version to match. **[Annotation 2026-04-26]:** Registry references in this entry ("v3.2", "v3.5") describe a phantom version sequence — see Registry v1.3 changelog (2026-04-26) for full resolution. The actual Registry file in this repo never tracked v3.x; its real sequence is v1.0 → v1.1 → v1.2 → v1.3 (current). The phantom 'v3.x' framing was an in-narrative artifact that became self-perpetuating across changelog entries. This annotation is the resolution, not a rewrite of historical changelog text. |
 | 2.9 | 2026-04-18 | **RECONCILIATION COMMIT.** Reconstructs v1.5–v2.8 into single canonical commit from governance narrative + Gregory working-copy extraction (P0 session 2026-04-18). Added I-49 through I-72 (24 initiatives). Registered I-73 (BCG EasyButton — P4-003 / Greg Ph1 → Jason Ph2–4). Registered I-74 (Notification Center Ph A Remediation — Victor / P7). Registered P4-003 subproject under P4. Folded `BCG_AI_Config_Architecture_v1.0.docx` into I-65 scope. Re-homed I-24 to P10 (was P6). Removed I-30 (superseded by I-48). Retired P7-001–P7-004 (consolidated into P7 on 2026-03-12). Added P0-001, P5-002, P8-001, P4-003 to subproject registry. Updated scope P0–P11. Total: 71 active, 3 removed, 11 WS, 7 active subprojects + 4 retired. Next I-slot: I-75. |
 | v1.5–v2.8 | 2026-03-10 to 2026-04-17 | NOT PREVIOUSLY COMMITTED — rolled into v2.9. Working-copy versions existed locally but were never pushed to GitHub. |
 | 1.4 | 2026-03-10 | Added I-42–I-48. Updated P4-002 subproject registry. Confirmed B-24, B-25. Total: 46 active, 2 removed, 11 WS, 7 subprojects. |
