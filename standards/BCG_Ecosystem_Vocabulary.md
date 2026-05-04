@@ -1,9 +1,9 @@
 # BCG Ecosystem Vocabulary
-**Version:** 1.3
-**Last Updated:** 2026-03-22
+**Version:** 1.4
+**Last Updated:** 2026-05-03
 **Owner:** Gregory Bernardo
 **GitHub:** bcgcorp/bcg-ops-governance/standards/BCG_Ecosystem_Vocabulary.md
-**Fetch URL:** https://raw.githubusercontent.com/bcgcorp/bcg-ops-governance/refs/heads/main/standards/BCG_Ecosystem_Vocabulary.md
+**Fetch via:** `github-write:get_file_contents` (owner: `bcgcorp`, repo: `bcg-ops-governance`, path: `standards/BCG_Ecosystem_Vocabulary.md`). Do NOT use `web_fetch` on CDN URLs per ADR-001 and the 2026-03-22 post-mortem.
 
 ---
 
@@ -44,6 +44,7 @@
 | D-## (e.g., D-04) | Decision number | A pending decision requiring Gregory's call. Numbered for tracking in the Pending Decisions queue. |
 | B-## (e.g., B-24) | PyRevit button backlog | A Revit automation tool in the development backlog. Tracked in P4-002. 47-button backlog: B-01–B-47 across 10 panels. |
 | WS-## (e.g., WS-05) | Workstream | A thematic grouping of related initiatives. 11 active workstreams (WS-01–WS-11). |
+| ADR-### (e.g., ADR-001) | Architectural Decision Record | An architectural decision and its rationale. Distinct from GOV-NNN (which documents the resulting rules). Established 2026-05-02 with ADR-001. Indexed in the Governance Doc Registry Section 6. |
 
 ---
 
@@ -54,13 +55,14 @@
 | Handoff prompt | Structured message that transfers context between projects. Uses label format: [FROM: P#] [DATE: date] [TOPIC: brief]. |
 | Carry-forward | An action item that persists from one weekly sync to the next until resolved. Tracked on Page 1 of the sync agenda. |
 | Ecosystem update | Structured output from a meeting or work session that routes decisions, status changes, and new items to the correct satellite projects. |
-| EAB | Ecosystem Awareness Block — a governance stub embedded in every project's instructions. Ensures all projects know the ecosystem structure and can route work correctly. Current version: v1.5. |
+| EAB | Ecosystem Awareness Block — a governance stub embedded in every project's instructions. Ensures all projects know the ecosystem structure and can route work correctly. Current version: v1.8 (2026-05-03 — removed CDN fetch URL, replaced with github-write MCP directive). |
 | Sync packet | A structured data transfer from a satellite project to P0. Format: .md only. Uses the [FROM: P#] label format. |
 | Quick reference card | Page 3 of the weekly sync agenda — permanent reference showing projects, locations, and vocabulary. |
-| Governance Doc Registry | Master index of all BCG governance documents. Single source of truth for what documents exist, where they live, and when to fetch them. GitHub: bcg-ops-governance/standards/. |
+| Governance Doc Registry | Master index of all BCG governance documents. Single source of truth for what documents exist, where they live, and when to fetch them. GitHub: bcg-ops-governance/standards/. Current version: v1.4 (2026-05-03 — added ADR section). |
+| ADR | Architectural Decision Record. Documents architectural decisions and their rationale. Established as a distinct artifact class 2026-05-02 with ADR-001 (Visualization Tooling Architecture). Indexed in Governance Doc Registry Section 6. |
 | P0 | The master strategic plan hub. Consumes approved outputs from satellites (P1–P11). Does not produce; it synthesizes. |
 | Satellite project | Any of P1–P11 (and their subprojects). Production work happens here. Outputs flow one-directionally to P0. |
-| Initiative Catalog | The authoritative list of all 67 active initiatives (I-01–I-69, minus I-20, I-30, and I-32). GitHub: bcg-ops-governance/standards/. Next available slot: I-70. |
+| Initiative Catalog | The authoritative list of all active initiatives (I-01–I-77 with closures and descopes tracked). GitHub: bcg-ops-governance/standards/. Next available slot tracked in catalog. Current version: v3.2. |
 
 ---
 
@@ -82,6 +84,7 @@
 
 | Version | Date | What Changed |
 |---------|------|-------------|
+| 1.4 | 2026-05-03 | Removed `raw.githubusercontent.com` Fetch URL line from header; replaced with `github-write:get_file_contents` directive per ADR-001 (APPROVED 2026-05-02) and the 2026-03-22 post-mortem. Added ADR-### to Section 2 (Ecosystem Numbering) — establishes ADR as a recognized numbering pattern in the vocabulary. Added "ADR" entry to Section 3 (Document & Process Terms). Updated EAB current version reference v1.5 → v1.8. Updated Governance Doc Registry reference to v1.4. Updated Initiative Catalog reference (62→active range up to I-77, v3.2). |
 | 1.3 | 2026-03-22 | B-series backlog updated B-01–B-42/9 panels → B-01–B-47/10 panels (Print panel added, I-67 B-47 registered). EAB current version updated v1.4 → v1.5. Initiative Catalog updated: 61→67 active, I-64→I-70 next slot, I-30 added to removed list. Satellite project definition updated P1–P10 → P1–P11. P0 definition updated. |
 | 1.2 | 2026-03-17 | Initiative Catalog count corrected 60 to 61. B-series backlog updated B-01-B-41 to B-01-B-42 (42 buttons across 9 panels per BCG_Tools_Inventory.md). EAB current version updated v1.3 to v1.4. Added P10 to satellite project definition. Initiative Catalog next slot I-64 added. |
 | 1.1 | 2026-03-14 | Initiative Catalog count corrected 59 to 60. B-series backlog updated to B-01-B-41. |
