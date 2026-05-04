@@ -1,7 +1,7 @@
 # BCG Corp -- P4-002 Technical Architecture Standards
 
 **Document ID:** GOV-017
-**Version:** 1.2
+**Version:** 1.3
 **Effective:** May 2026
 **Last Updated:** 2026-05-03
 **Project:** P4-002 (Revit & BIM Automation)
@@ -21,7 +21,7 @@ or when an architectural decision is in question.
 
 **ADR cross-reference:** Architectural decisions affecting P4-002 that have ecosystem-wide
 scope (visualization tooling, AI tool discipline, etc.) are documented in BCG's ADR-NNN
-sequence rather than embedded in this document. See Section 9 for active ADRs that bind
+sequence rather than embedded in this document. See Section 10 for active ADRs that bind
 P4-002 work.
 
 ---
@@ -162,7 +162,45 @@ enforcement rules, PoleNumber-SP shared parameter conventions, priority backlog 
 
 ---
 
-## 7. Pending Deliverables (P4-002 scope)
+## 7. pyRevit Version Registry
+
+BCG upgrades pyRevit deliberately on a quarterly review cycle per W-XX (pyRevit Channel
+Watch SOP), not automatically on every upstream release. This section records the
+production version deployed across all BCG workstations.
+
+**Current Production Version:** 6.4.0.26098+2214  
+**Commit:** 496e71b (eirannejad/pyRevit master branch)  
+**Release Date:** 2026-04-29  
+**Deployed to BCG Production:** 2026-05-03 (version registry established)  
+**Next Scheduled Review:** Q3 2026 (July, per W-XX quarterly cycle)
+
+**Upgrade History:**
+- 2026-05-03: Established version registry. Pinned 6.4.0.26098+2214 as baseline.
+  - Rationale: First pinned version under W-XX SOP. pyRevit 6.4.0 is stable, rocket-mode
+    compatible, and supports IronPython 2.7.12 (BCG's ASCII-only constraint).
+  - No upgrade performed -- this is documentation of existing deployed version.
+
+**Why we pin versions:**
+
+Pinning a known-good version prevents production disruption from upstream breaking changes.
+BCG tests pyRevit upgrades deliberately (30-60 min test cycle on critical buttons B-01
+through B-12) before deploying to all workstations. This is especially important because:
+1. BCG's 47-button custom extension depends on pyRevit's API surface remaining stable
+2. CPython engine changes could invalidate BCG's IronPython 2.7.12 / ASCII-only constraint
+3. Breaking changes in routes module or Preflight framework would impact I-71 and B-09
+
+**Upgrade approval authority:**
+- Quarterly review: Gregory Bernardo (identifies need, approves decision)
+- Execution: Bob Brezniak (P5 -- tests, deploys, updates this registry)
+- Emergency security patches: Bob initiates, Greg approves same-day if critical
+
+**Related documents:**
+- W-XX: pyRevit Channel Watch & Version Management SOP (quarterly review procedure)
+- extensions.json baseline: 20 registered extensions as of 2026-05-03 (see W-XX SOP Step 2)
+
+---
+
+## 8. Pending Deliverables (P4-002 scope)
 
 | Item | Description | Gate | Status |
 |------|-------------|------|--------|
@@ -178,7 +216,7 @@ The following items are flagged for P0 resolution and are tracked here for refer
 
 ---
 
-## 8. Companion governance documents
+## 9. Companion governance documents
 
 | Doc | Scope | When to fetch |
 |-----|-------|---------------|
@@ -189,7 +227,7 @@ The following items are flagged for P0 resolution and are tracked here for refer
 
 ---
 
-## 9. Active ADRs Binding P4-002 Work
+## 10. Active ADRs Binding P4-002 Work
 
 ADRs (Architectural Decision Records) document architectural decisions and their
 rationale. The ADR class was established 2026-05-02 with ADR-001. ADRs apply
@@ -221,10 +259,11 @@ When that SOP is published, this section will reference it.
 
 ---
 
-## 10. Change Log
+## 11. Change Log
 
 | Version | Date | Change |
 |---------|------|--------|
+| 1.3 | 2026-05-03 | Added Section 7 (pyRevit Version Registry) documenting current production version 6.4.0.26098+2214 and quarterly upgrade discipline per W-XX SOP. Renumbered subsequent sections (Pending Deliverables is now Section 8, Companion governance documents is Section 9, Active ADRs is Section 10). |
 | 1.2 | 2026-05-03 | Added Section 9 (Active ADRs Binding P4-002 Work) referencing ADR-001 (Visualization Tooling Architecture, APPROVED 2026-05-02). Added Section 8 (Companion governance documents) for cross-reference clarity. Added ADR cross-reference note to Purpose section. Closes ADR-001 Action 7. |
 | 1.1 | 2026-03-22 | Print button slots resolved: B-43 through B-46 assigned to new dedicated Print panel. Updated CLAUDE.md button count reference 42 to 46. Marked print slots row as resolved in pending deliverables table. |
 | 1.0 | 2026-03-22 | Initial version. Extracted from P4-002 session analysis (gap audit 2026-03-22). Covers IronPython constraints, AppSettings architecture, three-transaction pattern, Revit API constraints, Windsurf environment, CI/CD phase status, and pending deliverables. |
