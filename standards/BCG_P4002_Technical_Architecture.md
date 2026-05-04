@@ -1,9 +1,9 @@
 # BCG Corp -- P4-002 Technical Architecture Standards
 
 **Document ID:** GOV-017
-**Version:** 1.1
-**Effective:** March 2026
-**Last Updated:** 2026-03-22
+**Version:** 1.2
+**Effective:** May 2026
+**Last Updated:** 2026-05-03
 **Project:** P4-002 (Revit & BIM Automation)
 **Owner:** Gregory Bernardo, President
 **GitHub Path:** `standards/BCG_P4002_Technical_Architecture.md`
@@ -18,6 +18,11 @@ BCG's pyRevit button development. These rules are enforced on every PR in the
 
 Fetch this document before: any pyRevit code review, CLAUDE.md authoring, PR triage,
 or when an architectural decision is in question.
+
+**ADR cross-reference:** Architectural decisions affecting P4-002 that have ecosystem-wide
+scope (visualization tooling, AI tool discipline, etc.) are documented in BCG's ADR-NNN
+sequence rather than embedded in this document. See Section 9 for active ADRs that bind
+P4-002 work.
 
 ---
 
@@ -173,9 +178,53 @@ The following items are flagged for P0 resolution and are tracked here for refer
 
 ---
 
-## 8. Change Log
+## 8. Companion governance documents
+
+| Doc | Scope | When to fetch |
+|-----|-------|---------------|
+| GOV-013 (Tools Inventory) | Active button inventory across all panels | Button additions, status updates |
+| BCG_Governance_Doc_Registry.md (v1.4+) | Master index of all BCG governance docs and ADRs | Before any new governance fetch |
+| `.windsurfrules` (bcg-ops-revit-tools) | Authoring-time architectural enforcement | Any pyRevit code authoring session |
+| CLAUDE.md (bcg-ops-revit-tools) | CI/CD-time review enforcement | Pending; gates on Section 6 deliverable |
+
+---
+
+## 9. Active ADRs Binding P4-002 Work
+
+ADRs (Architectural Decision Records) document architectural decisions and their
+rationale. The ADR class was established 2026-05-02 with ADR-001. ADRs apply
+ecosystem-wide; this section indexes those that govern P4-002 work specifically.
+
+### ADR-001 -- Visualization Tooling Architecture
+**Status:** APPROVED 2026-05-02
+**Architectural Owner:** P4 -- AI Infrastructure & Deployment
+**Originating Subproject:** P4-002
+
+ADR-001 establishes the four-tool visualization stack used across all BCG ecosystem
+projects. P4-002 deliverables follow this stack:
+
+| Use case in P4-002 | Tool per ADR-001 |
+|--------------------|------------------|
+| Inline chat brainstorming during planning | Built-in Visualizer |
+| Diagrams in `.md` governance docs (this file, GOV-013, CLAUDE.md when authored) | Mermaid Chart MCP |
+| Diagrams embedded in `.docx` assessments and decision memos | Visualizer SVG embedded |
+| Diagrams in client-facing `.pptx` (rare for P4-002 but possible) | PowerPoint SmartArt |
+| Complex network or system diagrams that exceed Mermaid auto-layout | draw.io (exception, requires P4 justification) |
+
+Tools explicitly rejected and not authorized: Visio, Lucidchart, Miro/Mural, Figma/FigJam,
+Excalidraw, Whimsical, Canva, Google Drawings/Slides.
+
+**Canonical file:** `standards/ADR-001_Visualization_Tooling_Architecture.md`
+
+**Operational companion:** Visualization Authoring Standard SOP (W-XX, in P2 queue).
+When that SOP is published, this section will reference it.
+
+---
+
+## 10. Change Log
 
 | Version | Date | Change |
 |---------|------|--------|
+| 1.2 | 2026-05-03 | Added Section 9 (Active ADRs Binding P4-002 Work) referencing ADR-001 (Visualization Tooling Architecture, APPROVED 2026-05-02). Added Section 8 (Companion governance documents) for cross-reference clarity. Added ADR cross-reference note to Purpose section. Closes ADR-001 Action 7. |
 | 1.1 | 2026-03-22 | Print button slots resolved: B-43 through B-46 assigned to new dedicated Print panel. Updated CLAUDE.md button count reference 42 to 46. Marked print slots row as resolved in pending deliverables table. |
 | 1.0 | 2026-03-22 | Initial version. Extracted from P4-002 session analysis (gap audit 2026-03-22). Covers IronPython constraints, AppSettings architecture, three-transaction pattern, Revit API constraints, Windsurf environment, CI/CD phase status, and pending deliverables. |
